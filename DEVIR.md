@@ -29,6 +29,8 @@ Pages 1-2 dk gecikir; canlıyı dışarıdan doğrula. Yerel önizleme: `node si
 - Tıbbi sayfalarda hekim künyesi + editör satırı basılıyor (render.js).
 - `site/denetle.js` eklendi (Türkçe harf duyarlı yasaklı ifade taraması).
 
+- Cadde adı müşteriyle teyit edildi: **Ebuzziya** (çift z), site.js düzeltildi.
+
 ## Hekim onayı alınanlar (25 Eyl 2026)
 
 ✅ Aşağıdaki süre ve sayılar **hekim tarafından teyit edildi**, sayfalarda olduğu gibi kalır:
@@ -41,7 +43,6 @@ Küçük, ertelenen kozmetik bulgular: tiroid/tiroit tek yazıma indirilmedi; so
 
 ## Müşteriden beklenenler
 
-- **Cadde adı yazımı:** kaynak sitede "Ebuziya", resmî ad büyük olasılıkla "Ebuzziya" (çift z). Teyit gelince `site/veri/site.js` → `adres` tek satır.
 - E-posta adresi (şu an yer tutucu `randevu@drrahmicebeci.com`).
 - Markaya özel görseller (şimdiki yapay zekâ görselleri Salvera setinin sıcak tonlu kopyası).
 - Alan adı ve canlıya geçiş kararı: `site.js` → `ALAN` + `demo:false`; cPanel paketi `yayin-hazirla.js` ile hazır.

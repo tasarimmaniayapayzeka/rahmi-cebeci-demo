@@ -43,7 +43,7 @@ module.exports = {
   },
 
   iletisim: {
-    adres: 'Cevizlik Mah. Ebuziya Cad. No:47/1',
+    adres: 'Cevizlik Mah. Ebuzziya Cad. No:47/1',
     ilce: 'Bakırköy / İstanbul',
     semt: 'Bakırköy',
     tel: '0539 933 08 08',

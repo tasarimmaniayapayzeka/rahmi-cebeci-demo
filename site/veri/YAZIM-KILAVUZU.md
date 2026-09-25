@@ -20,7 +20,7 @@ Bu belge, sayfa dosyalarını yazan herkes (insan veya ajan) için bağlayıcıd
   Endokrinoloji, Hematoloji, Genel Cerrahi, Psikiyatri, Kadın Doğum, Çocuk rotasyonları.
   Görev yerleri: Ankara Atatürk EAH, Bakırköy Mazhar Osman, Bakırköy Yenimahalle Kadın Doğum ve
   Çocuk, Ankara Sami Ulus. 2005'ten bu yana hekim (yaklaşık 20 yıl).
-- Yer: **Bakırköy, İstanbul** — Cevizlik Mah. Ebuziya Cad. No:47/1. Semt adı geçecekse **Bakırköy**.
+- Yer: **Bakırköy, İstanbul** — Cevizlik Mah. Ebuzziya Cad. No:47/1. Semt adı geçecekse **Bakırköy**.
   Nişantaşı / Teşvikiye / Şişli asla geçmez.
 - Telefon ve WhatsApp aynı numara: site.js'ten `S.iletisim.tel`, `S.iletisim.waHam` ile al; elle yazma.
 - Saatler: Pazartesi–Cumartesi 09:00–19:00, Pazar kapalı (`S.iletisim.saatler`).
