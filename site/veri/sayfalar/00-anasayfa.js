@@ -5,7 +5,7 @@ const OZ = require('../parcalar/uygulama-ozet');
 /* Ana sayfa — molekül hero, öne çıkan dövme silme kartı, süreç akışı,
    yüz haritası, filtreli SSS, gerçek harita. Etkileşim: varliklar/js/anasayfa.js */
 
-const HARITA_EMBED = 'https://www.google.com/maps?q=' + encodeURIComponent('Cevizlik Mah. Ebuziya Cad. No:47/1 Bakırköy İstanbul') + '&output=embed';
+const HARITA_EMBED = 'https://www.google.com/maps?q=' + encodeURIComponent(S.iletisim.adres + ' ' + S.iletisim.ilce) + '&output=embed';
 
 module.exports = {
   slug: '',
@@ -147,6 +147,7 @@ module.exports = {
       </div>
       <div class="yolc-sahne" data-reveal>
         <div class="yolc-ciz" aria-hidden="true"><i></i></div>
+        <span class="g-ainot">Görsel yapay zekâ ile üretilmiştir</span>
         ${['Muayene', 'Planlama', 'Uygulama günü', 'Takip ve kontrol'].map((ad, i) =>
           `<div class="yolc-adim"><span class="yolc-no">${i + 1}</span><img src="${r}varliklar/gorsel/asama-${['muayene', 'plan', 'gun', 'takip'][i]}.webp" width="400" height="400" alt="" loading="lazy"><b>${ad}</b><p></p></div>`).join('')}
       </div>

@@ -45,7 +45,7 @@ module.exports = {
       <div class="kutu kutu--bilgi" data-gr>
         <b>Bu nedir</b>
         <p>Karışım kana geçecek derinliğe değil, kıl köklerinin yerleştiği yüzeye yakın deri katmanına bırakılır. Bir seansta kullanılan toplam miktar birkaç mililitreyi aşmaz ve saçlı derinin geniş bir alanına küçük damlalar hâlinde dağıtılır.</p>
-<p>İçerik herkes için aynı değildir, hekim tarafından seçilir. Karışımda B grubu vitaminleri, örneğin çinko ve bakır gibi iz mineraller, aminoasit–peptit grupları ve hafif yapıda hyalüronik asit bulunabilir. Amaç saçlı derinin nemini, küçük damarlardaki dolaşımı ve kıl kökünü besleyen ortamı desteklemektir.</p>
+<p>İçerik herkes için aynı değildir, hekim tarafından seçilir. Karışımda B grubu vitaminleri, çinko ve bakır gibi iz mineraller, aminoasit–peptit grupları ve hafif yapıda hyalüronik asit bulunabilir. Amaç saçlı derinin nemini, küçük damarlardaki dolaşımı ve kıl kökünü besleyen ortamı desteklemektir.</p>
 <p>Karışıma reçeteyle verilen bir ilacın etken maddesi katılmaz; ilaç tedavisi gerekiyorsa bu ayrı bir karar olarak ele alınır. Yaygın dökülmenin ardından gelen toparlanma döneminde, saçlı deride kuruluk ve gerginlik yakınmasında ya da tellerin incelmeye başladığı erken evrede destekleyici bir adım olarak düşünülebilir.</p>
       </div>
       <div class="kutu kutu--uyari" data-gr style="--d:80ms">
@@ -140,7 +140,7 @@ module.exports = {
 <section class="bolum bolum--buz2"><div class="sar">
   <div class="bolum-bas" data-gr><p class="g-etiket">Sorgulayın</p><h2>Sorunuzu seçin, cevap ekrana düşsün</h2></div>
   <div class="g-sorgu" data-gr>
-    <div class="g-sorgu-bas"><i></i><i></i><i></i><span>rahmi-cebeci · sac-mezoterapisi · soru-cevap</span></div>
+    <div class="g-sorgu-bas"><i></i><i></i><i></i><span>${S.marka.toLocaleLowerCase('tr')} · saç mezoterapisi · soru-cevap</span></div>
     <div class="g-sorgu-ic">
       <div class="g-slistem">
         <button class="g-ssoru" data-akt data-gs="0"><i>›</i>Saç aşısı ile saç mezoterapisi aynı şey mi?</button>

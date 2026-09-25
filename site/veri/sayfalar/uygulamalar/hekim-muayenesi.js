@@ -270,7 +270,7 @@ module.exports = {
       <b>Uyarı</b>
       <p>Bu sayfa genel bilgi vermek amacıyla hazırlanmıştır. Bir uygulamanın size uygun olup olmadığına ancak muayene ve sağlık öykünüz değerlendirildikten sonra karar verilebilir. Girişimsel işlemlerde sonuç önceden taahhüt edilemez; etkinin ne ölçüde görüleceği ve ne kadar süreceği kişiden kişiye değişir. Amacı bir işlemi tanıtmak ya da sizi bir işleme yönlendirmek değildir.</p>
     </div>
-    <p data-gr style="margin-top:18px;font-size:.92rem">Muayeneyi kim yapar? Değerlendirmeyi muayenehanenin sahibi ve sorumlu hekimi ${S.hekim.tam} yapar. Uzmanlık eğitimi sırasında ${S.hekim.rotasyonlar.slice(0, 2).join(' ve ').toLocaleLowerCase('tr')} dahil çeşitli dallarda rotasyon yapmış, ${S.hekim.sertifika}nı ${S.hekim.sertifikaYer}’da almıştır. Eğitim geçmişi <a href="${r}hekim/">hekim</a> sayfasında, muayenehanenin fiziki koşulları <a href="${r}klinik/">klinik</a> sayfasında yer alır. Yakınmanız medikal estetiğin alanı dışındaysa uygulama yapılmaz; hangi dala başvurmanız gerektiği gerekçesiyle birlikte anlatılır.</p>
+    <p data-gr style="margin-top:18px;font-size:.92rem">Muayeneyi kim yapar? Değerlendirmeyi muayenehanenin sahibi ve sorumlu hekimi ${S.hekim.tam} yapar. Uzmanlık eğitimi sırasında ${S.hekim.rotasyonlar.slice(0, 2).join(' ve ').toLocaleLowerCase('tr')} dâhil çeşitli dallarda rotasyon yapmış, ${S.hekim.sertifika}nı ${S.hekim.sertifikaYer}’da almıştır. Eğitim geçmişi <a href="${r}hekim/">hekim</a> sayfasında, muayenehanenin fiziki koşulları <a href="${r}klinik/">klinik</a> sayfasında yer alır. Yakınmanız medikal estetiğin alanı dışındaysa uygulama yapılmaz; hangi dala başvurmanız gerektiği gerekçesiyle birlikte anlatılır.</p>
   </div>
 </section>
 

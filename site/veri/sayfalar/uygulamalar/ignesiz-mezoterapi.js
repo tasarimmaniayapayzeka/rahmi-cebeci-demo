@@ -99,7 +99,7 @@ module.exports = {
       <div class="g-kutu g-b2 g-kutu--cta" data-gr style="--d:140ms"><h3>Hedefinizi birlikte netleştirelim</h3><p>Hedef belli olmadan seans planı yapılmaz.</p><a class="dgm dgm--altin" href="${r}iletisim/">Randevu talebi</a></div>
       <div class="kutu kutu--acil g-b6" data-gr>
         <b>Hangi durumda hemen aramalısınız?</b>
-        <p>Seanstan sonra ciltte kaşıntılı kabarıklıklar belirir, kızarıklık yüzün başka bölgelerine yayılır ya da yanma hissi birkaç günde geçmezse kontrol gününü beklemeden ${S.iletisim.tel} numarasını arayın.</p>
+        <p>Seanstan sonra ciltte kaşıntılı kabarıklıklar belirir, kızarıklık yüzün başka bölgelerine yayılır ya da yanma hissi birkaç günde geçmezse kontrol gününü beklemeden ${S.iletisim.tel} numarasını arayın. Kabarıklıklar vücuda yayılır, dudakta ya da göz kapaklarında hızla şişlik gelişir, nefes almak ya da yutkunmak zorlaşırsa bizi aramakla vakit kaybetmeyin; doğrudan <b>112</b>’yi arayın ya da size en yakın acil servise gidin.</p>
       </div>
     </div>
   </div>

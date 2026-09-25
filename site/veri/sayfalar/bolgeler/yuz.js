@@ -26,9 +26,9 @@ module.exports = {
       <img src="${r}varliklar/gorsel/bolge-yuz.webp" width="1400" height="788" alt="Sade bir fonda önden bakan, doğal görünümlü bir kadın yüzü" loading="eager">
       <div class="g-isin"></div>
       <span class="g-ainot">Görsel yapay zekâ ile üretilmiştir</span>
-      <button class="g-nokta" data-gn="ust" style="--x:35%;--y:25%" aria-label="Üst yüz"><span data-ad="Üst yüz"></span></button>
-      <button class="g-nokta" data-gn="orta" style="--x:31%;--y:42%" aria-label="Orta yüz"><span data-ad="Orta yüz"></span></button>
-      <button class="g-nokta" data-gn="alt" style="--x:35%;--y:55%" aria-label="Alt yüz"><span data-ad="Alt yüz"></span></button>
+      <button class="g-nokta" data-gn="ust" style="--x:50%;--y:22%" aria-label="Üst yüz"><span data-ad="Üst yüz"></span></button>
+      <button class="g-nokta" data-gn="orta" style="--x:45%;--y:40%" aria-label="Orta yüz"><span data-ad="Orta yüz"></span></button>
+      <button class="g-nokta" data-gn="alt" style="--x:50%;--y:54%" aria-label="Alt yüz"><span data-ad="Alt yüz"></span></button>
       <div class="g-hud" data-ghud><b>Üç bölge birbirine yaslanır</b><div class="g-cizgi"></div><span>Bir noktaya dokunun; o bölgenin yüzde neyi belirlediğini görün.</span></div>
     </div>
   </div>
@@ -219,7 +219,7 @@ module.exports = {
     </div>
     <div class="kutu kutu--acil" data-gr style="margin-top:22px">
       <b>Bir sorun gelişirse</b>
-      <p>İşlemden sonra sizi tedirgin eden bir değişiklik olursa ilk olarak bizi <a href="tel:${S.iletisim.telHam}">${S.iletisim.tel}</a> numarasından arayın. Dinmeyen ve giderek artan ağrı, derinin bembeyaz olması ya da morumsu bir ağ görünümü alması, bulanık görme, hızla kabaran şişlik ya da ateş gibi durumlarda vakit kaybetmeyin; telefonla ulaşamazsanız <b>112</b>'yi arayın veya size en yakın acil servise gidin.</p>
+      <p>İşlemden sonra sizi tedirgin eden bir değişiklik olursa ilk olarak bizi <a href="tel:${S.iletisim.telHam}">${S.iletisim.tel}</a> numarasından arayın. Dinmeyen ve giderek artan ağrı, derinin bembeyaz olması ya da morumsu bir ağ görünümü alması, bulanık görme, hızla kabaran şişlik ya da ateş gibi durumlarda vakit kaybetmeyin; telefonla ulaşamazsanız <b>112</b>’yi arayın veya size en yakın acil servise gidin.</p>
     </div>
   </div>
 </section>

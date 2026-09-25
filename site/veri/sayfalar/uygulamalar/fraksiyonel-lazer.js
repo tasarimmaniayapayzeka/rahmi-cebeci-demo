@@ -31,10 +31,10 @@ module.exports = {
 
 <!-- ═════ VERİ BANDI ═════ -->
 <div class="g-band"><div class="sar">
-  <div data-gr><b>4–8 hf</b><span>Seans aralığı</span></div>
-  <div data-gr style="--d:70ms"><b>2–7 gün</b><span>Derinliğe göre iyileşme</span></div>
+  <div data-gr><b>4–8&#8239;hf</b><span>Seans aralığı</span></div>
+  <div data-gr style="--d:70ms"><b>1–7&#8239;gün</b><span>Derinliğe göre iyileşme</span></div>
   <div data-gr style="--d:140ms"><b><em data-gsay="5">0</em></b><span>Planlama adımı</span></div>
-  <div data-gr style="--d:210ms"><b><em data-gsay="4">0</em> hf</b><span>Öncesinde ve sonrasında güneş kısıtı</span></div>
+  <div data-gr style="--d:210ms"><b><em data-gsay="4">0</em>&#8239;hf</b><span>Öncesinde ve sonrasında güneş kısıtı</span></div>
 </div></div>
 
 <!-- ═════ NEDİR / NE DEĞİLDİR ═════ -->
@@ -68,7 +68,7 @@ module.exports = {
       </div>
       <div class="g-kutu g-b2" data-gr style="--d:70ms">
         <span class="g-ket">İYİLEŞME TAKVİMİ</span>
-        <div class="g-cubuk"><small><span>KIZARIKLIK–KABUKLANMA</span><span>2–7 gün</span></small><div class="g-ciz"><b class="g-cubuk-mavi" data-gw="16%"></b></div></div>
+        <div class="g-cubuk"><small><span>KIZARIKLIK–KABUKLANMA</span><span>1–7 gün</span></small><div class="g-ciz"><b class="g-cubuk-mavi" data-gw="16%"></b></div></div>
         <div class="g-cubuk"><small><span>İKİ SEANS ARASI</span><span>4–8 hafta</span></small><div class="g-ciz"><b class="g-cubuk-petrol" data-gw="55%"></b></div></div>
         <div class="g-cubuk"><small><span>SONUCUN OKUNMASI</span><span>3–6 ay</span></small><div class="g-ciz"><b class="g-cubuk-bakir" data-gw="92%"></b></div></div>
         <p style="font-size:.7rem;color:var(--sessiz);margin-top:8px">Çubuklar göreli simgedir; size özel plan muayenede kurulur.</p>
@@ -105,6 +105,10 @@ module.exports = {
       </div>
       <div class="g-kutu g-b2 g-kutu--gorsel" data-gr><img src="${r}varliklar/gorsel/uyg-fraksiyonel-lazer-2.webp" alt="Yan ışıkta yanak cildinin yüzey dokusunu gösteren yakın plan" loading="lazy"><span class="g-ainot">Görsel yapay zekâ ile üretilmiştir</span></div>
       <div class="g-kutu g-b2 g-kutu--cta" data-gr><h3>Takviminize uygun bir plan kuralım</h3><p>Derinlik, iyileşmeye ayırabileceğiniz günler konuşulmadan seçilmez.</p><a class="dgm dgm--altin" href="${r}iletisim/">Randevu talebi</a></div>
+      <div class="kutu kutu--acil g-b4" data-gr>
+        <b>Kontrol gününü beklemeyin</b>
+        <p>Günler geçtikçe artan ağrı, yayılan kızarıklık ya da şişlik, sarı kabuk veya akıntı, ateş, küme hâlinde su toplaması ya da kapanmayan açık bir alan fark ederseniz ${S.iletisim.tel} numarasından bize ulaşın; ulaşamıyorsanız en yakın acil servise gidin.</p>
+      </div>
     </div>
   </div>
 </section>
@@ -112,15 +116,11 @@ module.exports = {
 <!-- ═════ UYARI + KAPSAM ═════ -->
 <section class="bolum">
   <div class="sar">
-    <div class="kutu kutu--acil" data-gr>
-      <b>Kontrol gününü beklemeyin</b>
-      <p>Günler geçtikçe artan ağrı, yayılan kızarıklık ya da şişlik, sarı kabuk veya akıntı, ateş, küme hâlinde su toplaması ya da kapanmayan açık bir alan fark ederseniz ${S.iletisim.tel} numarasından bize ulaşın; ulaşamıyorsanız en yakın acil servise gidin.</p>
-    </div>
-    <div class="kutu kutu--uyari" data-gr style="margin-top:16px;--d:70ms">
+    <div class="kutu kutu--uyari" data-gr>
       <b>Uyarı</b>
       <p>Bu sayfadaki bilgiler geneldir; kişisel tanı ya da tedavi yerine geçmez. Fraksiyonel lazer deride bilerek küçük hasar alanları oluşturan bir işlemdir; herkese uygun değildir ve enfeksiyon, renk değişikliği, iz gibi istenmeyen sonuçlar görülebilir. Yapılıp yapılmayacağına muayeneden sonra hekim karar verir. Sonuçlar kişiden kişiye değişir.</p>
     </div>
-    <div class="kutu kutu--bilgi" data-gr style="margin-top:16px;--d:140ms">
+    <div class="kutu kutu--bilgi" data-gr style="margin-top:16px;--d:70ms">
       <b>Kapsam</b>
       <p>Uygulama ${S.hekim.tam} tarafından, ${S.hekim.sertifika} kapsamında, Bakırköy’deki muayenehanemizin cihaz odasında yapılır. Bu çerçevenin dışında kalan talepleri neden karşılamadığımızı <a href="${r}yaklasimimiz/neden-bazi-islemleri-yapmiyoruz/">neden bazı işlemleri yapmıyoruz</a> sayfasında açıkladık. Konunun bütününü akne izleri için <a href="${r}cilt-sorunlari/akne-ve-akne-izi/">akne ve akne izi</a>, gözenek ve pürüzlülük için <a href="${r}cilt-sorunlari/gozenek-ve-cilt-dokusu/">gözenek ve cilt dokusu</a> sayfalarında anlattık; enerjiyi yüzeyden değil iğne ucundan veren seçenek için <a href="${r}uygulamalar/altin-igne-radyofrekans/">altın iğne radyofrekans</a> sayfasına bakabilirsiniz.</p>
     </div>

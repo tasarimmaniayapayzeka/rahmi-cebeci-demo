@@ -16,7 +16,7 @@ module.exports = {
     <p class="g-bhero__alt">Bu internet sitesinin sayfaları tarayıcınıza çerez yazmaz; yerel depolama (localStorage) ya da benzeri bir yöntemle cihazınızda kayıt da bırakmaz. Reklam pikseli, sosyal ağ izleyicisi, ısı haritası, oturum kaydı veya üçüncü taraf analitik aracı kullanılmaz; bu yüzden karşınıza çerez onay penceresi de çıkmaz. Sitede yer verilen üçüncü taraf hizmetler yalnızca ikidir: Google tarafından sunulan konum haritası ve WhatsApp bağlantısı.</p>
     <div class="g-bmeta">
       <span><i></i>Son güncelleme: ${S.guncelleme}</span>
-      <span><i></i>Çerez ve yerel depolama yok</span>
+      <span><i></i>İzleme çerezi ve yerel depolama yok</span>
       <span><i></i>Üçüncü taraf: harita ve WhatsApp</span>
     </div>
   </div>

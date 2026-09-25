@@ -20,7 +20,7 @@ module.exports = {
         <a class="dgm dgm--bir" href="${r}iletisim/">Randevu talebi</a>
         <a class="dgm dgm--iki" href="#fark">Neden farklı? ↓</a>
       </div>
-      <div class="g-tikler"><span><i></i>Uygulamayı hekim yapar</span><span><i></i>Bölgeye özel ayar</span><span><i></i>Kontrol randevusu dâhil</span></div>
+      <div class="g-tikler"><span><i></i>Uygulamayı hekim yapar</span><span><i></i>Bölgeye özel ayar</span><span><i></i>Kontrol randevusu planın içinde</span></div>
     </div>
     <div class="g-tarama" data-gr>
       <img src="${r}varliklar/gorsel/bolge-boyun-ve-dekolte.webp" width="1400" height="788" alt="Boyun ve göğüs üstünü gösteren üç boyutlu stilize görsel" loading="eager">
@@ -163,6 +163,10 @@ module.exports = {
         <p>Ameliyat gerektirmeyen yöntemler bu bölgede yüze kıyasla daha küçük bir değişim sağlar. Yıllardır yerleşmiş derin halka çizgilerinin tümüyle silinmesini beklemek gerçekçi olmaz; ulaşılabilecek nokta, çizgilerin daha yumuşak görünmesi ve derinin daha düzgün bir doku kazanmasıdır. Bu değişimin ne kadar süreceği kişiden kişiye farklıdır.</p>
         <p>Belirgin deri fazlalığı ve ileri sarkma olduğunda ameliyatsız yöntemlerin katkısı yetersiz kalır; böyle bir tablo görürsek sizi ilgili cerrahi dala yönlendiririz. Genel yaklaşımımızı <a href="${r}yaklasimimiz/">nasıl çalışıyoruz</a> sayfasında anlattık.</p>
       </div>
+    </div>
+    <div class="kutu kutu--acil" data-gr style="margin-top:22px">
+      <b>Beklemeden başvurmanız gereken bulgular</b>
+      <p>Boyundaki kas gevşetici uygulamadan sonra yutkunmada zorlanma, ses kısıklığı ya da nefes darlığı; cihazla yapılan işlemlerden sonra deride kabarcık ya da açık yara, yayılan kızarıklık, akıntı ya da ateş; her işlemden sonra giderek artan şiddetli ağrı, hızla kabaran şişlik ya da deride beyazlaşma–morumsu ağ görünümü olursa kontrol gününü beklemeyin. Bizi <a href="tel:${S.iletisim.telHam}">${S.iletisim.tel}</a> numarasından hemen arayın; telefonla ulaşamazsanız <b>112</b>’yi arayın ya da size en yakın acil servise gidin.</p>
     </div>
   </div>
 </section>

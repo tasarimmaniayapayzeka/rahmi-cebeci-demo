@@ -32,7 +32,7 @@ module.exports = {
 
 <!-- ═════ VERİ BANDI ═════ -->
 <div class="g-band"><div class="sar">
-  <div data-gr><b><em data-gsay="7">0</em></b><span>Değerlendirilen bölge</span></div>
+  <div data-gr><b><em data-gsay="5">0</em></b><span>Değerlendirilen bölge</span></div>
   <div data-gr style="--d:60ms"><b><em data-gsay="5">0</em></b><span>Protokol basamağı</span></div>
   <div data-gr style="--d:120ms"><b>Aşamalı</b><span>Seanslara yayılan plan</span></div>
   <div data-gr style="--d:180ms"><b>Yazılı</b><span>Onam her seansta</span></div>

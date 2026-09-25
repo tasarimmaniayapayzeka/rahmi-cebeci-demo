@@ -67,7 +67,7 @@ module.exports = {
     </div>
     <div class="kutu kutu--uyari" data-gr style="margin-top:18px">
       <b>Uygulamanın ertelendiği ya da yapılmadığı durumlar</b>
-      <p>Dövme alanında aktif enfeksiyon, açık yara ya da yeni güneşlenmiş deri varsa uygulama ertelenir. Gebelik döneminde, geçmişte kabarık iz (keloid) eğilimi olanlarda, ışığa duyarlılığı artıran ilaç kullananlarda ve ağızdan alınan akne ilacını yakın zamanda bırakmış kişilerde karar ayrıca değerlendirilir. Dövmenin içinde ya da kenarında biçimi, rengi veya boyutu değişen bir ben varsa önce o incelenir; böyle bir alana lazer uygulanmaz. Evde kullanılan silme kremleri ve tuzla ya da asitle soyma girişimleri kalıcı iz bırakabilir.</p>
+      <p>Dövme alanında aktif enfeksiyon, açık yara ya da yeni güneşlenmiş deri varsa uygulama ertelenir. Gebelik ve emzirme döneminde uygulama yapılmaz; bu dönem tamamlanana kadar ertelenir. Geçmişte kabarık iz (keloid) eğilimi olanlarda, ışığa duyarlılığı artıran ilaç kullananlarda ve ağızdan alınan akne ilacını yakın zamanda bırakmış kişilerde karar ayrıca değerlendirilir. Dövmenin içinde ya da kenarında biçimi, rengi veya boyutu değişen bir ben varsa önce o incelenir; böyle bir alana lazer uygulanmaz. Evde kullanılan silme kremleri ve tuzla ya da asitle soyma girişimleri kalıcı iz bırakabilir.</p>
     </div>
   </div>
 </section>
@@ -78,12 +78,12 @@ module.exports = {
     <div class="bolum-bas" data-gr>
       <p class="g-etiket">Sonrası</p>
       <h2>Değerlendirmeden sonra hangi adımlar konuşulur?</h2>
-      <p class="giris">Dövme ve kalıcı makyaj silme, muayenehanemizin öne çıkan uygulamalarından biridir ve lazer ile cihaz odasında yapılır. Aşağıdaki başlıklar genel bilgi amaçlıdır; seans aralığı, beklenen yanıt ve olası riskler muayenede size özel olarak konuşulur.</p>
+      <p class="giris">Dövme ve kalıcı makyaj silme, muayenehanemizin öne çıkan uygulamalarından biridir ve lazer ve cihaz odasında yapılır. Aşağıdaki başlıklar genel bilgi amaçlıdır; seans aralığı, beklenen yanıt ve olası riskler muayenede size özel olarak konuşulur.</p>
     </div>
     <div class="g-matris">
       <div class="g-mtab" data-gr>
         <div class="g-mbas"><span>Uygulama</span><span>Hedef</span><span>İyileşme</span><span></span></div>
-        <a class="g-msatir" data-akt href="${r}uygulamalar/pico-lazer-dovme-silme/" data-gg="${r}varliklar/gorsel/uyg-pico-lazer-dovme-silme.webp" data-gb="Pico lazer ile dövme silme" data-ga="Pikosaniye atımlarla mürekkep parçacıklarının küçültülmesi hedeflenir; görünüm seanslar boyunca kademeli olarak açılır."><h4>Pico lazer ile dövme silme</h4><span class="g-hucre"><i class="g-kcip g-kcip--1">MÜREKKEP</i></span><span class="g-hucre">Günler içinde</span><span class="g-git">→</span></a>
+        <a class="g-msatir" data-akt href="${r}uygulamalar/pico-lazer-dovme-silme/" data-gg="${r}varliklar/gorsel/uyg-pico-lazer-dovme-silme.webp" data-gb="Pico lazer ile dövme silme" data-ga="Pikosaniye atımlarla mürekkep parçacıklarının küçültülmesi hedeflenir; görünüm seanslar boyunca kademeli olarak açılır."><h4>Pico lazer ile dövme silme</h4><span class="g-hucre"><i class="g-kcip g-kcip--1">MÜREKKEP</i></span><span class="g-hucre">Birkaç gün–1 hafta</span><span class="g-git">→</span></a>
         <a class="g-msatir" href="${r}uygulamalar/hekim-muayenesi/" data-gg="${r}varliklar/gorsel/uyg-hekim-muayenesi.webp" data-gb="Hekim muayenesi" data-ga="Dövmenin rengi, yaşı, bölgesi, cilt tonunuz ve kullandığınız ilaçlar değerlendirilir; gerekiyorsa test atışı planlanır."><h4>Hekim muayenesi</h4><span class="g-hucre"><i class="g-kcip g-kcip--3">DEĞERLENDİRME</i></span><span class="g-hucre">Aynı gün</span><span class="g-git">→</span></a>
         <a class="g-msatir" href="${r}uygulamalar/uygulama-sonrasi-takip/" data-gg="${r}varliklar/gorsel/uyg-uygulama-sonrasi-takip.webp" data-gb="Uygulama sonrası takip" data-ga="Seanslar arasında derinin iyileşmesi, olası renk değişimleri ve bir sonraki seansın zamanı kontrol randevularında izlenir."><h4>Uygulama sonrası takip</h4><span class="g-hucre"><i class="g-kcip g-kcip--2">İZLEM</i></span><span class="g-hucre">Randevuya göre</span><span class="g-git">→</span></a>
       </div>

@@ -12,7 +12,7 @@ module.exports = {
   <div class="sar">
     <div>
       <nav class="kirinti" aria-label="Konum" style="position:relative;font-size:.76rem;color:var(--sessiz);display:flex;gap:7px;margin-bottom:18px"><a href="${r}" style="color:var(--sessiz);text-decoration:none">Ana sayfa</a> › <a href="${r}uygulamalar/" style="color:var(--sessiz);text-decoration:none">Uygulamalar</a> › <span>Selülit görünümü</span></nav>
-      <p class="g-etiket">Vücut Uygulamaları · Selülit Görünümü</p>
+      <p class="g-etiket">Enjeksiyon Uygulamaları · Selülit Görünümü</p>
       <h1>Selülit bir hastalık değil, <span class="g-isik">bir doku görünümüdür</span>.</h1>
       <p class="g-hero__alt">Selülit, deri altındaki yağ bölmelerinin, deriyi alttaki dokulara bağlayan ince bağ dokusu bantlarının arasından yukarı doğru kabarmasıyla oluşan pürüzlü görünümdür. Muayenehanemizde mezoterapi, bölgesel lipoliz ve cihaz basamaklarının kişiye göre birleştirildiği bir planla görünümün düzelmesi hedeflenir. Kilo vermenin ya da beslenme düzeninin yerine geçmez.</p>
       <div class="g-hero__cta">
