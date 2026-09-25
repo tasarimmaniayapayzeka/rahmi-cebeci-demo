@@ -101,7 +101,7 @@ module.exports = {
           <li><b>Elle fark edilen sertlik ya da yumru:</b> olağan kontrol yeterli olmaz; ayrı bir değerlendirme planlanır.</li>
         </ul>
       </div>
-      <div class="g-kutu g-b2 g-kutu--gorsel" data-gr><img src="${r}varliklar/gorsel/hekim-masasi.webp" alt="Masada dosya notlarını tutan eller" loading="lazy"><span class="g-ainot">Temsilî görsel · yapay zekâ ile üretildi</span></div>
+      <div class="g-kutu g-b2 g-kutu--gorsel" data-gr><img src="${r}varliklar/gorsel/uyg-yara-bakimi-ve-pansuman.webp" alt="Uygulama sonrası bakımda kullanılan steril gazlı bez ve bant" loading="lazy"><span class="g-ainot">Temsilî görsel · yapay zekâ ile üretildi</span></div>
       <div class="g-kutu g-b2 g-kutu--cta" data-gr><h3>Kontrol tarihinizi belirleyelim</h3><p>Kontrol ayrı bir işlem değil, planın bir parçasıdır.</p><a class="dgm dgm--altin" href="${r}iletisim/">Randevu talebi</a></div>
     </div>
   </div>

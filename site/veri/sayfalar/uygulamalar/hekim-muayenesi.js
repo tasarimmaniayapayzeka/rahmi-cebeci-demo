@@ -23,7 +23,7 @@ module.exports = {
       <div class="g-tikler"><span><i></i>Değerlendirmeyi hekim yapar</span><span><i></i>Yazılı plan ve onam</span><span><i></i>Gerekirse açık yönlendirme</span></div>
     </div>
     <div class="g-tarama" data-gr>
-      <img src="${r}varliklar/foto/hekim-koltuk.webp" width="1400" height="788" alt="${S.hekim.tam}, muayenehanesinde koltuğunda otururken" loading="eager">
+      <img src="${r}varliklar/foto/hekim-kare.webp" width="900" height="900" alt="${S.hekim.tam}, muayenehanesinde koltuğunda otururken" loading="eager">
       <div class="g-isin"></div>
     </div>
   </div>

@@ -62,7 +62,7 @@ module.exports = {
     <div class="g-atlas-duzen">
       <div class="g-atlas" data-gr>
         <div class="g-atlas-kap">
-          <img src="${r}varliklar/gorsel/grup-cilt-bakimi.webp" width="1600" height="900" alt="Bakım sırasında bir elin ve jelin yakın plan görünümü" loading="lazy">
+          <img src="${r}varliklar/gorsel/uyg-hassas-cilt-bakim-protokolu.webp" width="1400" height="788" alt="Nemlendirici krem ve pamuk ped" loading="lazy">
           <span class="g-ainot">Temsilî görsel · yapay zekâ ile üretildi</span>
           <div class="g-rozetk" data-grozet><b>Hacim kaybı</b><span>Kemikler ve tendonlar değişmez; üzerlerini örten katman incelir.</span></div>
         </div>
