@@ -39,7 +39,7 @@ module.exports = {
 <section class="bolum bolum--sicak" id="nedenler">
   <div class="sar">
     <div class="bolum-bas" data-gr>
-      <p class="g-etiket">Farkı nerede</p>
+      <p class="g-etiket">Fark nerede</p>
       <h2>Kırışıklıklar hangi yollarla oluşur?</h2>
       <p class="giris">Her mimik, deriyi aynı hat boyunca katlar. Genç deri bu katlanmanın hemen ardından düzleşir; yıllar geçtikçe esneklik azalır ve kat yeri kalıcı bir çizgiye dönüşür. Bu dönüşümde kasın çalışma gücü, deri içindeki destek liflerinin azalması, güneşin birikimli etkisi ve yüz hacminin yer değiştirmesi birlikte rol oynar.</p>
     </div>
@@ -82,7 +82,7 @@ module.exports = {
 <section class="bolum bolum--buz2">
   <div class="sar">
     <div class="bolum-bas" data-gr>
-      <p class="g-etiket">Uygulamadan sonra</p>
+      <p class="g-etiket">Buradan sonrası</p>
       <h2>Çizginin kaynağı netleşince hangi seçenekler konuşulur?</h2>
       <p class="giris">Genel ilke basittir: hareketten doğan çizgide kasın gücü, dokudan doğan çizgide derinin kendisi ya da alttaki hacim hedef alınır. Aşağıdaki liste bilgi vermek içindir; sizin için hangisinin uygun olduğunu muayene belirler.</p>
     </div>

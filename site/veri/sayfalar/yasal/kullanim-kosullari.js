@@ -84,7 +84,7 @@ module.exports = {
           <p>Araçları bir başkası adına, o kişinin bilgisi dışında doldurmayın.</p>
         </div>
         <div class="dgm-sira">
-          <a class="dgm dgm--iki" href="${r}hazirlik-listesi/">Hazırlık listesi ${ik.ok}</a>
+          <a class="dgm dgm--iki" href="${r}hazirlik-listesi/">Görüşmeye hazırlık notları ${ik.ok}</a>
         </div>
       </div>
 

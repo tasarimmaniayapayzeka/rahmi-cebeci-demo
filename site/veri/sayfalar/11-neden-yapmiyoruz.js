@@ -134,7 +134,7 @@ module.exports = {
         <p style="margin-top:10px">Açıklık zamandan da tasarruf ettirir: talebiniz bu listedeyse randevu sırası beklemeden ilgili branşa gidebilirsiniz. Bu sayfa bunun için yazıldı.</p>
         <div class="dgm-sira" style="margin-top:16px">
           <a class="dgm dgm--iki" href="${r}uygulamalar/">Burada yapılan uygulamalar ${ik.ok}</a>
-          <a class="dgm dgm--iki" href="${r}yaklasimimiz/">Yaklaşımımız ${ik.ok}</a>
+          <a class="dgm dgm--iki" href="${r}yaklasimimiz/">Randevudan kontrole ${ik.ok}</a>
         </div>
       </div>
       <div class="g-kutu g-b2 g-kutu--gece" data-gr style="--d:70ms"><span class="g-ket">Hekimin notu</span><p>“Neyin yapılmayacağını söylemek de hekimliğin bir parçasıdır.”</p></div>

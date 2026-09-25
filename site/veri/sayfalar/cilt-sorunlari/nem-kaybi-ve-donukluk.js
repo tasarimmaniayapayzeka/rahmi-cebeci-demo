@@ -34,7 +34,7 @@ module.exports = {
 <section class="bolum bolum--sicak" id="nedenler">
   <div class="sar">
     <div class="bolum-bas" data-gr>
-      <p class="g-etiket">Farkı nerede</p>
+      <p class="g-etiket">Fark nerede</p>
       <h2>Cilt neden su kaybeder ve matlaşır?</h2>
       <p class="giris">Nem kaybı ve donukluk, hem kolayca gözden kaçan hem de sıklıkla yanlış yönetilen şikâyetlerdendir. Cildini canlandırmak isteyen kişi çoğu zaman rafına yeni ürünler ekler ya da daha iddialı işlemlere yönelir. Oysa pek çok durumda önce yapılması gereken, cildi yoran adımları plandan çıkarmaktır.</p>
     </div>
@@ -59,12 +59,11 @@ module.exports = {
       <span class="g-kno">Kesit 04</span>
       <h3>Koruyucu katmanı zayıflatan etkenler</h3>
       <p>Çoğu zaman sebep bir hastalık değil, cilde iyi niyetle yapılan fazlalıklardır: cildi yağından tümüyle arındıran temizleyiciler ve çok sıcak su, aynı akşam üst üste sürülen aktif içerikler, birkaç günde bir değiştirilen ürünler, kalorifer ve klimayla kuruyan iç ortam, soğuk rüzgâr, uzun uçak yolculukları ve korunmasız güneş.</p>
-<p>Direnen tablolarda tiroit bozuklukları, kansızlık, bazı ilaçlar ve düzensiz uyku gibi genel etkenler de ele alınır.</p>
     </div>
     <div class="g-katblok" data-gr style="--d:240ms">
       <span class="g-kno">Kesit 05</span>
       <h3>Zayıflamayı düşündüren işaretler</h3>
-      <p>Yüzünüzü yıkadıktan sonra nemlendirici sürene kadar süren gerilme; önceden rahatça kullandığınız bir ürünün batması; nemlendiricinin etkisinin birkaç saatte kaybolması; sabah şiş ve mat, akşam gergin ve cansız bir cilt; sıcak, rüzgâr ya da sıcak duştan sonra beliren kızarıklık. Bunlardan birkaçı birlikte görülüyorsa yeni bir uygulama düşünmeden önce koruyucu katmanın durumuna bakılmalıdır.</p>
+      <p>Yüzünüzü yıkadıktan sonra nemlendirici sürene kadar süren gerilme; önceden rahatça kullandığınız bir ürünün batması; nemlendiricinin etkisinin birkaç saatte kaybolması; sabah şiş ve mat, akşam gergin ve cansız bir cilt; sıcak hava, rüzgâr ya da uzun ve sıcak bir duştan sonra beliren kızarıklık. Bunlardan birkaçı birlikte görülüyorsa yeni bir uygulama düşünmeden önce koruyucu katmanın durumuna bakılmalıdır.</p>
     </div>
     <div class="kutu kutu--bilgi" data-gr style="margin-top:26px">
       <b>Muayenede hangi yol izlenir?</b>
@@ -82,7 +81,7 @@ module.exports = {
 <section class="bolum bolum--buz2">
   <div class="sar">
     <div class="bolum-bas" data-gr>
-      <p class="g-etiket">Uygulamadan sonra</p>
+      <p class="g-etiket">Buradan sonrası</p>
       <h2>Koruyucu katman toparlanınca hangi seçenekler konuşulur?</h2>
       <p class="giris">Cilt hazır olduğunda ve uygun görülürse aşağıdaki adımlar değerlendirilir. Bunlar genel bir çerçevedir; size özel plan muayeneden sonra hekim tarafından kurulur.</p>
     </div>

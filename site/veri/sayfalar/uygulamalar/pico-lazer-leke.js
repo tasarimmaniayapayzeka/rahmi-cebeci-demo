@@ -12,7 +12,7 @@ module.exports = {
   <div class="sar">
     <div>
       <nav class="kirinti" aria-label="Konum" style="position:relative;font-size:.76rem;color:var(--sessiz);display:flex;gap:7px;margin-bottom:18px"><a href="${r}" style="color:var(--sessiz);text-decoration:none">Ana sayfa</a> › <a href="${r}uygulamalar/" style="color:var(--sessiz);text-decoration:none">Uygulamalar</a> › <span>Pico lazer ile leke</span></nav>
-      <p class="g-etiket">Cihaz ve Lazer · Cilt Tonu ve Leke</p>
+      <p class="g-etiket">Cihaz Destekli Uygulamalar · Cilt Tonu ve Leke</p>
       <h1>Pico lazerle leke: atımdan önce <span class="g-isik">lekenin adı</span> konur.</h1>
       <p class="g-hero__alt">Pikosaniye lazer, derinin üst katmanlarında kümelenmiş melanin pigmentini çok kısa atımlarla hedef alır. Ancak ciltteki her koyu alan aynı kökenden gelmez ve hepsi lazere uygun değildir. Bu yüzden ilk iş, her lekeye büyütmeli ışık altında tek tek bakmaktır; adı konamayan bir lekeye atım yapılmaz.</p>
       <div class="g-hero__cta">

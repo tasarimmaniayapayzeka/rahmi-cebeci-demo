@@ -12,7 +12,7 @@ module.exports = {
   <div class="sar">
     <div>
       <nav class="kirinti" aria-label="Konum" style="position:relative;font-size:.76rem;color:var(--sessiz);display:flex;gap:7px;margin-bottom:18px"><a href="${r}" style="color:var(--sessiz);text-decoration:none">Ana sayfa</a> › <a href="${r}uygulamalar/" style="color:var(--sessiz);text-decoration:none">Uygulamalar</a> › <span>Altın iğne radyofrekans</span></nav>
-      <p class="g-etiket">Cihaz ve Lazer · Akne İzi ve Doku</p>
+      <p class="g-etiket">Cihaz Destekli Uygulamalar · Akne İzi ve Doku</p>
       <h1>Altın iğne radyofrekans: ısıyı <span class="g-isik">derinin içinde</span> üreten mikroiğne.</h1>
       <p class="g-hero__alt">Radyofrekans enerjisi burada deri yüzeyine değil, deriye giren çok ince iğnelerin uçlarına taşınır. Isı, iğne ucunun durduğu yerde oluşur; üst katman büyük ölçüde sağlam kalırken derinde bir onarım süreci tetiklenir. En çok akne izi, belirgin gözenek ve pürüzlü doku için gündeme gelir.</p>
       <div class="g-hero__cta">
@@ -98,7 +98,7 @@ module.exports = {
       <div class="g-kutu g-b2 g-kutu--cta" data-gr style="--d:140ms"><h3>İzlerinize birlikte bakalım</h3><p>Yöntem, izlerin biçimi ve derinliği görüldükten sonra seçilir.</p><a class="dgm dgm--altin" href="${r}iletisim/">Randevu isteyin</a></div>
       <div class="kutu kutu--acil g-b6" data-gr>
         <b>Beklemeden bize ulaşmanız gereken durumlar</b>
-        <p>Birkaç gün içinde yatışması beklenen bulgular tersine artıyorsa, yani kızarıklık yayılıyor, ağrı şiddetleniyor, akıntı, ateş, kabarcık ya da uzayan şişlik görülüyorsa kendiliğinden geçmesini beklemeyin. ${S.iletisim.tel} numarasından bize ulaşın; telefonla ulaşamıyorsanız en yakın acil servise gidin. Kontrol ve izlem düzenini <a href="${r}uygulamalar/uygulama-sonrasi-takip/">uygulama sonrası takip</a> sayfasında bulabilirsiniz.</p>
+        <p>Birkaç gün içinde yatışması beklenen bulgular tersine artıyorsa, yani kızarıklık yayılıyor, ağrı şiddetleniyor, akıntı, ateş, kabarcık ya da uzayan şişlik görülüyorsa kendiliğinden geçmesini beklemeyin. ${S.iletisim.tel} numarasından bize ulaşın; telefonla ulaşamıyorsanız en yakın acil servise gidin. Kontrol ve izlem düzenini <a href="${r}uygulamalar/uygulama-sonrasi-takip/">uygulama sonrası kontrol</a> sayfasında bulabilirsiniz.</p>
       </div>
     </div>
   </div>

@@ -61,7 +61,7 @@ module.exports = {
       }])))}</script>
 
     <div class="kutu kutu--bilgi" style="margin-top:26px" data-gr>
-      <b>Pusula yön gösterir, karar vermez</b>
+      <b>Rehber yön gösterir, karar vermez</b>
       <p>Bir bölgede sizin için hangi uygulamanın doğru olduğunu belirlemek bu aracın işi değildir. Notlar genel bir çerçeve çizer; sizin yüzünüz ya da vücudunuz için geçerli olanı ancak muayene ortaya koyar.</p>
     </div>
 

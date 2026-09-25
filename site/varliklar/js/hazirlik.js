@@ -33,9 +33,9 @@
       n: 'Bazı ürünler amid tipi lokal anestezik içerir; ağır alerji öyküsü uygulama kararını doğrudan etkiler.',
       evet: 'KIRMIZI', bilmiyorum: 'KIRMIZI', et: 'Ağır alerji veya önceki enjeksiyon reaksiyonu öyküsü' },
 
-    { k: 'izotretinoin', s: 'Son 6 ay içinde isotretinoin (yaygın ticari adlarıyla bilinen akne ilacı) kullandınız mı ya da hâlen kullanıyor musunuz?',
+    { k: 'izotretinoin', s: 'Son 6 ay içinde izotretinoin (yaygın ticari adlarıyla bilinen akne ilacı) kullandınız mı ya da hâlen kullanıyor musunuz?',
       n: 'Bu ilacın cilt yenileme uygulamalarıyla ilişkisi konusunda bilimsel görüşler farklılık göstermektedir; bu nedenle karar hekiminize aittir ve mutlaka bildirmeniz gerekir.',
-      evet: 'SARI', bilmiyorum: 'SARI', et: 'Son 6 ayda isotretinoin kullanımı' },
+      evet: 'SARI', bilmiyorum: 'SARI', et: 'Son 6 ayda izotretinoin kullanımı' },
 
     { k: 'kanama', s: 'Kan sulandırıcı bir ilaç kullanıyor musunuz (varfarin, yeni nesil kan sulandırıcılar, günlük aspirin, düzenli ağrı kesici, balık yağı, ginkgo) ya da bilinen bir kanama veya pıhtılaşma bozukluğunuz var mı?',
       n: 'Bu ilaçlar morarma ve kanama eğilimini artırabilir; uygulama planı buna göre değişebilir.',

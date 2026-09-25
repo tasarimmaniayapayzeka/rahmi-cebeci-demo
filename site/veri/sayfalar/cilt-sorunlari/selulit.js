@@ -34,7 +34,7 @@ module.exports = {
 <section class="bolum bolum--sicak" id="nedenler">
   <div class="sar">
     <div class="bolum-bas" data-gr>
-      <p class="g-etiket">Farkı nerede</p>
+      <p class="g-etiket">Fark nerede</p>
       <h2>Selülit nedir, ne değildir?</h2>
       <p class="giris">Selülit, deri altındaki yağ dokusunun yerleşim biçimiyle ilgilidir. Yağ, deriye dik uzanan lif bantlarıyla ayrılmış küçük odacıklar içinde durur. Odacıklar dolgunlaştığında ya da bantlar deriyi aşağı çektiğinde yüzeyde çukurlar ve kabarıklıklar belirir. Aşağıdaki başlıklar, muayenede sorulan temel soruları özetler.</p>
     </div>
@@ -76,7 +76,7 @@ module.exports = {
 <section class="bolum bolum--buz2">
   <div class="sar">
     <div class="bolum-bas" data-gr>
-      <p class="g-etiket">Uygulamadan sonra</p>
+      <p class="g-etiket">Buradan sonrası</p>
       <h2>Evre belirlendikten sonra hangi seçenekler konuşulur?</h2>
       <p class="giris">Aşağıdaki başlıklar, selülit görünümü ve ona eşlik edebilen yağ birikimi için konuşulan seçeneklerdir. Hangisinin ne amaçla kullanılacağı evrenize ve muayene bulgularınıza göre belirlenir; sonuçlar kişiden kişiye değişir.</p>
     </div>

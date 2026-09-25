@@ -330,7 +330,7 @@ module.exports = {
       <a class="kart" data-egim href="${r}hazirlik-listesi/arac/" data-reveal style="--d:0ms">
         <span class="kart__ikon">${ik.liste}</span>
         <span class="rozet">12 madde, yaklaşık 2 dakika</span>
-        <h3 style="margin-top:8px">Muayeneye hazırlık listesi</h3>
+        <h3 style="margin-top:8px">Görüşmeye hazırlık notları</h3>
         <p>Muayenede söylemeniz gereken ilaç, sağlık öyküsü ve önceki uygulama bilgilerini toparlamanıza yardım eder. Tanı koymaz, tarama yapmaz, işlem önermez ve uygunluk kararı vermez.</p>
         <span class="kart__ok">Listeyi açın ${ik.ok}</span>
       </a>
@@ -353,7 +353,7 @@ module.exports = {
         <div class="bolum-bas" style="margin-bottom:0">
           <p class="etiket">Akla takılanlar</p>
           <h2>Aklınıza takılabilecekler</h2>
-          <p class="giris" style="margin-top:10px">Bir kategori seçerek listeyi daraltabilirsiniz. Burada yer almayan sorular için sık sorulan sorular sayfasına göz atın.</p>
+          <p class="giris" style="margin-top:10px">Bir kategori seçerek listeyi daraltabilirsiniz. Burada yer almayan sorular için Soru ve yanıtlar sayfasına göz atın.</p>
         </div>
         <div class="sss2__filtre" data-sss-filtre role="group" aria-label="Soru kategorileri">
           <button type="button" data-kat="hepsi" aria-pressed="true">Hepsi <span class="adet">8</span></button>

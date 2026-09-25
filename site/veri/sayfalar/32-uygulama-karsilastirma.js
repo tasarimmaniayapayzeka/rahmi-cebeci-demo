@@ -15,7 +15,7 @@ module.exports = {
   <div class="sar">
     <p class="g-etiket">Yan yana tablo</p>
     <h1>İki uygulama, beş başlık, tek tablo</h1>
-    <p class="g-bhero__alt">Bir şikâyetin karşılığı tek bir uygulama olmayabilir. Bu masada seçtiğiniz iki uygulamayı hedef, uygulama sırasındaki his, iyileşme süreci, etkinin ortaya çıkma zamanı ve kalıcılık başlıklarında karşılaştırabilirsiniz. Metinler, her uygulamanın kendi sayfasındaki bilgilerden derlenmiştir.</p>
+    <p class="g-bhero__alt">Bir şikâyetin karşılığı tek bir uygulama olmayabilir. Bu tabloda seçtiğiniz iki uygulamayı hedef, uygulama sırasındaki his, iyileşme süreci, etkinin ortaya çıkma zamanı ve kalıcılık başlıklarında karşılaştırabilirsiniz. Metinler, her uygulamanın kendi sayfasındaki bilgilerden derlenmiştir.</p>
     <div class="g-bmeta">
       <span><i></i>Son güncelleme: ${S.guncelleme}</span>
       <span><i></i>Genel bilgilendirme</span>

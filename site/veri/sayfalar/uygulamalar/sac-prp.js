@@ -12,7 +12,7 @@ module.exports = {
   <div class="sar">
     <div>
       <nav class="kirinti" aria-label="Konum" style="position:relative;font-size:.76rem;color:var(--sessiz);display:flex;gap:7px;margin-bottom:18px"><a href="${r}" style="color:var(--sessiz);text-decoration:none">Ana sayfa</a> › <a href="${r}uygulamalar/" style="color:var(--sessiz);text-decoration:none">Uygulamalar</a> › <span>Saç PRP</span></nav>
-      <p class="g-etiket">Saç uygulaması · PRP</p>
+      <p class="g-etiket">Saç Sağlığı · PRP</p>
       <h1>Saç PRP: <span class="g-isik">kendi kanınızdan hazırlanan plazma</span></h1>
       <p class="g-hero__alt">Saç PRP’de koldan alınan az miktarda kan kapalı bir tüpte santrifüj edilir; trombositten zengin plazma bölümü ayrılarak aynı seansta saçlı deriye uygulanır. Hedeflenen, kıl kökünü çevreleyen dokunun kendi onarım süreçlerinin desteklenmesidir. Yeni saç kökü oluşturmaz ve dökülmenin nedenini araştırmanın yerine geçmez.</p>
       <div class="g-hero__cta">
@@ -130,7 +130,7 @@ module.exports = {
     <div class="kutu kutu--bilgi" data-gr style="margin-top:16px;--d:140ms">
       <b>Devamı için</b>
       <p><a href="${r}uygulamalar/sac-mezoterapisi/">Saç mezoterapisi</a> sık sık saç PRP ile karıştırılır; oysa ikisinin işleyişi ayrıdır. PRP’de kendi plazmanız kullanılır, kan alınması gerekir ve kan değerleriniz kararı doğrudan etkiler; mezoterapide ise hazır bir karışım verilir ve içeriğe karşı duyarlılık ayrıca sorgulanır.</p>
-<p>Bazı planlarda iki uygulama dönüşümlü olarak kullanılabilir. Dökülme türlerinin ayrımı için <a href="${r}cilt-sorunlari/sac-dokulmesi/">saç dökülmesi</a>, yüz cildinde plazma kullanımı için <a href="${r}uygulamalar/prp/">PRP</a>, bölgeye özel bakış için <a href="${r}bolgeler/sacli-deri/">saçlı deri</a>, iyileşmenin izlenmesi için <a href="${r}uygulamalar/uygulama-sonrasi-takip/">uygulama sonrası takip</a> sayfalarına bakabilirsiniz.</p>
+<p>Bazı planlarda iki uygulama dönüşümlü olarak kullanılabilir. Dökülme türlerinin ayrımı için <a href="${r}cilt-sorunlari/sac-dokulmesi/">saç dökülmesi</a>, yüz cildinde plazma kullanımı için <a href="${r}uygulamalar/prp/">PRP</a>, bölgeye özel bakış için <a href="${r}bolgeler/sacli-deri/">saçlı deri</a>, iyileşmenin izlenmesi için <a href="${r}uygulamalar/uygulama-sonrasi-takip/">uygulama sonrası kontrol</a> sayfalarına bakabilirsiniz.</p>
     </div>
   </div>
 </section>

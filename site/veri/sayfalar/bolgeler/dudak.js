@@ -43,7 +43,7 @@ module.exports = {
 <section class="bolum" id="uc-baslik">
   <div class="sar">
     <div class="bolum-bas" data-gr>
-      <p class="g-etiket">Farkı nerede</p>
+      <p class="g-etiket">Fark nerede</p>
       <h2>Dudakla ilgili yakınma hangi konuya giriyor?</h2>
       <p class="giris">Muayeneye gelenlerin çoğu “dudaklarım çok ince” diyerek söze başlar; yakından bakıldığında ise sorun sıklıkla kenar çizgisinde ya da yüzeyin kuruluğunda çıkar. Üç konu aynı kişide bir arada olabilir. Hangisinin ağır bastığı anlaşılmadan plan yazmayız.</p>
     </div>
@@ -126,7 +126,7 @@ module.exports = {
       </div>
       <div class="g-kutu g-b2" data-gr style="--d:70ms">
         <span class="g-ket">Evre 2 · ERKEN KARAR</span>
-        <p><b style="color:var(--murekkep)">Şişken hâline bakıp eklemek</b><br>İşlemden hemen sonra dudak şiş olduğu için gerçek sonuç henüz görünmez. Bu dönemde “yeterince olmamış” deyip üzerine eklemek sık yapılan bir yanlıştır; karar, şişlik tamamen indikten sonra verilir.</p>
+        <p><b style="color:var(--murekkep)">Şişkin hâline bakıp eklemek</b><br>İşlemden hemen sonra dudak şiş olduğu için gerçek sonuç henüz görünmez. Bu dönemde “yeterince olmamış” deyip üzerine eklemek sık yapılan bir yanlıştır; karar, şişlik tamamen indikten sonra verilir.</p>
       </div>
       <div class="g-kutu g-b2" data-gr style="--d:140ms">
         <span class="g-ket">Evre 3 · SINIR AŞIMI</span>

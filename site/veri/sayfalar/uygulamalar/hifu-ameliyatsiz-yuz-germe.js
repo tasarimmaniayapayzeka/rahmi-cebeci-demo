@@ -12,7 +12,7 @@ module.exports = {
   <div class="sar">
     <div>
       <nav class="kirinti" aria-label="Konum" style="position:relative;font-size:.76rem;color:var(--sessiz);display:flex;gap:7px;margin-bottom:18px"><a href="${r}" style="color:var(--sessiz);text-decoration:none">Ana sayfa</a> › <a href="${r}uygulamalar/" style="color:var(--sessiz);text-decoration:none">Uygulamalar</a> › <span>HIFU ile ameliyatsız yüz germe</span></nav>
-      <p class="g-etiket">Cihaz ve Lazer · Cilt Sıkılığı</p>
+      <p class="g-etiket">Cihaz Destekli Uygulamalar · Cilt Sıkılığı</p>
       <h1>HIFU ile ameliyatsız yüz germe: ultrason <span class="g-isik">derin katmana</span> odaklanır.</h1>
       <p class="g-hero__alt">Büyüteçle toplanan güneş ışığı gibi, HIFU başlığından çıkan ses dalgaları da deri yüzeyini ısıtmadan geçip belirli bir derinlikte tek noktada birleşir. Bu noktalarda oluşan küçük ısı odakları dokuda yavaş ilerleyen bir onarımı başlatır. Halk arasında “ameliyatsız yüz germe” diye anılsa da cerrahinin yerini tutmaz; hedef, hafif–orta gevşemede sıkılıkta görünür bir değişimdir.</p>
       <div class="g-hero__cta">

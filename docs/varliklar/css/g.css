@@ -676,3 +676,6 @@ main:has(>.g-hero)>.sar{order:9}
 /* kart içeriği sola yaslı, tam genişlik (tablo satırının ortalama ayarı kartlara geçiyordu) */
 .g-msatir{align-items:stretch !important;text-align:left}
 .g-msatir>*{align-self:stretch}
+
+/* ---------- 34 · okunabilirlik: büyük harfli küçük etiketler 11 px altına inmez ---------- */
+body .marka__alt,body .g-kutu .g-ket,body .g-ket,body .g-scevap .g-yazan,body .g-kcip,body .rozet{font-size:.68rem}

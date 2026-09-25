@@ -12,7 +12,7 @@ module.exports = {
   <div class="sar">
     <div>
       <nav class="kirinti" aria-label="Konum" style="position:relative;font-size:.76rem;color:var(--sessiz);display:flex;gap:7px;margin-bottom:18px"><a href="${r}" style="color:var(--sessiz);text-decoration:none">Ana sayfa</a> › <a href="${r}uygulamalar/" style="color:var(--sessiz);text-decoration:none">Uygulamalar</a> › <span>Pico lazer ile dövme silme</span></nav>
-      <p class="g-etiket">Cihaz ve Lazer · Dövme Silme</p>
+      <p class="g-etiket">Cihaz Destekli Uygulamalar · Dövme Silme</p>
       <h1>Pico lazerle dövme silme: mürekkep <span class="g-isik">seanslar içinde</span> açılır.</h1>
       <p class="g-hero__alt">Pikosaniye, saniyenin trilyonda biridir; pico lazer enerjisini bu kadar kısa süren atımlarla verir. Hedef, deri içindeki mürekkep taneciklerini ısınmaya fırsat bulmadan ufalamak ve bu kırıntıların vücut tarafından haftalar içinde taşınmasını sağlamaktır. Tam silinme taahhüt edilmez; amaç, görünümün her seansla biraz daha açılmasıdır.</p>
       <div class="g-hero__cta">
@@ -151,7 +151,7 @@ module.exports = {
     <div class="g-katblok" data-gr style="--d:300ms">
       <span class="g-kno">Kesit 06</span>
       <h3>Seanslar arasında</h3>
-      <p>Deri kapandıktan sonra bölgeyi her gün yüksek korumalı güneş koruyucuyla ya da giysiyle örtün; koruma dizi boyunca sürer. Altı–sekiz hafta sonraki kontrolde açılma değerlendirilir ve sonraki seansa birlikte karar verilir. İzlem düzeni <a href="${r}uygulamalar/uygulama-sonrasi-takip/">uygulama sonrası takip</a> sayfasında.</p>
+      <p>Deri kapandıktan sonra bölgeyi her gün yüksek korumalı güneş koruyucuyla ya da giysiyle örtün; koruma dizi boyunca sürer. Altı–sekiz hafta sonraki kontrolde açılma değerlendirilir ve sonraki seansa birlikte karar verilir. İzlem düzeni <a href="${r}uygulamalar/uygulama-sonrasi-takip/">uygulama sonrası kontrol</a> sayfasında.</p>
     </div>
   </div>
 </section>

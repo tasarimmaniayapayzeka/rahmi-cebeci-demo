@@ -136,7 +136,7 @@ module.exports = {
           </ul>
         </div>
         <div class="dgm-sira">
-          <a class="dgm dgm--iki" href="${r}hazirlik-listesi/">Muayeneye hazırlık listesi ${ik.ok}</a>
+          <a class="dgm dgm--iki" href="${r}hazirlik-listesi/">Görüşmeye hazırlık notları ${ik.ok}</a>
         </div>
       </div>
 

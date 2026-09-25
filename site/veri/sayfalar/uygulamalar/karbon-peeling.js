@@ -12,7 +12,7 @@ module.exports = {
   <div class="sar">
     <div>
       <nav class="kirinti" aria-label="Konum" style="position:relative;font-size:.76rem;color:var(--sessiz);display:flex;gap:7px;margin-bottom:18px"><a href="${r}" style="color:var(--sessiz);text-decoration:none">Ana sayfa</a> › <a href="${r}uygulamalar/" style="color:var(--sessiz);text-decoration:none">Uygulamalar</a> › <span>Karbon peeling</span></nav>
-      <p class="g-etiket">Cihaz ve Lazer · Gözenek ve Yağlanma</p>
+      <p class="g-etiket">Cihaz Destekli Uygulamalar · Gözenek ve Yağlanma</p>
       <h1>Karbon peeling: siyah losyon ve pico lazerle <span class="g-isik">yüzeysel</span> tazelenme.</h1>
       <p class="g-hero__alt">Yüze ince bir tabaka siyah karbon losyonu sürülür ve kuruması beklenir. Ardından pikosaniye lazer yüz boyunca gezdirilir; koyu tanecikler enerjiyi üzerine çeker ve dağılırken yüzeydeki ölü hücreleri, gözenek ağzındaki birikimi de beraberinde götürür. Etki derine inmez; bu yüzden birkaç seanslık bir dizi olarak planlanır.</p>
       <div class="g-hero__cta">

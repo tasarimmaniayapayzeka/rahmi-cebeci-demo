@@ -34,7 +34,7 @@ module.exports = {
 <section class="bolum bolum--sicak" id="nedenler">
   <div class="sar">
     <div class="bolum-bas" data-gr>
-      <p class="g-etiket">Farkı nerede</p>
+      <p class="g-etiket">Fark nerede</p>
       <h2>Aynada gördüğünüz dolgunluğun kaynağı ne?</h2>
       <p class="giris">Dolgun görünen her bölgede yağ dokusu bulunmayabilir. Sıvı birikimi, kas kütlesi, deri gevşekliği ve duruş bozukluğu benzer bir görüntü oluşturabilir. Bu dört olasılık birbirinden ayrılmadan işlem konuşulmaz; çünkü yanlış dokuyu hedefleyen bir uygulama sonuç vermediği gibi mevcut görünümü daha da belirginleştirebilir. Ayrım elle muayene, gün içindeki değişimin sorulması ve derinin esnekliğine bakılarak yapılır.</p>
     </div>
@@ -77,7 +77,7 @@ module.exports = {
 <section class="bolum bolum--buz2">
   <div class="sar">
     <div class="bolum-bas" data-gr>
-      <p class="g-etiket">Uygulamadan sonra</p>
+      <p class="g-etiket">Buradan sonrası</p>
       <h2>Ayrım netleşince hangi seçenekler konuşulur?</h2>
       <p class="giris">Gerçekçi beklenti, sınırlı bir bölgede görünümün değişmesidir. Değişim kademeli gelişir, çoğunlukla haftalar ile aylar arasında belirginleşir ve kişiden kişiye farklıdır. Belirli bir santim kaybı ya da belirli sayıda seansta belirli bir sonuç vaat edilmez; size özel plan muayeneden sonra hekim tarafından kurulur.</p>
     </div>

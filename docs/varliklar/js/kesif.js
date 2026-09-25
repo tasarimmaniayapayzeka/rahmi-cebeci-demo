@@ -79,7 +79,7 @@
       gorsel.classList.add('pus-gecis');
       setTimeout(function () {
         gorsel.src = b.gorsel;
-        gorsel.alt = b.ad + ' bölgesinin temsili görseli';
+        gorsel.alt = b.ad + ' bölgesinin temsilî görseli';
         gorsel.onload = function () { gorsel.classList.remove('pus-gecis'); };
         setTimeout(function () { gorsel.classList.remove('pus-gecis'); }, 900); /* emniyet */
         kart.querySelector('b').textContent = b.ad;

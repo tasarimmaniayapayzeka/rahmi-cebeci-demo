@@ -80,7 +80,7 @@ module.exports = {
           <ul>
             <li>Tanıtım, duyuru veya toplu ileti gönderimi. Formdaki iletişim bilgilerinize pazarlama mesajı yollanmaz, bu bilgilerle ticari elektronik ileti listesi kurulmaz.</li>
             <li>Bilgilerin başka bir kişiye, iş ortağına ya da reklam ajansına verilmesi.</li>
-            <li>Yurt dışına aktarım. Form bilgilerinin yurt dışındaki herhangi bir alıcıya gönderilmesi bu rızaya dahil değildir.</li>
+            <li>Yurt dışına aktarım. Form bilgilerinin yurt dışındaki herhangi bir alıcıya gönderilmesi bu rızaya dâhil değildir.</li>
             <li>Profilleme ve otomatik karar. Mesajlar bir yazılıma değerlendirtilmez, hakkınızda otomatik sonuç üretilmez; her mesajı bir kişi okur.</li>
             <li>Formla sağlık verisi toplanması. Form bu iş için tasarlanmadı.</li>
           </ul>
@@ -147,7 +147,7 @@ module.exports = {
             <span class="kart__ok">Oku ${ik.ok}</span>
           </a>
           <a class="kart" href="${r}hazirlik-listesi/">
-            <h3>Randevuya hazırlanma listesi</h3>
+            <h3>Görüşmeye hazırlık notları</h3>
             <p>Randevuya hazırlanmanızı kolaylaştıran, yalnız kendi cihazınızda çalışan kontrol listesi.</p>
             <span class="kart__ok">Aç ${ik.ok}</span>
           </a>

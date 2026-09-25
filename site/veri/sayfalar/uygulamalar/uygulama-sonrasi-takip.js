@@ -14,7 +14,7 @@ module.exports = {
       <nav class="kirinti" aria-label="Konum" style="position:relative;font-size:.76rem;color:var(--sessiz);display:flex;gap:7px;margin-bottom:18px"><a href="${r}" style="color:var(--sessiz);text-decoration:none">Ana sayfa</a> › <a href="${r}uygulamalar/" style="color:var(--sessiz);text-decoration:none">Uygulamalar</a> › <span>Uygulama sonrası kontrol</span></nav>
       <p class="g-etiket">Değerlendirme ve Takip · Kontrol</p>
       <h1>Uygulama sonrası kontrol: <span class="g-isik">iyileşmeyi birlikte izlemek</span></h1>
-      <p class="g-hero__alt">Uygulama sonrası kontrol, işlemden sonraki iyileşmenin önceden belirlenmiş kontrollerle izlenmesidir. Kontrolde iyileşmenin zamanında ilerleyip ilerlemediği değerlendirilir, evdeki bakım adımları birlikte gözden geçirilir ve beklenmeyen bir bulgu varsa büyümeden ele alınır. Takibi uygulamayı yapan hekim yürütür; kontrol, planın ayrı düşünülemeyecek bir parçasıdır.</p>
+      <p class="g-hero__alt">Uygulama sonrası kontrol, işlemden sonraki iyileşmenin önceden planlanmış randevularla izlenmesidir. Bu görüşmelerde iyileşmenin zamanında ilerleyip ilerlemediği değerlendirilir, evdeki bakım adımları birlikte gözden geçirilir ve beklenmeyen bir bulgu varsa büyümeden ele alınır. Süreci uygulamayı yapan hekim yürütür; bu randevular planın ayrılmaz bir parçasıdır.</p>
       <div class="g-hero__cta">
         <a class="dgm dgm--bir" href="${r}iletisim/">Randevu isteyin</a>
         <a class="dgm dgm--iki" href="#ilkbolum">Seyrini okuyun ↓</a>
@@ -129,7 +129,7 @@ module.exports = {
 <section class="bolum bolum--buz2"><div class="sar">
   <div class="bolum-bas" data-gr><p class="g-etiket">Sık gelen sorular</p><h2>Merak ettiğiniz soruya dokunun, yanıtı burada açılsın</h2></div>
   <div class="g-sorgu" data-gr>
-    <div class="g-sorgu-bas"><i></i><i></i><i></i><span>rahmi-cebeci · takip · soru-cevap</span></div>
+    <div class="g-sorgu-bas"><i></i><i></i><i></i><span>rahmi-cebeci · kontrol · soru-cevap</span></div>
     <div class="g-sorgu-ic">
       <div class="g-slistem">
         <button class="g-ssoru" data-akt data-gs="0"><i>›</i>Fotoğraf göndersem değerlendirebilir misiniz?</button>

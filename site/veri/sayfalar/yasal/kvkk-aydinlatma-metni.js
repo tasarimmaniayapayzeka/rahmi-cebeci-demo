@@ -188,7 +188,7 @@ module.exports = {
             <span class="kart__ok">Oku ${ik.ok}</span>
           </a>
           <a class="kart" href="${r}yasal/icerik-ve-gorsel-yayin-ilkelerimiz/">
-            <h3>Yayın ilkelerimiz</h3>
+            <h3>Yayın ve görsel kullanım esaslarımız</h3>
             <p>Sitede neden öncesi–sonrası fotoğrafına ve hasta yorumuna yer vermediğimiz.</p>
             <span class="kart__ok">Oku ${ik.ok}</span>
           </a>

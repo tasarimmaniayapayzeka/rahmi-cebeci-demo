@@ -12,7 +12,7 @@ module.exports = {
   <div class="sar">
     <div>
       <nav class="kirinti" aria-label="Konum" style="position:relative;font-size:.76rem;color:var(--sessiz);display:flex;gap:7px;margin-bottom:18px"><a href="${r}" style="color:var(--sessiz);text-decoration:none">Ana sayfa</a> › <a href="${r}uygulamalar/" style="color:var(--sessiz);text-decoration:none">Uygulamalar</a> › <span>Fraksiyonel lazer</span></nav>
-      <p class="g-etiket">Cihaz ve Lazer · Cilt Yenileme</p>
+      <p class="g-etiket">Cihaz Destekli Uygulamalar · Cilt Yenileme</p>
       <h1>Fraksiyonel lazer: cildi <span class="g-isik">mikro alanlarla</span> yenileme</h1>
       <p class="g-hero__alt">Fraksiyonel lazer, ışını cildin tamamına değil, birbirinden ayrık çok sayıda küçük alana verir. Her mikro alanda denetimli bir hasar oluşur; aralarda kalan sağlam deri iyileşmeyi hızlandırır. Akne izi, gözenek görünümü ve ince çizgilerde yüzeyin yenilenmesi hedeflenir; hangi modun, hangi derinlikte kullanılacağına cildiniz görüldükten sonra karar verilir.</p>
       <div class="g-hero__cta">

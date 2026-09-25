@@ -229,7 +229,7 @@ module.exports = {
       </div>
     </div>
     <div class="kutu kutu--bilgi" data-gr style="margin-top:22px">
-      <p>Haklarınızın tamamı <a href="${r}yasal/hasta-haklari/">hasta hakları</a>, verilerinizin işlenme biçimi <a href="${r}yasal/kvkk-aydinlatma-metni/">KVKK aydınlatma metni</a> sayfasında yer alır. Uygulamadan sonraki dönemde nelerin izlendiğini <a href="${r}uygulamalar/uygulama-sonrasi-takip/">uygulama sonrası takip</a> sayfasında bulabilirsiniz.</p>
+      <p>Haklarınızın tamamı <a href="${r}yasal/hasta-haklari/">hasta hakları</a>, verilerinizin işlenme biçimi <a href="${r}yasal/kvkk-aydinlatma-metni/">KVKK aydınlatma metni</a> sayfasında yer alır. Uygulamadan sonraki dönemde nelerin izlendiğini <a href="${r}uygulamalar/uygulama-sonrasi-takip/">uygulama sonrası kontrol</a> sayfasında bulabilirsiniz.</p>
     </div>
   </div>
 </section>
@@ -293,7 +293,7 @@ module.exports = {
         <span class="kart__ok">İncele ${ik.ok}</span>
       </a>
       <a class="kart" href="${r}hazirlik-listesi/" data-gr style="--d:140ms">
-        <h3>Randevuya hazırlanma listesi</h3>
+        <h3>Görüşmeye hazırlık notları</h3>
         <p>Görüşmeye gelmeden önce hazırlamanız ve yanınıza almanız gerekenler.</p>
         <span class="kart__ok">İncele ${ik.ok}</span>
       </a>

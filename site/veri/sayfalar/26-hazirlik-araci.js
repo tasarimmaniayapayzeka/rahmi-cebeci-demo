@@ -13,7 +13,7 @@ module.exports = {
   <div class="sar">
     <nav class="kirinti" aria-label="Konum">
       <a href="${r}">Ana sayfa</a><span aria-hidden="true">›</span>
-      <a href="${r}hazirlik-listesi/">Hazırlık listesi</a><span aria-hidden="true">›</span>
+      <a href="${r}hazirlik-listesi/">Hazırlık notları</a><span aria-hidden="true">›</span>
       <span>Doldurulabilir liste</span>
     </nav>
   </div>

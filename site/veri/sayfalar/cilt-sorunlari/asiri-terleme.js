@@ -34,7 +34,7 @@ module.exports = {
 <section class="bolum bolum--sicak" id="nedenler">
   <div class="sar">
     <div class="bolum-bas" data-gr>
-      <p class="g-etiket">Farkı nerede</p>
+      <p class="g-etiket">Fark nerede</p>
       <h2>Hangi soruların yanıtı iki grubu birbirinden ayırır?</h2>
       <p class="giris">Dört soru yol gösterir: terleme hangi yaşta başladı, belli bölgelerle mi sınırlı, iki tarafta eşit mi ve uykuda da sürüyor mu? Aşağıdaki özellikler bir ön fikir verir; ayrım ise öykünüz, muayene ve gerekirse tetkiklerle tamamlanır.</p>
     </div>
@@ -72,7 +72,7 @@ module.exports = {
 <section class="bolum bolum--buz2">
   <div class="sar">
     <div class="bolum-bas" data-gr>
-      <p class="g-etiket">Uygulamadan sonra</p>
+      <p class="g-etiket">Buradan sonrası</p>
       <h2>Diğer nedenler dışlandıktan sonra hangi seçenekler konuşulur?</h2>
       <p class="giris">Başka bir hastalık olmadığı anlaşıldıktan sonra da ilk sırada basit önlemler yer alır: ter önleyici ürünü akşam saatlerinde ve kuru deriye sürmek, nefes alan kumaşlar ve uygun ayakkabı seçmek. Bu önlemler yetmezse bölgesel bir uygulama hekim tarafından değerlendirilir.</p>
     </div>

@@ -34,7 +34,7 @@ module.exports = {
 <section class="bolum bolum--sicak" id="nedenler">
   <div class="sar">
     <div class="bolum-bas" data-gr>
-      <p class="g-etiket">Farkı nerede</p>
+      <p class="g-etiket">Fark nerede</p>
       <h2>Dökülme yaygın mı, yoksa belli bir bölgede mi yoğunlaşıyor?</h2>
       <p class="giris">Saç, vücuttaki genel dengenin bozulduğunu erkenden ve gözle görülür biçimde yansıtır. Dökülmeyi çoğu zaman saçın kendisinden değil, vücudun başka bir yerindeki değişimden okuruz. Saç döngüsü ağır işlediği için muayenede sorulan soru geçen hafta değil, üç–dört ay önce neler yaşandığıdır.</p>
     </div>
@@ -76,7 +76,7 @@ module.exports = {
 <section class="bolum bolum--buz2">
   <div class="sar">
     <div class="bolum-bas" data-gr>
-      <p class="g-etiket">Uygulamadan sonra</p>
+      <p class="g-etiket">Buradan sonrası</p>
       <h2>Neden netleşince hangi seçenekler konuşulur?</h2>
       <p class="giris">Saçlı deriye yönelik uygulamalar, dökülmenin türü belirlendikten ve varsa genel sağlıkla ilgili neden ele alındıktan sonra konuşulur. Bunlar genel bir çerçevedir; size özel plan muayeneden sonra hekim tarafından kurulur ve yanıt kişiden kişiye değişir.</p>
     </div>

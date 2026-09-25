@@ -34,7 +34,7 @@ module.exports = {
 <section class="bolum bolum--sicak" id="nedenler">
   <div class="sar">
     <div class="bolum-bas" data-gr>
-      <p class="g-etiket">Farkı nerede</p>
+      <p class="g-etiket">Fark nerede</p>
       <h2>Göz altında koyu görünüm hangi yollarla oluşur?</h2>
       <p class="giris">Göz çevresindeki deri, vücudun en ince derisidir; altındaki damarı, kası ve hacim değişimini kolayca dışarı yansıtır. Muayenede beş ana kaynak ayrı ayrı sorgulanır. Çoğu zaman karma bir tablo görülür ve hangisinin ağır bastığı planı baştan sona belirler.</p>
     </div>
@@ -79,7 +79,7 @@ module.exports = {
 <section class="bolum bolum--buz2">
   <div class="sar">
     <div class="bolum-bas" data-gr>
-      <p class="g-etiket">Uygulamadan sonra</p>
+      <p class="g-etiket">Buradan sonrası</p>
       <h2>Kaynak belirlendikten sonra hangi seçenekler gündeme gelir?</h2>
       <p class="giris">Buradaki başlıklar genel bilgi amaçlıdır. Size özel plan muayeneden sonra hekim tarafından kurulur ve sonuçlar kişiden kişiye değişir.</p>
     </div>

@@ -90,7 +90,7 @@ module.exports = {
             <li>Muayenehanemizde ele alınmayan ve başka bir uzmanlık dalına yönelmenizi önerdiğimiz konular.</li>
             <li>Randevuya hazırlanırken işinize yarayacak tarafsız bilgiler.</li>
           </ul>
-          <p>Marka adlarına ilişkin tutumumuz da aynı düşünceden doğar. Enjeksiyonla yapılan uygulamalardaki ürünlerin markası sitede anılmaz; hangi ürünün seçileceği muayeneden sonra, kişiye özel olarak belirlenir. Muayenehanedeki cihazların marka ve modeli yalnızca bilgi vermek için, <a href="${r}klinik/">klinik sayfasındaki</a> cihaz listesinde ve ilgili uygulama sayfasındaki tek bir “kullanılan cihaz” satırında geçer; metinlerde cihazın genel adı kullanılır. Halk arasında farklı adlarla bilinen uygulamalarda da tıbbi adı aynı sayfada belirtilir.</p>
+          <p>Marka adlarına ilişkin tutumumuz da aynı düşünceden doğar. Enjeksiyonla yapılan uygulamalardaki ürünlerin markası sitede anılmaz; hangi ürünün seçileceği muayeneden sonra, kişiye özel olarak belirlenir. Muayenehanedeki cihazların marka ve modeli yalnızca bilgi vermek için, <a href="${r}klinik/">muayenehane sayfasındaki</a> cihaz listesinde ve ilgili uygulama sayfasındaki tek bir “kullanılan cihaz” satırında geçer; metinlerde cihazın genel adı kullanılır. Halk arasında farklı adlarla bilinen uygulamalarda da tıbbi adı aynı sayfada belirtilir.</p>
         </div>
         <div class="dgm-sira">
           <a class="dgm dgm--iki" href="${r}yaklasimimiz/neden-bazi-islemleri-yapmiyoruz/">Kapsamımızın sınırı ${ik.ok}</a>

@@ -92,6 +92,7 @@ module.exports = {
     </div>
 
     <form class="form" action="${r}iletisim-gonder.php" method="post">
+      <div class="form__tuzak" aria-hidden="true" style="position:absolute;left:-10000px;width:1px;height:1px;overflow:hidden"><label>Web sitesi <input type="text" name="website" tabindex="-1" autocomplete="off"></label></div>
       <div class="alan">
         <label for="ad">Ad ve soyad <span aria-hidden="true">*</span></label>
         <input type="text" id="ad" name="ad" autocomplete="name" required maxlength="80">
@@ -207,7 +208,7 @@ module.exports = {
     <div class="izgara izgara--3">
       <a class="kart" href="${r}hazirlik-listesi/">
         <span class="kart__ikon">${ik.liste}</span>
-        <h3>Randevuya hazırlanma listesi</h3>
+        <h3>Görüşmeye hazırlık notları</h3>
         <p>Muayeneye gelmeden önce aklınızdakileri not etmenize yardım eden kısa bir araç. Cihazınızda çalışır; yazdıklarınız bize gönderilmez.</p>
         <span class="kart__ok">Aracı aç ${ik.ok}</span>
       </a>

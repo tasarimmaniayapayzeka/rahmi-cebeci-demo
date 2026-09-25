@@ -12,7 +12,7 @@ module.exports = {
 <section class="g-hero">
   <div class="sar">
     <div>
-      <nav class="kirinti" aria-label="Konum" style="position:relative;font-size:.76rem;color:var(--sessiz);display:flex;gap:7px;margin-bottom:18px"><a href="${r}" style="color:var(--sessiz);text-decoration:none">Ana sayfa</a> › <span>Hazırlık listesi</span></nav>
+      <nav class="kirinti" aria-label="Konum" style="position:relative;font-size:.76rem;color:var(--sessiz);display:flex;gap:7px;margin-bottom:18px"><a href="${r}" style="color:var(--sessiz);text-decoration:none">Ana sayfa</a> › <span>Hazırlık notları</span></nav>
       <p class="g-etiket">Hazırlık · Randevudan önce</p>
       <h1>Görüşmeye <span class="g-isik">hazırlık notları</span></h1>
       <p class="g-hero__alt">Bu araç, muayenede hekiminize anlatmanız gereken bilgileri önceden toparlamanız için hazırlanmış kısa bir kontrol listesidir. Doldurması birkaç dakika sürer. Tanı koymaz, hastalık aramaz, işlem önermez ve uygun olup olmadığınıza karar vermez. Tek işlevi, görüşmede sık unutulan ayrıntıları önünüze koymaktır.</p>

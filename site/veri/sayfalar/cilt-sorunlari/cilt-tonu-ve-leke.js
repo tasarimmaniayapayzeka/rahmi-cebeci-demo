@@ -34,7 +34,7 @@ module.exports = {
 <section class="bolum bolum--sicak" id="nedenler">
   <div class="sar">
     <div class="bolum-bas" data-gr>
-      <p class="g-etiket">Farkı nerede</p>
+      <p class="g-etiket">Fark nerede</p>
       <h2>Lekeniz hangi gruba giriyor olabilir?</h2>
       <p class="giris">Aynı kahverengi ton, derinin farklı katmanlarında ve farklı mekanizmalarla ortaya çıkabilir. Yalnızca rengi hedef almak, leke planlamasında en sık yapılan yanlıştır. Muayenede lekeler dört başlık altında toplanır; hangisinin sizde olduğu yakından bakı ve büyütmeli incelemeyle anlaşılır.</p>
     </div>
@@ -79,7 +79,7 @@ module.exports = {
 <section class="bolum bolum--buz2">
   <div class="sar">
     <div class="bolum-bas" data-gr>
-      <p class="g-etiket">Uygulamadan sonra</p>
+      <p class="g-etiket">Buradan sonrası</p>
       <h2>Leke türü belirlendikten sonra hangi seçenekler konuşulur?</h2>
       <p class="giris">Güneşten korunma alışkanlığı yerleştikten ve cilt sakinleştikten sonra aşağıdaki başlıklar değerlendirilir. Bunlar genel bilgidir; size özel plan muayeneden sonra hekim tarafından kurulur. Tetikleyici devam ettiği sürece lekenin yeniden belirmesi mümkündür.</p>
     </div>

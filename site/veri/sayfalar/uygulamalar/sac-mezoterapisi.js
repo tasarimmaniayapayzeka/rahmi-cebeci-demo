@@ -12,7 +12,7 @@ module.exports = {
   <div class="sar">
     <div>
       <nav class="kirinti" aria-label="Konum" style="position:relative;font-size:.76rem;color:var(--sessiz);display:flex;gap:7px;margin-bottom:18px"><a href="${r}" style="color:var(--sessiz);text-decoration:none">Ana sayfa</a> › <a href="${r}uygulamalar/" style="color:var(--sessiz);text-decoration:none">Uygulamalar</a> › <span>Saç mezoterapisi</span></nav>
-      <p class="g-etiket">Saç uygulaması · Mezoterapi</p>
+      <p class="g-etiket">Saç Sağlığı · Mezoterapi</p>
       <h1>Saç mezoterapisi: <span class="g-isik">saçlı deriye ölçülü destek</span></h1>
       <p class="g-hero__alt">Saç mezoterapisinde vitamin, eser element, aminoasit ve düşük yoğunlukta hyalüronik asit içeren bir karışım, ince iğneyle saçlı derinin pek çok noktasına küçük miktarlarda verilir. Hedeflenen, saç kökünü çevreleyen dokunun beslenmesini desteklemektir. Kaybedilmiş saçı geri getirmez; dökülmenin kaynağı araştırılmadan plan yapılmaz, seans sayısı kişiye göre belirlenir.</p>
       <div class="g-hero__cta">
@@ -131,7 +131,7 @@ module.exports = {
     </div>
     <div class="kutu kutu--bilgi" data-gr style="margin-top:16px;--d:140ms">
       <b>Devamı için</b>
-      <p>Dökülme türlerini ve olası iç nedenlerini <a href="${r}cilt-sorunlari/sac-dokulmesi/">saç dökülmesi</a> sayfasında ele aldık; ilk görüşmede nelerin konuşulduğu <a href="${r}uygulamalar/hekim-muayenesi/">hekim muayenesi</a> sayfasındadır. Kimi durumlarda <a href="${r}uygulamalar/sac-prp/">saç PRP</a> ile sırayla ilerleyen ortak bir program düşünülebilir; saçlı derideki <a href="${r}uygulamalar/eksozom/">eksozom</a> kullanımı kendi sayfasında anlatılır. Bölgeye göre bakış için <a href="${r}bolgeler/sacli-deri/">saçlı deri</a>, uygulamadan sonraki süreç için <a href="${r}uygulamalar/uygulama-sonrasi-takip/">uygulama sonrası takip</a> sayfalarına göz atabilirsiniz.</p>
+      <p>Dökülme türlerini ve olası iç nedenlerini <a href="${r}cilt-sorunlari/sac-dokulmesi/">saç dökülmesi</a> sayfasında ele aldık; ilk görüşmede nelerin konuşulduğu <a href="${r}uygulamalar/hekim-muayenesi/">hekim muayenesi</a> sayfasındadır. Kimi durumlarda <a href="${r}uygulamalar/sac-prp/">saç PRP</a> ile sırayla ilerleyen ortak bir program düşünülebilir; saçlı derideki <a href="${r}uygulamalar/eksozom/">eksozom</a> kullanımı kendi sayfasında anlatılır. Bölgeye göre bakış için <a href="${r}bolgeler/sacli-deri/">saçlı deri</a>, uygulamadan sonraki süreç için <a href="${r}uygulamalar/uygulama-sonrasi-takip/">uygulama sonrası kontrol</a> sayfalarına göz atabilirsiniz.</p>
     </div>
   </div>
 </section>

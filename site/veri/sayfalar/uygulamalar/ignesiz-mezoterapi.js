@@ -12,7 +12,7 @@ module.exports = {
   <div class="sar">
     <div>
       <nav class="kirinti" aria-label="Konum" style="position:relative;font-size:.76rem;color:var(--sessiz);display:flex;gap:7px;margin-bottom:18px"><a href="${r}" style="color:var(--sessiz);text-decoration:none">Ana sayfa</a> › <a href="${r}uygulamalar/" style="color:var(--sessiz);text-decoration:none">Uygulamalar</a> › <span>İğnesiz mezoterapi</span></nav>
-      <p class="g-etiket">Cihaz ve Lazer · Cilt Bakımı</p>
+      <p class="g-etiket">Cihaz Destekli Uygulamalar · Cilt Bakımı</p>
       <h1>İğnesiz mezoterapi: iğne yerine <span class="g-isik">elektrik darbeleriyle</span> iletim.</h1>
       <p class="g-hero__alt">Cildin en dış katmanı, sürülen ürünlerin büyük kısmını içeri almayan bir kalkan gibidir. Elektroporasyonda çok kısa elektrik darbeleri bu kalkanda geçici aralıklar açar ve cilde sürülen solüsyon bu aralıklardan ilerler. Deri delinmez; buna karşılık ulaşılan derinlik ve içeri geçen miktar iğneli mezoterapiden azdır.</p>
       <div class="g-hero__cta">

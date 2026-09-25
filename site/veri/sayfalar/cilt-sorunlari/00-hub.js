@@ -115,7 +115,7 @@ ${S.sorunlar.map(([ad, s]) => `
 <section class="bolum">
   <div class="sar">
     <div class="bolum-bas" data-gr>
-      <p class="g-etiket">Uygulamadan sonra</p>
+      <p class="g-etiket">Buradan sonrası</p>
       <h2>Ayrım yapıldıktan sonra hangi sayfalar yol gösterir?</h2>
       <p class="giris">Ayrım tamamlandığında konuşulabilecek uygulamaların hepsi uygulamalar bölümünde yer alır; aşağıdakiler en sık başvurulan kapılardır.</p>
     </div>

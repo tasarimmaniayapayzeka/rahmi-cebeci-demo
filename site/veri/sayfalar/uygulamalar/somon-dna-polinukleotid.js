@@ -110,7 +110,7 @@ module.exports = {
           <li><b>Ürün içeriğine bilinen aşırı duyarlılık:</b> polinükleotide, balık kaynaklı maddelere ya da üründeki yardımcı bileşenlere karşı daha önce reaksiyon geliştiyse uygulama yapılmaz; geçmişte anafilaksi geçirdiyseniz plan bütünüyle yeniden değerlendirilir.</li>
           <li><b>Gebelik ve emzirme:</b> bu dönemlerde program başlatılmaz.</li>
           <li><b>Bölgede aktif bir sorun:</b> enfeksiyon, uçuk, iltihaplı sivilce, alevlenmiş egzama ya da açık yara varsa bölge iyileşene kadar beklenir.</li>
-          <li><b>Aktif otoimmün ya da iltihaplı hastalık</b> ile keloid eğilimi ve yara iyileşmesini bozan genel durumlar.</li>
+          <li><b>Aktif otoimmün ya da iltihaplı hastalık, keloid eğilimi:</b> yara iyileşmesini bozan bu genel durumlarda uygulama ertelenir.</li>
           <li><b>Kanama eğilimi:</b> pıhtılaşma bozukluğu ya da kan sulandırıcı kullanımı morluk olasılığını artırır; ilacınızdaki bir değişiklik yalnızca onu düzenleyen hekimin onayıyla konuşulur.</li>
           <li><b>Yeni geçirilmiş enfeksiyon, aşı ya da diş tedavisi:</b> bağışıklık sistemi henüz uyarılmışken bölgesel tepki olasılığı artabileceğinden uygulama birkaç hafta ertelenir.</li>
           <li><b>Aynı bölgede içeriği bilinmeyen önceki uygulama:</b> bölge önce muayenede ayrıca değerlendirilir.</li>

@@ -34,7 +34,7 @@ module.exports = {
 <section class="bolum bolum--sicak" id="nedenler">
   <div class="sar">
     <div class="bolum-bas" data-gr>
-      <p class="g-etiket">Farkı nerede</p>
+      <p class="g-etiket">Fark nerede</p>
       <h2>Silme sürecini hangi etkenler belirler?</h2>
       <p class="giris">Lazerle dövme silmede enerji, deri içindeki mürekkep parçacıklarını çok kısa atımlarla daha küçük parçalara ayırmayı hedefler. Küçülen parçalar, vücudun kendi temizleme sistemi tarafından haftalar içinde uzaklaştırılır. Bu yüzden sonuç tek seansta değil, seanslar arasında geçen sürede ortaya çıkar ve her dövmede farklı bir hızla ilerler.</p>
     </div>
@@ -63,7 +63,7 @@ module.exports = {
     <div class="kutu kutu--bilgi" data-gr style="margin-top:26px">
       <b>Test atışı neden atlanmaz?</b>
       <p>Mürekkebin içeriği çoğu zaman bilinmez; aynı görünen iki renk tamamen farklı maddelerden oluşabilir. Küçük bir alanda yapılan deneme, rengin açılıp açılmadığını, koyulaşıp koyulaşmadığını ve derinizin nasıl iyileştiğini gösterir. Kaş, dudak ve açık tonlu dövmelerde bu adım planın ayrılmaz bir parçasıdır.</p>
-<p>Seanslar arasında genellikle birkaç haftalık ara bırakılır; bu süre, parçalanan mürekkebin uzaklaştırılması ve derinin toparlanması için gereklidir. Seans sayısı önceden sabitlenmez, her kontrolde yanıta göre güncellenir. Seans arasındaki bakım ve kontrol düzeni <a href="${r}uygulamalar/uygulama-sonrasi-takip/">uygulama sonrası takip</a> sayfasında anlatılır.</p>
+<p>Seanslar arasında genellikle birkaç haftalık ara bırakılır; bu süre, parçalanan mürekkebin uzaklaştırılması ve derinin toparlanması için gereklidir. Seans sayısı önceden sabitlenmez, her kontrolde yanıta göre güncellenir. Seanslar arasındaki bakım ve kontrol düzeni <a href="${r}uygulamalar/uygulama-sonrasi-takip/">uygulama sonrası kontrol</a> sayfasında anlatılır.</p>
     </div>
     <div class="kutu kutu--uyari" data-gr style="margin-top:18px">
       <b>Uygulamanın ertelendiği ya da yapılmadığı durumlar</b>
@@ -76,7 +76,7 @@ module.exports = {
 <section class="bolum bolum--buz2">
   <div class="sar">
     <div class="bolum-bas" data-gr>
-      <p class="g-etiket">Uygulamadan sonra</p>
+      <p class="g-etiket">Buradan sonrası</p>
       <h2>Değerlendirmeden sonra hangi adımlar konuşulur?</h2>
       <p class="giris">Dövme ve kalıcı makyaj silme, muayenehanemizin öne çıkan uygulamalarından biridir ve lazer ve cihaz odasında yapılır. Aşağıdaki başlıklar genel bilgi amaçlıdır; seans aralığı, beklenen yanıt ve olası riskler muayenede size özel olarak konuşulur.</p>
     </div>

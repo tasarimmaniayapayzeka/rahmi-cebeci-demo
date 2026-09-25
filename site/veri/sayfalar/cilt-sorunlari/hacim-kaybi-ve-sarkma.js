@@ -39,7 +39,7 @@ module.exports = {
 <section class="bolum bolum--sicak" id="nedenler">
   <div class="sar">
     <div class="bolum-bas" data-gr>
-      <p class="g-etiket">Farkı nerede</p>
+      <p class="g-etiket">Fark nerede</p>
       <h2>Yüzün hangi katmanları zamanla değişir?</h2>
       <p class="giris">Yüzü katlı bir yapı gibi düşünebilirsiniz: en altta kemik, üstünde bağlar ve kaslar, onun üstünde yağ bölmeleri, en dışta deri. Yaşla birlikte bu katmanların hepsi farklı hızda değişir. Bu yüzden çoğu kişi tek bir çizgiden değil, yüzünün bütün olarak aşağı indiğinden yakınır.</p>
     </div>
@@ -85,7 +85,7 @@ module.exports = {
 <section class="bolum bolum--buz2">
   <div class="sar">
     <div class="bolum-bas" data-gr>
-      <p class="g-etiket">Uygulamadan sonra</p>
+      <p class="g-etiket">Buradan sonrası</p>
       <h2>Öne çıkan katman belli olunca hangi seçenekler konuşulur?</h2>
       <p class="giris">Aşağıdakiler genel bir çerçeve sunar; hangisinin size uygun olduğu ve etkinin ne kadar süreceği muayenede belirlenir. Çene hattındaki bulanıklık her zaman sarkmadan kaynaklanmaz; bazen çene altındaki sınırlı yağ birikiminden gelir ve bu ayrım <a href="${r}bolgeler/cene-ve-jawline/">çene ve jawline</a> değerlendirmesinde yapılır.</p>
     </div>

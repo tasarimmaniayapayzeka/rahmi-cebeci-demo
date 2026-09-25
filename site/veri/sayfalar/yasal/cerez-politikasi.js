@@ -3,8 +3,8 @@ const S = require('../../site');
 module.exports = {
   slug: 'yasal/cerez-politikasi',
   tip: 'bilgi',
-  aciklama: 'Sitenin sayfaları çerez, yerel depolama, reklam pikseli ve analitik araç kullanmaz. Gömülü Google haritası ve WhatsApp bağlantısı üçüncü taraf olarak açıklanır.',
-  baslik: 'Çerez Politikası — Sayfalarımız Çerez ve Yerel Depolama Kullanmaz',
+  aciklama: 'Sitenin sayfaları gezinirken çerez, yerel depolama, reklam pikseli ve analitik araç kullanmaz. Gömülü Google haritası ve WhatsApp bağlantısı üçüncü taraf olarak açıklanır.',
+  baslik: 'Çerez Politikası — Gezinirken Çerez ve Yerel Depolama Kullanılmaz',
 
   icerik: (r, ik) => `
 
@@ -13,7 +13,7 @@ module.exports = {
   <div class="sar">
     <p class="g-etiket">Mevzuat notu</p>
     <h1>Çerez Politikası</h1>
-    <p class="g-bhero__alt">Sitemizi gezerken tarayıcınıza hiçbir sayfamız çerez bırakmaz; localStorage gibi yerel depolama alanlarına da kayıt yazılmaz. Sayfalarda reklam pikseli, sosyal medya takip kodu, tıklama ısı haritası, ekran kaydı yapan yazılım ya da dışarıdan bağlanmış bir istatistik aracı bulunmadığı için sizden çerez onayı istenmez. Dış kaynaklı yalnızca iki hizmet vardır: Google’ın sağladığı konum haritası ve WhatsApp bağlantısı.</p>
+    <p class="g-bhero__alt">Sitemizi gezerken tarayıcınıza hiçbir sayfamız çerez bırakmaz (tek istisna, aşağıda anlatılan iletişim formu gönderimidir); localStorage gibi yerel depolama alanlarına da kayıt yazılmaz. Sayfalarda reklam pikseli, sosyal medya takip kodu, tıklama ısı haritası, ekran kaydı yapan yazılım ya da dışarıdan bağlanmış bir istatistik aracı bulunmadığı için sizden çerez onayı istenmez. Dış kaynaklı yalnızca iki hizmet vardır: Google’ın sağladığı konum haritası ve WhatsApp bağlantısı.</p>
     <div class="g-bmeta">
       <span><i></i>Son güncelleme: ${S.guncelleme}</span>
       <span><i></i>İzleme çerezi ve yerel depolama yok</span>

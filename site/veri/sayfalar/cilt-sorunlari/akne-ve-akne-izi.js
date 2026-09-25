@@ -34,7 +34,7 @@ module.exports = {
 <section class="bolum bolum--sicak" id="nedenler">
   <div class="sar">
     <div class="bolum-bas" data-gr>
-      <p class="g-etiket">Farkı nerede</p>
+      <p class="g-etiket">Fark nerede</p>
       <h2>Cildinizde şu an hangi tablo ağır basıyor?</h2>
       <p class="giris">Akne planlamasında en sık görülen yanlış, dönem atlamaktır. İltihap sürerken yapılan bir işlem tabloyu alevlendirebilir; iz dönemine geçmiş bir ciltte aktif akneye yönelik plan sürdürmek ise beklenen değişimi getirmez. İkinci yanlış, bütün izleri tek bir başlıkta toplamaktır. Muayenede izler elle, yandan gelen ışıkla ve büyütmeli incelemeyle birbirinden ayrılır.</p>
     </div>
@@ -69,7 +69,7 @@ module.exports = {
     <div class="kutu kutu--bilgi" data-gr style="margin-top:26px">
       <b>Sıralama neden bozulmaz?</b>
       <p>Plan beş adımda ilerler ve adımlar atlanmaz: önce tablo, sırt ve göğüs dâhil bütünüyle tanımlanır; ardından tetikleyiciler gözden geçirilir; aktif dönem sakinleştirilir; yüzeye yönelik işlemlerin zamanı belirlenir ve iz dönemi ayrı bir plan olarak ele alınır.</p>
-<p>İz dönemindeki yöntemlerin çoğu, derinin kendi onarım sürecini harekete geçirerek sonuç almayı hedefler. Onarım haftalar, hatta aylar sürer ve aktif iltihap varken düzgün ilerlemez. Sırayı korumak hem gereksiz seanslardan hem de yeni iz oluşumundan kaçınmanın yoludur. Kontrol randevularının nasıl planlandığını <a href="${r}uygulamalar/uygulama-sonrasi-takip/">uygulama sonrası takip</a> sayfasında bulabilirsiniz.</p>
+<p>İz dönemindeki yöntemlerin çoğu, derinin kendi onarım sürecini harekete geçirerek sonuç almayı hedefler. Onarım haftalar, hatta aylar sürer ve aktif iltihap varken düzgün ilerlemez. Sırayı korumak hem gereksiz seanslardan hem de yeni iz oluşumundan kaçınmanın yoludur. Kontrol randevularının nasıl planlandığını <a href="${r}uygulamalar/uygulama-sonrasi-takip/">uygulama sonrası kontrol</a> sayfasında bulabilirsiniz.</p>
     </div>
   </div>
 </section>
@@ -78,7 +78,7 @@ module.exports = {
 <section class="bolum bolum--buz2">
   <div class="sar">
     <div class="bolum-bas" data-gr>
-      <p class="g-etiket">Uygulamadan sonra</p>
+      <p class="g-etiket">Buradan sonrası</p>
       <h2>Dönem belirlendikten sonra hangi seçenekler konuşulur?</h2>
       <p class="giris">Aşağıdaki başlıklar iz dönemine ve yüzey bakımına yöneliktir; aktif iltihap sürerken çoğu ertelenir. Size özel plan muayeneden sonra hekim tarafından kurulur ve sonuçlar kişiden kişiye değişir.</p>
     </div>

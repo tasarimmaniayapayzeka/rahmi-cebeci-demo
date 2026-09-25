@@ -254,7 +254,7 @@ module.exports = {
         <span class="kart__ok">Oku ${ik.ok}</span>
       </a>
       <a class="kart" href="${r}hazirlik-listesi/">
-        <h3>Randevuya hazırlanma listesi</h3>
+        <h3>Görüşmeye hazırlık notları</h3>
         <p>İlk muayeneden önce not almanızın işe yarayacağı başlıkların kısa bir listesi.</p>
         <span class="kart__ok">Aç ${ik.ok}</span>
       </a>

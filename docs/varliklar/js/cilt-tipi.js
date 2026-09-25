@@ -25,7 +25,7 @@
       c: ['Genellikle sorun yaşamam', 'Ara sıra batma veya kızarıklık olur', 'Sık sık yanma, kaşıntı veya kızarıklık gelişir'] },
     { e: 'has', s: 'Rüzgâr, soğuk hava veya sıcak değişimlerinde yüzünüz nasıl tepki verir?',
       c: ['Belirgin değişiklik olmaz', 'Geçici kızarıklık olur', 'Uzun süren kızarıklık, yanma veya kuruluk gelişir'] },
-    { e: 'has', s: 'Parfümlü veya köpüren ürünler ciltinizde iz bırakır mı?',
+    { e: 'has', s: 'Parfümlü veya köpüren ürünler cildinizde iz bırakır mı?',
       c: ['Hayır', 'Bazen hafif rahatsızlık verir', 'Çoğunlukla batma/kızarıklık yapar, tercih etmem'] },
     { e: 'has', s: 'Yüzünüzde sebepsiz kızarma veya sıcak basması olur mu?',
       c: ['Nadiren', 'Ayda birkaç kez', 'Haftada birkaç kez veya daha sık'] },

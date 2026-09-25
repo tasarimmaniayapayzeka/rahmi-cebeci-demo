@@ -20,7 +20,7 @@ const GRUP_NOT = {
   'sac-sagligi':
     'Burada atılan ilk adım, dökülmenin neden kaynaklandığını bulmaktır. Düşük demir depoları, tiroid bezinin az ya da çok çalışması, doğumdan sonraki aylar veya kullanılan bir ilaç dökülmenin tek başına sebebi olabilir. Neden ortaya konmadan başlanan bir uygulama beklenen katkıyı sağlamaz; bu yüzden gerekli görülen kan tetkikleri sonuçlanmadan plan yapılmaz.',
   'degerlendirme-ve-takip':
-    'Bu iki başlık bir işlem değil, her planın başı ve sonudur. Hekim muayenesinde genel sağlık durumunuz ve beklentiniz değerlendirilerek uygun olan ile olmayan ayrılır; uygulama sonrası takipte ise iyileşme izlenir, gerekiyorsa plan durdurulur ya da değiştirilir.',
+    'Bu iki başlık bir işlem değil, her planın başı ve sonudur. Hekim muayenesinde genel sağlık durumunuz ve beklentiniz değerlendirilerek uygun olan ile olmayan ayrılır; uygulama sonrası kontrolde ise iyileşme izlenir, gerekiyorsa plan durdurulur ya da değiştirilir.',
 };
 
 module.exports = {

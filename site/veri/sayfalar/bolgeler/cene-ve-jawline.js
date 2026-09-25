@@ -76,7 +76,7 @@ module.exports = {
 <section class="bolum bolum--buz2" id="ayrim">
   <div class="sar">
     <div class="bolum-bas" data-gr>
-      <p class="g-etiket">Farkı nerede</p>
+      <p class="g-etiket">Fark nerede</p>
       <h2>Muayenede çene bölgesine nasıl bakıyoruz?</h2>
       <p class="giris">Çene altındaki dolgunluğun nereden geldiğini, çiğneme kasının kalınlığını ve yüzünüzün profilini tek tek inceleriz. Aşağı indikçe soldaki kart, okuduğunuz başlığa uyum sağlar.</p>
     </div>

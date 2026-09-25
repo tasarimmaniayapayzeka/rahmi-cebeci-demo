@@ -104,7 +104,7 @@ module.exports = {
           <li><b>Gerçekçi olmayan beklenti:</b> hacim, sıkılaşma ya da çizgilerin silinmesi gibi mezoterapinin veremeyeceği bir sonuç bekleniyorsa uygulama önerilmez.</li>
         </ul>
       </div>
-      <div class="g-kutu g-b2 g-kutu--gorsel" data-gr style="--d:70ms"><img src="${r}varliklar/gorsel/uyg-damar-yolu-ile-sivi-ve-vitamin-uygulamasi.webp" alt="Mermer tepside içerik şişeleri ve ince hortum" loading="lazy"><span class="g-ainot">Temsilî görsel · yapay zekâ ile üretildi</span></div>
+      <div class="g-kutu g-b2 g-kutu--gorsel" data-gr style="--d:70ms"><img src="${r}varliklar/gorsel/uyg-mezoterapi-hazirlik.webp" alt="Altın kenarlı tepside ince iğneli enjektör, serum flakonu ve gazlı bez" loading="lazy"><span class="g-ainot">Temsilî görsel · yapay zekâ ile üretildi</span></div>
       <div class="g-kutu g-b3 g-kutu--gece" data-gr><span class="g-ket">Hekimin notu</span><p>“Şişenin üzerindeki ad değil, içindekiler önemlidir. Size uygulanacak her bileşeni adıyla söyler, dosyanıza yazarız.”</p></div>
       <div class="g-kutu g-b3 g-kutu--cta" data-gr style="--d:70ms"><h3>Cildinizi yakından görelim</h3><p>Hangi karışımın, hangi aralıkla uygulanacağı muayeneden sonra belli olur.</p><a class="dgm dgm--altin" href="${r}iletisim/">Randevu isteyin</a></div>
     </div>

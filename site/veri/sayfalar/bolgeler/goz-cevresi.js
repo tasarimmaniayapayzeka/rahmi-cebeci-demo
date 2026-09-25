@@ -118,7 +118,7 @@ module.exports = {
 <section class="bolum" id="gozalti-mekanizma">
   <div class="sar">
     <div class="bolum-bas" data-gr>
-      <p class="g-etiket">Farkı nerede</p>
+      <p class="g-etiket">Fark nerede</p>
       <h2>Koyu halkanın nedeni muayenede nasıl ayırt edilir?</h2>
       <p class="giris">Işığın yönünü değiştirmek, deriyi hafifçe germek ve farklı açılardan bakmak, hangi nedenin öne çıktığını gösterir. Her nedenin kendi yanıtı vardır; bazılarında dolgu hiç gündeme gelmez.</p>
     </div>

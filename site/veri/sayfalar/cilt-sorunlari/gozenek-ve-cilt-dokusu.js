@@ -34,7 +34,7 @@ module.exports = {
 <section class="bolum bolum--sicak" id="nedenler">
   <div class="sar">
     <div class="bolum-bas" data-gr>
-      <p class="g-etiket">Farkı nerede</p>
+      <p class="g-etiket">Fark nerede</p>
       <h2>Doku şikâyetinin ardında hangi etkenler var?</h2>
       <p class="giris">Doku şikâyetleri büyük ölçüde bakış mesafesine bağlıdır: birkaç adım öteden fark edilmez, aynaya iyice yaklaştığınızda ya da parlak bir lambanın altında göze batar. Bu yüzden kişi kendi cildini, çevresindekilerin gördüğünden daha sorunlu algılayabilir. Muayenede aşağıdaki bileşenler tek tek ele alınır.</p>
     </div>
@@ -78,7 +78,7 @@ module.exports = {
 <section class="bolum bolum--buz2">
   <div class="sar">
     <div class="bolum-bas" data-gr>
-      <p class="g-etiket">Uygulamadan sonra</p>
+      <p class="g-etiket">Buradan sonrası</p>
       <h2>Öne çıkan bileşen belli olunca hangi seçenekler konuşulur?</h2>
       <p class="giris">Cilt hazır olduğunda ve uygun görülürse aşağıdaki başlıklar değerlendirilir. Değişimin ölçüsü kişiden kişiye farklıdır; bakım alışkanlıkları bırakıldığında kazanılan görünüm geriler. Size özel plan yalnızca muayenede kurulur.</p>
     </div>

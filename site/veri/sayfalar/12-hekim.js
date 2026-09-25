@@ -15,7 +15,7 @@ module.exports = {
       <nav class="kirinti" aria-label="Konum" style="position:relative;font-size:.76rem;color:var(--sessiz);display:flex;gap:7px;margin-bottom:18px"><a href="${r}" style="color:var(--sessiz);text-decoration:none">Ana sayfa</a> › <span>Hekim</span></nav>
       <p class="g-etiket">Hekim · Aile hekimliği ve medikal estetik</p>
       <h1><span class="g-isik">${S.hekim.tam}</span></h1>
-      <p style="margin-top:6px;font-weight:700;color:var(--murekkep)">${S.hekim.dallar}</p>
+      <p style="margin-top:6px;font-weight:700;color:var(--gece-bakir)">${S.hekim.dallar}</p>
       <p class="g-hero__alt">2005’te tıp fakültesinden mezun oldu ve o günden bu yana hekim olarak çalışıyor. Aile Hekimliği uzmanıdır; estetik alandaki yetkisi Sağlık Bakanlığı onaylı bir sertifikaya dayanır. ${S.iletisim.semt}’deki muayenehanede muayene, plan, uygulama ve kontrol aynı elde yürür. Çıkış noktası şikâyeti kişinin bütününden ayırmadan değerlendirmek; hedef ise yüzün kendi ifadesini koruyan ölçülü bir sonuçtur.</p>
       <div class="g-hero__cta">
         <a class="dgm dgm--bir" href="${r}iletisim/">Randevu talebi oluşturun</a>
@@ -46,7 +46,7 @@ module.exports = {
         <p style="margin-top:10px">Bu muayenehanede zincirin tek halkası vardır. Öykünüzü dinleyen, bölgeyi muayene eden, ürünü ve miktarını belirleyen, işlemi yapan ve kontrolde sonucu değerlendiren aynı hekimdir. İşlem sırasında planı değiştirmek ya da durdurmak gerekirse bu karar da onundur.</p>
         <div class="dgm-sira" style="margin-top:16px">
           <a class="dgm dgm--iki" href="${r}yaklasimimiz/">Randevudan kontrole ${ik.ok}</a>
-          <a class="dgm dgm--iki" href="${r}klinik/">Muayenehane ${ik.ok}</a>
+          <a class="dgm dgm--iki" href="${r}klinik/">Muayenehanemiz ${ik.ok}</a>
         </div>
       </div>
       <div class="g-kutu g-b2 g-kutu--gece" data-gr style="--d:70ms"><span class="g-ket">Hekimin notu</span><p>“Hedef, yüzün kendine ait ifadesini koruyan ölçülü bir sonuçtur.”</p></div>
