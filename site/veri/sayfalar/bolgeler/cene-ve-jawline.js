@@ -17,7 +17,7 @@ module.exports = {
       <h1>Silik bir çene hattının <span class="g-isik">tek bir nedeni</span> yoktur.</h1>
       <p class="g-hero__alt">Kulak önünden çene ucuna uzanan hattın ne kadar keskin göründüğü; alt çene kemiğinin şekline, çene altında biriken yağa, derinin toparlanma gücüne ve çiğneme kasının kalınlığına bağlıdır. Her birinin yanıtı ayrı olduğu için önce hangisinin öne çıktığını anlamamız gerekir. Bu bölgede yüzünüze yandan bakmak, karşıdan bakmak kadar bilgi verir.</p>
       <div class="g-hero__cta">
-        <a class="dgm dgm--bir" href="${r}iletisim/">Randevu talebi</a>
+        <a class="dgm dgm--bir" href="${r}iletisim/">Randevu isteyin</a>
         <a class="dgm dgm--iki" href="#belirleyen">Dört etken ↓</a>
       </div>
       <div class="g-tikler"><span><i></i>Uygulamayı hekim yapar</span><span><i></i>Adım adım plan</span><span><i></i>Kontrol randevusu planın içinde</span></div>
@@ -43,7 +43,7 @@ module.exports = {
 <section class="bolum" id="belirleyen">
   <div class="sar">
     <div class="bolum-bas" data-gr>
-      <p class="g-etiket">Etkenler</p>
+      <p class="g-etiket">Neler etkiler</p>
       <h2>Çene hattını belirginleştiren ya da silen ne?</h2>
       <p class="giris">“Jawline” dediğimiz şey, alt çene kemiğinin kulak önünden çeneye uzanan kenarı ve onu örten dokulardır. Bu hatta dair yakınmalar çoğu zaman tek bir işlemin adıyla gelir; oysa hattı dört ayrı etken şekillendirir. Aynı kişide birkaçı birlikte bulunabilir ve plan, en belirgin olanına göre yapılır.</p>
     </div>
@@ -76,7 +76,7 @@ module.exports = {
 <section class="bolum bolum--buz2" id="ayrim">
   <div class="sar">
     <div class="bolum-bas" data-gr>
-      <p class="g-etiket">Ayrım</p>
+      <p class="g-etiket">Farkı nerede</p>
       <h2>Muayenede çene bölgesine nasıl bakıyoruz?</h2>
       <p class="giris">Çene altındaki dolgunluğun nereden geldiğini, çiğneme kasının kalınlığını ve yüzünüzün profilini tek tek inceleriz. Aşağı indikçe soldaki kart, okuduğunuz başlığa uyum sağlar.</p>
     </div>
@@ -90,21 +90,21 @@ module.exports = {
       </div>
       <div>
         <div class="g-katblok" data-gkat="cenealti" data-gr>
-          <span class="g-kno">01 · ÇENE ALTI</span>
+          <span class="g-kno">Kesit 01 · ÇENE ALTI</span>
           <h3>Dolgunluğu oluşturan ne: yağ, gevşek deri ya da kas?</h3>
           <p>Çene altını iki parmakla tuttuğumuzda kalın ve yumuşak bir tabaka hissediliyorsa ve başınızı öne eğdiğinizde bölge daha da doluyorsa, yağ ön plandadır. Parmaklar arasında ince bir deri kalıyor, çekildiğinde kolayca uzuyor ve yavaş toparlanıyorsa, sorun daha çok gevşemedir.</p>
 <p>Konuşurken boynun önünde beliren ve dinlenince kaybolan dikey bantlar ise deri altındaki ince bir kastan gelir. Çene ucu geride kalmışsa, altında hiç fazla yağ bulunmasa bile hat bulanık görünebilir; o zaman konu kemik desteğine kayar.</p>
           <div class="g-haplar"><a href="${r}uygulamalar/bolgesel-lipoliz/">Bölgesel lipoliz</a><a href="${r}uygulamalar/hifu-ameliyatsiz-yuz-germe/">HIFU</a><a href="${r}cilt-sorunlari/bolgesel-yaglanma/">Bölgesel yağlanma</a></div>
         </div>
         <div class="g-katblok" data-gkat="kas" data-gr>
-          <span class="g-kno">02 · ÇİĞNEME KASI</span>
+          <span class="g-kno">Kesit 02 · ÇİĞNEME KASI</span>
           <h3>Diş sıkmanın yüzdeki izi</h3>
           <p>Çiğneme kasının kalınlaşmasına en sık diş sıkma ve gıcırdatma yol açar; bu çoğunlukla gece, uykuda ve farkına varılmadan olur. Sabah uyanınca çenede ağrı, şakaklarda baş ağrısı ya da dişlerde aşınma fark ediyorsanız bir diş hekiminin de görüşünü almak gerekebilir.</p>
 <p>Kası normal kalınlıkta olan birinde kası gevşeten bir işlem çene hattını inceltmez. Bu yüzden önce kasın gerçekten kalınlaşıp kalınlaşmadığını muayenede yoklarız.</p>
           <div class="g-haplar"><a href="${r}uygulamalar/botulinum-toksin/">Botulinum toksin</a></div>
         </div>
         <div class="g-katblok" data-gkat="profil" data-gr>
-          <span class="g-kno">03 · PROFİL</span>
+          <span class="g-kno">Kesit 03 · PROFİL</span>
           <h3>Karar yandan verilir</h3>
           <p>Bu bölgedeki yakınmaların büyük bir kısmı yandan bakınca anlaşılır. Çene ucunun öne ne kadar çıktığı, boyunla çene altının yaptığı açı, alt dudağın çene ucuna göre konumu; bunların üçü de ancak profilden okunabilir.</p>
 <p>Geride kalan bir çene ucu burnu olduğundan iri, boynu da olduğundan kısa gösterebilir; bu durumda çene altına değil, çene ucunun desteğine bakmak gerekir. Muayenede başınızın duruşunu sabitler, yüzünüze hem sessizken hem konuşurken bakar ve sağ–sol farklarını not ederiz.</p>
@@ -123,7 +123,7 @@ module.exports = {
 <section class="bolum bolum--sicak" id="uygulamalar">
   <div class="sar">
     <div class="bolum-bas" data-gr>
-      <p class="g-etiket">Seçenekler</p>
+      <p class="g-etiket">Olası yollar</p>
       <h2>Çene hattı için hangi seçenekler var?</h2>
       <p class="giris">Buradaki başlıklar, en belirgin etken bulunduktan sonra konuşulur. Etken yanlış belirlenirse doğru bir yöntem bile işe yaramayabilir.</p>
     </div>
@@ -148,13 +148,13 @@ module.exports = {
 <section class="bolum" id="sinir">
   <div class="sar">
     <div class="bolum-bas" data-gr>
-      <p class="g-etiket">Süreç ve uygunluk</p>
+      <p class="g-etiket">Akış ve uygunluk</p>
       <h2>Çene bölgesinde hangi durumlarda işlem yapılmaz?</h2>
       <p class="giris">Bu bölgede bir işlemi konuşabilmek için en belirgin etkenin bulunmuş ve beklentinizin yöntemin sınırlarıyla örtüşüyor olması gerekir. Aşağıdaki durumlardan biri varsa işlem yapılmaz ya da ileri bir tarihe bırakılır.</p>
     </div>
     <div class="izgara izgara--2">
       <div class="kutu kutu--uyari" data-gr>
-        <h4>Uygulama yapılmayan durumlar</h4>
+        <h4>Kimlere uygulanmaz</h4>
         <ul>
           <li>Gebelik ya da emzirme</li>
           <li>İşlem alanında etkin enfeksiyon ya da iltihaplı sivilce</li>
@@ -184,7 +184,7 @@ module.exports = {
           <li><b>Sıra ve yazılı bilgilendirme.</b>&nbsp;Birkaç etken bir aradaysa hangisinin önce ele alınacağını birlikte belirleriz; hepsi tek seansa sıkıştırılmaz. Amaçlanan etki ve olası istenmeyen durumlar size yazılı verilir, onamınız olmadan işleme başlanmaz.</li>
         </ol>
       </div>
-      <div class="g-kutu g-b2 g-kutu--gece" data-gr style="--d:70ms"><span class="g-ket">İLKE</span><p>&#8220;‘Keskin bir çene hattı istiyorum’ cümlesi bir işlemin adı değildir; önce hattı neyin sildiğini buluruz, plan ondan sonra gelir.&#8221;</p></div>
+      <div class="g-kutu g-b2 g-kutu--gece" data-gr style="--d:70ms"><span class="g-ket">Hekimin notu</span><p>&#8220;‘Keskin bir çene hattı istiyorum’ cümlesi bir işlemin adı değildir; önce hattı neyin sildiğini buluruz, plan ondan sonra gelir.&#8221;</p></div>
     </div>
     <div class="kutu kutu--bilgi" data-gr style="margin-top:22px">
       <p>İşlem gününün ardından ilk gün bölgeye bastırmamanızı, ovmamanızı ve yüzüstü yatmamanızı isteriz. Birkaç gün sauna, hamam ve ağır spora ara verin; hekiminizin söylediği süre boyunca sakız, sert et ya da kuruyemiş gibi uzun çiğnenen yiyeceklerden kaçının. Boynunuzdaki bir yakınmaya da aynı muayenede bakarız, ancak iki bölge her zaman aynı gün ele alınmaz; ayrıntısı <a href="${r}bolgeler/boyun-ve-dekolte/">boyun ve dekolte</a> sayfasında. Bütün uygulamalar için geçerli öneriler <a href="${r}uygulamalar/uygulama-sonrasi-takip/">uygulama sonrası takip</a> sayfasında toplandı.</p>

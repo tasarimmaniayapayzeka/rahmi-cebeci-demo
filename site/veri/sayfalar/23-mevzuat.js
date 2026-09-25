@@ -3,7 +3,7 @@ const S = require('../site');
 module.exports = {
   slug: 'mevzuat',
   tip: 'bilgi',
-  baslik: 'Uyduğumuz Mevzuat — Sitede Neyi Neden Yayımlamıyoruz',
+  baslik: 'Bağlı Olduğumuz Mevzuat — Sitede Neyi Neden Yayımlamıyoruz',
   aciklama: 'Sitenin dayandığı yönetmelikler ve kanun. Ücret, hasta yorumu, öncesi–sonrası görseli ve abartılı ifadelere neden yer vermediğimizi açıklıyoruz.',
 
   icerik: (r, ik) => `
@@ -14,7 +14,7 @@ module.exports = {
     <div>
       <nav class="kirinti" aria-label="Konum" style="position:relative;font-size:.76rem;color:var(--sessiz);display:flex;gap:7px;margin-bottom:18px"><a href="${r}" style="color:var(--sessiz);text-decoration:none">Ana sayfa</a> › <span>Mevzuat</span></nav>
       <p class="g-etiket">Mevzuat · İçerik sınırları</p>
-      <h1>Uyduğumuz <span class="g-isik">mevzuat</span></h1>
+      <h1>Bağlı olduğumuz <span class="g-isik">mevzuat</span></h1>
       <p class="g-hero__alt">Sitedeki her sayfa, Türkiye’de sağlık hizmeti sunanların tanıtım ve bilgilendirme faaliyetlerine getirilen kurallar gözetilerek yazıldı. Bu sayfada hangi düzenlemeleri esas aldığımızı ve bunun içeriğe nasıl yansıdığını anlatıyoruz. Sitede bulamadığınız bazı bilgiler bir unutkanlık değil, bu kuralların sonucudur.</p>
     </div>
     <div class="g-tarama" data-gr>
@@ -29,7 +29,7 @@ module.exports = {
 <section class="bolum bolum--sik">
   <div class="sar">
     <div class="bolum-bas">
-      <p class="etiket">Dayanak</p>
+      <p class="etiket">Yasal dayanak</p>
       <h2>Site hazırlanırken esas alınan düzenlemeler</h2>
       <p class="giris">Sayfaların içeriği, dili ve görsel tercihleri aşağıdaki dört düzenlemeye göre belirlendi. Her düzenleme için madde numarası vermek yerine, kolayca bulabilmeniz için adını ve Resmî Gazete’de yayımlandığı tarih ile sayıyı yazdık.</p>
     </div>
@@ -110,12 +110,12 @@ module.exports = {
 <section class="bolum bolum--sik">
   <div class="sar">
     <div class="bolum-bas">
-      <p class="etiket">İlgili başlıklar</p>
+      <p class="etiket">Buradan devam edin</p>
       <h2>Konuyla bağlantılı metinler</h2>
     </div>
     <div class="izgara izgara--3">
       <a class="kart" href="${r}yasal/icerik-ve-gorsel-yayin-ilkelerimiz/">
-        <h3>İçerik ve görsel yayın ilkelerimiz</h3>
+        <h3>Yayın ve görsel kullanım esaslarımız</h3>
         <p>Yazı ve görsel seçiminde uyguladığımız ölçütlerin tam listesi.</p>
         <span class="kart__ok">Metne git ${ik.ok}</span>
       </a>
@@ -130,12 +130,12 @@ module.exports = {
         <span class="kart__ok">Metne git ${ik.ok}</span>
       </a>
       <a class="kart" href="${r}yaklasimimiz/neden-bazi-islemleri-yapmiyoruz/">
-        <h3>Neden bazı işlemleri yapmıyoruz</h3>
+        <h3>Bazı işlemleri neden üstlenmiyoruz</h3>
         <p>Muayenehanenin kapsamının nerede bittiği ve başka bir dala başvurmanızın önerildiği durumlar.</p>
         <span class="kart__ok">Sayfaya git ${ik.ok}</span>
       </a>
       <a class="kart" href="${r}sikca-sorulan-sorular/">
-        <h3>Sıkça sorulan sorular</h3>
+        <h3>Soru ve yanıtlar</h3>
         <p>Kapsam, uygulama süreci ve randevuyla ilgili en çok sorulanlara kısa yanıtlar.</p>
         <span class="kart__ok">Sorulara git ${ik.ok}</span>
       </a>

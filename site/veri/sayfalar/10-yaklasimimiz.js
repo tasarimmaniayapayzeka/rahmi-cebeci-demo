@@ -3,7 +3,7 @@ const S = require('../site');
 module.exports = {
   slug: 'yaklasimimiz',
   tip: 'tibbi',
-  baslik: 'Yaklaşımımız: muayeneden takibe dört adımlı çalışma düzeni',
+  baslik: 'Randevudan kontrole: muayeneden takibe dört adımlı çalışma düzeni',
   aciklama: 'Her plan muayeneyle başlar: aile hekimliği bakışıyla öykü, plan ve aydınlatma, uygulama günü ve takip. Dört adımın gerekçesi ve kapsamımızın sınırı.',
 
   icerik: (r, ik) => `
@@ -12,8 +12,8 @@ module.exports = {
 <section class="g-hero">
   <div class="sar">
     <div>
-      <nav class="kirinti" aria-label="Konum" style="position:relative;font-size:.76rem;color:var(--sessiz);display:flex;gap:7px;margin-bottom:18px"><a href="${r}" style="color:var(--sessiz);text-decoration:none">Ana sayfa</a> › <span>Yaklaşımımız</span></nav>
-      <p class="g-etiket">Yaklaşımımız · Çalışma biçimi</p>
+      <nav class="kirinti" aria-label="Konum" style="position:relative;font-size:.76rem;color:var(--sessiz);display:flex;gap:7px;margin-bottom:18px"><a href="${r}" style="color:var(--sessiz);text-decoration:none">Ana sayfa</a> › <span>Randevudan kontrole</span></nav>
+      <p class="g-etiket">Randevudan kontrole · Çalışma biçimi</p>
       <h1>Önce <span class="g-isik">sizi tanımak</span>, sonra uygulamak</h1>
       <p class="g-hero__alt">Burada her süreç muayeneyle başlar. Şikâyetinizin yanında genel sağlığınız, kullandığınız ilaçlar ve yaşam düzeniniz de konuşulur; aile hekimliğinin kişiyi bütün olarak ele alan bakışı bunu gerektirir. Uygulamaya ancak bu konuşmanın ardından karar verilir. Benzer bir şikâyetle gelen iki kişinin planı bu yüzden çoğu zaman birbirinden farklı olur.</p>
       <div class="g-hero__cta">
@@ -35,7 +35,7 @@ module.exports = {
 <section class="bolum" id="nedeni">
   <div class="sar sar--dar">
     <div class="bolum-bas" data-gr>
-      <p class="g-etiket">Gerekçe</p>
+      <p class="g-etiket">Neden böyle</p>
       <h2>Neden işlemin adıyla değil, sizin anlatımınızla başlıyoruz?</h2>
     </div>
     <div data-gr style="--d:70ms">
@@ -51,28 +51,28 @@ module.exports = {
 <section class="bolum bolum--sicak">
   <div class="sar sar--dar">
     <div class="bolum-bas" data-gr>
-      <p class="g-etiket">Süreç</p>
+      <p class="g-etiket">Akış</p>
       <h2>Her başvuruda aynı sırayı izleyen dört adım</h2>
       <p class="giris">Sıra bozulmaz. O gün gerekmeyen bir adım atlanabilir; ancak yapılan adımlar hep bu dizilişle ilerler ve ilk adım her zaman muayenedir.</p>
     </div>
     <div class="g-katblok" data-gr>
-      <span class="g-kno">01</span>
+      <span class="g-kno">Madde 01</span>
       <h3>Muayene</h3>
       <p>Şikâyetin ne zaman başladığı, zamanla nasıl değiştiği ve neyin onu artırıp azalttığı konuşulur. Reçeteli ya da reçetesiz ilaçlar, takviyeler, kronik hastalıklar, geçirilmiş ameliyatlar ve daha önce yaptırılan estetik işlemler dosyanıza yazılır. Uygulama düşünülen bölge ayrıntılı olarak incelenir; gerekirse onayınızla fotoğrafla kayda alınır.</p>
     </div>
     <div class="g-katblok" data-gr style="--d:70ms">
-      <span class="g-kno">02</span>
-      <h3>Plan ve aydınlatma</h3>
+      <span class="g-kno">Madde 02</span>
+      <h3>Plan ve bilgilendirme</h3>
       <p>Her başvuruda tahlil istenmez; istenen tahlilin sonucu planı bir yöne çevirmelidir. Saç dökülmesinde ferritin ve tiroid hormonlarının değerlendirilmesi buna iyi bir örnektir. Ardından hedef, beklenen süre, olası istenmeyen etkiler, seçenekler ve hiçbir şey yapmamanın ne anlama geldiği konuşulur. Sizin için uygun görülmeyen yollar da açıkça konuşulur; karar birlikte verilir.</p>
     </div>
     <div class="g-katblok" data-gr style="--d:140ms">
-      <span class="g-kno">03</span>
+      <span class="g-kno">Madde 03</span>
       <h3>Uygulama günü</h3>
       <p>Yazılı onamınız alındıktan sonra işlem planlandığı gibi yapılır. Ürün miktarı ya da cihaz ayarı, bölgeye ve o günkü cilt durumuna göre hekim tarafından son kez gözden geçirilir; gerekirse işlem ertelenir. Çıkışta bakım talimatı size yazılı olarak verilir.</p>
     </div>
     <div class="g-katblok" data-gr style="--d:210ms">
-      <span class="g-kno">04</span>
-      <h3>Takip</h3>
+      <span class="g-kno">Madde 04</span>
+      <h3>Kontroller</h3>
       <p>Kontrol randevusu, etkinin yerine oturması beklendikten sonraya verilir. Aradaki günlerde hangi durumda aramanız gerektiği baştan bellidir. Değerlendirmeyi, işlemi yapan hekim önceki kayıtlarla karşılaştırarak yapar.</p>
     </div>
   </div>
@@ -82,7 +82,7 @@ module.exports = {
 <section class="bolum bolum--buz2">
   <div class="sar">
     <div class="bolum-bas" data-gr>
-      <p class="g-etiket">Gerekçe</p>
+      <p class="g-etiket">Neden böyle</p>
       <h2>Her tercihin arkasında hangi neden var?</h2>
       <p class="giris">Çalışma düzenindeki her tercihin somut bir karşılığı var. Dördünü aşağıda bulabilirsiniz.</p>
     </div>
@@ -115,30 +115,30 @@ module.exports = {
 <section class="bolum">
   <div class="sar">
     <div class="bolum-bas" data-gr>
-      <p class="g-etiket">Süreklilik</p>
+      <p class="g-etiket">Aynı hekimle devam</p>
       <h2>Sizi muayene eden hekim, işlemi de yapıyor mu?</h2>
       <p class="giris">Evet. Muayeneyi bir kişinin yapıp uygulamayı başkasına bıraktığı bir düzen burada yok.</p>
     </div>
     <div class="g-bento">
       <div class="g-kutu g-b4" data-gr>
-        <span class="g-ket">Tek hekim</span>
+        <span class="g-ket">Tek hekimle</span>
         <p><b style="color:var(--murekkep)">Öykünüzü dinleyen, sizi muayene eden, planı kuran ve uygulamayı yapan kişi ${S.hekim.tam}’dir.</b><br>Bunun gündelik karşılığı basittir: aklınıza bir soru takıldığında ya da beklemediğiniz bir değişiklik fark ettiğinizde her şeyi yeniden anlatmanız gerekmez. Dosyanızı bilen hekim yeni bulguyu eskisiyle yan yana koyar ve ne yapılacağını söyler.</p>
         <div class="dgm-sira" style="margin-top:16px">
           <a class="dgm dgm--iki" href="${r}hekim/">Hekim ${ik.ok}</a>
-          <a class="dgm dgm--iki" href="${r}uygulamalar/uygulama-sonrasi-takip/">Uygulama sonrası takip ${ik.ok}</a>
+          <a class="dgm dgm--iki" href="${r}uygulamalar/uygulama-sonrasi-takip/">Uygulama sonrası kontrol ${ik.ok}</a>
         </div>
       </div>
-      <div class="g-kutu g-b2 g-kutu--gece" data-gr style="--d:70ms"><span class="g-ket">İlke</span><p>“Sizi ilk gün dinleyen hekim, son kontrolde de karşınızda.”</p></div>
+      <div class="g-kutu g-b2 g-kutu--gece" data-gr style="--d:70ms"><span class="g-ket">Hekimin notu</span><p>“Sizi ilk gün dinleyen hekim, son kontrolde de karşınızda.”</p></div>
       <div class="g-kutu g-b2" data-gr style="--d:140ms">
-        <span class="g-ket">Kayıt</span>
+        <span class="g-ket">Kayıt tutma</span>
         <p><b style="color:var(--murekkep)">Birikimli kayıt</b><br>Her randevunun notu bir öncekinin üstüne eklenir; yeni bir karar verilirken geçmiş ziyaretler de göz önündedir.</p>
       </div>
       <div class="g-kutu g-b2" data-gr style="--d:210ms">
-        <span class="g-ket">Takip</span>
+        <span class="g-ket">Kontrol süreci</span>
         <p><b style="color:var(--murekkep)">Geç fark edilen bulgularda</b><br>Aylar sonra hissedilen bir sertlik ya da şişlikte, ilk işlemin nasıl yapıldığını bilen hekime danışırsınız.</p>
       </div>
       <div class="g-kutu g-b2" data-gr style="--d:280ms">
-        <span class="g-ket">Devir yok</span>
+        <span class="g-ket">Başkasına devredilmez</span>
         <p><b style="color:var(--murekkep)">Aracı yok</b><br>Plan ile işlem arasında not aktaran üçüncü bir kişi olmadığından hedef yolda kaybolmaz.</p>
       </div>
     </div>
@@ -149,7 +149,7 @@ module.exports = {
 <section class="bolum bolum--sicak">
   <div class="sar sar--dar">
     <div class="bolum-bas" data-gr>
-      <p class="g-etiket">Kapsam</p>
+      <p class="g-etiket">Neyi kapsar</p>
       <h2>Yapmadıklarımızı da açıkça yazıyoruz</h2>
     </div>
     <div data-gr style="--d:70ms">
@@ -161,7 +161,7 @@ module.exports = {
       <p>Sitede ürün markası üzerinden tanıtım ya da ticari duyuru bulunmaz; uygulamalar yöntem ve etken madde adıyla anlatılır. Muayenehanedeki cihazların model bilgisi yalnızca muayenehane sayfasındaki cihaz listesinde ve ilgili uygulama sayfasındaki tek bir “kullanılan cihaz” satırında, bilgilendirme amacıyla yer alır.</p>
     </div>
     <div class="dgm-sira" style="margin-top:22px">
-      <a class="dgm dgm--iki" href="${r}yaklasimimiz/neden-bazi-islemleri-yapmiyoruz/">Neden bazı işlemleri yapmıyoruz ${ik.ok}</a>
+      <a class="dgm dgm--iki" href="${r}yaklasimimiz/neden-bazi-islemleri-yapmiyoruz/">Bazı işlemleri neden üstlenmiyoruz ${ik.ok}</a>
     </div>
   </div>
 </section>
@@ -170,7 +170,7 @@ module.exports = {
 <section class="bolum bolum--buz2">
   <div class="sar">
     <div class="bolum-bas" data-gr>
-      <p class="g-etiket">Açık olalım</p>
+      <p class="g-etiket">Açıkça söyleyelim</p>
       <h2>Bu düzen sizden neler bekliyor?</h2>
       <p class="giris">Bu düzenin size yükleyeceği birkaç şey var; bunları baştan bilmenizi isteriz.</p>
     </div>
@@ -195,12 +195,12 @@ module.exports = {
 <section class="bolum">
   <div class="sar">
     <div class="bolum-bas" data-gr>
-      <p class="g-etiket">Devamı</p>
-      <h2>İlgili başlıklar</h2>
+      <p class="g-etiket">Okumaya devam</p>
+      <h2>Buradan devam edin</h2>
     </div>
     <div class="izgara izgara--3" data-gr style="--d:70ms">
       <a class="kart" href="${r}yaklasimimiz/neden-bazi-islemleri-yapmiyoruz/">
-        <h3>Neden bazı işlemleri yapmıyoruz</h3>
+        <h3>Bazı işlemleri neden üstlenmiyoruz</h3>
         <p>Muayenehanede yapılmayan işlemlerin listesi ve bu sınırın nedeni.</p>
         <span class="kart__ok">Oku ${ik.ok}</span>
       </a>
@@ -210,7 +210,7 @@ module.exports = {
         <span class="kart__ok">Oku ${ik.ok}</span>
       </a>
       <a class="kart" href="${r}klinik/">
-        <h3>Muayenehane</h3>
+        <h3>Muayenehanemiz</h3>
         <p>${S.iletisim.semt}’deki muayenehane: odalar, cihazlar, hijyen düzeni ve randevu işleyişi.</p>
         <span class="kart__ok">Oku ${ik.ok}</span>
       </a>

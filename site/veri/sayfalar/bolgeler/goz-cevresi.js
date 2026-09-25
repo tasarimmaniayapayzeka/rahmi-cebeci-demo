@@ -17,7 +17,7 @@ module.exports = {
       <h1>Yüzün en ince derisi, <span class="g-isik">en temkinli</span> planı ister.</h1>
       <p class="g-hero__alt">Alt göz kapağında deri milimetrenin altına iner ve burada oluşan en küçük düzensizlik bile karşınızdakinin gözüne çarpar. Koyu halkalar, göz kenarındaki kırışıklar ve kaşın düşmesi dışarıdan birbirine karışsa da her birinin nedeni başkadır. Muayenede önce bu nedenler ayrılır; sonuç çoğu zaman beklemek ya da hiç işlem yapmamak olur ve bu da tıbben yerinde bir yanıttır.</p>
       <div class="g-hero__cta">
-        <a class="dgm dgm--bir" href="${r}iletisim/">Randevu talebi</a>
+        <a class="dgm dgm--bir" href="${r}iletisim/">Randevu isteyin</a>
         <a class="dgm dgm--iki" href="#tolerans">Neden bu kadar dikkat? ↓</a>
       </div>
       <div class="g-tikler"><span><i></i>Uygulamayı hekim yapar</span><span><i></i>Adım adım plan</span><span><i></i>Kontrol randevusu planın içinde</span></div>
@@ -43,7 +43,7 @@ module.exports = {
 <section class="bolum" id="tolerans">
   <div class="sar">
     <div class="bolum-bas" data-gr>
-      <p class="g-etiket">Anatomi</p>
+      <p class="g-etiket">Doku yapısı</p>
       <h2>Göz çevresinde neden bu kadar dikkatli olunur?</h2>
       <p class="giris">Göz çevresi için muayeneye gelen pek çok kişi, beklediğinden daha az işlemle ya da hiç işlem yapılmadan ayrılır. Bunun ardında bölgenin dört anatomik özelliği yatar; bu özellikler bir araya geldiğinde yüzün başka hiçbir yerinde olmadığı kadar küçük bir hata payı kalır. Örneğin yanağa konduğunda hiç belli olmayacak bir damla ürün, göz altında haftalarca fark edilebilir.</p>
     </div>
@@ -90,20 +90,20 @@ module.exports = {
       </div>
       <div>
         <div class="g-katblok" data-gkat="gozalti" data-gr>
-          <span class="g-kno">01 · GÖZ ALTI</span>
+          <span class="g-kno">Kesit 01 · GÖZ ALTI</span>
           <h3>Koyu halkanın arkasındaki beş neden</h3>
           <p>Göz altının koyu görünmesine şunlardan biri ya da birkaçı yol açar: deride biriken pigment, ince deriden seçilen damarlar, zamanla incelen deri, yanakla kapak arasındaki çukurun oluşturduğu gölge ve biriken sıvı. Uzaktan bakıldığında hepsi aynı “yorgun göz” izlenimini verir; oysa birine uygun bir işlem ötekinde görünümü kötüleştirebilir. Göz altı yağının öne doğru taşmasıyla oluşan torba ise bambaşka bir konudur ve cerrahi değerlendirme ister.</p>
           <div class="g-haplar"><a href="${r}cilt-sorunlari/goz-alti-koyulugu/">Göz altı koyuluğu</a><a href="${r}uygulamalar/dolgu-uygulamalari/#goz-alti">Göz altı dolgusu</a></div>
         </div>
         <div class="g-katblok" data-gkat="kazayagi" data-gr>
-          <span class="g-kno">02 · KAZ AYAĞI</span>
+          <span class="g-kno">Kesit 02 · KAZ AYAĞI</span>
           <h3>Gülümsemenin bıraktığı izler</h3>
           <p>Gülerken göz kenarında yelpaze gibi açılan kırışıklar, gözü çember gibi saran kasın yıllar boyunca kasılmasıyla derinleşir; halk arasında bunlara “kaz ayağı” denir. Alt kapağın hemen altındaki ince kırışıklıkların kaynağı ise çoğunlukla kas değil, incelen ve nemini yitiren deridir.</p>
 <p>Kasın yol açtığı çizgilerde az sayıda noktaya düşük doz uygulanır; amaç gülümsemenizi silmek değil, çizgilerin keskinliğini azaltmaktır. Yüzünüz dinlenirken de kaybolmayan çizgiler için yalnızca kası gevşetmek çoğu zaman yeterli olmaz.</p>
           <div class="g-haplar"><a href="${r}uygulamalar/botulinum-toksin/">Botulinum toksin</a><a href="${r}cilt-sorunlari/mimik-cizgileri-ve-kirisiklik/">Mimik çizgileri</a></div>
         </div>
         <div class="g-katblok" data-gkat="kas" data-gr>
-          <span class="g-kno">03 · KAŞ BÖLGESİ</span>
+          <span class="g-kno">Kesit 03 · KAŞ BÖLGESİ</span>
           <h3>Kaş, şakak ve göz kapağı dengesi</h3>
           <p>Kaşın yüksekliği, onu yukarı çeken alın kası ile aşağı çeken kaslar arasındaki çekişmeyle belirlenir; bu dengeye dokunan her işlem kaşın yerini ve kavisini değiştirebilir. Göz kapağınızda hafif bir düşüklük varsa ya da görüşünüzü açmak için farkında olmadan kaşlarınızı kaldırıyorsanız işlem yapılmaz veya kapsamı daraltılır. Kaşın dış ucu şakaktaki hacim kaybı yüzünden düşmüşse de yanıt göz çevresinde değil, şakakta aranır.</p>
           <div class="g-haplar"><a href="${r}bolgeler/yuz/">Yüz bölgesi planlaması</a></div>
@@ -118,33 +118,33 @@ module.exports = {
 <section class="bolum" id="gozalti-mekanizma">
   <div class="sar">
     <div class="bolum-bas" data-gr>
-      <p class="g-etiket">Ayrım</p>
+      <p class="g-etiket">Farkı nerede</p>
       <h2>Koyu halkanın nedeni muayenede nasıl ayırt edilir?</h2>
       <p class="giris">Işığın yönünü değiştirmek, deriyi hafifçe germek ve farklı açılardan bakmak, hangi nedenin öne çıktığını gösterir. Her nedenin kendi yanıtı vardır; bazılarında dolgu hiç gündeme gelmez.</p>
     </div>
     <div class="g-bento">
       <div class="g-kutu g-b2" data-gr>
-        <span class="g-ket">PİGMENT</span>
+        <span class="g-ket">PİGMENT KAYNAKLI</span>
         <p><b style="color:var(--murekkep)">Renk birikimi</b><br>Kahverengimsi bir tondur; deriyi hafifçe gerdiğinizde bile silinmez. Hacim eklemek bu rengi değiştirmez; önce güneşten korunma, ardından lekeye yönelik seçenekler konuşulur.</p>
       </div>
       <div class="g-kutu g-b2" data-gr style="--d:70ms">
-        <span class="g-ket">DAMARSAL</span>
+        <span class="g-ket">DAMAR KAYNAKLI</span>
         <p><b style="color:var(--murekkep)">Seçilen damarlar</b><br>Morumsu ya da mavimsi bir renktir ve ışık değiştikçe koyulaşıp açılır. Dolgu çoğunlukla bu görünümü azaltmaz; kimi durumda damarları daha da öne çıkarabilir.</p>
       </div>
       <div class="g-kutu g-b2" data-gr style="--d:140ms">
-        <span class="g-ket">İNCELME</span>
+        <span class="g-ket">DERİ İNCELMESİ</span>
         <p><b style="color:var(--murekkep)">İncelen deri</b><br>Deri inceldikçe altındaki kas ve damarlar daha çok görünür; bölge hem koyu hem buruşuk bir hâl alır. Bu durumda deri kalitesini desteklemeye yönelik seçenekler öne çıkar.</p>
       </div>
       <div class="g-kutu g-b2" data-gr>
-        <span class="g-ket">HACİM KAYBI</span>
+        <span class="g-ket">HACİM AZALMASI</span>
         <p><b style="color:var(--murekkep)">Çukurun gölgesi</b><br>Yanakla alt kapak arasındaki geçiş derinleştikçe altında bir gölge oluşur. Dolgu yalnızca bu tabloda düşünülebilir ve çukurun sınırlarının net olması şarttır.</p>
       </div>
       <div class="g-kutu g-b2" data-gr style="--d:70ms">
-        <span class="g-ket">ÖDEM</span>
+        <span class="g-ket">SIVI BİRİKİMİ</span>
         <p><b style="color:var(--murekkep)">Biriken sıvı</b><br>Sabah uyandığınızda belirgin, akşama doğru azalan bir şişliktir. Az uyku, tuzlu yemekler, mevsimsel burun akıntısı, tiroid ya da böbrek kaynaklı sıvı tutulması bunu artırabilir. Böyle bir göz altına dolgu yapmak şişliği büyütebilir.</p>
       </div>
       <div class="g-kutu g-b2 g-kutu--gece" data-gr style="--d:140ms">
-        <span class="g-ket">CERRAHİ SINIR</span>
+        <span class="g-ket">CERRAHİYE GEÇİŞ</span>
         <p>"Göz altında yağın öne taşmasıyla oluşan torba, iğneyle değil cerrahiyle ele alınan bir durumdur; bu tabloda sizi ilgili uzmanlık dalına yönlendiririz."</p>
       </div>
     </div>
@@ -155,7 +155,7 @@ module.exports = {
 <section class="bolum bolum--sicak" id="uygulamalar">
   <div class="sar">
     <div class="bolum-bas" data-gr>
-      <p class="g-etiket">Seçenekler</p>
+      <p class="g-etiket">Olası yollar</p>
       <h2>Göz çevresi için hangi seçenekler var?</h2>
       <p class="giris">Buradaki başlıklar ancak doğru neden bulunduğunda konuşulur. Göz çevresinde seçenek sayısı azdır; işlem yapılmayan durumların listesi ise öteki bölgelerden uzundur.</p>
     </div>
@@ -181,13 +181,13 @@ module.exports = {
 <section class="bolum" id="sinir">
   <div class="sar">
     <div class="bolum-bas" data-gr>
-      <p class="g-etiket">Uygunluk</p>
+      <p class="g-etiket">Kimler için</p>
       <h2>Göz çevresine hangi durumlarda işlem yapılmaz?</h2>
       <p class="giris">Göz çevresinde işlemden kaçınılan durumlar, yüzün diğer bölgelerine göre daha fazladır. En ufak bir tereddüt kalırsa işlem yapmayız; bu bölgede beklemek her zaman kabul edilebilir bir yoldur.</p>
     </div>
     <div class="izgara izgara--2">
       <div class="kutu kutu--uyari" data-gr>
-        <h4>Uygulama yapılmayan durumlar</h4>
+        <h4>Kimlere uygulanmaz</h4>
         <ul>
           <li>Sıvı tutmaya yatkınlık, sabahları kabaran göz altı, tiroid ya da böbrek kökenli ödem</li>
           <li>Alt kapakta belirgin sarkma ya da öne taşan yağ torbası</li>

@@ -34,36 +34,36 @@ module.exports = {
 <section class="bolum bolum--sicak" id="nedenler">
   <div class="sar">
     <div class="bolum-bas" data-gr>
-      <p class="g-etiket">Ayrım</p>
+      <p class="g-etiket">Farkı nerede</p>
       <h2>Doku şikâyetinin ardında hangi etkenler var?</h2>
       <p class="giris">Doku şikâyetleri büyük ölçüde bakış mesafesine bağlıdır: birkaç adım öteden fark edilmez, aynaya iyice yaklaştığınızda ya da parlak bir lambanın altında göze batar. Bu yüzden kişi kendi cildini, çevresindekilerin gördüğünden daha sorunlu algılayabilir. Muayenede aşağıdaki bileşenler tek tek ele alınır.</p>
     </div>
     <div class="g-katblok" data-gr>
-      <span class="g-kno">01</span>
+      <span class="g-kno">Kesit 01</span>
       <h3>Yağ salgısı ve tıkanma</h3>
       <p>Çok çalışan bir yağ bezinin kanalı da geniş olur. Bu nedenle gözenekler en çok burunda, alnın ortasında ve çenede dikkat çeker; sıcak ve nemli havada daha da belirginleşir. Kanal ağzında yağ ve dökülmüş hücreler biriktiğinde gözenek genişler; biriken madde havayla temas edip koyulaştığı için siyah bir nokta gibi görünür. Burnunuzdaki koyu noktalar kirden oluşmaz.</p>
       <div class="g-haplar"><a href="${r}uygulamalar/karbon-peeling/">Karbon peeling</a></div>
     </div>
     <div class="g-katblok" data-gr style="--d:60ms">
-      <span class="g-kno">02</span>
+      <span class="g-kno">Kesit 02</span>
       <h3>Destek kaybı ve güneş</h3>
       <p>Gözeneği çevreleyen doku esnekliğini yitirdiğinde gözenek açık kalmaya ve aşağı doğru uzamaya başlar; bu görünüm özellikle yanaklarda, damla biçiminde izlenir ve kuru ciltlerde de görülebilir. Yıllarca biriken güneş etkisi destek liflerini zayıflatır, yüzeyi de kalınlaştırır. Bu etkenler arasında sizin elinizde olan en güçlü adım düzenli güneş korumasıdır.</p>
       <div class="g-haplar"><a href="${r}uygulamalar/altin-igne-radyofrekans/">Altın iğne radyofrekans</a><a href="${r}uygulamalar/fraksiyonel-lazer/">Fraksiyonel lazer</a></div>
     </div>
     <div class="g-katblok" data-gr style="--d:120ms">
-      <span class="g-kno">03</span>
+      <span class="g-kno">Kesit 03</span>
       <h3>Yüzeyde biriken hücreler</h3>
       <p>Deri kendini yaklaşık bir aylık bir döngüyle yeniler. Bu döngü yavaşladığında yüzeyde kalan ölü hücreler cildi dokunuşta pürüzlü, görünüşte mat yapar. Yağlı ciltte bu hücreler yağla birleşip kümelenir. Cildi kurutmaya yönelik girişimler bariyeri bozar, yağ yapımını artırır ve pürüz derinleşir; nem dengesi yerine oturduğunda bu bileşen belirgin biçimde azalır.</p>
       <div class="g-haplar"><a href="${r}cilt-sorunlari/nem-kaybi-ve-donukluk/">Nem kaybı ve donukluk</a></div>
     </div>
     <div class="g-katblok" data-gr style="--d:180ms">
-      <span class="g-kno">04</span>
+      <span class="g-kno">Kesit 04</span>
       <h3>Akne izinin yüzeyde yarattığı iniş çıkışlar</h3>
       <p>Akne izi, iltihabın derinde yol açtığı doku kaybının ya da aşırı doku yapımının kalıcı sonucudur. Yüzeyde biriken bir tabaka olmadığı için yüzeysel işlemlerle kaybolmaz. Çukur izler yandan gelen ışıkta belirginleşir; kabarık izler daha çok sırtta, omuzlarda ve çene hattında görülür. Yüzeyi düz olup yalnız rengi farklı kalan alanlar ise iz değil, renk değişikliğidir. İz için plan yapılabilmesi, etkin aknenin önce yatışmasına bağlıdır.</p>
       <div class="g-haplar"><a href="${r}cilt-sorunlari/cilt-tonu-ve-leke/">Cilt tonu ve leke</a><a href="${r}cilt-sorunlari/akne-ve-akne-izi/">Akne ve akne izi</a></div>
     </div>
     <div class="g-katblok" data-gr style="--d:240ms">
-      <span class="g-kno">05</span>
+      <span class="g-kno">Kesit 05</span>
       <h3>Durumu ağırlaştıran alışkanlıklar</h3>
       <p>En sık karşılaştığımız sorun, düzeltme çabasının tabloyu kötüleştirmesidir. Gözenekleri parmakla sıkmak, tıkanan maddeyi daha derine göndererek iz riskini artırır. Granüllü ürünlerle sert ovmak koruyucu tabakayı aşındırır. Cildi kurutan ürünler yağ bezlerini daha çok çalışmaya iter. Aynı akşam üst üste sürülen aktif içerikler cildin sınırını zorlar. Güneşten korunmamak ise yenilenmeyi yavaşlatıp gözenek çevresindeki desteği zayıflatır. Kapalı komedonlar, küçük beyaz kistler ve büyümüş yağ bezleri de gözenekle karıştırılabilir; bunlar farklı ele alınır.</p>
     </div>
@@ -78,7 +78,7 @@ module.exports = {
 <section class="bolum bolum--buz2">
   <div class="sar">
     <div class="bolum-bas" data-gr>
-      <p class="g-etiket">Sonrası</p>
+      <p class="g-etiket">Uygulamadan sonra</p>
       <h2>Öne çıkan bileşen belli olunca hangi seçenekler konuşulur?</h2>
       <p class="giris">Cilt hazır olduğunda ve uygun görülürse aşağıdaki başlıklar değerlendirilir. Değişimin ölçüsü kişiden kişiye farklıdır; bakım alışkanlıkları bırakıldığında kazanılan görünüm geriler. Size özel plan yalnızca muayenede kurulur.</p>
     </div>

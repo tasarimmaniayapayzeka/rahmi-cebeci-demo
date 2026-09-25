@@ -16,7 +16,7 @@ module.exports = {
       <h1>Fraksiyonel lazer: cildi <span class="g-isik">mikro alanlarla</span> yenileme</h1>
       <p class="g-hero__alt">Fraksiyonel lazer, ışını cildin tamamına değil, birbirinden ayrık çok sayıda küçük alana verir. Her mikro alanda denetimli bir hasar oluşur; aralarda kalan sağlam deri iyileşmeyi hızlandırır. Akne izi, gözenek görünümü ve ince çizgilerde yüzeyin yenilenmesi hedeflenir; hangi modun, hangi derinlikte kullanılacağına cildiniz görüldükten sonra karar verilir.</p>
       <div class="g-hero__cta">
-        <a class="dgm dgm--bir" href="${r}iletisim/">Randevu talebi</a>
+        <a class="dgm dgm--bir" href="${r}iletisim/">Randevu isteyin</a>
         <a class="dgm dgm--iki" href="#ilkbolum">Yöntemin işleyişi ↓</a>
       </div>
       <div class="g-tikler"><span><i></i>Aradaki sağlam deri korunur</span><span><i></i>Derinlik cilde göre ayarlanır</span><span><i></i>İyileşme günleri önceden konuşulur</span></div>
@@ -40,7 +40,7 @@ module.exports = {
 <!-- ═════ NEDİR / NE DEĞİLDİR ═════ -->
 <section class="bolum bolum--buz2" id="ilkbolum">
   <div class="sar">
-    <div class="bolum-bas" data-gr><p class="g-etiket">Tanım ve sınırlar</p><h2>Fraksiyonel lazer deride ne yapar, neyin yerine geçmez?</h2><p class="giris">“Fraksiyonel” kesirli demektir: ışın, yüzeyin bütününü değil, ızgara düzeninde dizilmiş küçük sütunları etkiler. Beklenen değişim, bu sütunlar kapanırken başlayan onarımdan gelir.</p></div>
+    <div class="bolum-bas" data-gr><p class="g-etiket">Ne yapar, ne yapmaz</p><h2>Fraksiyonel lazer deride ne yapar, neyin yerine geçmez?</h2><p class="giris">“Fraksiyonel” kesirli demektir: ışın, yüzeyin bütününü değil, ızgara düzeninde dizilmiş küçük sütunları etkiler. Beklenen değişim, bu sütunlar kapanırken başlayan onarımdan gelir.</p></div>
     <div class="izgara izgara--2">
       <div class="kutu kutu--bilgi" data-gr>
         <b>Bu nedir</b>
@@ -60,7 +60,7 @@ module.exports = {
 <!-- ═════ BENTO ═════ -->
 <section class="bolum bolum--sicak">
   <div class="sar">
-    <div class="bolum-bas" data-gr><p class="g-etiket">Plan</p><h2>Seanslar nasıl kurgulanır, iyileşme hangi sırayla ilerler?</h2></div>
+    <div class="bolum-bas" data-gr><p class="g-etiket">Yol haritası</p><h2>Seanslar nasıl kurgulanır, iyileşme hangi sırayla ilerler?</h2></div>
     <div class="g-bento">
       <div class="g-kutu g-b2 g-donutkap" data-gr>
         <div class="g-donut"><svg viewBox="0 0 100 100" width="100" height="100"><circle class="g-iz" cx="50" cy="50" r="45"/><circle class="g-dol" data-gyuzde="60" cx="50" cy="50" r="45"/><circle class="g-kom" cx="50" cy="50" r="45"/></svg><b>2 mod</b></div>
@@ -73,7 +73,7 @@ module.exports = {
         <div class="g-cubuk"><small><span>SONUCUN OKUNMASI</span><span>3–6 ay</span></small><div class="g-ciz"><b class="g-cubuk-bakir" data-gw="92%"></b></div></div>
         <p style="font-size:.7rem;color:var(--sessiz);margin-top:8px">Çubuk boyları yalnız karşılaştırma içindir; size özel plan muayenede kurulur.</p>
       </div>
-      <div class="g-kutu g-b2" data-gr style="--d:140ms"><span class="g-ket">PROTOKOL</span>
+      <div class="g-kutu g-b2" data-gr style="--d:140ms"><span class="g-ket">Adım adım</span>
         <ol class="g-protokol">
           <li>Muayene: iz tipi, cilt tonu, güneş ve uçuk öyküsü</li>
           <li>İlaç sorgusu: ağızdan retinoid, ışığa duyarlılık yapan ilaçlar</li>
@@ -82,11 +82,11 @@ module.exports = {
           <li>Yazılı bakım notu ve kontrol randevusu</li>
         </ol>
       </div>
-      <div class="g-kutu g-b2 g-kutu--gece" data-gr><span class="g-ket">İLKE</span><p>"Derinliği cihaz seçmez; cilt tonunuz ve iyileşmeye ayırabileceğiniz gün sayısı seçer."</p></div>
-      <div class="g-kutu g-b2" data-gr style="--d:70ms"><span class="g-ket">SONRASI</span>
+      <div class="g-kutu g-b2 g-kutu--gece" data-gr><span class="g-ket">Hekimin notu</span><p>"Derinliği cihaz seçmez; cilt tonunuz ve iyileşmeye ayırabileceğiniz gün sayısı seçer."</p></div>
+      <div class="g-kutu g-b2" data-gr style="--d:70ms"><span class="g-ket">Uygulamadan sonra</span>
         <p style="font-size:.92rem">Yüzeyi açan uygulamadan sonraki ilk bir–iki gün güneş yanığına benzer sıcaklık, kızarıklık ve şişlik olur; ardından mikro alanlara denk gelen ince koyu noktacıklar ve pul pul dökülme birkaç gün sürer. Yüzeyi açmayan uygulamada kızarıklık çoğunlukla bir–iki günde geçer. Daha seyrek: uzayan kızarıklık, sivilce benzeri döküntü, uçuk alevlenmesi, geçici koyulaşma. Riski artıranlar: kabuğa dokunmak, güneşe çıkmak, ilk günlerde makyaj ve ağır kremler, asitli ürünlere ya da retinoide vaktinden önce dönmek. Seyrek görülen ama önemsenmesi gerekenler: enfeksiyon, kalıcı renk değişikliği, iz.</p>
       </div>
-      <div class="g-kutu g-b2" data-gr style="--d:140ms"><span class="g-ket">SEANS DÜZENİ</span>
+      <div class="g-kutu g-b2" data-gr style="--d:140ms"><span class="g-ket">Seans takvimi</span>
         <p style="font-size:.92rem">Çoğu planda üç ile beş seans, dört ile sekiz hafta arayla yapılır; aralık seçilen derinliğe göre uzar ya da kısalır. Deri bir önceki seansın onarımını bitirmeden yeni seans yapılmaz. Değişim seanslar ilerledikçe fark edilir, son seanstan üç ile altı ay sonra birlikte değerlendirilir. Seans sayısı baştan söz verilmez; sonuçlar kişiden kişiye değişir.</p>
       </div>
       <div class="kutu kutu--uyari g-b4" data-gr>
@@ -104,7 +104,7 @@ module.exports = {
         </ul>
       </div>
       <div class="g-kutu g-b2 g-kutu--gorsel" data-gr><img src="${r}varliklar/gorsel/uyg-fraksiyonel-lazer-2.webp" alt="Yanak derisinde ince ışık noktalarından oluşan düzenli ızgara" loading="lazy"><span class="g-ainot">Temsilî görsel · yapay zekâ ile üretildi</span></div>
-      <div class="g-kutu g-b2 g-kutu--cta" data-gr><h3>Takviminize uygun bir plan kuralım</h3><p>Derinlik, iyileşmeye ayırabileceğiniz günler konuşulmadan seçilmez.</p><a class="dgm dgm--altin" href="${r}iletisim/">Randevu talebi</a></div>
+      <div class="g-kutu g-b2 g-kutu--cta" data-gr><h3>Takviminize uygun bir plan kuralım</h3><p>Derinlik, iyileşmeye ayırabileceğiniz günler konuşulmadan seçilmez.</p><a class="dgm dgm--altin" href="${r}iletisim/">Randevu isteyin</a></div>
       <div class="kutu kutu--acil g-b4" data-gr>
         <b>Kontrol gününü beklemeyin</b>
         <p>Günler geçtikçe artan ağrı, yayılan kızarıklık ya da şişlik, sarı kabuk veya akıntı, ateş, küme hâlinde su toplaması ya da kapanmayan açık bir alan fark ederseniz ${S.iletisim.tel} numarasından bize ulaşın; ulaşamıyorsanız <b>112</b> Acil Çağrı Merkezi’ni arayın ya da en yakın hastanenin acil birimine başvurun.</p>

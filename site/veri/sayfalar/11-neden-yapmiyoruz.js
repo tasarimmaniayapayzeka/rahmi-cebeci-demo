@@ -12,8 +12,8 @@ module.exports = {
 <section class="g-hero">
   <div class="sar">
     <div>
-      <nav class="kirinti" aria-label="Konum" style="position:relative;font-size:.76rem;color:var(--sessiz);display:flex;gap:7px;margin-bottom:18px"><a href="${r}" style="color:var(--sessiz);text-decoration:none">Ana sayfa</a> › <a href="${r}yaklasimimiz/" style="color:var(--sessiz);text-decoration:none">Yaklaşımımız</a> › <span>Kapsamın sınırı</span></nav>
-      <p class="g-etiket">Yaklaşımımız · Kapsam</p>
+      <nav class="kirinti" aria-label="Konum" style="position:relative;font-size:.76rem;color:var(--sessiz);display:flex;gap:7px;margin-bottom:18px"><a href="${r}" style="color:var(--sessiz);text-decoration:none">Ana sayfa</a> › <a href="${r}yaklasimimiz/" style="color:var(--sessiz);text-decoration:none">Randevudan kontrole</a> › <span>Kapsamın sınırı</span></nav>
+      <p class="g-etiket">Randevudan kontrole · Kapsam</p>
       <h1>Yapmadığımız işlemler ve <span class="g-isik">nedenleri</span></h1>
       <p class="g-hero__alt">Hekimin çalışma alanı, uzmanlık belgesi ve Bakanlığın verdiği yetki belgeleriyle çizilir. Bu çerçevenin dışına çıkmak hem mevzuata aykırıdır hem de güvenli değildir. Bu sayfada muayenehanede yapılmayan işlemleri ve talebiniz kapsam dışında kaldığında nasıl bir yol izlendiğini bulacaksınız.</p>
       <div class="g-hero__cta">
@@ -35,7 +35,7 @@ module.exports = {
 <section class="bolum" id="kural">
   <div class="sar sar--dar">
     <div class="bolum-bas" data-gr>
-      <p class="g-etiket">Çerçeve</p>
+      <p class="g-etiket">Çizilen sınır</p>
       <h2>Kapsamı ne belirler?</h2>
     </div>
     <div data-gr style="--d:70ms">
@@ -51,7 +51,7 @@ module.exports = {
 <section class="bolum bolum--sicak">
   <div class="sar">
     <div class="bolum-bas" data-gr>
-      <p class="g-etiket">Kapsam dışı</p>
+      <p class="g-etiket">Yapılmayanlar</p>
       <h2>Hangi işlemler bu muayenehanenin dışında kalıyor?</h2>
       <p class="giris">Bu başlıklardan biri için gelseniz de işlem yapılmaz. Yine de şikâyetiniz dinlenir ve doğru adresin hangi uzmanlık dalı olduğu söylenir.</p>
     </div>
@@ -98,22 +98,22 @@ module.exports = {
       <h2>Talebiniz kapsam dışında kalırsa ne olur?</h2>
     </div>
     <div class="g-katblok" data-gr>
-      <span class="g-kno">01</span>
+      <span class="g-kno">Madde 01</span>
       <h3>Beklemeden söylenir</h3>
       <p>Talebiniz kapsam dışındaysa bunu randevunun ilk dakikalarında öğrenirsiniz. Size başka bir işlem teklif edilerek süre uzatılmaz.</p>
     </div>
     <div class="g-katblok" data-gr style="--d:70ms">
-      <span class="g-kno">02</span>
+      <span class="g-kno">Madde 02</span>
       <h3>Şikâyetiniz yine de değerlendirilebilir</h3>
       <p>İşlem yapılmasa da şikâyetin kendisi incelenebilir. Ekim yaptırmayı planlayan biri için dökülmenin hangi tipte olduğu ve buna eşlik eden bir iç hastalık bulunup bulunmadığı konuşulabilir; bu değerlendirme, ekimi yapacak hekime de fikir verir.</p>
     </div>
     <div class="g-katblok" data-gr style="--d:140ms">
-      <span class="g-kno">03</span>
+      <span class="g-kno">Madde 03</span>
       <h3>Uygun uzmanlık dalı söylenir</h3>
       <p>Hangi dala başvurmanızın doğru olacağı ve o başvuruda yanınıza hangi bilgileri almanızın faydalı olacağı anlatılır. Bu sayfada belli bir kurumun ya da hekimin adı geçmez; yol gösterme branş düzeyinde kalır ve yalnızca muayenede yapılır.</p>
     </div>
     <div class="g-katblok" data-gr style="--d:210ms">
-      <span class="g-kno">04</span>
+      <span class="g-kno">Madde 04</span>
       <h3>Sonrası için kapı açık</h3>
       <p>Başka bir merkezde yapılmış bir işlemin ardından bir sorunla karşılaşırsanız, değerlendirme için muayeneye gelebilirsiniz. Dolgu sonrasında geç ortaya çıkan şişlik ve sertlikler, dolgu sayfasındaki istenmeyen durumlar bölümünde anlatılıyor.</p>
     </div>
@@ -124,12 +124,12 @@ module.exports = {
 <section class="bolum bolum--buz2">
   <div class="sar">
     <div class="bolum-bas" data-gr>
-      <p class="g-etiket">Gerekçe</p>
+      <p class="g-etiket">Neden böyle</p>
       <h2>Sınırı yazıya dökmek neden önemli?</h2>
     </div>
     <div class="g-bento">
       <div class="g-kutu g-b4" data-gr>
-        <span class="g-ket">Sınırın işlevi</span>
+        <span class="g-ket">Sınır neden var</span>
         <p>Sınırı yazılı olmayan bir muayenehanede her yeni istek “bunu da yapalım mı?” sorusunu doğurur. Bu soru sık sorulduğunda yetkinliğin kenarı zamanla silikleşir. Kapsamın baştan ve herkesin görebileceği biçimde yazılması, hekimi de başvuran kişiyi de bu kaymaya karşı korur.</p>
         <p style="margin-top:10px">Açıklık zamandan da tasarruf ettirir: talebiniz bu listedeyse randevu sırası beklemeden ilgili branşa gidebilirsiniz. Bu sayfa bunun için yazıldı.</p>
         <div class="dgm-sira" style="margin-top:16px">
@@ -137,10 +137,10 @@ module.exports = {
           <a class="dgm dgm--iki" href="${r}yaklasimimiz/">Yaklaşımımız ${ik.ok}</a>
         </div>
       </div>
-      <div class="g-kutu g-b2 g-kutu--gece" data-gr style="--d:70ms"><span class="g-ket">İlke</span><p>“Neyin yapılmayacağını söylemek de hekimliğin bir parçasıdır.”</p></div>
+      <div class="g-kutu g-b2 g-kutu--gece" data-gr style="--d:70ms"><span class="g-ket">Hekimin notu</span><p>“Neyin yapılmayacağını söylemek de hekimliğin bir parçasıdır.”</p></div>
       <div class="g-kutu g-b2 g-kutu--gorsel" data-gr style="--d:140ms"><img src="${r}varliklar/gorsel/grup-saglik.webp" alt="Üstten görünen hekim çalışma masası" loading="lazy"><span class="g-ainot">Temsilî görsel · yapay zekâ ile üretildi</span></div>
       <div class="g-kutu g-b2" data-gr style="--d:210ms">
-        <span class="g-ket">Hakkınız</span>
+        <span class="g-ket">Sizin hakkınız</span>
         <p><b style="color:var(--murekkep)">Sormaktan çekinmeyin</b><br>İşlemi yapacak kişiye hekim olup olmadığını, bu işleme ilişkin yetki belgesinin bulunup bulunmadığını işlemden önce sorabilirsiniz; bu sizin hakkınızdır.</p>
       </div>
       <div class="g-kutu g-b2 g-kutu--cta" data-gr style="--d:280ms"><h3>Randevudan önce sorun</h3><p>Bir telefonla, isteğinizin burada karşılanıp karşılanmadığını öğrenebilirsiniz.</p><a class="dgm dgm--altin" href="${r}iletisim/">İletişime geçin</a></div>
@@ -186,8 +186,8 @@ module.exports = {
 <section class="bolum bolum--sicak">
   <div class="sar">
     <div class="bolum-bas" data-gr>
-      <p class="g-etiket">Devamı</p>
-      <h2>İlgili başlıklar</h2>
+      <p class="g-etiket">Okumaya devam</p>
+      <h2>Buradan devam edin</h2>
     </div>
     <div class="izgara izgara--3" data-gr style="--d:70ms">
       <a class="kart" href="${r}uygulamalar/">
@@ -211,7 +211,7 @@ module.exports = {
         <span class="kart__ok">Oku ${ik.ok}</span>
       </a>
       <a class="kart" href="${r}yaklasimimiz/">
-        <h3>Yaklaşımımız</h3>
+        <h3>Randevudan kontrole</h3>
         <p>Muayene, plan, uygulama günü ve takip: dört adımın sırası ve gerekçesi.</p>
         <span class="kart__ok">Oku ${ik.ok}</span>
       </a>

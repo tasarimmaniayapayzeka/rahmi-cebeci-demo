@@ -12,11 +12,11 @@ module.exports = {
   <div class="sar">
     <div>
       <nav class="kirinti" aria-label="Konum" style="position:relative;font-size:.76rem;color:var(--sessiz);display:flex;gap:7px;margin-bottom:18px"><a href="${r}" style="color:var(--sessiz);text-decoration:none">Ana sayfa</a> › <a href="${r}uygulamalar/" style="color:var(--sessiz);text-decoration:none">Uygulamalar</a> › <span>Botulinum toksin</span></nav>
-      <p class="g-etiket">Enjeksiyon Uygulamaları · Mimik, Kas ve Terleme</p>
+      <p class="g-etiket">Enjeksiyonla Yapılanlar · Mimik, Kas ve Terleme</p>
       <h1>Botulinum toksin ile <span class="g-isik">kas ve ter dengesi</span></h1>
       <p class="g-hero__alt">Botulinum toksin, sinirden kasa giden “kasıl” komutunu bir süreliğine zayıflatan bir proteindir. Hekimin seçtiği birkaç noktaya çok küçük miktarlarda verilir; hedef, fazla çalışan bir kası yumuşatmak ya da ter bezine ulaşan uyarıyı azaltmaktır. Mimik çizgileri, diş sıkmaya bağlı kas kalınlaşması ve koltuk altı terlemesi birbirinden farklı sorulardır; sizin şikâyetiniz için hangisinin geçerli olduğu muayenede ortaya çıkar.</p>
       <div class="g-hero__cta">
-        <a class="dgm dgm--bir" href="${r}iletisim/">Randevu talebi</a>
+        <a class="dgm dgm--bir" href="${r}iletisim/">Randevu isteyin</a>
         <a class="dgm dgm--iki" href="#nedir">Hangi bölgelerde düşünülür ↓</a>
       </div>
       <div class="g-tikler"><span><i></i>Tüm uygulamalar hekimin elinden</span><span><i></i>İlk seansta ölçülü doz</span><span><i></i>Kontrol planın parçası</span></div>
@@ -42,7 +42,7 @@ module.exports = {
 <section class="bolum bolum--buz2" id="nedir">
   <div class="sar">
     <div class="bolum-bas" data-gr>
-      <p class="g-etiket">Tanım ve sınırlar</p>
+      <p class="g-etiket">Ne yapar, ne yapmaz</p>
       <h2>Botulinum toksin nedir, yüzde ve vücutta nerelerde kullanılır?</h2>
       <p class="giris">Sinir uçları, kasın kasılabilmesi için asetilkolin adlı bir haberci madde salgılar. Botulinum toksin bu salgıyı uygulandığı noktada bir süreliğine baskılar; kas daha az güçle kasılır, ter bezleri de benzer biçimde daha az uyarılır. Etki büyük ölçüde uygulandığı bölgeyle sınırlı kalır ve sinir uçları kendini yeniledikçe kaybolur.</p>
     </div>
@@ -78,7 +78,7 @@ module.exports = {
         <p>Boyun kasının kasılmasıyla öne çıkan dikey bantlarda, şikâyetin kaynağı kas hareketiyse seçilmiş kişilerde gündeme gelebilir. Yutma ve başı taşıyan kaslara komşu olduğu için yüze göre daha temkinli planlanır. Sorun deri gevşekliğiyse bu yöntem yanıt vermez.</p>
       </div>
       <div class="kart kart--duz">
-        <h3>Önce doğru sayfa</h3>
+        <h3>Önce doğru başlık</h3>
         <p>Çizgilerinizin mimikle mi ilişkili yoksa deriye mi yerleşmiş olduğunu <a href="${r}cilt-sorunlari/mimik-cizgileri-ve-kirisiklik/">mimik çizgileri ve kırışıklık</a>, terlemenin olası nedenlerini <a href="${r}cilt-sorunlari/asiri-terleme/">aşırı terleme</a> sayfasında ayrıntılı anlattık. Bölge bazlı planlama için: <a href="${r}bolgeler/goz-cevresi/">göz çevresi</a>, <a href="${r}bolgeler/cene-ve-jawline/">çene ve jawline</a>, <a href="${r}bolgeler/yuz/">yüz</a>.</p>
       </div>
     </div>
@@ -89,7 +89,7 @@ module.exports = {
 <section class="bolum">
   <div class="sar">
     <div class="bolum-bas" data-gr>
-      <p class="g-etiket">Süreç</p>
+      <p class="g-etiket">Akış</p>
       <h2>Muayeneden kontrole planlama nasıl ilerler?</h2>
       <p class="giris">Plan, yüz hareketsizken değil hareket ederken yapılır. Kaşların konumu, göz kapağının seviyesi ve iki yüz yarısı arasındaki farklar; kaşlarınızı kaldırırken, çatarken ve gülümserken gözlenip kayda geçirilir.</p>
     </div>
@@ -105,7 +105,7 @@ module.exports = {
         <div class="g-cubuk"><small><span>Aylar içinde</span><span>Kas eski düzenine döner</span></small><div class="g-ciz"><b class="g-cubuk-bakir" data-gw="100%"></b></div></div>
         <p style="font-size:.72rem;color:var(--sessiz);margin-top:10px">Çubuklar oransal bir simgedir; size özel takvim muayenede netleşir.</p>
       </div>
-      <div class="g-kutu g-b2" data-gr style="--d:140ms"><span class="g-ket">Protokol</span>
+      <div class="g-kutu g-b2" data-gr style="--d:140ms"><span class="g-ket">Adım adım</span>
         <ol class="g-protokol">
           <li>Öykü: kullandığınız ilaçlar, kas ve sinir sistemi hastalıkları, önceki uygulamalar sorulur; terleme şikâyetinde altta yatan nedenler araştırılır.</li>
           <li>Hareket analizi: mimikler canlı olarak izlenir, var olan asimetriler uygulamadan önce not edilir.</li>
@@ -135,8 +135,8 @@ module.exports = {
         <p>Kullandığınız ilaçların, takviyelerin ve daha önce yaptırdığınız uygulamaların listesini randevuya getirmeniz, planın doğru kurulmasına yardımcı olur.</p>
       </div>
       <div class="g-kutu g-b2 g-kutu--gorsel" data-gr style="--d:70ms"><img src="${r}varliklar/gorsel/uyg-botulinum-toksin-2.webp" alt="Yüz oranlarını gösteren ince çizgilerle çevrili portre" loading="lazy"><span class="g-ainot">Temsilî görsel · yapay zekâ ile üretildi</span></div>
-      <div class="g-kutu g-b3 g-kutu--gece" data-gr><span class="g-ket">İlke</span><p>“İlk seans bir ölçüm gibidir: kasınızın doza nasıl yanıt verdiğini görmeden miktarı artırmayız, çünkü etkisini göstermeye başlayan doz geri çekilemez.”</p></div>
-      <div class="g-kutu g-b3 g-kutu--cta" data-gr style="--d:70ms"><h3>Şikâyetinizi muayenede konuşalım</h3><p>Hangi bölgenin uygun olduğu değerlendirmeden sonra netleşir.</p><a class="dgm dgm--altin" href="${r}iletisim/">Randevu talebi</a></div>
+      <div class="g-kutu g-b3 g-kutu--gece" data-gr><span class="g-ket">Hekimin notu</span><p>“İlk seans bir ölçüm gibidir: kasınızın doza nasıl yanıt verdiğini görmeden miktarı artırmayız, çünkü etkisini göstermeye başlayan doz geri çekilemez.”</p></div>
+      <div class="g-kutu g-b3 g-kutu--cta" data-gr style="--d:70ms"><h3>Şikâyetinizi muayenede konuşalım</h3><p>Hangi bölgenin uygun olduğu değerlendirmeden sonra netleşir.</p><a class="dgm dgm--altin" href="${r}iletisim/">Randevu isteyin</a></div>
     </div>
   </div>
 </section>
@@ -145,7 +145,7 @@ module.exports = {
 <section class="bolum bolum--sicak">
   <div class="sar">
     <div class="bolum-bas" data-gr>
-      <p class="g-etiket">Riskler</p>
+      <p class="g-etiket">Dikkat edilecekler</p>
       <h2>Uygulamadan sonra neler görülebilir, hangi belirtide beklemeden başvurulur?</h2>
       <p class="giris">Her enjeksiyonun istenmeyen etkileri olabilir. Bilinen başlıkları sıklığına göre grupladık; bunların çoğu herkeste görülmez ve uygulamadan önce sizinle tek tek konuşulur.</p>
     </div>
@@ -174,7 +174,7 @@ module.exports = {
 <section class="bolum bolum--buz2">
   <div class="sar">
     <div class="bolum-bas" data-gr>
-      <p class="g-etiket">Zamanlama</p>
+      <p class="g-etiket">Ne zaman</p>
       <h2>Etki ne zaman başlar, ne kadar sürer, ne zaman tekrarlanır?</h2>
     </div>
     <div class="izgara izgara--3" data-gr>
@@ -210,8 +210,8 @@ module.exports = {
       <a href="${r}cilt-sorunlari/mimik-cizgileri-ve-kirisiklik/">Mimik çizgileri ve kırışıklık</a>
       <a href="${r}cilt-sorunlari/asiri-terleme/">Aşırı terleme</a>
       <a href="${r}uygulamalar/dolgu-uygulamalari/">Dolgu uygulamaları</a>
-      <a href="${r}uygulamalar/uygulama-sonrasi-takip/">Uygulama sonrası takip</a>
-      <a href="${r}yaklasimimiz/">Yaklaşımımız</a>
+      <a href="${r}uygulamalar/uygulama-sonrasi-takip/">Uygulama sonrası kontrol</a>
+      <a href="${r}yaklasimimiz/">Randevudan kontrole</a>
     </div>
   </div>
 </section>

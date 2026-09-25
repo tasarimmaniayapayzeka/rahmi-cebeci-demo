@@ -12,11 +12,11 @@ module.exports = {
   <div class="sar">
     <div>
       <nav class="kirinti" aria-label="Konum" style="position:relative;font-size:.76rem;color:var(--sessiz);display:flex;gap:7px;margin-bottom:18px"><a href="${r}" style="color:var(--sessiz);text-decoration:none">Ana sayfa</a> › <a href="${r}uygulamalar/" style="color:var(--sessiz);text-decoration:none">Uygulamalar</a> › <span>PRP</span></nav>
-      <p class="g-etiket">Enjeksiyon Uygulamaları · Otolog Plazma</p>
+      <p class="g-etiket">Enjeksiyonla Yapılanlar · Otolog Plazma</p>
       <h1>Kaynağı kendi kanınız, <span class="g-isik">hedefi cilt kalitesi</span> olan bir uygulama.</h1>
       <p class="g-hero__alt">PRP, koldan alınan az miktarda kanın santrifüjle ayrıştırılmasıyla elde edilen, trombosit oranı yükseltilmiş plazmanın aynı randevuda yüz, boyun, dekolte ya da el sırtı cildine verilmesidir. Cildin kendi yenilenme süreçlerinin desteklenmesi amaçlanır. Saç dökülmesine yönelik uygulama ayrı bir sayfada anlatılır; hangi bölgeye ne planlanacağı muayenede belirlenir.</p>
       <div class="g-hero__cta">
-        <a class="dgm dgm--bir" href="${r}iletisim/">Randevu talebi</a>
+        <a class="dgm dgm--bir" href="${r}iletisim/">Randevu isteyin</a>
         <a class="dgm dgm--iki" href="#ilkbolum">Nedir, ne değildir ↓</a>
       </div>
       <div class="g-tikler"><span><i></i>Adınıza etiketli kapalı tüp</span><span><i></i>Aynı randevuda hazırlık</span><span><i></i>Seans sayısı kişiye göre</span></div>
@@ -88,7 +88,7 @@ module.exports = {
         <div class="g-cubuk"><small><span>Cilt yanıtının izlenmesi</span><span>Haftalar</span></small><div class="g-ciz"><b class="g-cubuk-bakir" data-gw="88%"></b></div></div>
         <p style="font-size:.72rem;color:var(--sessiz);margin-top:10px">Çubuk uzunlukları yalnız karşılaştırma içindir; size özel süreler muayenede konuşulur.</p>
       </div>
-      <div class="g-kutu g-b2" data-gr style="--d:140ms"><span class="g-ket">Protokol</span>
+      <div class="g-kutu g-b2" data-gr style="--d:140ms"><span class="g-ket">Adım adım</span>
         <ol class="g-protokol">
           <li>Muayene: cilt tipi, şikâyetin kaynağı, kullandığınız ilaçlar</li>
           <li>Gerekirse tam kan sayımı; trombosit değeri ve kansızlık açısından</li>
@@ -97,9 +97,9 @@ module.exports = {
           <li>Uygulama; bakım talimatı yazılı verilir, <a href="${r}uygulamalar/uygulama-sonrasi-takip/">kontrol</a> günü belirlenir</li>
         </ol>
       </div>
-      <div class="g-kutu g-b2 g-kutu--gece" data-gr><span class="g-ket">İlke</span><p>“Seans sayısını artırmak, yanıt vermeyen bir cildin çözümü değildir.”</p></div>
+      <div class="g-kutu g-b2 g-kutu--gece" data-gr><span class="g-ket">Hekimin notu</span><p>“Seans sayısını artırmak, yanıt vermeyen bir cildin çözümü değildir.”</p></div>
       <div class="g-kutu g-b2 g-kutu--gorsel" data-gr style="--d:70ms"><img src="${r}varliklar/gorsel/uyg-prp-2.webp" alt="Plazmayı simgeleyen saydam akışkan" loading="lazy"><span class="g-ainot">Temsilî görsel · yapay zekâ ile üretildi</span></div>
-      <div class="g-kutu g-b2 g-kutu--cta" data-gr style="--d:140ms"><h3>Cildinize uygun mu, birlikte bakalım</h3><p>Karar, muayene ve öykünüz değerlendirildikten sonra verilir.</p><a class="dgm dgm--altin" href="${r}iletisim/">Randevu talebi</a></div>
+      <div class="g-kutu g-b2 g-kutu--cta" data-gr style="--d:140ms"><h3>Cildinize uygun mu, birlikte bakalım</h3><p>Karar, muayene ve öykünüz değerlendirildikten sonra verilir.</p><a class="dgm dgm--altin" href="${r}iletisim/">Randevu isteyin</a></div>
       <div class="kutu kutu--uyari g-b4" data-gr>
         <b>Hangi durumlarda uygulanmaz, hangilerinde beklenir?</b>
         <p style="margin-bottom:6px"><b>Uygulama yapılmayan durumlar:</b></p>
@@ -132,7 +132,7 @@ module.exports = {
 <section class="bolum">
   <div class="sar">
     <div class="bolum-bas" data-gr>
-      <p class="g-etiket">Seans düzeni</p>
+      <p class="g-etiket">Seans takvimi</p>
       <h2>Kaç seans planlanır, etkinin süresi neye bağlıdır?</h2>
       <p class="giris">Yüz, boyun, dekolte ve el sırtı cildinde PRP genellikle birkaç seanslık bir dizi hâlinde, aralarında birkaç hafta bırakılarak uygulanır; kaç seans yapılacağı ilk görüşmede sabit bir sayı olarak belirlenmez. Deri hücrelerinin yenilenmesi zaman aldığından, ilk seanstan birkaç gün sonra aynaya bakarak karar vermek doğru olmaz; değerlendirme dizinin ortasında ve sonunda yapılır. Bu kontrollerde üç yol vardır: aynı planla devam etmek, PRP’yi bir cihaz uygulamasıyla birleştirmek ya da diziyi bitirmek. Değişikliğin ne kadar süre korunacağını yaşınız, güneşle ilişkiniz, sigara ve genel sağlığınız belirler; aynı plan iki kişide farklı sonuç verebilir. Saçlı derideki takvim farklıdır ve <a href="${r}uygulamalar/sac-prp/">saç PRP</a> sayfasında ayrıca anlatılmıştır.</p>
     </div>

@@ -22,7 +22,7 @@ module.exports = {
   slug: 'bolge-pusulasi',
   tip: 'tibbi',
   js: 'kesif.js',
-  baslik: 'Bölge Pusulası — Yüzden Vücuda Sekiz Bölge Tek Ekranda',
+  baslik: 'Bölge Rehberi — Yüzden Vücuda Sekiz Bölge Tek Ekranda',
   aciklama: 'Yüz, göz çevresi, dudak, çene, boyun, el, saçlı deri ve vücut: her bölgenin kendine özgü yanlarını tek ekranda görün, ayrıntı için sayfasına geçin.',
 
   icerik: (r, ik) => `
@@ -30,8 +30,8 @@ module.exports = {
 <!-- ═════════ BELGE HERO ═════════ -->
 <section class="g-bhero">
   <div class="sar">
-    <p class="g-etiket">Etkileşimli araç</p>
-    <h1>Bölge Pusulası</h1>
+    <p class="g-etiket">Kendiniz deneyin</p>
+    <h1>Bölge Rehberi</h1>
     <p class="g-bhero__alt">Bir uygulamanın miktarı, derinliği ve tekrar sıklığı bölgeden bölgeye değişir. Bu araçla yüzden vücuda sekiz bölgeyi tek ekranda dolaşabilirsiniz: listeden bir bölge seçtiğinizde görseli ve o bölgeye özgü kısa bir not açılır. Daha fazlası her bölgenin kendi sayfasında.</p>
     <div class="g-bmeta">
       <span><i></i>Son güncelleme: ${S.guncelleme}</span>
@@ -68,7 +68,7 @@ module.exports = {
     <div class="dgm-sira" style="margin-top:20px" data-gr>
       <a class="dgm dgm--bir" href="${r}iletisim/">Randevu talebi oluşturun</a>
       <a class="dgm dgm--iki" href="${r}bolgeler/">Bütün bölge sayfaları ${ik.ok}</a>
-      <a class="dgm dgm--iki" href="${r}uygulama-karsilastirma/">Uygulama karşılaştırma ${ik.ok}</a>
+      <a class="dgm dgm--iki" href="${r}uygulama-karsilastirma/">Yan yana karşılaştır ${ik.ok}</a>
     </div>
   </div>
 </section>

@@ -3,7 +3,7 @@ const S = require('../site');
 module.exports = {
   slug: 'hazirlik-listesi',
   tip: 'bilgi',
-  baslik: 'Görüşme Öncesi Hazırlık Listesi — Amacı, Sınırları, Gizliliği',
+  baslik: 'Görüşmeye Hazırlık Notları — Amacı, Sınırları, Gizliliği',
   aciklama: 'Muayenede söylemeniz gereken ilaç, öykü ve önceki uygulama bilgilerini hatırlatan kısa liste. Tanı koymaz, işlem önermez; cevaplar cihazınızda kalır.',
 
   icerik: (r, ik) => `
@@ -14,7 +14,7 @@ module.exports = {
     <div>
       <nav class="kirinti" aria-label="Konum" style="position:relative;font-size:.76rem;color:var(--sessiz);display:flex;gap:7px;margin-bottom:18px"><a href="${r}" style="color:var(--sessiz);text-decoration:none">Ana sayfa</a> › <span>Hazırlık listesi</span></nav>
       <p class="g-etiket">Hazırlık · Randevudan önce</p>
-      <h1>Görüşme öncesi <span class="g-isik">hazırlık listesi</span></h1>
+      <h1>Görüşmeye <span class="g-isik">hazırlık notları</span></h1>
       <p class="g-hero__alt">Bu araç, muayenede hekiminize anlatmanız gereken bilgileri önceden toparlamanız için hazırlanmış kısa bir kontrol listesidir. Doldurması birkaç dakika sürer. Tanı koymaz, hastalık aramaz, işlem önermez ve uygun olup olmadığınıza karar vermez. Tek işlevi, görüşmede sık unutulan ayrıntıları önünüze koymaktır.</p>
       <div class="g-hero__cta">
         <a class="dgm dgm--bir" href="${r}hazirlik-listesi/arac/">Listeyi açın</a>
@@ -35,7 +35,7 @@ module.exports = {
 <section class="bolum">
   <div class="sar sar--dar">
     <div class="bolum-bas" data-gr>
-      <p class="g-etiket">Gerekçe</p>
+      <p class="g-etiket">Neden böyle</p>
       <h2>Böyle bir listeye neden gerek duyuldu?</h2>
     </div>
     <div data-gr style="--d:70ms">
@@ -87,7 +87,7 @@ module.exports = {
 <section class="bolum bolum--buz2">
   <div class="sar">
     <div class="bolum-bas" data-gr>
-      <p class="g-etiket">Gizlilik</p>
+      <p class="g-etiket">Mahremiyet notu</p>
       <h2>Cevaplarınız bize ulaşır mı?</h2>
       <p class="giris">Ulaşmaz. İşaretlediğiniz maddeler ne bir sunucuya çıkar ne de bir kayıt sistemine girer; bizim bunları görmemiz mümkün değildir.</p>
     </div>
@@ -123,22 +123,22 @@ module.exports = {
       <h2>Listeyi dört adımda nasıl kullanırsınız?</h2>
     </div>
     <div class="g-katblok" data-gr>
-      <span class="g-kno">01</span>
+      <span class="g-kno">Madde 01</span>
       <h3>Randevudan bir gün önce açın</h3>
       <p>İlaç kutularınız ve varsa önceki uygulamalara ait belgeler elinizin altındayken doldurmak işinizi kolaylaştırır.</p>
     </div>
     <div class="g-katblok" data-gr style="--d:70ms">
-      <span class="g-kno">02</span>
+      <span class="g-kno">Madde 02</span>
       <h3>Her maddeyi okuyup yanıtlayın</h3>
       <p>Maddeler birer hatırlatmadır. Sizi ilgilendirenleri işaretleyin; emin olmadıklarınızda “Bilmiyorum” deyin, bu da hekiminiz için bir bilgidir.</p>
     </div>
     <div class="g-katblok" data-gr style="--d:140ms">
-      <span class="g-kno">03</span>
+      <span class="g-kno">Madde 03</span>
       <h3>Özeti yanınıza alın</h3>
       <p>Çıktısını alın ya da telefonunuza not edin. Muayenede bu başlıklar birlikte gözden geçirilir.</p>
     </div>
     <div class="g-katblok" data-gr style="--d:210ms">
-      <span class="g-kno">04</span>
+      <span class="g-kno">Madde 04</span>
       <h3>Takıldığınız yerleri sorun</h3>
       <p>Anlamını tam kavrayamadığınız ya da cevabını bilmediğiniz maddeler, muayenede soracağınız sorular olur.</p>
     </div>
@@ -167,22 +167,22 @@ module.exports = {
 <section class="bolum">
   <div class="sar">
     <div class="bolum-bas" data-gr>
-      <p class="g-etiket">İlgili başlıklar</p>
+      <p class="g-etiket">Buradan devam edin</p>
       <h2>Hazırlanırken bunlara da bakabilirsiniz</h2>
     </div>
     <div class="izgara izgara--3" data-gr style="--d:70ms">
       <a class="kart" href="${r}yaklasimimiz/">
-        <h3>Yaklaşımımız</h3>
+        <h3>Randevudan kontrole</h3>
         <p>Muayeneden kontrole izlenen sıra ve ilk görüşmede konuşulan başlıklar.</p>
         <span class="kart__ok">İncele ${ik.ok}</span>
       </a>
       <a class="kart" href="${r}sikca-sorulan-sorular/">
-        <h3>Sıkça sorulan sorular</h3>
+        <h3>Soru ve yanıtlar</h3>
         <p>Randevuya ne getirileceği, ilk görüşmenin akışı ve uygulamanın ertelendiği durumlar.</p>
         <span class="kart__ok">Sorulara git ${ik.ok}</span>
       </a>
       <a class="kart" href="${r}cilt-tipi-testi/">
-        <h3>Cilt tipi eğilim testi</h3>
+        <h3>Cilt eğilimi öz değerlendirmesi</h3>
         <p>Cildinizi muayenede tarif etmenizi kolaylaştıran, cihazınızda çalışan 12 soruluk test.</p>
         <span class="kart__ok">Teste geç ${ik.ok}</span>
       </a>

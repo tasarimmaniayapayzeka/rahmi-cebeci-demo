@@ -16,7 +16,7 @@ module.exports = {
       <h1>Saç PRP: <span class="g-isik">kendi kanınızdan hazırlanan plazma</span></h1>
       <p class="g-hero__alt">Saç PRP’de koldan alınan az miktarda kan kapalı bir tüpte santrifüj edilir; trombositten zengin plazma bölümü ayrılarak aynı seansta saçlı deriye uygulanır. Hedeflenen, kıl kökünü çevreleyen dokunun kendi onarım süreçlerinin desteklenmesidir. Yeni saç kökü oluşturmaz ve dökülmenin nedenini araştırmanın yerine geçmez.</p>
       <div class="g-hero__cta">
-        <a class="dgm dgm--bir" href="${r}iletisim/">Randevu talebi</a>
+        <a class="dgm dgm--bir" href="${r}iletisim/">Randevu isteyin</a>
         <a class="dgm dgm--iki" href="#ilkbolum">Seyrini okuyun ↓</a>
       </div>
       <div class="g-tikler"><span><i></i>Hazırlık ve uygulama aynı seansta</span><span><i></i>Plazma yalnız size ait, saklanmaz</span><span><i></i>Karar kan tetkikiyle birlikte</span></div>
@@ -40,7 +40,7 @@ module.exports = {
 <!-- ═════ NEDİR / NE DEĞİLDİR ═════ -->
 <section class="bolum bolum--buz2" id="ilkbolum">
   <div class="sar">
-    <div class="bolum-bas" data-gr><p class="g-etiket">Tanım ve sınırlar</p><h2>Saç PRP nedir, neyin yerini tutmaz?</h2><p class="giris">Saç PRP kendi başına bir tedavi planı değildir. Dökülmenin kaynağı ortaya konduktan sonra, plana destek olarak eklenip eklenmeyeceği değerlendirilen bir adımdır.</p></div>
+    <div class="bolum-bas" data-gr><p class="g-etiket">Ne yapar, ne yapmaz</p><h2>Saç PRP nedir, neyin yerini tutmaz?</h2><p class="giris">Saç PRP kendi başına bir tedavi planı değildir. Dökülmenin kaynağı ortaya konduktan sonra, plana destek olarak eklenip eklenmeyeceği değerlendirilen bir adımdır.</p></div>
     <div class="izgara izgara--2">
       <div class="kutu kutu--bilgi" data-gr>
         <b>Bu nedir</b>
@@ -61,7 +61,7 @@ module.exports = {
 <!-- ═════ BENTO ═════ -->
 <section class="bolum bolum--sicak">
   <div class="sar">
-    <div class="bolum-bas" data-gr><p class="g-etiket">Plan</p><h2>Program nasıl kurulur, kaç seans gerekir?</h2><p class="giris">Toplam seans sayısı baştan belli değildir. Önceden sabitlenmiş bir seans dizisi sunulmaz; her ara kontrolde yanıta bakılarak devam, değişiklik ya da bırakma kararı verilir.</p></div>
+    <div class="bolum-bas" data-gr><p class="g-etiket">Yol haritası</p><h2>Program nasıl kurulur, kaç seans gerekir?</h2><p class="giris">Toplam seans sayısı baştan belli değildir. Önceden sabitlenmiş bir seans dizisi sunulmaz; her ara kontrolde yanıta bakılarak devam, değişiklik ya da bırakma kararı verilir.</p></div>
     <div class="g-bento">
       <div class="g-kutu g-b2 g-donutkap" data-gr>
         <div class="g-donut"><svg viewBox="0 0 100 100" width="100" height="100"><circle class="g-iz" cx="50" cy="50" r="45"/><circle class="g-dol" data-gyuzde="62" cx="50" cy="50" r="45"/><circle class="g-kom" cx="50" cy="50" r="45"/></svg><b>3. ay</b></div>
@@ -74,7 +74,7 @@ module.exports = {
         <div class="g-cubuk"><small><span>DEĞERLENDİRME</span><span>3. aydan itibaren</span></small><div class="g-ciz"><b class="g-cubuk-bakir" data-gw="90%"></b></div></div>
         <p style="font-size:.7rem;color:var(--sessiz);margin-top:8px">Çubuk boyları yalnız karşılaştırma içindir; asıl plan muayenede belirlenir.</p>
       </div>
-      <div class="g-kutu g-b2" data-gr style="--d:140ms"><span class="g-ket">PROTOKOL</span>
+      <div class="g-kutu g-b2" data-gr style="--d:140ms"><span class="g-ket">Adım adım</span>
         <ol class="g-protokol">
           <li>Muayene: dökülmenin türü, süresi ve yayılımı; saçlı derinin büyütmeli incelenmesi</li>
           <li>Kan tetkiki: trombosit sayısı ve hemoglobin; yakınmaya göre ferritin, tiroid, B12 ve D vitamini</li>
@@ -82,8 +82,8 @@ module.exports = {
           <li>Başlangıç serisi; ara kontrolde yanıta göre devam ya da bırakma kararı</li>
         </ol>
       </div>
-      <div class="g-kutu g-b2 g-kutu--gece" data-gr><span class="g-ket">İLKE</span><p>"Kan tablosunu okumadan plazma hazırlanmaz."</p></div>
-      <div class="g-kutu g-b2" data-gr style="--d:70ms"><span class="g-ket">SONRASI</span>
+      <div class="g-kutu g-b2 g-kutu--gece" data-gr><span class="g-ket">Hekimin notu</span><p>"Kan tablosunu okumadan plazma hazırlanmaz."</p></div>
+      <div class="g-kutu g-b2" data-gr style="--d:70ms"><span class="g-ket">Uygulamadan sonra</span>
         <p style="font-size:.92rem">Aynı gün olağan düzene dönülebilir. İlk yarım gün saçlı deri yıkanmaz, kaşınmaz ve ovalanmaz; şapka, bere ya da sıkı toka takılmaz, kan alınan kolla ağır yük taşınmaz. İki gün boyunca hamam, sauna, havuz, deniz ve yoğun terleten egzersiz ertelenir; saç boyası ve kimyasal işlemler de bu süreden sonraya bırakılır. Sonrasında ılık su ve yumuşak şampuanla normal yıkamaya geçilir; iğne noktaları birkaç gün dokununca duyarlı kalabilir.</p>
       </div>
       <div class="g-kutu g-b2" data-gr style="--d:140ms"><span class="g-ket">BEKLENEBİLECEK ETKİLER</span>
@@ -111,7 +111,7 @@ module.exports = {
         <p>Uygulanan plazma size aittir; ancak cildin temizlenmesinde kullanılan antiseptik ve yüzeye sürülen ürünler dışarıdan gelir. Bir ilaca ya da cilde temas eden bir ürüne daha önce tepki verdiyseniz muayenede bunu belirtin.</p>
       </div>
       <div class="g-kutu g-b2 g-kutu--gorsel" data-gr><img src="${r}varliklar/foto/prp-tupler.webp" alt="Etiketli kan tüpleri" loading="lazy"></div>
-      <div class="g-kutu g-b2 g-kutu--cta" data-gr><h3>Önce tablo, sonra plazma</h3><p>Dökülmenin nedeni ve kan değerleri görülmeden bu uygulama planlanmaz.</p><a class="dgm dgm--altin" href="${r}iletisim/">Randevu talebi</a></div>
+      <div class="g-kutu g-b2 g-kutu--cta" data-gr><h3>Önce tablo, sonra plazma</h3><p>Dökülmenin nedeni ve kan değerleri görülmeden bu uygulama planlanmaz.</p><a class="dgm dgm--altin" href="${r}iletisim/">Randevu isteyin</a></div>
     </div>
   </div>
 </section>

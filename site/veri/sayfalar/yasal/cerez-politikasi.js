@@ -11,7 +11,7 @@ module.exports = {
 <!-- ═════════ BELGE HERO ═════════ -->
 <section class="g-bhero">
   <div class="sar">
-    <p class="g-etiket">Yasal</p>
+    <p class="g-etiket">Mevzuat notu</p>
     <h1>Çerez Politikası</h1>
     <p class="g-bhero__alt">Sitemizi gezerken tarayıcınıza hiçbir sayfamız çerez bırakmaz; localStorage gibi yerel depolama alanlarına da kayıt yazılmaz. Sayfalarda reklam pikseli, sosyal medya takip kodu, tıklama ısı haritası, ekran kaydı yapan yazılım ya da dışarıdan bağlanmış bir istatistik aracı bulunmadığı için sizden çerez onayı istenmez. Dış kaynaklı yalnızca iki hizmet vardır: Google’ın sağladığı konum haritası ve WhatsApp bağlantısı.</p>
     <div class="g-bmeta">
@@ -58,7 +58,7 @@ module.exports = {
           </div>
           <div class="kart kart--duz">
             <span class="kart__ikon">${ik.mercek}</span>
-            <h3>Üçüncü taraf analitik</h3>
+            <h3>Dış analitik araçlar</h3>
             <p>Ziyaretçi hareketlerini ölçen harici bir istatistik servisi siteye eklenmemiştir. Hangi sayfayı ne kadar süre okuduğunuz kaydedilmez.</p>
           </div>
           <div class="kart kart--duz">
@@ -73,7 +73,7 @@ module.exports = {
           </div>
           <div class="kart kart--duz">
             <span class="kart__ikon">${ik.kalp}</span>
-            <h3>Profilleme</h3>
+            <h3>Kişisel profil çıkarma</h3>
             <p>Ziyaretçilerin ilgi alanlarına göre profil oluşturulmaz; kimse bir hedef kitleye yerleştirilmez, hiçbir tanıtım listesine alınmaz.</p>
           </div>
           <div class="kart kart--duz">
@@ -88,7 +88,7 @@ module.exports = {
         <h2>Peki sitede ne var?</h2>
         <div class="yazi">
           <p>Sitenin bütün sayfaları statiktir. Açılır menü gibi özellikler, tarayıcınızın çalıştırdığı kısa betiklerle sağlanır; bu betikler cihazınıza çerez ya da benzeri bir kayıt bırakmaz.</p>
-          <p>Hazırlık listesi, cilt tipi testi, bölge pusulası ve uygulama karşılaştırma araçları da aynı mantıkla çalışır: yanıtlarınız yalnızca o an açık olan sekmenin belleğinde durur, sunucuya iletilmez, bize ulaşmaz ve sekmeyi kapattığınız anda kaybolur. Yanıtlar sonraki ziyaretinize kadar yerel depolamada saklanmaz; böylece aynı cihazı kullanan başka biri de yanıtlarınızı göremez.</p>
+          <p>Hazırlık listesi, cilt eğilimi testi, bölge rehberi ve uygulama karşılaştırma araçları da aynı mantıkla çalışır: yanıtlarınız yalnızca o an açık olan sekmenin belleğinde durur, sunucuya iletilmez, bize ulaşmaz ve sekmeyi kapattığınız anda kaybolur. Yanıtlar sonraki ziyaretinize kadar yerel depolamada saklanmaz; böylece aynı cihazı kullanan başka biri de yanıtlarınızı göremez.</p>
           <p>Teknik zorunluluk taşıyan tek ayrıksı durum iletişim formudur. Form gönderildiğinde sunucudaki form alıcısı, kısa sürede tekrarlanan kötü niyetli gönderimleri durdurabilmek için geçici bir oturum çerezi üretir. Bu çerezin tek görevi gönderimin güvenliğini sınamaktır; kimliğinizi belirlemez, tarayıcı kapanınca geçersiz olur ve tanıtım amacıyla hiçbir yerde kullanılmaz. Formu doldurmadığınız sürece böyle bir çerez oluşmaz.</p>
         </div>
         <div class="kutu kutu--bilgi">
@@ -168,7 +168,7 @@ module.exports = {
             <span class="kart__ok">Metni açın ${ik.ok}</span>
           </a>
           <a class="kart" href="${r}yasal/icerik-ve-gorsel-yayin-ilkelerimiz/">
-            <h3>İçerik ve görsel yayın ilkelerimiz</h3>
+            <h3>Yayın ve görsel kullanım esaslarımız</h3>
             <p>Sitede neye yer verdiğimiz, neyi bilinçli olarak dışarıda bıraktığımız.</p>
             <span class="kart__ok">Sayfaya git ${ik.ok}</span>
           </a>

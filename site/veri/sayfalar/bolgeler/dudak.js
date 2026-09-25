@@ -17,7 +17,7 @@ module.exports = {
       <h1>Dudakta amaç daha fazlası değil, <span class="g-isik">doğru oran</span>.</h1>
       <p class="g-hero__alt">Dudağınızın ince göründüğünü, kenarının silikleştiğini ya da sürekli kuruduğunu düşünüyor olabilirsiniz; bu üç yakınmanın kaynağı da çözümü de birbirinden farklıdır. Çoğu zaman gereken daha çok ürün değil, üst ve alt dudak arasındaki dengenin korunmasıdır. Ölçüyü bir fotoğraf ya da moda değil, yüzünüzün kendi oranları belirler; kimi durumda en doğru adım hiçbir şey eklememektir.</p>
       <div class="g-hero__cta">
-        <a class="dgm dgm--bir" href="${r}iletisim/">Randevu talebi</a>
+        <a class="dgm dgm--bir" href="${r}iletisim/">Randevu isteyin</a>
         <a class="dgm dgm--iki" href="#uc-baslik">Üç ayrı konu ↓</a>
       </div>
       <div class="g-tikler"><span><i></i>Uygulamayı hekim yapar</span><span><i></i>Adım adım plan</span><span><i></i>Kontrol randevusu planın içinde</span></div>
@@ -43,7 +43,7 @@ module.exports = {
 <section class="bolum" id="uc-baslik">
   <div class="sar">
     <div class="bolum-bas" data-gr>
-      <p class="g-etiket">Ayrım</p>
+      <p class="g-etiket">Farkı nerede</p>
       <h2>Dudakla ilgili yakınma hangi konuya giriyor?</h2>
       <p class="giris">Muayeneye gelenlerin çoğu “dudaklarım çok ince” diyerek söze başlar; yakından bakıldığında ise sorun sıklıkla kenar çizgisinde ya da yüzeyin kuruluğunda çıkar. Üç konu aynı kişide bir arada olabilir. Hangisinin ağır bastığı anlaşılmadan plan yazmayız.</p>
     </div>
@@ -57,19 +57,19 @@ module.exports = {
       </div>
       <div>
         <div class="g-katblok" data-gkat="hacim" data-gr>
-          <span class="g-kno">01 · HACİM</span>
+          <span class="g-kno">Kesit 01 · HACİM</span>
           <h3>Gövdedeki dolgunluk</h3>
           <p>Kimi dudaklar doğuştan incedir, kimileri yıllar içinde dolgunluğunu yitirir. Bu konuda iki ölçüye bakarız: üst dudağın alt dudağa oranı ve dudak genişliğinin yüz genişliğine göre durumu. Kullanılacak miktarın üst sınırını bu iki ölçü çizer.</p>
           <div class="g-haplar"><a href="${r}uygulamalar/dolgu-uygulamalari/">Dolgu uygulamaları</a></div>
         </div>
         <div class="g-katblok" data-gkat="sinir" data-gr>
-          <span class="g-kno">02 · KENAR NETLİĞİ</span>
+          <span class="g-kno">Kesit 02 · KENAR NETLİĞİ</span>
           <h3>Dudağın kenar çizgisi</h3>
           <p>Dudakla deri arasındaki ince sınır zamanla silikleşebilir; böyle olunca dolgunluk yerinde olsa bile dudak dağınık bir görünüm alır. Bu yakınmaya gövdeyi büyüterek yanıt vermek yanlış olur. Çalışılan yer yalnızca kenar hattıdır ve burada çok küçük miktarlarla yetinilir.</p>
           <div class="g-haplar"><a href="${r}uygulamalar/dolgu-uygulamalari/">Dolgu uygulamaları</a></div>
         </div>
         <div class="g-katblok" data-gkat="nem" data-gr>
-          <span class="g-kno">03 · NEM VE YÜZEY</span>
+          <span class="g-kno">Kesit 03 · NEM VE YÜZEY</span>
           <h3>Kuruluk ve dikey kırışıklar</h3>
           <p>Dudakların sık kuruması, kabuk bağlaması ve üzerinde dikine uzanan ince çizgiler bu konuya girer. Sigara içmek, dudağı güneşten korumamak, ağızdan nefes alma alışkanlığı ve bazı ilaçlar kuruluğu artırır. Buradaki hedef dudağı büyütmek değil, yüzeyi nemli ve korunaklı tutmaktır.</p>
           <div class="g-haplar"><a href="${r}uygulamalar/genclik-asisi-skinbooster/">Gençlik aşısı (skinbooster)</a><a href="${r}uygulamalar/mezoterapi/">Mezoterapi</a></div>
@@ -84,27 +84,27 @@ module.exports = {
 <section class="bolum bolum--sicak" id="oran">
   <div class="sar sar--dar">
     <div class="bolum-bas" data-gr>
-      <p class="g-etiket">Ölçü</p>
+      <p class="g-etiket">Ne ölçülür</p>
       <h2>Dudağınız için doğru oranı ne belirler?</h2>
       <p class="giris">Başka birinden ya da bir fotoğraftan alınan ölçü, sizin yüzünüzde aynı sonucu vermez. Oranı sizin yüzünüzün kendi çizgileri belirler.</p>
     </div>
     <div class="g-katblok" data-gr>
-      <span class="g-kno">01 · ÜÇ ÖLÇÜ</span>
+      <span class="g-kno">Kesit 01 · ÜÇ ÖLÇÜ</span>
       <h3>Üç ölçü, tek karar</h3>
       <p>Muayenede üç şeye birlikte bakarız: iki dudağın birbirine göre dolgunluğu, dudağın yüz genişliği içinde kapladığı yer ve yandan bakıldığında burun ucu ile çene ucu arasındaki konumu. Bu üçü aynı yönü gösterdiğinde nerede durulacağı da kendiliğinden anlaşılır.</p>
     </div>
     <div class="g-katblok" data-gr>
-      <span class="g-kno">02 · EĞİLİM, KURAL DEĞİL</span>
+      <span class="g-kno">Kesit 02 · EĞİLİM, KURAL DEĞİL</span>
       <h3>Alttaki dudağın bir parça dolgun olması sık görülür</h3>
       <p>Pek çok kişide alttaki dudak, üsttekine göre bir parça daha dolgundur. Bu değişmez bir kural değil, yalnızca sık rastlanan bir eğilimdir; tersi de uyumlu durabilir. Amacımız ideal sayılan bir orana ulaşmak değil, sizin dudağınızdaki dengenin korunmasıdır.</p>
     </div>
     <div class="g-katblok" data-gr>
-      <span class="g-kno">03 · PROFİL</span>
+      <span class="g-kno">Kesit 03 · PROFİL</span>
       <h3>Yandan bakış çoğu zaman unutulur</h3>
       <p>Karşıdan dolgun ve uyumlu görünen bir dudak, profilden bakıldığında fazla öne çıkmış olabilir. Kararı bu yüzden tek bir ön fotoğrafa dayandırmayız; dudağı en az iki farklı açıdan inceleriz.</p>
     </div>
     <div class="g-katblok" data-gr>
-      <span class="g-kno">04 · KOMŞU YAPILAR</span>
+      <span class="g-kno">Kesit 04 · KOMŞU YAPILAR</span>
       <h3>Dudak tek başına okunmaz</h3>
       <p>Ağız köşelerindeki çöküklük, çene ucunun ne kadar önde olduğu ve elmacıktaki destek, dudağın nasıl algılandığını doğrudan etkiler. Bu bağlantıyı <a href="${r}bolgeler/yuz/">yüz bölgesi planlaması</a> sayfasında ayrıntılı anlattık.</p>
     </div>
@@ -115,29 +115,29 @@ module.exports = {
 <section class="bolum" id="asiri">
   <div class="sar">
     <div class="bolum-bas" data-gr>
-      <p class="g-etiket">Sınır</p>
+      <p class="g-etiket">Nerede durulur</p>
       <h2>Dudak neden fazla dolgun görünür ve bu nasıl önlenir?</h2>
       <p class="giris">Fazla dolgun bir dudak çoğunlukla tek bir seansın değil, birbiri ardına eklenen seansların sonucudur. Bunu önlemek için miktarı küçük tutmak kadar seansları seyrek planlamak ve her seferinde dudağa yeniden bakmak gerekir.</p>
     </div>
     <div class="g-bento">
       <div class="g-kutu g-b2" data-gr>
-        <span class="g-ket">1 · BİRİKME</span>
+        <span class="g-ket">Evre 1 · BİRİKME</span>
         <p><b style="color:var(--murekkep)">Eskisi dururken yenisi</b><br>Önceki seanstan kalan ürün hâlâ dokudayken yeni bir seans yapılırsa toplam miktar fark edilmeden artar. Bu yüzden “zamanı geldi” diye otomatik tekrar yapmayız; yeni bir seanstan önce dudakta ne kadar ürün kaldığını muayeneyle anlamaya çalışırız.</p>
       </div>
       <div class="g-kutu g-b2" data-gr style="--d:70ms">
-        <span class="g-ket">2 · ERKEN KARAR</span>
+        <span class="g-ket">Evre 2 · ERKEN KARAR</span>
         <p><b style="color:var(--murekkep)">Şişken hâline bakıp eklemek</b><br>İşlemden hemen sonra dudak şiş olduğu için gerçek sonuç henüz görünmez. Bu dönemde “yeterince olmamış” deyip üzerine eklemek sık yapılan bir yanlıştır; karar, şişlik tamamen indikten sonra verilir.</p>
       </div>
       <div class="g-kutu g-b2" data-gr style="--d:140ms">
-        <span class="g-ket">3 · SINIR AŞIMI</span>
+        <span class="g-ket">Evre 3 · SINIR AŞIMI</span>
         <p><b style="color:var(--murekkep)">Ürünün kenarı aşması</b><br>Ürün dudak gövdesinin sınırından dışarı taşarsa dudak dolgun değil kabarık görünür, kenar çizgisi de bulanıklaşır. Bunu önlemek için kenar ve gövde ayrı planlanır; kenara çok daha az ürün konur.</p>
       </div>
       <div class="g-kutu g-b3 g-kutu--gece" data-gr>
-        <span class="g-ket">İLKE</span>
+        <span class="g-ket">Hekimin notu</span>
         <p>"En güvenli yol, işe az miktarla başlayıp adım adım ilerlemektir; geri dönmesi güç bir noktaya gelmeden durabilmek de planın içindedir."</p>
       </div>
       <div class="g-kutu g-b3" data-gr style="--d:70ms">
-        <span class="g-ket">MEVCUT DOLGUNLUK</span>
+        <span class="g-ket">VAR OLAN DOLGUNLUK</span>
         <p>Şu anki dudağınızı fazla dolgun buluyorsanız yanıt yeni bir işlem değildir. Hyalüronik asit içeren dolgular, gerekli görüldüğünde enzimle eritilebilir; bu seçeneğin riskleri ve hangi durumlarda düşünüldüğü <a href="${r}uygulamalar/dolgu-uygulamalari/">dolgu uygulamaları</a> sayfasının istenmeyen durumlar bölümünde anlatılıyor.</p>
       </div>
     </div>
@@ -148,7 +148,7 @@ module.exports = {
 <section class="bolum bolum--buz2" id="uygulamalar">
   <div class="sar">
     <div class="bolum-bas" data-gr>
-      <p class="g-etiket">Seçenekler</p>
+      <p class="g-etiket">Olası yollar</p>
       <h2>Dudak için hangi seçenekler konuşulabilir?</h2>
       <p class="giris">Listedeki seçenekler, muayenede uygun bir tablo görüldüğünde konuşulur. Çoğu başvuruda bunlardan yalnızca biri gerekir; kimi görüşmeler hiçbir işlem konuşulmadan biter.</p>
     </div>
@@ -171,7 +171,7 @@ module.exports = {
 <section class="bolum" id="planlama">
   <div class="sar">
     <div class="bolum-bas" data-gr>
-      <p class="g-etiket">Süreç ve uygunluk</p>
+      <p class="g-etiket">Akış ve uygunluk</p>
       <h2>Dudak planı hangi adımlarla yapılır, kimlere uygun değildir?</h2>
     </div>
     <div class="g-bento">
@@ -189,7 +189,7 @@ module.exports = {
     </div>
     <div class="izgara izgara--2" style="margin-top:22px">
       <div class="kutu kutu--uyari" data-gr>
-        <h4>Uygulama yapılmayan durumlar</h4>
+        <h4>Kimlere uygulanmaz</h4>
         <ul>
           <li>Gebelik ya da emzirme</li>
           <li>Dudakta ya da çevresinde etkin uçuk, enfeksiyon veya açık yara</li>

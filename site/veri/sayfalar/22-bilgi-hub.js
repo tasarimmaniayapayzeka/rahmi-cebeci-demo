@@ -3,7 +3,7 @@ const S = require('../site');
 module.exports = {
   slug: 'bilgi',
   tip: 'bilgi',
-  baslik: 'Bilgi Merkezi — Yayın İlkeleri ve Hazırlanan Başlıklar',
+  baslik: 'Okuma Köşesi — Yayın İlkeleri ve Hazırlanan Başlıklar',
   aciklama: 'Dövme silme, enjeksiyon, lazer, vücut ve saç uygulamaları üzerine hekim denetimli yazıların yayımlanacağı bölüm; yayın ilkeleri ve hazırlanan başlıklar.',
 
   icerik: (r, ik) => `
@@ -12,9 +12,9 @@ module.exports = {
 <section class="g-hero">
   <div class="sar">
     <div>
-      <nav class="kirinti" aria-label="Konum" style="position:relative;font-size:.76rem;color:var(--sessiz);display:flex;gap:7px;margin-bottom:18px"><a href="${r}" style="color:var(--sessiz);text-decoration:none">Ana sayfa</a> › <span>Bilgi Merkezi</span></nav>
-      <p class="g-etiket">Bilgi Merkezi · Yayına hazırlanıyor</p>
-      <h1>Bilgi <span class="g-isik">Merkezi</span></h1>
+      <nav class="kirinti" aria-label="Konum" style="position:relative;font-size:.76rem;color:var(--sessiz);display:flex;gap:7px;margin-bottom:18px"><a href="${r}" style="color:var(--sessiz);text-decoration:none">Ana sayfa</a> › <span>Okuma Köşesi</span></nav>
+      <p class="g-etiket">Okuma Köşesi · Yayına hazırlanıyor</p>
+      <h1>Okuma <span class="g-isik">köşesi</span></h1>
       <p class="g-hero__alt">Bu bölümde lazer, enjeksiyon, vücut ve saç uygulamalarına dair yazılar yer alacak. Her yazıyı ${S.hekim.tam} hazırlayacak ya da tıbbi doğruluk yönünden denetleyecek. Bölüm henüz açılmadı; aşağıda önce hangi kurallarla yazacağımızı, ardından üzerinde çalışılan başlıkları bulabilirsiniz.</p>
       <div class="g-hero__cta">
         <a class="dgm dgm--bir" href="${r}iletisim/">Randevu talebi oluşturun</a>
@@ -171,11 +171,11 @@ module.exports = {
     <div class="bolum-bas" data-gr>
       <p class="g-etiket">Bugün okuyabilecekleriniz</p>
       <h2>Sitede yayında olan bölümler</h2>
-      <p class="giris">Bilgi Merkezi hazırlanırken aşağıdaki bölümlere hemen göz atabilirsiniz.</p>
+      <p class="giris">Okuma Köşesi hazırlanırken aşağıdaki bölümlere hemen göz atabilirsiniz.</p>
     </div>
     <div class="izgara izgara--3" data-gr style="--d:70ms">
       <a class="kart" href="${r}sikca-sorulan-sorular/">
-        <h3>Sıkça sorulan sorular</h3>
+        <h3>Soru ve yanıtlar</h3>
         <p>Randevu, ulaşım, dövme silme seansları ve uygulama sonrasına dair en çok gelen sorular.</p>
         <span class="kart__ok">Sorulara git ${ik.ok}</span>
       </a>
@@ -190,12 +190,12 @@ module.exports = {
         <span class="kart__ok">Listeyi aç ${ik.ok}</span>
       </a>
       <a class="kart" href="${r}yasal/icerik-ve-gorsel-yayin-ilkelerimiz/">
-        <h3>İçerik ve görsel yayın ilkelerimiz</h3>
+        <h3>Yayın ve görsel kullanım esaslarımız</h3>
         <p>Metinlerin ve görsellerin hangi kurallarla seçildiğini anlatan ilke metninin tamamı.</p>
         <span class="kart__ok">Metne git ${ik.ok}</span>
       </a>
       <a class="kart" href="${r}mevzuat/">
-        <h3>Uyduğumuz mevzuat</h3>
+        <h3>Bağlı olduğumuz mevzuat</h3>
         <p>Yayın tercihlerimizin dayandığı yönetmelikler ve kanun, tek sayfada.</p>
         <span class="kart__ok">Dayanağı gör ${ik.ok}</span>
       </a>

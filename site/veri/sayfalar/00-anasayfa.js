@@ -166,12 +166,12 @@ module.exports = {
     <div class="akis" data-reveal>
       <div class="akis__adim" data-reveal style="--d:0ms">
         <span class="akis__nokta">${ik.mercek}</span>
-        <h4>Muayene ve öykü</h4>
+        <h4>Muayene ve sağlık geçmişi</h4>
         <p>Ne istediğiniz, cildinizin özellikleri, yüz yapınız ve kullandığınız ilaçlar birlikte ele alınır.</p>
       </div>
       <div class="akis__adim" data-reveal style="--d:120ms">
         <span class="akis__nokta">${ik.liste}</span>
-        <h4>Plan</h4>
+        <h4>Planın yazılması</h4>
         <p>Uygulamanın türü, bölgesi, sırası ve gerekiyorsa seans aralıkları belirlenir.</p>
       </div>
       <div class="akis__adim" data-reveal style="--d:240ms">
@@ -186,7 +186,7 @@ module.exports = {
       </div>
       <div class="akis__adim" data-reveal style="--d:480ms">
         <span class="akis__nokta">${ik.saat}</span>
-        <h4>Kontrol</h4>
+        <h4>Kontrol görüşmesi</h4>
         <p>Kontrol günü baştan takvime yazılır; sonradan fark edilen bir durumda sizi yine aynı hekim görür.</p>
       </div>
     </div>
@@ -227,7 +227,7 @@ module.exports = {
 <section class="bolum">
   <div class="sar">
     <div class="bolum-bas" data-reveal>
-      <p class="etiket">Bölgeler</p>
+      <p class="etiket">Bölge dizini</p>
       <h2>Sekiz bölge, sekiz ayrı plan</h2>
       <p class="giris">Deri kalınlığı, damar ağı ve kas hareketi bölgeden bölgeye değişir; dudakta uygun olan miktar göz çevresine taşınmaz. Bir şeride dokunun ya da imleci üzerine getirin: o bölgenin nasıl ele alındığı ve hangi uygulamaların konuşulduğu açılır.</p>
     </div>
@@ -239,7 +239,7 @@ module.exports = {
 <section class="bolum">
   <div class="sar">
     <div class="bolum-bas" data-reveal>
-      <p class="etiket">Uygulamalar</p>
+      <p class="etiket">Uygulama dizini</p>
       <h2>Dört grupta toplanan uygulamalar</h2>
       <p class="giris">Enjeksiyonlar, lazer ve cihaz uygulamaları, saçlı deri çalışmaları, değerlendirme ve takip. Her sayfada uygulamanın ne olduğu, kimlere yapılmadığı ve sonrasında nelerle karşılaşabileceğiniz ayrı başlıklar altında anlatılır.</p>
     </div>
@@ -267,7 +267,7 @@ module.exports = {
   <div class="sar">
     <div class="izgara izgara--2" style="align-items:center;gap:clamp(24px,4vw,52px)">
       <div data-reveal>
-        <p class="etiket">Yaklaşımımız</p>
+        <p class="etiket">Randevudan kontrole</p>
         <h2>Ölçü, uygulamanın kendisi kadar önemlidir</h2>
         <p style="margin-top:14px">Bu alanda sonucu bozan şey çoğu zaman eksiklik değil, aşırılıktır. Yüz ifadesinin size ait kalması için bazı istekler <em>ertelenir</em>, bazıları hiç uygulanmaz.</p>
         <p>Bir uygulama, beklentinizle bölgenin özellikleri örtüştüğünde önerilir. Örtüşmüyorsa gerekçesi açık bir dille anlatılır; bazen doğru karar beklemektir.</p>
@@ -290,7 +290,7 @@ module.exports = {
   <div class="sar">
     <div class="izgara izgara--2" style="gap:clamp(24px,4vw,48px);align-items:start">
       <div data-reveal>
-        <p class="etiket">Hekim</p>
+        <p class="etiket">Hekimi tanıyın</p>
         <h2>${S.hekim.tam}</h2>
         <p style="margin-top:6px;font-weight:700;color:var(--murekkep)">${S.hekim.dallar}</p>
         <p style="margin-top:16px">Hacettepe Üniversitesi Tıp Fakültesi’nden 2005’te mezun oldu; aile hekimliği uzmanıdır ve Sağlık Bakanlığı onaylı medikal estetik uygulama sertifikasına sahiptir. Muayenehanedeki bütün uygulamaları, bu sertifikanın tanımladığı işlemler sınırında kendisi yapar.</p>
@@ -322,9 +322,9 @@ module.exports = {
 <section class="bolum">
   <div class="sar">
     <div class="bolum-bas" data-reveal>
-      <p class="etiket">Hazırlık</p>
+      <p class="etiket">Hazırlanırken</p>
       <h2>Randevudan önce birkaç dakika ayırın</h2>
-      <p class="giris">Hazırlık listesi ve cilt tipi testi tarayıcınızın içinde çalışır. Verdiğiniz cevaplar bize ulaşmaz, bir sunucuya yazılmaz ve sayfayı kapattığınızda silinir.</p>
+      <p class="giris">Hazırlık listesi ve cilt eğilimi testi tarayıcınızın içinde çalışır. Verdiğiniz cevaplar bize ulaşmaz, bir sunucuya yazılmaz ve sayfayı kapattığınızda silinir.</p>
     </div>
     <div class="izgara izgara--2">
       <a class="kart" data-egim href="${r}hazirlik-listesi/arac/" data-reveal style="--d:0ms">
@@ -337,7 +337,7 @@ module.exports = {
       <a class="kart" data-egim href="${r}cilt-tipi-testi/" data-reveal style="--d:120ms">
         <span class="kart__ikon">${ik.mercek}</span>
         <span class="rozet">Cihazınızda çalışır</span>
-        <h3 style="margin-top:8px">Cilt tipi eğilim testi</h3>
+        <h3 style="margin-top:8px">Cilt eğilimi öz değerlendirmesi</h3>
         <p>On iki kısa soruyla cildinizin nem–yağ dengesini, hassasiyetini ve leke eğilimini tarif etmenize yardımcı olur. Bir tanı aracı değildir; cilt tipiniz muayenede değerlendirilir.</p>
         <span class="kart__ok">Teste geçin ${ik.ok}</span>
       </a>
@@ -351,7 +351,7 @@ module.exports = {
     <div class="sss2">
       <div class="sss2__sol" data-reveal>
         <div class="bolum-bas" style="margin-bottom:0">
-          <p class="etiket">Sık sorulanlar</p>
+          <p class="etiket">Akla takılanlar</p>
           <h2>Aklınıza takılabilecekler</h2>
           <p class="giris" style="margin-top:10px">Bir kategori seçerek listeyi daraltabilirsiniz. Burada yer almayan sorular için sık sorulan sorular sayfasına göz atın.</p>
         </div>
@@ -387,7 +387,7 @@ module.exports = {
   <div class="sar">
     <div class="izgara izgara--2" style="gap:clamp(24px,4vw,48px)">
       <div data-reveal>
-        <p class="etiket">İletişim</p>
+        <p class="etiket">Ulaşım ve iletişim</p>
         <h2>Bakırköy, Cevizlik Mahallesi</h2>
         <p class="giris" style="margin-bottom:26px">Randevu için telefonla arayabilir, aynı numaradan WhatsApp’a yazabilir ya da iletişim sayfasındaki formu doldurabilirsiniz.</p>
         <ul class="bilgi-liste">

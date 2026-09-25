@@ -12,11 +12,11 @@ module.exports = {
   <div class="sar">
     <div>
       <nav class="kirinti" aria-label="Konum" style="position:relative;font-size:.76rem;color:var(--sessiz);display:flex;gap:7px;margin-bottom:18px"><a href="${r}" style="color:var(--sessiz);text-decoration:none">Ana sayfa</a> › <a href="${r}uygulamalar/" style="color:var(--sessiz);text-decoration:none">Uygulamalar</a> › <span>Dolgu uygulamaları</span></nav>
-      <p class="g-etiket">Enjeksiyon Uygulamaları · Hacim Desteği</p>
+      <p class="g-etiket">Enjeksiyonla Yapılanlar · Hacim Desteği</p>
       <h1>Hyalüronik asit ile <span class="g-isik">ölçülü hacim desteği</span></h1>
       <p class="g-hero__alt">Dolgu uygulamasında, suyu tutabilen jel kıvamında bir hyalüronik asit ürünü hekimin seçtiği derinliğe yerleştirilir. Hedef, zamanla desteğini yitirmiş bir alanı toparlamak ya da iki bölge arasındaki sert geçişi yumuşatmaktır. Dudak, çene ucu, jawline, elmacık, göz altı ve nazolabial bölge her biri kendi ölçütleriyle değerlendirilir; ihtiyaç muayenede netleşir.</p>
       <div class="g-hero__cta">
-        <a class="dgm dgm--bir" href="${r}iletisim/">Randevu talebi</a>
+        <a class="dgm dgm--bir" href="${r}iletisim/">Randevu isteyin</a>
         <a class="dgm dgm--iki" href="#nedir">Bölgeler ve sınırlar ↓</a>
       </div>
       <div class="g-tikler"><span><i></i>Tüm uygulamalar hekimin elinden</span><span><i></i>Az miktarla, aşamalı</span><span><i></i>Kontrol planın parçası</span></div>
@@ -42,7 +42,7 @@ module.exports = {
 <section class="bolum bolum--buz2" id="nedir">
   <div class="sar">
     <div class="bolum-bas" data-gr>
-      <p class="g-etiket">Tanım ve sınırlar</p>
+      <p class="g-etiket">Ne yapar, ne yapmaz</p>
       <h2>Dolgu uygulaması nedir, hangi bölgelerde düşünülür?</h2>
       <p class="giris">Hyalüronik asit, derinin kendi yapısında da bulunan ve ağırlığının çok üzerinde su bağlayabilen bir şeker zinciridir. Dolgu ürünlerinde bu zincirler birbirine bağlanarak dokuda daha uzun kalan bir jel hâline getirilir. Ürünlerin sertliği ve akışkanlığı farklıdır: dudak gibi hareketli ve yumuşak bir bölge için esnek, çene ucu gibi yapı desteği isteyen bir bölge için daha sıkı bir jel tercih edilir.</p>
     </div>
@@ -100,11 +100,11 @@ module.exports = {
     </div>
     <div class="izgara izgara--3" data-gr style="margin-top:22px;--d:70ms">
       <div class="kart kart--duz">
-        <h3>Uygun olabilecek tablo</h3>
+        <h3>Uygun olabilecek durum</h3>
         <p>Çukurluğun nedeni gerçekten doku kaybı ve sınırları net. Deri yeterince kalın, ödeme yatkınlık yok, alt kapakta belirgin gevşeklik görülmüyor.</p>
       </div>
       <div class="kart kart--duz">
-        <h3>Uygun olmayan tablo</h3>
+        <h3>Uygun olmayan durum</h3>
         <p>Kaynağı pigment olan koyuluk, ince deriden görünen damar ağı, sabahları belirginleşen şişlik ya da yağ yastıkçıklarının öne çıkmasıyla oluşan torbalanma. Torbalanmada dolgu görünümü daha da belirginleştirebilir.</p>
       </div>
       <div class="kart kart--duz">
@@ -122,7 +122,7 @@ module.exports = {
 <section class="bolum">
   <div class="sar">
     <div class="bolum-bas" data-gr>
-      <p class="g-etiket">Süreç</p>
+      <p class="g-etiket">Akış</p>
       <h2>Dolgu planı hangi basamaklardan geçer?</h2>
       <p class="giris">İşlemin hemen ardından aynada gördüğünüz görüntü şişliği de içerir ve son hâli göstermez. Bu yüzden asıl değerlendirme, ödem çekildikten sonra yapılan kontrolde yapılır.</p>
     </div>
@@ -138,7 +138,7 @@ module.exports = {
         <div class="g-cubuk"><small><span>Kontrol</span><span>Son görünüm</span></small><div class="g-ciz"><b class="g-cubuk-bakir" data-gw="95%"></b></div></div>
         <p style="font-size:.72rem;color:var(--sessiz);margin-top:10px">Çubuklar oransal bir simgedir; size özel takvim muayenede netleşir.</p>
       </div>
-      <div class="g-kutu g-b2" data-gr style="--d:140ms"><span class="g-ket">Protokol</span>
+      <div class="g-kutu g-b2" data-gr style="--d:140ms"><span class="g-ket">Adım adım</span>
         <ol class="g-protokol">
           <li>Öykü: daha önce yapılan dolgular ve ürünleri, kullandığınız ilaçlar ve bilinen duyarlılıklar kaydedilir.</li>
           <li>Yüz analizi: bölge komşularıyla birlikte, önden ve profilden incelenir; var olan asimetriler not edilir.</li>
@@ -169,8 +169,8 @@ module.exports = {
         <p>Önceki dolgularınıza ait bir belge, ürün etiketi ya da kayıt varsa randevuya getirmeniz, planın güvenle kurulmasına doğrudan katkı sağlar.</p>
       </div>
       <div class="g-kutu g-b2 g-kutu--gorsel" data-gr style="--d:70ms"><img src="${r}varliklar/gorsel/uyg-dolgu-kutu.webp" alt="Profilden doğal oranlı dudak ve çene" loading="lazy"><span class="g-ainot">Temsilî görsel · yapay zekâ ile üretildi</span></div>
-      <div class="g-kutu g-b3 g-kutu--gece" data-gr><span class="g-ket">İlke</span><p>“Dolguda asıl beceri, nerede duracağını bilmektir. Şişlik çekilip yüz son hâlini göstermeden ürün eklenmez.”</p></div>
-      <div class="g-kutu g-b3 g-kutu--cta" data-gr style="--d:70ms"><h3>Bölgenizi birlikte inceleyelim</h3><p>Hangi bölgenin, hangi sırayla ele alınacağı muayenede netleşir.</p><a class="dgm dgm--altin" href="${r}iletisim/">Randevu talebi</a></div>
+      <div class="g-kutu g-b3 g-kutu--gece" data-gr><span class="g-ket">Hekimin notu</span><p>“Dolguda asıl beceri, nerede duracağını bilmektir. Şişlik çekilip yüz son hâlini göstermeden ürün eklenmez.”</p></div>
+      <div class="g-kutu g-b3 g-kutu--cta" data-gr style="--d:70ms"><h3>Bölgenizi birlikte inceleyelim</h3><p>Hangi bölgenin, hangi sırayla ele alınacağı muayenede netleşir.</p><a class="dgm dgm--altin" href="${r}iletisim/">Randevu isteyin</a></div>
     </div>
   </div>
 </section>
@@ -179,7 +179,7 @@ module.exports = {
 <section class="bolum bolum--sicak">
   <div class="sar">
     <div class="bolum-bas" data-gr>
-      <p class="g-etiket">Riskler</p>
+      <p class="g-etiket">Dikkat edilecekler</p>
       <h2>Dolgudan sonra neler görülebilir, hangi belirtide beklemeden başvurulur?</h2>
       <p class="giris">Aşağıdaki başlıkların hepsi herkeste görülmez; ancak her biri uygulamadan önce sizinle konuşulur ve onam formunda yer alır.</p>
     </div>
@@ -211,20 +211,20 @@ module.exports = {
 <section class="bolum bolum--buz2">
   <div class="sar">
     <div class="bolum-bas" data-gr>
-      <p class="g-etiket">Zamanlama</p>
+      <p class="g-etiket">Ne zaman</p>
       <h2>Kaç seans planlanır, etkisi ne kadar sürer?</h2>
     </div>
     <div class="izgara izgara--3" data-gr>
       <div class="kart kart--duz">
-        <h4>Değerlendirme zamanı</h4>
+        <h4>Ne zaman değerlendirilir</h4>
         <p>İşlemden hemen sonraki görünüm şişliği de içerir. Son hâl, ödem çekildikten sonra yapılan kontrolde değerlendirilir; ekleme gerekip gerekmediğine ancak o zaman karar verilir.</p>
       </div>
       <div class="kart kart--duz">
-        <h4>Kalıcılık</h4>
+        <h4>Etki ne kadar sürer</h4>
         <p>Ürünün dokuda kalma süresi; jelin yapısına, bölgenin ne kadar hareket ettiğine, metabolizmanıza ve yaşam alışkanlıklarınıza bağlıdır. Dudak gibi hareketli bölgelerde daha kısa, göz altı gibi hareketsiz bölgelerde daha uzun olabilir. Etki bir anda değil, yavaş yavaş azalır.</p>
       </div>
       <div class="kart kart--duz">
-        <h4>Aşamalı plan</h4>
+        <h4>Adım adım plan</h4>
         <p>Bir bölge için öngörülen miktarın tamamı her zaman aynı seansta verilmez. Önce bir kısmı uygulanır, sonuç görüldükten sonra gerekiyorsa tamamlanır; böylece fazlalığın önüne geçilir. Her yeni seanstan önce bölge yeniden değerlendirilir. Sonuçlar kişiden kişiye değişir.</p>
       </div>
     </div>
@@ -247,7 +247,7 @@ module.exports = {
       <a href="${r}uygulamalar/sivi-yuz-germe/">Sıvı yüz germe</a>
       <a href="${r}cilt-sorunlari/goz-alti-koyulugu/">Göz altı koyuluğu</a>
       <a href="${r}uygulamalar/botulinum-toksin/">Botulinum toksin</a>
-      <a href="${r}uygulamalar/uygulama-sonrasi-takip/">Uygulama sonrası takip</a>
+      <a href="${r}uygulamalar/uygulama-sonrasi-takip/">Uygulama sonrası kontrol</a>
       <a href="${r}hekim/">Hekim</a>
     </div>
   </div>

@@ -12,11 +12,11 @@ module.exports = {
   <div class="sar">
     <div>
       <nav class="kirinti" aria-label="Konum" style="position:relative;font-size:.76rem;color:var(--sessiz);display:flex;gap:7px;margin-bottom:18px"><a href="${r}" style="color:var(--sessiz);text-decoration:none">Ana sayfa</a> › <a href="${r}uygulamalar/" style="color:var(--sessiz);text-decoration:none">Uygulamalar</a> › <span>Biyostimülan uygulamalar</span></nav>
-      <p class="g-etiket">Enjeksiyon Uygulamaları · Kolajen Uyarımı</p>
+      <p class="g-etiket">Enjeksiyonla Yapılanlar · Kolajen Uyarımı</p>
       <h1>Etkisi bir günde değil, <span class="g-isik">aylar içinde</span> ortaya çıkar.</h1>
       <p class="g-hero__alt">Biyostimülan uygulamalar, derinin alt katmanına ya da deri altına verilen ve çevresinde kolajen yapımını uyarması amaçlanan emilebilir maddelerle yapılır. Bu grupta kalsiyum hidroksiapatit ve poli-L-laktik asit sınıfı ürünler yer alır. Değişiklik haftalar ve aylar içinde, kademeli olarak beklenir; aynı gün belirgin bir fark hedeflenmez.</p>
       <div class="g-hero__cta">
-        <a class="dgm dgm--bir" href="${r}iletisim/">Randevu talebi</a>
+        <a class="dgm dgm--bir" href="${r}iletisim/">Randevu isteyin</a>
         <a class="dgm dgm--iki" href="#ilkbolum">Nedir, ne değildir ↓</a>
       </div>
       <div class="g-tikler"><span><i></i>Ürün sınıfı muayenede seçilir</span><span><i></i>Dudak ve göz altına yapılmaz</span><span><i></i>Seanslar arasında bekleme</span></div>
@@ -86,13 +86,13 @@ module.exports = {
         <p><b style="color:var(--murekkep)">Seans aralığı</b><br>Bir sonraki seansın kararı, öncekinin kolajen yanıtı belirginleşmeden verilmez; aceleyle eklenen ürün nodül olasılığını artırır.</p>
       </div>
       <div class="g-kutu g-b2" data-gr style="--d:70ms">
-        <span class="g-ket">İyileşme seyri</span>
+        <span class="g-ket">Toparlanma</span>
         <div class="g-cubuk"><small><span>Şişlik, kızarıklık</span><span>1–3 gün</span></small><div class="g-ciz"><b class="g-cubuk-mavi" data-gw="20%"></b></div></div>
         <div class="g-cubuk"><small><span>Morarma, ele gelen dolgunluk</span><span>1–2 hafta</span></small><div class="g-ciz"><b class="g-cubuk-petrol" data-gw="44%"></b></div></div>
         <div class="g-cubuk"><small><span>Kolajen yanıtının değerlendirilmesi</span><span>2–3 ay</span></small><div class="g-ciz"><b class="g-cubuk-bakir" data-gw="90%"></b></div></div>
         <p style="font-size:.72rem;color:var(--sessiz);margin-top:10px">Çubuk uzunlukları yalnız karşılaştırma içindir; size özel süreler muayenede konuşulur.</p>
       </div>
-      <div class="g-kutu g-b2" data-gr style="--d:140ms"><span class="g-ket">Protokol</span>
+      <div class="g-kutu g-b2" data-gr style="--d:140ms"><span class="g-ket">Adım adım</span>
         <ol class="g-protokol">
           <li>Muayene ve öykü: ilaçlar, otoimmün hastalık, önceki dolgular, iz eğilimi</li>
           <li>Bölge ve ürün sınıfı seçimi; uygulanmayacak alanların belirlenmesi</li>
@@ -101,9 +101,9 @@ module.exports = {
           <li>Uygulama, masaj önerisi ve <a href="${r}uygulamalar/uygulama-sonrasi-takip/">kontrol randevusu</a></li>
         </ol>
       </div>
-      <div class="g-kutu g-b2 g-kutu--gece" data-gr><span class="g-ket">İlke</span><p>“Az ve aralıklı vermek, bir seansta çok vermekten daha güvenlidir: eksik kalan sonra tamamlanabilir, fazlası geri alınamaz.”</p></div>
+      <div class="g-kutu g-b2 g-kutu--gece" data-gr><span class="g-ket">Hekimin notu</span><p>“Az ve aralıklı vermek, bir seansta çok vermekten daha güvenlidir: eksik kalan sonra tamamlanabilir, fazlası geri alınamaz.”</p></div>
       <div class="g-kutu g-b2 g-kutu--gorsel" data-gr style="--d:70ms"><img src="${r}varliklar/gorsel/uyg-biyostimulan-uygulamalar-2.webp" alt="Koyu zeminde deri yüzeyinin yakın görünümü" loading="lazy"><span class="g-ainot">Temsilî görsel · yapay zekâ ile üretildi</span></div>
-      <div class="g-kutu g-b2 g-kutu--cta" data-gr style="--d:140ms"><h3>Bölgenizi ve takviminizi konuşalım</h3><p>Yakında önemli bir gününüz varsa bunu en başta söyleyin.</p><a class="dgm dgm--altin" href="${r}iletisim/">Randevu talebi</a></div>
+      <div class="g-kutu g-b2 g-kutu--cta" data-gr style="--d:140ms"><h3>Bölgenizi ve takviminizi konuşalım</h3><p>Yakında önemli bir gününüz varsa bunu en başta söyleyin.</p><a class="dgm dgm--altin" href="${r}iletisim/">Randevu isteyin</a></div>
       <div class="kutu kutu--uyari g-b4" data-gr>
         <b>Kimlere uygulanmaz, ne zaman ertelenir?</b>
         <ul>

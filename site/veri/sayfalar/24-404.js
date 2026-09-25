@@ -13,7 +13,7 @@ module.exports = {
   <div class="sar">
     <div>
       <nav class="kirinti" aria-label="Konum" style="position:relative;font-size:.76rem;color:var(--sessiz);display:flex;gap:7px;margin-bottom:18px"><a href="${r}" style="color:var(--sessiz);text-decoration:none">Ana sayfa</a> › <span>404</span></nav>
-      <p class="g-etiket">404 · Sayfa bulunamadı</p>
+      <p class="g-etiket">404 · Bu adres boş</p>
       <h1>Bu adreste bir <span class="g-isik">sayfa yok</span></h1>
       <p class="g-hero__alt">Açmaya çalıştığınız sayfa başka bir adrese taşınmış, adı değişmiş ya da hiç yayımlanmamış olabilir. Aşağıdaki bölümlerden birinden devam ederek aradığınız bilgiye ulaşabilirsiniz. Bozuk bir bağlantıya rastladıysanız bize haber vermeniz, düzeltmemizi kolaylaştırır.</p>
       <div class="g-hero__cta">
@@ -29,12 +29,12 @@ module.exports = {
   <div class="sar">
     <div class="bolum-bas" data-gr>
       <p class="g-etiket">Buradan devam edin</p>
-      <h2>Sitenin ana bölümleri</h2>
+      <h2>Sitede neler var</h2>
     </div>
     <div class="izgara izgara--4" data-gr style="--d:70ms">
       <a class="kart" href="${r}">
         <span class="kart__ikon">${ik.kalp}</span>
-        <h3>Ana sayfa</h3>
+        <h3>Başa dön</h3>
         <p>Muayenehanenin çalışma düzenini, öne çıkan uygulamaları ve şikâyete göre nereden başlayabileceğinizi özetler.</p>
         <span class="kart__ok">Ana sayfaya dön ${ik.ok}</span>
       </a>
@@ -60,7 +60,7 @@ module.exports = {
 
     <div class="kutu kutu--bilgi" data-gr style="--d:140ms;margin-top:28px">
       <b>Hâlâ bulamadıysanız</b>
-      <p>Randevu, hazırlık, dövme silme seansları ve uygulama sonrası süreçle ilgili başlıklar sıkça sorulan sorular sayfasında bir arada durur. Çalışmayan bir bağlantı gördüyseniz site editörüne yazmanız yeterli: <a href="mailto:${S.iletisim.editor}">${S.iletisim.editor}</a>.</p>
+      <p>Randevu, hazırlık, dövme silme seansları ve uygulama sonrası süreçle ilgili başlıklar soru ve yanıtlar sayfasında bir arada durur. Çalışmayan bir bağlantı gördüyseniz site editörüne yazmanız yeterli: <a href="mailto:${S.iletisim.editor}">${S.iletisim.editor}</a>.</p>
     </div>
   </div>
 </section>

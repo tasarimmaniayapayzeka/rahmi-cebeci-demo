@@ -34,31 +34,31 @@ module.exports = {
 <section class="bolum bolum--sicak" id="nedenler">
   <div class="sar">
     <div class="bolum-bas" data-gr>
-      <p class="g-etiket">Ayrım</p>
+      <p class="g-etiket">Farkı nerede</p>
       <h2>Lekeniz hangi gruba giriyor olabilir?</h2>
       <p class="giris">Aynı kahverengi ton, derinin farklı katmanlarında ve farklı mekanizmalarla ortaya çıkabilir. Yalnızca rengi hedef almak, leke planlamasında en sık yapılan yanlıştır. Muayenede lekeler dört başlık altında toplanır; hangisinin sizde olduğu yakından bakı ve büyütmeli incelemeyle anlaşılır.</p>
     </div>
     <div class="g-katblok" data-gr>
-      <span class="g-kno">01</span>
+      <span class="g-kno">Kesit 01</span>
       <h3>Güneşe bağlı lekeler</h3>
       <p>Uzun yıllar güneş gören bölgelerde beliren, kenarı net, açık ya da koyu kahverengi, düz lekelerdir. En çok el sırtında, ön kolda, omuzlarda, alında ve elmacık üzerinde görülür. Zamanla sayıları artabilir ve kış aylarında belirgin biçimde açılmazlar. Bu grupta hedef çoğunlukla tek tek lekelerdir.</p>
       <div class="g-haplar"><a href="${r}uygulamalar/pico-lazer-leke/">Pico lazer ile leke</a><a href="${r}bolgeler/el/">El bölgesi</a></div>
     </div>
     <div class="g-katblok" data-gr style="--d:60ms">
-      <span class="g-kno">02</span>
+      <span class="g-kno">Kesit 02</span>
       <h3>Melazma</h3>
       <p>Çoğunlukla yüzün iki yanına birbirine benzer biçimde yerleşen, kenarları düzensiz ve harita gibi yayılan kahverengi alanlardır. En çok alında, elmacıklarda, üst dudağın üzerinde ve çene kenarında görülür.</p>
 <p>Güneş ışığı, görünür ışık, sıcak ortam, gebelik ve hormon içeren ilaçlar tetikleyici olabilir. Yaz aylarında koyulaşır; tetikleyici sürdükçe yeniden belirme eğilimi taşır. Tahrişe hassastır: sert soyucu işlemler ya da ısı oluşturan uygulamalar, kısa süreli bir açılmanın ardından daha koyu bir geri dönüşe neden olabilir. Bu grupta ısı oluşturmayan, yavaş ilerleyen seçenekler tercih edilir.</p>
       <div class="g-haplar"><a href="${r}uygulamalar/mezoterapi/">Mezoterapi</a></div>
     </div>
     <div class="g-katblok" data-gr style="--d:120ms">
-      <span class="g-kno">03</span>
+      <span class="g-kno">Kesit 03</span>
       <h3>İltihap sonrası koyulaşma</h3>
       <p>Bir sivilce, sürtünme, kaşıntı, yanık ya da cilde yapılan bir işlem iyileşirken geride kalan koyu renktir. Biçimi genellikle önceki lezyonun şeklini izler ve koyu tenlerde daha uzun sürer. Burada asıl yapılması gereken, koyulaşmayı başlatan iltihabı kontrol altına almaktır; bu sağlanmadan sürdürülen bir leke planı kalıcı sonuç vermez.</p>
       <div class="g-haplar"><a href="${r}cilt-sorunlari/akne-ve-akne-izi/">Akne ve akne izi</a></div>
     </div>
     <div class="g-katblok" data-gr style="--d:180ms">
-      <span class="g-kno">04</span>
+      <span class="g-kno">Kesit 04</span>
       <h3>Lekeyle karışan diğer renk değişiklikleri</h3>
       <p>Kızarıklık ve genişlemiş küçük damarlar bazen leke sanılabilir. Benler, doğuştan gelen renk farklılıkları ve bazı ilaçlara bağlı değişiklikler ayrı bir grupta değerlendirilir. Göz altındaki koyuluk ise çoğu zaman pigmentten değil, damar ve yapı değişikliğinden kaynaklanır.</p>
       <div class="g-haplar"><a href="${r}cilt-sorunlari/goz-alti-koyulugu/">Göz altı koyuluğu</a></div>
@@ -79,7 +79,7 @@ module.exports = {
 <section class="bolum bolum--buz2">
   <div class="sar">
     <div class="bolum-bas" data-gr>
-      <p class="g-etiket">Sonrası</p>
+      <p class="g-etiket">Uygulamadan sonra</p>
       <h2>Leke türü belirlendikten sonra hangi seçenekler konuşulur?</h2>
       <p class="giris">Güneşten korunma alışkanlığı yerleştikten ve cilt sakinleştikten sonra aşağıdaki başlıklar değerlendirilir. Bunlar genel bilgidir; size özel plan muayeneden sonra hekim tarafından kurulur. Tetikleyici devam ettiği sürece lekenin yeniden belirmesi mümkündür.</p>
     </div>

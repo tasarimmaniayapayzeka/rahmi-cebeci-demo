@@ -5,7 +5,7 @@ module.exports = {
   slug: 'uygulama-karsilastirma',
   tip: 'tibbi',
   js: 'kesif.js',
-  baslik: 'Uygulama Karşılaştırma Masası — İki Uygulama Yan Yana',
+  baslik: 'Yan Yana Tablo — Seçtiğiniz İki Uygulama Karşı Karşıya',
   aciklama: 'İki uygulamayı hedef, uygulama sırasındaki his, iyileşme, etkinin ortaya çıkışı ve kalıcılık açısından yan yana görün; bilgiler uygulama sayfalarından alınır.',
 
   icerik: (r, ik) => `
@@ -13,7 +13,7 @@ module.exports = {
 <!-- ═════════ BELGE HERO ═════════ -->
 <section class="g-bhero">
   <div class="sar">
-    <p class="g-etiket">Karşılaştırma masası</p>
+    <p class="g-etiket">Yan yana tablo</p>
     <h1>İki uygulama, beş başlık, tek tablo</h1>
     <p class="g-bhero__alt">Bir şikâyetin karşılığı tek bir uygulama olmayabilir. Bu masada seçtiğiniz iki uygulamayı hedef, uygulama sırasındaki his, iyileşme süreci, etkinin ortaya çıkma zamanı ve kalıcılık başlıklarında karşılaştırabilirsiniz. Metinler, her uygulamanın kendi sayfasındaki bilgilerden derlenmiştir.</p>
     <div class="g-bmeta">

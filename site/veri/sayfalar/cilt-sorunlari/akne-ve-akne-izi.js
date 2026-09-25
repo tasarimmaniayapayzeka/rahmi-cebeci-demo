@@ -34,34 +34,34 @@ module.exports = {
 <section class="bolum bolum--sicak" id="nedenler">
   <div class="sar">
     <div class="bolum-bas" data-gr>
-      <p class="g-etiket">Ayrım</p>
+      <p class="g-etiket">Farkı nerede</p>
       <h2>Cildinizde şu an hangi tablo ağır basıyor?</h2>
       <p class="giris">Akne planlamasında en sık görülen yanlış, dönem atlamaktır. İltihap sürerken yapılan bir işlem tabloyu alevlendirebilir; iz dönemine geçmiş bir ciltte aktif akneye yönelik plan sürdürmek ise beklenen değişimi getirmez. İkinci yanlış, bütün izleri tek bir başlıkta toplamaktır. Muayenede izler elle, yandan gelen ışıkla ve büyütmeli incelemeyle birbirinden ayrılır.</p>
     </div>
     <div class="g-katblok" data-gr>
-      <span class="g-kno">01</span>
+      <span class="g-kno">Kesit 01</span>
       <h3>Aktif dönem</h3>
       <p>Deride açık ya da kapalı komedonlar, kızarık kabarcıklar, iltihaplı sivilceler veya derinde ağrılı sertlikler bulunur. Bu dönemde öncelik yeni lezyon çıkışını azaltmaktır. Deri yüzeyine yönelik işlemler çoğunlukla ertelenir; erken yapılan bazı girişimler iltihabı artırarak kalıcı iz olasılığını yükseltebilir.</p>
     </div>
     <div class="g-katblok" data-gr style="--d:60ms">
-      <span class="g-kno">02</span>
+      <span class="g-kno">Kesit 02</span>
       <h3>Renk olarak kalan izler</h3>
       <p>Aynada iz gibi görünen şeylerin önemli bir kısmı, deride çukur ya da kabarıklık olmadan kalan renk farklılıklarıdır. Kırmızı-pembe izler iyileşme sırasında genişleyen küçük damarlardan kaynaklanır ve zamanla solma eğilimi taşır. Kahverengi izler ise iltihap sonrası koyulaşmadır; koyu tenlerde daha belirgin ve uzun sürelidir. Sivilceyi sıkmak, kabuğu koparmak ve güneşten korunmamak koyulaşmanın uzun sürmesine yol açar.</p>
       <div class="g-haplar"><a href="${r}cilt-sorunlari/cilt-tonu-ve-leke/">Cilt tonu ve leke</a></div>
     </div>
     <div class="g-katblok" data-gr style="--d:120ms">
-      <span class="g-kno">03</span>
+      <span class="g-kno">Kesit 03</span>
       <h3>Çukur izler</h3>
       <p>İltihabın deri altında doku kaybına yol açmasıyla oluşur ve kendiliğinden düzelmez. Dar, derin ve keskin kenarlı olanlar; geniş, düz tabanlı ve belirgin kenarlı olanlar; yumuşak geçişli, dalgalı bir yüzey bırakanlar birbirinden farklı davranır. Her birinin karşılığı başka olduğu için yalnızca “izim var” demek planlama için yeterli değildir.</p>
       <div class="g-haplar"><a href="${r}uygulamalar/fraksiyonel-lazer/">Fraksiyonel lazer</a><a href="${r}uygulamalar/altin-igne-radyofrekans/">Altın iğne radyofrekans</a><a href="${r}uygulamalar/prp/">PRP</a></div>
     </div>
     <div class="g-katblok" data-gr style="--d:180ms">
-      <span class="g-kno">04</span>
+      <span class="g-kno">Kesit 04</span>
       <h3>Kabarık izler</h3>
       <p>İyileşme sırasında gereğinden fazla doku yapıldığında gelişir; en sık sırt, omuzlar, göğsün ön yüzü ve çene hattında görülür. Bu bölgelerde işlem kararı daha dikkatli verilir, çünkü uygun olmayan bir zamanda yapılan müdahale izi daha belirgin hâle getirebilir.</p>
     </div>
     <div class="g-katblok" data-gr style="--d:240ms">
-      <span class="g-kno">05</span>
+      <span class="g-kno">Kesit 05</span>
       <h3>Akneye benzeyen başka tablolar</h3>
       <p>Sivilceye benzeyen her döküntü akne değildir. İlaçlara bağlı döküntüler, çene ve alt yüze yerleşen hormonal tablolar, ağır kıvamlı ürünlerin yol açtığı tıkanmalar, yüzde kalıcı kızarıklıkla seyreden durumlar ve ileri yaşta başlayan akne muayenede ayrıca sorgulanır. Gerekli görülürse genel sağlık değerlendirmesi aynı görüşmede yapılır.</p>
       <div class="g-haplar"><a href="${r}uygulamalar/hekim-muayenesi/">Hekim muayenesi</a></div>
@@ -78,7 +78,7 @@ module.exports = {
 <section class="bolum bolum--buz2">
   <div class="sar">
     <div class="bolum-bas" data-gr>
-      <p class="g-etiket">Sonrası</p>
+      <p class="g-etiket">Uygulamadan sonra</p>
       <h2>Dönem belirlendikten sonra hangi seçenekler konuşulur?</h2>
       <p class="giris">Aşağıdaki başlıklar iz dönemine ve yüzey bakımına yöneliktir; aktif iltihap sürerken çoğu ertelenir. Size özel plan muayeneden sonra hekim tarafından kurulur ve sonuçlar kişiden kişiye değişir.</p>
     </div>

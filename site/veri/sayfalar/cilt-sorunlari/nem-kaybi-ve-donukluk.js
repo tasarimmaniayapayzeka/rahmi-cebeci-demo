@@ -34,35 +34,35 @@ module.exports = {
 <section class="bolum bolum--sicak" id="nedenler">
   <div class="sar">
     <div class="bolum-bas" data-gr>
-      <p class="g-etiket">Ayrım</p>
+      <p class="g-etiket">Farkı nerede</p>
       <h2>Cilt neden su kaybeder ve matlaşır?</h2>
       <p class="giris">Nem kaybı ve donukluk, hem kolayca gözden kaçan hem de sıklıkla yanlış yönetilen şikâyetlerdendir. Cildini canlandırmak isteyen kişi çoğu zaman rafına yeni ürünler ekler ya da daha iddialı işlemlere yönelir. Oysa pek çok durumda önce yapılması gereken, cildi yoran adımları plandan çıkarmaktır.</p>
     </div>
     <div class="g-katblok" data-gr>
-      <span class="g-kno">01</span>
+      <span class="g-kno">Kesit 01</span>
       <h3>Bariyer ne işe yarar?</h3>
       <p>Bariyer, derinin en dışında suyun buharlaşıp gitmesini önleyen ince bir koruma katmanıdır. Üst üste dizilmiş yassı hücreler ve aralarını dolduran yağlar birlikte bir yalıtım gibi çalışır. Bu yapı suyu içeride tutar, tahriş edici maddelerin ve mikropların girişini sınırlar, derinin hafif asidik ortamını korur. Katman zayıfladığında daha önce sorunsuz kullandığınız ürünler bile batma ya da yanma hissi verebilir.</p>
     </div>
     <div class="g-katblok" data-gr style="--d:60ms">
-      <span class="g-kno">02</span>
+      <span class="g-kno">Kesit 02</span>
       <h3>Su kaybı ile kuruluk aynı şey değil</h3>
       <p>Kuruluk, derinin az yağ üretmesiyle ilgilidir ve büyük ölçüde doğuştan gelen bir cilt tipidir. Su kaybı ise derinin suyu elinde tutamamasıdır ve çoğunlukla geçicidir. Yağlı bir cilt de su kaybedebilir: parlamayı gidermek için yapılan sert temizlik koruyucu katmanı zedeler, su kaybeden cilt daha çok yağ üretir ve sonunda hem parlayan hem gerilen bir cilt ortaya çıkar.</p>
       <div class="g-haplar"><a href="${r}cilt-sorunlari/gozenek-ve-cilt-dokusu/">Gözenek ve cilt dokusu</a></div>
     </div>
     <div class="g-katblok" data-gr style="--d:120ms">
-      <span class="g-kno">03</span>
+      <span class="g-kno">Kesit 03</span>
       <h3>Matlığın kaynağı: pürüzlü yüzey</h3>
       <p>Düzgün bir yüzey ışığı toplu biçimde geri verir ve canlı görünür; pürüzlü bir yüzey ışığı saçar ve mat algılanır. Yenilenmenin yavaşlamasıyla biriken ölü hücreler, suyu azalan hücrelerin büzülmesi, dolaşımın ağırlaşması ve güneşin birikimli etkisi bu pürüzü oluşturur. Kuruluğa bağlı ince çizgilerin bir kısmı da su dengesi geri geldiğinde azalır.</p>
       <div class="g-haplar"><a href="${r}cilt-sorunlari/mimik-cizgileri-ve-kirisiklik/">Mimik çizgileri ve kırışıklık</a></div>
     </div>
     <div class="g-katblok" data-gr style="--d:180ms">
-      <span class="g-kno">04</span>
+      <span class="g-kno">Kesit 04</span>
       <h3>Koruyucu katmanı zayıflatan etkenler</h3>
       <p>Çoğu zaman sebep bir hastalık değil, cilde iyi niyetle yapılan fazlalıklardır: cildi yağından tümüyle arındıran temizleyiciler ve çok sıcak su, aynı akşam üst üste sürülen aktif içerikler, birkaç günde bir değiştirilen ürünler, kalorifer ve klimayla kuruyan iç ortam, soğuk rüzgâr, uzun uçak yolculukları ve korunmasız güneş.</p>
 <p>Direnen tablolarda tiroit bozuklukları, kansızlık, bazı ilaçlar ve düzensiz uyku gibi genel etkenler de ele alınır.</p>
     </div>
     <div class="g-katblok" data-gr style="--d:240ms">
-      <span class="g-kno">05</span>
+      <span class="g-kno">Kesit 05</span>
       <h3>Zayıflamayı düşündüren işaretler</h3>
       <p>Yüzünüzü yıkadıktan sonra nemlendirici sürene kadar süren gerilme; önceden rahatça kullandığınız bir ürünün batması; nemlendiricinin etkisinin birkaç saatte kaybolması; sabah şiş ve mat, akşam gergin ve cansız bir cilt; sıcak, rüzgâr ya da sıcak duştan sonra beliren kızarıklık. Bunlardan birkaçı birlikte görülüyorsa yeni bir uygulama düşünmeden önce koruyucu katmanın durumuna bakılmalıdır.</p>
     </div>
@@ -82,7 +82,7 @@ module.exports = {
 <section class="bolum bolum--buz2">
   <div class="sar">
     <div class="bolum-bas" data-gr>
-      <p class="g-etiket">Sonrası</p>
+      <p class="g-etiket">Uygulamadan sonra</p>
       <h2>Koruyucu katman toparlanınca hangi seçenekler konuşulur?</h2>
       <p class="giris">Cilt hazır olduğunda ve uygun görülürse aşağıdaki adımlar değerlendirilir. Bunlar genel bir çerçevedir; size özel plan muayeneden sonra hekim tarafından kurulur.</p>
     </div>

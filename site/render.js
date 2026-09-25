@@ -57,7 +57,7 @@ const kok = slug => derinlik(slug) === 0 ? './' : '../'.repeat(derinlik(slug));
 function menuKur() {
   /* Klinik menüde başta (12 Ağu talebi) */
   const ek = [...S.menuEk];
-  const ki = ek.findIndex(m => m.ad === 'Klinik');
+  const ki = ek.findIndex(m => m.ad === 'Tanışalım');
   const klinik = ki > -1 ? ek.splice(ki, 1) : [];
   return [
     ...klinik,
@@ -68,7 +68,7 @@ function menuKur() {
         ogeler: g.ogeler.map(([ad, s]) => ({ ad, yol: `/uygulamalar/${s}/` })) })),
       alt: S.katalog.flatMap(g => g.ogeler.map(([ad, s]) =>
         ({ ad, yol: `/uygulamalar/${s}/`, grup: g.kisa })))
-        .concat([{ ad: 'Tüm uygulamalar', yol: '/uygulamalar/' }]) },
+        .concat([{ ad: 'Uygulamaların tamamı', yol: '/uygulamalar/' }]) },
     { ad: 'Bölgeler', yol: '/bolgeler/', alt:
       S.bolgeler.map(([ad, s, not]) => ({ ad, yol: `/bolgeler/${s}/`, not })) },
     { ad: 'Cilt Sorunları', yol: '/cilt-sorunlari/', alt:
@@ -82,15 +82,15 @@ const MENU = menuKur();
 /* Sütun başına en çok 5 bağlantı + "Tümü" — uzun listeler altbilgiyi
    kalabalıklaştırıyordu (12 Ağu); tam listeler hub sayfalarında. */
 const ALTBILGI = [
-  { baslik: 'Klinik', bag: [
-      ['Hakkımızda', '/klinik/'], ['Hekim', '/hekim/'], ['Nasıl çalışıyoruz', '/yaklasimimiz/'],
-      ['Sıkça sorulan sorular', '/sikca-sorulan-sorular/'], ['İletişim', '/iletisim/'] ] },
-  { baslik: 'Uygulamalar', tumu: ['Tüm uygulamalar', '/uygulamalar/'],
+  { baslik: 'Tanışalım', bag: [
+      ['Muayenehanemiz', '/klinik/'], ['Hekim', '/hekim/'], ['Randevudan kontrole', '/yaklasimimiz/'],
+      ['Soru ve yanıtlar', '/sikca-sorulan-sorular/'], ['İletişim', '/iletisim/'] ] },
+  { baslik: 'Uygulamalar', tumu: ['Uygulamaların tamamı', '/uygulamalar/'],
     bag: S.katalog.flatMap(g => g.ogeler).slice(0, 5)
       .map(([ad, s]) => [ad, `/uygulamalar/${s}/`]) },
-  { baslik: 'Bölgeler', tumu: ['Tüm bölgeler', '/bolgeler/'],
+  { baslik: 'Bölgeler', tumu: ['Sekiz bölgenin tamamı', '/bolgeler/'],
     bag: S.bolgeler.slice(0, 5).map(([ad, s]) => [ad, `/bolgeler/${s}/`]) },
-  { baslik: 'Cilt sorunları', tumu: ['Tüm cilt sorunları', '/cilt-sorunlari/'],
+  { baslik: 'Cilt sorunları', tumu: ['Bütün şikâyet başlıkları', '/cilt-sorunlari/'],
     bag: S.sorunlar.slice(0, 5).map(([ad, s]) => [ad, `/cilt-sorunlari/${s}/`]) },
 ];
 
@@ -111,7 +111,7 @@ function ust(sayfa) {
     const ic = m.mega
       ? `<div class="mega">${m.mega.map(g => `<div class="mega__sutun"><p class="mega__baslik">${g.baslik}</p>${
           g.ogeler.map(a => `<a ${bag(a.yol)}${akt(a.yol)}>${a.ad}</a>`).join('')}</div>`).join('')}</div>
-        <a class="mega__tumu" ${bag(m.yol)}${akt(m.yol)}>Tüm uygulamalar ${ik.ok}</a>`
+        <a class="mega__tumu" ${bag(m.yol)}${akt(m.yol)}>Uygulamaların tamamı ${ik.ok}</a>`
       : m.alt.map(a => `<a ${bag(a.yol)}${akt(a.yol)}><b>${a.ad}</b>${a.not ? `<span>${a.not}</span>` : ''}</a>`).join('');
     return `<div class="nav__oge${m.mega ? ' nav__oge--mega' : ''}${ustAkt(m)}" data-acilir>
       <button class="nav__bag" type="button" aria-expanded="false">${m.ad}<span class="nav__ok">${ik.asagi}</span></button>
@@ -140,7 +140,7 @@ function ust(sayfa) {
       <span class="marka__alt">${S.markaAlt} · Muayenehane</span>
     </a>
     <nav class="nav" aria-label="Ana menü">${nav}</nav>
-    <a class="dgm dgm--bir dgm--kucuk ust__cta" href="${r}iletisim/">Randevu talebi</a>
+    <a class="dgm dgm--bir dgm--kucuk ust__cta" href="${r}iletisim/">Randevu isteyin</a>
     <button class="menu-dgm" type="button" data-menu-ac aria-label="Menüyü aç" aria-expanded="false">${ik.menu}</button>
   </div>
 </header>
@@ -153,7 +153,7 @@ function ust(sayfa) {
     </div>
     ${cekmece}
     <div style="margin-top:20px;display:flex;flex-direction:column;gap:10px">
-      <a class="dgm dgm--bir" href="${r}iletisim/">Randevu talebi</a>
+      <a class="dgm dgm--bir" href="${r}iletisim/">Randevu isteyin</a>
       <a class="dgm dgm--iki" href="tel:${S.iletisim.telHam}">${S.iletisim.tel}</a>
     </div>
   </div>

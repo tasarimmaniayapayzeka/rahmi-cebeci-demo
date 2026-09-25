@@ -36,30 +36,30 @@ module.exports = {
 <section class="bolum" id="tekhekim">
   <div class="sar">
     <div class="bolum-bas" data-gr>
-      <p class="g-etiket">Tek hekim ilkesi</p>
+      <p class="g-etiket">Tek hekimle</p>
       <h2>Sizi muayene eden hekim, uygulamayı da yapıyor mu?</h2>
     </div>
     <div class="g-bento">
       <div class="g-kutu g-b4" data-gr>
-        <span class="g-ket">Neden önemli</span>
+        <span class="g-ket">Neden gerekli</span>
         <p>Bir estetik başvurunun yolu birkaç kişiye bölündüğünde, planın hangi gerekçeyle kurulduğu kolayca unutulur. İlk görüşmedeki notlar uygulama anına, uygulamadaki ayrıntılar da kontrol gününe eksik ulaşır.</p>
         <p style="margin-top:10px">Bu muayenehanede zincirin tek halkası vardır. Öykünüzü dinleyen, bölgeyi muayene eden, ürünü ve miktarını belirleyen, işlemi yapan ve kontrolde sonucu değerlendiren aynı hekimdir. İşlem sırasında planı değiştirmek ya da durdurmak gerekirse bu karar da onundur.</p>
         <div class="dgm-sira" style="margin-top:16px">
-          <a class="dgm dgm--iki" href="${r}yaklasimimiz/">Nasıl çalışıyoruz ${ik.ok}</a>
+          <a class="dgm dgm--iki" href="${r}yaklasimimiz/">Randevudan kontrole ${ik.ok}</a>
           <a class="dgm dgm--iki" href="${r}klinik/">Muayenehane ${ik.ok}</a>
         </div>
       </div>
-      <div class="g-kutu g-b2 g-kutu--gece" data-gr style="--d:70ms"><span class="g-ket">İlke</span><p>“Hedef, yüzün kendine ait ifadesini koruyan ölçülü bir sonuçtur.”</p></div>
+      <div class="g-kutu g-b2 g-kutu--gece" data-gr style="--d:70ms"><span class="g-ket">Hekimin notu</span><p>“Hedef, yüzün kendine ait ifadesini koruyan ölçülü bir sonuçtur.”</p></div>
       <div class="g-kutu g-b2" data-gr style="--d:140ms">
-        <span class="g-ket">Uygulama</span>
+        <span class="g-ket">Uygulama anı</span>
         <p><b style="color:var(--murekkep)">İşlemi hekim yapar</b><br>Enjeksiyonlar da lazer ve cihaz seansları da hekim dışında bir çalışana bırakılmaz.</p>
       </div>
       <div class="g-kutu g-b2" data-gr style="--d:210ms">
-        <span class="g-ket">Kayıt</span>
+        <span class="g-ket">Kayıt tutma</span>
         <p><b style="color:var(--murekkep)">Tek dosya</b><br>Öykünüz, muayene notları, kullanılan ürünün lot bilgisi ve uygulanan bölge aynı dosyada toplanır; sonraki kararlar bu kayda dayanır.</p>
       </div>
       <div class="g-kutu g-b2" data-gr style="--d:280ms">
-        <span class="g-ket">Devir yok</span>
+        <span class="g-ket">Başkasına devredilmez</span>
         <p><b style="color:var(--murekkep)">Kime soracağınız belli</b><br>Haftalar sonra bir değişiklik fark ederseniz işlemi yapan hekime ulaşırsınız; her şeyi baştan anlatmanız gerekmez.</p>
       </div>
     </div>
@@ -113,7 +113,7 @@ module.exports = {
 <section class="bolum bolum--buz2">
   <div class="sar">
     <div class="bolum-bas" data-gr>
-      <p class="g-etiket">Çalışma biçimi</p>
+      <p class="g-etiket">Günlük işleyiş</p>
       <h2>Muayene odasında öncelik ne?</h2>
     </div>
     <div class="izgara izgara--3" data-gr style="--d:70ms">
@@ -154,22 +154,22 @@ module.exports = {
 <section class="bolum bolum--sicak">
   <div class="sar">
     <div class="bolum-bas" data-gr>
-      <p class="g-etiket">Devamı</p>
-      <h2>İlgili başlıklar</h2>
+      <p class="g-etiket">Okumaya devam</p>
+      <h2>Buradan devam edin</h2>
     </div>
     <div class="izgara izgara--3" data-gr style="--d:70ms">
       <a class="kart" href="${r}klinik/">
-        <h3>Muayenehane</h3>
+        <h3>Muayenehanemiz</h3>
         <p>${S.iletisim.semt}’deki muayenehane: odalar, cihazlar, hijyen düzeni ve randevu işleyişi.</p>
         <span class="kart__ok">Oku ${ik.ok}</span>
       </a>
       <a class="kart" href="${r}yaklasimimiz/">
-        <h3>Nasıl çalışıyoruz</h3>
+        <h3>Randevudan kontrole</h3>
         <p>Muayeneden takibe dört adım ve her adımın arkasındaki gerekçe.</p>
         <span class="kart__ok">Oku ${ik.ok}</span>
       </a>
       <a class="kart" href="${r}yaklasimimiz/neden-bazi-islemleri-yapmiyoruz/">
-        <h3>Neden bazı işlemleri yapmıyoruz</h3>
+        <h3>Bazı işlemleri neden üstlenmiyoruz</h3>
         <p>Cerrahi, saç ekimi ve lazer epilasyon gibi burada yapılmayan işlemler ve nedenleri.</p>
         <span class="kart__ok">Oku ${ik.ok}</span>
       </a>

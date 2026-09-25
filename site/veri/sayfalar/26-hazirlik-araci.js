@@ -4,7 +4,7 @@ module.exports = {
   slug: 'hazirlik-listesi/arac',
   tip: 'tibbi',
   js: 'hazirlik.js',
-  baslik: 'Görüşme Öncesi Hazırlık Listesi — 12 Maddelik Kontrol',
+  baslik: 'Görüşmeye Hazırlık Notları — 12 Maddelik Kontrol',
   aciklama: 'Muayenede hekiminize söylemeniz gereken 12 başlığı sırayla hatırlatan liste. Cevaplar yalnız cihazınızda işlenir; bize gönderilmez, hiçbir yerde saklanmaz.',
 
   icerik: (r, ik) => `
@@ -24,7 +24,7 @@ module.exports = {
     <div class="arac" data-hazirlik>
 
       <p class="etiket">Muayene öncesi araç</p>
-      <h1>Görüşme Öncesi Hazırlık Listesi</h1>
+      <h1>Görüşmeye Hazırlık Notları</h1>
 
       <div class="arac__kapi" data-kapi>
         <p>Buradaki 12 madde, muayenede hekiminize anlatmanız gereken bilgileri önceden hatırlamanız için hazırlandı. <strong>Verdiğiniz cevaplar yalnızca bu cihazda işlenir; bize iletilmez ve hiçbir yerde saklanmaz.</strong> Cevabını bilmediğiniz maddelerde “Bilmiyorum” seçeneğini işaretlemekten çekinmeyin; hekiminiz o konuyu muayenede sizinle birlikte netleştirir.</p>

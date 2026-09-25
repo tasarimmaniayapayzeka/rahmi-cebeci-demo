@@ -17,7 +17,7 @@ module.exports = {
       <h1>Eller yaşı <span class="g-isik">yüzden önce</span> ele verebilir.</h1>
       <p class="g-hero__alt">Yüzünüze gösterdiğiniz özeni çoğu zaman ellerinize gösteremezsiniz; güneş koruyucu nadiren sürülür, eller gün boyu suya ve deterjana değer. Zamanla deri altındaki yağ yastığı incelir, damarlar ve tendonlar belirginleşir, kahverengi lekeler çoğalır. Planda dolgunluk kaybı ile lekeler iki ayrı konu olarak ele alınır ve farklı seanslara bölünür.</p>
       <div class="g-hero__cta">
-        <a class="dgm dgm--bir" href="${r}iletisim/">Randevu talebi</a>
+        <a class="dgm dgm--bir" href="${r}iletisim/">Randevu isteyin</a>
         <a class="dgm dgm--iki" href="#neden">Ellerde ne değişir? ↓</a>
       </div>
       <div class="g-tikler"><span><i></i>Uygulamayı hekim yapar</span><span><i></i>Hacim ve leke ayrı günlerde</span><span><i></i>Kontrol randevusu planın içinde</span></div>
@@ -41,7 +41,7 @@ module.exports = {
 <!-- 3 ── NEDEN ERKEN -->
 <section class="bolum" id="neden">
   <div class="sar">
-    <div class="bolum-bas" data-gr><p class="g-etiket">Bölge farkı</p><h2>Ellerde değişim neden yüzden önce göze çarpar?</h2></div>
+    <div class="bolum-bas" data-gr><p class="g-etiket">Bölgeden bölgeye</p><h2>Ellerde değişim neden yüzden önce göze çarpar?</h2></div>
     <div class="izgara izgara--2">
       <div class="kutu kutu--bilgi" data-gr>
         <b>İnce deri, az dolgu</b>
@@ -58,7 +58,7 @@ module.exports = {
 <!-- 4 ── ATLAS -->
 <section class="bolum bolum--buz2">
   <div class="sar">
-    <div class="bolum-bas" data-gr><p class="g-etiket">Bölge atlası</p><h2>Ellerde hangi sorunlar bir arada görülür?</h2><p class="giris">El sırtıyla ilgili yakınmaların neredeyse hepsi iki başlığa ayrılır: dolgunluk kaybı ve renk. Bunlar farklı süreçlerle oluşur, farklı yöntemlerle ele alınır; aynı gün birlikte planlamak çoğunlukla doğru olmaz.</p></div>
+    <div class="bolum-bas" data-gr><p class="g-etiket">Katman katman bölge</p><h2>Ellerde hangi sorunlar bir arada görülür?</h2><p class="giris">El sırtıyla ilgili yakınmaların neredeyse hepsi iki başlığa ayrılır: dolgunluk kaybı ve renk. Bunlar farklı süreçlerle oluşur, farklı yöntemlerle ele alınır; aynı gün birlikte planlamak çoğunlukla doğru olmaz.</p></div>
     <div class="g-atlas-duzen">
       <div class="g-atlas" data-gr>
         <div class="g-atlas-kap">
@@ -69,19 +69,19 @@ module.exports = {
       </div>
       <div data-gr style="--d:80ms">
         <div class="g-katblok" data-gkat="a">
-          <span class="g-kno">01</span>
+          <span class="g-kno">Kesit 01</span>
           <h3>Belirginleşen damar ve tendonlar</h3>
           <p>Deri altındaki yağ azaldıkça el tarağı kemiklerinin arasında çukurlar oluşur; tendonlar gergin teller, damarlar ise kabarık şeritler gibi öne çıkar. Değişen şey elin kendisi değil, onu örten yastığın kalınlığıdır. Bu yüzden burada düşünülen yol dolgunluk desteğidir; lekelere yönelik bir işlem bu tabloyu değiştirmez.</p>
           <div class="g-haplar"><a href="${r}uygulamalar/dolgu-uygulamalari/">Dolgu uygulamaları</a><a href="${r}uygulamalar/biyostimulan-uygulamalar/">Biyostimülan uygulamalar</a></div>
         </div>
         <div class="g-katblok" data-gkat="b">
-          <span class="g-kno">02</span>
+          <span class="g-kno">Kesit 02</span>
           <h3>Güneşin bıraktığı lekeler</h3>
           <p>Kenarları belirgin, açık ya da koyu kahverengi, düz lekelerdir ve çoğunlukla yılların güneşiyle ortaya çıkar. Kenarı düzensizleşen, hızla büyüyen ya da renginin koyulaştığını fark ettiğiniz bir leke ise işlemden önce ayırıcı tanı için değerlendirilmelidir.</p>
           <div class="g-haplar"><a href="${r}uygulamalar/pico-lazer-leke/">Pico lazer ile leke</a><a href="${r}cilt-sorunlari/cilt-tonu-ve-leke/">Cilt tonu ve leke</a></div>
         </div>
         <div class="g-katblok" data-gkat="c">
-          <span class="g-kno">03</span>
+          <span class="g-kno">Kesit 03</span>
           <h3>Kuruluk, incelen deri ve kolay morarma</h3>
           <p>Sık sık yıkanan, deterjana ve soğuğa maruz kalan ellerde derinin koruyucu tabakası zayıflar; yüzey pürüzlenir, ince çatlaklar belirir. Herhangi bir işlemden önce bu zeminin toparlanması gerekir.</p>
           <p>Deri ince ve damarlar yüzeye yakın olduğu için hafif bir çarpma bile morluk bırakabilir. Kan sulandırıcı ilaç kullanıyorsanız bu eğilim artar ve plan buna göre değişir.</p>
@@ -96,7 +96,7 @@ module.exports = {
 <!-- 5 ── MATRİS -->
 <section class="bolum">
   <div class="sar">
-    <div class="bolum-bas" data-gr><p class="g-etiket">Uygulamalar</p><h2>Eller için hangi seçenekler konuşulabilir?</h2><p class="giris">Muayenede gördüğümüz tabloya göre tek bir seçenek yeterli olabilir ya da birkaç seçenek haftalara bölünerek sıralanabilir. Hedefimiz dolgun görünen bir el değil, incelmiş örtüye ölçülü bir destek vermektir.</p></div>
+    <div class="bolum-bas" data-gr><p class="g-etiket">Uygulama dizini</p><h2>Eller için hangi seçenekler konuşulabilir?</h2><p class="giris">Muayenede gördüğümüz tabloya göre tek bir seçenek yeterli olabilir ya da birkaç seçenek haftalara bölünerek sıralanabilir. Hedefimiz dolgun görünen bir el değil, incelmiş örtüye ölçülü bir destek vermektir.</p></div>
     <div class="g-matris">
       <div class="g-mtab" data-gr>
         <div class="g-mbas"><span>Yöntem</span><span>Amaç</span><span>Toparlanma</span><span></span></div>
@@ -116,7 +116,7 @@ module.exports = {
 <!-- 6 ── PLAN + SINIRLAR -->
 <section class="bolum bolum--sicak">
   <div class="sar">
-    <div class="bolum-bas" data-gr><p class="g-etiket">Süreç</p><h2>Eller için plan hangi adımlarla ilerler?</h2><p class="giris">İlk görüşmede işlem yapılacağını varsaymayın. Ellerde en sık karşılaşılan hata yanlış yöntemi seçmek değil, adımları yanlış sırayla atmaktır.</p></div>
+    <div class="bolum-bas" data-gr><p class="g-etiket">Akış</p><h2>Eller için plan hangi adımlarla ilerler?</h2><p class="giris">İlk görüşmede işlem yapılacağını varsaymayın. Ellerde en sık karşılaşılan hata yanlış yöntemi seçmek değil, adımları yanlış sırayla atmaktır.</p></div>
     <div class="g-bento">
       <div class="g-kutu g-b3" data-gr><span class="g-ket">ADIMLAR</span>
         <ol class="g-protokol">
@@ -126,7 +126,7 @@ module.exports = {
           <li><b>İşlem ve kontrol:</b> hacim desteği ile leke işlemi aynı güne konmaz; iki–dört hafta sonra ellerinize yeniden bakarız. Ayrıntıları <a href="${r}uygulamalar/uygulama-sonrasi-takip/">uygulama sonrası takip</a> sayfasında bulabilirsiniz.</li>
         </ol>
       </div>
-      <div class="g-kutu g-b3 g-kutu--gece" data-gr style="--d:80ms"><span class="g-ket">İLKE</span><p>&#8220;Ellerinizin bir işleme ihtiyacı olmadığını düşünüyorsak bunu açıkça söyler, gereksiz bir plan önermeyiz.&#8221;</p></div>
+      <div class="g-kutu g-b3 g-kutu--gece" data-gr style="--d:80ms"><span class="g-ket">Hekimin notu</span><p>&#8220;Ellerinizin bir işleme ihtiyacı olmadığını düşünüyorsak bunu açıkça söyler, gereksiz bir plan önermeyiz.&#8221;</p></div>
       <div class="kutu kutu--uyari g-b4" data-gr style="--d:140ms">
         <b>Kimlere yapılmaz ya da ertelenir?</b>
         <ul>
@@ -140,7 +140,7 @@ module.exports = {
           <li><b>Bilinen aşırı duyarlılıklar:</b> lokal anestezik, antiseptik ya da daha önce kullanılan bir ürüne verdiğiniz tepkiyi muayenede anlatın.</li>
         </ul>
       </div>
-      <div class="g-kutu g-b2" data-gr style="--d:210ms"><span class="g-ket">KAPSAM</span>
+      <div class="g-kutu g-b2" data-gr style="--d:210ms"><span class="g-ket">Neyi kapsar</span>
         <p>Muayenehanede yalnızca hekimimizin uzmanlığı ve Sağlık Bakanlığı onaylı sertifikasının kapsadığı işlemler yapılır; bu çerçevenin dışındaki isteklerde sizi ilgili uzmanlık dalına yönlendiririz. Gerekçesini <a href="${r}yaklasimimiz/neden-bazi-islemleri-yapmiyoruz/">neden bazı işlemleri yapmıyoruz</a> sayfasında açıkladık.</p>
       </div>
     </div>
@@ -150,7 +150,7 @@ module.exports = {
 <!-- 7 ── SONRASI + BEKLENTİ -->
 <section class="bolum">
   <div class="sar">
-    <div class="bolum-bas" data-gr><p class="g-etiket">Sonrası</p><h2>İşlemden sonraki günlerde ellerinize nasıl bakmalısınız?</h2></div>
+    <div class="bolum-bas" data-gr><p class="g-etiket">Uygulamadan sonra</p><h2>İşlemden sonraki günlerde ellerinize nasıl bakmalısınız?</h2></div>
     <div class="izgara izgara--2">
       <div class="kart kart--duz" data-gr>
         <h3>İlk günler</h3>

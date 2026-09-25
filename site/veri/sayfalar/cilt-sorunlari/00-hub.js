@@ -55,7 +55,7 @@ module.exports = {
 <section class="bolum bolum--buz2" id="basliklar">
   <div class="sar">
     <div class="bolum-bas" data-gr>
-      <p class="g-etiket">Başlıklar</p>
+      <p class="g-etiket">İçindekiler</p>
       <h2>Hangi şikâyet sizi buraya getirdi?</h2>
       <p class="giris">Size en yakın başlığı seçin; birden fazlası tanıdık geliyorsa hepsini okuyabilirsiniz, çünkü şikâyetler sıklıkla bir arada bulunur. Bu sayfalar tanı koymaz; amaçları, muayeneye hangi soruları konuşacağınızı bilerek gelmenizi sağlamaktır.</p>
     </div>
@@ -75,27 +75,27 @@ ${S.sorunlar.map(([ad, s]) => `
 <section class="bolum bolum--sicak">
   <div class="sar">
     <div class="bolum-bas" data-gr>
-      <p class="g-etiket">Süreç</p>
+      <p class="g-etiket">Akış</p>
       <h2>Neden önce ayırıp sonra uyguluyoruz?</h2>
       <p class="giris">Deri şikâyetlerinin çoğu dışarıdan birbirine benzer. Kızarıklık bir tahrişin de, damarsal bir durumun da işareti olabilir; koyu renk hem pigment artışından hem de ince deriden görünen damarlardan kaynaklanabilir. Görünene bakıp doğrudan işleme geçildiğinde değişim beklendiği gibi olmayabilir, şikâyet kısa sürede geri dönebilir ya da cilt daha çok tahriş olabilir. Bu yüzden sıralama hiç değişmez ve ilk görüşmede işlem yapılması beklenmez.</p>
     </div>
     <div class="g-katblok" data-gr>
-      <span class="g-kno">01</span>
+      <span class="g-kno">Kesit 01</span>
       <h3>Öykü: şikâyetin zaman çizelgesi</h3>
       <p>Şikâyet ne zaman başladı, nasıl seyretti, mevsimle ya da işinizle değişiyor mu, hangi ürün ve ilaçları kullanıyorsunuz, başka yakınmalarınız var mı? Bu soruların yanıtları kayda geçer; ayrımı en çok belirleyen adım öyküdür.</p>
     </div>
     <div class="g-katblok" data-gr style="--d:60ms">
-      <span class="g-kno">02</span>
+      <span class="g-kno">Kesit 02</span>
       <h3>Muayene ve gerektiğinde büyütmeli bakı</h3>
       <p>Bulguların nerede, nasıl dağıldığı, kenarları ve yüzey özellikleri incelenir. Uygun durumlarda deri ya da saçlı deri büyütmeli olarak değerlendirilir.</p>
     </div>
     <div class="g-katblok" data-gr style="--d:120ms">
-      <span class="g-kno">03</span>
+      <span class="g-kno">Kesit 03</span>
       <h3>Yalnızca planı değiştirecek tetkikler</h3>
       <p>Bir tetkik yalnızca sonucu planı etkileyecekse istenir. Standart bir tahlil paketi yoktur; hangi değere bakılacağı öykünüze ve muayene bulgularınıza göre seçilir.</p>
     </div>
     <div class="g-katblok" data-gr style="--d:180ms">
-      <span class="g-kno">04</span>
+      <span class="g-kno">Kesit 04</span>
       <h3>Ayrım, plan ve bilgilendirme</h3>
       <p>Öne çıkan neden size açıklanır; hangi seçeneklerin masada olduğu, hangi sonucun gerçekçi olmadığı ve hangi koşullarda işlem yapmayacağımız konuşulur. Karar vermeden önce düşünmeniz için zaman tanınır.</p>
     </div>
@@ -115,7 +115,7 @@ ${S.sorunlar.map(([ad, s]) => `
 <section class="bolum">
   <div class="sar">
     <div class="bolum-bas" data-gr>
-      <p class="g-etiket">Sonrası</p>
+      <p class="g-etiket">Uygulamadan sonra</p>
       <h2>Ayrım yapıldıktan sonra hangi sayfalar yol gösterir?</h2>
       <p class="giris">Ayrım tamamlandığında konuşulabilecek uygulamaların hepsi uygulamalar bölümünde yer alır; aşağıdakiler en sık başvurulan kapılardır.</p>
     </div>
@@ -124,7 +124,7 @@ ${S.sorunlar.map(([ad, s]) => `
         <div class="g-mbas"><span>Sayfa</span><span>Kapsam</span><span>Toparlanma</span><span></span></div>
         <a class="g-msatir" data-akt href="${r}uygulamalar/" data-gg="${r}varliklar/gorsel/grup-cihaz.webp" data-gb="Uygulamalar" data-ga="Muayenehanemizde yapılan enjeksiyon, cihaz ve saçlı deri uygulamalarının tamamı ve kapsamları."><h4>Uygulamalar</h4><span class="g-hucre"><i class="g-kcip g-kcip--1">TÜMÜ</i></span><span class="g-hucre">Uygulamaya göre</span><span class="g-git">→</span></a>
         <a class="g-msatir" href="${r}uygulamalar/hekim-muayenesi/" data-gg="${r}varliklar/gorsel/uyg-hekim-muayenesi.webp" data-gb="Hekim muayenesi" data-ga="Deri ve saç şikâyetlerine eşlik edebilecek genel sağlık nedenlerinin gözden geçirildiği ilk adım."><h4>Hekim muayenesi</h4><span class="g-hucre"><i class="g-kcip g-kcip--3">İLK ADIM</i></span><span class="g-hucre">Aynı gün</span><span class="g-git">→</span></a>
-        <a class="g-msatir" href="${r}uygulamalar/uygulama-sonrasi-takip/" data-gg="${r}varliklar/gorsel/uyg-uygulama-sonrasi-takip.webp" data-gb="Uygulama sonrası takip" data-ga="Uygulamadan sonra iyileşmenin izlendiği kontrol randevuları ve bu dönemde dikkat edilmesi gerekenler."><h4>Uygulama sonrası takip</h4><span class="g-hucre"><i class="g-kcip g-kcip--2">İZLEM</i></span><span class="g-hucre">Randevuya göre</span><span class="g-git">→</span></a>
+        <a class="g-msatir" href="${r}uygulamalar/uygulama-sonrasi-takip/" data-gg="${r}varliklar/gorsel/uyg-uygulama-sonrasi-takip.webp" data-gb="Uygulama sonrası kontrol" data-ga="Uygulamadan sonra iyileşmenin izlendiği kontrol randevuları ve bu dönemde dikkat edilmesi gerekenler."><h4>Uygulama sonrası kontrol</h4><span class="g-hucre"><i class="g-kcip g-kcip--2">İZLEM</i></span><span class="g-hucre">Randevuya göre</span><span class="g-git">→</span></a>
       </div>
       <div class="g-onizle" data-gonizle data-gr><div class="g-gor"><img src="${r}varliklar/gorsel/grup-cihaz.webp" alt=""></div><div class="g-ic"><h4>Uygulamalar</h4><p>Muayenehanemizde yapılan enjeksiyon, cihaz ve saçlı deri uygulamalarının tamamı ve kapsamları.</p><a class="dgm dgm--iki" href="${r}uygulamalar/">Sayfasına git →</a></div></div>
     </div>

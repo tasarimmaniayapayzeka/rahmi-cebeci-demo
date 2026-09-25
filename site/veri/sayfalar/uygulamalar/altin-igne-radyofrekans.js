@@ -16,7 +16,7 @@ module.exports = {
       <h1>Altın iğne radyofrekans: ısıyı <span class="g-isik">derinin içinde</span> üreten mikroiğne.</h1>
       <p class="g-hero__alt">Radyofrekans enerjisi burada deri yüzeyine değil, deriye giren çok ince iğnelerin uçlarına taşınır. Isı, iğne ucunun durduğu yerde oluşur; üst katman büyük ölçüde sağlam kalırken derinde bir onarım süreci tetiklenir. En çok akne izi, belirgin gözenek ve pürüzlü doku için gündeme gelir.</p>
       <div class="g-hero__cta">
-        <a class="dgm dgm--bir" href="${r}iletisim/">Randevu talebi</a>
+        <a class="dgm dgm--bir" href="${r}iletisim/">Randevu isteyin</a>
         <a class="dgm dgm--iki" href="#ilkbolum">Yöntemin işleyişi ↓</a>
       </div>
       <div class="g-tikler"><span><i></i>Steril, tek kullanımlık uç</span><span><i></i>Yüzey büyük ölçüde korunur</span><span><i></i>4. haftada kontrol</span></div>
@@ -40,7 +40,7 @@ module.exports = {
 <!-- BU NEDİR / BU NE DEĞİLDİR -->
 <section class="bolum" id="ilkbolum">
   <div class="sar">
-    <div class="bolum-bas" data-gr><p class="g-etiket">Tanım ve sınırlar</p><h2>Radyofrekans mikroiğne deriye ne yapar, neyi yapamaz?</h2><p class="giris">İki kişinin akne izi aynaya aynı yansısa bile izin biçimi, derinliği ve altındaki bağ dokusu çekintileri farklı olabilir. Bu yüzden önce izin türü adlandırılır, yöntem ondan sonra seçilir. Konuya genel bakış için önce <a href="${r}cilt-sorunlari/akne-ve-akne-izi/">akne ve akne izi</a> ya da <a href="${r}cilt-sorunlari/gozenek-ve-cilt-dokusu/">gözenek ve cilt dokusu</a> sayfasını okumanız yararlı olur.</p></div>
+    <div class="bolum-bas" data-gr><p class="g-etiket">Ne yapar, ne yapmaz</p><h2>Radyofrekans mikroiğne deriye ne yapar, neyi yapamaz?</h2><p class="giris">İki kişinin akne izi aynaya aynı yansısa bile izin biçimi, derinliği ve altındaki bağ dokusu çekintileri farklı olabilir. Bu yüzden önce izin türü adlandırılır, yöntem ondan sonra seçilir. Konuya genel bakış için önce <a href="${r}cilt-sorunlari/akne-ve-akne-izi/">akne ve akne izi</a> ya da <a href="${r}cilt-sorunlari/gozenek-ve-cilt-dokusu/">gözenek ve cilt dokusu</a> sayfasını okumanız yararlı olur.</p></div>
     <div class="izgara izgara--2">
       <div class="kutu kutu--bilgi" data-gr>
         <b>Bu nedir</b>
@@ -61,7 +61,7 @@ module.exports = {
 <!-- BENTO -->
 <section class="bolum bolum--sicak">
   <div class="sar">
-    <div class="bolum-bas" data-gr><p class="g-etiket">Planlama</p><h2>Ayar neye göre seçilir, uygulamaya ne engel olur?</h2><p class="giris">Alında deri ince, yanakta ve çene hattında daha kalındır; ayar bu farka göre bölge bölge değiştirilir. Daha derine inmek daha güçlü bir uyarı demektir, ama iyileşme de o ölçüde uzar.</p></div>
+    <div class="bolum-bas" data-gr><p class="g-etiket">Plan nasıl kurulur</p><h2>Ayar neye göre seçilir, uygulamaya ne engel olur?</h2><p class="giris">Alında deri ince, yanakta ve çene hattında daha kalındır; ayar bu farka göre bölge bölge değiştirilir. Daha derine inmek daha güçlü bir uyarı demektir, ama iyileşme de o ölçüde uzar.</p></div>
     <div class="g-bento">
       <div class="g-kutu g-b2 g-donutkap" data-gr>
         <div class="g-donut"><svg viewBox="0 0 100 100" width="100" height="100"><circle class="g-iz" cx="50" cy="50" r="45"/><circle class="g-dol" data-gyuzde="66" cx="50" cy="50" r="45"/><circle class="g-kom" cx="50" cy="50" r="45"/></svg><b>3–6</b></div>
@@ -74,7 +74,7 @@ module.exports = {
         <div class="g-cubuk"><small><span>ÇUKUR İZLİ ALAN</span><span>Derin</span></small><div class="g-ciz"><b class="g-cubuk-bakir" data-gw="92%"></b></div></div>
         <p style="font-size:.68rem;color:var(--sessiz);margin-top:8px">Çubuk boyları yalnız karşılaştırma içindir; size özel plan muayenede kurulur.</p>
       </div>
-      <div class="g-kutu g-b2" data-gr style="--d:140ms"><span class="g-ket">Protokol</span>
+      <div class="g-kutu g-b2" data-gr style="--d:140ms"><span class="g-ket">Adım adım</span>
         <ol class="g-protokol">
           <li>İzlerin tek tek haritalanması, gerçekçi beklentinin konuşulması</li>
           <li>Cilt hassas ya da lekeliyse birkaç haftalık ön bakım</li>
@@ -90,12 +90,12 @@ module.exports = {
 <p>Kabarık iz ya da keloid yapma eğilimi, vitiligo gibi renk kaybıyla giden tablolar, gebelik ve emzirme, şekeri düzensiz seyreden diyabet, bağışıklığı baskılayan ilaçlar, kanama eğilimi ve kan sulandırıcı kullanımı planı değiştirir. Altın, nikel gibi metallere, uyuşturucu kremlere ya da ilaçlara karşı bilinen duyarlılığınızı işlemden önce bildirin.</p>
       </div>
       <div class="g-kutu g-b2 g-kutu--gorsel" data-gr style="--d:70ms"><img src="${r}varliklar/gorsel/uyg-altin-igne-radyofrekans-2.webp" alt="Altın kaplama ince iğneli radyofrekans başlığının yakın görünümü" loading="lazy"><span class="g-ainot">Temsilî görsel · yapay zekâ ile üretildi</span></div>
-      <div class="g-kutu g-b2 g-kutu--gece" data-gr><span class="g-ket">İlke</span><p>"İzin adını koymadan yöntem seçmiyoruz."</p></div>
+      <div class="g-kutu g-b2 g-kutu--gece" data-gr><span class="g-ket">Hekimin notu</span><p>"İzin adını koymadan yöntem seçmiyoruz."</p></div>
       <div class="g-kutu g-b2" data-gr style="--d:70ms">
         <span class="g-ket">Seans sonrası</span>
         <p style="font-size:.92rem">İlk iki gün cilde yalnızca yumuşak bir temizleyici, nemlendirici ve güneş koruyucu sürülür; asit ve retinoid içeren ürünlere birkaç gün ara verilir, makyaj çoğunlukla ikinci günden sonra yapılabilir. Yüzdeki pembelik genellikle üçüncü güne kadar solar; ilk gece hafif şişlik olabilir ve iğne noktalarında ince kabuklar görülebilir. Değişim çoğu kişide ikinci seanstan sonra fark edilmeye başlar ve dizi bittikten sonra üç aya kadar sürebilir. Sonuçlar kişiden kişiye değişir.</p>
       </div>
-      <div class="g-kutu g-b2 g-kutu--cta" data-gr style="--d:140ms"><h3>İzlerinize birlikte bakalım</h3><p>Yöntem, izlerin biçimi ve derinliği görüldükten sonra seçilir.</p><a class="dgm dgm--altin" href="${r}iletisim/">Randevu talebi</a></div>
+      <div class="g-kutu g-b2 g-kutu--cta" data-gr style="--d:140ms"><h3>İzlerinize birlikte bakalım</h3><p>Yöntem, izlerin biçimi ve derinliği görüldükten sonra seçilir.</p><a class="dgm dgm--altin" href="${r}iletisim/">Randevu isteyin</a></div>
       <div class="kutu kutu--acil g-b6" data-gr>
         <b>Beklemeden bize ulaşmanız gereken durumlar</b>
         <p>Birkaç gün içinde yatışması beklenen bulgular tersine artıyorsa, yani kızarıklık yayılıyor, ağrı şiddetleniyor, akıntı, ateş, kabarcık ya da uzayan şişlik görülüyorsa kendiliğinden geçmesini beklemeyin. ${S.iletisim.tel} numarasından bize ulaşın; telefonla ulaşamıyorsanız en yakın acil servise gidin. Kontrol ve izlem düzenini <a href="${r}uygulamalar/uygulama-sonrasi-takip/">uygulama sonrası takip</a> sayfasında bulabilirsiniz.</p>

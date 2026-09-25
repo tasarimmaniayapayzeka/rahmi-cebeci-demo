@@ -34,35 +34,35 @@ module.exports = {
 <section class="bolum bolum--sicak" id="nedenler">
   <div class="sar">
     <div class="bolum-bas" data-gr>
-      <p class="g-etiket">Ayrım</p>
+      <p class="g-etiket">Farkı nerede</p>
       <h2>Göz altında koyu görünüm hangi yollarla oluşur?</h2>
       <p class="giris">Göz çevresindeki deri, vücudun en ince derisidir; altındaki damarı, kası ve hacim değişimini kolayca dışarı yansıtır. Muayenede beş ana kaynak ayrı ayrı sorgulanır. Çoğu zaman karma bir tablo görülür ve hangisinin ağır bastığı planı baştan sona belirler.</p>
     </div>
     <div class="g-katblok" data-gr>
-      <span class="g-kno">01</span>
+      <span class="g-kno">Kesit 01</span>
       <h3>Pigment artışı</h3>
       <p>Derideki melanin miktarının artmasıyla oluşur. Ailede benzer görünüm, güneş, gözleri sık ovuşturma ya da geçirilmiş bir tahriş bu tabloya zemin hazırlayabilir. Rengi kahverengiye yakındır; gün içinde pek değişmez ve ışığın açısı değiştiğinde de aynı kalır.</p>
       <div class="g-haplar"><a href="${r}uygulamalar/mezoterapi/">Mezoterapi</a></div>
     </div>
     <div class="g-katblok" data-gr style="--d:60ms">
-      <span class="g-kno">02</span>
+      <span class="g-kno">Kesit 02</span>
       <h3>Damarların seçilmesi</h3>
       <p>İnce derinin altındaki toplardamar ağı ve kas, dışarıdan mavi-mor bir renk olarak görünebilir. Uykusuzluk, yorgunluk, vücuttaki sıvı dengesinin değişmesi ve kronik burun tıkanıklığı bu görünümü artırır. Deriyi hafifçe gerdiğinizde renk açılıyorsa damarsal bileşen düşünülür; eşlik eden bir sağlık sorunu varsa önce o ele alınır.</p>
     </div>
     <div class="g-katblok" data-gr style="--d:120ms">
-      <span class="g-kno">03</span>
+      <span class="g-kno">Kesit 03</span>
       <h3>Derinin incelmesi</h3>
       <p>Yıllar içinde deri içindeki destek dokusu azaldıkça deri daha saydam hâle gelir. Burada koyuluk aslında bir renk artışı değil, alttaki yapıların daha çok görünmesidir. Bu durumda derinin niteliğini düşük yoğunlukla ve aşamalı olarak desteklemek hedeflenir; değişim sınırlıdır ve zaman alır.</p>
       <div class="g-haplar"><a href="${r}uygulamalar/somon-dna-polinukleotid/">Somon DNA ve polinükleotid</a></div>
     </div>
     <div class="g-katblok" data-gr style="--d:180ms">
-      <span class="g-kno">04</span>
+      <span class="g-kno">Kesit 04</span>
       <h3>Gözyaşı oluğunda hacim kaybı</h3>
       <p>Göz altı ile yanak arasındaki geçiş derinleştiğinde, yukarıdan gelen ışık burada gölge bırakır. Derinin rengi değişmemiş olsa da bölge koyu görünür. Başınızı eğdiğinizde ya da ışığın yönü değiştiğinde koyuluğun artıp azalması bu tablonun tipik işaretidir. Deri yüzeyine yönelik uygulamaların burada belirgin katkısı olmaz.</p>
       <div class="g-haplar"><a href="${r}uygulamalar/dolgu-uygulamalari/#goz-alti">Göz altı dolgusu</a></div>
     </div>
     <div class="g-katblok" data-gr style="--d:240ms">
-      <span class="g-kno">05</span>
+      <span class="g-kno">Kesit 05</span>
       <h3>Sıvı birikimi (ödem)</h3>
       <p>Sabah uyandığınızda belirgin olup öğlene doğru azalan şişlik sıvı birikimini düşündürür. Tuzlu beslenme, uyku süresi ve pozisyonu, tiroit ya da böbrekle ilgili durumlar ve bazı ilaçlar katkıda bulunabilir. Burada ilk iş nedeni bulmaktır; neden araştırılmadan yapılan bir uygulama yanıltıcı bir sonuç verebilir.</p>
       <div class="g-haplar"><a href="${r}uygulamalar/hekim-muayenesi/">Hekim muayenesi</a></div>
@@ -79,7 +79,7 @@ module.exports = {
 <section class="bolum bolum--buz2">
   <div class="sar">
     <div class="bolum-bas" data-gr>
-      <p class="g-etiket">Sonrası</p>
+      <p class="g-etiket">Uygulamadan sonra</p>
       <h2>Kaynak belirlendikten sonra hangi seçenekler gündeme gelir?</h2>
       <p class="giris">Buradaki başlıklar genel bilgi amaçlıdır. Size özel plan muayeneden sonra hekim tarafından kurulur ve sonuçlar kişiden kişiye değişir.</p>
     </div>

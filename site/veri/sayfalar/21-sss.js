@@ -3,7 +3,7 @@ const S = require('../site');
 module.exports = {
   slug: 'sikca-sorulan-sorular',
   tip: 'tibbi',
-  baslik: 'Sıkça Sorulan Sorular — Randevu, Dövme Silme ve Süreç',
+  baslik: 'Soru ve Yanıtlar — Randevu, Dövme Silme ve Süreç',
   aciklama: 'Bakırköy’deki muayenehaneye ulaşım, randevu, görüşme öncesi hazırlık, pico lazerle dövme silme, uygulama sonrası ve kapsam hakkında sık sorulan sorular.',
 
   icerik: (r, ik) => `
@@ -12,9 +12,9 @@ module.exports = {
 <section class="g-hero">
   <div class="sar">
     <div>
-      <nav class="kirinti" aria-label="Konum" style="position:relative;font-size:.76rem;color:var(--sessiz);display:flex;gap:7px;margin-bottom:18px"><a href="${r}" style="color:var(--sessiz);text-decoration:none">Ana sayfa</a> › <span>Sık sorulanlar</span></nav>
+      <nav class="kirinti" aria-label="Konum" style="position:relative;font-size:.76rem;color:var(--sessiz);display:flex;gap:7px;margin-bottom:18px"><a href="${r}" style="color:var(--sessiz);text-decoration:none">Ana sayfa</a> › <span>Akla takılanlar</span></nav>
       <p class="g-etiket">Merak edilenler · Yirmi bir yanıt</p>
-      <h1>Sıkça sorulan <span class="g-isik">sorular</span></h1>
+      <h1>Soru ve <span class="g-isik">yanıtlar</span></h1>
       <p class="g-hero__alt">Bu sayfada, telefonda ve muayenede en sık duyduğumuz soruların yanıtları iki bölüm hâlinde yer alıyor. İlkinde randevu, ulaşım ve görüşme öncesi hazırlık; ikincisinde dövme silme dâhil uygulamaların seyri, sonrası, kapsam ve mevzuat yer alıyor. Yanıtlar genel bilgi verir; size özel plan muayeneden sonra kurulur.</p>
       <div class="g-hero__cta">
         <a class="dgm dgm--bir" href="${r}iletisim/">Randevu talebi oluşturun</a>
@@ -33,7 +33,7 @@ module.exports = {
 
 <!-- ═════════ TERMİNAL 1 · RANDEVU + HAZIRLIK ═════════ -->
 <section class="bolum bolum--buz2" id="randevu-sorulari"><div class="sar">
-  <div class="bolum-bas" data-gr><p class="g-etiket">Randevu ve hazırlık</p><h2>Randevudan ilk görüşmeye kadar neler merak ediliyor?</h2><p class="giris">Randevu, ulaşım ve görüşme öncesi hazırlıkla ilgili sorular. Bir soruya dokunduğunuzda yanıtı yan tarafta açılır.</p></div>
+  <div class="bolum-bas" data-gr><p class="g-etiket">Randevu öncesi</p><h2>Randevudan ilk görüşmeye kadar neler merak ediliyor?</h2><p class="giris">Randevu, ulaşım ve görüşme öncesi hazırlıkla ilgili sorular. Bir soruya dokunduğunuzda yanıtı yan tarafta açılır.</p></div>
   <div class="g-sorgu" data-gr>
     <div class="g-sorgu-bas"><i></i><i></i><i></i><span>${S.marka} · randevu ve hazırlık · soru-cevap</span></div>
     <div class="g-sorgu-ic">
@@ -56,7 +56,7 @@ module.exports = {
 
 <!-- ═════════ TERMİNAL 2 · UYGULAMALAR + SONRASI + KAPSAM ═════════ -->
 <section class="bolum bolum--sicak"><div class="sar">
-  <div class="bolum-bas" data-gr><p class="g-etiket">Uygulamalar, sonrası ve kapsam</p><h2>İşlem günü ve sonrasında neler merak ediliyor?</h2><p class="giris">Dövme silme dâhil uygulamaların seyri, sonrasında dikkat edilecekler, kapsam ve mevzuatla ilgili en sık gelen sorular.</p></div>
+  <div class="bolum-bas" data-gr><p class="g-etiket">Uygulama, sonrası, sınırlar</p><h2>İşlem günü ve sonrasında neler merak ediliyor?</h2><p class="giris">Dövme silme dâhil uygulamaların seyri, sonrasında dikkat edilecekler, kapsam ve mevzuatla ilgili en sık gelen sorular.</p></div>
   <div class="g-sorgu" data-gr>
     <div class="g-sorgu-bas"><i></i><i></i><i></i><span>${S.marka} · uygulamalar ve kapsam · soru-cevap</span></div>
     <div class="g-sorgu-ic">
@@ -78,18 +78,18 @@ module.exports = {
     </div>
   </div>
 </div></section>
-<script type="application/json" data-gsoru-veri>[["Hangi uygulama grupları var?","Uygulamalar dört grupta toplanır: enjeksiyon uygulamaları, lazer ve cihaz destekli uygulamalar, saç ve saçlı deri uygulamaları, değerlendirme ve takip. Hepsi hekimin sertifika kapsamındaki işlemlerdir. Listenin tamamını uygulamalar sayfasında, her birinin ayrıntısını kendi sayfasında bulabilirsiniz."],["Pico lazerle dövme silmede seanslar arasında ne kadar beklenir?","Seanslar arasında çoğunlukla altı ila sekiz hafta, bazı durumlarda daha uzun bir ara bırakılır. Bu süre, cildin toparlanması ve parçalanan mürekkebin vücut tarafından uzaklaştırılması için gerekir; aralığı kısaltmak genellikle bir kazanç sağlamaz, cildin toparlanmasını zorlaştırabilir. Toplam seans sayısı mürekkebin rengine, derinliğine ve dövmenin yaşına göre değişir."],["Dövme silme seansından sonra ne beklemeliyim?","Seanstan hemen sonra dövmenin üzerinde geçici beyazlama, kızarıklık ve hafif şişlik görülebilir; bazı kişilerde sonraki günlerde kabuklanma ya da küçük kabarcıklar oluşur. Kabukları koparmamanız, bölgeyi güneşten korumanız ve size verilen bakım önerilerine uymanız istenir. İyileşme beklenen hızda ilerlemiyorsa ya da bulgular artıyorsa muayenehaneye haber verin."],["Enjeksiyonda hangi ürünün kullanılacağını nasıl öğrenirim?","Ürün markaları sitede tanıtım amacıyla yayımlanmaz. Size hangi ürünün, hangi gerekçeyle seçildiği muayenede anlatılır ve onam belgesine yazılır. Uygulamadan sonra kullanılan ürünün bilgisini isteyip saklayabilirsiniz; ileride başka bir hekime başvurduğunuzda işinize yarar."],["Uygulama hangi durumlarda ertelenir?","Uygulama yapılacak bölgede aktif enfeksiyon, uçuk, açık yara ya da alevlenmiş bir cilt hastalığı varsa önce bu tablonun yatışması beklenir. Gebelik ve emzirme döneminde birçok girişimsel işlem bekletilir. Lazer uygulamalarında yakın zamanda güneşte kalmış ya da bronzlaşmış cilt de erteleme nedeni olabilir. Gebelik olasılığınız varsa muayenede söyleyin."],["İşlemden sonra işe ya da okula dönebilir miyim?","Çoğu uygulamadan sonra günlük işlerinize dönebilirsiniz; ancak kızarıklık, şişlik ya da morarma birkaç gün sürebilir. Makyaja ne zaman başlayacağınız, spor ve sauna gibi etkinliklere ne kadar ara vereceğiniz ve güneşten nasıl korunacağınız, yapılan işleme göre size ayrıca anlatılır."],["Etki ne zaman görülür?","Bu, uygulamaya ve kişiye bağlıdır. Bazı değişiklikler günler içinde fark edilir; kolajen yanıtına dayanan uygulamalarda haftalar gerekir, dövme silmede ise seanslara yayılan bir süreç söz konusudur. Ne zaman bir değişiklik bekleyebileceğiniz plan yapılırken size söylenir; sonuçlar kişiden kişiye değişir."],["Uygulamadan sonra umulmadık bir şişlik görürsem ne yapmalıyım?","Şişlik ya da kızarıklık günler geçtikçe azalmıyor, tersine büyüyor ya da ağrı veriyorsa muayenehaneyi arayın; gerekiyorsa muayeneye çağrılırsınız. Nefes almakta zorlanma, dudak ya da dilde hızla büyüyen şişlik, vücuda yayılan döküntüyle birlikte baş dönmesi acil durum işaretidir: muayenehaneyi aramakla vakit kaybetmeden 112’yi arayın veya en yakın acil servise gidin."],["Hasta deneyimlerine ve öncesi–sonrası fotoğraflarına neden yer verilmiyor?","Bu tür içeriklerin tanıtım amacıyla yayımlanması mevzuata aykırıdır. Üstelik bir başkasında görülen değişim, sizin cildinizde ve sizin öykünüzle aynı biçimde ortaya çıkmaz. Gerekçelerin tamamı mevzuat sayfasında anlatılır."],["Burada hangi işlemler yapılmıyor?","Cerrahi girişimler, saç ekimi ve hekimin sertifika kapsamına girmeyen işlemler bu muayenehanede uygulanmaz. Kapsam dışındaki bir talepte gerekçesi anlatılır ve ilgili uzmanlık dalına başvurmanız önerilir. Konunun ayrıntısı ayrı bir sayfada yer alır."],["Sitedeki test ve listeler bana uygunluk kararı verir mi?","Hayır. Hazırlık listesi, cilt tipi testi, bölge pusulası ve karşılaştırma masası tanı koymaz, işlem önermez ve bir uygulamaya uygun olup olmadığınıza karar vermez. Bu araçlar randevuya hazırlanmanıza yardım eder; verdiğiniz cevaplar bize gönderilmez."],["Ücret bilgisi neden internette yayımlanmıyor?","Sağlık hizmetlerinin tanıtımını düzenleyen yönetmelik, internet sitesinde ücret, indirim, taksit ya da kampanya duyurusu yapılmasına izin vermez. Bunun yanında ücret, muayenede belirlenen plana, bölgeye ve seans sayısına göre değişir. Bu nedenle bilgi muayene sırasında size özel olarak verilir; telefonda ya da WhatsApp’ta işlem bazında liste paylaşılmaz."]]</script>
+<script type="application/json" data-gsoru-veri>[["Hangi uygulama grupları var?","Uygulamalar dört grupta toplanır: enjeksiyon uygulamaları, lazer ve cihaz destekli uygulamalar, saç ve saçlı deri uygulamaları, değerlendirme ve takip. Hepsi hekimin sertifika kapsamındaki işlemlerdir. Listenin tamamını uygulamalar sayfasında, her birinin ayrıntısını kendi sayfasında bulabilirsiniz."],["Pico lazerle dövme silmede seanslar arasında ne kadar beklenir?","Seanslar arasında çoğunlukla altı ila sekiz hafta, bazı durumlarda daha uzun bir ara bırakılır. Bu süre, cildin toparlanması ve parçalanan mürekkebin vücut tarafından uzaklaştırılması için gerekir; aralığı kısaltmak genellikle bir kazanç sağlamaz, cildin toparlanmasını zorlaştırabilir. Toplam seans sayısı mürekkebin rengine, derinliğine ve dövmenin yaşına göre değişir."],["Dövme silme seansından sonra ne beklemeliyim?","Seanstan hemen sonra dövmenin üzerinde geçici beyazlama, kızarıklık ve hafif şişlik görülebilir; bazı kişilerde sonraki günlerde kabuklanma ya da küçük kabarcıklar oluşur. Kabukları koparmamanız, bölgeyi güneşten korumanız ve size verilen bakım önerilerine uymanız istenir. İyileşme beklenen hızda ilerlemiyorsa ya da bulgular artıyorsa muayenehaneye haber verin."],["Enjeksiyonda hangi ürünün kullanılacağını nasıl öğrenirim?","Ürün markaları sitede tanıtım amacıyla yayımlanmaz. Size hangi ürünün, hangi gerekçeyle seçildiği muayenede anlatılır ve onam belgesine yazılır. Uygulamadan sonra kullanılan ürünün bilgisini isteyip saklayabilirsiniz; ileride başka bir hekime başvurduğunuzda işinize yarar."],["Uygulama hangi durumlarda ertelenir?","Uygulama yapılacak bölgede aktif enfeksiyon, uçuk, açık yara ya da alevlenmiş bir cilt hastalığı varsa önce bu tablonun yatışması beklenir. Gebelik ve emzirme döneminde birçok girişimsel işlem bekletilir. Lazer uygulamalarında yakın zamanda güneşte kalmış ya da bronzlaşmış cilt de erteleme nedeni olabilir. Gebelik olasılığınız varsa muayenede söyleyin."],["İşlemden sonra işe ya da okula dönebilir miyim?","Çoğu uygulamadan sonra günlük işlerinize dönebilirsiniz; ancak kızarıklık, şişlik ya da morarma birkaç gün sürebilir. Makyaja ne zaman başlayacağınız, spor ve sauna gibi etkinliklere ne kadar ara vereceğiniz ve güneşten nasıl korunacağınız, yapılan işleme göre size ayrıca anlatılır."],["Etki ne zaman görülür?","Bu, uygulamaya ve kişiye bağlıdır. Bazı değişiklikler günler içinde fark edilir; kolajen yanıtına dayanan uygulamalarda haftalar gerekir, dövme silmede ise seanslara yayılan bir süreç söz konusudur. Ne zaman bir değişiklik bekleyebileceğiniz plan yapılırken size söylenir; sonuçlar kişiden kişiye değişir."],["Uygulamadan sonra umulmadık bir şişlik görürsem ne yapmalıyım?","Şişlik ya da kızarıklık günler geçtikçe azalmıyor, tersine büyüyor ya da ağrı veriyorsa muayenehaneyi arayın; gerekiyorsa muayeneye çağrılırsınız. Nefes almakta zorlanma, dudak ya da dilde hızla büyüyen şişlik, vücuda yayılan döküntüyle birlikte baş dönmesi acil durum işaretidir: muayenehaneyi aramakla vakit kaybetmeden 112’yi arayın veya en yakın acil servise gidin."],["Hasta deneyimlerine ve öncesi–sonrası fotoğraflarına neden yer verilmiyor?","Bu tür içeriklerin tanıtım amacıyla yayımlanması mevzuata aykırıdır. Üstelik bir başkasında görülen değişim, sizin cildinizde ve sizin öykünüzle aynı biçimde ortaya çıkmaz. Gerekçelerin tamamı mevzuat sayfasında anlatılır."],["Burada hangi işlemler yapılmıyor?","Cerrahi girişimler, saç ekimi ve hekimin sertifika kapsamına girmeyen işlemler bu muayenehanede uygulanmaz. Kapsam dışındaki bir talepte gerekçesi anlatılır ve ilgili uzmanlık dalına başvurmanız önerilir. Konunun ayrıntısı ayrı bir sayfada yer alır."],["Sitedeki test ve listeler bana uygunluk kararı verir mi?","Hayır. Hazırlık listesi, cilt eğilimi testi, bölge rehberi ve karşılaştırma masası tanı koymaz, işlem önermez ve bir uygulamaya uygun olup olmadığınıza karar vermez. Bu araçlar randevuya hazırlanmanıza yardım eder; verdiğiniz cevaplar bize gönderilmez."],["Ücret bilgisi neden internette yayımlanmıyor?","Sağlık hizmetlerinin tanıtımını düzenleyen yönetmelik, internet sitesinde ücret, indirim, taksit ya da kampanya duyurusu yapılmasına izin vermez. Bunun yanında ücret, muayenede belirlenen plana, bölgeye ve seans sayısına göre değişir. Bu nedenle bilgi muayene sırasında size özel olarak verilir; telefonda ya da WhatsApp’ta işlem bazında liste paylaşılmaz."]]</script>
 
 <!-- ═════════ İLGİLİ BAŞLIKLAR ═════════ -->
 <section class="bolum">
   <div class="sar">
     <div class="bolum-bas" data-gr>
-      <p class="g-etiket">İlgili başlıklar</p>
+      <p class="g-etiket">Buradan devam edin</p>
       <h2>Buradan devam edebilirsiniz</h2>
     </div>
     <div class="izgara izgara--3" data-gr style="--d:70ms">
       <a class="kart" href="${r}yaklasimimiz/">
-        <h3>Yaklaşımımız</h3>
+        <h3>Randevudan kontrole</h3>
         <p>Muayeneden kontrole uzanan basamakların neden kısaltılmadığını anlatan sayfa.</p>
         <span class="kart__ok">İncele ${ik.ok}</span>
       </a>
@@ -99,17 +99,17 @@ module.exports = {
         <span class="kart__ok">Listeye git ${ik.ok}</span>
       </a>
       <a class="kart" href="${r}yaklasimimiz/neden-bazi-islemleri-yapmiyoruz/">
-        <h3>Neden bazı işlemleri yapmıyoruz</h3>
+        <h3>Bazı işlemleri neden üstlenmiyoruz</h3>
         <p>Kapsamın nerede bittiği ve hangi durumlarda başka bir uzmanlık dalına başvurmanızın önerildiği.</p>
         <span class="kart__ok">Oku ${ik.ok}</span>
       </a>
       <a class="kart" href="${r}mevzuat/">
-        <h3>Uyduğumuz mevzuat</h3>
+        <h3>Bağlı olduğumuz mevzuat</h3>
         <p>Sitede ücret, yorum ve öncesi–sonrası görseli bulunmamasının yasal dayanağı.</p>
         <span class="kart__ok">Dayanağı gör ${ik.ok}</span>
       </a>
       <a class="kart" href="${r}hazirlik-listesi/">
-        <h3>Hazırlık listesi</h3>
+        <h3>Randevuya hazırlanma listesi</h3>
         <p>Randevudan önce ilaç, öykü ve önceki uygulama bilgilerinizi toparlamanıza yardım eden araç.</p>
         <span class="kart__ok">Aracı tanıyın ${ik.ok}</span>
       </a>

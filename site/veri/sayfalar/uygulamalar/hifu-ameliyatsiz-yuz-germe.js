@@ -16,7 +16,7 @@ module.exports = {
       <h1>HIFU ile ameliyatsız yüz germe: ultrason <span class="g-isik">derin katmana</span> odaklanır.</h1>
       <p class="g-hero__alt">Büyüteçle toplanan güneş ışığı gibi, HIFU başlığından çıkan ses dalgaları da deri yüzeyini ısıtmadan geçip belirli bir derinlikte tek noktada birleşir. Bu noktalarda oluşan küçük ısı odakları dokuda yavaş ilerleyen bir onarımı başlatır. Halk arasında “ameliyatsız yüz germe” diye anılsa da cerrahinin yerini tutmaz; hedef, hafif–orta gevşemede sıkılıkta görünür bir değişimdir.</p>
       <div class="g-hero__cta">
-        <a class="dgm dgm--bir" href="${r}iletisim/">Randevu talebi</a>
+        <a class="dgm dgm--bir" href="${r}iletisim/">Randevu isteyin</a>
         <a class="dgm dgm--iki" href="#ilkbolum">Yöntemin işleyişi ↓</a>
       </div>
       <div class="g-tikler"><span><i></i>Seansı hekim uygular</span><span><i></i>Cerrahinin yerini tutmaz</span><span><i></i>İkinci–üçüncü ayda kontrol</span></div>
@@ -40,7 +40,7 @@ module.exports = {
 <!-- BU NEDİR / BU NE DEĞİLDİR -->
 <section class="bolum" id="ilkbolum">
   <div class="sar">
-    <div class="bolum-bas" data-gr><p class="g-etiket">Tanım ve sınırlar</p><h2>HIFU ne yapar, neden bir ameliyat değildir?</h2><p class="giris">Yıllar içinde yüzde üç şey birden değişir: deri ve onu taşıyan bağ dokusu gevşer, yanaktaki yağ yastıkçıkları aşağı kayar ya da incelir, kemik desteği geriler. Ultrason enerjisinin etki ettiği yer bunlardan yalnızca biridir: gevşeyen taşıyıcı doku. Bu yüzden karar, yüzün bütünü değerlendirildikten sonra verilir. Tablonun bütününe <a href="${r}cilt-sorunlari/hacim-kaybi-ve-sarkma/">hacim kaybı ve sarkma</a> sayfasından ulaşabilirsiniz.</p></div>
+    <div class="bolum-bas" data-gr><p class="g-etiket">Ne yapar, ne yapmaz</p><h2>HIFU ne yapar, neden bir ameliyat değildir?</h2><p class="giris">Yıllar içinde yüzde üç şey birden değişir: deri ve onu taşıyan bağ dokusu gevşer, yanaktaki yağ yastıkçıkları aşağı kayar ya da incelir, kemik desteği geriler. Ultrason enerjisinin etki ettiği yer bunlardan yalnızca biridir: gevşeyen taşıyıcı doku. Bu yüzden karar, yüzün bütünü değerlendirildikten sonra verilir. Tablonun bütününe <a href="${r}cilt-sorunlari/hacim-kaybi-ve-sarkma/">hacim kaybı ve sarkma</a> sayfasından ulaşabilirsiniz.</p></div>
     <div class="izgara izgara--2">
       <div class="kutu kutu--bilgi" data-gr>
         <b>Bu nedir</b>
@@ -60,7 +60,7 @@ module.exports = {
 <!-- BENTO -->
 <section class="bolum bolum--sicak">
   <div class="sar">
-    <div class="bolum-bas" data-gr><p class="g-etiket">Planlama</p><h2>Seans nasıl ilerler, hangi durumlarda yapılmaz?</h2><p class="giris">Önce yüz temizlenir ve enerji verilecek hatlar kalemle çizilir. Kemiğe yakın noktalar daha çok hissedilebilir; rahatsızlık artarsa enerji azaltılır.</p></div>
+    <div class="bolum-bas" data-gr><p class="g-etiket">Plan nasıl kurulur</p><h2>Seans nasıl ilerler, hangi durumlarda yapılmaz?</h2><p class="giris">Önce yüz temizlenir ve enerji verilecek hatlar kalemle çizilir. Kemiğe yakın noktalar daha çok hissedilebilir; rahatsızlık artarsa enerji azaltılır.</p></div>
     <div class="g-bento">
       <div class="g-kutu g-b2 g-donutkap" data-gr>
         <div class="g-donut"><svg viewBox="0 0 100 100" width="100" height="100"><circle class="g-iz" cx="50" cy="50" r="45"/><circle class="g-dol" data-gyuzde="72" cx="50" cy="50" r="45"/><circle class="g-kom" cx="50" cy="50" r="45"/></svg><b>3 katman</b></div>
@@ -73,7 +73,7 @@ module.exports = {
         <div class="g-cubuk"><small><span>YANAK VE ÇENE HATTI</span><span>Derin odak</span></small><div class="g-ciz"><b class="g-cubuk-bakir" data-gw="92%"></b></div></div>
         <p style="font-size:.68rem;color:var(--sessiz);margin-top:8px">Çubuk boyları yalnız karşılaştırma içindir; size özel plan muayenede kurulur.</p>
       </div>
-      <div class="g-kutu g-b2" data-gr style="--d:140ms"><span class="g-ket">Protokol</span>
+      <div class="g-kutu g-b2" data-gr style="--d:140ms"><span class="g-ket">Adım adım</span>
         <ol class="g-protokol">
           <li>Yüzün bütünüyle değerlendirilmesi: gevşeme, deri kalınlığı, yağ dağılımı, geçmiş işlemler</li>
           <li>Onam görüşmesi; hiç işlem yapmamak da seçenekler arasındadır</li>
@@ -89,12 +89,12 @@ module.exports = {
 <p>Keloid eğilimi, etkin bağ dokusu hastalıkları ve şekeri düzensiz seyreden diyabet uygunluğu değiştirir. Uygulama alanında metal implant, kalıcı yapay malzeme ya da incelenmemiş bir şişlik varsa o bölge atlanır; tiroid bezinin üzeri ve büyük damar ile sinirlerin deriye yakın geçtiği hatlar da uygulama dışında tutulur. Herhangi bir ilaca ya da maddeye aşırı duyarlılığınız varsa bunu da not ettirin.</p>
       </div>
       <div class="g-kutu g-b2 g-kutu--gorsel" data-gr style="--d:70ms"><img src="${r}varliklar/gorsel/uyg-hifu-ameliyatsiz-yuz-germe-2.webp" alt="Çene hattı ve boyun geçişinin yakından görünümü" loading="lazy"><span class="g-ainot">Temsilî görsel · yapay zekâ ile üretildi</span></div>
-      <div class="g-kutu g-b2 g-kutu--gece" data-gr><span class="g-ket">İlke</span><p>"Beklentiniz ancak cerrahiyle karşılanacaksa bunu seanstan önce söyleriz."</p></div>
+      <div class="g-kutu g-b2 g-kutu--gece" data-gr><span class="g-ket">Hekimin notu</span><p>"Beklentiniz ancak cerrahiyle karşılanacaksa bunu seanstan önce söyleriz."</p></div>
       <div class="g-kutu g-b2" data-gr style="--d:70ms">
         <span class="g-ket">Seans sonrası</span>
         <p style="font-size:.92rem">Seanstan çıkınca işe ya da eve dönebilirsiniz. Birkaç gün sauna, hamam, çok sıcak duş ve ağır antrenman ertelenir; yüze sert masaj yapılmaz ve her sabah güneş koruyucu sürülür. Hafif pembelik ve şişlik çoğunlukla aynı gün geçer, dokununca hissedilen hassasiyet birkaç hafta sürebilir. Onarım yavaş ilerlediği için ilk fark iki ay dolaylarında, en belirgin hâli ise üç ila altı ay arasında görülür. Yaşlanma durmadığından etki kalıcı değildir; ek seans kontrollerde konuşulur. Sonuçlar kişiden kişiye değişir.</p>
       </div>
-      <div class="g-kutu g-b2 g-kutu--cta" data-gr style="--d:140ms"><h3>Yüzünüzü görmeden karar vermeyelim</h3><p>Deri kalınlığınız ve yağ dağılımınız muayenede değerlendirilir.</p><a class="dgm dgm--altin" href="${r}iletisim/">Randevu talebi</a></div>
+      <div class="g-kutu g-b2 g-kutu--cta" data-gr style="--d:140ms"><h3>Yüzünüzü görmeden karar vermeyelim</h3><p>Deri kalınlığınız ve yağ dağılımınız muayenede değerlendirilir.</p><a class="dgm dgm--altin" href="${r}iletisim/">Randevu isteyin</a></div>
       <div class="kutu kutu--acil g-b6" data-gr>
         <b>Beklemeden bize ulaşmanız gereken durumlar</b>
         <p>Sonraki günlerde deride kabarcık ya da açık yara belirirse, kızarıklık yayılır, ağrı artar, akıntı ya da ateş olursa; aynaya baktığınızda yüzünüzde bir yamukluk ya da gülümserken bir tarafta zayıflık görürseniz kontrol gününü beklemeyin. ${S.iletisim.tel} numarasından bize ulaşın; telefonla ulaşamıyorsanız <b>112</b> Acil Çağrı Merkezi’ni arayın ya da en yakın hastanenin acil birimine başvurun.</p>

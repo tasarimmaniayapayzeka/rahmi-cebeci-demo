@@ -11,7 +11,7 @@ module.exports = {
 <!-- ═════════ BELGE HERO ═════════ -->
 <section class="g-bhero">
   <div class="sar">
-    <p class="g-etiket">Yasal</p>
+    <p class="g-etiket">Mevzuat notu</p>
     <h1>Kullanım Koşulları</h1>
     <p class="g-bhero__alt">Sitedeki yazılar, listeler ve etkileşimli araçlar yalnız konular hakkında genel bir fikir vermek için hazırlandı. Hiçbiri teşhis koymaya, tedavi seçmeye ya da muayenenin yerini almaya yönelik değildir. Sayfaları okumak, bize yazmak ya da bir aracı denemek, hekimle aranızda hekim–hasta ilişkisi başlatmaz. Siteyi kullanmayı sürdürmeniz, aşağıdaki koşulları kabul ettiğiniz anlamına gelir.</p>
     <div class="g-bmeta">
@@ -58,7 +58,7 @@ module.exports = {
         <div class="izgara izgara--2">
           <div class="kart kart--duz">
             <h3>Bunlar ilişki kurmaz</h3>
-            <p>Sayfalarda gezinmek, sık sorulan soruları okumak, hazırlık listesini ya da cilt tipi testini doldurmak ve iletişim formundan randevu isteği iletmek, hekim–hasta ilişkisini tek başına başlatmaz.</p>
+            <p>Sayfalarda gezinmek, sık sorulan soruları okumak, hazırlık listesini ya da cilt eğilimi testini doldurmak ve iletişim formundan randevu isteği iletmek, hekim–hasta ilişkisini tek başına başlatmaz.</p>
           </div>
           <div class="kart kart--duz">
             <h3>Muayeneyle başlayan ilişki</h3>
@@ -73,7 +73,7 @@ module.exports = {
       <div class="g-bblk" id="araclarin-kullanimi">
         <h2>Etkileşimli araçlar hakkında</h2>
         <div class="yazi">
-          <p>Sitede cilt tipi testi, bölge pusulası, uygulama karşılaştırma ve hazırlık listesi gibi etkileşimli sayfalar var. Bunlar, muayenede hekiminize sormak isteyebileceğiniz konuları toparlamanız ve başlıklara önceden aşina olmanız için tasarlandı.</p>
+          <p>Sitede cilt eğilimi testi, bölge rehberi, uygulama karşılaştırma ve hazırlık listesi gibi etkileşimli sayfalar var. Bunlar, muayenede hekiminize sormak isteyebileceğiniz konuları toparlamanız ve başlıklara önceden aşina olmanız için tasarlandı.</p>
           <ul>
             <li>Hiçbiri tıbbi cihaz sayılmaz; bir tarama testinin, uygunluk belgesinin ya da risk raporunun yerine kullanılabilecek sonuç vermez.</li>
             <li>Hastalık tespiti yapmaz; benleri ve lekeleri incelemez, bir oluşumun kötü huylu olmadığını söyleyemez.</li>
@@ -95,7 +95,7 @@ module.exports = {
           <p>Bu tercihlerin nedenlerini, içeriğin kim tarafından hazırlanıp onaylandığını ve ne sıklıkla yeniden gözden geçirildiğini ayrı bir sayfada anlattık.</p>
         </div>
         <div class="dgm-sira">
-          <a class="dgm dgm--iki" href="${r}yasal/icerik-ve-gorsel-yayin-ilkelerimiz/">İçerik ve görsel yayın ilkelerimiz ${ik.ok}</a>
+          <a class="dgm dgm--iki" href="${r}yasal/icerik-ve-gorsel-yayin-ilkelerimiz/">Yayın ve görsel kullanım esaslarımız ${ik.ok}</a>
         </div>
       </div>
 
@@ -132,12 +132,12 @@ module.exports = {
             <span class="kart__ok">Oku ${ik.ok}</span>
           </a>
           <a class="kart" href="${r}yaklasimimiz/neden-bazi-islemleri-yapmiyoruz/">
-            <h3>Neden bazı işlemleri yapmıyoruz</h3>
+            <h3>Bazı işlemleri neden üstlenmiyoruz</h3>
             <p>Muayenehanenin kapsamadığı işlemler ve başka bir uzmanlık alanına başvurmanızı önerdiğimiz hâller.</p>
             <span class="kart__ok">İncele ${ik.ok}</span>
           </a>
           <a class="kart" href="${r}sikca-sorulan-sorular/">
-            <h3>Sıkça sorulan sorular</h3>
+            <h3>Soru ve yanıtlar</h3>
             <p>Muayene süreci, randevu ve işleyişe dair en çok sorulanlar.</p>
             <span class="kart__ok">İncele ${ik.ok}</span>
           </a>

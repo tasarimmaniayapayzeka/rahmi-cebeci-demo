@@ -17,7 +17,7 @@ module.exports = {
       <h1>Boyun, <span class="g-isik">yüzün devamı değil</span>; kendi planı olan bir bölgedir.</h1>
       <p class="g-hero__alt">Boynun ve göğüs üstünün derisi yüzdekinden ince, yağ bezleri daha seyrek ve deriyi taşıyan dokular daha zayıftır. Bu yüzden halka şeklindeki çizgiler, gevşeme ve güneşin bıraktığı kahverengi–kırmızı lekeler burada daha erken görünür. Yüzünüz için seçilen ayarı ve miktarı buraya aynen taşımak yerine bu bölgeye özel, daha yumuşak bir plan yaparız.</p>
       <div class="g-hero__cta">
-        <a class="dgm dgm--bir" href="${r}iletisim/">Randevu talebi</a>
+        <a class="dgm dgm--bir" href="${r}iletisim/">Randevu isteyin</a>
         <a class="dgm dgm--iki" href="#fark">Neden farklı? ↓</a>
       </div>
       <div class="g-tikler"><span><i></i>Uygulamayı hekim yapar</span><span><i></i>Bölgeye özel ayar</span><span><i></i>Kontrol randevusu planın içinde</span></div>
@@ -41,7 +41,7 @@ module.exports = {
 <!-- 3 ── BÖLGENİN FARKI -->
 <section class="bolum" id="fark">
   <div class="sar">
-    <div class="bolum-bas" data-gr><p class="g-etiket">Bölge farkı</p><h2>Boyun derisini yüzden ayıran ne?</h2></div>
+    <div class="bolum-bas" data-gr><p class="g-etiket">Bölgeden bölgeye</p><h2>Boyun derisini yüzden ayıran ne?</h2></div>
     <div class="izgara izgara--2">
       <div class="kutu kutu--bilgi" data-gr>
         <b>Deri nasıl farklı?</b>
@@ -58,7 +58,7 @@ module.exports = {
 <!-- 4 ── ATLAS -->
 <section class="bolum bolum--buz2">
   <div class="sar">
-    <div class="bolum-bas" data-gr><p class="g-etiket">Bölge atlası</p><h2>Boyun ve dekoltede hangi değişiklikler görülür?</h2><p class="giris">Karşılaştığımız tablolar üç grupta toplanıyor. Çoğu kişide bu gruplardan ikisi ya da üçü bir arada bulunur; plan da bu karışıma göre biçimlenir.</p></div>
+    <div class="bolum-bas" data-gr><p class="g-etiket">Katman katman bölge</p><h2>Boyun ve dekoltede hangi değişiklikler görülür?</h2><p class="giris">Karşılaştığımız tablolar üç grupta toplanıyor. Çoğu kişide bu gruplardan ikisi ya da üçü bir arada bulunur; plan da bu karışıma göre biçimlenir.</p></div>
     <div class="g-atlas-duzen">
       <div class="g-atlas" data-gr>
         <div class="g-atlas-kap">
@@ -69,20 +69,20 @@ module.exports = {
       </div>
       <div data-gr style="--d:80ms">
         <div class="g-katblok" data-gkat="a">
-          <span class="g-kno">01</span>
+          <span class="g-kno">Kesit 01</span>
           <h3>Halka çizgiler ve dikey bantlar</h3>
           <p>Boynun önünde yatay uzanan iki–dört çizgi pek çok kişide vardır. Kiminde bunlar doğuştan gelen katlanma yerleridir, kiminde ise yıllar içinde derinleşmiş kırışıklardır; hangisi olduğunu muayenede ayırırız, çünkü yaklaşım buna göre değişir.</p>
           <p>Konuşurken ya da çenenizi öne uzattığınızda boynun iki yanında kabaran dikey şeritler ise deri altındaki yaygın, ince bir kastan kaynaklanır. Sarkma ilerlemişse ameliyatsız yöntemlerle sağlanabilecek değişim kısa sürede sınırına ulaşır.</p>
           <div class="g-haplar"><a href="${r}uygulamalar/botulinum-toksin/">Botulinum toksin</a><a href="${r}uygulamalar/hifu-ameliyatsiz-yuz-germe/">HIFU</a><a href="${r}uygulamalar/altin-igne-radyofrekans/">Altın iğne radyofrekans</a></div>
         </div>
         <div class="g-katblok" data-gkat="b">
-          <span class="g-kno">02</span>
+          <span class="g-kno">Kesit 02</span>
           <h3>Güneşin göğüs üstündeki izi</h3>
           <p>Dekoltede kahverengi lekeler ile ince kırmızı damarlar çoğu zaman yan yana görülür. Lekenin ve damarın ele alınışı farklıdır ve genellikle ayrı seanslar gerektirir; lekelerle ilgili genel bilgiyi aşağıdaki bağlantıda bulabilirsiniz.</p>
           <div class="g-haplar"><a href="${r}uygulamalar/pico-lazer-leke/">Pico lazer ile leke</a><a href="${r}cilt-sorunlari/cilt-tonu-ve-leke/">Cilt tonu ve leke</a></div>
         </div>
         <div class="g-katblok" data-gkat="c">
-          <span class="g-kno">03</span>
+          <span class="g-kno">Kesit 03</span>
           <h3>Kuruluk ve incecik kırışlar</h3>
           <p>Yağ bezleri az olduğu için göğüs üstü derisi kolayca kurur; yan yatarak uyuyanlarda göğüslerin arasında ince, dikine çizgiler de oluşabilir. Burada dolgunluk kazandırmaya değil, derinin kalitesini ve nem tutmasını iyileştirmeye çalışırız.</p>
           <div class="g-haplar"><a href="${r}uygulamalar/genclik-asisi-skinbooster/">Gençlik aşısı (skinbooster)</a><a href="${r}uygulamalar/mezoterapi/">Mezoterapi</a><a href="${r}cilt-sorunlari/nem-kaybi-ve-donukluk/">Nem kaybı ve donukluk</a></div>
@@ -96,7 +96,7 @@ module.exports = {
 <!-- 5 ── MATRİS -->
 <section class="bolum">
   <div class="sar">
-    <div class="bolum-bas" data-gr><p class="g-etiket">Uygulamalar</p><h2>Boyun ve göğüs üstü için hangi seçenekler var?</h2><p class="giris">Bu bölgede ilk hedef dolgunluk kazandırmak değil, derinin kendisini güçlendirmektir. Muayenede ortaya çıkan tabloya göre tek bir seçenekle yetinilebilir ya da birkaç seçenek aylara bölünerek sıralanabilir; aynı gün birkaç yöntem üst üste konmaz.</p></div>
+    <div class="bolum-bas" data-gr><p class="g-etiket">Uygulama dizini</p><h2>Boyun ve göğüs üstü için hangi seçenekler var?</h2><p class="giris">Bu bölgede ilk hedef dolgunluk kazandırmak değil, derinin kendisini güçlendirmektir. Muayenede ortaya çıkan tabloya göre tek bir seçenekle yetinilebilir ya da birkaç seçenek aylara bölünerek sıralanabilir; aynı gün birkaç yöntem üst üste konmaz.</p></div>
     <div class="g-matris">
       <div class="g-mtab" data-gr>
         <div class="g-mbas"><span>Yöntem</span><span>Amaç</span><span>Toparlanma</span><span></span></div>
@@ -117,7 +117,7 @@ module.exports = {
 <!-- 6 ── PLAN + SINIRLAR -->
 <section class="bolum bolum--sicak">
   <div class="sar">
-    <div class="bolum-bas" data-gr><p class="g-etiket">Süreç</p><h2>Boyun ve dekolte için plan hangi sırayla yapılır?</h2><p class="giris">İlk görüşmenin sonunda işlem yapılacağını varsaymayın. Bu bölgede adımların hangi sırayla atıldığı, hangi yöntemin seçildiği kadar önemlidir.</p></div>
+    <div class="bolum-bas" data-gr><p class="g-etiket">Akış</p><h2>Boyun ve dekolte için plan hangi sırayla yapılır?</h2><p class="giris">İlk görüşmenin sonunda işlem yapılacağını varsaymayın. Bu bölgede adımların hangi sırayla atıldığı, hangi yöntemin seçildiği kadar önemlidir.</p></div>
     <div class="g-bento">
       <div class="g-kutu g-b3" data-gr><span class="g-ket">ADIMLAR</span>
         <ol class="g-protokol">
@@ -127,7 +127,7 @@ module.exports = {
           <li><b>Kontrol:</b> iki–dört hafta sonra bölgeye yeniden bakar, devam edip etmeyeceğimize ilk tepkiye göre karar veririz. Ayrıntılar için <a href="${r}uygulamalar/uygulama-sonrasi-takip/">uygulama sonrası takip</a> sayfasına bakabilirsiniz.</li>
         </ol>
       </div>
-      <div class="g-kutu g-b3 g-kutu--gece" data-gr style="--d:80ms"><span class="g-ket">İLKE</span><p>&#8220;Yarar sağlamayacağını düşündüğümüz bir işlemi plana eklemeyiz; bazen en doğru öneri daha azını yapmaktır.&#8221;</p></div>
+      <div class="g-kutu g-b3 g-kutu--gece" data-gr style="--d:80ms"><span class="g-ket">Hekimin notu</span><p>&#8220;Yarar sağlamayacağını düşündüğümüz bir işlemi plana eklemeyiz; bazen en doğru öneri daha azını yapmaktır.&#8221;</p></div>
       <div class="kutu kutu--uyari g-b4" data-gr style="--d:140ms">
         <b>Kimlere yapılmaz ya da ertelenir?</b>
         <ul>
@@ -141,7 +141,7 @@ module.exports = {
           <li><b>Yutkunurken zorlanma ya da boyun kaslarında güç kaybı:</b> kası gevşeten uygulamalar bu durumda seçilmez.</li>
         </ul>
       </div>
-      <div class="g-kutu g-b2" data-gr style="--d:210ms"><span class="g-ket">KAPSAM</span>
+      <div class="g-kutu g-b2" data-gr style="--d:210ms"><span class="g-ket">Neyi kapsar</span>
         <p>Muayenehanede yalnızca hekimimizin uzmanlığı ve Sağlık Bakanlığı onaylı sertifikasının kapsadığı işlemler yapılır. Bu çerçevenin dışında kalan bir istekte işlem yapmaz, sizi ilgili uzmanlık dalına yönlendiririz. Nedenini <a href="${r}yaklasimimiz/neden-bazi-islemleri-yapmiyoruz/">neden bazı işlemleri yapmıyoruz</a> sayfasında açıkladık.</p>
       </div>
     </div>
@@ -151,7 +151,7 @@ module.exports = {
 <!-- 7 ── SONRASI + BEKLENTİ -->
 <section class="bolum">
   <div class="sar">
-    <div class="bolum-bas" data-gr><p class="g-etiket">Sonrası</p><h2>İşlemden sonraki günlerde neler olur?</h2></div>
+    <div class="bolum-bas" data-gr><p class="g-etiket">Uygulamadan sonra</p><h2>İşlemden sonraki günlerde neler olur?</h2></div>
     <div class="izgara izgara--2">
       <div class="kart kart--duz" data-gr>
         <h3>İlk günler</h3>

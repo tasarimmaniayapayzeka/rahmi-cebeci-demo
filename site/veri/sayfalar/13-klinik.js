@@ -12,7 +12,7 @@ module.exports = {
 <section class="g-hero g-hero--genis">
   <div class="sar">
     <div>
-      <nav class="kirinti" aria-label="Konum" style="position:relative;font-size:.76rem;color:var(--sessiz);display:flex;gap:7px;margin-bottom:18px"><a href="${r}" style="color:var(--sessiz);text-decoration:none">Ana sayfa</a> › <span>Muayenehane</span></nav>
+      <nav class="kirinti" aria-label="Konum" style="position:relative;font-size:.76rem;color:var(--sessiz);display:flex;gap:7px;margin-bottom:18px"><a href="${r}" style="color:var(--sessiz);text-decoration:none">Ana sayfa</a> › <span>Muayenehanemiz</span></nav>
       <p class="g-etiket">Muayenehane · ${S.iletisim.semt}</p>
       <h1>Bekleme salonundan cihaz odasına: <span class="g-isik">${S.iletisim.semt}’deki</span> muayenehane</h1>
       <p class="g-hero__alt">İçeri girdiğinizde sizi önce bekleme salonu karşılar. Muayene ve enjeksiyonlar uygulama odasında, lazer ve diğer cihaz uygulamaları ise ayrı bir cihaz odasında yapılır. Randevular tek tek verilir; her işlemi hekim kendisi uygular ve kontrolü de yine o yürütür. Aşağıda muayenehanenin düzenini adım adım bulabilirsiniz.</p>
@@ -36,7 +36,7 @@ module.exports = {
   <div class="sar">
     <div class="izgara izgara--2" style="gap:clamp(24px,4vw,48px);align-items:start">
       <div data-gr>
-        <p class="g-etiket">Konum</p>
+        <p class="g-etiket">Nerede</p>
         <h2>${S.iletisim.ilce}</h2>
         <p style="margin-top:14px">Muayenehane ${S.iletisim.adres} adresindedir. Toplu taşımada Marmaray’ın Bakırköy istasyonu ve Bakırköy’e ulaşan metro hatları kullanılabilir; özel araçla sahil yolundan ya da İncirli yönünden gelinebilir. Harita ve ayrıntılı yol tarifi iletişim sayfasında yer alır.</p>
         <p>Binayı ilk kez ziyaret edecekseniz gelmeden önce telefonla ya da WhatsApp üzerinden sorabilirsiniz; giriş tarifi kısaca paylaşılır.</p>
@@ -47,12 +47,12 @@ module.exports = {
       <div class="izgara" style="gap:14px" data-gr>
         <div class="kart kart--duz">
           <span class="kart__ikon">${ik.pin}</span>
-          <h4>Adres</h4>
+          <h4>Adresimiz</h4>
           <p>${S.iletisim.adres}<br>${S.iletisim.ilce}</p>
         </div>
         <div class="kart kart--duz">
           <span class="kart__ikon">${ik.saat}</span>
-          <h4>Çalışma saatleri</h4>
+          <h4>Açık olduğumuz saatler</h4>
           <p>${S.iletisim.saatler.map(([g, s]) => `${g}: ${s}`).join('<br>')}</p>
         </div>
       </div>
@@ -64,7 +64,7 @@ module.exports = {
 <section class="bolum">
   <div class="sar sar--dar">
     <div class="bolum-bas" data-gr>
-      <p class="g-etiket">Tek hekim ilkesi</p>
+      <p class="g-etiket">Tek hekimle</p>
       <h2>Muayenehanede sizinle kim ilgileniyor?</h2>
     </div>
     <div data-gr style="--d:70ms">
@@ -74,7 +74,7 @@ module.exports = {
     </div>
     <div class="dgm-sira" style="margin-top:22px">
       <a class="dgm dgm--iki" href="${r}hekim/">Hekim ${ik.ok}</a>
-      <a class="dgm dgm--iki" href="${r}yaklasimimiz/">Nasıl çalışıyoruz ${ik.ok}</a>
+      <a class="dgm dgm--iki" href="${r}yaklasimimiz/">Randevudan kontrole ${ik.ok}</a>
     </div>
   </div>
 </section>
@@ -120,7 +120,7 @@ module.exports = {
     <div class="izgara izgara--3" data-gr style="--d:70ms">
       <div class="kart kart--sicak">
         <span class="kart__ikon">${ik.kalkan}</span>
-        <h3>Tek kullanımlık malzeme</h3>
+        <h3>Her hastaya yeni malzeme</h3>
         <p>Cilde temas eden iğne, kanül ve mikroiğne uçları ile örtüler her kişi için yeni ambalajından çıkarılır. Kullanılan malzeme bir başkası için saklanmaz; tıbbi atık olarak ayrılır ve mevzuata uygun biçimde bertaraf edilir.</p>
       </div>
       <div class="kart kart--sicak">
@@ -156,26 +156,26 @@ module.exports = {
 <section class="bolum">
   <div class="sar sar--dar">
     <div class="bolum-bas" data-gr>
-      <p class="g-etiket">Randevu düzeni</p>
+      <p class="g-etiket">Randevu akışı</p>
       <h2>Randevudan kontrole: süreç nasıl işliyor?</h2>
     </div>
     <div class="g-katblok" data-gr>
-      <span class="g-kno">01</span>
+      <span class="g-kno">Madde 01</span>
       <h3>Talep</h3>
       <p>Aramanız, WhatsApp’tan yazmanız ya da iletişim sayfasındaki formu doldurmanız yeterlidir. Şikâyetiniz muayenehanenin kapsamı dışında kalıyorsa bu, randevu verilmeden önce söylenir; boş yere gelmeniz istenmez.</p>
     </div>
     <div class="g-katblok" data-gr style="--d:70ms">
-      <span class="g-kno">02</span>
+      <span class="g-kno">Madde 02</span>
       <h3>İlk muayene</h3>
       <p>Öykü baştan alındığı için ilk randevu, kontrol randevularından uzun sürer. Düzenli kullandığınız ilaçların adlarını, varsa yakın tarihli kan tahlillerinizi ve daha önce yaptırdığınız işlemlere dair bilgileri getirmeniz görüşmeyi kolaylaştırır.</p>
     </div>
     <div class="g-katblok" data-gr style="--d:140ms">
-      <span class="g-kno">03</span>
+      <span class="g-kno">Madde 03</span>
       <h3>Plan ve yazılı onam</h3>
       <p>Neyin hedeflendiği, sınırları, görülebilecek istenmeyen etkiler, varsa seçenekler ve hiç işlem yapmamanın ne anlama geldiği konuşulur. Yazılı onamınız alınmadan uygulamaya geçilmez; isterseniz işlem başka bir güne bırakılır.</p>
     </div>
     <div class="g-katblok" data-gr style="--d:210ms">
-      <span class="g-kno">04</span>
+      <span class="g-kno">Madde 04</span>
       <h3>Gecikme ve iptal</h3>
       <p>Randevular arka arkaya planlandığı için bir gecikme, sonraki kişinin saatini de kaydırır. Gelemeyecekseniz bunu olabildiğince erken bildirmenizi rica ederiz; bizim tarafımızda bir değişiklik olursa size de önceden haber verilir.</p>
     </div>
@@ -190,30 +190,30 @@ module.exports = {
 <section class="bolum bolum--buz2">
   <div class="sar">
     <div class="bolum-bas" data-gr>
-      <p class="g-etiket">Sonrası</p>
+      <p class="g-etiket">Uygulamadan sonra</p>
       <h2>İşlemden sonra neler oluyor?</h2>
     </div>
     <div class="g-bento">
       <div class="g-kutu g-b4" data-gr>
-        <span class="g-ket">Takip düzeni</span>
+        <span class="g-ket">Kontrol takvimi</span>
         <p>Muayenehaneden ayrılırken elinizde bir bakım notu olur: ilk günlerde neye dikkat edeceğiniz, nelerden kaçınacağınız ve hangi belirtide hemen arayacağınız bu notta yazar. Sözlü anlatım tek başına yeterli görülmez.</p>
         <p style="margin-top:10px">Kontrol tarihi, etkinin tam olarak görülebileceği zamana göre seçilir; birkaç gün içinde bakılan bir sonuç eksik bilgi verir. Aradan zaman geçtikten sonra fark ettiğiniz bir değişikliği de aynı hekim, ilk muayene kaydıyla karşılaştırarak ele alır.</p>
         <div class="dgm-sira" style="margin-top:16px">
-          <a class="dgm dgm--iki" href="${r}uygulamalar/uygulama-sonrasi-takip/">Uygulama sonrası takip ${ik.ok}</a>
-          <a class="dgm dgm--iki" href="${r}sikca-sorulan-sorular/">Sıkça sorulan sorular ${ik.ok}</a>
+          <a class="dgm dgm--iki" href="${r}uygulamalar/uygulama-sonrasi-takip/">Uygulama sonrası kontrol ${ik.ok}</a>
+          <a class="dgm dgm--iki" href="${r}sikca-sorulan-sorular/">Soru ve yanıtlar ${ik.ok}</a>
         </div>
       </div>
-      <div class="g-kutu g-b2 g-kutu--gece" data-gr style="--d:70ms"><span class="g-ket">İlke</span><p>“Takip, uygulamanın ayrılmaz bir parçasıdır.”</p></div>
+      <div class="g-kutu g-b2 g-kutu--gece" data-gr style="--d:70ms"><span class="g-ket">Hekimin notu</span><p>“Takip, uygulamanın ayrılmaz bir parçasıdır.”</p></div>
       <div class="g-kutu g-b2" data-gr style="--d:140ms">
-        <span class="g-ket">Talimat</span>
+        <span class="g-ket">Yapılacaklar</span>
         <p><b style="color:var(--murekkep)">Size özel bakım notu</b><br>Uygulamanın türüne ve bölgeye göre yazılır; herkese aynı broşür verilmez.</p>
       </div>
       <div class="g-kutu g-b2" data-gr style="--d:210ms">
-        <span class="g-ket">Kontrol</span>
+        <span class="g-ket">Kontrol günü</span>
         <p><b style="color:var(--murekkep)">Kontrol tarihi</b><br>Hangi gün geleceğiniz, işlem biter bitmez birlikte ayarlanır.</p>
       </div>
       <div class="g-kutu g-b2" data-gr style="--d:280ms">
-        <span class="g-ket">Öncelik</span>
+        <span class="g-ket">Önce ne gelir</span>
         <p><b style="color:var(--murekkep)">Olağan dışı bir belirti</b><br>Bildirdiğiniz duruma göre size öncelik verilir; sıradaki boş günü beklemeniz gerekmez.</p>
       </div>
     </div>
@@ -234,8 +234,8 @@ module.exports = {
 <section class="bolum bolum--sicak">
   <div class="sar">
     <div class="bolum-bas" data-gr>
-      <p class="g-etiket">Devamı</p>
-      <h2>İlgili başlıklar</h2>
+      <p class="g-etiket">Okumaya devam</p>
+      <h2>Buradan devam edin</h2>
     </div>
     <div class="izgara izgara--3" data-gr style="--d:70ms">
       <a class="kart" href="${r}hekim/">
@@ -244,17 +244,17 @@ module.exports = {
         <span class="kart__ok">Oku ${ik.ok}</span>
       </a>
       <a class="kart" href="${r}yaklasimimiz/">
-        <h3>Nasıl çalışıyoruz</h3>
+        <h3>Randevudan kontrole</h3>
         <p>Muayene, plan, uygulama günü ve takip: dört adımın her birinde neler olduğu.</p>
         <span class="kart__ok">Oku ${ik.ok}</span>
       </a>
       <a class="kart" href="${r}yaklasimimiz/neden-bazi-islemleri-yapmiyoruz/">
-        <h3>Neden bazı işlemleri yapmıyoruz</h3>
+        <h3>Bazı işlemleri neden üstlenmiyoruz</h3>
         <p>Cerrahi, saç ekimi ve lazer epilasyon gibi burada yapılmayan işlemler ve gerekçesi.</p>
         <span class="kart__ok">Oku ${ik.ok}</span>
       </a>
       <a class="kart" href="${r}hazirlik-listesi/">
-        <h3>Hazırlık listesi</h3>
+        <h3>Randevuya hazırlanma listesi</h3>
         <p>İlk muayeneden önce not almanızın işe yarayacağı başlıkların kısa bir listesi.</p>
         <span class="kart__ok">Aç ${ik.ok}</span>
       </a>

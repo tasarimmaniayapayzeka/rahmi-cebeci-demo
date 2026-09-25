@@ -34,27 +34,27 @@ module.exports = {
 <section class="bolum bolum--sicak" id="nedenler">
   <div class="sar">
     <div class="bolum-bas" data-gr>
-      <p class="g-etiket">Ayrım</p>
+      <p class="g-etiket">Farkı nerede</p>
       <h2>Silme sürecini hangi etkenler belirler?</h2>
       <p class="giris">Lazerle dövme silmede enerji, deri içindeki mürekkep parçacıklarını çok kısa atımlarla daha küçük parçalara ayırmayı hedefler. Küçülen parçalar, vücudun kendi temizleme sistemi tarafından haftalar içinde uzaklaştırılır. Bu yüzden sonuç tek seansta değil, seanslar arasında geçen sürede ortaya çıkar ve her dövmede farklı bir hızla ilerler.</p>
     </div>
     <div class="g-katblok" data-gr>
-      <span class="g-kno">01</span>
+      <span class="g-kno">Kesit 01</span>
       <h3>Silme isteği nereden doğar?</h3>
       <p>Talep yalnızca pişmanlıktan doğmaz. Biten bir ilişki, iş yaşamındaki beklentiler, eskiyen bir tasarım, zamanla dağılan çizgiler ya da üzerine yeni bir dövme yapılmadan önce alanın açılması en sık nedenlerdir. Kalıcı makyajda kaş biçiminin ya da dudak konturunun artık yüze uymaması, rengin griye veya turuncuya dönmesi sık duyulan şikâyetlerdir. Hedefin tümüyle silmek mi, yoksa yeni bir uygulama için açmak mı olduğu planı değiştirir.</p>
     </div>
     <div class="g-katblok" data-gr style="--d:60ms">
-      <span class="g-kno">02</span>
+      <span class="g-kno">Kesit 02</span>
       <h3>Rengin belirleyiciliği</h3>
       <p>Lazer, belirli dalga boylarını emen renkleri hedefler. Siyah ve koyu lacivert mürekkep genellikle daha iyi yanıt verir. Kırmızı, turuncu ve bazı mor tonlar farklı bir dalga boyu gerektirir. Yeşil ve açık mavi daha dirençli olabilir; sarı, beyaz ve ten rengine yakın tonlar ise en zor grubu oluşturur. Çok renkli bir dövmede her rengin farklı hızla açılması beklenir ve bazı tonlar belirgin biçimde geride kalabilir.</p>
     </div>
     <div class="g-katblok" data-gr style="--d:120ms">
-      <span class="g-kno">03</span>
+      <span class="g-kno">Kesit 03</span>
       <h3>Derinlik, yoğunluk ve konum</h3>
       <p>Profesyonel dövmelerde mürekkep genellikle eşit derinlikte ve yoğun biçimde yerleştirilir; bu da daha fazla seans gerektirebilir. Amatör dövmelerde mürekkep daha az olsa da derinlik düzensizdir. Üst üste yapılmış ya da kapatılmış dövmeler daha uzun sürer. El, ayak ve bilek gibi dolaşımın görece yavaş olduğu bölgelerde açılma daha ağır ilerler. Koyu tenlerde renk değişimi riskine karşı ayarlar temkinli seçilir. Mikroblading çoğunlukla yüzeysel ve ince çizgilerden oluştuğu için ayrı bir planlama ister.</p>
     </div>
     <div class="g-katblok" data-gr style="--d:180ms">
-      <span class="g-kno">04</span>
+      <span class="g-kno">Kesit 04</span>
       <h3>Kalıcı makyajda koyulaşma riski</h3>
       <p>Kalıcı makyajda sık kullanılan ten, pembe, kırmızımsı kahve ve beyaz tonların bir kısmı demir oksit ya da titanyum dioksit içerebilir. Bu içerikler lazer enerjisiyle kimyasal değişime uğrayarak açılmak yerine gri ya da siyaha dönebilir. Bu duruma paradoks koyulaşma denir ve özellikle kaş ile dudak uygulamalarında akılda tutulur.</p>
 <p>Bu yüzden kalıcı makyaj ve açık tonlu dövmelerde önce küçük bir alana test atışı yapılır; birkaç hafta sonra alanın nasıl yanıt verdiği değerlendirilir ve plan buna göre kurulur. Göz çevresine yakın uygulamalarda göz koruması ayrıca önem taşır.</p>
@@ -76,7 +76,7 @@ module.exports = {
 <section class="bolum bolum--buz2">
   <div class="sar">
     <div class="bolum-bas" data-gr>
-      <p class="g-etiket">Sonrası</p>
+      <p class="g-etiket">Uygulamadan sonra</p>
       <h2>Değerlendirmeden sonra hangi adımlar konuşulur?</h2>
       <p class="giris">Dövme ve kalıcı makyaj silme, muayenehanemizin öne çıkan uygulamalarından biridir ve lazer ve cihaz odasında yapılır. Aşağıdaki başlıklar genel bilgi amaçlıdır; seans aralığı, beklenen yanıt ve olası riskler muayenede size özel olarak konuşulur.</p>
     </div>
@@ -85,7 +85,7 @@ module.exports = {
         <div class="g-mbas"><span>Yöntem</span><span>Amaç</span><span>Toparlanma</span><span></span></div>
         <a class="g-msatir" data-akt href="${r}uygulamalar/pico-lazer-dovme-silme/" data-gg="${r}varliklar/gorsel/uyg-pico-lazer-dovme-silme.webp" data-gb="Pico lazer ile dövme silme" data-ga="Pikosaniye atımlarla mürekkep parçacıklarının küçültülmesi hedeflenir; görünüm seanslar boyunca kademeli olarak açılır."><h4>Pico lazer ile dövme silme</h4><span class="g-hucre"><i class="g-kcip g-kcip--1">MÜREKKEP</i></span><span class="g-hucre">Birkaç gün–1 hafta</span><span class="g-git">→</span></a>
         <a class="g-msatir" href="${r}uygulamalar/hekim-muayenesi/" data-gg="${r}varliklar/gorsel/uyg-hekim-muayenesi.webp" data-gb="Hekim muayenesi" data-ga="Dövmenin rengi, yaşı, bölgesi, cilt tonunuz ve kullandığınız ilaçlar değerlendirilir; gerekiyorsa test atışı planlanır."><h4>Hekim muayenesi</h4><span class="g-hucre"><i class="g-kcip g-kcip--3">DEĞERLENDİRME</i></span><span class="g-hucre">Aynı gün</span><span class="g-git">→</span></a>
-        <a class="g-msatir" href="${r}uygulamalar/uygulama-sonrasi-takip/" data-gg="${r}varliklar/gorsel/uyg-uygulama-sonrasi-takip.webp" data-gb="Uygulama sonrası takip" data-ga="Seanslar arasında derinin iyileşmesi, olası renk değişimleri ve bir sonraki seansın zamanı kontrol randevularında izlenir."><h4>Uygulama sonrası takip</h4><span class="g-hucre"><i class="g-kcip g-kcip--2">İZLEM</i></span><span class="g-hucre">Randevuya göre</span><span class="g-git">→</span></a>
+        <a class="g-msatir" href="${r}uygulamalar/uygulama-sonrasi-takip/" data-gg="${r}varliklar/gorsel/uyg-uygulama-sonrasi-takip.webp" data-gb="Uygulama sonrası kontrol" data-ga="Seanslar arasında derinin iyileşmesi, olası renk değişimleri ve bir sonraki seansın zamanı kontrol randevularında izlenir."><h4>Uygulama sonrası kontrol</h4><span class="g-hucre"><i class="g-kcip g-kcip--2">İZLEM</i></span><span class="g-hucre">Randevuya göre</span><span class="g-git">→</span></a>
       </div>
       <div class="g-onizle" data-gonizle data-gr><div class="g-gor"><img src="${r}varliklar/gorsel/uyg-pico-lazer-dovme-silme.webp" alt=""></div><div class="g-ic"><h4>Pico lazer ile dövme silme</h4><p>Pikosaniye atımlarla mürekkep parçacıklarının küçültülmesi hedeflenir; görünüm seanslar boyunca kademeli olarak açılır.</p><a class="dgm dgm--iki" href="${r}uygulamalar/pico-lazer-dovme-silme/">Sayfasına git →</a></div></div>
     </div>

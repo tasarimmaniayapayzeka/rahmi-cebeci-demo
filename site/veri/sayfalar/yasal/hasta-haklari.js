@@ -11,7 +11,7 @@ module.exports = {
 <!-- ═════════ BELGE HERO ═════════ -->
 <section class="g-bhero">
   <div class="sar">
-    <p class="g-etiket">Yasal</p>
+    <p class="g-etiket">Mevzuat notu</p>
     <h1>Hasta Hakları</h1>
     <p class="g-bhero__alt">Muayenehaneye başvuran her kişinin hakları, Anayasa’dan ve Hasta Hakları Yönetmeliği’nden güç alır. Hekim bu kurallara uymakla yükümlüdür; bunlar iyi niyete ya da kişisel takdire bırakılmış ayrıcalıklar sayılmaz. Aşağıda her hakkın burada nasıl karşılandığını ve bir sorun yaşarsanız kime, hangi yolla başvurabileceğinizi okuyabilirsiniz.</p>
     <div class="g-bmeta">
@@ -174,7 +174,7 @@ module.exports = {
             <span class="kart__ok">Oku ${ik.ok}</span>
           </a>
           <a class="kart" href="${r}yaklasimimiz/">
-            <h3>Yaklaşımımız</h3>
+            <h3>Randevudan kontrole</h3>
             <p>Her uygulamadan önce değerlendirme yapma ilkemizin ayrıntıları.</p>
             <span class="kart__ok">İncele ${ik.ok}</span>
           </a>
@@ -184,7 +184,7 @@ module.exports = {
             <span class="kart__ok">İncele ${ik.ok}</span>
           </a>
           <a class="kart" href="${r}yasal/icerik-ve-gorsel-yayin-ilkelerimiz/">
-            <h3>İçerik ve görsel yayın ilkelerimiz</h3>
+            <h3>Yayın ve görsel kullanım esaslarımız</h3>
             <p>Mahremiyetiniz için sitede bilerek yayımlamadığımız içerikler.</p>
             <span class="kart__ok">Oku ${ik.ok}</span>
           </a>

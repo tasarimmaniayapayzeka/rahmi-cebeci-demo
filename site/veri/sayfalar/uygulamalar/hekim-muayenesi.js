@@ -17,7 +17,7 @@ module.exports = {
       <h1>Uygulamadan önce <span class="g-isik">kişiye bakılır</span></h1>
       <p class="g-hero__alt">Hekim muayenesi, herhangi bir uygulama konuşulmadan önce yapılan tıbbi değerlendirmedir. Yakınma olan bölge incelenir; süregelen hastalıklar, kullanılan ilaçlar ve önceki uygulamalar sorulur, beklentiniz dinlenir. Sonunda neyin uygun, neyin gereksiz olduğu yazılı bir plana dökülür. Görüşmenin amacı işlem önermek değil, gerekçeli bir karar vermektir.</p>
       <div class="g-hero__cta">
-        <a class="dgm dgm--bir" href="${r}iletisim/">Randevu talebi</a>
+        <a class="dgm dgm--bir" href="${r}iletisim/">Randevu isteyin</a>
         <a class="dgm dgm--iki" href="#neden">Neden gerekli? ↓</a>
       </div>
       <div class="g-tikler"><span><i></i>Değerlendirmeyi hekim yapar</span><span><i></i>Yazılı plan ve onam</span><span><i></i>Gerekirse açık yönlendirme</span></div>
@@ -41,7 +41,7 @@ module.exports = {
 <section class="bolum" id="neden">
   <div class="sar sar--dar">
     <div class="bolum-bas" data-gr>
-      <p class="g-etiket">Gerekçe</p>
+      <p class="g-etiket">Neden böyle</p>
       <h2>Uygulamadan önce muayene neden gerekli?</h2>
       <p class="giris">Bu muayenehanede her plan aynı kapıdan başlar. Aklınızda bir yakınma da olsa, belirli bir uygulamanın adı da olsa ilk adım değişmez. Yapılacak işlem görüşme bitmeden seçilmez; <b>gereksiz</b> olanlar da çoğu kez tam bu sırada ayıklanır.</p>
     </div>
@@ -63,7 +63,7 @@ module.exports = {
 <section class="bolum bolum--buz2" id="ne-yapilir">
   <div class="sar">
     <div class="bolum-bas" data-gr>
-      <p class="g-etiket">Süreç</p>
+      <p class="g-etiket">Akış</p>
       <h2>Muayenede adım adım ne yapılır?</h2>
       <p class="giris">Görüşme dört bölümden oluşur. Süresi, konuşulacak yakınma sayısına ve öykünün ayrıntısına göre değişir; bölümlerin sırası değişebilir ama hiçbiri atlanmaz.</p>
     </div>
@@ -80,7 +80,7 @@ module.exports = {
         <div class="g-cubuk"><small><span>Yazılı plan ve imza</span><span>Son</span></small><div class="g-ciz"><b class="g-cubuk-mavi" data-gw="50%"></b></div></div>
         <p style="font-size:.7rem;color:var(--sessiz);margin:10px 0 0">Çubuk boyları yalnız karşılaştırma içindir; asıl süre görüşmede belirlenir.</p>
       </div>
-      <div class="g-kutu g-b2" data-gr style="--d:140ms"><span class="g-ket">Dört bölüm</span>
+      <div class="g-kutu g-b2" data-gr style="--d:140ms"><span class="g-ket">Dört parça</span>
         <ol class="g-protokol">
           <li><span><b style="color:var(--murekkep)">Yakınmanın dinlenmesi.</b> Neyin, ne zamandan beri rahatsız ettiği ve daha önce neler denendiği sorulur; yönlendirici soru sorulmaz.</span></li>
           <li><span><b style="color:var(--murekkep)">İnceleme.</b> Bölge eşit ışık altında, gerekiyorsa büyütmeyle incelenir; cilt tipi ve yüzün yapısal özellikleri kaydedilir.</span></li>
@@ -89,10 +89,10 @@ module.exports = {
         </ol>
       </div>
       <div class="g-kutu g-b4 kutu--bilgi" data-gr style="--d:210ms">
-        <span class="g-ket">Zamanlama</span>
+        <span class="g-ket">Ne zaman</span>
         <p><b style="color:var(--murekkep)">Muayene ile uygulamanın aynı güne denk gelmesi şart değildir.</b> Değerlendirmeden sonra düşünmek istemeniz son derece anlaşılır bir tercihtir. Bazı durumlarda ise beklemek gerekir: bir tetkikin sonucu görülecekse, kullanılan bir ilaca ara verilmesi gerekiyorsa ya da ciltte aktif bir sorun varsa uygulama daha sonraki bir tarihe planlanır.</p>
       </div>
-      <div class="g-kutu g-b2 g-kutu--gece" data-gr style="--d:280ms"><span class="g-ket">İlke</span><p>"Önce kişi, sonra bölge."</p></div>
+      <div class="g-kutu g-b2 g-kutu--gece" data-gr style="--d:280ms"><span class="g-ket">Hekimin notu</span><p>"Önce kişi, sonra bölge."</p></div>
     </div>
   </div>
 </section>
@@ -101,7 +101,7 @@ module.exports = {
 <section class="bolum bolum--sicak" id="yuz-analizi">
   <div class="sar">
     <div class="bolum-bas" data-gr>
-      <p class="g-etiket">İnceleme</p>
+      <p class="g-etiket">Gözden geçirme</p>
       <h2>Yüz analizinde nelere bakılır?</h2>
       <p class="giris">Yüz analizi, yüzü ideal ölçülere uydurma çalışması değildir. Amaç, zamanla değişen özellikleri size ait olan ve korunması gereken özelliklerden ayırmaktır.</p>
     </div>
@@ -147,7 +147,7 @@ module.exports = {
 <section class="bolum" id="ilac">
   <div class="sar sar--dar">
     <div class="bolum-bas" data-gr>
-      <p class="g-etiket">Güvenlik</p>
+      <p class="g-etiket">Güvenli uygulama</p>
       <h2>Hangi ilaçlar ve sağlık başlıkları sorulur?</h2>
       <p class="giris">Görüşmenin en uzun bölümü burasıdır ve kısaltılmaz. Aşağıdaki her başlık, bir planı değiştirebilecek ya da tümüyle erteletebilecek bilgiler içerir.</p>
     </div>
@@ -185,7 +185,7 @@ module.exports = {
 <section class="bolum bolum--buz2" id="beklenti">
   <div class="sar sar--dar">
     <div class="bolum-bas" data-gr>
-      <p class="g-etiket">Görüşme</p>
+      <p class="g-etiket">Tanışma görüşmesi</p>
       <h2>Beklenti görüşmesinde neler konuşulur?</h2>
     </div>
     <div data-gr style="max-width:72ch">
@@ -200,7 +200,7 @@ module.exports = {
 <section class="bolum" id="onam">
   <div class="sar sar--dar">
     <div class="bolum-bas" data-gr>
-      <p class="g-etiket">Onam</p>
+      <p class="g-etiket">Yazılı onam</p>
       <h2>Aydınlatılmış onam formu neyi kayda geçirir?</h2>
       <p class="giris">Aydınlatılmış onam, yapılacak işlemi, olası sonuçlarını ve seçeneklerini anladığınızı kayda geçiren yazılı belgedir. Girişimsel hiçbir uygulama bu belge imzalanmadan yapılmaz. Amacı sorumluluğu size devretmek değil, bilgilendirmenin yapıldığını belgelemektir.</p>
     </div>
@@ -278,8 +278,8 @@ module.exports = {
 <section class="bolum bolum--sicak">
   <div class="sar">
     <div class="bolum-bas" data-gr>
-      <p class="g-etiket">Devamı</p>
-      <h2>İlgili başlıklar</h2>
+      <p class="g-etiket">Okumaya devam</p>
+      <h2>Buradan devam edin</h2>
     </div>
     <div class="izgara izgara--3">
       <a class="kart" href="${r}cilt-sorunlari/" data-gr>
@@ -288,17 +288,17 @@ module.exports = {
         <span class="kart__ok">İncele ${ik.ok}</span>
       </a>
       <a class="kart" href="${r}uygulamalar/" data-gr style="--d:70ms">
-        <h3>Tüm uygulamalar</h3>
+        <h3>Uygulamaların tamamı</h3>
         <p>Muayeneden sonra planlanabilecek işlemlerin, dört grup altında tam listesi.</p>
         <span class="kart__ok">İncele ${ik.ok}</span>
       </a>
       <a class="kart" href="${r}hazirlik-listesi/" data-gr style="--d:140ms">
-        <h3>Hazırlık listesi</h3>
+        <h3>Randevuya hazırlanma listesi</h3>
         <p>Görüşmeye gelmeden önce hazırlamanız ve yanınıza almanız gerekenler.</p>
         <span class="kart__ok">İncele ${ik.ok}</span>
       </a>
       <a class="kart" href="${r}yaklasimimiz/" data-gr>
-        <h3>Yaklaşımımız</h3>
+        <h3>Randevudan kontrole</h3>
         <p>Çalışma düzenimizin dört aşaması ve neden az ama gerekçeli işlem önerdiğimiz.</p>
         <span class="kart__ok">İncele ${ik.ok}</span>
       </a>
@@ -308,7 +308,7 @@ module.exports = {
         <span class="kart__ok">İncele ${ik.ok}</span>
       </a>
       <a class="kart" href="${r}sikca-sorulan-sorular/" data-gr style="--d:140ms">
-        <h3>Sıkça sorulan sorular</h3>
+        <h3>Soru ve yanıtlar</h3>
         <p>Randevudan kontrole kadar en çok merak edilen konuların yanıtları.</p>
         <span class="kart__ok">İncele ${ik.ok}</span>
       </a>

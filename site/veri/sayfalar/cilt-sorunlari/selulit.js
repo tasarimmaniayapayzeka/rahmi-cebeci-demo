@@ -34,28 +34,28 @@ module.exports = {
 <section class="bolum bolum--sicak" id="nedenler">
   <div class="sar">
     <div class="bolum-bas" data-gr>
-      <p class="g-etiket">Ayrım</p>
+      <p class="g-etiket">Farkı nerede</p>
       <h2>Selülit nedir, ne değildir?</h2>
       <p class="giris">Selülit, deri altındaki yağ dokusunun yerleşim biçimiyle ilgilidir. Yağ, deriye dik uzanan lif bantlarıyla ayrılmış küçük odacıklar içinde durur. Odacıklar dolgunlaştığında ya da bantlar deriyi aşağı çektiğinde yüzeyde çukurlar ve kabarıklıklar belirir. Aşağıdaki başlıklar, muayenede sorulan temel soruları özetler.</p>
     </div>
     <div class="g-katblok" data-gr>
-      <span class="g-kno">01</span>
+      <span class="g-kno">Kesit 01</span>
       <h3>Neden çoğunlukla kadınlarda görülür?</h3>
       <p>Kadınlarda lif bantları deriye dik uzanır ve yağ odacıkları yukarı doğru kabarmaya daha yatkındır; erkeklerde bantlar çapraz ve daha sık bir ağ örer. Östrojen başta olmak üzere hormonlar, kalıtım, deri kalınlığı, kan dolaşımı ve lenf akışı da görünümü etkiler.</p>
 <p>En sık uyluğun arka ve yan yüzünde, kalçada, karnın alt bölümünde ve kol arkasında görülür. Gebelik, hareketsiz yaşam, sigara ve uzun saatler oturmak görünümü belirginleştirebilir.</p>
     </div>
     <div class="g-katblok" data-gr style="--d:60ms">
-      <span class="g-kno">02</span>
+      <span class="g-kno">Kesit 02</span>
       <h3>Ne değildir?</h3>
       <p>Selülit bir hastalık değildir; vücutta “toksin” birikiminin ya da kötü beslenmenin kanıtı da sayılmaz. Tıpta benzer adla anılan deri enfeksiyonuyla hiçbir ilgisi yoktur: o durum kızarık, sıcak, ağrılı ve hızla yayılan bir şişliktir ve acil tedavi gerektirir. Bu sayfada anlatılan, yalnızca deri yüzeyindeki dalgalı görünümdür.</p>
     </div>
     <div class="g-katblok" data-gr style="--d:120ms">
-      <span class="g-kno">03</span>
+      <span class="g-kno">Kesit 03</span>
       <h3>Evreler</h3>
       <p>Görünüm muayenede genellikle dört evrede tanımlanır. Evre 0’da ayakta da yatarken de yüzey düzdür. Evre 1’de deri normal görünür; parmaklarla sıkıştırıldığında ya da kas kasıldığında dalgalanma ortaya çıkar. Evre 2’de dalgalanma ayaktayken kendiliğinden görülür, uzanınca kaybolur. Evre 3’te uzanırken de belirgindir ve çukurlar derinleşmiştir. Hangi seçeneğin ne ölçüde katkı sağlayabileceğini evre doğrudan etkiler.</p>
     </div>
     <div class="g-katblok" data-gr style="--d:180ms">
-      <span class="g-kno">04</span>
+      <span class="g-kno">Kesit 04</span>
       <h3>Kiloyla ilişkisi</h3>
       <p>Kilo alımı yağ odacıklarını doldurduğu için görünümü belirginleştirir; ancak selülit kiloya bağlı bir durum değildir ve ideal kilosundaki kişilerde de bulunur. Hızlı ve büyük kilo kaybı ise deriyi gevşetip dalgalanmayı daha görünür kılabilir. Dengeli bir kilo, düzenli hareket ve kas gücünün korunması genel görünümü destekler; ne var ki bunlar tek başına selülitin ortadan kalkmasını sağlamaz.</p>
       <div class="g-haplar"><a href="${r}cilt-sorunlari/bolgesel-yaglanma/">Bölgesel yağlanma</a></div>
@@ -76,7 +76,7 @@ module.exports = {
 <section class="bolum bolum--buz2">
   <div class="sar">
     <div class="bolum-bas" data-gr>
-      <p class="g-etiket">Sonrası</p>
+      <p class="g-etiket">Uygulamadan sonra</p>
       <h2>Evre belirlendikten sonra hangi seçenekler konuşulur?</h2>
       <p class="giris">Aşağıdaki başlıklar, selülit görünümü ve ona eşlik edebilen yağ birikimi için konuşulan seçeneklerdir. Hangisinin ne amaçla kullanılacağı evrenize ve muayene bulgularınıza göre belirlenir; sonuçlar kişiden kişiye değişir.</p>
     </div>

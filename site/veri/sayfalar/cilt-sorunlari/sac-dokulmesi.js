@@ -34,28 +34,28 @@ module.exports = {
 <section class="bolum bolum--sicak" id="nedenler">
   <div class="sar">
     <div class="bolum-bas" data-gr>
-      <p class="g-etiket">Ayrım</p>
+      <p class="g-etiket">Farkı nerede</p>
       <h2>Dökülme yaygın mı, yoksa belli bir bölgede mi yoğunlaşıyor?</h2>
       <p class="giris">Saç, vücuttaki genel dengenin bozulduğunu erkenden ve gözle görülür biçimde yansıtır. Dökülmeyi çoğu zaman saçın kendisinden değil, vücudun başka bir yerindeki değişimden okuruz. Saç döngüsü ağır işlediği için muayenede sorulan soru geçen hafta değil, üç–dört ay önce neler yaşandığıdır.</p>
     </div>
     <div class="g-katblok" data-gr>
-      <span class="g-kno">01</span>
+      <span class="g-kno">Kesit 01</span>
       <h3>Geçici yaygın dökülme</h3>
       <p>Saç tellerinin olağandan fazlası aynı dönemde dinlenme evresine girdiğinde ortaya çıkar. Yastıkta, duşta ve tarakta kalan saç belirgin biçimde artar; ancak belli bir yerde açıklık oluşmaz, saçın bütününde gürlük azalmış gibi hissedilir.</p>
 <p>En ayırt edici özelliği gecikmeli başlamasıdır: dökülme, tetikleyici olaydan ortalama iki–dört ay sonra fark edilir. Tetikleyici ortadan kalktığında çoğu kişide birkaç ay içinde durulma eğilimi görülür.</p>
     </div>
     <div class="g-katblok" data-gr style="--d:60ms">
-      <span class="g-kno">02</span>
+      <span class="g-kno">Kesit 02</span>
       <h3>Kalıtsal yatkınlığa bağlı seyrelme</h3>
       <p>Bu tabloda teller her döngüde biraz daha incelir ve kısa kalır; süreç yıllara yayılır. Kadınlarda en sık tepe bölgesinde ayrım çizgisi genişler; erkeklerde ön saç çizgisi geriler ve tepe açılır. Ense çoğunlukla etkilenmez. Kişinin asıl şikâyeti çok saç dökmesi değil, saçının eskisi kadar gür durmamasıdır. Bu tabloya geçici bir dökülme eklendiğinde seyrelme bir anda hızlanmış izlenimi verebilir.</p>
     </div>
     <div class="g-katblok" data-gr style="--d:120ms">
-      <span class="g-kno">03</span>
+      <span class="g-kno">Kesit 03</span>
       <h3>Bölgesel ve iz bırakan dökülmeler</h3>
       <p>Bozuk para büyüklüğünde tümüyle saçsız kalan alanlar, kızarıklık ve kepeklenmeyle seyreden bölgeler ya da ağrı ve yanmayla birlikte kalıcı açılmalar ayrı bir grup oluşturur. Bu bulgular varsa değerlendirme öne alınır; tabloya ad konmadan saçlı deriye yönelik bir uygulama düşünülmez; gerek görülürse bir dermatoloji uzmanına başvurmanız önerilir.</p>
     </div>
     <div class="g-katblok" data-gr style="--d:180ms">
-      <span class="g-kno">04</span>
+      <span class="g-kno">Kesit 04</span>
       <h3>Genel sağlıkla ilgili nedenler</h3>
       <p>Yaygın dökülmenin ardında çoğu zaman saç dışı bir etken bulunur: kansızlık olmasa bile azalmış demir depoları, tiroit işlevindeki değişiklikler, kısa sürede çok kilo verilmesi, çok düşük kalorili beslenme, yüksek ateşli bir hastalık, geçirilmiş bir ameliyat ya da doğum, bazı ilaç ve takviyeler. Tepe bölgesindeki seyrelmeye adet düzensizliği ve vücutta tüylenme artışı eşlik ediyorsa hormonal değerlendirme öne çekilir.</p>
       <div class="g-haplar"><a href="${r}uygulamalar/hekim-muayenesi/">Hekim muayenesi</a></div>
@@ -76,7 +76,7 @@ module.exports = {
 <section class="bolum bolum--buz2">
   <div class="sar">
     <div class="bolum-bas" data-gr>
-      <p class="g-etiket">Sonrası</p>
+      <p class="g-etiket">Uygulamadan sonra</p>
       <h2>Neden netleşince hangi seçenekler konuşulur?</h2>
       <p class="giris">Saçlı deriye yönelik uygulamalar, dökülmenin türü belirlendikten ve varsa genel sağlıkla ilgili neden ele alındıktan sonra konuşulur. Bunlar genel bir çerçevedir; size özel plan muayeneden sonra hekim tarafından kurulur ve yanıt kişiden kişiye değişir.</p>
     </div>

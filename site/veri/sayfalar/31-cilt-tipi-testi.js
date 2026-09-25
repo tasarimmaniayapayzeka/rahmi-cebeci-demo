@@ -4,7 +4,7 @@ module.exports = {
   slug: 'cilt-tipi-testi',
   tip: 'tibbi',
   js: 'cilt-tipi.js',
-  baslik: 'Cilt Tipi Eğilim Testi — Nem, Duyarlılık ve Leke Eğilimi',
+  baslik: 'Cilt Eğilimi Öz Değerlendirmesi — Nem, Duyarlılık ve Leke Eğilimi',
   aciklama: 'On iki soruda yağlanma ya da kuruluk, hassasiyet ve leke bırakma eğiliminizi tarif etmenize yardım eden test. Yanıtlar cihazınızda kalır, gönderilmez.',
 
   icerik: (r, ik) => `
@@ -13,7 +13,7 @@ module.exports = {
   <div class="sar">
     <nav class="kirinti" aria-label="Konum">
       <a href="${r}">Ana sayfa</a><span aria-hidden="true">›</span>
-      <span>Cilt tipi eğilim testi</span>
+      <span>Cilt eğilimi öz değerlendirmesi</span>
     </nav>
   </div>
 </section>
@@ -23,7 +23,7 @@ module.exports = {
     <div class="arac" data-cilt-tipi>
 
       <p class="etiket">Öz gözlem aracı</p>
-      <h1>Cilt Tipi Eğilim Testi</h1>
+      <h1>Cilt Eğilimi Öz Değerlendirmesi</h1>
       <p class="giris" style="margin:12px 0 24px">On iki kısa soru, cildinizin üç konudaki <em>eğilimini</em> tarif etmenize yardım eder: yağ ile nem arasındaki denge, çevreye karşı hassasiyet ve iz ya da leke bırakma. Bir tanı aracı değildir; cilt tipinizi belirlemek için cildin muayenede, yakından incelenmesi gerekir. Amacı, randevuya gelmeden önce cildinizi kendi gözlemlerinizle anlatmayı kolaylaştırmaktır.</p>
 
       <div class="kutu kutu--bilgi" style="margin-bottom:22px">

@@ -17,7 +17,7 @@ module.exports = {
       <h1>Tek bir çizgiye değil, <span class="g-isik">yüzün bütününe</span> bakılır.</h1>
       <p class="g-hero__alt">Alın, elmacık ve çene hattı ayrı bölgeler gibi görünse de birbirine yaslanır. Orta yüze eklenen destek ağız kenarının görünümünü, alt yüzdeki bir değişiklik ise yüzün genel oranını etkiler. Muayenede önce değişimin hangi katmanda olduğu ayrılır, ardından bir basamağa gerçekten ihtiyaç olup olmadığı konuşulur; kimi zaman varılan karar hiçbir işlem yapmamaktır.</p>
       <div class="g-hero__cta">
-        <a class="dgm dgm--bir" href="${r}iletisim/">Randevu talebi</a>
+        <a class="dgm dgm--bir" href="${r}iletisim/">Randevu isteyin</a>
         <a class="dgm dgm--iki" href="#butun">Planlama nasıl yapılır? ↓</a>
       </div>
       <div class="g-tikler"><span><i></i>Uygulamayı hekim yapar</span><span><i></i>Adım adım plan</span><span><i></i>Kontrol randevusu planın içinde</span></div>
@@ -47,22 +47,22 @@ module.exports = {
 <section class="bolum" id="butun">
   <div class="sar sar--dar">
     <div class="bolum-bas" data-gr>
-      <p class="g-etiket">Yaklaşım</p>
+      <p class="g-etiket">Bakış açısı</p>
       <h2>Yüzde neden tek bir bölgeye bakarak karar verilmez?</h2>
       <p class="giris">Başvuruların büyük kısmı tek bir ayrıntıyla gelir: kaşların arasındaki derin çizgi, ağız kenarında beliren gölge ya da yanakta fark edilen düzleşme. Muayenede bu ayrıntıya odaklanmadan önce bir adım geri çekilip yüzün tamamına bakılır, çünkü bölgelerin hiçbiri ötekilerden bağımsız değildir.</p>
     </div>
     <div class="g-katblok" data-gr>
-      <span class="g-kno">01 · ETKİLEŞİM</span>
+      <span class="g-kno">Kesit 01 · ETKİLEŞİM</span>
       <h3>Bir bölgedeki değişim komşusuna yansır</h3>
       <p>Elmacık hattında desteği artıran bir basamak, ağız kenarına hiç dokunulmadan oradaki gölgeyi hafifletebilir. Tersine, yalnız çene ve dudak çevresine yoğunlaşan bir plan alındaki ve şakaktaki değişimi daha çok öne çıkarabilir. Karar bu nedenle tek bir bölgenin görünümüne dayandırılmaz.</p>
     </div>
     <div class="g-katblok" data-gr>
-      <span class="g-kno">02 · ORAN</span>
+      <span class="g-kno">Kesit 02 · ORAN</span>
       <h3>Amaç yeni bir yüz değil, sizin yüzünüz</h3>
       <p>Yaşla gelen değişim yüzün birkaç noktasında aynı anda ama farklı hızlarda ilerler. Örneğin yalnızca ağız kenarındaki gölgeye yüklenmek, orada bir düzelme sağlasa bile yanağın ve çenenin oranlarıyla çelişen bir görünüm bırakabilir. Planın ölçüsü, kişinin mevcut hatlarının ve ifadesinin korunmasıdır.</p>
     </div>
     <div class="g-katblok" data-gr>
-      <span class="g-kno">03 · SIRA</span>
+      <span class="g-kno">Kesit 03 · SIRA</span>
       <h3>Bir adımın sonucu görülmeden ikincisine geçilmez</h3>
       <p>Plan yazılırken hangi basamağın önce geleceği, hangisinin bekleyebileceği ve hangisine hiç gerek olmadığı baştan belirlenir. Birden çok başlık aynı seansa toplanmaz; önceki adımın etkisi oturduktan sonra sıradaki konuşulur. Böylece görülen değişimin hangi adımdan geldiği de izlenebilir kalır.</p>
     </div>
@@ -73,7 +73,7 @@ module.exports = {
 <section class="bolum bolum--sicak" id="katmanlar">
   <div class="sar">
     <div class="bolum-bas" data-gr>
-      <p class="g-etiket">Anatomi</p>
+      <p class="g-etiket">Doku yapısı</p>
       <h2>Yaş aldıkça yüzün hangi katları değişir?</h2>
       <p class="giris">Zamanla değişen tek bir yapı yoktur; deri, yağ bölmeleri, mimik kasları ve kemik iskelet birlikte etkilenir. Şikâyetin kaynağı olan kat belirlenmeden uygun basamak seçilemez.</p>
     </div>
@@ -106,7 +106,7 @@ module.exports = {
 <section class="bolum bolum--buz2" id="ucbolge">
   <div class="sar">
     <div class="bolum-bas" data-gr>
-      <p class="g-etiket">Denge</p>
+      <p class="g-etiket">Orantı</p>
       <h2>Yüzün üç katı birbirini nasıl etkiler?</h2>
       <p class="giris">Alın ve kaşlar yüzün ifadesini, elmacık ve yanak onu taşıyan desteği, çene ve dudak çevresi ise alt kenarı oluşturur. İncelemeye çoğu zaman ortadaki destekten başlanır; üstteki ve alttaki bölgelerin nasıl göründüğü büyük ölçüde oraya bağlıdır.</p>
     </div>
@@ -123,19 +123,19 @@ module.exports = {
       </div>
       <div>
         <div class="g-katblok" data-gkat="ust" data-gr>
-          <span class="g-kno">01 · ÜST KAT</span>
+          <span class="g-kno">Kesit 01 · ÜST KAT</span>
           <h3>Alın, kaş ve şakak</h3>
           <p>Bu bölgede belirleyici olan kas etkinliğidir; alındaki yatay çizgiler ve iki kaş arasındaki dikey çizgi en sık dile getirilen şikâyetlerdir. Şakakta hacim azaldığında üst yüz daralmış ve yorgun görünür. Buradaki her müdahale kaşın yüksekliğini ve kavisini değiştirebileceği için doz ve uygulama noktaları sınırlı tutulur.</p>
           <div class="g-haplar"><a href="${r}uygulamalar/botulinum-toksin/">Botulinum toksin</a><a href="${r}cilt-sorunlari/mimik-cizgileri-ve-kirisiklik/">Mimik çizgileri</a></div>
         </div>
         <div class="g-katblok" data-gkat="orta" data-gr>
-          <span class="g-kno">02 · ORTA KAT</span>
+          <span class="g-kno">Kesit 02 · ORTA KAT</span>
           <h3>Elmacık, yanak ve göz altı geçişi</h3>
           <p>Orta yüz, üstündeki ve altındaki bölgelere destek veren kattır. Burada hacim azaldığında etkisi iki yönde görülür: göz altında gölge, ağız kenarında belirginleşen kıvrım. Alt yüzden yakınan birinde ilk incelenen yerin çoğu zaman elmacık hattı olması bundandır.</p>
           <div class="g-haplar"><a href="${r}uygulamalar/dolgu-uygulamalari/">Dolgu uygulamaları</a><a href="${r}uygulamalar/sivi-yuz-germe/">Sıvı yüz germe</a><a href="${r}bolgeler/goz-cevresi/">Göz çevresi</a></div>
         </div>
         <div class="g-katblok" data-gkat="alt" data-gr>
-          <span class="g-kno">03 · ALT KAT</span>
+          <span class="g-kno">Kesit 03 · ALT KAT</span>
           <h3>Dudak köşeleri, çene ucu ve çene hattı</h3>
           <p>Yüzün alt kenarı ne kadar net görünüyor? Bu bölgede sorulan asıl soru budur. Dudak köşelerinden aşağı uzanan çizgilere, çene ucunun ne kadar öne çıktığına ve kulak önünden çeneye uzanan hattın keskinliğine birlikte bakılır. Çene hattını ve dudağı ayrıntılı olarak kendi sayfalarında ele aldık.</p>
           <div class="g-haplar"><a href="${r}bolgeler/cene-ve-jawline/">Çene ve çene hattı</a><a href="${r}bolgeler/dudak/">Dudak</a></div>
@@ -149,7 +149,7 @@ module.exports = {
 <section class="bolum" id="uygulamalar">
   <div class="sar">
     <div class="bolum-bas" data-gr>
-      <p class="g-etiket">Seçenekler</p>
+      <p class="g-etiket">Olası yollar</p>
       <h2>Yüz planına hangi uygulamalar girebilir?</h2>
       <p class="giris">Listede yüz planına girebilecek seçenekleri bir arada görüyorsunuz. Bunlar birlikte satılan bir set değildir; çoğu kişide yalnızca bir ya da ikisi gerekir, bazılarında hiçbiri. Hangisinin size uyduğu muayeneden sonra netleşir.</p>
     </div>
@@ -175,7 +175,7 @@ module.exports = {
 <section class="bolum bolum--buz2" id="muayene">
   <div class="sar">
     <div class="bolum-bas" data-gr>
-      <p class="g-etiket">Süreç ve uygunluk</p>
+      <p class="g-etiket">Akış ve uygunluk</p>
       <h2>Muayenede yüz planı nasıl çıkarılır?</h2>
     </div>
     <div class="g-bento">
@@ -189,11 +189,11 @@ module.exports = {
           <li><b>Bilgilendirme, onam ve kontrol.</b>&nbsp;Neyin amaçlandığını ve hangi istenmeyen durumların görülebileceğini yazılı olarak alırsınız; onamınız olmadan işleme başlanmaz. Kontrol tarihi, şişliğin inmesine zaman tanıyacak biçimde seçilir.</li>
         </ol>
       </div>
-      <div class="g-kutu g-b2 g-kutu--gece" data-gr style="--d:70ms"><span class="g-ket">İLKE</span><p>"Bir yüzü başka bir yüze benzetmeye çalışmayız; sahibinin hatlarını korumaya çalışırız."</p></div>
+      <div class="g-kutu g-b2 g-kutu--gece" data-gr style="--d:70ms"><span class="g-ket">Hekimin notu</span><p>"Bir yüzü başka bir yüze benzetmeye çalışmayız; sahibinin hatlarını korumaya çalışırız."</p></div>
     </div>
     <div class="izgara izgara--2" style="margin-top:22px">
       <div class="kutu kutu--uyari" data-gr>
-        <h4>Uygulama yapılmayan durumlar</h4>
+        <h4>Kimlere uygulanmaz</h4>
         <ul>
           <li>Gebelik ve emzirme süreci</li>
           <li>İşlem yapılacak alanda uçuk, aktif enfeksiyon ya da iltihaplı sivilce</li>
@@ -215,7 +215,7 @@ module.exports = {
     </div>
     <div class="kutu kutu--bilgi" data-gr style="margin-top:22px">
       <p>İşlem gününden sonra genellikle şunları isteriz: ilk gün yüzünüze bastırmamanız ve ovmamanız, birkaç gün sauna, hamam ve ağır spora ara vermeniz, güneş koruyucuyu bırakmamanız ve kontrol gününe gelmeniz. Uygulamaya göre değişen ayrıntılar için <a href="${r}uygulamalar/uygulama-sonrasi-takip/">uygulama sonrası takip</a> sayfasına bakabilirsiniz.</p>
-<p>Cildiniz çabuk kızarıyor ve tahriş oluyorsa işlemden önce bariyerin toparlanması beklenir; ilk adım kullandığınız ürün sayısını azaltmaktır. Cildinizin eğilimine kabaca bakmak için <a href="${r}cilt-tipi-testi/">cilt tipi testi</a> yol gösterebilir. Hangi işlemleri yapmadığımızı ve bu durumda sizi nereye yönlendirdiğimizi <a href="${r}yaklasimimiz/neden-bazi-islemleri-yapmiyoruz/">ayrı bir sayfada</a> topladık.</p>
+<p>Cildiniz çabuk kızarıyor ve tahriş oluyorsa işlemden önce bariyerin toparlanması beklenir; ilk adım kullandığınız ürün sayısını azaltmaktır. Cildinizin eğilimine kabaca bakmak için <a href="${r}cilt-tipi-testi/">cilt eğilimi testi</a> yol gösterebilir. Hangi işlemleri yapmadığımızı ve bu durumda sizi nereye yönlendirdiğimizi <a href="${r}yaklasimimiz/neden-bazi-islemleri-yapmiyoruz/">ayrı bir sayfada</a> topladık.</p>
     </div>
     <div class="kutu kutu--acil" data-gr style="margin-top:22px">
       <b>Bir sorun gelişirse</b>

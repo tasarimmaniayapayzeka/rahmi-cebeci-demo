@@ -12,11 +12,11 @@ module.exports = {
   <div class="sar">
     <div>
       <nav class="kirinti" aria-label="Konum" style="position:relative;font-size:.76rem;color:var(--sessiz);display:flex;gap:7px;margin-bottom:18px"><a href="${r}" style="color:var(--sessiz);text-decoration:none">Ana sayfa</a> › <a href="${r}uygulamalar/" style="color:var(--sessiz);text-decoration:none">Uygulamalar</a> › <span>Somon DNA (polinükleotid)</span></nav>
-      <p class="g-etiket">Enjeksiyon Uygulamaları · Doku Yenilenmesi</p>
+      <p class="g-etiket">Enjeksiyonla Yapılanlar · Doku Yenilenmesi</p>
       <h1>“Somon DNA” olarak bilinen <span class="g-isik">polinükleotid uygulaması</span></h1>
       <p class="g-hero__alt">Polinükleotid uygulamasında, balık kaynaklı DNA’dan elde edilip saflaştırılmış kısa nükleotid zincirleri çok ince iğnelerle derinin orta katmanına (dermis) verilir. Halk arasındaki “somon DNA” adı bu hammaddeden gelir. Amaç, cildin kendi onarım süreçlerini desteklemektir; hacim eklemez ve etkisi kişiden kişiye değişir. Uygunluk, muayene ve öykü değerlendirmesinden sonra belirlenir.</p>
       <div class="g-hero__cta">
-        <a class="dgm dgm--bir" href="${r}iletisim/">Randevu talebi</a>
+        <a class="dgm dgm--bir" href="${r}iletisim/">Randevu isteyin</a>
         <a class="dgm dgm--iki" href="#ilkbolum">Nedir, ne değildir ↓</a>
       </div>
       <div class="g-tikler"><span><i></i>Önce muayene ve öykü</span><span><i></i>Program hekimden</span><span><i></i>Yazılı onam</span></div>
@@ -42,7 +42,7 @@ module.exports = {
 <section class="bolum" id="ilkbolum">
   <div class="sar">
     <div class="bolum-bas" data-gr>
-      <p class="g-etiket">Tanım ve sınır</p>
+      <p class="g-etiket">Ne yapar, ne yapmaz</p>
       <h2>Polinükleotid (somon DNA) nedir, neyin yerine geçmez?</h2>
       <p class="giris">Adındaki “DNA” sözcüğü, bu uygulamanın olduğundan farklı, hatta genetik bir işlem gibi algılanmasına yol açabiliyor. Ne olduğunu ve ne olmadığını ayrı ayrı yazdık.</p>
     </div>
@@ -76,7 +76,7 @@ module.exports = {
 <section class="bolum bolum--sicak">
   <div class="sar">
     <div class="bolum-bas" data-gr>
-      <p class="g-etiket">Planlama ve seyir</p>
+      <p class="g-etiket">Plan ve seyir</p>
       <h2>Program nasıl planlanır, uygulamadan sonra neler beklenir?</h2>
       <p class="giris">İlk görüşmede uygulama yapılacağı varsayılmaz. Öykünüzün, kullandığınız ilaçların ve cildinizin durumunun ayrıntılı değerlendirilmesi, planın kendisi kadar önemlidir.</p>
     </div>
@@ -86,13 +86,13 @@ module.exports = {
         <p><b style="color:var(--murekkep)">İşlem günü</b><br>Bölgeye dokunmamanız ve makyaj yapmamanız; sauna, hamam ve yoğun spora 24 saat ara vermeniz istenir.</p>
       </div>
       <div class="g-kutu g-b2" data-gr style="--d:70ms">
-        <span class="g-ket">İyileşme seyri</span>
+        <span class="g-ket">Toparlanma</span>
         <div class="g-cubuk"><small><span>Kızarıklık, küçük kabarıklık</span><span>İlk gün</span></small><div class="g-ciz"><b class="g-cubuk-mavi" data-gw="18%"></b></div></div>
         <div class="g-cubuk"><small><span>İnce deride ödem</span><span>Birkaç gün</span></small><div class="g-ciz"><b class="g-cubuk-petrol" data-gw="46%"></b></div></div>
         <div class="g-cubuk"><small><span>Değerlendirme</span><span>Kontrol randevusunda</span></small><div class="g-ciz"><b class="g-cubuk-bakir" data-gw="88%"></b></div></div>
         <p style="font-size:.72rem;color:var(--sessiz);margin-top:10px">Çubuklar oransal bir simgedir; size özel takvim muayenede netleşir.</p>
       </div>
-      <div class="g-kutu g-b2" data-gr style="--d:140ms"><span class="g-ket">Protokol</span>
+      <div class="g-kutu g-b2" data-gr style="--d:140ms"><span class="g-ket">Adım adım</span>
         <ol class="g-protokol">
           <li>Muayene ve öykü: kullandığınız ilaçlar, süregelen hastalıklar, gebelik</li>
           <li>Cildin yakından incelenmesi: doku, ince çizgi, göz çevresi derisi</li>
@@ -101,9 +101,9 @@ module.exports = {
           <li>Uygulama, bakım önerileri ve <a href="${r}uygulamalar/uygulama-sonrasi-takip/">takip</a></li>
         </ol>
       </div>
-      <div class="g-kutu g-b2 g-kutu--gece" data-gr><span class="g-ket">İlke</span><p>“Bir ürünü adıyla değil, içeriğiyle ve sizin cildinizle birlikte değerlendiririz.”</p></div>
+      <div class="g-kutu g-b2 g-kutu--gece" data-gr><span class="g-ket">Hekimin notu</span><p>“Bir ürünü adıyla değil, içeriğiyle ve sizin cildinizle birlikte değerlendiririz.”</p></div>
       <div class="g-kutu g-b2 g-kutu--gorsel" data-gr style="--d:70ms"><img src="${r}varliklar/gorsel/uyg-somon-dna-polinukleotid-2.webp" alt="Nemi simgeleyen su dokusu" loading="lazy"><span class="g-ainot">Temsilî görsel · yapay zekâ ile üretildi</span></div>
-      <div class="g-kutu g-b2 g-kutu--cta" data-gr style="--d:140ms"><h3>Cildinizi birlikte değerlendirelim</h3><p>Karar, muayene ve öykünüz tamamlandıktan sonra verilir.</p><a class="dgm dgm--altin" href="${r}iletisim/">Randevu talebi</a></div>
+      <div class="g-kutu g-b2 g-kutu--cta" data-gr style="--d:140ms"><h3>Cildinizi birlikte değerlendirelim</h3><p>Karar, muayene ve öykünüz tamamlandıktan sonra verilir.</p><a class="dgm dgm--altin" href="${r}iletisim/">Randevu isteyin</a></div>
       <div class="kutu kutu--uyari g-b4" data-gr>
         <b>Hangi durumlarda uygulanmaz, hangilerinde ertelenir?</b>
         <ul>
@@ -129,7 +129,7 @@ module.exports = {
 <section class="bolum">
   <div class="sar">
     <div class="bolum-bas" data-gr>
-      <p class="g-etiket">Zamanlama</p>
+      <p class="g-etiket">Ne zaman</p>
       <h2>Program kaç seans sürer, etkisi ne kadar kalır?</h2>
       <p class="giris">Polinükleotid uygulaması tek seansla sınırlı düşünülmez; birkaç seanstan oluşan bir dizi olarak planlanır. Kaç seans yapılacağına ve seansların ne sıklıkta olacağına, uygulanan bölge ve cildinizin ilk seansa verdiği yanıt görüldükten sonra hekim karar verir; herkese aynı sayı önerilmez. Kazanımın ne kadar kalacağını önceden kestirmek mümkün değildir: yaş, deri kalınlığı, güneşle temas, sigara ve genel sağlık durumu bu süreyi değiştirir. Bazı kişilerde belirgin bir değişiklik görülmeyebilir ve bu da olası sonuçlardan biridir. Onay verirseniz, değişikliği izlenime bırakmamak için aynı ışık ve açıyla fotoğraf kaydı alınır.</p>
     </div>

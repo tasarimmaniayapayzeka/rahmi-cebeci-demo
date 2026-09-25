@@ -12,11 +12,11 @@ module.exports = {
   <div class="sar">
     <div>
       <nav class="kirinti" aria-label="Konum" style="position:relative;font-size:.76rem;color:var(--sessiz);display:flex;gap:7px;margin-bottom:18px"><a href="${r}" style="color:var(--sessiz);text-decoration:none">Ana sayfa</a> › <a href="${r}uygulamalar/" style="color:var(--sessiz);text-decoration:none">Uygulamalar</a> › <span>Sıvı yüz germe</span></nav>
-      <p class="g-etiket">Enjeksiyon Uygulamaları · Bütüncül Planlama</p>
+      <p class="g-etiket">Enjeksiyonla Yapılanlar · Bütüncül Planlama</p>
       <h1>Tek bölge değil, <span class="g-isik">yüzün bütünü</span> planlanır</h1>
       <p class="g-hero__alt">“Sıvı yüz germe” (liquid facelift), yüzün birden çok noktasına aynı plan içinde hyalüronik asit dolgu ve gerektiğinde destekleyici uygulamalar yapılmasını anlatan halk arasındaki addır. Amaç, zamanla dağılan desteği birkaç kilit noktadan toparlayarak yüzün daha dinlenmiş görünmesine katkı sağlamaktır. Cerrahi yüz germenin yerini tutmaz; deri fazlalığı belirgin olan kişilerde cerrahi değerlendirme önerilir.</p>
       <div class="g-hero__cta">
-        <a class="dgm dgm--bir" href="${r}iletisim/">Randevu talebi</a>
+        <a class="dgm dgm--bir" href="${r}iletisim/">Randevu isteyin</a>
         <a class="dgm dgm--iki" href="#nedir">Kimler için uygun ↓</a>
       </div>
       <div class="g-tikler"><span><i></i>Tek plan, aşamalı seanslar</span><span><i></i>Cerrahinin yerini tutmaz</span><span><i></i>Kontrol planın parçası</span></div>
@@ -42,7 +42,7 @@ module.exports = {
 <section class="bolum bolum--buz2" id="nedir">
   <div class="sar">
     <div class="bolum-bas" data-gr>
-      <p class="g-etiket">Tanım ve sınırlar</p>
+      <p class="g-etiket">Ne yapar, ne yapmaz</p>
       <h2>Sıvı yüz germe nedir, cerrahi yüz germeden farkı nedir?</h2>
       <p class="giris">Yaş ilerledikçe yüzde tek bir değişiklik olmaz: kemik desteği azalır, yağ bölmeleri incelir ve aşağı doğru yer değiştirir, deri esnekliğini yitirir. Tek bir çizgiye odaklanan uygulama bu tabloyu çoğu zaman karşılamaz. Bu yaklaşımda yüz bütün olarak incelenir ve desteğin en çok azaldığı noktalar tek plan içinde, öncelik sırasıyla ele alınır.</p>
     </div>
@@ -90,7 +90,7 @@ module.exports = {
 <section class="bolum">
   <div class="sar">
     <div class="bolum-bas" data-gr>
-      <p class="g-etiket">Süreç</p>
+      <p class="g-etiket">Akış</p>
       <h2>Çok bölgeli plan adım adım nasıl kurulur?</h2>
       <p class="giris">Bütün bölgeler aynı gün ele alınmaz. Önce yüzün taşıyıcı noktaları desteklenir; ödem çekilip sonuç görüldükten sonra bir sonraki basamağa geçilir.</p>
     </div>
@@ -106,7 +106,7 @@ module.exports = {
         <div class="g-cubuk"><small><span>Sonraki basamak</span><span>Alt yüz ve ince ayar</span></small><div class="g-ciz"><b class="g-cubuk-bakir" data-gw="95%"></b></div></div>
         <p style="font-size:.72rem;color:var(--sessiz);margin-top:10px">Çubuklar oransal bir simgedir; size özel takvim muayenede netleşir.</p>
       </div>
-      <div class="g-kutu g-b2" data-gr style="--d:140ms"><span class="g-ket">Protokol</span>
+      <div class="g-kutu g-b2" data-gr style="--d:140ms"><span class="g-ket">Adım adım</span>
         <ol class="g-protokol">
           <li>Öykü: önceki dolgular ve ürünleri, ilaçlar, kronik hastalıklar ve bilinen duyarlılıklar kaydedilir.</li>
           <li>Bütüncül yüz analizi: yüz önden, yandan ve hareket hâlinde incelenir; onay verirseniz aynı ışık ve açıyla fotoğraf kaydı alınır.</li>
@@ -137,8 +137,8 @@ module.exports = {
         <p>Önceki uygulamalarınıza ait belge ve fotoğraflar, planın hangi noktadan başlayacağını belirlemede yol gösterir.</p>
       </div>
       <div class="g-kutu g-b2 g-kutu--gorsel" data-gr style="--d:70ms"><img src="${r}varliklar/gorsel/uyg-sivi-yuz-germe-2.webp" alt="Elmacık, şakak ve çene hattını yumuşak ışıkla gösteren yüz" loading="lazy"><span class="g-ainot">Temsilî görsel · yapay zekâ ile üretildi</span></div>
-      <div class="g-kutu g-b3 g-kutu--gece" data-gr><span class="g-ket">İlke</span><p>“Bütün yüze bakmak, her yere ürün vermek demek değildir. Çoğu planda birkaç doğru nokta yeterlidir.”</p></div>
-      <div class="g-kutu g-b3 g-kutu--cta" data-gr style="--d:70ms"><h3>Yüzünüzü bütün olarak değerlendirelim</h3><p>Planın kapsamı ve sırası muayeneden sonra netleşir.</p><a class="dgm dgm--altin" href="${r}iletisim/">Randevu talebi</a></div>
+      <div class="g-kutu g-b3 g-kutu--gece" data-gr><span class="g-ket">Hekimin notu</span><p>“Bütün yüze bakmak, her yere ürün vermek demek değildir. Çoğu planda birkaç doğru nokta yeterlidir.”</p></div>
+      <div class="g-kutu g-b3 g-kutu--cta" data-gr style="--d:70ms"><h3>Yüzünüzü bütün olarak değerlendirelim</h3><p>Planın kapsamı ve sırası muayeneden sonra netleşir.</p><a class="dgm dgm--altin" href="${r}iletisim/">Randevu isteyin</a></div>
     </div>
   </div>
 </section>
@@ -147,7 +147,7 @@ module.exports = {
 <section class="bolum bolum--sicak">
   <div class="sar">
     <div class="bolum-bas" data-gr>
-      <p class="g-etiket">Riskler</p>
+      <p class="g-etiket">Dikkat edilecekler</p>
       <h2>Çok bölgeli uygulamadan sonra neler görülebilir, ne zaman beklemeden başvurulur?</h2>
       <p class="giris">Birden çok bölge ele alındığında her bölgenin kendi riskleri geçerlidir; toplam miktar arttıkça ödem ve düzensizlik olasılığı da artabilir. Planın seanslara bölünmesinin bir nedeni de budur.</p>
     </div>
@@ -179,16 +179,16 @@ module.exports = {
 <section class="bolum bolum--buz2">
   <div class="sar">
     <div class="bolum-bas" data-gr>
-      <p class="g-etiket">Zamanlama</p>
+      <p class="g-etiket">Ne zaman</p>
       <h2>Plan kaç seansa yayılır, etkisi ne kadar sürer?</h2>
     </div>
     <div class="izgara izgara--3" data-gr>
       <div class="kart kart--duz">
-        <h4>Seans düzeni</h4>
+        <h4>Seans aralıkları</h4>
         <p>Toplam plan çoğunlukla birkaç seansa bölünür ve aralarında ödemin çekilmesi için birkaç hafta bırakılır. Seans sayısı baştan sabitlenmez; her kontrolde bir sonraki basamağın gerekip gerekmediğine yeniden karar verilir.</p>
       </div>
       <div class="kart kart--duz">
-        <h4>Kalıcılık</h4>
+        <h4>Etki ne kadar sürer</h4>
         <p>Ürünlerin dokuda kalma süresi bölgeden bölgeye değişir; sürekli hareket eden ağız çevresinde daha kısa, derin ve görece hareketsiz elmacık bölgesinde daha uzun olabilir. Etki tek seferde değil, bölge bölge ve yavaş yavaş azalır.</p>
       </div>
       <div class="kart kart--duz">

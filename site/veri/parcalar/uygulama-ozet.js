@@ -1,5 +1,5 @@
 /* Uygulama özetleri — site.js katalogundaki 22 uygulamanın her biri için
-   bir kayıt (anahtar = katalog slug'ı). Uygulama karşılaştırma masasını ve
+   bir kayıt (anahtar = katalog slug'ı). Yan yana karşılaştır masasını ve
    yolculuk simülatörünü besler. Parasal bilgi içermez; iddia değil genel bilgi
    dilindedir, her süre ve etki kişiye göre değişir. */
 module.exports = {
@@ -320,7 +320,7 @@ module.exports = {
   },
   "uygulama-sonrasi-takip": {
     "slug": "uygulama-sonrasi-takip",
-    "ad": "Uygulama sonrası takip",
+    "ad": "Uygulama sonrası kontrol",
     "hedef": "İyileşmeyi planlı biçimde izlemek ve beklenmeyen bir bulguyu erken yakalamak",
     "his": "Bir işlem değil kontrol görüşmesidir; bölge incelenir ve evdeki bakım düzeni gözden geçirilir.",
     "iyilesme": "Genellikle önce kızarıklık ve şişlik, sonra kabuklar, en son renk farkları geriler; bu sıra kontrolde izlenir.",

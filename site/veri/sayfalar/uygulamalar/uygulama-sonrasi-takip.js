@@ -3,20 +3,20 @@ const S = require('../../site');
 module.exports = {
   slug: 'uygulamalar/uygulama-sonrasi-takip',
   tip: 'tibbi',
-  baslik: 'Uygulama sonrası takip: kontrol randevusu ve iyileşme',
-  aciklama: 'Uygulama sonrası takipte iyileşmenin seyri kontrol edilir, bakım düzeni gözden geçirilir ve gecikmiş bir bulgu erken yakalanır; kontrol, planın bir parçasıdır.',
+  baslik: 'Uygulama sonrası kontrol: randevular ve iyileşmenin izlenmesi',
+  aciklama: 'Uygulama sonrası kontrolde iyileşmenin seyri izlenir, bakım düzeni gözden geçirilir ve gecikmiş bir bulgu erken yakalanır; kontrol, planın bir parçasıdır.',
 
   icerik: (r, ik) => `
 <!-- ═════ HERO ═════ -->
 <section class="g-hero">
   <div class="sar">
     <div>
-      <nav class="kirinti" aria-label="Konum" style="position:relative;font-size:.76rem;color:var(--sessiz);display:flex;gap:7px;margin-bottom:18px"><a href="${r}" style="color:var(--sessiz);text-decoration:none">Ana sayfa</a> › <a href="${r}uygulamalar/" style="color:var(--sessiz);text-decoration:none">Uygulamalar</a> › <span>Uygulama sonrası takip</span></nav>
+      <nav class="kirinti" aria-label="Konum" style="position:relative;font-size:.76rem;color:var(--sessiz);display:flex;gap:7px;margin-bottom:18px"><a href="${r}" style="color:var(--sessiz);text-decoration:none">Ana sayfa</a> › <a href="${r}uygulamalar/" style="color:var(--sessiz);text-decoration:none">Uygulamalar</a> › <span>Uygulama sonrası kontrol</span></nav>
       <p class="g-etiket">Değerlendirme ve Takip · Kontrol</p>
-      <h1>Uygulama sonrası takip: <span class="g-isik">iyileşmeyi birlikte izlemek</span></h1>
-      <p class="g-hero__alt">Uygulama sonrası takip, işlemden sonraki iyileşmenin önceden belirlenmiş kontrollerle izlenmesidir. Kontrolde iyileşmenin zamanında ilerleyip ilerlemediği değerlendirilir, evdeki bakım adımları birlikte gözden geçirilir ve beklenmeyen bir bulgu varsa büyümeden ele alınır. Takibi uygulamayı yapan hekim yürütür; kontrol, planın ayrı düşünülemeyecek bir parçasıdır.</p>
+      <h1>Uygulama sonrası kontrol: <span class="g-isik">iyileşmeyi birlikte izlemek</span></h1>
+      <p class="g-hero__alt">Uygulama sonrası kontrol, işlemden sonraki iyileşmenin önceden belirlenmiş kontrollerle izlenmesidir. Kontrolde iyileşmenin zamanında ilerleyip ilerlemediği değerlendirilir, evdeki bakım adımları birlikte gözden geçirilir ve beklenmeyen bir bulgu varsa büyümeden ele alınır. Takibi uygulamayı yapan hekim yürütür; kontrol, planın ayrı düşünülemeyecek bir parçasıdır.</p>
       <div class="g-hero__cta">
-        <a class="dgm dgm--bir" href="${r}iletisim/">Randevu talebi</a>
+        <a class="dgm dgm--bir" href="${r}iletisim/">Randevu isteyin</a>
         <a class="dgm dgm--iki" href="#ilkbolum">Seyrini okuyun ↓</a>
       </div>
       <div class="g-tikler"><span><i></i>Yazılı bakım talimatı</span><span><i></i>Gerekirse randevu öne alınır</span><span><i></i>Her adım dosyaya işlenir</span></div>
@@ -40,7 +40,7 @@ module.exports = {
 <!-- ═════ NEDİR / NE DEĞİLDİR ═════ -->
 <section class="bolum bolum--buz2" id="ilkbolum">
   <div class="sar">
-    <div class="bolum-bas" data-gr><p class="g-etiket">Tanım ve sınırlar</p><h2>Kontrolde neye bakılır, takip neyin yerini tutmaz?</h2><p class="giris">Deri, bir işlemin ardından çoğunlukla aynı düzeni izleyerek iyileşir: önce kızarıklık ve şişlik azalır, ardından kabuklar düşer, renk farkları en son kaybolur.</p></div>
+    <div class="bolum-bas" data-gr><p class="g-etiket">Ne yapar, ne yapmaz</p><h2>Kontrolde neye bakılır, takip neyin yerini tutmaz?</h2><p class="giris">Deri, bir işlemin ardından çoğunlukla aynı düzeni izleyerek iyileşir: önce kızarıklık ve şişlik azalır, ardından kabuklar düşer, renk farkları en son kaybolur.</p></div>
     <div class="izgara izgara--2">
       <div class="kutu kutu--bilgi" data-gr>
         <b>Bu nedir</b>
@@ -59,7 +59,7 @@ module.exports = {
 <!-- ═════ BENTO ═════ -->
 <section class="bolum bolum--sicak">
   <div class="sar">
-    <div class="bolum-bas" data-gr><p class="g-etiket">Plan</p><h2>Takip hangi adımlarla ilerler?</h2></div>
+    <div class="bolum-bas" data-gr><p class="g-etiket">Yol haritası</p><h2>Takip hangi adımlarla ilerler?</h2></div>
     <div class="g-bento">
       <div class="g-kutu g-b2 g-donutkap" data-gr>
         <div class="g-donut"><svg viewBox="0 0 100 100" width="100" height="100"><circle class="g-iz" cx="50" cy="50" r="45"/><circle class="g-dol" data-gyuzde="66" cx="50" cy="50" r="45"/><circle class="g-kom" cx="50" cy="50" r="45"/></svg><b>3 amaç</b></div>
@@ -72,7 +72,7 @@ module.exports = {
         <div class="g-cubuk"><small><span>UZUN İZLEM</span><span>Aylar</span></small><div class="g-ciz"><b class="g-cubuk-bakir" data-gw="92%"></b></div></div>
         <p style="font-size:.7rem;color:var(--sessiz);margin-top:8px">Çubuk boyları yalnız karşılaştırma içindir; zamanlama yapılan uygulamaya göre belirlenir.</p>
       </div>
-      <div class="g-kutu g-b2" data-gr style="--d:140ms"><span class="g-ket">PROTOKOL</span>
+      <div class="g-kutu g-b2" data-gr style="--d:140ms"><span class="g-ket">Adım adım</span>
         <ol class="g-protokol">
           <li>Uygulama günü: yazılı bakım ve uyarı bilgisi verilir</li>
           <li>İlk günler: bir sorun sezerseniz arayın, kontrol öne çekilir</li>
@@ -82,11 +82,11 @@ module.exports = {
           <li>Kayıt: işlem, kullanılan ürün, bölge ve tarih dosyanıza işlenir</li>
         </ol>
       </div>
-      <div class="g-kutu g-b2 g-kutu--gece" data-gr><span class="g-ket">İLKE</span><p>"İyi bir plan, kontrol tarihini de içerir."</p></div>
-      <div class="g-kutu g-b2" data-gr style="--d:70ms"><span class="g-ket">BEKLENEN SEYİR</span>
+      <div class="g-kutu g-b2 g-kutu--gece" data-gr><span class="g-ket">Hekimin notu</span><p>"İyi bir plan, kontrol tarihini de içerir."</p></div>
+      <div class="g-kutu g-b2" data-gr style="--d:70ms"><span class="g-ket">OLAĞAN SEYİR</span>
         <p style="font-size:.92rem">İlk günlerde kızarıklık ve hafif şişlik görülür, sonra giderek azalır; bazı işlemlerden sonra ince pullanma ya da noktasal kabuklar oluşabilir. Bölgede bir süre hassasiyet ve gerginlik hissedilebilir. Bulgular her gün biraz daha hafifliyorsa seyir beklenen yöndedir. Yeni bir yakınma başlarsa hangi gün başladığını ve aynı dönemde neler olduğunu (yeni bir ilaç, enfeksiyon, aşı, diş tedavisi) not alın; değerlendirmenin yönünü bu bilgiler belirler.</p>
       </div>
-      <div class="g-kutu g-b2" data-gr style="--d:140ms"><span class="g-ket">DEĞERLENDİRME GEREKTİRENLER</span>
+      <div class="g-kutu g-b2" data-gr style="--d:140ms"><span class="g-ket">HEKİME HABER VERİN</span>
         <p style="font-size:.92rem">Azalması gerekirken artan kızarıklık, geç başlayan ya da tekrarlayan şişlik, elle fark edilen sertlik, koyulaşan veya açılan renkli alanlar, beklenenden uzun süren kabuklar ve kalıcı iz olasılığını düşündüren bulgular. Retinoid ya da asit içeren ürünlere yeniden başlamanın zamanı kontrolde birlikte belirlenir ve adım adım ilerlenir; kolay tahriş olan bir ciltte aynı anda yalnızca tek bir ürün değiştirilir.</p>
       </div>
       <div class="kutu kutu--uyari g-b4" data-gr>
@@ -102,7 +102,7 @@ module.exports = {
         </ul>
       </div>
       <div class="g-kutu g-b2 g-kutu--gorsel" data-gr><img src="${r}varliklar/gorsel/uyg-yara-bakimi-ve-pansuman.webp" alt="Uygulama sonrası bakımda kullanılan steril gazlı bez ve bant" loading="lazy"><span class="g-ainot">Temsilî görsel · yapay zekâ ile üretildi</span></div>
-      <div class="g-kutu g-b2 g-kutu--cta" data-gr><h3>Kontrol tarihinizi belirleyelim</h3><p>Kontrol ayrı bir işlem değil, planın bir parçasıdır.</p><a class="dgm dgm--altin" href="${r}iletisim/">Randevu talebi</a></div>
+      <div class="g-kutu g-b2 g-kutu--cta" data-gr><h3>Kontrol tarihinizi belirleyelim</h3><p>Kontrol ayrı bir işlem değil, planın bir parçasıdır.</p><a class="dgm dgm--altin" href="${r}iletisim/">Randevu isteyin</a></div>
     </div>
   </div>
 </section>

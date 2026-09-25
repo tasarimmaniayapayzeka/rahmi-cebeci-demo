@@ -17,7 +17,7 @@ module.exports = {
       <h1>Dökülen saçta ilk soru: <span class="g-isik">neden?</span></h1>
       <p class="g-hero__alt">Saç dökülmesi kalıtsal yatkınlıktan, geçirilen bir hastalık ya da doğumdan, demir eksikliğinden ya da tiroid bozukluğundan kaynaklanabilir. Aynada hepsi benzer görünür; oysa her birinin yolu farklıdır. Bu yüzden önce sizi muayene eder, öykünüzü dinler ve gerekirse tahlil isteriz; nedeni belli olmayan bir dökülmede seans serisine başlamayız.</p>
       <div class="g-hero__cta">
-        <a class="dgm dgm--bir" href="${r}iletisim/">Randevu talebi</a>
+        <a class="dgm dgm--bir" href="${r}iletisim/">Randevu isteyin</a>
         <a class="dgm dgm--iki" href="#neden">Önce neden, sonra plan ↓</a>
       </div>
       <div class="g-tikler"><span><i></i>Uygulamayı hekim yapar</span><span><i></i>Gerekirse tahlil</span><span><i></i>Üçüncü ayda değerlendirme</span></div>
@@ -41,7 +41,7 @@ module.exports = {
 <!-- 3 ── NEDEN ÖNCE TANI -->
 <section class="bolum" id="neden">
   <div class="sar">
-    <div class="bolum-bas" data-gr><p class="g-etiket">Yaklaşım</p><h2>Saçlı derideki işlemden önce neden tanı gerekir?</h2></div>
+    <div class="bolum-bas" data-gr><p class="g-etiket">Bakış açısı</p><h2>Saçlı derideki işlemden önce neden tanı gerekir?</h2></div>
     <div class="izgara izgara--2">
       <div class="kutu kutu--bilgi" data-gr>
         <b>Dökülme bir işarettir</b>
@@ -58,7 +58,7 @@ module.exports = {
 <!-- 4 ── ATLAS -->
 <section class="bolum bolum--buz2">
   <div class="sar">
-    <div class="bolum-bas" data-gr><p class="g-etiket">Bölge atlası</p><h2>En sık karşılaşılan dökülme türleri nelerdir?</h2><p class="giris">Muayenede önce dökülmenin saçlı derinin neresinde yoğunlaştığına, ne zamandır sürdüğüne ve nasıl ilerlediğine bakarız. Aşağıda en sık karşılaştığımız türleri bulacaksınız; kimi kişide bunlardan birkaçı birlikte görülür.</p></div>
+    <div class="bolum-bas" data-gr><p class="g-etiket">Katman katman bölge</p><h2>En sık karşılaşılan dökülme türleri nelerdir?</h2><p class="giris">Muayenede önce dökülmenin saçlı derinin neresinde yoğunlaştığına, ne zamandır sürdüğüne ve nasıl ilerlediğine bakarız. Aşağıda en sık karşılaştığımız türleri bulacaksınız; kimi kişide bunlardan birkaçı birlikte görülür.</p></div>
     <div class="g-atlas-duzen">
       <div class="g-atlas" data-gr>
         <div class="g-atlas-kap">
@@ -69,19 +69,19 @@ module.exports = {
       </div>
       <div data-gr style="--d:80ms">
         <div class="g-katblok" data-gkat="a">
-          <span class="g-kno">01</span>
+          <span class="g-kno">Kesit 01</span>
           <h3>Androgenetik dökülme</h3>
           <p>Aileden gelen yatkınlıkla ortaya çıkar; saç telleri her döngüde biraz daha incelir ve kısalır. Erkeklerde alın hattı geriler ve tepe seyrelir; kadınlarda ise saçın ortadan ayrıldığı çizgi giderek genişler. Yıllar içinde yavaşça ilerlediği için plan da uzun soluklu yapılır.</p>
           <div class="g-haplar"><a href="${r}uygulamalar/sac-mezoterapisi/">Saç mezoterapisi</a><a href="${r}uygulamalar/sac-prp/">Saç PRP</a><a href="${r}uygulamalar/eksozom/#sac">Saçlı deride eksozom</a></div>
         </div>
         <div class="g-katblok" data-gkat="b">
-          <span class="g-kno">02</span>
+          <span class="g-kno">Kesit 02</span>
           <h3>Telogen effluvium</h3>
           <p>Yüksek ateşli bir hastalık, ameliyat, doğum, hızlı kilo kaybı ya da ağır bir stres döneminden iki–dört ay sonra başlayan, saçlı derinin her yerine yayılan geçici bir dökülmedir. Neden ortadan kalktıktan sonra birkaç ay içinde çoğu kişide dökülme kendi kendine azalır.</p>
           <div class="g-haplar"><a href="${r}cilt-sorunlari/sac-dokulmesi/">Saç dökülmesi</a></div>
         </div>
         <div class="g-katblok" data-gkat="c">
-          <span class="g-kno">03</span>
+          <span class="g-kno">Kesit 03</span>
           <h3>Eksiklikler, genel hastalıklar ve saçlı deri sorunları</h3>
           <p>Demir, B12 vitamini ya da tiroid hormonu dengesindeki bir sorun, saçın büyüme döngüsünü doğrudan bozar. Böyle bir tabloda önce eksiklik giderilir; eksiklik sürdükçe saçlı deriye yapılan hiçbir işlem beklenen katkıyı sağlamaz.</p>
           <p>Seboreik dermatit, sedef, saçlı derinin mantar enfeksiyonu ve iz bırakarak ilerleyen dökülmeler çoğunlukla kaşıntı, kızarıklık ya da kepekle birlikte seyreder. Önce hastalığın kendisi tedavi edilir; iz bırakan bir dökülmeden şüpheleniliyorsa estetik amaçlı işlem yapılmaz.</p>
@@ -96,7 +96,7 @@ module.exports = {
 <!-- 5 ── MATRİS -->
 <section class="bolum">
   <div class="sar">
-    <div class="bolum-bas" data-gr><p class="g-etiket">Uygulamalar</p><h2>Saçlı deri için hangi seçenekler konuşulabilir?</h2><p class="giris">Buradaki adımlar, dökülmenin nedeni bulunmuş ve uygun olduğu görülmüş kişilerde gündeme gelir. Her biri hekimin çizdiği ana planı destekleyen birer yardımcıdır, kendi başına bir çözüm değildir. Saç nakli ve öteki cerrahi yöntemler muayenehanede yapılmaz.</p></div>
+    <div class="bolum-bas" data-gr><p class="g-etiket">Uygulama dizini</p><h2>Saçlı deri için hangi seçenekler konuşulabilir?</h2><p class="giris">Buradaki adımlar, dökülmenin nedeni bulunmuş ve uygun olduğu görülmüş kişilerde gündeme gelir. Her biri hekimin çizdiği ana planı destekleyen birer yardımcıdır, kendi başına bir çözüm değildir. Saç nakli ve öteki cerrahi yöntemler muayenehanede yapılmaz.</p></div>
     <div class="g-matris">
       <div class="g-mtab" data-gr>
         <div class="g-mbas"><span>Yöntem</span><span>Amaç</span><span>Toparlanma</span><span></span></div>
@@ -104,7 +104,7 @@ module.exports = {
         <a class="g-msatir" href="${r}uygulamalar/sac-prp/" data-gg="${r}varliklar/gorsel/uyg-sac-prp.webp" data-gb="Saç PRP" data-ga="Kendi kanınızdan ayrıştırılan, trombositten zengin plazmanın saçlı deriye uygulanmasıdır. Kansızlık, pıhtılaşma sorunları ve bazı ilaçlar planı değiştirir."><h4>Saç PRP</h4><span class="g-hucre"><i class="g-kcip g-kcip--3">KENDİ KANINIZ</i></span><span class="g-hucre">Çoğunlukla ertesi gün</span><span class="g-git">→</span></a>
         <a class="g-msatir" href="${r}uygulamalar/eksozom/#sac" data-gg="${r}varliklar/gorsel/uyg-eksozom.webp" data-gb="Saçlı deride eksozom" data-ga="Hücrelerin birbirine gönderdiği sinyal moleküllerinden yararlanır; seçilmiş durumlarda konuşulur ve bilimsel kanıtın bugün hangi düzeyde olduğu size açıkça anlatılır."><h4>Saçlı deride eksozom</h4><span class="g-hucre"><i class="g-kcip g-kcip--1">YARDIMCI</i></span><span class="g-hucre">Muayenede belirlenir</span><span class="g-git">→</span></a>
         <a class="g-msatir" href="${r}uygulamalar/hekim-muayenesi/" data-gg="${r}varliklar/gorsel/uyg-hekim-muayenesi.webp" data-gb="Hekim muayenesi" data-ga="Her uygulamadan önce atılması zorunlu adımdır; dökülmenin dağılımı, ne zamandır sürdüğü ve ailenizdeki benzer durumlar burada konuşulur."><h4>Hekim muayenesi</h4><span class="g-hucre"><i class="g-kcip g-kcip--1">BAŞLANGIÇ</i></span><span class="g-hucre">Aynı gün</span><span class="g-git">→</span></a>
-        <a class="g-msatir" href="${r}uygulamalar/uygulama-sonrasi-takip/" data-gg="${r}varliklar/gorsel/uyg-uygulama-sonrasi-takip.webp" data-gb="Uygulama sonrası takip" data-ga="Saçta yanıt aylar içinde ölçülür. Her kontrolde aynı ışık ve açıyla alınan kayıtlar, izlenime dayalı yorumların önüne geçer."><h4>Uygulama sonrası takip</h4><span class="g-hucre"><i class="g-kcip g-kcip--1">TAKİP</i></span><span class="g-hucre">Aylara yayılır</span><span class="g-git">→</span></a>
+        <a class="g-msatir" href="${r}uygulamalar/uygulama-sonrasi-takip/" data-gg="${r}varliklar/gorsel/uyg-uygulama-sonrasi-takip.webp" data-gb="Uygulama sonrası kontrol" data-ga="Saçta yanıt aylar içinde ölçülür. Her kontrolde aynı ışık ve açıyla alınan kayıtlar, izlenime dayalı yorumların önüne geçer."><h4>Uygulama sonrası kontrol</h4><span class="g-hucre"><i class="g-kcip g-kcip--1">TAKİP</i></span><span class="g-hucre">Aylara yayılır</span><span class="g-git">→</span></a>
       </div>
       <div class="g-onizle" data-gonizle data-gr><div class="g-gor"><img src="${r}varliklar/gorsel/uyg-sac-mezoterapisi.webp" alt=""></div><div class="g-ic"><h4>Saç mezoterapisi</h4><p>Saçlı derinin üst katmanına, vitamin, mineral ve aminoasit içeren karışımlar küçük noktalar hâlinde verilir; haftalar arayla bir seri olarak sürdürülür.</p><a class="dgm dgm--iki" href="${r}uygulamalar/sac-mezoterapisi/">Sayfasına git →</a></div></div>
     </div>
@@ -114,7 +114,7 @@ module.exports = {
 <!-- 6 ── PLAN + SINIRLAR -->
 <section class="bolum bolum--sicak">
   <div class="sar">
-    <div class="bolum-bas" data-gr><p class="g-etiket">Süreç</p><h2>Saçlı deri için plan hangi adımlarla ilerler?</h2><p class="giris">İlk görüşmede işlem yapılacağını varsaymayın. Saç dökülmesinde en yaygın yanlış, nedeni aramadan seanslara geçmektir.</p></div>
+    <div class="bolum-bas" data-gr><p class="g-etiket">Akış</p><h2>Saçlı deri için plan hangi adımlarla ilerler?</h2><p class="giris">İlk görüşmede işlem yapılacağını varsaymayın. Saç dökülmesinde en yaygın yanlış, nedeni aramadan seanslara geçmektir.</p></div>
     <div class="g-bento">
       <div class="g-kutu g-b3" data-gr><span class="g-ket">ADIMLAR</span>
         <ol class="g-protokol">
@@ -124,7 +124,7 @@ module.exports = {
           <li><b>Üçüncü ay kontrolü:</b> uygun görülen uygulama seri hâlinde planlanır ve çoğunlukla üçüncü ayın sonunda yanıtına bakılır. Belirgin bir yanıt yoksa seriyi uzatmayız.</li>
         </ol>
       </div>
-      <div class="g-kutu g-b3 g-kutu--gece" data-gr style="--d:80ms"><span class="g-ket">İLKE</span><p>&#8220;Nedeni bilinmeyen bir dökülmede seriye başlamayız; uygulama, değerlendirmenin yerine değil ardından gelir.&#8221;</p></div>
+      <div class="g-kutu g-b3 g-kutu--gece" data-gr style="--d:80ms"><span class="g-ket">Hekimin notu</span><p>&#8220;Nedeni bilinmeyen bir dökülmede seriye başlamayız; uygulama, değerlendirmenin yerine değil ardından gelir.&#8221;</p></div>
       <div class="kutu kutu--uyari g-b4" data-gr style="--d:140ms">
         <b>Kimlere yapılmaz ya da ertelenir?</b>
         <ul>
@@ -138,7 +138,7 @@ module.exports = {
           <li><b>Bilinen aşırı duyarlılıklar:</b> lokal anestezik, antiseptik ya da daha önce denediğiniz bir karışıma verdiğiniz tepkiyi muayenede anlatın.</li>
         </ul>
       </div>
-      <div class="g-kutu g-b2" data-gr style="--d:210ms"><span class="g-ket">KAPSAM</span>
+      <div class="g-kutu g-b2" data-gr style="--d:210ms"><span class="g-ket">Neyi kapsar</span>
         <p>Muayenehanede yalnızca hekimimizin uzmanlığı ve Sağlık Bakanlığı onaylı sertifikasının kapsadığı işlemler yapılır; saç ekimi ve diğer cerrahi girişimler bu çerçevede yer almaz. Gerekçesini <a href="${r}yaklasimimiz/neden-bazi-islemleri-yapmiyoruz/">neden bazı işlemleri yapmıyoruz</a> sayfasında açıkladık.</p>
       </div>
     </div>
@@ -148,7 +148,7 @@ module.exports = {
 <!-- 7 ── SONRASI + BEKLENTİ -->
 <section class="bolum">
   <div class="sar">
-    <div class="bolum-bas" data-gr><p class="g-etiket">Sonrası</p><h2>İşlemden sonraki günlerde nelere dikkat etmelisiniz?</h2></div>
+    <div class="bolum-bas" data-gr><p class="g-etiket">Uygulamadan sonra</p><h2>İşlemden sonraki günlerde nelere dikkat etmelisiniz?</h2></div>
     <div class="izgara izgara--2">
       <div class="kart kart--duz" data-gr>
         <h3>İlk günler</h3>

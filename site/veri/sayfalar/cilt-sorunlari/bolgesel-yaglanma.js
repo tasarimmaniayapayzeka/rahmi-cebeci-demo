@@ -34,29 +34,29 @@ module.exports = {
 <section class="bolum bolum--sicak" id="nedenler">
   <div class="sar">
     <div class="bolum-bas" data-gr>
-      <p class="g-etiket">Ayrım</p>
+      <p class="g-etiket">Farkı nerede</p>
       <h2>Aynada gördüğünüz dolgunluğun kaynağı ne?</h2>
       <p class="giris">Dolgun görünen her bölgede yağ dokusu bulunmayabilir. Sıvı birikimi, kas kütlesi, deri gevşekliği ve duruş bozukluğu benzer bir görüntü oluşturabilir. Bu dört olasılık birbirinden ayrılmadan işlem konuşulmaz; çünkü yanlış dokuyu hedefleyen bir uygulama sonuç vermediği gibi mevcut görünümü daha da belirginleştirebilir. Ayrım elle muayene, gün içindeki değişimin sorulması ve derinin esnekliğine bakılarak yapılır.</p>
     </div>
     <div class="g-katblok" data-gr>
-      <span class="g-kno">01</span>
+      <span class="g-kno">Kesit 01</span>
       <h3>Yağ dokusu</h3>
       <p>Bölge parmaklar arasında tutulduğunda yumuşak, kayabilen ve kenarları hissedilebilen bir doku vardır. Sabahtan akşama pek değişmez; değişimi aylar ve yıllar içinde, yavaşça olur.</p>
 <p>Yağın vücudun neresinde toplanacağını büyük ölçüde kalıtım ve hormonlar belirler; bu yüzden zayıf kişilerde de inatçı bir bölge görülebilir. Derinin hemen altındaki yağ, karın boşluğunda organları saran iç yağdan farklı bir dokudur. Deri yüzeyinden yapılan uygulamaların hiçbiri o derin yağa ulaşmaz.</p>
     </div>
     <div class="g-katblok" data-gr style="--d:60ms">
-      <span class="g-kno">02</span>
+      <span class="g-kno">Kesit 02</span>
       <h3>Ödem</h3>
       <p>Sıvı birikiminde görünüm gün içinde dalgalanır: akşam sabaha göre daha dolgundur, tuzlu bir yemekten ya da uzun süre ayakta kalmaktan sonra artar, parmakla bastırınca kısa süreli bir iz kalabilir. Burada ilk iş bir işlem değil, nedeni bulmaktır; tiroit, böbrek ve kalp işlevleriyle kullandığınız ilaçlar gözden geçirilir.</p>
       <div class="g-haplar"><a href="${r}uygulamalar/hekim-muayenesi/">Hekim muayenesi</a></div>
     </div>
     <div class="g-katblok" data-gr style="--d:120ms">
-      <span class="g-kno">03</span>
+      <span class="g-kno">Kesit 03</span>
       <h3>Deri gevşekliği</h3>
       <p>Bölge tutulduğunda kalın bir yağ katmanı yerine ince ve esnekliğini yitirmiş bir deri hissedilir. Bu durum özellikle belirgin kilo kaybından ya da gebelikten sonra ve yaş ilerledikçe ortaya çıkar. Yağ dokusuna yönelik bir uygulama böyle bir görünümü düzeltmez, hatta gevşekliği daha fark edilir kılabilir. Konu <a href="${r}cilt-sorunlari/hacim-kaybi-ve-sarkma/">hacim kaybı ve sarkma</a> başlığına ya da cerrahi bir değerlendirmeye kayar.</p>
     </div>
     <div class="g-katblok" data-gr style="--d:180ms">
-      <span class="g-kno">04</span>
+      <span class="g-kno">Kesit 04</span>
       <h3>Kas kütlesi ve duruş</h3>
       <p>Karın ve bel çevresindeki dolgunluğun bir bölümü karın duvarının gevşekliği, kas yapısı ve duruşla ilgilidir: öne eğik bir duruşta karın öne itilir ve bel yanlarında katlanma izlenimi oluşur. Doğumdan sonra karın kaslarının orta hatta ayrılması da benzer bir görüntü verebilir. Bu durumların karşılığı yağa yönelik bir uygulama değil, egzersiz ve gerekirse ilgili uzmanlık değerlendirmesidir.</p>
     </div>
@@ -77,7 +77,7 @@ module.exports = {
 <section class="bolum bolum--buz2">
   <div class="sar">
     <div class="bolum-bas" data-gr>
-      <p class="g-etiket">Sonrası</p>
+      <p class="g-etiket">Uygulamadan sonra</p>
       <h2>Ayrım netleşince hangi seçenekler konuşulur?</h2>
       <p class="giris">Gerçekçi beklenti, sınırlı bir bölgede görünümün değişmesidir. Değişim kademeli gelişir, çoğunlukla haftalar ile aylar arasında belirginleşir ve kişiden kişiye farklıdır. Belirli bir santim kaybı ya da belirli sayıda seansta belirli bir sonuç vaat edilmez; size özel plan muayeneden sonra hekim tarafından kurulur.</p>
     </div>

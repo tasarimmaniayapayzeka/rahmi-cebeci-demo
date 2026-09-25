@@ -1,5 +1,5 @@
 /* ============================================================
-   Cilt Tipi Eğilim Testi — tamamı cihazda, yalnız bellekte.
+   Cilt Eğilimi Öz Değerlendirmesi — tamamı cihazda, yalnız bellekte.
    Desen: hazirlik.js ile aynı ilkeler — puan/yüzde GÖSTERİLMEZ,
    sonuç hekim onaylı SABİT metinlerden seçilir, CTA yok,
    veri saklanmaz (çerez/localStorage yok).

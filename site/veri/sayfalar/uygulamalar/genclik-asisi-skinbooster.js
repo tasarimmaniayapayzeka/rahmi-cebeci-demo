@@ -12,11 +12,11 @@ module.exports = {
   <div class="sar">
     <div>
       <nav class="kirinti" aria-label="Konum" style="position:relative;font-size:.76rem;color:var(--sessiz);display:flex;gap:7px;margin-bottom:18px"><a href="${r}" style="color:var(--sessiz);text-decoration:none">Ana sayfa</a> › <a href="${r}uygulamalar/" style="color:var(--sessiz);text-decoration:none">Uygulamalar</a> › <span>Gençlik aşısı (skinbooster)</span></nav>
-      <p class="g-etiket">Enjeksiyon Uygulamaları · Cilt Kalitesi</p>
+      <p class="g-etiket">Enjeksiyonla Yapılanlar · Cilt Kalitesi</p>
       <h1>Şekil değil, <span class="g-isik">cildin nemi ve dokusu</span> hedeflenir.</h1>
       <p class="g-hero__alt">Halk arasında “gençlik aşısı” olarak anılan skinbooster uygulamasında, akışkan kıvamda ve çapraz bağı düşük bir hyalüronik asit, çok ince iğnelerle derinin orta katmanına dağıtılır. Yüze hacim eklemez, hatları değiştirmez; cildin su tutma kapasitesini ve dokusunu desteklemeyi amaçlar. Dolgu ile aynı işlem değildir ve onun yerini tutmaz; size uygun olup olmadığına muayeneden sonra karar verilir.</p>
       <div class="g-hero__cta">
-        <a class="dgm dgm--bir" href="${r}iletisim/">Randevu talebi</a>
+        <a class="dgm dgm--bir" href="${r}iletisim/">Randevu isteyin</a>
         <a class="dgm dgm--iki" href="#ilkbolum">Dolgudan farkı ↓</a>
       </div>
       <div class="g-tikler"><span><i></i>Önce muayene, sonra karar</span><span><i></i>Program hekimden</span><span><i></i>Kontrol dâhil</span></div>
@@ -42,7 +42,7 @@ module.exports = {
 <section class="bolum" id="ilkbolum">
   <div class="sar">
     <div class="bolum-bas" data-gr>
-      <p class="g-etiket">Tanım ve sınır</p>
+      <p class="g-etiket">Ne yapar, ne yapmaz</p>
       <h2>Gençlik aşısı (skinbooster) nedir, neyin yerine geçmez?</h2>
       <p class="giris">Bu uygulamaya dair yanlış beklentilerin çoğu, onu dolguyla aynı sanmaktan doğuyor. Bu yüzden ne olduğunu ve ne olmadığını yan yana yazdık.</p>
     </div>
@@ -71,7 +71,7 @@ module.exports = {
 <section class="bolum bolum--sicak">
   <div class="sar">
     <div class="bolum-bas" data-gr>
-      <p class="g-etiket">Planlama ve seyir</p>
+      <p class="g-etiket">Plan ve seyir</p>
       <h2>Program nasıl kurulur, uygulamadan sonra neler olur?</h2>
       <p class="giris">İlk randevuda uygulama yapılacağı varsayılmaz. Muayene ve bilgilendirme tamamlandıktan sonra program çoğunlukla ayrı bir günde başlar.</p>
     </div>
@@ -81,13 +81,13 @@ module.exports = {
         <p><b style="color:var(--murekkep)">Hedef katman</b><br>Ürün derinin orta katmanında kalır; ince çizgilerin yumuşaması ve yüzeydeki pürüzlülüğün azalması amaçlanır.</p>
       </div>
       <div class="g-kutu g-b2" data-gr style="--d:70ms">
-        <span class="g-ket">İyileşme seyri</span>
+        <span class="g-ket">Toparlanma</span>
         <div class="g-cubuk"><small><span>Kabarcık ve kızarıklık</span><span>Birkaç saat</span></small><div class="g-ciz"><b class="g-cubuk-mavi" data-gw="18%"></b></div></div>
         <div class="g-cubuk"><small><span>Morluk olursa</span><span>Birkaç gün</span></small><div class="g-ciz"><b class="g-cubuk-petrol" data-gw="46%"></b></div></div>
         <div class="g-cubuk"><small><span>Değerlendirme</span><span>Kontrol randevusunda</span></small><div class="g-ciz"><b class="g-cubuk-bakir" data-gw="88%"></b></div></div>
         <p style="font-size:.72rem;color:var(--sessiz);margin-top:10px">Çubuklar oransal bir simgedir; size özel takvim muayenede netleşir.</p>
       </div>
-      <div class="g-kutu g-b2" data-gr style="--d:140ms"><span class="g-ket">Protokol</span>
+      <div class="g-kutu g-b2" data-gr style="--d:140ms"><span class="g-ket">Adım adım</span>
         <ol class="g-protokol">
           <li>Muayene ve öykü: ilaçlar, hastalıklar, gebelik durumu</li>
           <li>Cildin yakından incelenmesi: kuruluk, ince çizgi, doku</li>
@@ -96,9 +96,9 @@ module.exports = {
           <li>Uygulama, bakım önerileri ve <a href="${r}uygulamalar/uygulama-sonrasi-takip/">kontrol</a></li>
         </ol>
       </div>
-      <div class="g-kutu g-b2 g-kutu--gece" data-gr><span class="g-ket">İlke</span><p>“Cildin susuzluğu hacimle, hacim kaybı nemle giderilmez. Önce hangisiyle karşı karşıya olduğumuzu ayırırız.”</p></div>
+      <div class="g-kutu g-b2 g-kutu--gece" data-gr><span class="g-ket">Hekimin notu</span><p>“Cildin susuzluğu hacimle, hacim kaybı nemle giderilmez. Önce hangisiyle karşı karşıya olduğumuzu ayırırız.”</p></div>
       <div class="g-kutu g-b2 g-kutu--gorsel" data-gr style="--d:70ms"><img src="${r}varliklar/gorsel/ic3d-katman.webp" alt="Üst deri, dermis ve deri altı katmanlarını gösteren üç boyutlu kesit çizimi" loading="lazy"><span class="g-ainot">Temsilî görsel · yapay zekâ ile üretildi</span></div>
-      <div class="g-kutu g-b2 g-kutu--cta" data-gr style="--d:140ms"><h3>Size uygun olup olmadığını konuşalım</h3><p>Karar, cildiniz değerlendirildikten sonra birlikte verilir.</p><a class="dgm dgm--altin" href="${r}iletisim/">Randevu talebi</a></div>
+      <div class="g-kutu g-b2 g-kutu--cta" data-gr style="--d:140ms"><h3>Size uygun olup olmadığını konuşalım</h3><p>Karar, cildiniz değerlendirildikten sonra birlikte verilir.</p><a class="dgm dgm--altin" href="${r}iletisim/">Randevu isteyin</a></div>
       <div class="kutu kutu--uyari g-b4" data-gr>
         <b>Hangi durumlarda uygulanmaz, hangilerinde ertelenir?</b>
         <ul>
@@ -124,7 +124,7 @@ module.exports = {
 <section class="bolum">
   <div class="sar">
     <div class="bolum-bas" data-gr>
-      <p class="g-etiket">Zamanlama</p>
+      <p class="g-etiket">Ne zaman</p>
       <h2>Kaç seanslık bir program gerekir, etkisi ne kadar kalır?</h2>
       <p class="giris">Skinbooster tek seferlik bir işlem olarak değil, birkaç seanstan oluşan bir program olarak düşünülür. Seanslar arasında cildin toparlanmasına zaman tanınır; aralıkları ve toplam seans sayısını, ilk seansa verdiğiniz yanıta bakarak hekim belirler. Etkinin ne kadar süreceğini tek bir rakamla söylemek mümkün değildir: yaş, deri kalınlığı, güneşle temas, sigara ve eşlik eden cilt sorunları bu süreyi değiştirir. Değişikliği yalnız izlenime bırakmamak için, onay verirseniz aynı ışık ve açıyla fotoğraf kaydı alınır; bu kayıtlar yalnızca dosyanızda tutulur ve tanıtımda kullanılmaz.</p>
     </div>

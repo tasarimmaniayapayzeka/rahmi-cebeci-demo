@@ -16,7 +16,7 @@ module.exports = {
       <h1>Pico lazerle leke: atımdan önce <span class="g-isik">lekenin adı</span> konur.</h1>
       <p class="g-hero__alt">Pikosaniye lazer, derinin üst katmanlarında kümelenmiş melanin pigmentini çok kısa atımlarla hedef alır. Ancak ciltteki her koyu alan aynı kökenden gelmez ve hepsi lazere uygun değildir. Bu yüzden ilk iş, her lekeye büyütmeli ışık altında tek tek bakmaktır; adı konamayan bir lekeye atım yapılmaz.</p>
       <div class="g-hero__cta">
-        <a class="dgm dgm--bir" href="${r}iletisim/">Randevu talebi</a>
+        <a class="dgm dgm--bir" href="${r}iletisim/">Randevu isteyin</a>
         <a class="dgm dgm--iki" href="#ilkbolum">Yöntemin işleyişi ↓</a>
       </div>
       <div class="g-tikler"><span><i></i>Büyütmeli inceleme ilk adım</span><span><i></i>Tipi belirsiz lekeye atım yok</span><span><i></i>Güneş koruması zorunlu</span></div>
@@ -40,7 +40,7 @@ module.exports = {
 <!-- BU NEDİR / BU NE DEĞİLDİR -->
 <section class="bolum" id="ilkbolum">
   <div class="sar">
-    <div class="bolum-bas" data-gr><p class="g-etiket">Tanım ve sınırlar</p><h2>Pico lazer lekeye nasıl etki eder, nerede durur?</h2><p class="giris">Yanaktaki kahverengi bir alan, yıllarca güneşe çıkmanın bıraktığı bir lentigo olabileceği gibi geçmiş bir sivilcenin ardından kalan koyulaşma, hormonlarla ilişkili melazma ya da seyrek de olsa kötü huylu bir lezyonun erken hâli olabilir. Aynaya bakarak bunları ayırmak mümkün değildir. Olası nedenleri <a href="${r}cilt-sorunlari/cilt-tonu-ve-leke/">cilt tonu ve leke</a> sayfasında anlattık.</p></div>
+    <div class="bolum-bas" data-gr><p class="g-etiket">Ne yapar, ne yapmaz</p><h2>Pico lazer lekeye nasıl etki eder, nerede durur?</h2><p class="giris">Yanaktaki kahverengi bir alan, yıllarca güneşe çıkmanın bıraktığı bir lentigo olabileceği gibi geçmiş bir sivilcenin ardından kalan koyulaşma, hormonlarla ilişkili melazma ya da seyrek de olsa kötü huylu bir lezyonun erken hâli olabilir. Aynaya bakarak bunları ayırmak mümkün değildir. Olası nedenleri <a href="${r}cilt-sorunlari/cilt-tonu-ve-leke/">cilt tonu ve leke</a> sayfasında anlattık.</p></div>
     <div class="izgara izgara--2">
       <div class="kutu kutu--bilgi" data-gr>
         <b>Bu nedir</b>
@@ -60,7 +60,7 @@ module.exports = {
 <!-- BENTO -->
 <section class="bolum bolum--sicak">
   <div class="sar">
-    <div class="bolum-bas" data-gr><p class="g-etiket">Planlama</p><h2>Lazerden önce neler yapılır, hangi durumlar bekletir?</h2><p class="giris">Kuşkulu bir lekeye atım yapmak, olası bir hastalığın fark edilmesini geciktirir ve sonradan yapılacak incelemeyi zorlaştırır. Bu yüzden her plan, yüzdeki ve ellerdeki lekelerin tek tek işaretlendiği bir haritayla başlar.</p></div>
+    <div class="bolum-bas" data-gr><p class="g-etiket">Plan nasıl kurulur</p><h2>Lazerden önce neler yapılır, hangi durumlar bekletir?</h2><p class="giris">Kuşkulu bir lekeye atım yapmak, olası bir hastalığın fark edilmesini geciktirir ve sonradan yapılacak incelemeyi zorlaştırır. Bu yüzden her plan, yüzdeki ve ellerdeki lekelerin tek tek işaretlendiği bir haritayla başlar.</p></div>
     <div class="g-bento">
       <div class="g-kutu g-b2 g-donutkap" data-gr>
         <div class="g-donut"><svg viewBox="0 0 100 100" width="100" height="100"><circle class="g-iz" cx="50" cy="50" r="45"/><circle class="g-dol" data-gyuzde="60" cx="50" cy="50" r="45"/><circle class="g-kom" cx="50" cy="50" r="45"/></svg><b>6 tip</b></div>
@@ -73,7 +73,7 @@ module.exports = {
         <div class="g-cubuk"><small><span>MELAZMA</span><span>Son basamak, düşük enerji</span></small><div class="g-ciz"><b class="g-cubuk-bakir" data-gw="15%"></b></div></div>
         <p style="font-size:.68rem;color:var(--sessiz);margin-top:8px">Çubuk boyları yalnız karşılaştırma içindir; size özel plan muayenede kurulur.</p>
       </div>
-      <div class="g-kutu g-b2" data-gr style="--d:140ms"><span class="g-ket">Protokol</span>
+      <div class="g-kutu g-b2" data-gr style="--d:140ms"><span class="g-ket">Adım adım</span>
         <ol class="g-protokol">
           <li>Hikâye: leke ne zaman çıktı, büyüdü mü, yazın koyulaşıyor mu?</li>
           <li>Büyütmeli ışıkla her lekeye tek tek bakış ve fotoğraf kaydı</li>
@@ -89,12 +89,12 @@ module.exports = {
 <p>Güneşle alevlenen deri hastalıkları, vitiligo gibi renk kaybıyla giden tablolar ve keloid eğilimi lazeri uygun olmaktan çıkarır. Gebelik ve emzirmede leke davranışı hormonlarla değiştiğinden plan bu dönemin sonrasına bırakılır. Tatil, açık havada çalışma ya da deniz sezonu gibi güneşten korunmanın aksayacağı bir dönem yaklaşıyorsa uygulamayı ertelemek daha doğrudur.</p>
       </div>
       <div class="g-kutu g-b2 g-kutu--gorsel" data-gr style="--d:70ms"><img src="${r}varliklar/gorsel/uyg-pico-lazer-leke-2.webp" alt="Gün ışığı alan yüz; güneşe açık cilt bölgesi" loading="lazy"><span class="g-ainot">Temsilî görsel · yapay zekâ ile üretildi</span></div>
-      <div class="g-kutu g-b2 g-kutu--gece" data-gr><span class="g-ket">İlke</span><p>"Önce tanı, sonra atım; bu sıra hiç değişmez."</p></div>
+      <div class="g-kutu g-b2 g-kutu--gece" data-gr><span class="g-ket">Hekimin notu</span><p>"Önce tanı, sonra atım; bu sıra hiç değişmez."</p></div>
       <div class="g-kutu g-b2" data-gr style="--d:70ms">
         <span class="g-ket">Seans sonrası</span>
         <p style="font-size:.92rem">Atım yapılan leke birkaç saat içinde bir ton koyulaşır ve çevresi hafifçe kızarır; bu beklenen bir görüntüdür. Üzerinde oluşan ince kabuk yaklaşık bir hafta içinde kendiliğinden düşer, koparılmaz. Seyrek de olsa ton açılması ya da koyulaşma, yanık ve iz görülebilir; koyu tende koyulaşma olasılığı daha yüksektir. Kaç seans gerektiği baştan söylenemez. Sonucun ne kadar kalıcı olacağını en çok güneş koruması belirler: geniş spektrumlu, yüksek faktörlü koruyucu her sabah sürülür ve gün içinde yenilenir; melazmada görünür ışığı da süzen renkli koruyucular tercih edilebilir. Sonuçlar kişiden kişiye değişir.</p>
       </div>
-      <div class="g-kutu g-b2 g-kutu--cta" data-gr style="--d:140ms"><h3>Lekelerinize birlikte bakalım</h3><p>Hangi yolun uygun olduğu büyütmeli incelemeden sonra belli olur.</p><a class="dgm dgm--altin" href="${r}iletisim/">Randevu talebi</a></div>
+      <div class="g-kutu g-b2 g-kutu--cta" data-gr style="--d:140ms"><h3>Lekelerinize birlikte bakalım</h3><p>Hangi yolun uygun olduğu büyütmeli incelemeden sonra belli olur.</p><a class="dgm dgm--altin" href="${r}iletisim/">Randevu isteyin</a></div>
       <div class="kutu kutu--acil g-b6" data-gr>
         <b>Beklemeden bize ulaşmanız gereken durumlar</b>
         <p>Lekenin bir ton koyulaşması ve üzerinde ince bir kabuk oluşması beklenen seyirdir. Buna karşılık atım yapılan alanda kızarıklık çevreye yayılıyor, ağrı geçeceğine artıyor, su toplaması, sarı kabuk, akıntı ya da ateş oluyor veya kabuk düştüğünde altında kapanmayan bir yara kalıyorsa kontrol gününü beklemeyin. ${S.iletisim.tel} numarasından bize ulaşın; telefonla ulaşamıyorsanız en yakın acil servise gidin.</p>

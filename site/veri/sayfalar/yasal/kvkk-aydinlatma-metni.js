@@ -11,7 +11,7 @@ module.exports = {
 <!-- ═════════ BELGE HERO ═════════ -->
 <section class="g-bhero">
   <div class="sar">
-    <p class="g-etiket">Yasal</p>
+    <p class="g-etiket">Mevzuat notu</p>
     <h1>KVKK Aydınlatma Metni</h1>
     <p class="g-bhero__alt">Muayenehaneye gelen hastalar ve bu siteyi gezen ziyaretçiler hakkında hangi bilgilerin tutulduğunu, bunların ne için ve hangi hukuki dayanakla kullanıldığını, kimlerle paylaşılabileceğini, ne zaman silindiğini ve bu konuda hangi haklara sahip olduğunuzu bu sayfada bulabilirsiniz. Metin, aydınlatma yükümlülüğü gereği 6698 sayılı Kişisel Verilerin Korunması Kanunu (m. 10) esas alınarak hazırlanmıştır. Sitede ziyaretçileri izleyen bir reklam pikseli, dışarıdan bağlanan bir analitik hizmeti ya da profil çıkaran bir yazılım bulunmaz.</p>
     <div class="g-bmeta">
@@ -88,7 +88,7 @@ module.exports = {
       <div class="g-bblk" id="site-araclari">
         <h2>Etkileşimli araçlar yanıtlarınızla ne yapar?</h2>
         <div class="yazi">
-          <p>Hazırlık listesi, cilt tipi testi, bölge pusulası ve uygulama karşılaştırma sayfaları etkileşimlidir. Bu sayfalar, olabildiğince az veriyle çalışacak şekilde tasarlandı.</p>
+          <p>Hazırlık listesi, cilt eğilimi testi, bölge rehberi ve uygulama karşılaştırma sayfaları etkileşimlidir. Bu sayfalar, olabildiğince az veriyle çalışacak şekilde tasarlandı.</p>
         </div>
         <div class="izgara izgara--2">
           <div class="kart kart--duz">
@@ -193,7 +193,7 @@ module.exports = {
             <span class="kart__ok">Oku ${ik.ok}</span>
           </a>
           <a class="kart" href="${r}yaklasimimiz/">
-            <h3>Yaklaşımımız</h3>
+            <h3>Randevudan kontrole</h3>
             <p>Her uygulamadan önce değerlendirme yapma ilkesinin muayenehanede nasıl işlediği.</p>
             <span class="kart__ok">İncele ${ik.ok}</span>
           </a>
@@ -201,7 +201,7 @@ module.exports = {
       </div>
 
       <div class="g-bblk">
-        <h2>Sorunuz mu var?</h2>
+        <h2>Aklınızda soru mu kaldı?</h2>
         <p class="giris">Verilerinizle ilgili taleplerinizi yazılı olarak iletebilirsiniz; randevu için iletişim sayfasındaki yolları kullanabilirsiniz.</p>
         <div class="dgm-sira">
           <a class="dgm dgm--bir" href="${r}iletisim/">İletişim</a>

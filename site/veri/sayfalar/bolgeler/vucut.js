@@ -17,7 +17,7 @@ module.exports = {
       <h1>Vücutta plan <span class="g-isik">bölgeye ve dokuya</span> göre kurulur.</h1>
       <p class="g-hero__alt">Karın, bel, kol ve bacakta en sık dile getirilen konular yerel yağ birikimi, selülit görünümü ve silinmek istenen dövmelerdir. Üçü farklı dokularda, farklı süreçlerle ortaya çıkar; aynı muayenede konuşulsalar da ayrı planlanırlar. Bu uygulamalar kilo vermenin yerine geçmez; amaç, belirli bir alandaki görünümde ölçülü bir değişim hedeflemektir.</p>
       <div class="g-hero__cta">
-        <a class="dgm dgm--bir" href="${r}iletisim/">Randevu talebi</a>
+        <a class="dgm dgm--bir" href="${r}iletisim/">Randevu isteyin</a>
         <a class="dgm dgm--iki" href="#kapsam">Hangi bölgeler? ↓</a>
       </div>
       <div class="g-tikler"><span><i></i>Uygulamayı hekim yapar</span><span><i></i>Bölgeye göre ayrı plan</span><span><i></i>Lazerde önce deneme atışı</span></div>
@@ -41,7 +41,7 @@ module.exports = {
 <!-- 3 ── KAPSAM -->
 <section class="bolum" id="kapsam">
   <div class="sar">
-    <div class="bolum-bas" data-gr><p class="g-etiket">Kapsam</p><h2>Vücut bölgesi neleri kapsar, plan neden bölgeye göre ayrılır?</h2></div>
+    <div class="bolum-bas" data-gr><p class="g-etiket">Neyi kapsar</p><h2>Vücut bölgesi neleri kapsar, plan neden bölgeye göre ayrılır?</h2></div>
     <div class="kutu kutu--bilgi" data-gr>
       <b>Hangi bölgelerde çalışıyoruz?</b>
       <p>Vücuda yönelik uygulamalarda karın, bel ve yan bel, üst kolun iç yüzü, uyluklar ve diz üstü değerlendirilir. Dövme silmede ise dövmenin bulunduğu yer ayrıca incelenir; mürekkebin rengi ve derinliği ile cildin yapısı planı belirler.</p>
@@ -63,7 +63,7 @@ module.exports = {
 <!-- 4 ── ATLAS -->
 <section class="bolum bolum--buz2">
   <div class="sar">
-    <div class="bolum-bas" data-gr><p class="g-etiket">Bölge atlası</p><h2>Vücut için en çok hangi isteklerle geliniyor?</h2><p class="giris">Vücut bölgelerinde gelen isteklerin büyük bölümü üç başlıkta toplanır; her biri farklı bir dokuya ve farklı bir sürece dayanır.</p></div>
+    <div class="bolum-bas" data-gr><p class="g-etiket">Katman katman bölge</p><h2>Vücut için en çok hangi isteklerle geliniyor?</h2><p class="giris">Vücut bölgelerinde gelen isteklerin büyük bölümü üç başlıkta toplanır; her biri farklı bir dokuya ve farklı bir sürece dayanır.</p></div>
     <div class="g-atlas-duzen">
       <div class="g-atlas" data-gr>
         <div class="g-atlas-kap">
@@ -74,20 +74,20 @@ module.exports = {
       </div>
       <div data-gr style="--d:80ms">
         <div class="g-katblok" data-gkat="a">
-          <span class="g-kno">01</span>
+          <span class="g-kno">Kesit 01</span>
           <h3>Bölgesel yağlanma</h3>
           <p>Karın altında, belin iki yanında, üst kolun iç yüzünde ya da uylukların iç tarafında, diyet ve egzersize karşın azalmayan yerel yağ birikimleridir. Genetik yatkınlık ve hormonlar bu birikimin yerini belirler. Genel kilo fazlası varsa önce o ele alınır; yerel uygulamalar bu tabloda anlamlı bir fark yaratmaz.</p>
           <div class="g-haplar"><a href="${r}uygulamalar/bolgesel-lipoliz/">Bölgesel lipoliz</a><a href="${r}cilt-sorunlari/bolgesel-yaglanma/">Bölgesel yağlanma</a></div>
         </div>
         <div class="g-katblok" data-gkat="b">
-          <span class="g-kno">02</span>
+          <span class="g-kno">Kesit 02</span>
           <h3>Selülit görünümü</h3>
           <p>Deri altındaki yağ bölmelerinin bağ dokusu bantları arasından yüzeye doğru itilmesiyle oluşan, portakal kabuğunu andıran dalgalı bir görünümdür. En sık uyluklarda görülür ve kilolu olmayan kişilerde de bulunabilir.</p>
           <p>Dolaşım, bağ dokusunun esnekliği ve hormonal etkenler tabloyu değiştirir. Bu nedenle tek bir yöntemle değil, mezoterapi, lipoliz ve cihaz uygulamalarının birlikte düşünüldüğü bir planla ele alınır; tümüyle kaybolması beklenmez.</p>
           <div class="g-haplar"><a href="${r}uygulamalar/selulit-gorunumu/">Selülit görünümü</a><a href="${r}uygulamalar/mezoterapi/">Mezoterapi</a><a href="${r}cilt-sorunlari/selulit/">Selülit</a></div>
         </div>
         <div class="g-katblok" data-gkat="c">
-          <span class="g-kno">03</span>
+          <span class="g-kno">Kesit 03</span>
           <h3>Dövme ve istenmeyen renk</h3>
           <p>Vücudun herhangi bir yerindeki dövme, pikosaniye lazerin çok kısa atımlarıyla mürekkep parçacıklarını küçültmek amacıyla seanslara bölünerek ele alınır. Seans sayısı mürekkebin rengine, derinliğine, dövmenin yaşına ve cilt tipine göre değişir; görünümün seanslar içinde açılması hedeflenir.</p>
           <div class="g-haplar"><a href="${r}uygulamalar/pico-lazer-dovme-silme/">Pico lazer ile dövme silme</a><a href="${r}cilt-sorunlari/dovme-ve-kalici-makyaj/">Dövme ve kalıcı makyaj</a></div>
@@ -101,7 +101,7 @@ module.exports = {
 <!-- 5 ── MATRİS -->
 <section class="bolum">
   <div class="sar">
-    <div class="bolum-bas" data-gr><p class="g-etiket">Uygulamalar</p><h2>Vücut için hangi seçenekler konuşulabilir?</h2><p class="giris">Aşağıdaki seçenekler muayenenin sonucuna göre ve ilgili bölgeye uyarlanarak değerlendirilir. Vücutta işlem yapılan alan yüzden çok daha geniştir; seans sayısı, aralıklar ve iyileşme süresi de buna göre değişir.</p></div>
+    <div class="bolum-bas" data-gr><p class="g-etiket">Uygulama dizini</p><h2>Vücut için hangi seçenekler konuşulabilir?</h2><p class="giris">Aşağıdaki seçenekler muayenenin sonucuna göre ve ilgili bölgeye uyarlanarak değerlendirilir. Vücutta işlem yapılan alan yüzden çok daha geniştir; seans sayısı, aralıklar ve iyileşme süresi de buna göre değişir.</p></div>
     <div class="g-matris">
       <div class="g-mtab" data-gr>
         <div class="g-mbas"><span>Yöntem</span><span>Amaç</span><span>Toparlanma</span><span></span></div>
@@ -122,7 +122,7 @@ module.exports = {
 <!-- 6 ── PLAN + SINIRLAR -->
 <section class="bolum bolum--sicak">
   <div class="sar">
-    <div class="bolum-bas" data-gr><p class="g-etiket">Süreç</p><h2>Vücut için plan hangi adımlarla ilerler?</h2><p class="giris">İlk görüşmede işlem yapılacağını varsaymayın. İlk adım, isteğinizin cerrahi olmayan bir yöntemle karşılanıp karşılanamayacağını netleştirmektir.</p></div>
+    <div class="bolum-bas" data-gr><p class="g-etiket">Akış</p><h2>Vücut için plan hangi adımlarla ilerler?</h2><p class="giris">İlk görüşmede işlem yapılacağını varsaymayın. İlk adım, isteğinizin cerrahi olmayan bir yöntemle karşılanıp karşılanamayacağını netleştirmektir.</p></div>
     <div class="g-bento">
       <div class="g-kutu g-b3" data-gr><span class="g-ket">ADIMLAR</span>
         <ol class="g-protokol">
@@ -132,7 +132,7 @@ module.exports = {
           <li><b>Seans serisi ve kontrol:</b> seans aralıklarını bölge ve yöntem belirler; her yeni seanstan önce bölgeyi yeniden muayene ederiz. Kontrollerde nelere bakıldığını <a href="${r}uygulamalar/uygulama-sonrasi-takip/">uygulama sonrası takip</a> sayfasında bulabilirsiniz.</li>
         </ol>
       </div>
-      <div class="g-kutu g-b3 g-kutu--gece" data-gr style="--d:80ms"><span class="g-ket">İLKE</span><p>&#8220;Bölgesel bir uygulamayı kilo vermenin yerine koymayız; beklenen değişim ölçülü değilse işleme başlamayız.&#8221;</p></div>
+      <div class="g-kutu g-b3 g-kutu--gece" data-gr style="--d:80ms"><span class="g-ket">Hekimin notu</span><p>&#8220;Bölgesel bir uygulamayı kilo vermenin yerine koymayız; beklenen değişim ölçülü değilse işleme başlamayız.&#8221;</p></div>
       <div class="kutu kutu--uyari g-b4" data-gr style="--d:140ms">
         <b>Kimlere yapılmaz ya da ertelenir?</b>
         <ul>
@@ -146,7 +146,7 @@ module.exports = {
           <li><b>Kontrol altında olmayan diyabet, karaciğer ya da böbrek hastalığı, kanama eğilimi ve bilinen aşırı duyarlılıklar:</b> düzenli kullandığınız ilaçları ve daha önce yaşadığınız tepkileri muayenede mutlaka anlatın.</li>
         </ul>
       </div>
-      <div class="g-kutu g-b2" data-gr style="--d:210ms"><span class="g-ket">KAPSAM</span>
+      <div class="g-kutu g-b2" data-gr style="--d:210ms"><span class="g-ket">Neyi kapsar</span>
         <p>Muayenehanede yalnızca hekimin uzmanlığı ve Sağlık Bakanlığı onaylı sertifikası kapsamındaki işlemler yapılır. Cerrahi yağ alma, karın germe ve deri fazlalığının alınması bu kapsamda yer almaz; bu isteklerde yönlendirme yapılır.</p>
       </div>
     </div>
@@ -156,7 +156,7 @@ module.exports = {
 <!-- 7 ── SONRASI + BEKLENTİ -->
 <section class="bolum">
   <div class="sar">
-    <div class="bolum-bas" data-gr><p class="g-etiket">Sonrası</p><h2>İşlemden sonraki günler nasıl geçer?</h2></div>
+    <div class="bolum-bas" data-gr><p class="g-etiket">Uygulamadan sonra</p><h2>İşlemden sonraki günler nasıl geçer?</h2></div>
     <div class="izgara izgara--2">
       <div class="kart kart--duz" data-gr>
         <h3>İlk günler</h3>

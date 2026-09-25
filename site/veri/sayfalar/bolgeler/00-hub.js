@@ -33,11 +33,11 @@ module.exports = {
   <div class="sar">
     <div>
       <nav class="kirinti" aria-label="Konum" style="position:relative;font-size:.76rem;color:var(--sessiz);display:flex;gap:7px;margin-bottom:18px"><a href="${r}" style="color:var(--sessiz);text-decoration:none">Ana sayfa</a> › <span>Bölgeler</span></nav>
-      <p class="g-etiket">Bölgeler · Bölgeye göre planlama</p>
+      <p class="g-etiket">Bölge dizini · Her bölgeye ayrı plan</p>
       <h1>Planı işlemin adı değil, <span class="g-isik">bölgenin kendisi</span> belirler.</h1>
       <p class="g-hero__alt">Göz altındaki deri ile karındaki doku arasında kalınlık, hareket, çevredeki damar-sinir yapıları ve iyileşme süresi bakımından büyük farklar vardır. Dudakta uygun görülen miktar, derinlik ya da seans aralığı bu yüzden göz çevresine, çene hattına veya karına olduğu gibi taşınamaz. Bu bölümde sekiz bölgenin her biri için ayrı bir sayfa bulacaksınız.</p>
       <div class="g-hero__cta">
-        <a class="dgm dgm--bir" href="${r}iletisim/">Randevu talebi</a>
+        <a class="dgm dgm--bir" href="${r}iletisim/">Randevu isteyin</a>
         <a class="dgm dgm--iki" href="#bolgeler">Bölgelere göz atın ↓</a>
       </div>
       <div class="g-tikler"><span><i></i>Uygulamayı hekim yapar</span><span><i></i>Adım adım plan</span><span><i></i>Kontrol randevusu planın içinde</span></div>
@@ -67,7 +67,7 @@ module.exports = {
 <section class="bolum" id="bolgeler">
   <div class="sar">
     <div class="bolum-bas" data-gr>
-      <p class="g-etiket">Bölgeler</p>
+      <p class="g-etiket">Bölge dizini</p>
       <h2>Merak ettiğiniz bölge hangisi?</h2>
       <p class="giris">Her bölge sayfasında aynı sırayı izledik: önce o bölgenin anatomisi, ardından yakınmaların hangi süreçten doğduğu, sonra konuşulabilecek uygulamalar ve son olarak işlem yapılmayan durumlar.</p>
     </div>
@@ -90,7 +90,7 @@ ${S.bolgeler.map(([ad, s], i) => `
 <section class="bolum bolum--sicak" id="degiskenler">
   <div class="sar">
     <div class="bolum-bas" data-gr>
-      <p class="g-etiket">Ölçütler</p>
+      <p class="g-etiket">Neye bakılır</p>
       <h2>Bir bölgenin planını hangi dört ölçüt değiştirir?</h2>
       <p class="giris">Her bölgenin planı dört soruya verilen yanıtla şekillenir: deri ne kadar kalın, bölge ne kadar hareketli, çevresinde hangi damar ve sinirler var, iyileşme ne kadar sürer? Yanıtlar farklı yönleri gösterdiğinde plan küçültülür.</p>
     </div>
@@ -123,22 +123,22 @@ ${S.bolgeler.map(([ad, s], i) => `
 <section class="bolum bolum--buz2" id="neden">
   <div class="sar sar--dar">
     <div class="bolum-bas" data-gr>
-      <p class="g-etiket">Yöntem</p>
+      <p class="g-etiket">Nasıl yapılır</p>
       <h2>Aynı adı taşıyan uygulama bölgeden bölgeye neden değişir?</h2>
       <p class="giris">Çene hattına ve göz altına yapılan hyalüronik asit dolgusu aynı adla anılır; oysa seçilen ürünün kıvamı, yerleştirildiği katman, miktarı, iki seans arasındaki süre ve göze alınabilecek risk iki bölgede çok farklıdır. Lazerde de durum değişmez: yüz için seçilen ayar bacağa ya da boyuna olduğu gibi uygulanmaz.</p>
     </div>
     <div class="g-katblok" data-gr>
-      <span class="g-kno">01 · DOKU FARKI</span>
+      <span class="g-kno">Kesit 01 · DOKU FARKI</span>
       <h3>Milimetreden santimetreye: doku farkı</h3>
       <p>Deri kalınlığı vücutta geniş bir aralıkta değişir: göz altında milimetrenin altında kalırken çene hattında ve el sırtında birkaç kat artar; karında ve uylukta ise altında kalın bir yağ tabakası bulunur. İnce derinin altına konan ürün kolayca görünür ya da hissedilir, kalın bir dokuda aynı miktar fark edilmeyebilir. Tüm bölgeler için tek bir ölçü, teknik ya da aralık bu yüzden kullanılamaz.</p>
     </div>
     <div class="g-katblok" data-gr>
-      <span class="g-kno">02 · HAREKET YÜKÜ</span>
+      <span class="g-kno">Kesit 02 · HAREKET YÜKÜ</span>
       <h3>Hareket, tekrar sıklığını belirler</h3>
       <p>Tekrar sıklığını belirleyen başlıca etken, bölgenin gün içindeki hareketidir. Konuşma ve yemek dudağı, göz kırpma göz çevresini durmadan çalıştırır; ürün bu alanlarda daha çabuk azalır. Çene hattında ve el sırtında hareket sınırlı olduğundan aynı ürün daha geç çekilir. “Kaç ayda bir?” sorusuna bu yüzden bölge bölge yanıt verilir.</p>
     </div>
     <div class="g-katblok" data-gr>
-      <span class="g-kno">03 · RİSK HARİTASI</span>
+      <span class="g-kno">Kesit 03 · RİSK HARİTASI</span>
       <h3>Kimi alanlarda yanılma payı yok denecek kadar azdır</h3>
       <p>Göz çevresinde, burun sırtında ve dudak çevresinde atardamarlar deriye çok yaklaşır; bu damarların bir kısmı gözü besleyen dolaşımla da bağlantılıdır. Söz konusu alanlarda en dikkatli teknikle çalışılsa bile göze alınabilecek risk daha küçüktür. En küçük bir kuşku varsa işlem ertelenir ya da hiç yapılmaz.</p>
     </div>
@@ -149,7 +149,7 @@ ${S.bolgeler.map(([ad, s], i) => `
 <section class="bolum" id="muayene">
   <div class="sar">
     <div class="bolum-bas" data-gr>
-      <p class="g-etiket">Süreç</p>
+      <p class="g-etiket">Akış</p>
       <h2>Bölgeye özel muayene hangi adımlardan oluşur?</h2>
       <p class="giris">Görüşme sizin gösterdiğiniz yerden başlar; ardından komşu bölgelere, yüzün ya da vücudun geneline ve sağlık öykünüze geçilir. Hepsi aynı muayenede ele alınır.</p>
     </div>
@@ -168,7 +168,7 @@ ${S.bolgeler.map(([ad, s], i) => `
     </div>
     <div class="izgara izgara--2" style="margin-top:22px">
       <div class="kutu kutu--uyari" data-gr>
-        <h4>Uygulama yapılmayan durumlar</h4>
+        <h4>Kimlere uygulanmaz</h4>
         <ul>
           <li>Gebelik ya da emzirme dönemi</li>
           <li>İşlem alanında etkin bir enfeksiyon, açık yara ya da iltihaplı lezyon</li>
@@ -223,7 +223,7 @@ ${S.bolgeler.map(([ad, s], i) => `
 <section class="bolum bolum--buz2">
   <div class="sar">
     <div class="bolum-bas" data-gr>
-      <p class="g-etiket">Bölge pusulası</p>
+      <p class="g-etiket">Bölge rehberi</p>
       <h2>Bir bölgeye dokunun, ayrıntısı karşınıza gelsin</h2>
       <p class="giris">Listeden bir bölge seçtiğinizde görsel ve kısa tarif yenilenir; o bölgeyle ilgili her şey kendi sayfasında sizi bekliyor.</p>
     </div>

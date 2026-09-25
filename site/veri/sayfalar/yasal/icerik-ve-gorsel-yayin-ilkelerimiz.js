@@ -3,7 +3,7 @@ const S = require('../../site');
 module.exports = {
   slug: 'yasal/icerik-ve-gorsel-yayin-ilkelerimiz',
   tip: 'bilgi',
-  baslik: 'İçerik ve Görsel Yayın İlkelerimiz — Neyi Neden Yayımlamıyoruz',
+  baslik: 'Yayın ve Görsel Kullanım Esaslarımız — Neyi Neden Yayımlamıyoruz',
   aciklama: 'Sitede neden ücret bilgisi, hasta yorumu ve öncesi–sonrası görseli yer almadığı; gerçek fotoğraflar, yapay zekâ rozeti, hekim onayı ve güncelleme düzeni.',
 
   icerik: (r, ik) => `
@@ -11,8 +11,8 @@ module.exports = {
 <!-- ═════════ BELGE HERO ═════════ -->
 <section class="g-bhero">
   <div class="sar">
-    <p class="g-etiket">Yasal</p>
-    <h1>İçerik ve Görsel Yayın İlkelerimiz</h1>
+    <p class="g-etiket">Mevzuat notu</p>
+    <h1>Yayın ve Görsel Kullanım Esaslarımız</h1>
     <p class="g-bhero__alt">Sitemizde yer vermediğimiz içerikler bilinçli bir seçimin sonucudur: ücret bilgisi, hasta yorumları ve deneyim anlatıları, öncesi–sonrası karşılaştırmaları, hastalara ait fotoğraflar ve uygulama sırasında çekilmiş görüntüler. Bu seçimin iki dayanağı var: sağlık hizmetlerinin tanıtımına ilişkin güncel mevzuat ve hastada karşılığı olmayan bir beklenti uyandırmama kaygısı. Gerçek fotoğrafların tümü muayenehanemize aittir; geri kalan görseller yapay zekâ ile hazırlanmış temsilî görsellerdir ve sayfadaki büyük hâllerinin üzerinde bir rozetle belirtilir.</p>
     <div class="g-bmeta">
       <span><i></i>Son güncelleme: ${S.guncelleme}</span>
@@ -40,7 +40,7 @@ module.exports = {
     <div class="g-bgov">
 
       <div class="g-bblk" id="kisaca-cerceve">
-        <h2>Dayanak</h2>
+        <h2>Yasal dayanak</h2>
         <div class="yazi">
           <p>Sağlık alanında hizmet verenlerin kendilerini nasıl tanıtabileceği, bu konuya özel bir yönetmelikle belirlenmiştir. Yönetmeliğin temel yaklaşımı açıktır: sağlık hizmeti bir tüketim ürünü gibi satışa sunulamaz; bir internet sitesinin yapabileceği, hastanın bilgiye dayalı karar vermesini kolaylaştıran tarafsız bir anlatım sunmaktır. Talep oluşturan, karşılaştırma yapan ya da hastayı belli bir yere yönelten her unsur bu sınırın dışında kalır. Konuyla ilgili düzenlemelerin kısa bir özeti <a href="${r}mevzuat/">mevzuat sayfasında</a> yer alıyor.</p>
           <p>Bu içerikleri tek bir kurum denetlemez. Tanıtım kurallarına uyulup uyulmadığını il sağlık müdürlükleri ile Sağlık Bakanlığı inceler; aynı metin, tüketiciyi yanıltıp yanıltmadığı açısından Reklam Kurulu’nun da gündemine gelebilir. Biz sınırın tam yerini aramak yerine ona hiç yaklaşmamayı seçiyoruz.</p>
@@ -63,7 +63,7 @@ module.exports = {
           </div>
           <div class="kart kart--duz">
             <span class="kart__ikon">${ik.mercek}</span>
-            <h3>Öncesi–sonrası karşılaştırması</h3>
+            <h3>Önce ve sonra fotoğrafları</h3>
             <p>Yan yana konmuş iki fotoğraf tarafsız bir kanıt izlenimi verir, fakat yanıltma olasılığı en yüksek görseller de bunlardır. Işığın geliş açısı, duruş, objektife uzaklık, makyaj, şişlik ve çekimin günün hangi saatinde yapıldığı sonucu belirgin biçimde değiştirir. Böyle bir karşılaştırma sizde ne olacağını anlatmaz; bir başkasında yaşanmış bir anın seçilmiş karesini gösterir. Beklenti oluşturduğu için mevzuat da bu görsellerin paylaşılmasını kabul etmez.</p>
           </div>
           <div class="kart kart--duz">
@@ -118,15 +118,15 @@ module.exports = {
             <p>Ele alınacak konu seçilir, güncel tıbbi bilgi gözden geçirilir; doğruluğundan kuşku duyulan hiçbir ayrıntı metne alınmaz.</p>
           </li>
           <li>
-            <h4>Tıbbi denetim</h4>
+            <h4>Tıbbi gözden geçirme</h4>
             <p>Hekim metnin her satırını okur; abartılı ifadeler, sonuca dair vaatler ve hastayı yönlendiren anlatım çıkarılır.</p>
           </li>
           <li>
-            <h4>Mevzuat denetimi</h4>
+            <h4>Mevzuata uygunluk kontrolü</h4>
             <p>Metin ayrıca tanıtım kuralları, kişisel verilerin korunması ve reklam düzenlemeleri bakımından kontrol edilir.</p>
           </li>
           <li>
-            <h4>Yayın ve tarihleme</h4>
+            <h4>Yayın tarihi ve güncelleme</h4>
             <p>Yayına alınan sayfanın künyesine gözden geçirme tarihi işlenir.</p>
           </li>
         </ol>
@@ -163,11 +163,11 @@ module.exports = {
             <p>Takip fotoğrafları dâhil kişisel verilerinizin nasıl işlendiği.</p>
           </a>
           <a class="kart" href="${r}yaklasimimiz/">
-            <h3>Yaklaşımımız</h3>
+            <h3>Randevudan kontrole</h3>
             <p>Her uygulamadan önce değerlendirme yapma ilkemiz.</p>
           </a>
           <a class="kart" href="${r}bilgi/">
-            <h3>Bilgi merkezi</h3>
+            <h3>Okuma köşesi</h3>
             <p>Burada anlatılan ilkelerle yazılmış tüm bilgilendirme yazıları.</p>
           </a>
         </div>

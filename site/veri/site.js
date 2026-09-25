@@ -71,7 +71,7 @@ module.exports = {
 
   /* ---------- uygulama kataloğu — hub ve menü buradan üretilir ---------- */
   katalog: [
-    { grup: 'Enjeksiyon Uygulamaları', kisa: 'Enjeksiyon', ikon: 'damla', ogeler: [
+    { grup: 'Enjeksiyonla Yapılanlar', kisa: 'Enjeksiyonlar', ikon: 'damla', ogeler: [
       ['Botulinum Toksin', 'botulinum-toksin', 'Kaş arası, alın ve göz kenarı çizgileri; terleme'],
       ['Dolgu Uygulamaları', 'dolgu-uygulamalari', 'Dudaktan elmacığa, yüzün kaybolan desteği'],
       ['Sıvı Yüz Germe', 'sivi-yuz-germe', 'Birkaç bölgenin tek planda ele alınması'],
@@ -93,13 +93,13 @@ module.exports = {
       ['İğnesiz Mezoterapi', 'ignesiz-mezoterapi', 'İğne kullanmadan etken maddenin deriye taşınması'],
       ['Karbon Peeling', 'karbon-peeling', 'Yağlı ve gözenekli ciltte lazerle arınma'],
     ]},
-    { grup: 'Saç ve Saçlı Deri', kisa: 'Saç', ikon: 'liste', ogeler: [
+    { grup: 'Saç Sağlığı', kisa: 'Saç sağlığı', ikon: 'liste', ogeler: [
       ['Saç Mezoterapisi', 'sac-mezoterapisi', 'Kıl kökünün çevresini besleyen mikro enjeksiyon'],
       ['Saç PRP', 'sac-prp', 'Seyrelen bölgeye kendi plazmanız'],
     ]},
     { grup: 'Değerlendirme ve Takip', kisa: 'Değerlendirme', ikon: 'kalp', ogeler: [
       ['Hekim Muayenesi', 'hekim-muayenesi', 'Her kararın başladığı ilk görüşme'],
-      ['Uygulama Sonrası Takip', 'uygulama-sonrasi-takip', 'İşlemden sonraki günler ve kontrol'],
+      ['Uygulama Sonrası Kontrol', 'uygulama-sonrasi-takip', 'İşlemden sonraki günler ve kontrol'],
     ]},
   ],
 
@@ -131,15 +131,15 @@ module.exports = {
 
   // Üst menü: Klinik başa alınır, Uygulamalar/Bölgeler/Cilt Sorunları katalogtan üretilir
   menuEk: [
-    { ad: 'Klinik', yol: '/klinik/', alt: [
-      { ad: 'Hakkımızda', yol: '/klinik/', not: 'Muayenehane ve çalışma düzeni' },
+    { ad: 'Tanışalım', yol: '/klinik/', alt: [
+      { ad: 'Muayenehanemiz', yol: '/klinik/', not: 'Muayenehane ve çalışma düzeni' },
       { ad: 'Hekim', yol: '/hekim/', not: 'Uzm. Dr. Rahmi Cebeci' },
-      { ad: 'Nasıl çalışıyoruz', yol: '/yaklasimimiz/', not: 'Dört adımda planlama düzeni' },
-      { ad: 'Sıkça sorulan sorular', yol: '/sikca-sorulan-sorular/' },
-      { ad: 'Bilgi Merkezi', yol: '/bilgi/' },
-      { ad: 'Cilt Tipi Testi', yol: '/cilt-tipi-testi/', not: 'On iki soruda cildinizin eğilimi' },
-      { ad: 'Bölge Pusulası', yol: '/bolge-pusulasi/', not: 'Yüzden vücuda sekiz bölge' },
-      { ad: 'Uygulama Karşılaştırma', yol: '/uygulama-karsilastirma/', not: 'Seçtiğiniz iki uygulama karşı karşıya' },
+      { ad: 'Randevudan kontrole', yol: '/yaklasimimiz/', not: 'Dört adımda planlama düzeni' },
+      { ad: 'Soru ve yanıtlar', yol: '/sikca-sorulan-sorular/' },
+      { ad: 'Okuma Köşesi', yol: '/bilgi/' },
+      { ad: 'Cilt Eğilimi Testi', yol: '/cilt-tipi-testi/', not: 'On iki soruda cildinizin eğilimi' },
+      { ad: 'Bölge Rehberi', yol: '/bolge-pusulasi/', not: 'Yüzden vücuda sekiz bölge' },
+      { ad: 'Yan Yana Karşılaştır', yol: '/uygulama-karsilastirma/', not: 'Seçtiğiniz iki uygulama karşı karşıya' },
     ]},
     { ad: 'Dövme Silme', yol: '/uygulamalar/pico-lazer-dovme-silme/' },
     { ad: 'İletişim', yol: '/iletisim/' },
@@ -151,7 +151,7 @@ module.exports = {
     ['Çerez Politikası', '/yasal/cerez-politikasi/'],
     ['Kullanım Koşulları', '/yasal/kullanim-kosullari/'],
     ['Hasta Hakları', '/yasal/hasta-haklari/'],
-    ['İçerik ve Görsel Yayın İlkelerimiz', '/yasal/icerik-ve-gorsel-yayin-ilkelerimiz/'],
+    ['Yayın ve Görsel Kullanım Esaslarımız', '/yasal/icerik-ve-gorsel-yayin-ilkelerimiz/'],
   ],
 
   guncelleme: '25.09.2026',

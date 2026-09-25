@@ -39,30 +39,30 @@ module.exports = {
 <section class="bolum bolum--sicak" id="nedenler">
   <div class="sar">
     <div class="bolum-bas" data-gr>
-      <p class="g-etiket">Ayrım</p>
+      <p class="g-etiket">Farkı nerede</p>
       <h2>Kırışıklıklar hangi yollarla oluşur?</h2>
       <p class="giris">Her mimik, deriyi aynı hat boyunca katlar. Genç deri bu katlanmanın hemen ardından düzleşir; yıllar geçtikçe esneklik azalır ve kat yeri kalıcı bir çizgiye dönüşür. Bu dönüşümde kasın çalışma gücü, deri içindeki destek liflerinin azalması, güneşin birikimli etkisi ve yüz hacminin yer değiştirmesi birlikte rol oynar.</p>
     </div>
     <div class="g-katblok" data-gr>
-      <span class="g-kno">01</span>
+      <span class="g-kno">Kesit 01</span>
       <h3>Hareketle beliren (dinamik) çizgiler</h3>
       <p>Mimik kaslarının kasılmasıyla ortaya çıkar. Alındaki yatay çizgiler, iki kaş arasındaki dikey çizgi ve göz kenarındaki kaz ayağı bu grubun tipik örnekleridir. Yüzünüzü gevşettiğinizde çizgi neredeyse hiç görünmüyorsa baskın bileşen harekettir; bu durumda konuşulan, ilgili kasın ne kadar güçlü çalıştığıdır.</p>
       <div class="g-haplar"><a href="${r}uygulamalar/botulinum-toksin/">Botulinum toksin</a></div>
     </div>
     <div class="g-katblok" data-gr style="--d:60ms">
-      <span class="g-kno">02</span>
+      <span class="g-kno">Kesit 02</span>
       <h3>Dinlenirken de görünen (statik) çizgiler</h3>
       <p>Yüz hareketsizken de izlenen çizgilerdir. Burada tek etken kas değildir; deri içindeki kolajen ve elastik liflerin azalması, yıllarca aynı yerden katlanma ve alttaki hacmin incelmesi birlikte etkilidir. Korunmasız güneş ve sigara bu dönüşümü hızlandırır. Amaç derinin kendi destek yapısını güçlendirmek, derin çizgilerde ise hacmi desteklemektir; değişim haftalar ile aylar arasında, kademeli olarak izlenir.</p>
       <div class="g-haplar"><a href="${r}uygulamalar/genclik-asisi-skinbooster/">Gençlik aşısı (skinbooster)</a><a href="${r}uygulamalar/dolgu-uygulamalari/">Dolgu uygulamaları</a><a href="${r}uygulamalar/fraksiyonel-lazer/">Fraksiyonel lazer</a></div>
     </div>
     <div class="g-katblok" data-gr style="--d:120ms">
-      <span class="g-kno">03</span>
+      <span class="g-kno">Kesit 03</span>
       <h3>Kuruluğa bağlı ince çizgilenme</h3>
       <p>Mimikle bağlantısı olmayan, yüzeyde ağ gibi yayılan çok ince çizgilerdir. Cildin su tutma kapasitesi düştüğünde belirginleşir, nem dengesi yerine oturduğunda bir kısmı geriler. Bu tablo <a href="${r}cilt-sorunlari/nem-kaybi-ve-donukluk/">nem kaybı ve donukluk</a> sayfasında ayrıca anlatılır.</p>
     </div>
     <div class="g-katblok" data-gr style="--d:180ms">
-      <span class="g-kno">04</span>
-      <h3>Süreci hızlandıran etkenler</h3>
+      <span class="g-kno">Kesit 04</span>
+      <h3>Süreci hızlandıranlar</h3>
       <p>Deri içindeki kolajen yapımı genç erişkinlikten itibaren her yıl bir miktar azalır. Bu biyolojik süreci durdurmak mümkün değildir, ancak hızını etkileyen etkenler vardır. En belirleyici ve en kolay değiştirilebilen etken güneştir. Sigara hem deriye giden kan akımını azaltır hem de dudak çevresinde kendine özgü dikey çizgiler oluşturur.</p>
 <p>Düzensiz uyku, sık tekrarlanan kilo alıp verme ve hep aynı yanağın üzerine yatma alışkanlığı da katkı verebilir. Burun kanadından ağız köşesine uzanan belirgin hat ise bir kırışıklık değil, yanak ile dudak arasındaki doğal sınırdır; derinleşmesi daha çok hacim dağılımıyla ilgilidir. Bu konuyu <a href="${r}cilt-sorunlari/hacim-kaybi-ve-sarkma/">hacim kaybı ve sarkma</a> sayfasında anlatıyoruz.</p>
     </div>
@@ -82,7 +82,7 @@ module.exports = {
 <section class="bolum bolum--buz2">
   <div class="sar">
     <div class="bolum-bas" data-gr>
-      <p class="g-etiket">Sonrası</p>
+      <p class="g-etiket">Uygulamadan sonra</p>
       <h2>Çizginin kaynağı netleşince hangi seçenekler konuşulur?</h2>
       <p class="giris">Genel ilke basittir: hareketten doğan çizgide kasın gücü, dokudan doğan çizgide derinin kendisi ya da alttaki hacim hedef alınır. Aşağıdaki liste bilgi vermek içindir; sizin için hangisinin uygun olduğunu muayene belirler.</p>
     </div>

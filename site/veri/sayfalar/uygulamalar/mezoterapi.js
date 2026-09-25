@@ -12,11 +12,11 @@ module.exports = {
   <div class="sar">
     <div>
       <nav class="kirinti" aria-label="Konum" style="position:relative;font-size:.76rem;color:var(--sessiz);display:flex;gap:7px;margin-bottom:18px"><a href="${r}" style="color:var(--sessiz);text-decoration:none">Ana sayfa</a> › <a href="${r}uygulamalar/" style="color:var(--sessiz);text-decoration:none">Uygulamalar</a> › <span>Mezoterapi</span></nav>
-      <p class="g-etiket">Enjeksiyon Uygulamaları · Cilt Kalitesi</p>
+      <p class="g-etiket">Enjeksiyonla Yapılanlar · Cilt Kalitesi</p>
       <h1>Küçük hacimler, <span class="g-isik">çok sayıda nokta</span>: mezoterapi</h1>
       <p class="g-hero__alt">Mezoterapide, ihtiyaca göre hazırlanan bir solüsyon derinin içine çok sayıda küçük noktadan damla damla bırakılır. Her noktaya düşen miktar çoğunlukla 0,01 ile 0,05 mililitre arasındadır; böylece madde vücudun geri kalanına dağılmadan, ihtiyaç duyulan katmanda kalır. Yüz, boyun, dekolte ve el sırtından hangisinin programa gireceği muayenede ve öykünüz dinlendikten sonra belirlenir.</p>
       <div class="g-hero__cta">
-        <a class="dgm dgm--bir" href="${r}iletisim/">Randevu talebi</a>
+        <a class="dgm dgm--bir" href="${r}iletisim/">Randevu isteyin</a>
         <a class="dgm dgm--iki" href="#nedir">Solüsyonda neler var ↓</a>
       </div>
       <div class="g-tikler"><span><i></i>Tüm uygulamalar hekimin elinden</span><span><i></i>Kullanılan ürün dosyanızda</span><span><i></i>Kontrol randevusu verilir</span></div>
@@ -42,7 +42,7 @@ module.exports = {
 <section class="bolum bolum--buz2" id="nedir">
   <div class="sar">
     <div class="bolum-bas" data-gr>
-      <p class="g-etiket">Tanım ve sınırlar</p>
+      <p class="g-etiket">Ne yapar, ne yapmaz</p>
       <h2>Mezoterapide cilde ne verilir, nasıl etki etmesi beklenir?</h2>
       <p class="giris">Bir vitamini ağızdan almak ya da serumla damardan vermek ile onu doğrudan derinin içine bırakmak farklı şeylerdir. Mezoterapide ikinci yol izlenir: çok ince bir iğneyle, birbirine birkaç milimetre uzaklıktaki noktalara verilen solüsyon derinin orta katmanında kalır ve dolaşıma ancak çok az bir kısmı geçer.</p>
     </div>
@@ -67,7 +67,7 @@ module.exports = {
 <section class="bolum">
   <div class="sar">
     <div class="bolum-bas" data-gr>
-      <p class="g-etiket">Süreç</p>
+      <p class="g-etiket">Akış</p>
       <h2>Mezoterapi programı nasıl planlanır?</h2>
       <p class="giris">Program bir kez yazılıp bırakılmaz: her kontrolde cildinizin nasıl yanıt verdiğine bakılır, karışım ya da aralık gerekirse değiştirilir.</p>
     </div>
@@ -83,7 +83,7 @@ module.exports = {
         <div class="g-cubuk"><small><span>2–4. hafta</span><span>Sonraki seans kararı</span></small><div class="g-ciz"><b class="g-cubuk-bakir" data-gw="90%"></b></div></div>
         <p style="font-size:.72rem;color:var(--sessiz);margin-top:10px">Çubuklar oransal bir simgedir; size özel takvim muayenede netleşir.</p>
       </div>
-      <div class="g-kutu g-b2" data-gr style="--d:140ms"><span class="g-ket">Protokol</span>
+      <div class="g-kutu g-b2" data-gr style="--d:140ms"><span class="g-ket">Adım adım</span>
         <ol class="g-protokol">
           <li>Değerlendirme: ilaçlarınız, geçmiş hastalıklarınız, gebelik olasılığı ve önceki enjeksiyonlara verdiğiniz tepkiler sorulur; cildiniz iyi ışık altında incelenir.</li>
           <li>Karar ve onam: neyin beklenip neyin beklenmeyeceği, başka yollar ve hiçbir şey yapmamak da konuşulur; yazılı onam alınır. İlk görüşmede uygulama yapmak zorunlu değildir.</li>
@@ -105,8 +105,8 @@ module.exports = {
         </ul>
       </div>
       <div class="g-kutu g-b2 g-kutu--gorsel" data-gr style="--d:70ms"><img src="${r}varliklar/gorsel/uyg-damar-yolu-ile-sivi-ve-vitamin-uygulamasi.webp" alt="Mermer tepside içerik şişeleri ve ince hortum" loading="lazy"><span class="g-ainot">Temsilî görsel · yapay zekâ ile üretildi</span></div>
-      <div class="g-kutu g-b3 g-kutu--gece" data-gr><span class="g-ket">İlke</span><p>“Şişenin üzerindeki ad değil, içindekiler önemlidir. Size uygulanacak her bileşeni adıyla söyler, dosyanıza yazarız.”</p></div>
-      <div class="g-kutu g-b3 g-kutu--cta" data-gr style="--d:70ms"><h3>Cildinizi yakından görelim</h3><p>Hangi karışımın, hangi aralıkla uygulanacağı muayeneden sonra belli olur.</p><a class="dgm dgm--altin" href="${r}iletisim/">Randevu talebi</a></div>
+      <div class="g-kutu g-b3 g-kutu--gece" data-gr><span class="g-ket">Hekimin notu</span><p>“Şişenin üzerindeki ad değil, içindekiler önemlidir. Size uygulanacak her bileşeni adıyla söyler, dosyanıza yazarız.”</p></div>
+      <div class="g-kutu g-b3 g-kutu--cta" data-gr style="--d:70ms"><h3>Cildinizi yakından görelim</h3><p>Hangi karışımın, hangi aralıkla uygulanacağı muayeneden sonra belli olur.</p><a class="dgm dgm--altin" href="${r}iletisim/">Randevu isteyin</a></div>
     </div>
   </div>
 </section>
@@ -115,7 +115,7 @@ module.exports = {
 <section class="bolum bolum--sicak">
   <div class="sar">
     <div class="bolum-bas" data-gr>
-      <p class="g-etiket">Riskler</p>
+      <p class="g-etiket">Dikkat edilecekler</p>
       <h2>Uygulamadan sonra neler olabilir, ne zaman beklemeden başvurmalısınız?</h2>
       <p class="giris">İğneyle yapılan her uygulamada beklenmedik bir durum yaşanabilir. Hangi bulgunun olağan, hangisinin dikkat gerektiren olduğunu ayırabilmeniz için bunları gruplara ayırdık; çoğu kişide bunların yalnızca bir kısmı görülür.</p>
     </div>
@@ -148,12 +148,12 @@ module.exports = {
 <section class="bolum bolum--buz2">
   <div class="sar">
     <div class="bolum-bas" data-gr>
-      <p class="g-etiket">Düzen</p>
+      <p class="g-etiket">Sıra</p>
       <h2>Seanslar hangi aralıkla yapılır, etkisi ne kadar kalır?</h2>
     </div>
     <div class="izgara izgara--3" data-gr>
       <div class="kart kart--duz">
-        <h4>Seans düzeni</h4>
+        <h4>Seans aralıkları</h4>
         <p>Kaç seans gerektiği, şikâyetin türüne ve cildin ilk seanslara verdiği yanıta bağlıdır. Tipik bir planda ilk dönemde iki–dört haftada bir görüşülür; cilt yanıt verdikçe seansların arası açılır ve bakım aralıkları konuşulur.</p>
       </div>
       <div class="kart kart--duz">
@@ -184,7 +184,7 @@ module.exports = {
       <a href="${r}uygulamalar/genclik-asisi-skinbooster/">Gençlik aşısı (skinbooster)</a>
       <a href="${r}uygulamalar/ignesiz-mezoterapi/">İğnesiz mezoterapi</a>
       <a href="${r}uygulamalar/sac-mezoterapisi/">Saç mezoterapisi</a>
-      <a href="${r}uygulamalar/">Tüm uygulamalar</a>
+      <a href="${r}uygulamalar/">Uygulamaların tamamı</a>
     </div>
   </div>
 </section>

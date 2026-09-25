@@ -16,7 +16,7 @@ module.exports = {
       <h1>İğnesiz mezoterapi: iğne yerine <span class="g-isik">elektrik darbeleriyle</span> iletim.</h1>
       <p class="g-hero__alt">Cildin en dış katmanı, sürülen ürünlerin büyük kısmını içeri almayan bir kalkan gibidir. Elektroporasyonda çok kısa elektrik darbeleri bu kalkanda geçici aralıklar açar ve cilde sürülen solüsyon bu aralıklardan ilerler. Deri delinmez; buna karşılık ulaşılan derinlik ve içeri geçen miktar iğneli mezoterapiden azdır.</p>
       <div class="g-hero__cta">
-        <a class="dgm dgm--bir" href="${r}iletisim/">Randevu talebi</a>
+        <a class="dgm dgm--bir" href="${r}iletisim/">Randevu isteyin</a>
         <a class="dgm dgm--iki" href="#ilkbolum">Yöntemin işleyişi ↓</a>
       </div>
       <div class="g-tikler"><span><i></i>Deriye iğne girmez</span><span><i></i>Aynı gün işe dönülür</span><span><i></i>Elektronik implantta yapılmaz</span></div>
@@ -40,7 +40,7 @@ module.exports = {
 <!-- BU NEDİR / BU NE DEĞİLDİR -->
 <section class="bolum" id="ilkbolum">
   <div class="sar">
-    <div class="bolum-bas" data-gr><p class="g-etiket">Tanım ve sınırlar</p><h2>Elektroporasyon cilde ne yapar, hangi yöntemin yerine geçmez?</h2><p class="giris">Kuru, donuk ya da yorgun görünen bir cildin arkasında bariyer bozukluğundan yanlış ürün kullanımına kadar farklı nedenler olabilir. İğnesiz mezoterapi bu nedenler ayrıştırıldıktan sonra, bir bakım planının parçası olarak konuşulur. Şikâyet başlıklarının tamamı <a href="${r}cilt-sorunlari/">cilt sorunları</a> bölümünde yer alıyor.</p></div>
+    <div class="bolum-bas" data-gr><p class="g-etiket">Ne yapar, ne yapmaz</p><h2>Elektroporasyon cilde ne yapar, hangi yöntemin yerine geçmez?</h2><p class="giris">Kuru, donuk ya da yorgun görünen bir cildin arkasında bariyer bozukluğundan yanlış ürün kullanımına kadar farklı nedenler olabilir. İğnesiz mezoterapi bu nedenler ayrıştırıldıktan sonra, bir bakım planının parçası olarak konuşulur. Şikâyet başlıklarının tamamı <a href="${r}cilt-sorunlari/">cilt sorunları</a> bölümünde yer alıyor.</p></div>
     <div class="izgara izgara--2">
       <div class="kutu kutu--bilgi" data-gr>
         <b>Bu nedir</b>
@@ -62,7 +62,7 @@ module.exports = {
 <!-- BENTO -->
 <section class="bolum bolum--sicak">
   <div class="sar">
-    <div class="bolum-bas" data-gr><p class="g-etiket">Planlama</p><h2>Kür nasıl planlanır, kimler için uygun değildir?</h2><p class="giris">İğne fikri sizi rahatsız ediyorsa, kolay morarıyorsanız ya da cildiniz birçok üründe kızarıyorsa bu yöntem gündeme gelebilir.</p></div>
+    <div class="bolum-bas" data-gr><p class="g-etiket">Plan nasıl kurulur</p><h2>Kür nasıl planlanır, kimler için uygun değildir?</h2><p class="giris">İğne fikri sizi rahatsız ediyorsa, kolay morarıyorsanız ya da cildiniz birçok üründe kızarıyorsa bu yöntem gündeme gelebilir.</p></div>
     <div class="g-bento">
       <div class="g-kutu g-b2 g-donutkap" data-gr>
         <div class="g-donut"><svg viewBox="0 0 100 100" width="100" height="100"><circle class="g-iz" cx="50" cy="50" r="45"/><circle class="g-dol" data-gyuzde="65" cx="50" cy="50" r="45"/><circle class="g-kom" cx="50" cy="50" r="45"/></svg><b>4–8</b></div>
@@ -75,7 +75,7 @@ module.exports = {
         <div class="g-cubuk"><small><span>İRİ MOLEKÜL</span><span>Neredeyse hiç</span></small><div class="g-ciz"><b class="g-cubuk-bakir" data-gw="10%"></b></div></div>
         <p style="font-size:.68rem;color:var(--sessiz);margin-top:8px">Çubuk boyları yalnız karşılaştırma içindir; size özel plan muayenede kurulur.</p>
       </div>
-      <div class="g-kutu g-b2" data-gr style="--d:140ms"><span class="g-ket">Protokol</span>
+      <div class="g-kutu g-b2" data-gr style="--d:140ms"><span class="g-ket">Adım adım</span>
         <ol class="g-protokol">
           <li>Hedefin konuşulması: bu yöntem beklentinizi karşılayabilir mi?</li>
           <li>Elektronik implant, nöbet öyküsü, gebelik ve ilaçların sorulması</li>
@@ -91,12 +91,12 @@ module.exports = {
 <p>Yüzünüzde sürekli kızarıklık yapan gül hastalığı (rozasea), kepeklenmeyle giden seboreik dermatit ya da yaygın iltihaplı sivilce varsa önce bunlar yatıştırılır. Kuşkulu bir ben önce büyütmeli olarak incelenir. Yüzde metal plaka ya da vida gibi bir implant varsa akımın o bölgeye verilip verilmeyeceğine ayrıca karar verilir. Yakın zamanda peeling, <a href="${r}uygulamalar/fraksiyonel-lazer/">lazer</a> ya da <a href="${r}uygulamalar/altin-igne-radyofrekans/">radyofrekans mikroiğne</a> yaptırdıysanız cildin önce kendini toparlaması gerekir.</p>
       </div>
       <div class="g-kutu g-b2 g-kutu--gorsel" data-gr style="--d:70ms"><img src="${r}varliklar/gorsel/uyg-ignesiz-mezoterapi-2.webp" alt="Mermer tepside iğnesiz uygulama başlığı ve serum ampulleri" loading="lazy"><span class="g-ainot">Temsilî görsel · yapay zekâ ile üretildi</span></div>
-      <div class="g-kutu g-b2 g-kutu--gece" data-gr><span class="g-ket">İlke</span><p>"İğnesiz yöntem iğneli yöntemin yedeği değil, başka bir hedefin aracıdır."</p></div>
+      <div class="g-kutu g-b2 g-kutu--gece" data-gr><span class="g-ket">Hekimin notu</span><p>"İğnesiz yöntem iğneli yöntemin yedeği değil, başka bir hedefin aracıdır."</p></div>
       <div class="g-kutu g-b2" data-gr style="--d:70ms">
         <span class="g-ket">Seans sonrası</span>
         <p style="font-size:.92rem">Seanstan sonra doğrudan işe dönebilirsiniz; hafif pembelik ya da gerginlik varsa birkaç saatte kaybolur. Cildiniz o akşam hâlâ normalden geçirgen olacağı için ertesi sabaha kadar yalnızca nemlendirici ve güneş koruyucu kullanın; asitli ya da retinollü ürünleri, taneli peelingleri ve alkollü tonikleri 12 saat bekletin. Sauna, hamam ve ağır antrenman için de ertesi günü bekleyin. Katkı birkaç hafta içinde azaldığından planların çoğunda aralıklı bakım seansları yer alır. Sonuçlar kişiden kişiye değişir. Cildiniz kolay tahriş oluyorsa uygulama sırasını <a href="${r}uygulamalar/hekim-muayenesi/">hekim muayenesi</a> sırasında birlikte belirleriz.</p>
       </div>
-      <div class="g-kutu g-b2 g-kutu--cta" data-gr style="--d:140ms"><h3>Hedefinizi birlikte netleştirelim</h3><p>Hedef belli olmadan seans planı yapılmaz.</p><a class="dgm dgm--altin" href="${r}iletisim/">Randevu talebi</a></div>
+      <div class="g-kutu g-b2 g-kutu--cta" data-gr style="--d:140ms"><h3>Hedefinizi birlikte netleştirelim</h3><p>Hedef belli olmadan seans planı yapılmaz.</p><a class="dgm dgm--altin" href="${r}iletisim/">Randevu isteyin</a></div>
       <div class="kutu kutu--acil g-b6" data-gr>
         <b>Hangi durumda hemen aramalısınız?</b>
         <p>Seanstan sonra ciltte kaşıntılı kabarıklıklar belirir, kızarıklık yüzün başka bölgelerine yayılır ya da yanma hissi birkaç günde geçmezse kontrol gününü beklemeden ${S.iletisim.tel} numarasını arayın. Kabarıklıklar vücuda yayılır, dudakta ya da göz kapaklarında hızla şişlik gelişir, nefes almak ya da yutkunmak zorlaşırsa bizi aramakla vakit kaybetmeyin; doğrudan <b>112</b> Acil Çağrı Merkezi’ni arayın ya da en yakın hastanenin acil birimine başvurun.</p>

@@ -11,7 +11,7 @@ module.exports = {
 <!-- ═════════ BELGE HERO ═════════ -->
 <section class="g-bhero">
   <div class="sar">
-    <p class="g-etiket">Yasal</p>
+    <p class="g-etiket">Mevzuat notu</p>
     <h1>Açık Rıza Metni</h1>
     <p class="g-bhero__alt">Buradaki rıza, sitedeki iletişim formuyla sınırlıdır. Formu gönderdiğinizde paylaştığınız ad ve iletişim bilgisi, seçtiğiniz konu ve mesajınız size geri dönebilmemiz dışında hiçbir amaçla kullanılmaz; bu işlemenin hukuki dayanağı açık rızanızdır (6698 sayılı Kanun, m. 5/1). Rıza vermek zorunda değilsiniz; isterseniz telefonla aramanız da mümkündür.</p>
     <div class="g-bmeta">
@@ -110,7 +110,7 @@ module.exports = {
         </div>
         <ol class="adimlar">
           <li>
-            <h4>Talebinizi iletin</h4>
+            <h4>Bize yazın</h4>
             <p>“Form için verdiğim rızayı geri çekiyorum” cümlesiyle birlikte formda kullandığınız adı ve iletişim bilgisini yazmanız, kaydınızı bulmamız için yeterlidir.</p>
           </li>
           <li>
@@ -118,7 +118,7 @@ module.exports = {
             <p>Talep elimize ulaştığı anda formdan gelen kayıt bekletilmeden silinir; yedeklerde kopyası bulunuyorsa o da kaldırılır.</p>
           </li>
           <li>
-            <h4>Size yazılı dönüş yapılır</h4>
+            <h4>Yazılı olarak yanıtlanır</h4>
             <p>Silme işleminin tamamlandığı, mevzuattaki otuz günlük süre içinde size bildirilir.</p>
           </li>
         </ol>
@@ -147,7 +147,7 @@ module.exports = {
             <span class="kart__ok">Oku ${ik.ok}</span>
           </a>
           <a class="kart" href="${r}hazirlik-listesi/">
-            <h3>Hazırlık listesi</h3>
+            <h3>Randevuya hazırlanma listesi</h3>
             <p>Randevuya hazırlanmanızı kolaylaştıran, yalnız kendi cihazınızda çalışan kontrol listesi.</p>
             <span class="kart__ok">Aç ${ik.ok}</span>
           </a>

@@ -63,12 +63,12 @@ module.exports = {
         <div class="izgara" style="gap:14px;margin-top:16px">
           <div class="kart kart--sicak">
             <span class="kart__ikon">${ik.pin}</span>
-            <h4 style="margin-top:8px">Toplu taşıma ile</h4>
+            <h4 style="margin-top:8px">Toplu taşımayla gelirken</h4>
             <p>Marmaray’ın Bakırköy istasyonu ya da Bakırköy’deki metro durakları (İncirli dâhil) toplu taşımada en pratik seçeneklerdir. İstasyondan sonrası için yukarıdaki yol tarifi bağlantısını kullanabilirsiniz.</p>
           </div>
           <div class="kart kart--sicak">
             <span class="kart__ikon">${ik.saat}</span>
-            <h4 style="margin-top:8px">Özel araç ile</h4>
+            <h4 style="margin-top:8px">Araçla gelirken</h4>
             <p>Sahil yolundan ya da İncirli yönünden Bakırköy merkezine ulaşabilirsiniz. Merkezde yol kenarına park etmek çoğu saatte zordur; yakındaki otoparklardan birini tercih etmek ve trafiğe pay bırakmak zaman kazandırır.</p>
           </div>
         </div>
@@ -81,8 +81,8 @@ module.exports = {
 <section class="bolum bolum--buz2">
   <div class="sar sar--dar">
     <div class="bolum-bas">
-      <p class="etiket">Form</p>
-      <h2>Randevu talep formu</h2>
+      <p class="etiket">Talep formu</p>
+      <h2>Randevu için yazın</h2>
       <p class="giris">Aşağıdaki alanlar, sizi arayabilmemiz için gerekenlerle sınırlıdır. Mesai saatleri içinde telefonla, telefona ulaşamazsak e-postayla size dönüyoruz.</p>
     </div>
 
@@ -147,7 +147,7 @@ module.exports = {
 <section class="bolum">
   <div class="sar">
     <div class="bolum-bas">
-      <p class="etiket">Randevu düzeni</p>
+      <p class="etiket">Randevu akışı</p>
       <h2>Randevu günü için birkaç not</h2>
       <p class="giris">Tek hekimli bir muayenehanede her randevu bir sonrakine bağlıdır; aralarda odanın hazırlanması için de süre bırakılır. Aşağıdaki küçük ayrıntılar hem sizin hem de sizden sonra gelecek kişinin beklemesini azaltır.</p>
     </div>
@@ -169,12 +169,12 @@ module.exports = {
       </div>
       <div class="kart">
         <span class="kart__ikon">${ik.liste}</span>
-        <h3>Kontrol randevuları</h3>
+        <h3>Kontrol görüşmeleri</h3>
         <p>Kontrolün ne zaman yapılacağı işleme göre değişir; tarihi muayenede birlikte belirleriz. Unutursanız bir telefonla yeni gün ayarlanır.</p>
       </div>
       <div class="kart">
         <span class="kart__ikon">${ik.kalkan}</span>
-        <h3>Mahremiyet</h3>
+        <h3>Mahremiyetiniz</h3>
         <p>Muayene kapalı odada, hekimle baş başa yapılır. Takip için fotoğraf gerekirse yalnızca tıbbi kaydınız için ve onayınızla çekilir; hiçbir yerde yayımlanmaz.</p>
       </div>
       <div class="kart">
@@ -201,25 +201,25 @@ module.exports = {
 <section class="bolum bolum--sik">
   <div class="sar">
     <div class="bolum-bas">
-      <p class="etiket">İlgili başlıklar</p>
+      <p class="etiket">Buradan devam edin</p>
       <h2>Gelmeden önce işinize yarayabilecek sayfalar</h2>
     </div>
     <div class="izgara izgara--3">
       <a class="kart" href="${r}hazirlik-listesi/">
         <span class="kart__ikon">${ik.liste}</span>
-        <h3>Hazırlık listesi</h3>
+        <h3>Randevuya hazırlanma listesi</h3>
         <p>Muayeneye gelmeden önce aklınızdakileri not etmenize yardım eden kısa bir araç. Cihazınızda çalışır; yazdıklarınız bize gönderilmez.</p>
         <span class="kart__ok">Aracı aç ${ik.ok}</span>
       </a>
       <a class="kart" href="${r}sikca-sorulan-sorular/">
         <span class="kart__ikon">${ik.mercek}</span>
-        <h3>Sıkça sorulan sorular</h3>
+        <h3>Soru ve yanıtlar</h3>
         <p>Hazırlıktan kontrol randevusuna kadar en çok merak edilenler.</p>
         <span class="kart__ok">Soruları gör ${ik.ok}</span>
       </a>
       <a class="kart" href="${r}yaklasimimiz/">
         <span class="kart__ikon">${ik.kalkan}</span>
-        <h3>Yaklaşımımız</h3>
+        <h3>Randevudan kontrole</h3>
         <p>Her planın neden muayeneyle başladığı ve dört adımın hangi sırayla ilerlediği.</p>
         <span class="kart__ok">İncele ${ik.ok}</span>
       </a>
@@ -231,7 +231,7 @@ module.exports = {
       </a>
       <a class="kart" href="${r}mevzuat/">
         <span class="kart__ikon">${ik.liste}</span>
-        <h3>Uyduğumuz mevzuat</h3>
+        <h3>Bağlı olduğumuz mevzuat</h3>
         <p>Bu sitede mali bilgiye, hasta yorumuna ve öncesi–sonrası görseline neden yer verilmediği.</p>
         <span class="kart__ok">Listeyi gör ${ik.ok}</span>
       </a>

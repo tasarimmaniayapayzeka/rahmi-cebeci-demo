@@ -16,7 +16,7 @@ module.exports = {
       <h1>Pico lazerle dövme silme: mürekkep <span class="g-isik">seanslar içinde</span> açılır.</h1>
       <p class="g-hero__alt">Pikosaniye, saniyenin trilyonda biridir; pico lazer enerjisini bu kadar kısa süren atımlarla verir. Hedef, deri içindeki mürekkep taneciklerini ısınmaya fırsat bulmadan ufalamak ve bu kırıntıların vücut tarafından haftalar içinde taşınmasını sağlamaktır. Tam silinme taahhüt edilmez; amaç, görünümün her seansla biraz daha açılmasıdır.</p>
       <div class="g-hero__cta">
-        <a class="dgm dgm--bir" href="${r}iletisim/">Randevu talebi</a>
+        <a class="dgm dgm--bir" href="${r}iletisim/">Randevu isteyin</a>
         <a class="dgm dgm--iki" href="#ilkbolum">Yöntemin işleyişi ↓</a>
       </div>
       <div class="g-tikler"><span><i></i>Tam silinme taahhüt edilmez</span><span><i></i>Önce küçük alanda deneme</span><span><i></i>Ben üzerine atım yapılmaz</span></div>
@@ -39,7 +39,7 @@ module.exports = {
 <!-- BU NEDİR / BU NE DEĞİLDİR -->
 <section class="bolum" id="ilkbolum">
   <div class="sar">
-    <div class="bolum-bas" data-gr><p class="g-etiket">Tanım ve sınırlar</p><h2>Lazer dövmedeki mürekkebe ne yapar, dövme bütünüyle kaybolur mu?</h2><p class="giris">Dövme iğnesi mürekkebi derinin orta katmanına bırakır. Tanecikler onları yutan savunma hücrelerinin içinde kalır; taşınamayacak kadar iri oldukları için yıllarca yerinden oynamaz. Lazer taneciği taşınabilir boyuta indirir, gerisini vücut yapar. Genel çerçeve için <a href="${r}cilt-sorunlari/dovme-ve-kalici-makyaj/">dövme ve kalıcı makyaj</a> sayfasına bakabilirsiniz.</p></div>
+    <div class="bolum-bas" data-gr><p class="g-etiket">Ne yapar, ne yapmaz</p><h2>Lazer dövmedeki mürekkebe ne yapar, dövme bütünüyle kaybolur mu?</h2><p class="giris">Dövme iğnesi mürekkebi derinin orta katmanına bırakır. Tanecikler onları yutan savunma hücrelerinin içinde kalır; taşınamayacak kadar iri oldukları için yıllarca yerinden oynamaz. Lazer taneciği taşınabilir boyuta indirir, gerisini vücut yapar. Genel çerçeve için <a href="${r}cilt-sorunlari/dovme-ve-kalici-makyaj/">dövme ve kalıcı makyaj</a> sayfasına bakabilirsiniz.</p></div>
     <div class="izgara izgara--2">
       <div class="kutu kutu--bilgi" data-gr>
         <b>Bu nedir</b>
@@ -76,20 +76,20 @@ module.exports = {
 <!-- BENTO -->
 <section class="bolum bolum--sicak">
   <div class="sar">
-    <div class="bolum-bas" data-gr><p class="g-etiket">Planlama</p><h2>Seans sayısını ne belirler, kimlerde beklemek gerekir?</h2><p class="giris">Muayenede renk, derinlik, yoğunluk, dövmenin yaşı, bölgenin dolaşımı ve genel sağlık durumunuz not edilir. İlk aralık kabaca bir tahmindir; dövmenin lazere tepkisini ilk iki seans gösterir, sayı ondan sonra daraltılır.</p></div>
+    <div class="bolum-bas" data-gr><p class="g-etiket">Plan nasıl kurulur</p><h2>Seans sayısını ne belirler, kimlerde beklemek gerekir?</h2><p class="giris">Muayenede renk, derinlik, yoğunluk, dövmenin yaşı, bölgenin dolaşımı ve genel sağlık durumunuz not edilir. İlk aralık kabaca bir tahmindir; dövmenin lazere tepkisini ilk iki seans gösterir, sayı ondan sonra daraltılır.</p></div>
     <div class="g-bento">
       <div class="g-kutu g-b2 g-donutkap" data-gr>
         <div class="g-donut"><svg viewBox="0 0 100 100" width="100" height="100"><circle class="g-iz" cx="50" cy="50" r="45"/><circle class="g-dol" data-gyuzde="70" cx="50" cy="50" r="45"/><circle class="g-kom" cx="50" cy="50" r="45"/></svg><b>6–8 hf</b></div>
         <p><b style="color:var(--murekkep)">Seanslar arası süre</b><br>Ufalanan mürekkebin taşınması zaman alır; yeni seans, bu taşınma büyük ölçüde tamamlandığında yapılır.</p>
       </div>
       <div class="g-kutu g-b2" data-gr style="--d:70ms">
-        <span class="g-ket">Renge göre yanıt</span>
+        <span class="g-ket">Renk ve yanıt</span>
         <div class="g-cubuk"><small><span>SİYAH–KOYU GRİ</span><span>Belirgin açılma</span></small><div class="g-ciz"><b class="g-cubuk-petrol" data-gw="90%"></b></div></div>
         <div class="g-cubuk"><small><span>KIRMIZI–PEMBE</span><span>Değişken</span></small><div class="g-ciz"><b class="g-cubuk-mavi" data-gw="55%"></b></div></div>
         <div class="g-cubuk"><small><span>YEŞİL–MAVİ–SARI</span><span>Yavaş ve sınırlı</span></small><div class="g-ciz"><b class="g-cubuk-bakir" data-gw="15%"></b></div></div>
         <p style="font-size:.68rem;color:var(--sessiz);margin-top:8px">Çubuk boyları yalnız karşılaştırma içindir; size özel plan muayenede kurulur.</p>
       </div>
-      <div class="g-kutu g-b2" data-gr style="--d:140ms"><span class="g-ket">Protokol</span>
+      <div class="g-kutu g-b2" data-gr style="--d:140ms"><span class="g-ket">Adım adım</span>
         <ol class="g-protokol">
           <li>Muayene: renk, derinlik, dövmenin yaşı, alandaki benler</li>
           <li>Görünmeyen küçük bir noktada deneme atımı</li>
@@ -105,12 +105,12 @@ module.exports = {
 <p>Kabarık iz ya da keloid yapma eğilimi, vitiligo gibi renk kaybıyla giden tablolar, gebelik ve emzirme, kontrolsüz diyabet ve yara iyileşmesini bozan durumlar uygulamayı engeller ya da erteler. Alan içindeki benlere ve incelenmemiş pigmentli lekelere atım yapılmaz; önce büyütmeli olarak bakılır. Akne için ağızdan ilaç (isotretinoin) kullandıysanız ya da bölgeye yakın zamanda başka bir işlem yapıldıysa bir süre beklenir.</p>
       </div>
       <div class="g-kutu g-b2 g-kutu--gorsel" data-gr style="--d:70ms"><img src="${r}varliklar/gorsel/uyg-pico-lazer-dovme-silme-2.webp" alt="Kol iç yüzündeki deri; dövmenin sık yapıldığı alanlardan biri" loading="lazy"><span class="g-ainot">Temsilî görsel · yapay zekâ ile üretildi</span></div>
-      <div class="g-kutu g-b2 g-kutu--gece" data-gr><span class="g-ket">İlke</span><p>"Açılmayacağını öngördüğümüz bir dövme için seans dizisi başlatmıyoruz."</p></div>
+      <div class="g-kutu g-b2 g-kutu--gece" data-gr><span class="g-ket">Hekimin notu</span><p>"Açılmayacağını öngördüğümüz bir dövme için seans dizisi başlatmıyoruz."</p></div>
       <div class="g-kutu g-b2" data-gr style="--d:70ms">
-        <span class="g-ket">Sonrası</span>
+        <span class="g-ket">Uygulamadan sonra</span>
         <p style="font-size:.92rem">İlk günlerde kızarıklık, hafif şişlik ve hassasiyet olağandır; noktasal kanama, küçük su kabarcıkları ve ince kabuk görülebilir, bunlar çoğunlukla bir–iki haftada yatışır. Seans günü ve sonrasında yapılacakları aşağıda adım adım yazdık.</p>
       </div>
-      <div class="g-kutu g-b2 g-kutu--cta" data-gr style="--d:140ms"><h3>Dövmenize birlikte bakalım</h3><p>Renk ve derinlik görülmeden seans aralığı söylenmez.</p><a class="dgm dgm--altin" href="${r}iletisim/">Randevu talebi</a></div>
+      <div class="g-kutu g-b2 g-kutu--cta" data-gr style="--d:140ms"><h3>Dövmenize birlikte bakalım</h3><p>Renk ve derinlik görülmeden seans aralığı söylenmez.</p><a class="dgm dgm--altin" href="${r}iletisim/">Randevu isteyin</a></div>
       <div class="kutu kutu--acil g-b6" data-gr>
         <b>Beklemeden bize ulaşmanız gereken durumlar</b>
         <p>Kızarıklık yayılıyor, ağrı azalacağına artıyor, akıntı ya da ateş oluyor, büyük su kabarcıkları çıkıyor veya şişlik uzuyorsa kontrol gününü beklemeyin. ${S.iletisim.tel} numarasından bize ulaşın; telefonla ulaşamıyorsanız en yakın acil servise gidin.</p>
@@ -124,32 +124,32 @@ module.exports = {
   <div class="sar">
     <div class="bolum-bas" data-gr><p class="g-etiket">Seans günü ve bakım</p><h2>Seans günü ne olur, sonraki haftalarda neye dikkat edilir?</h2><p class="giris">Bakırköy’deki muayenehanemizde her seans aynı sırayla ilerler; size özel bakım notu seansın sonunda yazılı olarak verilir.</p></div>
     <div class="g-katblok" data-gr>
-      <span class="g-kno">01</span>
+      <span class="g-kno">Kesit 01</span>
       <h3>Gelmeden önce</h3>
       <p>Seanstan önceki dört hafta bölgeyi güneşten ve bronzlaştırıcılardan koruyun. Seans günü alana krem sürmeyin; kıl varsa bir gün önce jiletle alın, ağda yapmayın. Bol bir giysi tercih edin.</p>
     </div>
     <div class="g-katblok" data-gr style="--d:60ms">
-      <span class="g-kno">02</span>
+      <span class="g-kno">Kesit 02</span>
       <h3>Hazırlık ve göz koruması</h3>
       <p>Bölge temizlenir ve yalnızca dosyanızda saklanmak üzere fotoğraflanır. Size ve hekime lazere uygun koruyucu gözlük takılır; gerekirse uyuşturucu krem ya da soğuk hava kullanılır.</p>
     </div>
     <div class="g-katblok" data-gr style="--d:120ms">
-      <span class="g-kno">03</span>
+      <span class="g-kno">Kesit 03</span>
       <h3>Atımlar</h3>
       <p>Süre, dövmenin büyüklüğüne göre birkaç dakikadan yarım saate kadar değişir. Atımlar lastik bant çarpması ya da sıcak bir kıvılcım gibi hissedilebilir. Dövmenin üzerinde oluşan anlık beyazlama dakikalar içinde söner.</p>
     </div>
     <div class="g-katblok" data-gr style="--d:180ms">
-      <span class="g-kno">04</span>
+      <span class="g-kno">Kesit 04</span>
       <h3>İlk 48 saat</h3>
       <p>Bölge soğutulur, ince bir tabaka merhem sürülüp steril örtüyle kapatılır. Evde buzu doğrudan değdirmeden, beze sararak uygulayın. Kısa ve ılık duş alın, bölgeyi ovmadan kurulayın.</p>
     </div>
     <div class="g-katblok" data-gr style="--d:240ms">
-      <span class="g-kno">05</span>
+      <span class="g-kno">Kesit 05</span>
       <h3>İlk iki hafta</h3>
       <p>Su kabarcıklarını patlatmayın, kabukları koparmayın, kaşımayın. Kabuklar tamamen dökülmeden deniz, havuz, hamam ve saunaya girmeyin; yoğun spor ve sürtünen sıkı giysiler ilk günlerde ertelenir.</p>
     </div>
     <div class="g-katblok" data-gr style="--d:300ms">
-      <span class="g-kno">06</span>
+      <span class="g-kno">Kesit 06</span>
       <h3>Seanslar arasında</h3>
       <p>Deri kapandıktan sonra bölgeyi her gün yüksek korumalı güneş koruyucuyla ya da giysiyle örtün; koruma dizi boyunca sürer. Altı–sekiz hafta sonraki kontrolde açılma değerlendirilir ve sonraki seansa birlikte karar verilir. İzlem düzeni <a href="${r}uygulamalar/uygulama-sonrasi-takip/">uygulama sonrası takip</a> sayfasında.</p>
     </div>

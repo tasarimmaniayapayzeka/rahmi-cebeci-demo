@@ -39,32 +39,32 @@ module.exports = {
 <section class="bolum bolum--sicak" id="nedenler">
   <div class="sar">
     <div class="bolum-bas" data-gr>
-      <p class="g-etiket">Ayrım</p>
+      <p class="g-etiket">Farkı nerede</p>
       <h2>Yüzün hangi katmanları zamanla değişir?</h2>
       <p class="giris">Yüzü katlı bir yapı gibi düşünebilirsiniz: en altta kemik, üstünde bağlar ve kaslar, onun üstünde yağ bölmeleri, en dışta deri. Yaşla birlikte bu katmanların hepsi farklı hızda değişir. Bu yüzden çoğu kişi tek bir çizgiden değil, yüzünün bütün olarak aşağı indiğinden yakınır.</p>
     </div>
     <div class="g-katblok" data-gr>
-      <span class="g-kno">01</span>
+      <span class="g-kno">Kesit 01</span>
       <h3>Kemik iskelet</h3>
       <p>Yüz kemikleri de zamanla yeniden biçimlenir. Göz çukurunun kenarları genişler, elmacık kemiğinin öne çıkıklığı azalır, alt çenenin açısı belirginliğini yitirir. Temel küçüldükçe üzerine oturan dokular daha az desteklenir.</p>
     </div>
     <div class="g-katblok" data-gr style="--d:60ms">
-      <span class="g-kno">02</span>
+      <span class="g-kno">Kesit 02</span>
       <h3>Yağ bölmeleri</h3>
       <p>Yüzdeki yağ tek bir tabaka değil, ince zarlarla ayrılmış bölmelerdir ve bu bölmeler aynı hızla değişmez. Bazıları erir, bazıları aşağı doğru yer değiştirir; sonuçta yüzün üst kısmı boşalırken alt kısmı daha dolgun görünebilir. Kısa sürede çok kilo vermek bu değişimi belirgin biçimde hızlandırır.</p>
     </div>
     <div class="g-katblok" data-gr style="--d:120ms">
-      <span class="g-kno">03</span>
+      <span class="g-kno">Kesit 03</span>
       <h3>Tutucu bağlar</h3>
       <p>Derin katmanları kemiğe sabitleyen bağlar zamanla esnekliğini kaybeder. Bağın zayıfladığı yerde doku aşağı iner, güçlü kaldığı yerde sabit durur; oluklar ve çöküntüler bu iki bölgenin buluştuğu hatlarda belirir. Yani sarkma yalnızca yer çekiminin işi değil, azalan destekle süren ağırlığın ortak sonucudur.</p>
     </div>
     <div class="g-katblok" data-gr style="--d:180ms">
-      <span class="g-kno">04</span>
+      <span class="g-kno">Kesit 04</span>
       <h3>Deri</h3>
       <p>Deri içindeki kolajen yapımı genç erişkinlikten sonra her yıl biraz azalır ve deri incelir. İnce deri, alttaki hacim değişikliklerini gizleyemez; tersine onları daha görünür kılar. Güneş, destek liflerini doğrudan yıprattığı için dış etkenlerin başında gelir; sigara ise dokunun beslenmesini azaltır.</p>
     </div>
     <div class="g-katblok" data-gr style="--d:240ms">
-      <span class="g-kno">05</span>
+      <span class="g-kno">Kesit 05</span>
       <h3>Işığın yüzdeki dağılımı</h3>
       <p>Bir yüzün dinç ya da yorgun algılanması büyük ölçüde ışığın nereye düştüğüne bağlıdır. Dolgun ve öne bakan alanlar ışığı geri yansıtır, çöken alanlar gölgede kalır. Hacim azaldıkça gölgeli alanlar büyür ve belirgin bir kırışıklık olmasa da yüzde yorgunluk izlenimi oluşur. Planlamada çoğu zaman bu dengenin yeniden kurulması amaçlanır.</p>
     </div>
@@ -85,7 +85,7 @@ module.exports = {
 <section class="bolum bolum--buz2">
   <div class="sar">
     <div class="bolum-bas" data-gr>
-      <p class="g-etiket">Sonrası</p>
+      <p class="g-etiket">Uygulamadan sonra</p>
       <h2>Öne çıkan katman belli olunca hangi seçenekler konuşulur?</h2>
       <p class="giris">Aşağıdakiler genel bir çerçeve sunar; hangisinin size uygun olduğu ve etkinin ne kadar süreceği muayenede belirlenir. Çene hattındaki bulanıklık her zaman sarkmadan kaynaklanmaz; bazen çene altındaki sınırlı yağ birikiminden gelir ve bu ayrım <a href="${r}bolgeler/cene-ve-jawline/">çene ve jawline</a> değerlendirmesinde yapılır.</p>
     </div>

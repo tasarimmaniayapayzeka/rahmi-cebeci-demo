@@ -16,7 +16,7 @@ module.exports = {
       <h1>Saç mezoterapisi: <span class="g-isik">saçlı deriye ölçülü destek</span></h1>
       <p class="g-hero__alt">Saç mezoterapisinde vitamin, eser element, aminoasit ve düşük yoğunlukta hyalüronik asit içeren bir karışım, ince iğneyle saçlı derinin pek çok noktasına küçük miktarlarda verilir. Hedeflenen, saç kökünü çevreleyen dokunun beslenmesini desteklemektir. Kaybedilmiş saçı geri getirmez; dökülmenin kaynağı araştırılmadan plan yapılmaz, seans sayısı kişiye göre belirlenir.</p>
       <div class="g-hero__cta">
-        <a class="dgm dgm--bir" href="${r}iletisim/">Randevu talebi</a>
+        <a class="dgm dgm--bir" href="${r}iletisim/">Randevu isteyin</a>
         <a class="dgm dgm--iki" href="#ilkbolum">Seyrini okuyun ↓</a>
       </div>
       <div class="g-tikler"><span><i></i>Karışıma reçeteli ilaç katılmaz</span><span><i></i>Seans sayısı kişiye göre</span><span><i></i>Ara kontrolle ilerler</span></div>
@@ -40,7 +40,7 @@ module.exports = {
 <!-- ═════ NEDİR / NE DEĞİLDİR ═════ -->
 <section class="bolum bolum--buz2" id="ilkbolum">
   <div class="sar">
-    <div class="bolum-bas" data-gr><p class="g-etiket">Tanım ve sınırlar</p><h2>Saç mezoterapisi ne yapar, ne yapamaz?</h2><p class="giris">Saç yakınmasında ilk sorulacak şey uygulamanın adı değil, dökülmenin kaynağıdır. Mezoterapi bu soruyu cevaplamaz; cevap bulunduktan sonra plana eklenip eklenmeyeceği konuşulur.</p></div>
+    <div class="bolum-bas" data-gr><p class="g-etiket">Ne yapar, ne yapmaz</p><h2>Saç mezoterapisi ne yapar, ne yapamaz?</h2><p class="giris">Saç yakınmasında ilk sorulacak şey uygulamanın adı değil, dökülmenin kaynağıdır. Mezoterapi bu soruyu cevaplamaz; cevap bulunduktan sonra plana eklenip eklenmeyeceği konuşulur.</p></div>
     <div class="izgara izgara--2">
       <div class="kutu kutu--bilgi" data-gr>
         <b>Bu nedir</b>
@@ -61,7 +61,7 @@ module.exports = {
 <!-- ═════ BENTO ═════ -->
 <section class="bolum bolum--sicak">
   <div class="sar">
-    <div class="bolum-bas" data-gr><p class="g-etiket">Plan</p><h2>Seanslar nasıl planlanır, kaç seans gerekir?</h2><p class="giris">Seans sayısını muayeneden önce söylemek mümkün değildir. Herkese aynı seans dizisi uygulanmaz; program her ara kontrolde yanıta bakılarak sürdürülür, değiştirilir ya da bırakılır.</p></div>
+    <div class="bolum-bas" data-gr><p class="g-etiket">Yol haritası</p><h2>Seanslar nasıl planlanır, kaç seans gerekir?</h2><p class="giris">Seans sayısını muayeneden önce söylemek mümkün değildir. Herkese aynı seans dizisi uygulanmaz; program her ara kontrolde yanıta bakılarak sürdürülür, değiştirilir ya da bırakılır.</p></div>
     <div class="g-bento">
       <div class="g-kutu g-b2 g-donutkap" data-gr>
         <div class="g-donut"><svg viewBox="0 0 100 100" width="100" height="100"><circle class="g-iz" cx="50" cy="50" r="45"/><circle class="g-dol" data-gyuzde="62" cx="50" cy="50" r="45"/><circle class="g-kom" cx="50" cy="50" r="45"/></svg><b>3. ay</b></div>
@@ -74,7 +74,7 @@ module.exports = {
         <div class="g-cubuk"><small><span>DEĞERLENDİRME</span><span>3. aydan itibaren</span></small><div class="g-ciz"><b class="g-cubuk-bakir" data-gw="90%"></b></div></div>
         <p style="font-size:.7rem;color:var(--sessiz);margin-top:8px">Çubuk boyları yalnız karşılaştırma içindir; asıl plan muayenede belirlenir.</p>
       </div>
-      <div class="g-kutu g-b2" data-gr style="--d:140ms"><span class="g-ket">PROTOKOL</span>
+      <div class="g-kutu g-b2" data-gr style="--d:140ms"><span class="g-ket">Adım adım</span>
         <ol class="g-protokol">
           <li>Muayene: dökülmenin ne zaman başladığı, hızı ve dağılımı; saçlı derinin büyütmeli incelenmesi</li>
           <li>Gerekirse kan tetkiki: tam kan sayımı, ferritin, tiroid hormonları, B12 ve D vitamini</li>
@@ -82,8 +82,8 @@ module.exports = {
           <li>Başlangıç serisi; ara kontrolde yanıtın ölçülmesi ve planın güncellenmesi</li>
         </ol>
       </div>
-      <div class="g-kutu g-b2 g-kutu--gece" data-gr><span class="g-ket">İLKE</span><p>"Önce kan tablosu ve öykü, sonra saçlı deri."</p></div>
-      <div class="g-kutu g-b2" data-gr style="--d:70ms"><span class="g-ket">SONRASI</span>
+      <div class="g-kutu g-b2 g-kutu--gece" data-gr><span class="g-ket">Hekimin notu</span><p>"Önce kan tablosu ve öykü, sonra saçlı deri."</p></div>
+      <div class="g-kutu g-b2" data-gr style="--d:70ms"><span class="g-ket">Uygulamadan sonra</span>
         <p style="font-size:.92rem">Aynı gün işe ve günlük düzene dönülebilir. İlk yarım gün saçlı deri yıkanmaz ve ovalanmaz; bere, şapka ya da sıkı saç bağı kullanılmaz. İki gün boyunca hamam, sauna, havuz, deniz ve çok terleten spor ertelenir; boya ve diğer kimyasal saç işlemleri de bu süreden sonraya bırakılır. Ardından ılık su ve yumuşak bir şampuanla alışılmış yıkamaya geçilir. Önerilerin tamamı size yazılı olarak da verilir.</p>
       </div>
       <div class="g-kutu g-b2" data-gr style="--d:140ms"><span class="g-ket">BEKLENEBİLECEK ETKİLER</span>
@@ -113,7 +113,7 @@ module.exports = {
         <p>Karışımlarda vitaminlerin yanında aminoasitler ve koruyucu maddeler de bulunabilir. Daha önce bir ilaç, kozmetik ürün ya da takviye sonrasında tepki yaşadıysanız bunu muayenede mutlaka belirtin.</p>
       </div>
       <div class="g-kutu g-b2 g-kutu--gorsel" data-gr><img src="${r}varliklar/gorsel/uyg-skalp-ekzozom.webp" alt="Saç ayrım çizgisinden görülen saçlı deri" loading="lazy"><span class="g-ainot">Temsilî görsel · yapay zekâ ile üretildi</span></div>
-      <div class="g-kutu g-b2 g-kutu--cta" data-gr><h3>Nedeni birlikte arayalım</h3><p>Dökülmenin kaynağı belli olmadan uygulama planlanmaz.</p><a class="dgm dgm--altin" href="${r}iletisim/">Randevu talebi</a></div>
+      <div class="g-kutu g-b2 g-kutu--cta" data-gr><h3>Nedeni birlikte arayalım</h3><p>Dökülmenin kaynağı belli olmadan uygulama planlanmaz.</p><a class="dgm dgm--altin" href="${r}iletisim/">Randevu isteyin</a></div>
     </div>
   </div>
 </section>

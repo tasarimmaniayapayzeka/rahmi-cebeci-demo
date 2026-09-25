@@ -34,30 +34,30 @@ module.exports = {
 <section class="bolum bolum--sicak" id="nedenler">
   <div class="sar">
     <div class="bolum-bas" data-gr>
-      <p class="g-etiket">Ayrım</p>
+      <p class="g-etiket">Farkı nerede</p>
       <h2>Hangi soruların yanıtı iki grubu birbirinden ayırır?</h2>
       <p class="giris">Dört soru yol gösterir: terleme hangi yaşta başladı, belli bölgelerle mi sınırlı, iki tarafta eşit mi ve uykuda da sürüyor mu? Aşağıdaki özellikler bir ön fikir verir; ayrım ise öykünüz, muayene ve gerekirse tetkiklerle tamamlanır.</p>
     </div>
     <div class="g-katblok" data-gr>
-      <span class="g-kno">01</span>
+      <span class="g-kno">Kesit 01</span>
       <h3>Birincil (bölgesel) terleme</h3>
       <p>Yakınma çoğunlukla ellerde, ayaklarda ve koltuk altında, daha seyrek olarak yüzde ya da saçlı deride yoğunlaşır. Genellikle ilk gençlik yıllarında fark edilir, sağ ve sol tarafta aşağı yukarı aynı şiddettedir ve haftada birkaç kez tekrarlar. Ailede benzer yakınması olan birinin bulunması sık rastlanan bir durumdur.</p>
 <p>En güçlü ipucu, uyku sırasında terlemenin belirgin biçimde azalması ya da hiç olmamasıdır. Heyecan, sınav ya da sıcak bir oda terlemeyi artırabilir; ancak kişiler çoğu zaman serin bir ortamda da ellerinin ıslandığını anlatır.</p>
     </div>
     <div class="g-katblok" data-gr style="--d:60ms">
-      <span class="g-kno">02</span>
+      <span class="g-kno">Kesit 02</span>
       <h3>İkincil terleme</h3>
       <p>Başka bir durumun ya da kullanılan bir ilacın sonucu olarak ortaya çıkar. Belli bölgelerle sınırlı kalmaz, genellikle bütün vücutta hissedilir, gece uykuda da devam edebilir ve çoğunlukla ileri yaşlarda, daha önce olmayan bir yakınma olarak başlar.</p>
 <p>Tiroit bezinin fazla çalışması, kan şekeri düşmeleri, bazı enfeksiyonlar, menopoz dönemi, bazı nörolojik hastalıklar ve kimi ilaçlar akla gelen nedenler arasındadır. Bu grupta değerlendirme genel bir muayeneyle başlar.</p>
       <div class="g-haplar"><a href="${r}uygulamalar/hekim-muayenesi/">Hekim muayenesi</a></div>
     </div>
     <div class="g-katblok" data-gr style="--d:120ms">
-      <span class="g-kno">03</span>
+      <span class="g-kno">Kesit 03</span>
       <h3>Hayatınızı ne kadar kısıtladığı</h3>
       <p>Terlemenin miktarı kadar gündelik yaşamı ne ölçüde daralttığı da önemlidir: tokalaşmaktan kaçınmak, kâğıtta ve klavyede ıslak iz bırakmak, dokunmatik ekranı kullanmakta zorlanmak, kıyafetleri renge göre seçmek ya da gün içinde üst değiştirmek gibi. Hep ıslak kalan deride pişik, mantar ya da bakteri enfeksiyonu da gelişebilir. Böyle bir durum varsa önce o tedavi edilir; tahriş sürerken bölgeye yönelik uygulama yapılmaz.</p>
     </div>
     <div class="g-katblok" data-gr style="--d:180ms">
-      <span class="g-kno">04</span>
+      <span class="g-kno">Kesit 04</span>
       <h3>Muayenede izlenen sıra</h3>
       <p>Muayenede sıralama değişmez. Önce yakınmanızın ne zaman başladığı, hangi bölgeleri tuttuğu, iki tarafta eşit olup olmadığı, ne sıklıkla tekrarladığı ve uykuda ne olduğu konuşulur. Kullandığınız ilaç ve takviyeler gözden geçirilir. Ateş, kilo değişimi ve çarpıntı gibi yakınmaları da kapsayan genel bir muayene yapılır. Sonucu planı etkileyecekse tiroit hormonları, açlık kan şekeri ya da tam kan sayımı istenir. Deri bulgularına bakıldıktan sonra seçenekler en basitinden başlayarak konuşulur. Muayenehanemizin kapsamı dışında kalan yöntemler söz konusuysa bunu <a href="${r}yaklasimimiz/neden-bazi-islemleri-yapmiyoruz/">açıkça belirtiriz</a>.</p>
     </div>
@@ -72,7 +72,7 @@ module.exports = {
 <section class="bolum bolum--buz2">
   <div class="sar">
     <div class="bolum-bas" data-gr>
-      <p class="g-etiket">Sonrası</p>
+      <p class="g-etiket">Uygulamadan sonra</p>
       <h2>Diğer nedenler dışlandıktan sonra hangi seçenekler konuşulur?</h2>
       <p class="giris">Başka bir hastalık olmadığı anlaşıldıktan sonra da ilk sırada basit önlemler yer alır: ter önleyici ürünü akşam saatlerinde ve kuru deriye sürmek, nefes alan kumaşlar ve uygun ayakkabı seçmek. Bu önlemler yetmezse bölgesel bir uygulama hekim tarafından değerlendirilir.</p>
     </div>
@@ -81,7 +81,7 @@ module.exports = {
         <div class="g-mbas"><span>Yöntem</span><span>Amaç</span><span>Toparlanma</span><span></span></div>
         <a class="g-msatir" data-akt href="${r}uygulamalar/botulinum-toksin/" data-gg="${r}varliklar/gorsel/uyg-botulinum-toksin.webp" data-gb="Botulinum toksin" data-ga="Koltuk altı ve avuç içi gibi bölgesel terlemede kullanılan yöntemlerden biridir; ilk basamak değildir ve etkisi zamanla azalır."><h4>Botulinum toksin</h4><span class="g-hucre"><i class="g-kcip g-kcip--1">TER BEZİ</i></span><span class="g-hucre">Muayenede belirlenir</span><span class="g-git">→</span></a>
         <a class="g-msatir" href="${r}uygulamalar/hekim-muayenesi/" data-gg="${r}varliklar/gorsel/uyg-hekim-muayenesi.webp" data-gb="Hekim muayenesi" data-ga="Terlemeye yol açabilecek başka bir sağlık sorunu olup olmadığı bu kapsamda araştırılır; önce neden aranır."><h4>Hekim muayenesi</h4><span class="g-hucre"><i class="g-kcip g-kcip--3">NEDEN</i></span><span class="g-hucre">Aynı gün</span><span class="g-git">→</span></a>
-        <a class="g-msatir" href="${r}uygulamalar/uygulama-sonrasi-takip/" data-gg="${r}varliklar/gorsel/uyg-uygulama-sonrasi-takip.webp" data-gb="Uygulama sonrası takip" data-ga="Uygulamanın ardından etkinin başlangıcı, süresi ve başka bölgelerde terleme artışı olup olmadığı kontrol randevusunda izlenir."><h4>Uygulama sonrası takip</h4><span class="g-hucre"><i class="g-kcip g-kcip--2">İZLEM</i></span><span class="g-hucre">Randevuya göre</span><span class="g-git">→</span></a>
+        <a class="g-msatir" href="${r}uygulamalar/uygulama-sonrasi-takip/" data-gg="${r}varliklar/gorsel/uyg-uygulama-sonrasi-takip.webp" data-gb="Uygulama sonrası kontrol" data-ga="Uygulamanın ardından etkinin başlangıcı, süresi ve başka bölgelerde terleme artışı olup olmadığı kontrol randevusunda izlenir."><h4>Uygulama sonrası kontrol</h4><span class="g-hucre"><i class="g-kcip g-kcip--2">İZLEM</i></span><span class="g-hucre">Randevuya göre</span><span class="g-git">→</span></a>
       </div>
       <div class="g-onizle" data-gonizle data-gr><div class="g-gor"><img src="${r}varliklar/gorsel/uyg-botulinum-toksin.webp" alt=""></div><div class="g-ic"><h4>Botulinum toksin</h4><p>Koltuk altı ve avuç içi gibi bölgesel terlemede kullanılan yöntemlerden biridir; ilk basamak değildir ve etkisi zamanla azalır.</p><a class="dgm dgm--iki" href="${r}uygulamalar/botulinum-toksin/">Sayfasına git →</a></div></div>
     </div>

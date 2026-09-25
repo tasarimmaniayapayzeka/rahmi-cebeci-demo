@@ -1,7 +1,7 @@
 const S = require('../../site');
 const OZ = require('../../parcalar/uygulama-ozet');
 
-/* grup adından çapa kimliği üretir: 'Saç ve Saçlı Deri' → 'sac-ve-sacli-deri' */
+/* grup adından çapa kimliği üretir: 'Saç Sağlığı' → 'sac-sagligi' */
 const kimlik = t => t
   .replace(/İ/g, 'I').replace(/ı/g, 'i')
   .replace(/Ğ/g, 'G').replace(/ğ/g, 'g')
@@ -13,11 +13,11 @@ const kimlik = t => t
 
 /* her grubun kendi başına okunabilen tanıtım paragrafı (anahtar = kimlik(grup)) */
 const GRUP_NOT = {
-  'enjeksiyon-uygulamalari':
+  'enjeksiyonla-yapilanlar':
     'Bu gruptaki uygulamalarda ürün, ince iğne ya da kanülle belirli bir deri katmanına ve ölçülü miktarda bırakılır. Kullanılan ürünün adı, seri numarası, miktarı ve uygulandığı bölge dosyanıza yazılır. Hepsi girişimsel işlemlerdir; bu nedenle önce yazılı onamınız alınır. Gebelikte ve emzirirken bu uygulamalar bekletilir; kanamaya yatkınlığınız ve geçmişte yaşadığınız tepkiler ayrıca sorgulanır. Karın, bel ve bacak gibi vücut bölgelerindeki lipoliz ve selülit planları da bu grupta yer alır.',
   'cihaz-destekli-uygulamalar':
     'Bu gruptaki işlemlerde deriye lazer ışığı, radyofrekans, odaklanmış ultrason ya da elektroporasyon yoluyla enerji verilir. Etki cihazın ayarına ve cilt tipine bağlıdır; iki kişide aynı ayarla çalışıldığında bile yanıt farklı olabilir. Bu nedenle kalp pili taşıyıp taşımadığınız, sara nöbeti geçirip geçirmediğiniz, uygulama alanında metal bir parça bulunup bulunmadığı ve son haftalarda güneşlenip güneşlenmediğiniz ayrıca sorulur. Pikosaniye lazerle dövme silme de bu başlık altındadır.',
-  'sac-ve-sacli-deri':
+  'sac-sagligi':
     'Burada atılan ilk adım, dökülmenin neden kaynaklandığını bulmaktır. Düşük demir depoları, tiroid bezinin az ya da çok çalışması, doğumdan sonraki aylar veya kullanılan bir ilaç dökülmenin tek başına sebebi olabilir. Neden ortaya konmadan başlanan bir uygulama beklenen katkıyı sağlamaz; bu yüzden gerekli görülen kan tetkikleri sonuçlanmadan plan yapılmaz.',
   'degerlendirme-ve-takip':
     'Bu iki başlık bir işlem değil, her planın başı ve sonudur. Hekim muayenesinde genel sağlık durumunuz ve beklentiniz değerlendirilerek uygun olan ile olmayan ayrılır; uygulama sonrası takipte ise iyileşme izlenir, gerekiyorsa plan durdurulur ya da değiştirilir.',
@@ -41,7 +41,7 @@ module.exports = {
       <h1>Muayeneden sonra <span class="g-isik">karar verilen</span> uygulamalar</h1>
       <p class="g-hero__alt">Bu sayfada muayenehanede gerçekten yapılan uygulamaların hepsini dört grup altında bulacaksınız. Her başlık, muayene, sağlık öyküsü ve gerekiyorsa tetkikler tamamlandıktan sonra planlanır. Listedeki hiçbir işlem herkes için uygun değildir; hangisinin size uyduğu görüşmenin sonunda belli olur.</p>
       <div class="g-hero__cta">
-        <a class="dgm dgm--bir" href="${r}iletisim/">Randevu talebi</a>
+        <a class="dgm dgm--bir" href="${r}iletisim/">Randevu isteyin</a>
         <a class="dgm dgm--iki" href="#${kimlik(S.katalog[0].grup)}">Gruplara göz atın ↓</a>
       </div>
       <div class="g-tikler"><span><i></i>Tüm uygulamaları hekim yapar</span><span><i></i>Muayenesiz plan yapılmaz</span><span><i></i>Kontrol planın içinde</span></div>
@@ -66,7 +66,7 @@ module.exports = {
 <section class="bolum">
   <div class="sar">
     <div class="bolum-bas" data-gr>
-      <p class="g-etiket">Kapsam</p>
+      <p class="g-etiket">Neyi kapsar</p>
       <h2>Listede hangi işlemler var, hangileri yok?</h2>
       <p class="giris">Bir hekimin hangi işlemleri yapabileceğini uzmanlık dalı ve Sağlık Bakanlığı onaylı sertifikaları belirler. Muayenehanede yapılan işlemlerin sınırını kişisel tercih değil, bu mevzuat çizer.</p>
     </div>
@@ -76,12 +76,12 @@ module.exports = {
         <p>Bu liste o sınıra göre hazırlandı: gördüğünüz her başlık ${S.hekim.tam} tarafından uygulanan bir işlemdir. Asıl ağırlık işlemleri sıralamaya değil, yakınmanın <b>nedenini ayırt etmeye</b> verilir. Birbirine benzeyen iki tablo farklı kaynaklardan gelebilir; doğru işlem ancak bu fark ortaya konunca seçilebilir. Görüşmelerin bir kısmı işlem yerine evde uygulanacak bir bakım önerisiyle biter.</p>
         <p>Bu nedenle sık sorulan bazı işlemler listede yer almaz. Cerrahi girişimler, saç ekimi, lazer epilasyon ve sertifika kapsamını aşan uygulamalar yapılmaz. Böyle bir isteğiniz olursa muayenede açıkça söylenir ve uygun uzmanlık dalı önerilir. Sınırın nereden geçtiğini <a href="${r}yaklasimimiz/neden-bazi-islemleri-yapmiyoruz/">ayrı bir sayfada</a> madde madde açıkladık.</p>
       </div>
-      <div class="g-kutu g-b2 g-kutu--gece" data-gr style="--d:80ms"><span class="g-ket">İlke</span><p>“Gerekmeyen işlem plana yazılmaz.”</p></div>
+      <div class="g-kutu g-b2 g-kutu--gece" data-gr style="--d:80ms"><span class="g-ket">Hekimin notu</span><p>“Gerekmeyen işlem plana yazılmaz.”</p></div>
       <div class="g-kutu g-b4" data-gr style="--d:140ms">
-        <span class="g-ket">Her başlığın kendi sayfası</span>
+        <span class="g-ket">Her konu ayrı sayfada</span>
         <p>Her uygulamanın sayfasında ne olduğu ve ne olmadığı, kimlerde yapılmadığı, olası istenmeyen etkiler ve iyileşme süreci ayrıntılı olarak anlatılır.</p>
       </div>
-      <div class="g-kutu g-b2 g-kutu--cta" data-gr style="--d:200ms"><h3>Nereden başlamalı?</h3><p>Bir yakınmanız varsa işlemin adıyla değil, yakınmanın kendisiyle başlayın.</p><a class="dgm dgm--altin" href="${r}cilt-sorunlari/">Cilt sorunları</a></div>
+      <div class="g-kutu g-b2 g-kutu--cta" data-gr style="--d:200ms"><h3>İlk adım ne olmalı?</h3><p>Bir yakınmanız varsa işlemin adıyla değil, yakınmanın kendisiyle başlayın.</p><a class="dgm dgm--altin" href="${r}cilt-sorunlari/">Cilt sorunları</a></div>
     </div>
   </div>
 </section>
@@ -111,12 +111,12 @@ ${S.katalog.map((g, i) => `
 <section class="bolum bolum--sicak" id="sira">
   <div class="sar sar--dar">
     <div class="bolum-bas" data-gr>
-      <p class="g-etiket">Ortak yol</p>
+      <p class="g-etiket">Ortak akış</p>
       <h2>Hangi uygulama olursa olsun aynı yoldan gidilir</h2>
       <p class="giris">Bu yol kısaltılmaz. İlk görüşmede işlem yapılması şart değildir; planların çoğunda görüşme bir gün, işlem başka bir gün yapılır.</p>
     </div>
     <div class="g-kutu" data-gr>
-      <span class="g-ket">Beş adım</span>
+      <span class="g-ket">Beş durak</span>
       <ol class="g-protokol">
         <li><span><b style="color:var(--murekkep)">Muayene ve öykü.</b> Yakınmanın ne zamandan beri sürdüğü, kullanılan ilaç ve takviyeler, süregelen hastalıklar, gebelik ve emzirme durumu, ilaç ya da kozmetik ürünlere karşı daha önce yaşanan reaksiyonlar kaydedilir.</span></li>
         <li><span><b style="color:var(--murekkep)">Gerekirse tetkik.</b> Bir tetkik ancak sonucu planı etkileyecekse istenir; bu bazen bir kan tahlili, bazen cildin ya da saçlı derinin büyütmeyle incelenmesidir.</span></li>
@@ -132,7 +132,7 @@ ${S.katalog.map((g, i) => `
 <section class="bolum" id="once">
   <div class="sar sar--dar">
     <div class="bolum-bas" data-gr>
-      <p class="g-etiket">Öncelik</p>
+      <p class="g-etiket">Önce ne gelir</p>
       <h2>Uygulamadan önce hangi soruyu cevaplıyoruz?</h2>
     </div>
     <div data-gr style="max-width:72ch">
@@ -151,7 +151,7 @@ ${S.katalog.map((g, i) => `
 <section class="bolum bolum--buz2">
   <div class="sar">
     <div class="bolum-bas" data-gr>
-      <p class="g-etiket">İlgili başlıklar</p>
+      <p class="g-etiket">Buradan devam edin</p>
       <h2>Buradan sonra okunabilecek sayfalar</h2>
     </div>
     <div class="izgara izgara--3">
@@ -166,12 +166,12 @@ ${S.katalog.map((g, i) => `
         <span class="kart__ok">Oku ${ik.ok}</span>
       </a>
       <a class="kart kart--duz" href="${r}yaklasimimiz/" data-gr style="--d:140ms">
-        <h3>Yaklaşımımız</h3>
+        <h3>Randevudan kontrole</h3>
         <p>Önce değerlendirme, sonra uygulama ilkesinin günlük pratikteki karşılığı.</p>
         <span class="kart__ok">Oku ${ik.ok}</span>
       </a>
       <a class="kart kart--duz" href="${r}yaklasimimiz/neden-bazi-islemleri-yapmiyoruz/" data-gr>
-        <h3>Neden bazı işlemleri yapmıyoruz</h3>
+        <h3>Bazı işlemleri neden üstlenmiyoruz</h3>
         <p>Listeye almadığımız işlemler ve bu sınırın mevzuattaki gerekçesi.</p>
         <span class="kart__ok">Oku ${ik.ok}</span>
       </a>
@@ -181,7 +181,7 @@ ${S.katalog.map((g, i) => `
         <span class="kart__ok">Oku ${ik.ok}</span>
       </a>
       <a class="kart kart--duz" href="${r}sikca-sorulan-sorular/" data-gr style="--d:140ms">
-        <h3>Sıkça sorulan sorular</h3>
+        <h3>Soru ve yanıtlar</h3>
         <p>Randevu, hazırlık ve kontrol süreciyle ilgili sık sorulanlar.</p>
         <span class="kart__ok">Oku ${ik.ok}</span>
       </a>
@@ -194,7 +194,7 @@ ${S.katalog.map((g, i) => `
 <section class="bolum bolum--buz2">
   <div class="sar">
     <div class="bolum-bas" data-gr>
-      <p class="g-etiket">Canlı akış</p>
+      <p class="g-etiket">Anlık akış</p>
       <h2>Bir uygulama baştan sona nasıl ilerler?</h2>
       <p class="giris">Listeden bir uygulama seçin; muayeneden kontrole uzanan dört aşama, o uygulamanın özet bilgileriyle ekranda sırayla açılsın. Gördüğünüz genel bir akıştır; her adım muayenede size göre uyarlanır.</p>
     </div>

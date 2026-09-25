@@ -12,11 +12,11 @@ module.exports = {
   <div class="sar">
     <div>
       <nav class="kirinti" aria-label="Konum" style="position:relative;font-size:.76rem;color:var(--sessiz);display:flex;gap:7px;margin-bottom:18px"><a href="${r}" style="color:var(--sessiz);text-decoration:none">Ana sayfa</a> › <a href="${r}uygulamalar/" style="color:var(--sessiz);text-decoration:none">Uygulamalar</a> › <span>Bölgesel lipoliz</span></nav>
-      <p class="g-etiket">Enjeksiyon Uygulamaları · Lokal Yağ Birikimi</p>
+      <p class="g-etiket">Enjeksiyonla Yapılanlar · Lokal Yağ Birikimi</p>
       <h1>Tartıyı değil, <span class="g-isik">inatçı bir bölgeyi</span> hedefleyen uygulama.</h1>
       <p class="g-hero__alt">Bölgesel lipoliz, kilonuz dengedeyken bile yerinde kalan küçük yağ birikimlerini hedefler: yağ hücrelerinin zarını bozmak üzere hazırlanmış bir solüsyon, ince iğnelerle doğrudan bu dokuya verilir. Gıdı, karın, bel ve bacak iç yüzü en sık değerlendirilen bölgelerdir. Zayıflama aracı olarak kullanılmaz; genel kilo fazlasında önce başka adımlar konuşulur.</p>
       <div class="g-hero__cta">
-        <a class="dgm dgm--bir" href="${r}iletisim/">Randevu talebi</a>
+        <a class="dgm dgm--bir" href="${r}iletisim/">Randevu isteyin</a>
         <a class="dgm dgm--iki" href="#ilkbolum">Nedir, ne değildir ↓</a>
       </div>
       <div class="g-tikler"><span><i></i>Dört bölge, ayrı planlama</span><span><i></i>Önce dolgunluğun nedeni</span><span><i></i>Santimetre sözü verilmez</span></div>
@@ -84,13 +84,13 @@ module.exports = {
         <p><b style="color:var(--murekkep)">Kontrol zamanı</b><br>Bir sonraki seansa, önceki uygulamanın etkisi görüldükten sonra karar verilir. Değişiklik beklenenden azsa dizi aynen sürdürülmez.</p>
       </div>
       <div class="g-kutu g-b2" data-gr style="--d:70ms">
-        <span class="g-ket">İyileşme seyri</span>
+        <span class="g-ket">Toparlanma</span>
         <div class="g-cubuk"><small><span>Şişlik, ısınma, hassasiyet</span><span>3–7 gün</span></small><div class="g-ciz"><b class="g-cubuk-mavi" data-gw="25%"></b></div></div>
         <div class="g-cubuk"><small><span>Ele gelen sertlik, morarma</span><span>Birkaç hafta</span></small><div class="g-ciz"><b class="g-cubuk-petrol" data-gw="55%"></b></div></div>
         <div class="g-cubuk"><small><span>Değişikliğin değerlendirilmesi</span><span>4–6 hafta</span></small><div class="g-ciz"><b class="g-cubuk-bakir" data-gw="88%"></b></div></div>
         <p style="font-size:.72rem;color:var(--sessiz);margin-top:10px">Çubuk uzunlukları yalnız karşılaştırma içindir; size özel süreler muayenede konuşulur.</p>
       </div>
-      <div class="g-kutu g-b2" data-gr style="--d:140ms"><span class="g-ket">Protokol</span>
+      <div class="g-kutu g-b2" data-gr style="--d:140ms"><span class="g-ket">Adım adım</span>
         <ol class="g-protokol">
           <li>Muayene: dolgunluğun kaynağı, son yıllardaki kilo değişimi, hastalıklar ve ilaçlar</li>
           <li>Bölgenin ayakta ve oturarak incelenmesi, işaretleme</li>
@@ -99,9 +99,9 @@ module.exports = {
           <li>Kontrol muayenesi: devam, ara verme ya da başka yönteme geçiş</li>
         </ol>
       </div>
-      <div class="g-kutu g-b2 g-kutu--gece" data-gr><span class="g-ket">İlke</span><p>“Bir bölgeye hiç dokunmamayı önermek de hekimliğin parçasıdır.”</p></div>
+      <div class="g-kutu g-b2 g-kutu--gece" data-gr><span class="g-ket">Hekimin notu</span><p>“Bir bölgeye hiç dokunmamayı önermek de hekimliğin parçasıdır.”</p></div>
       <div class="g-kutu g-b2 g-kutu--gorsel" data-gr style="--d:70ms"><img src="${r}varliklar/gorsel/uyg-bolgesel-lipoliz-2.webp" alt="Krem renkli spor kıyafetle bel ve karın bölgesinin yandan görünümü" loading="lazy"><span class="g-ainot">Temsilî görsel · yapay zekâ ile üretildi</span></div>
-      <div class="g-kutu g-b2 g-kutu--cta" data-gr style="--d:140ms"><h3>Nedeni birlikte ayırt edelim</h3><p>Sorun yağdan çok yüzeydeki pürüzlü görünümse <a href="${r}uygulamalar/selulit-gorunumu/" style="color:inherit">selülit planı</a> ayrıca değerlendirilir.</p><a class="dgm dgm--altin" href="${r}iletisim/">Randevu talebi</a></div>
+      <div class="g-kutu g-b2 g-kutu--cta" data-gr style="--d:140ms"><h3>Nedeni birlikte ayırt edelim</h3><p>Sorun yağdan çok yüzeydeki pürüzlü görünümse <a href="${r}uygulamalar/selulit-gorunumu/" style="color:inherit">selülit planı</a> ayrıca değerlendirilir.</p><a class="dgm dgm--altin" href="${r}iletisim/">Randevu isteyin</a></div>
       <div class="kutu kutu--uyari g-b4" data-gr>
         <b>Kimlere uygulanmaz, ne zaman ertelenir?</b>
         <ul>
@@ -128,7 +128,7 @@ module.exports = {
 <section class="bolum">
   <div class="sar">
     <div class="bolum-bas" data-gr>
-      <p class="g-etiket">Sonrası</p>
+      <p class="g-etiket">Uygulamadan sonra</p>
       <h2>Uygulamadan sonraki günlerde nelere dikkat etmelisiniz?</h2>
       <p class="giris">Günlük yaşamınıza çoğunlukla ertesi gün dönebilirsiniz; ancak bölge birkaç gün dinlenmeye ihtiyaç duyar. Sauna, hamam, çok sıcak banyo ve ağır antrenman iki gün ertelenir, uygulama alanı ovalanmaz ya da yoğurulmaz. Bölgeye göre küçük önlemler işe yarar: gıdıda yastığı biraz yükseltmek, karın ve belde sıkan kemerleri birkaç gün kullanmamak, bacak iç yüzünde uzun süre hareketsiz oturmamak. Şişliğin inmesine yardım etmesi için ilk günlerde tuzlu yiyecekleri azaltıp suyu artırabilirsiniz. Ağrınız olursa kullanabileceğiniz ilaç size önceden söylenir; kanı sulandıran bir ağrı kesiciyi kendiliğinden seçmeyin. Birinci ayın sonuna kadar bölge beklediğinizden dolu görünebilir; bu görüntü bir sonraki seansın gerekçesi sayılmaz. Onamda konuşulan olası durumlar şunlardır: uzun süren ödem, ele gelen düğümcükler, yüzey düzensizliği, geçici his azalması, enfeksiyon ve iz; gıdıda seyrek olarak alt dudağı hareket ettiren sinirin geçici etkilenmesiyle gülüşte asimetri, erkeklerde sakal bölgesinde geçici seyrelme. İzlem ayrıntıları <a href="${r}uygulamalar/uygulama-sonrasi-takip/">uygulama sonrası takip</a> sayfasındadır.</p>
     </div>
