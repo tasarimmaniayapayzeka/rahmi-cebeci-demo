@@ -52,9 +52,8 @@ module.exports = {
     waHam: '905399330808',
     cep: '+90 539 933 08 08',
     cepHam: '+905399330808',
-    /* ⚠️ e-posta adresi müşteriden teyit edilmedi — yer tutucu */
-    eposta: 'randevu@drrahmicebeci.com',
-    editor: 'randevu@drrahmicebeci.com',
+    eposta: 'info@rahmicebeci.com.tr',
+    editor: 'info@rahmicebeci.com.tr',
     saatler: [
       ['Pazartesi – Cumartesi', '09:00 – 19:00'],
       ['Pazar', 'Kapalı'],

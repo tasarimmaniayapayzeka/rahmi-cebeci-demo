@@ -29,6 +29,7 @@ Pages 1-2 dk gecikir; canlıyı dışarıdan doğrula. Yerel önizleme: `node si
 - Tıbbi sayfalarda hekim künyesi + editör satırı basılıyor (render.js).
 - `site/denetle.js` eklendi (Türkçe harf duyarlı yasaklı ifade taraması).
 
+- E-posta müşteriden geldi: **info@rahmicebeci.com.tr** (site.js).
 - Cadde adı müşteriyle teyit edildi: **Ebuzziya** (çift z), site.js düzeltildi.
 
 ## Hekim onayı alınanlar (25 Eyl 2026)
@@ -43,7 +44,6 @@ Küçük, ertelenen kozmetik bulgular: tiroid/tiroit tek yazıma indirilmedi; so
 
 ## Müşteriden beklenenler
 
-- E-posta adresi (şu an yer tutucu `randevu@drrahmicebeci.com`).
 - Markaya özel görseller (şimdiki yapay zekâ görselleri Salvera setinin sıcak tonlu kopyası).
 - Alan adı ve canlıya geçiş kararı: `site.js` → `ALAN` + `demo:false`; cPanel paketi `yayin-hazirla.js` ile hazır.
 

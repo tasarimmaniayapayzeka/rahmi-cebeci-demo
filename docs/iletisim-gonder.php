@@ -56,7 +56,7 @@ $baslik = "From: Dr. Rahmi Cebeci <no-reply@" . ($_SERVER['HTTP_HOST'] ?? 'local
 $baslik .= "Content-Type: text/plain; charset=UTF-8\r\n";
 if ($eposta !== '') $baslik .= "Reply-To: $eposta\r\n";
 
-$gitti = @mail('randevu@drrahmicebeci.com', '=?UTF-8?B?' . base64_encode('Randevu talebi — ' . $ad) . '?=', $govde, $baslik);
+$gitti = @mail('info@rahmicebeci.com.tr', '=?UTF-8?B?' . base64_encode('Randevu talebi — ' . $ad) . '?=', $govde, $baslik);
 
 /* e-posta gitmese bile talep kaybolmasın: sunucuda günlük tut (webroot DIŞI) */
 $kayit = dirname(__DIR__) . '/randevu-talepleri.log';
