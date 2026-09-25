@@ -61,9 +61,13 @@ function menuKur() {
   const klinik = ki > -1 ? ek.splice(ki, 1) : [];
   return [
     ...klinik,
-    { ad: 'Uygulamalar', yol: '/uygulamalar/', alt:
-      S.katalog.flatMap(g => g.ogeler.slice(0, 4).map(([ad, s, not]) =>
-        ({ ad, yol: `/uygulamalar/${s}/`, not: g.kisa })))
+    { ad: 'Uygulamalar', yol: '/uygulamalar/',
+      /* 22 uygulamanın tamamı — eskiden grup başına ilk 4 gösteriliyordu,
+         HIFU/PRP/mezoterapi gibi sayfalar menüde yoktu (25 Eyl) */
+      mega: S.katalog.map(g => ({ baslik: g.grup,
+        ogeler: g.ogeler.map(([ad, s]) => ({ ad, yol: `/uygulamalar/${s}/` })) })),
+      alt: S.katalog.flatMap(g => g.ogeler.map(([ad, s]) =>
+        ({ ad, yol: `/uygulamalar/${s}/`, grup: g.kisa })))
         .concat([{ ad: 'Tüm uygulamalar', yol: '/uygulamalar/' }]) },
     { ad: 'Bölgeler', yol: '/bolgeler/', alt:
       S.bolgeler.map(([ad, s, not]) => ({ ad, yol: `/bolgeler/${s}/`, not })) },
@@ -97,21 +101,34 @@ function ust(sayfa) {
   const bag = yol => yol.startsWith('http')
     ? `href="${yol}" target="_blank" rel="noopener"`
     : `href="${r}${yol.slice(1)}"`;
+  /* bulunulan sayfa: bağlantı aria-current alır, üst madde altın çizgiyle işaretlenir */
+  const simdi = '/' + (sayfa.slug ? sayfa.slug + '/' : '');
+  const akt = yol => yol === simdi ? ' aria-current="page"' : '';
+  const ustAkt = m => (m.yol && m.yol !== '/' && (simdi === m.yol || simdi.startsWith(m.yol)))
+    || (m.alt || []).some(a => a.yol === simdi) ? ' nav__oge--akt' : '';
   const nav = MENU.map(m => {
-    if (!m.alt) return `<div class="nav__oge"><a class="nav__bag" ${bag(m.yol)}>${m.ad}</a></div>`;
-    const alt = m.alt.map(a =>
-      `<a ${bag(a.yol)}><b>${a.ad}</b>${a.not ? `<span>${a.not}</span>` : ''}</a>`).join('');
-    return `<div class="nav__oge" data-acilir>
+    if (!m.alt) return `<div class="nav__oge${ustAkt(m)}"><a class="nav__bag" ${bag(m.yol)}${akt(m.yol)}>${m.ad}</a></div>`;
+    const ic = m.mega
+      ? `<div class="mega">${m.mega.map(g => `<div class="mega__sutun"><p class="mega__baslik">${g.baslik}</p>${
+          g.ogeler.map(a => `<a ${bag(a.yol)}${akt(a.yol)}>${a.ad}</a>`).join('')}</div>`).join('')}</div>
+        <a class="mega__tumu" ${bag(m.yol)}${akt(m.yol)}>Tüm uygulamalar ${ik.ok}</a>`
+      : m.alt.map(a => `<a ${bag(a.yol)}${akt(a.yol)}><b>${a.ad}</b>${a.not ? `<span>${a.not}</span>` : ''}</a>`).join('');
+    return `<div class="nav__oge${m.mega ? ' nav__oge--mega' : ''}${ustAkt(m)}" data-acilir>
       <button class="nav__bag" type="button" aria-expanded="false">${m.ad}<span class="nav__ok">${ik.asagi}</span></button>
-      <div class="alt">${alt}</div>
+      <div class="alt${m.mega ? ' alt--mega' : ''}">${ic}</div>
     </div>`;
   }).join('');
 
   /* mobil çekmece: gruplar tıklayınca açılır (12 Ağu — "komple açılmasın") */
   const cekmece = MENU.map(m => {
-    if (!m.alt) return `<div class="cekmece__grup"><b><a ${bag(m.yol)} style="border:0;padding:10px 0;display:block">${m.ad}</a></b></div>`;
-    return `<details class="cekmece__grup"><summary><b>${m.ad}</b></summary>${
-      m.alt.map(a => `<a ${bag(a.yol)}>${a.ad}</a>`).join('')}</details>`;
+    if (!m.alt) return `<div class="cekmece__grup"><b><a ${bag(m.yol)}${akt(m.yol)} style="border:0;padding:10px 0;display:block">${m.ad}</a></b></div>`;
+    let onceki = null;
+    const satir = m.alt.map(a => {
+      const bas = a.grup && a.grup !== onceki ? `<span class="cekmece__alt">${a.grup}</span>` : '';
+      onceki = a.grup || onceki;
+      return bas + `<a ${bag(a.yol)}${akt(a.yol)}>${a.ad}</a>`;
+    }).join('');
+    return `<details class="cekmece__grup"${ustAkt(m) ? ' open' : ''}><summary><b>${m.ad}</b></summary>${satir}</details>`;
   }).join('');
 
   return `<a class="atla" href="#ana">İçeriğe atla</a>

@@ -877,3 +877,24 @@ a.kart:hover .kart__ok{gap:11px}
   .vitrin__sahne,.vitrin__kart--genis .vitrin__sahne{height:280px}}
 @media (max-width:560px){.vitrin{grid-template-columns:1fr}.vitrin__sahne,.vitrin__kart--genis .vitrin__sahne{height:300px}}
 @media (prefers-reduced-motion:reduce){.vitrin__sahne img,.vitrin__zemin{animation:none}.vitrin__kart{transition:none}}
+
+
+/* ---------- menü: geniş uygulama menüsü + bulunulan sayfa ---------- */
+@media(min-width:1024px){
+  .ust__ic{position:relative}
+  .nav__oge--mega{position:static}
+  .alt--mega{left:0;right:0;min-width:0;padding:22px 24px 16px}
+  .nav__oge--mega .alt--mega{left:0;right:0}
+  .mega{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:6px 22px}
+  .mega__baslik{margin:0 0 6px;padding:0 .7rem 8px;border-bottom:1px solid var(--cizgi);
+    font-size:.66rem;letter-spacing:.18em;text-transform:uppercase;font-weight:800;color:var(--bakir)}
+  .mega a{padding:.4rem .7rem;font-weight:600;color:var(--murekkep)}
+  .mega__tumu{display:inline-flex !important;align-items:center;gap:8px;margin-top:12px;font-weight:800;
+    font-size:.78rem !important;letter-spacing:.12em;text-transform:uppercase;color:var(--bakir) !important}
+  .mega__tumu svg{width:14px;height:14px}
+  .nav__oge--akt > .nav__bag{color:var(--bakir);box-shadow:inset 0 -2px 0 var(--gece-bakir)}
+  .alt a[aria-current]{background:#F6EEDC;box-shadow:inset 3px 0 0 var(--gece-bakir)}
+  .alt a[aria-current],.alt a[aria-current] b{color:var(--bakir)}
+}
+.cekmece__alt{display:block;margin:12px 0 2px;font-size:.64rem;letter-spacing:.16em;text-transform:uppercase;font-weight:800;color:var(--bakir)}
+.cekmece a[aria-current]{color:var(--bakir);font-weight:800}
