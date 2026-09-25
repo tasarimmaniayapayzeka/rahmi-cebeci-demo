@@ -9,3 +9,6 @@ desktop.ini
 
 
 # docs/ = GitHub Pages çıktısı (depoda tutulur). yayin/ = cPanel paketi (ileride).
+
+# kalite denetimi betikleri (depoya girmez)
+.qa/

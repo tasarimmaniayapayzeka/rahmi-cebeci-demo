@@ -189,6 +189,7 @@ function kunye() {
   <p>Bu içerik <b>${S.hekim.tam}</b> (${S.hekim.dallar}) tarafından hazırlanmış ve tıbbi doğruluk yönünden denetlenmiştir.</p>
   <div class="kunye__tarih">
     <span>Son güncelleme: <b>${S.guncelleme}</b></span>
+    <span>Editör: ${S.iletisim.editor}</span>
   </div>
   <p>Bu sayfadaki bilgiler genel bilgilendirme amaçlıdır; tanı veya tedavi önerisi niteliği taşımaz ve hekim muayenesinin yerine geçmez. Sonuçlar kişiden kişiye değişiklik gösterebilir.</p>
 </div>`;
@@ -243,7 +244,7 @@ ${S.demo ? '<div class="demo-serit" role="note">Sunum sürümü — tasarım ve 
 </linearGradient></defs></svg>
 ${ust(sayfa)}
 <main id="ana">
-${sayfa.icerik(r, ik)}
+${sayfa.icerik(r, ik)}${sayfa.tip === 'tibbi' ? '<div class="sar sar--dar">' + kunye() + '</div>' : ''}
 </main>
 ${alt(sayfa)}
 <script src="${varlik(r, 'varliklar/js/site.js')}" defer></script>
