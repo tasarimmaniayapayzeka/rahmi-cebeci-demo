@@ -1,75 +1,50 @@
-# DEVİR — 34-Rahmi-Cebeci (25 Eylül 2026, sabah ~06:00'da duraklatıldı)
+# DEVİR — 34-Rahmi-Cebeci
 
-Kullanıcının kredisi bitti; iş **yarın buradan** devam edecek. Kontroller sonraya bırakıldı.
+**Son güncelleme: 25 Eylül 2026 (öğleden sonra oturumu)**
 
-## Şu anki durum (ölçülmüş)
+## Durum (ölçülmüş)
 
 | Ne | Durum |
 |---|---|
-| Demo canlı | https://tasarimmaniayapayzeka.github.io/rahmi-cebeci-demo/ — 200, alt sayfalar ve 404 çalışıyor |
-| GitHub'daki sürüm | `d699164` (ilk sürüm + yüz haritası çapa düzeltmesi) |
-| Yerel `main` | `1288dd7` — GitHub'dan **1 commit ileride, PUSH EDİLMEDİ** (tıbbi sayfalara hekim künyesi + editör satırı; yerel sunucu 404.html) |
-| Dal `denetim-yarim` | `febc33f` — çok ajanlı denetimin uyguladığı düzeltmeler, **44 dosya, KONTROL EDİLMEDİ**. main'e alınmadı. |
-| Derleme | `node site/render.js` → 66 sayfa, hatasız |
-| Yerel önizleme | durduruldu (tekrar: `node site/server.js` → http://localhost:8060) |
+| Demo canlı | https://tasarimmaniayapayzeka.github.io/rahmi-cebeci-demo/ |
+| GitHub = yerel | `main` aynı commit'te (push edildi, SHA karşılaştırıldı) |
+| Denetim | 108 bulgu işlendi: 44 dosyalık düzeltme incelendi ve alındı + kalan bulgular elle uygulandı |
+| Yayın öncesi denetim | `node site/denetle.js` → kırık bağlantı 0 · eksik görsel 0 · Salvera kalıntısı 0 · yasaklı ifade 0 |
+| `denetim-yarim` dalı | main'e birleştirildi; silinebilir (`git branch -d denetim-yarim`) |
 
-## Yarın ilk iş — sırayla
+## Yayın akışı
 
-1. `git -C "<34 yolu>" status` — main temiz olmalı, dal `main`.
-2. `denetim-yarim` dalını incele: `git diff main denetim-yarim -- site/veri` (108 ekleme / 95 silme).
-   Her değişikliği aşağıdaki bulgu listesiyle karşılaştır; doğru olanları al:
-   `git checkout main && git merge --no-ff denetim-yarim` (hepsi doğruysa) ya da tek tek `git checkout denetim-yarim -- <dosya>`.
-3. Kalan (uygulanmamış) bulguları işle — liste `.qa/bulgular-108.json` (depoya girmez, yerel).
-4. `node site/render.js` → kırık bağlantı + yasaklı ifade taraması (aşağıdaki komutlar) → `git push`.
-5. Canlıyı dışarıdan doğrula (Pages 1-2 dk gecikir).
+```
+node site/render.js      # veri → docs/
+node site/denetle.js     # 0 hata olmalı (çıkış kodu 0)
+git add -A && git commit && git push
+```
+Pages 1-2 dk gecikir; canlıyı dışarıdan doğrula. Yerel önizleme: `node site/server.js` → http://localhost:8060
 
-## Denetim nasıl kesildi
+## Bu oturumda yapılanlar
 
-- 16 grupluk inceleme tamamlandı (yasal grubu hariç: o grup limit yüzünden çalışmadı), **108 bulgu** çıktı.
-- Doğrulama (çürütücü) ajanlarının çoğu oturum limitine takıldı; ikinci deneme de kredi bitince durduruldu.
-- Bu yüzden `denetim-yarim` dalındaki düzeltmelerin bir kısmı **doğrulanmadan** uygulanmış olabilir.
-- İş akışı betiği: `.qa/rc-site-qa.js` · günlük: `~/.claude/projects/C--Users--HSAN-Desktop-Claude-Projeler/b203c375-.../subagents/workflows/wf_bcdb313c-c62/journal.jsonl`
-  Kaldığı yerden sürdürmek: Workflow `{scriptPath: ".qa/rc-site-qa.js", resumeFromRunId: "wf_bcdb313c-c62"}` (tamamlanan ajanlar önbellekten döner).
-  **Kredi pahalı** — sürdürmek yerine bulguları elle işlemek daha ucuz olabilir.
+- Denetimin doğrulanmadan uyguladığı 44 dosyalık düzeltme tek tek okundu, hepsi doğru bulunup main'e alındı.
+- Kalan bulgular: HIFU, karbon peeling, fraksiyonel lazer acil kutularına 112; 6 bölge sayfasında "Kontrol randevusu dâhil" → "planın içinde"; PRP'de "paket" kaldırıldı; terleme sayfasına gebelik/emzirme uyarısı.
+- Görsel üstü noktalar (yüz haritası) 4 sayfada yüzün dışında kalıyordu; görsellere bakılarak yeniden konumlandı ve tarayıcıda doğrulandı: bolgeler/yuz, cilt-sorunlari (hub), hacim-kaybi-ve-sarkma, mimik-cizgileri-ve-kirisiklik.
+- Tıbbi sayfalarda hekim künyesi + editör satırı basılıyor (render.js).
+- `site/denetle.js` eklendi (Türkçe harf duyarlı yasaklı ifade taraması).
 
-## 108 bulgunun özeti (önem sırasıyla, en önemliler)
+## Bilerek bırakılanlar (hekim onayı gerekiyor)
 
-**Orta — tıbbi/olgu (öncelikli):**
-- Acil (112) kutusu eksik: bölgeler/boyun, el, saçlı deri, vücut · uygulamalar/pico-lazer-leke · 31-cilt-tipi-testi. 112 numarası yok: genclik-asisi, ignesiz-mezoterapi, hifu, karbon-peeling, cilt-sorunlari/selulit.
-- Gebelik/emzirme eksik: altin-igne, karbon-peeling (emzirme), dovme-ve-kalici-makyaj, asiri-terleme, selulit.
-- Melanom uyarı bulgularında sevk "gerek görülürse" diye yumuşak: cilt-tonu-ve-leke, gozenek → "vakit kaybetmeden dermatoloji".
-- uygulama-sonrasi-takip: dolgu sonrası beyazlama/görme bulgusu "acil değil" gibi okunuyor → acil yap.
-- botulinum "yalnız o bölgeyle sınırlı" (mutlak) → "büyük ölçüde". sac-prp "aşırı duyarlılığı ortadan kaldırır" → "büyük ölçüde azaltır".
-- uygulama-ozet.js eksozom kaydı enjeksiyon diyor; sayfa "yüzeyden, cihaz kanalı sonrası" diyor → eşitle.
-- 20-iletisim ve 25-hazirlik acil listesi alerji eksenli (Salvera kalıntısı) → dolgu/damar tıkanması bulgularını öne al.
-- Anasayfa harita adresi elle yazılmış → `S.iletisim` kullan.
-- 10-yaklasimimiz "model bilgisi yalnız klinik sayfasında" diyor ama uygulama sayfalarında da var → cümleyi düzelt.
-- 23-mevzuat künyeden söz ediyor → künye artık basılıyor (main `1288dd7`), bu bulgu kapandı.
-- eksozom hero etiketi katalog grubuyla uyuşmuyor; eksozom soru-cevapta "başka yerlerde abartılı vaatler" (kıyas) → çıkar.
-- Görsel üstü noktalar (g-nokta) Salvera görsellerine göre konumlu, yeni görsellerde kayık: bolgeler/yuz, cilt-sorunlari/00-hub, hacim-kaybi, mimik → tarayıcıda yeniden konumla.
-- sacli-deri veri bandı "4 dökülme türü", atlasta 3 → 3 yap. sivi-yuz-germe "7 bölge", kartta 5 → 5 yap.
+Aşağıdaki süre ve sayılar sayfalarda genel bilgi olarak duruyor; muayenehaneden teyit edilmedi. Hekim onaylamazsa nitel ifadeye çevrilecek:
+- Seans süreleri: mezoterapi 15–30 dk, altın iğne 30–60 dk, HIFU 60–90 dk, iğnesiz mezoterapi 20–40 dk, karbon peeling 20–30 dk, saç mezoterapisi 20–30 dk, saç PRP 40–60 dk.
+- Saç PRP kan miktarı 10–20 ml; PRP "~1 saat" ve "~4 hafta aralık"; boyun ve el sayfalarında "2–4 hafta sonra kontrol".
+- Dövme silme seans aralığı 6–8 hafta (SSS'de de geçiyor).
+- Cihaz ayrıntıları (Fotona'da Er:YAG+Nd:YAG art arda, vücutta RF kullanımı), "lazer epilasyon yapılmaz" cümlesi.
 
-**Düşük (toplu işlenebilir):**
-- Teyitsiz süreler/sayılar (seans süresi, kan miktarı, kontrol haftası): mezoterapi 15–30 dk, altın iğne 30–60 dk, HIFU 60–90 dk, iğnesiz mezo 20–40 dk, karbon 20–30 dk, saç mezo 20–30 dk, saç PRP 10–20 ml, PRP ~1 sa / ~4 hf, boyun ve el "2–4 hafta kontrol" → **hekimden teyit** ya da nitel ifade.
-- "Kontrol randevusu dâhil" (paket çağrışımı) → "planlanır": boyun, çene, el. "paket" kelimesi: bolgesel-lipoliz, prp.
-- Yazım: düz kesme `'yi` → `’yi` (bölge sayfaları), düz tırnak → tipografik, "dahil" → "dâhil", tiroid/tiroit tek yazım, "uyuşturucu" → "uyuşturucu krem / lokal anestezi".
-- Soru-cevap başlığında marka tutarsız: `rahmi-cebeci · …` elle yazılmış (sac-mezoterapisi, sac-prp) → `${S.marka}`.
-- "istenmeyen durumlar bölümü" diye var olmayan başlığa atıf: uygulamalar/00-hub, uygulama-sonrasi-takip → "riskler / Dolgudan sonra neler görülebilir".
-- **Adres yazımı:** cadde adı büyük olasılıkla "Ebuzziya" (çift z). Kaynak sitede "Ebuziya" yazıyor → **müşteriye sor**, sonra `site.js`'te tek satır.
+Küçük, ertelenen kozmetik bulgular: tiroid/tiroit tek yazıma indirilmedi; soru-cevap kutusu başlığında marka yazımı sayfalar arasında küçük/büyük harf farkı taşıyor; 31-cilt-tipi-testi, akne ve göz altı sayfalarına ek uyarı kutusu önerisi uygulanmadı (zorunlu değil).
 
-## Hâlâ müşteriden/kullanıcıdan beklenenler
+## Müşteriden beklenenler
 
+- **Cadde adı yazımı:** kaynak sitede "Ebuziya", resmî ad büyük olasılıkla "Ebuzziya" (çift z). Teyit gelince `site/veri/site.js` → `adres` tek satır.
 - E-posta adresi (şu an yer tutucu `randevu@drrahmicebeci.com`).
-- Hekim onayı: cihaz ayrıntıları, seans aralıkları/süreleri, "lazer epilasyon yapılmaz", dermatoskop var mı, vücutta RF kullanımı.
+- Yukarıdaki hekim onayı listesi.
 - Markaya özel görseller (şimdiki yapay zekâ görselleri Salvera setinin sıcak tonlu kopyası).
-- Alan adı ve yayın kararı (şu an demo: noindex + üst şerit).
-
-## Kontrol komutları
-
-```
-node site/render.js
-node -e "..."   # kırık bağlantı taraması: bkz. 00-DEVAM 34 bölümü veya git log'daki ilk sürüm notu
-grep -r -o -i -E "iz bırakmadan|kesin çözüm|ağrısız|garanti|mutlu danışan|ücretsiz muayene|referans merkezi|salvera|nişantaşı|teşvikiye|ersoy" docs --include=*.html
-```
+- Alan adı ve canlıya geçiş kararı: `site.js` → `ALAN` + `demo:false`; cPanel paketi `yayin-hazirla.js` ile hazır.
 
 **Salvera (24-Medikal-Estetik) klasörüne ve deposuna DOKUNMA.** Bu proje yalnız kendi deposuna (`rahmi-cebeci-demo`) push eder.
