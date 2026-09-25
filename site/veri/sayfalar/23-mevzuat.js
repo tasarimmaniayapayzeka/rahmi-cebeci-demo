@@ -18,7 +18,7 @@ module.exports = {
       <p class="g-hero__alt">Sitedeki her sayfa, Türkiye’de sağlık hizmeti sunanların tanıtım ve bilgilendirme faaliyetlerine getirilen kurallar gözetilerek yazıldı. Bu sayfada hangi düzenlemeleri esas aldığımızı ve bunun içeriğe nasıl yansıdığını anlatıyoruz. Sitede bulamadığınız bazı bilgiler bir unutkanlık değil, bu kuralların sonucudur.</p>
     </div>
     <div class="g-tarama" data-gr>
-      <img src="${r}varliklar/gorsel/ic3d-gece-doku.webp" width="1400" height="788" alt="Koyu tonlarda, yakından görülen cilt dokusu" loading="eager">
+      <img src="${r}varliklar/gorsel/mevzuat-hero.webp" width="1400" height="788" alt="Masada düzenli belge yığını, dolma kalem ve masa lambası" loading="eager">
       <div class="g-isin"></div>
       <span class="g-ainot">Temsilî görsel · yapay zekâ ile üretildi</span>
     </div>

@@ -36,6 +36,10 @@ Pages 1-2 dk gecikir; canlıyı dışarıdan doğrula. Yerel önizleme: `node si
 
 `node site/benzerlik.js` — iki sitenin görünen metnini karşılaştırır. Son ölçüm: 8 kelimelik ortak dizi **%0,0**, 5 kelimelik **%1,4** (yalnız kanun/yönetmelik adları ve uygulama/bölge adları), birebir aynı cümle **0 / 3722**. Yeni metin eklendikten sonra tekrar çalıştır; 8 kelime oranı %0,3 üstüne çıkmamalı.
 
+## Görsel özgünlüğü
+
+`node site/gorsel-tekrar.js` — başlık, atlas ve kutu görsellerinin farklı sayfalarda tekrarını dosya içeriğine göre bulur; **0 olmalı**. 25 Eyl: 13 yeni görsel Higgsfield (gpt_image_2_5, görsel başı 0,25 kredi) ile üretildi; üretim istemleri sitenin fildişi-altın tonunda.
+
 ## Hekim onayı alınanlar (25 Eyl 2026)
 
 ✅ Aşağıdaki süre ve sayılar **hekim tarafından teyit edildi**, sayfalarda olduğu gibi kalır:

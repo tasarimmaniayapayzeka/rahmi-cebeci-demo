@@ -83,7 +83,7 @@ module.exports = {
     <div class="g-atlas-duzen">
       <div class="g-atlas" data-gr>
         <div class="g-atlas-kap">
-          <img src="${r}varliklar/gorsel/yuz-3d-c.webp" width="900" height="1200" alt="Göz çevresinin yüzdeki yerini gösteren, sola dönük üç boyutlu kadın profili" loading="lazy">
+          <img src="${r}varliklar/gorsel/bolge-goz-atlas.webp" width="900" height="1200" alt="Göz çevresinin yakından görünümü; dış köşede ince çizgiler" loading="lazy">
           <span class="g-ainot">Temsilî görsel · yapay zekâ ile üretildi</span>
           <div class="g-rozetk" data-grozet><b>Göz altı</b><span>Koyu halkanın arkasında beş ayrı neden olabilir; hangisi olduğu bilinmeden işlem düşünülmez.</span></div>
         </div>

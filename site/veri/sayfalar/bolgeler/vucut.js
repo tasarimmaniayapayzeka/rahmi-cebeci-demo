@@ -67,7 +67,7 @@ module.exports = {
     <div class="g-atlas-duzen">
       <div class="g-atlas" data-gr>
         <div class="g-atlas-kap">
-          <img src="${r}varliklar/gorsel/grup-cihaz.webp" width="1600" height="900" alt="Tepside duran lazer başlığının yakın plan görünümü" loading="lazy">
+          <img src="${r}varliklar/gorsel/bolge-vucut-atlas.webp" width="900" height="1200" alt="Havluya sarılı, omuz ve üst sırtı görünen kadın" loading="lazy">
           <span class="g-ainot">Temsilî görsel · yapay zekâ ile üretildi</span>
           <div class="g-rozetk" data-grozet><b>Bölgesel yağlanma</b><span>Kilo vermeye dirençli yerel birikim; genel kilo fazlasının yerine geçen bir çözüm değildir.</span></div>
         </div>

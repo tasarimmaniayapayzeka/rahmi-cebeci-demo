@@ -100,7 +100,7 @@ module.exports = {
         </ol>
       </div>
       <div class="g-kutu g-b2 g-kutu--gece" data-gr><span class="g-ket">İlke</span><p>“Bir bölgeye hiç dokunmamayı önermek de hekimliğin parçasıdır.”</p></div>
-      <div class="g-kutu g-b2 g-kutu--gorsel" data-gr style="--d:70ms"><img src="${r}varliklar/gorsel/uyg-bolgesel-lipoliz-2.webp" alt="Vücut bölgesinin yakın görünümü" loading="lazy"><span class="g-ainot">Temsilî görsel · yapay zekâ ile üretildi</span></div>
+      <div class="g-kutu g-b2 g-kutu--gorsel" data-gr style="--d:70ms"><img src="${r}varliklar/gorsel/uyg-bolgesel-lipoliz-2.webp" alt="Krem renkli spor kıyafetle bel ve karın bölgesinin yandan görünümü" loading="lazy"><span class="g-ainot">Temsilî görsel · yapay zekâ ile üretildi</span></div>
       <div class="g-kutu g-b2 g-kutu--cta" data-gr style="--d:140ms"><h3>Nedeni birlikte ayırt edelim</h3><p>Sorun yağdan çok yüzeydeki pürüzlü görünümse <a href="${r}uygulamalar/selulit-gorunumu/" style="color:inherit">selülit planı</a> ayrıca değerlendirilir.</p><a class="dgm dgm--altin" href="${r}iletisim/">Randevu talebi</a></div>
       <div class="kutu kutu--uyari g-b4" data-gr>
         <b>Kimlere uygulanmaz, ne zaman ertelenir?</b>

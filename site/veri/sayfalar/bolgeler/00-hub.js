@@ -43,12 +43,12 @@ module.exports = {
       <div class="g-tikler"><span><i></i>Uygulamayı hekim yapar</span><span><i></i>Adım adım plan</span><span><i></i>Kontrol randevusu planın içinde</span></div>
     </div>
     <div class="g-tarama" data-gr>
-      <img src="${r}varliklar/gorsel/yuz-3d-c.webp" width="900" height="1200" alt="Bölgelere göre planlamayı simgeleyen, sola dönük üç boyutlu kadın profili" loading="eager">
+      <img src="${r}varliklar/gorsel/bolgeler-hero.webp" width="1400" height="788" alt="Yüzü, boynu ve omuzları yumuşak ışıkta görünen kadın" loading="eager">
       <div class="g-isin"></div>
       <span class="g-ainot">Temsilî görsel · yapay zekâ ile üretildi</span>
-      <button class="g-nokta" data-gn="ust" style="--x:35%;--y:25%" aria-label="Üst yüz"><span data-ad="Üst yüz"></span></button>
-      <button class="g-nokta" data-gn="orta" style="--x:31%;--y:42%" aria-label="Orta yüz"><span data-ad="Orta yüz"></span></button>
-      <button class="g-nokta" data-gn="alt" style="--x:35%;--y:55%" aria-label="Alt yüz"><span data-ad="Alt yüz"></span></button>
+      <button class="g-nokta" data-gn="ust" style="--x:56%;--y:12%" aria-label="Üst yüz"><span data-ad="Üst yüz"></span></button>
+      <button class="g-nokta" data-gn="orta" style="--x:49%;--y:31%" aria-label="Orta yüz"><span data-ad="Orta yüz"></span></button>
+      <button class="g-nokta" data-gn="alt" style="--x:59%;--y:46%" aria-label="Alt yüz"><span data-ad="Alt yüz"></span></button>
       <div class="g-hud" data-ghud><b>Bölgeye göre plan</b><div class="g-cizgi"></div><span>Bir noktaya dokunun; yüzün üç katı birbirine yaslanır.</span></div>
     </div>
   </div>
