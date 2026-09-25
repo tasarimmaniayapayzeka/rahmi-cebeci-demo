@@ -12,3 +12,6 @@ desktop.ini
 
 # kalite denetimi betikleri (depoya girmez)
 .qa/
+
+# ön bilgi asistanı: gerçek anahtar dosyası asla depoya girmez
+rahmi-asistan-gizli.php

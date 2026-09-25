@@ -133,4 +133,4 @@ console.log(`yayin/ hazır → ${toplam} dosya`);
 console.log(`hariç tutulan: ${[...HARIC].join(', ')}`);
 console.log(uyarilar.length ? 'UYARILAR:\n  ' + uyarilar.join('\n  ') : 'denetim temiz (localhost yok, anahtar yok, demo bağlantısı yok)');
 console.log(`\nSunucuya: yayin/ içeriğinin TAMAMI → /home/<hesap>/public_html/`);
-console.log(`Not: bu sitede sunucu tarafı yalnız iletisim-gonder.php'dir (form alıcısı).`);
+console.log(`Not: sunucu tarafı iletisim-gonder.php (form) ve asistan.php (ön bilgi asistanı). Asistan anahtarı: sunucu/ASISTAN-KURULUM.md`);

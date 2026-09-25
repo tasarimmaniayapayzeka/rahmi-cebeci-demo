@@ -7,6 +7,7 @@ const fs = require('fs');
 const path = require('path');
 const crypto = require('crypto');
 const S = require('./veri/site');
+const ASISTAN = require('./veri/asistan');
 
 const KOK = __dirname;
 const CIKTI = path.join(KOK, '..', 'docs');   /* depo kökü/docs → GitHub Pages */
@@ -196,6 +197,7 @@ function alt(sayfa) {
 </footer>
 <nav class="cubuk" aria-label="Hızlı iletişim">
   <a href="tel:${S.iletisim.telHam}">${ik.tel} Ara</a>
+  <button class="cubuk__sor" type="button" data-asistan-ac aria-controls="asis-panel" aria-expanded="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5.5h16v10H9l-5 4z"/><path d="M9 9.5h6M9 12.5h4"/></svg> Sor</button>
   <a class="vurgu" href="${r}iletisim/">${ik.posta} Randevu</a>
 </nav>`;
 }
@@ -250,6 +252,7 @@ ${sayfa.noindex ? '<meta name="robots" content="noindex,follow">\n' : S.demo ? '
 <link rel="stylesheet" href="${varlik(r, 'varliklar/css/tokens.css')}">
 <link rel="stylesheet" href="${varlik(r, 'varliklar/css/site.css')}">
 <link rel="stylesheet" href="${varlik(r, 'varliklar/css/g.css')}">
+<link rel="stylesheet" href="${varlik(r, 'varliklar/css/asistan.css')}">
 <script type="application/ld+json">${JSON.stringify(jsonld)}</script>
 </head>
 <body${S.demo ? ' data-demo="1"' : ''}>
@@ -265,6 +268,8 @@ ${sayfa.icerik(r, ik)}${sayfa.tip === 'tibbi' ? '<div class="sar sar--dar">' + k
 ${alt(sayfa)}
 <script src="${varlik(r, 'varliklar/js/site.js')}" defer></script>
 <script src="${varlik(r, 'varliklar/js/g.js')}" defer></script>
+<script src="${varlik(r, 'varliklar/js/asistan-dizin.js')}" defer></script>
+<script src="${varlik(r, 'varliklar/js/asistan.js')}" defer></script>
 ${sayfa.js
     ? [].concat(sayfa.js).map(j => `\n<script src="${varlik(r, 'varliklar/js/' + j)}" defer></script>`).join('')
     : ''}
@@ -283,6 +288,12 @@ function topla(dir, on = '') {
 }
 
 const sayfalar = topla(SAYFA_DIR);
+
+/* ön bilgi asistanının sayfa dizini — sayfalar derlenmeden ÖNCE yazılır
+   ki önbellek damgası yeni içerikten hesaplansın */
+fs.writeFileSync(path.join(KOK, 'varliklar', 'js', 'asistan-dizin.js'),
+  '/* render.js üretir — elle DÜZENLEME (kaynak: veri/asistan.js + veri/site.js) */\n' +
+  'window.RC_ASISTAN = ' + JSON.stringify(ASISTAN.paket(sayfalar)) + ';\n', 'utf8');
 let n = 0;
 for (const s of sayfalar) {
   const hedef = s.slug ? path.join(CIKTI, s.slug, 'index.html') : path.join(CIKTI, 'index.html');
@@ -392,6 +403,108 @@ cikis('ok', 'Talebiniz bize ulaştı',
   . '<small>Bu bir randevu onayı değildir.</small>');
 `;
 fs.writeFileSync(path.join(CIKTI, 'iletisim-gonder.php'), formPhp, 'utf8');
+
+/* ---------- ön bilgi asistanı sunucu ucu (asistan.php) ----------
+   Anahtar webroot DIŞINDAKİ ../rahmi-asistan-gizli.php dosyasındadır
+   (örnek: sunucu/rahmi-asistan-gizli.ornek.php). Dosya yoksa 503 döner ve
+   tarayıcı hazır yanıtlara geçer. Mesaj içeriği hiçbir yere yazılmaz. */
+const asistanPhp = String.raw`<?php
+/* ${S.marka} — ön bilgi asistanı (render.js üretir, elle DÜZENLEME) */
+declare(strict_types=1);
+header('Content-Type: application/json; charset=utf-8');
+header('Cache-Control: no-store');
+header('X-Content-Type-Options: nosniff');
+
+function bitir(int $kod, array $veri): void {
+  http_response_code($kod);
+  echo json_encode($veri, JSON_UNESCAPED_UNICODE);
+  exit;
+}
+/* dosya tabanlı sayaç; sınır aşıldıysa false */
+function say(string $dosya, int $sinir): bool {
+  $fp = @fopen($dosya, 'c+');
+  if (!$fp) return true;
+  flock($fp, LOCK_EX);
+  $n = (int) stream_get_contents($fp);
+  $izin = $n < $sinir;
+  if ($izin) { ftruncate($fp, 0); rewind($fp); fwrite($fp, (string) ($n + 1)); fflush($fp); }
+  flock($fp, LOCK_UN);
+  fclose($fp);
+  return $izin;
+}
+
+if (($_SERVER['REQUEST_METHOD'] ?? '') !== 'POST') bitir(405, ['hata' => 'yontem']);
+
+/* yalnız aynı siteden gelen istekler */
+$sunucu = preg_replace('/:\d+$/', '', (string) ($_SERVER['HTTP_HOST'] ?? ''));
+$kaynak = (string) ($_SERVER['HTTP_ORIGIN'] ?? '');
+if ($kaynak !== '' && strcasecmp((string) parse_url($kaynak, PHP_URL_HOST), $sunucu) !== 0) bitir(403, ['hata' => 'kaynak']);
+
+$gizliYol = dirname(__DIR__) . '/rahmi-asistan-gizli.php';
+if (!is_file($gizliYol)) bitir(503, ['hata' => 'kapali']);
+$A = require $gizliYol;
+$anahtar = is_array($A) ? (string) ($A['anahtar'] ?? '') : '';
+if ($anahtar === '') bitir(503, ['hata' => 'kapali']);
+
+/* hız sınırı — IP adresi saklanmaz, günlük değişen özeti kullanılır */
+$sayacDizin = sys_get_temp_dir() . '/rahmi-asistan';
+if (!is_dir($sayacDizin)) @mkdir($sayacDizin, 0700, true);
+$kim = substr(hash('sha256', ($_SERVER['REMOTE_ADDR'] ?? '') . '|' . date('Y-m-d') . '|' . $anahtar), 0, 24);
+if (!say($sayacDizin . '/k-' . $kim . '-' . date('YmdH'), (int) ($A['saatlik'] ?? 20))) bitir(429, ['hata' => 'sinir']);
+if (!say($sayacDizin . '/g-' . date('Ymd'), (int) ($A['gunluk'] ?? 400))) bitir(429, ['hata' => 'sinir']);
+if (random_int(1, 40) === 1) {
+  foreach (glob($sayacDizin . '/*') ?: [] as $f) if (@filemtime($f) < time() - 172800) @unlink($f);
+}
+
+$govde = json_decode((string) file_get_contents('php://input', false, null, 0, 20000), true);
+if (!is_array($govde) || !is_array($govde['mesajlar'] ?? null)) bitir(400, ['hata' => 'bicim']);
+$mesajlar = [];
+foreach (array_slice($govde['mesajlar'], -7) as $m) {
+  if (!is_array($m)) continue;
+  $metin = trim(mb_substr((string) ($m['metin'] ?? ''), 0, 600));
+  if ($metin === '') continue;
+  $mesajlar[] = ['role' => (($m['rol'] ?? '') === 'a') ? 'assistant' : 'user', 'content' => $metin];
+}
+if (!$mesajlar || end($mesajlar)['role'] !== 'user') bitir(400, ['hata' => 'bicim']);
+$sayfa = mb_substr(strip_tags((string) ($govde['sayfa'] ?? '')), 0, 120);
+
+$istem = <<<'ISTEM'
+${ASISTAN.istem(sayfalar)}
+ISTEM;
+
+$istek = [
+  'model' => (string) ($A['model'] ?? 'gpt-5-mini'),
+  'messages' => array_merge([['role' => 'system', 'content' => $istem . "\n\nZiyaretçinin şu an bulunduğu sayfa: " . $sayfa]], $mesajlar),
+  'max_completion_tokens' => (int) ($A['cikti'] ?? 900),
+];
+if (!empty($A['akil'])) $istek['reasoning_effort'] = (string) $A['akil'];
+
+$ch = curl_init('https://api.openai.com/v1/chat/completions');
+curl_setopt_array($ch, [
+  CURLOPT_POST => true,
+  CURLOPT_RETURNTRANSFER => true,
+  CURLOPT_CONNECTTIMEOUT => 6,
+  CURLOPT_TIMEOUT => 25,
+  CURLOPT_HTTPHEADER => ['Content-Type: application/json', 'Authorization: Bearer ' . $anahtar],
+  CURLOPT_POSTFIELDS => json_encode($istek, JSON_UNESCAPED_UNICODE),
+]);
+$ham = curl_exec($ch);
+$kod = (int) curl_getinfo($ch, CURLINFO_HTTP_CODE);
+curl_close($ch);
+$cevap = is_string($ham) ? json_decode($ham, true) : null;
+$yanit = trim((string) ($cevap['choices'][0]['message']['content'] ?? ''));
+if ($kod !== 200 || $yanit === '') {
+  /* yalnız durum kodu yazılır; ziyaretçi mesajı günlüğe GİRMEZ */
+  error_log('[asistan] servis yanıtı ' . $kod . ' ' . substr((string) ($cevap['error']['code'] ?? $cevap['error']['type'] ?? ''), 0, 60));
+  bitir(502, ['hata' => 'servis']);
+}
+/* modelden bağımsız fiyat süzgeci */
+if (preg_match('/\d[\d.,]*\s*(?:tl|lira|try|euro|usd|dolar)(?![a-zçğıöşü])|\d[\d.,]*\s*[₺€$]|[₺€$]\s*\d/iu', $yanit)) {
+  $yanit = 'Fiyat bilgisi bu sohbette paylaşılmıyor; ücret, muayenede size uygun görülen plana göre konuşulur. Ön bilgi için ${S.iletisim.tel} numarasını arayabilirsiniz.';
+}
+bitir(200, ['yanit' => $yanit]);
+`;
+fs.writeFileSync(path.join(CIKTI, 'asistan.php'), asistanPhp, 'utf8');
 
 
 console.log(`${n} sayfa derlendi → ../docs/`);

@@ -22,6 +22,16 @@ module.exports = {
   /* true: her sayfaya noindex + üst demo şeridi basılır (sunum sürümü) */
   demo: true,
 
+  /* Ön bilgi asistanı. canli:false iken yalnız sayfadaki hazır yanıtlarla
+     çalışır (sunucuya, dışarıya hiçbir şey gitmez). Anahtar sunucuya
+     kurulduktan sonra (bkz. sunucu/ASISTAN-KURULUM.md) canli:true yapılıp
+     yeniden derlenir; KVKK metni ve asistan onay notu buna göre değişir. */
+  asistan: {
+    canli: false,
+    saglayici: 'OpenAI',
+    saglayiciUlke: 'ABD',
+  },
+
   hekim: {
     unvan: 'Uzm. Dr.',
     ad: 'Rahmi Cebeci',

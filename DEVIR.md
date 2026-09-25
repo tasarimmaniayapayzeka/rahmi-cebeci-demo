@@ -50,6 +50,15 @@ Pages 1-2 dk gecikir; canlıyı dışarıdan doğrula. Yerel önizleme: `node si
 
 Küçük, ertelenen kozmetik bulgular: tiroid/tiroit tek yazıma indirilmedi; soru-cevap kutusu başlığında marka yazımı sayfalar arasında küçük/büyük harf farkı taşıyor; 31-cilt-tipi-testi, akne ve göz altı sayfalarına ek uyarı kutusu önerisi uygulanmadı (zorunlu değil).
 
+## Ön bilgi asistanı (25 Eyl 2026)
+
+- Dosyalar: `site/veri/asistan.js` (bilgi + kurallar), `site/varliklar/js/asistan.js`, `site/varliklar/css/asistan.css`;
+  `render.js` üretir: `varliklar/js/asistan-dizin.js` (sayfa dizini) ve `docs/asistan.php` (OpenAI vekili).
+- Şu an `site.js → asistan.canli:false`: yalnız hazır yanıtlar, hiçbir şey cihaz dışına çıkmaz (GitHub demosu da böyle).
+- Canlıya alma: `site/sunucu/ASISTAN-KURULUM.md`. Kullanıcı kararı: sunucu tarafı PHP, servis OpenAI, **bu siteye ayrı anahtar**
+  (Salvera anahtarı kullanılmaz). Anahtar `/home/<hesap>/rahmi-asistan-gizli.php` (webroot dışı, .gitignore'da).
+- `canli:true` olunca KVKK metnindeki asistan/yurt dışı aktarım paragrafları kendiliğinden değişir; hukukçu onayı gerekir.
+
 ## Müşteriden beklenenler
 
 - Markaya özel görseller (şimdiki yapay zekâ görselleri Salvera setinin sıcak tonlu kopyası).

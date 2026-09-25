@@ -1,4 +1,7 @@
 const S = require('../../site');
+/* ön bilgi asistanı canlıya alınınca (site.js → asistan.canli) aktarım metinleri değişir */
+const ASIS = S.asistan || {};
+const ASIS_CANLI = !!ASIS.canli;
 
 module.exports = {
   slug: 'yasal/kvkk-aydinlatma-metni',
@@ -16,7 +19,7 @@ module.exports = {
     <p class="g-bhero__alt">Muayenehaneye gelen hastalar ve bu siteyi gezen ziyaretçiler hakkında hangi bilgilerin tutulduğunu, bunların ne için ve hangi hukuki dayanakla kullanıldığını, kimlerle paylaşılabileceğini, ne zaman silindiğini ve bu konuda hangi haklara sahip olduğunuzu bu sayfada bulabilirsiniz. Metin, aydınlatma yükümlülüğü gereği 6698 sayılı Kişisel Verilerin Korunması Kanunu (m. 10) esas alınarak hazırlanmıştır. Sitede ziyaretçileri izleyen bir reklam pikseli, dışarıdan bağlanan bir analitik hizmeti ya da profil çıkaran bir yazılım bulunmaz.</p>
     <div class="g-bmeta">
       <span><i></i>Son güncelleme: ${S.guncelleme}</span>
-      <span><i></i>Yurt dışına aktarım yapılmaz</span>
+      <span><i></i>${ASIS_CANLI ? 'Yurt dışına aktarım yalnız asistanda, onayınızla' : 'Yurt dışına aktarım yapılmaz'}</span>
       <span><i></i>İzleme ve profil çıkarma yok</span>
     </div>
   </div>
@@ -113,6 +116,17 @@ module.exports = {
         </div>
       </div>
 
+      <div class="g-bblk" id="asistan">
+        <h2>Ön bilgi asistanına yazdıklarınız</h2>
+        <div class="yazi">
+          ${ASIS_CANLI ? `
+          <p>Sayfaların köşesindeki ön bilgi asistanı yapay zekâ ile çalışır. Yazdığınız mesaj ve sohbetin son birkaç satırı, yanıt üretilebilmesi için ${ASIS.saglayici} şirketinin ${ASIS.saglayiciUlke}’deki sunucularına iletilir; bu bir yurt dışına aktarımdır (Kanun m. 9). Aktarım, ilk mesajınızdan önce asistan penceresinde verdiğiniz onaya dayanır. Onay vermezseniz asistan yalnız sitedeki hazır bilgilerle, cihazınızda çalışmaya devam eder.</p>
+          <p>Muayenehane sohbet içeriğini kaydetmez ve saklamaz. Kötüye kullanımı sınırlamak için IP adresinizin kendisi değil, her gün değişen tek yönlü bir özeti en fazla iki gün tutulur. Sohbet, sayfa kapandığında tarayıcınızdan da silinir.</p>` : `
+          <p>Sayfaların köşesindeki ön bilgi asistanı bu sürümde yalnız sitedeki hazır bilgilerle çalışır. Yazdığınız soru tarayıcınızın içinde değerlendirilir; sunucuya ya da üçüncü bir hizmete iletilmez, hiçbir yerde kayıtlı kalmaz ve sayfa kapandığında silinir.</p>`}
+          <p>Asistan tanı koymaz, tedavi önermez ve muayenenin yerini tutmaz. Lütfen asistana sağlık durumunuzu ayrıntılı anlatan bilgiler, kimlik numarası, telefon ya da e-posta gibi kişisel veriler yazmayın; bunlar muayenede ya da <a href="${r}iletisim/">iletişim</a> kanallarından konuşulur.</p>
+        </div>
+      </div>
+
       <div class="g-bblk" id="isleme-amaclari">
         <h2>Bilgileriniz ne için ve hangi dayanakla kullanılır?</h2>
         <div class="yazi">
@@ -136,7 +150,7 @@ module.exports = {
             <li>Hukuken geçerli bir istem bulunduğunda mahkemelere ve idari makamlara,</li>
             <li>Vergi mevzuatının zorunlu kıldığı belgelerin düzenlenmesi için mali müşavire.</li>
           </ul>
-          <p><b>Muayenehane yurt dışına veri aktarmaz.</b> Hasta dosyanız ve muayene notlarınız Türkiye dışına gönderilmez; sitedeki etkileşimli araçlar da yanıtlarınızı cihazınızın dışına taşımaz.</p>
+          <p><b>Muayenehane yurt dışına veri aktarmaz.</b> Hasta dosyanız ve muayene notlarınız Türkiye dışına gönderilmez; sitedeki etkileşimli araçlar da yanıtlarınızı cihazınızın dışına taşımaz.${ASIS_CANLI ? ` Tek istisna, onay verdiğinizde ön bilgi asistanına yazdığınız mesajlardır (bkz. <a href="#asistan">ön bilgi asistanı</a>).` : ''}</p>
           <p>Sitede iki dış hizmet kullanılır. Konum haritası Google’ın sağladığı gömülü bir içeriktir; haritalı sayfayı açtığınızda tarayıcınız Google sunucularıyla doğrudan bağlantı kurar ve IP adresi gibi teknik bilgiler Google’ın gizlilik politikasına tabi olur. WhatsApp bağlantısıyla yazmayı tercih ederseniz yazışmanız WhatsApp’ın koşullarına göre yürür. Her iki hizmetin sağlayıcısı da yurt dışındadır. Sağlık durumunuzla ilgili ayrıntıları bu yollarla yazmak yerine muayenede anlatmanızı öneririz.</p>
         </div>
       </div>
