@@ -46,17 +46,100 @@ if (random_int(1, 40) === 1) {
   foreach (glob($sayacDizin . '/*') ?: [] as $f) if (@filemtime($f) < time() - 172800) @unlink($f);
 }
 
-$govde = json_decode((string) file_get_contents('php://input', false, null, 0, 20000), true);
-if (!is_array($govde) || !is_array($govde['mesajlar'] ?? null)) bitir(400, ['hata' => 'bicim']);
+$govde = json_decode((string) file_get_contents('php://input', false, null, 0, 1800000), true);
+if (!is_array($govde)) bitir(400, ['hata' => 'bicim']);
+$FOTO = (($govde['tur'] ?? '') === 'foto');
 $mesajlar = [];
-foreach (array_slice($govde['mesajlar'], -7) as $m) {
-  if (!is_array($m)) continue;
-  $metin = trim(mb_substr((string) ($m['metin'] ?? ''), 0, 600));
-  if ($metin === '') continue;
-  $mesajlar[] = ['role' => (($m['rol'] ?? '') === 'a') ? 'assistant' : 'user', 'content' => $metin];
+if ($FOTO) {
+  /* fotoğrafla ön değerlendirme: ayrı ve daha sıkı sınır; görsel diske YAZILMAZ */
+  if (!say($sayacDizin . '/f-' . $kim . '-' . date('YmdH'), (int) ($A['foto_saatlik'] ?? 3))) bitir(429, ['hata' => 'sinir']);
+  if (!say($sayacDizin . '/fg-' . date('Ymd'), (int) ($A['foto_gunluk'] ?? 60))) bitir(429, ['hata' => 'sinir']);
+  $gorsel = (string) ($govde['gorsel'] ?? '');
+  $on = 'data:image/jpeg;base64,';
+  if (strncmp($gorsel, $on, strlen($on)) !== 0 || strlen($gorsel) > 1700000
+      || base64_decode(substr($gorsel, strlen($on)), true) === false) bitir(400, ['hata' => 'bicim']);
+  $mesajlar[] = ['role' => 'user', 'content' => [
+    ['type' => 'text', 'text' => 'Fotoğraftaki cildin genel görünümünü kurallara göre betimle ve ilgili sayfaları öner.'],
+    ['type' => 'image_url', 'image_url' => ['url' => $gorsel, 'detail' => 'low']],
+  ]];
+} else {
+  if (!is_array($govde['mesajlar'] ?? null)) bitir(400, ['hata' => 'bicim']);
+  foreach (array_slice($govde['mesajlar'], -7) as $m) {
+    if (!is_array($m)) continue;
+    $metin = trim(mb_substr((string) ($m['metin'] ?? ''), 0, 600));
+    if ($metin === '') continue;
+    $mesajlar[] = ['role' => (($m['rol'] ?? '') === 'a') ? 'assistant' : 'user', 'content' => $metin];
+  }
+  if (!$mesajlar || end($mesajlar)['role'] !== 'user') bitir(400, ['hata' => 'bicim']);
 }
-if (!$mesajlar || end($mesajlar)['role'] !== 'user') bitir(400, ['hata' => 'bicim']);
 $sayfa = mb_substr(strip_tags((string) ($govde['sayfa'] ?? '')), 0, 120);
+
+$fotoIstem = <<<'FOTO'
+Sen Dr. Rahmi Cebeci muayenehanesinin web sitesindeki ön bilgi asistanısın. Ziyaretçi, cildinin genel görünümü hakkında ön bilgi almak için bir fotoğraf gönderdi ve bunun tanı olmadığını onayladı.
+
+YAPACAKLARIN
+1. Yalnız gözle görülen, genel özellikleri sade Türkçeyle betimle: renk eşitsizliği ya da koyu alanlar, gözenek görünümü, parlaklık ya da matlık, ince çizgiler, kızarıklık görünümü, doku düzensizliği, hacim ya da gölge farkları gibi.
+2. Bu özelliklerin sitede hangi başlıklarda ele alındığını söyle ve en ilgili 1–3 sayfayı [Sayfa adı](/yol/) biçiminde, YALNIZ aşağıdaki listeden ver.
+3. Her yanıtı, kesin değerlendirmenin yüz yüze muayenede yapılacağını söyleyerek bitir.
+4. Yanıtın İLK SATIRI yalnız şu biçimde kısa bir görünüm özeti olsun (puan ya da yüzde YOK; her değer yalnız "görünmüyor", "hafif", "orta", "belirgin" ya da kısa bir bölge adı):
+GÖZLEM: Ton eşitliği=… | Gözenek görünümü=… | Parlaklık=… | İnce çizgiler=… | Kızarıklık görünümü=…
+Ardından boş bir satır bırakıp açıklamayı yaz. Fotoğraf değerlendirilemiyorsa bu satırı yazma.
+
+YAPMAYACAKLARIN
+- Hastalık, tanı ya da tıbbi terim adı koyma (melazma, rozasea, egzama, akne vulgaris vb. deme); "…olabilir" diye de tahmin yürütme.
+- Ben, et beni, yara, kabuklanma, kanama, hızla değişen ya da düzensiz kenarlı bir leke görürsen yorum yapma; bunun bir dermatoloji uzmanınca yüz yüze değerlendirilmesi gerektiğini söyle.
+- Yaş, cinsiyet, etnik köken, kilo ya da çekicilik hakkında yorum yapma; kişiyi tanımaya çalışma.
+- Fotoğrafta cilt yoksa, bir çocuk varsa ya da çıplaklık varsa değerlendirme yapma ve bunu kibarca söyle.
+- Fiyat, seans sayısı ya da sonuç vaadi verme; ürün ya da ilaç önerme.
+- En fazla 110 kelime, "siz" dili, emoji yok.
+
+SAYFALAR
+- Bölgeler → /bolgeler/
+- Boyun ve Dekolte → /bolgeler/boyun-ve-dekolte/
+- Çene ve Jawline → /bolgeler/cene-ve-jawline/
+- Dudak → /bolgeler/dudak/
+- El → /bolgeler/el/
+- Göz Çevresi → /bolgeler/goz-cevresi/
+- Saçlı Deri → /bolgeler/sacli-deri/
+- Vücut → /bolgeler/vucut/
+- Yüz → /bolgeler/yuz/
+- Cilt sorunları → /cilt-sorunlari/
+- Akne ve Akne İzi → /cilt-sorunlari/akne-ve-akne-izi/
+- Aşırı Terleme → /cilt-sorunlari/asiri-terleme/
+- Bölgesel Yağlanma → /cilt-sorunlari/bolgesel-yaglanma/
+- Cilt Tonu ve Leke → /cilt-sorunlari/cilt-tonu-ve-leke/
+- Dövme ve Kalıcı Makyaj → /cilt-sorunlari/dovme-ve-kalici-makyaj/
+- Göz Altı Koyuluğu → /cilt-sorunlari/goz-alti-koyulugu/
+- Gözenek ve Cilt Dokusu → /cilt-sorunlari/gozenek-ve-cilt-dokusu/
+- Hacim Kaybı ve Sarkma → /cilt-sorunlari/hacim-kaybi-ve-sarkma/
+- Mimik Çizgileri ve Kırışıklık → /cilt-sorunlari/mimik-cizgileri-ve-kirisiklik/
+- Ciltte Nem Kaybı ve Donukluk → /cilt-sorunlari/nem-kaybi-ve-donukluk/
+- Saç Dökülmesi → /cilt-sorunlari/sac-dokulmesi/
+- Selülit Görünümü → /cilt-sorunlari/selulit/
+- Uygulamalar → /uygulamalar/
+- Altın İğne Radyofrekans → /uygulamalar/altin-igne-radyofrekans/
+- Biyostimülan Uygulamalar → /uygulamalar/biyostimulan-uygulamalar/
+- Bölgesel Lipoliz → /uygulamalar/bolgesel-lipoliz/
+- Botulinum Toksin → /uygulamalar/botulinum-toksin/
+- Dolgu Uygulamaları → /uygulamalar/dolgu-uygulamalari/
+- Eksozom → /uygulamalar/eksozom/
+- Fraksiyonel Lazer → /uygulamalar/fraksiyonel-lazer/
+- Gençlik Aşısı (Skinbooster) → /uygulamalar/genclik-asisi-skinbooster/
+- Hekim Muayenesi → /uygulamalar/hekim-muayenesi/
+- HIFU — Ameliyatsız Sıkılaştırma → /uygulamalar/hifu-ameliyatsiz-yuz-germe/
+- İğnesiz Mezoterapi → /uygulamalar/ignesiz-mezoterapi/
+- Karbon Peeling → /uygulamalar/karbon-peeling/
+- Mezoterapi → /uygulamalar/mezoterapi/
+- Pico Lazer ile Dövme Silme → /uygulamalar/pico-lazer-dovme-silme/
+- Pico Lazer ile Leke → /uygulamalar/pico-lazer-leke/
+- PRP → /uygulamalar/prp/
+- Saç Mezoterapisi → /uygulamalar/sac-mezoterapisi/
+- Saç PRP → /uygulamalar/sac-prp/
+- Selülit Görünümü → /uygulamalar/selulit-gorunumu/
+- Sıvı Yüz Germe → /uygulamalar/sivi-yuz-germe/
+- Somon DNA ve Polinükleotid → /uygulamalar/somon-dna-polinukleotid/
+- Uygulama Sonrası Kontrol → /uygulamalar/uygulama-sonrasi-takip/
+FOTO;
 
 $istem = <<<'ISTEM'
 Sen Dr. Rahmi Cebeci muayenehanesinin (Bakırköy, İstanbul) web sitesinde çalışan ön bilgi asistanısın. Görevin, ziyaretçinin sorusunu sitedeki bilgilerle kısaca yanıtlamak ve onu doğru sayfaya ya da randevuya yönlendirmek.
@@ -207,7 +290,7 @@ VERI;
 $BANKA = json_decode($bankaHam, true) ?: [];
 $sorgu = ''; $kullanici = 0;
 foreach (array_reverse($mesajlar) as $m) {
-  if ($m['role'] !== 'user') continue;
+  if ($m['role'] !== 'user' || !is_string($m['content'])) continue;
   $sorgu .= ' ' . $m['content'];
   if (++$kullanici >= 2) break;
 }
@@ -227,14 +310,17 @@ foreach ($BANKA as $i => $b) {
 }
 arsort($puanlar);
 $ekBilgi = '';
+$kaynaklar = [];
 foreach (array_slice(array_keys($puanlar), 0, 3) as $i) {
   $ekBilgi .= "\n\n### " . $BANKA[$i]['a'] . ' (/' . $BANKA[$i]['y'] . ")\n" . mb_substr((string) $BANKA[$i]['m'], 0, 2600);
+  $kaynaklar[] = ['y' => $BANKA[$i]['y'], 'a' => $BANKA[$i]['a']];
 }
 if ($ekBilgi !== '') $ekBilgi = "\n\nSİTEDEN İLGİLİ SAYFALAR" . $ekBilgi;
 
 $istek = [
   'model' => (string) ($A['model'] ?? 'gpt-5-mini'),
-  'messages' => array_merge([['role' => 'system', 'content' => $istem . $ekBilgi . "\n\nZiyaretçinin şu an bulunduğu sayfa: " . $sayfa]], $mesajlar),
+  'messages' => array_merge([['role' => 'system', 'content' => $FOTO ? $fotoIstem
+    : $istem . $ekBilgi . "\n\nZiyaretçinin şu an bulunduğu sayfa: " . $sayfa]], $mesajlar),
   'max_completion_tokens' => (int) ($A['cikti'] ?? 900),
 ];
 if (!empty($A['akil'])) $istek['reasoning_effort'] = (string) $A['akil'];
@@ -244,7 +330,7 @@ curl_setopt_array($ch, [
   CURLOPT_POST => true,
   CURLOPT_RETURNTRANSFER => true,
   CURLOPT_CONNECTTIMEOUT => 6,
-  CURLOPT_TIMEOUT => 25,
+  CURLOPT_TIMEOUT => $FOTO ? 45 : 25,
   CURLOPT_HTTPHEADER => ['Content-Type: application/json', 'Authorization: Bearer ' . $anahtar],
   CURLOPT_POSTFIELDS => json_encode($istek, JSON_UNESCAPED_UNICODE),
 ]);
@@ -262,4 +348,4 @@ if ($kod !== 200 || $yanit === '') {
 if (preg_match('/\d[\d.,]*\s*(?:tl|lira|try|euro|usd|dolar)(?![a-zçğıöşü])|\d[\d.,]*\s*[₺€$]|[₺€$]\s*\d/iu', $yanit)) {
   $yanit = 'Fiyat bilgisi bu sohbette paylaşılmıyor; ücret, muayenede size uygun görülen plana göre konuşulur. Ön bilgi için 0539 933 08 08 numarasını arayabilirsiniz.';
 }
-bitir(200, ['yanit' => $yanit]);
+bitir(200, ['yanit' => $yanit, 'kaynaklar' => $FOTO ? [] : $kaynaklar]);

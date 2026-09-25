@@ -134,6 +134,8 @@ function paket(sayfalar, ik) {
     haritaAc: 'https://www.google.com/maps/search/?api=1&query=' + encodeURIComponent(adresTam),
     yolTarifi: 'https://www.google.com/maps/dir/?api=1&destination=' + encodeURIComponent(adresTam),
     /* "hizmetleriniz neler" sorusunda kart olarak açılan öne çıkanlar */
+    amblem: 'varliklar/foto/amblem.png',
+    konular: konular(),
     vitrin: ['uygulamalar/pico-lazer-dovme-silme/', 'uygulamalar/botulinum-toksin/', 'uygulamalar/dolgu-uygulamalari/',
       'uygulamalar/hifu-ameliyatsiz-yuz-germe/', 'uygulamalar/pico-lazer-leke/', 'uygulamalar/sac-prp/'],
     sayfalar: dizin(sayfalar, ik),
@@ -181,4 +183,36 @@ KURALLAR
 11. Aşağıda "SİTEDEN İLGİLİ SAYFALAR" başlığıyla sayfa metinleri verilirse yanıtını öncelikle onlara dayandır; oradaki seans sayısı, süre ve uyarıları değiştirmeden aktar, ama kişiye özel karar vermeden muayeneye bağla.`;
 }
 
-module.exports = { dizin, paket, istem, bilgiBankasi, HALK_DILI };
+/* fotoğrafla ön değerlendirme için kural metni — tanıya kaymaması için dar tutulur */
+function fotoIstem(sayfalar, ik) {
+  const yollar = dizin(sayfalar, ik)
+    .filter(([, y]) => /^(uygulamalar|cilt-sorunlari|bolgeler)\//.test(y))
+    .map(([ad, y]) => `- ${ad} → /${y}`).join('\n');
+  return `Sen ${S.marka} muayenehanesinin web sitesindeki ön bilgi asistanısın. Ziyaretçi, cildinin genel görünümü hakkında ön bilgi almak için bir fotoğraf gönderdi ve bunun tanı olmadığını onayladı.
+
+YAPACAKLARIN
+1. Yalnız gözle görülen, genel özellikleri sade Türkçeyle betimle: renk eşitsizliği ya da koyu alanlar, gözenek görünümü, parlaklık ya da matlık, ince çizgiler, kızarıklık görünümü, doku düzensizliği, hacim ya da gölge farkları gibi.
+2. Bu özelliklerin sitede hangi başlıklarda ele alındığını söyle ve en ilgili 1–3 sayfayı [Sayfa adı](/yol/) biçiminde, YALNIZ aşağıdaki listeden ver.
+3. Her yanıtı, kesin değerlendirmenin yüz yüze muayenede yapılacağını söyleyerek bitir.
+4. Yanıtın İLK SATIRI yalnız şu biçimde kısa bir görünüm özeti olsun (puan ya da yüzde YOK; her değer yalnız "görünmüyor", "hafif", "orta", "belirgin" ya da kısa bir bölge adı):
+GÖZLEM: Ton eşitliği=… | Gözenek görünümü=… | Parlaklık=… | İnce çizgiler=… | Kızarıklık görünümü=…
+Ardından boş bir satır bırakıp açıklamayı yaz. Fotoğraf değerlendirilemiyorsa bu satırı yazma.
+
+YAPMAYACAKLARIN
+- Hastalık, tanı ya da tıbbi terim adı koyma (melazma, rozasea, egzama, akne vulgaris vb. deme); "…olabilir" diye de tahmin yürütme.
+- Ben, et beni, yara, kabuklanma, kanama, hızla değişen ya da düzensiz kenarlı bir leke görürsen yorum yapma; bunun bir dermatoloji uzmanınca yüz yüze değerlendirilmesi gerektiğini söyle.
+- Yaş, cinsiyet, etnik köken, kilo ya da çekicilik hakkında yorum yapma; kişiyi tanımaya çalışma.
+- Fotoğrafta cilt yoksa, bir çocuk varsa ya da çıplaklık varsa değerlendirme yapma ve bunu kibarca söyle.
+- Fiyat, seans sayısı ya da sonuç vaadi verme; ürün ya da ilaç önerme.
+- En fazla 110 kelime, "siz" dili, emoji yok.
+
+SAYFALAR
+${yollar}`;
+}
+
+/* sohbet içi randevu formunun konu listesi */
+function konular() {
+  return S.katalog.flatMap(g => g.ogeler.map(([ad]) => ad));
+}
+
+module.exports = { dizin, paket, istem, fotoIstem, konular, bilgiBankasi, HALK_DILI };

@@ -4,6 +4,12 @@ declare(strict_types=1);
 session_start();
 
 function cikis(string $tur, string $baslik, string $mesaj): void {
+  /* asistan içindeki randevu formu bicim=json gönderir: sayfa yerine kısa JSON döner */
+  if (($_POST['bicim'] ?? '') === 'json') {
+    header('Content-Type: application/json; charset=utf-8');
+    echo json_encode(['tur' => $tur, 'baslik' => $baslik, 'mesaj' => trim(strip_tags(str_replace('<br>', ' ', $mesaj)))], JSON_UNESCAPED_UNICODE);
+    exit;
+  }
   $renk = $tur === 'ok' ? '#1C1B18' : '#85641C';
   echo '<!doctype html><html lang="tr"><head><meta charset="utf-8">'
      . '<meta name="viewport" content="width=device-width,initial-scale=1">'
