@@ -840,3 +840,40 @@ a.kart:hover .kart__ok{gap:11px}
 @media (prefers-reduced-motion:reduce){
   .serit__oge,.serit__oge img,.serit__metin,.serit__bas{transition:none}
   .serit.oynuyor .serit__ilerleme i{animation:none}}
+
+
+/* ---------- muayenehane: cihaz vitrini ---------- */
+.vitrin{display:grid;grid-template-columns:repeat(6,1fr);gap:16px}
+.vitrin__kart{grid-column:span 2;position:relative;display:flex;flex-direction:column;border-radius:22px;overflow:hidden;text-decoration:none;
+  background:radial-gradient(120% 90% at 50% 0%,#2E2B26 0%,#1D1C1F 55%,#141416 100%);color:var(--gece-metin);
+  border:1px solid rgba(217,183,90,.14);box-shadow:0 18px 40px -26px rgba(20,18,14,.7);
+  transition:transform .45s var(--ease),box-shadow .45s var(--ease),border-color .45s}
+.vitrin__kart--genis{grid-column:span 3}
+.vitrin__kart:hover{transform:translateY(-6px);border-color:rgba(217,183,90,.45);box-shadow:0 30px 60px -28px rgba(20,18,14,.8)}
+.vitrin__model{position:absolute;top:16px;left:16px;z-index:3;font-size:.66rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--gece-bakir);padding:6px 11px;border-radius:999px;border:1px solid rgba(217,183,90,.35);background:rgba(20,20,22,.55);backdrop-filter:blur(6px)}
+.vitrin__sahne{position:relative;height:300px;display:flex;align-items:center;justify-content:center;padding:52px 20px 14px;box-sizing:border-box;overflow:hidden}
+.vitrin__kart--genis .vitrin__sahne{height:380px}
+.vitrin__hale{position:absolute;left:50%;top:52%;width:62%;aspect-ratio:1;transform:translate(-50%,-50%);border-radius:50%;
+  background:radial-gradient(circle,rgba(217,183,90,.34) 0%,rgba(217,183,90,.10) 45%,rgba(217,183,90,0) 70%);
+  transition:transform .6s var(--ease),opacity .6s;opacity:.8}
+.vitrin__kart:hover .vitrin__hale{transform:translate(-50%,-50%) scale(1.18);opacity:1}
+.vitrin__sahne img{position:relative;z-index:1;display:block;height:100%;width:auto;max-width:100%;object-fit:contain;min-height:0;
+  filter:drop-shadow(0 18px 22px rgba(0,0,0,.45));animation:vSuz 6s ease-in-out infinite;animation-delay:calc(var(--i,0) * -1.1s);
+  transition:transform .6s var(--ease)}
+.vitrin__kart:hover .vitrin__sahne img{transform:scale(1.05)}
+.vitrin__zemin{position:absolute;bottom:4px;left:50%;width:46%;height:18px;transform:translateX(-50%);border-radius:50%;
+  background:radial-gradient(ellipse,rgba(0,0,0,.55) 0%,rgba(0,0,0,0) 70%);animation:vGolge 6s ease-in-out infinite;animation-delay:calc(var(--i,0) * -1.1s)}
+.vitrin__alt{position:relative;z-index:2;padding:18px 22px 22px;border-top:1px solid rgba(240,232,215,.08);
+  background:linear-gradient(180deg,rgba(20,20,22,0) 0%,rgba(20,20,22,.5) 100%)}
+.vitrin__alt h3{font-family:var(--font-baslik);font-weight:600;font-size:1.2rem;color:#fff;margin:0 0 4px}
+.vitrin__alt p{font-size:.88rem;color:#CFC8BA;margin:0 0 12px}
+.vitrin__git{display:inline-flex;align-items:center;gap:8px;font-size:.74rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--gece-bakir)}
+.vitrin__git svg{width:14px;height:14px;transition:transform .3s}
+.vitrin__kart:hover .vitrin__git svg{transform:translateX(4px)}
+@keyframes vSuz{0%,100%{translate:0 0}50%{translate:0 -8px}}
+@keyframes vGolge{0%,100%{transform:translateX(-50%) scale(1);opacity:1}50%{transform:translateX(-50%) scale(.86);opacity:.7}}
+@media (max-width:959px){.vitrin{grid-template-columns:repeat(2,1fr)}.vitrin__kart,.vitrin__kart--genis{grid-column:span 1}
+  .vitrin__sahne,.vitrin__kart--genis .vitrin__sahne{height:280px}}
+@media (max-width:560px){.vitrin{grid-template-columns:1fr}.vitrin__sahne,.vitrin__kart--genis .vitrin__sahne{height:300px}}
+@media (prefers-reduced-motion:reduce){.vitrin__sahne img,.vitrin__zemin{animation:none}.vitrin__kart{transition:none}}

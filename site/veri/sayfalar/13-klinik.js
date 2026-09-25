@@ -87,14 +87,20 @@ module.exports = {
       <h2>Lazer ve cihaz odasında neler var?</h2>
       <p class="giris">Lazer ve enerji temelli uygulamalar, enjeksiyonların yapıldığı odadan ayrı tutulan cihaz odasında yapılır. Lazer seanslarında hem sizin hem hekimin gözleri, cihazın dalga boyuna uygun koruyucu gözlükle korunur. Hangi cihazın size uygun olduğuna muayeneden sonra karar verilir.</p>
     </div>
-    <div class="izgara izgara--3" data-gr style="--d:70ms">
-      ${S.cihazlar.map(c => `<div class="kart kart--duz">
-        <img src="${r}varliklar/foto/${c.foto}" alt="${c.ad} cihazı" loading="lazy" width="600" height="600" style="width:100%;height:auto;border-radius:var(--r-md)">
-        <h4>${c.ad}</h4>
-        <p>${c.kullanim}</p>
-        <small style="color:var(--sessiz)">${c.model}</small>
-        <a class="kart__ok" href="${r}uygulamalar/${c.slug}/" style="text-decoration:none">Uygulama sayfası ${ik.ok}</a>
-      </div>`).join('\n      ')}
+    <div class="vitrin" data-gr style="--d:70ms">
+      ${S.cihazlar.map((c, i) => `<a class="vitrin__kart${i < 2 ? ' vitrin__kart--genis' : ''}" href="${r}uygulamalar/${c.slug}/" style="--i:${i}">
+        <span class="vitrin__model">${c.model}</span>
+        <div class="vitrin__sahne">
+          <span class="vitrin__hale" aria-hidden="true"></span>
+          <img src="${r}varliklar/foto/${c.foto.replace('.webp', '-dekupe.webp')}" alt="${c.ad} cihazı — ${c.model}" loading="lazy">
+          <span class="vitrin__zemin" aria-hidden="true"></span>
+        </div>
+        <div class="vitrin__alt">
+          <h3>${c.ad}</h3>
+          <p>${c.kullanim}</p>
+          <span class="vitrin__git">Uygulama sayfası ${ik.ok}</span>
+        </div>
+      </a>`).join('\n      ')}
     </div>
     <div class="kutu kutu--bilgi" data-gr style="margin-top:22px">
       <b>Model bilgisi neden burada?</b>
