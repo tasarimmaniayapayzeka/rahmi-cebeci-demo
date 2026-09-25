@@ -76,7 +76,7 @@ module.exports = {
         <p>Bu liste o sınıra göre hazırlandı: gördüğünüz her başlık ${S.hekim.tam} tarafından uygulanan bir işlemdir. Asıl ağırlık işlemleri sıralamaya değil, yakınmanın <b>nedenini ayırt etmeye</b> verilir. Birbirine benzeyen iki tablo farklı kaynaklardan gelebilir; doğru işlem ancak bu fark ortaya konunca seçilebilir. Görüşmelerin bir kısmı işlem yerine evde uygulanacak bir bakım önerisiyle biter.</p>
         <p>Bu nedenle sık sorulan bazı işlemler listede yer almaz. Cerrahi girişimler, saç ekimi, lazer epilasyon ve sertifika kapsamını aşan uygulamalar yapılmaz. Böyle bir isteğiniz olursa muayenede açıkça söylenir ve uygun uzmanlık dalı önerilir. Sınırın nereden geçtiğini <a href="${r}yaklasimimiz/neden-bazi-islemleri-yapmiyoruz/">ayrı bir sayfada</a> madde madde açıkladık.</p>
       </div>
-      <div class="g-kutu g-b2 g-kutu--gece" data-gr style="--d:80ms"><span class="g-ket">İlke</span><p>"Gerekmeyen işlem plana yazılmaz."</p></div>
+      <div class="g-kutu g-b2 g-kutu--gece" data-gr style="--d:80ms"><span class="g-ket">İlke</span><p>“Gerekmeyen işlem plana yazılmaz.”</p></div>
       <div class="g-kutu g-b4" data-gr style="--d:140ms">
         <span class="g-ket">Her başlığın kendi sayfası</span>
         <p>Her uygulamanın sayfasında ne olduğu ve ne olmadığı, kimlerde yapılmadığı, olası istenmeyen etkiler ve iyileşme süreci ayrıntılı olarak anlatılır.</p>
@@ -138,11 +138,11 @@ ${S.katalog.map((g, i) => `
     <div data-gr style="max-width:72ch">
       <p>Benzer görünen iki yakınmanın kaynağı farklı olabilir. Göz altındaki koyuluk pigment birikiminden de kaynaklanabilir, ince derinin altından görünen damarlardan da. Yaygın saç dökülmesinin ardında demir eksikliği ya da tiroid hastalığı bulunabilir. Karın ve bacaklardaki dalgalı görünüm yağlanmadan da, deri gevşekliğinden de gelebilir.</p>
       <p>Bu ayrım yapılmadan uygulanan bir işlem çoğu zaman beklenen katkıyı sağlamaz, bazen tabloyu ağırlaştırır. Bu yüzden <a href="${r}cilt-sorunlari/">yakınmadan yola çıkan sayfaları</a> uygulama sayfalarından önce okumanızı öneririz. Uygulamaların hangi bölgede ve hangi sırayla planlandığını ise <a href="${r}bolgeler/">bölge sayfaları</a> anlatır.</p>
-      <p>İğne ya da cihazla yapılacak her işlemden önce sağlık öyküsüne bir kez daha dönülür. Uyuşturucu ilaçlara, antiseptiklere ya da uygulanacak ürünün içeriğine karşı daha önce bir reaksiyon yaşadıysanız bunu hekiminize söylemeniz gerekir; bu bilgi alınmadan işlem yapılmaz. Görüşmeye hazırlanırken <a href="${r}hazirlik-listesi/">hazırlık listesine</a> göz atmanız işinizi kolaylaştırır.</p>
+      <p>İğne ya da cihazla yapılacak her işlemden önce sağlık öyküsüne bir kez daha dönülür. Lokal anestezik ilaçlara, antiseptiklere ya da uygulanacak ürünün içeriğine karşı daha önce bir reaksiyon yaşadıysanız bunu hekiminize söylemeniz gerekir; bu bilgi alınmadan işlem yapılmaz. Görüşmeye hazırlanırken <a href="${r}hazirlik-listesi/">hazırlık listesine</a> göz atmanız işinizi kolaylaştırır.</p>
     </div>
     <div class="kutu kutu--bilgi" data-gr style="margin-top:22px">
       <b>Başka bir yerde yapılan bir uygulamanın ardından sorun mu yaşıyorsunuz?</b>
-      <p>Dolgudan haftalar ya da aylar sonra ortaya çıkan şişlik, sertlik ve kızarıklığın nasıl değerlendirildiğini <a href="${r}uygulamalar/dolgu-uygulamalari/">dolgu uygulamaları</a> sayfasının istenmeyen durumlar bölümünde bulabilirsiniz. Bu değerlendirme için uygulamanın burada yapılmış olması şart değildir.</p>
+      <p>Dolgudan haftalar ya da aylar sonra ortaya çıkan şişlik, sertlik ve kızarıklığın nasıl değerlendirildiğini <a href="${r}uygulamalar/dolgu-uygulamalari/">dolgu uygulamaları</a> sayfasının riskler bölümünde bulabilirsiniz. Bu değerlendirme için uygulamanın burada yapılmış olması şart değildir.</p>
     </div>
   </div>
 </section>

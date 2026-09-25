@@ -35,7 +35,7 @@ module.exports = {
       <nav class="kirinti" aria-label="Konum" style="position:relative;font-size:.76rem;color:var(--sessiz);display:flex;gap:7px;margin-bottom:18px"><a href="${r}" style="color:var(--sessiz);text-decoration:none">Ana sayfa</a> › <span>Bölgeler</span></nav>
       <p class="g-etiket">Bölgeler · Bölgeye göre planlama</p>
       <h1>Planı işlemin adı değil, <span class="g-isik">bölgenin kendisi</span> belirler.</h1>
-      <p class="g-hero__alt">Göz altındaki deri ile karındaki doku arasında kalınlık, hareket, çevredeki damar ve sinirler ve iyileşme süresi bakımından büyük farklar vardır. Dudakta uygun görülen miktar, derinlik ya da seans aralığı bu yüzden göz çevresine, çene hattına veya karına olduğu gibi taşınamaz. Bu bölümde sekiz bölgenin her biri için ayrı bir sayfa bulacaksınız.</p>
+      <p class="g-hero__alt">Göz altındaki deri ile karındaki doku arasında kalınlık, hareket, çevredeki damar-sinir yapıları ve iyileşme süresi bakımından büyük farklar vardır. Dudakta uygun görülen miktar, derinlik ya da seans aralığı bu yüzden göz çevresine, çene hattına veya karına olduğu gibi taşınamaz. Bu bölümde sekiz bölgenin her biri için ayrı bir sayfa bulacaksınız.</p>
       <div class="g-hero__cta">
         <a class="dgm dgm--bir" href="${r}iletisim/">Randevu talebi</a>
         <a class="dgm dgm--iki" href="#bolgeler">Bölgelere göz atın ↓</a>
@@ -164,7 +164,7 @@ ${S.bolgeler.map(([ad, s], i) => `
           <li><b>Yazılı bilgilendirme ve onam.</b>&nbsp;Amaçlanan etki, görülebilecek istenmeyen durumlar ve böyle bir durumda neler yapılacağı size yazılı olarak verilir. Onamınız alınmadan işleme geçilmez; kontrol tarihini aynı gün birlikte belirleriz.</li>
         </ol>
       </div>
-      <div class="g-kutu g-b2 g-kutu--gorsel" data-gr style="--d:70ms"><img src="${r}varliklar/gorsel/hekim-masasi.webp" alt="Hekim masasında, açık bir not defterinin üzerinde duran eller" loading="lazy"><span class="g-ainot">Görsel yapay zekâ ile üretilmiştir</span></div>
+      <div class="g-kutu g-b2 g-kutu--gorsel" data-gr style="--d:70ms"><img src="${r}varliklar/gorsel/hekim-masasi.webp" alt="Hekim masasında, açık bir not defterinin yanında masaya konmuş, üst üste duran eller" loading="lazy"><span class="g-ainot">Görsel yapay zekâ ile üretilmiştir</span></div>
     </div>
     <div class="izgara izgara--2" style="margin-top:22px">
       <div class="kutu kutu--uyari" data-gr>
@@ -194,7 +194,7 @@ ${S.bolgeler.map(([ad, s], i) => `
     </div>
     <div class="kutu kutu--acil" data-gr style="margin-top:22px">
       <b>Bir sorun gelişirse</b>
-      <p>İşlemden sonra sizi kaygılandıran bir değişiklik olursa ilk adım bizi <a href="tel:${S.iletisim.telHam}">${S.iletisim.tel}</a> numarasından aramaktır. Artarak süren şiddetli ağrı, derinin beyazlaşması ya da morumsu, ağ gibi bir renk alması, görmede bozulma, hızla büyüyen şişlik veya ateş gibi bulgularda zaman kaybetmeyin. Telefonla bize ulaşamazsanız <b>112</b>'yi arayın ya da size en yakın acil servise gidin.</p>
+      <p>İşlemden sonra sizi kaygılandıran bir değişiklik olursa ilk adım bizi <a href="tel:${S.iletisim.telHam}">${S.iletisim.tel}</a> numarasından aramaktır. Artarak süren şiddetli ağrı, derinin beyazlaşması ya da morumsu, ağ gibi bir renk alması, görmede bozulma, hızla büyüyen şişlik veya ateş gibi bulgularda zaman kaybetmeyin. Telefonla bize ulaşamazsanız <b>112</b>’yi arayın ya da size en yakın acil servise gidin.</p>
     </div>
   </div>
 </section>
@@ -219,7 +219,6 @@ ${S.bolgeler.map(([ad, s], i) => `
 </div></section>
 <script type="application/json" data-gsoru-veri>[["İki farklı bölgeye aynı gün işlem yapılır mı?","Bu, bölgelerin iyileşme sürelerine ve taşıdıkları risklere bağlıdır. Örneğin göz çevresi yakından izlenmesi gereken bir alandır; aynı gün başka bir yere de işlem yapılırsa ortaya çıkabilecek bir sorunun hangi bölgeden kaynaklandığı anlaşılmayabilir. Böyle durumlarda bölgeler farklı günlere dağıtılır. İyileşmesi kısa ve riski düşük bazı birleşimler ise aynı seansta ele alınabilir."],["Sorunum hangi bölgeyle ilgili, emin değilim; nereden başlayayım?","Bölgeyi bilmeniz gerekmiyor. Sizi rahatsız eden durumu anlatan başlığı cilt sorunları bölümünde bulabilirsiniz; oradan ilgili bölgelere ve uygulamalara geçiş vardır. Muayenede yakınmanız zaten baştan ele alınır ve doğru bölgeyle eşleştirilir, yani hangi sayfadan başladığınızın bir önemi yoktur."],["Yalnızca bir bölgeye işlem yaptırırsam yüzümün dengesi bozulur mu?","Bozulup bozulmayacağını planın nasıl yapıldığı belirler. Komşu bölgeler hesaba katılmadan tek bir noktaya yoğunlaşıldığında oranlar değişebilir. Bu yüzden karar verirken her zaman yüzün tamamına bakarız; asıl ele alınması gereken yer başka bir bölgeyse bunu size açıkça söyleriz."],["Etki neden bazı bölgelerde daha kısa sürüyor?","Süreyi üç şey belirler: bölgenin gün içindeki hareketi, dokudaki kan akışı ve seçilen ürünün kıvamı. Dudak gibi sürekli çalışan bir alanda ürün daha kısa sürede yıkılırken el sırtı gibi daha az hareket eden bir alanda daha uzun süre kalabilir. Bu nedenle bir süre sözü verilmez; etki kişiden kişiye farklıdır ve kontrollerde birlikte izlenir."],["Eskiden yaptırdığım işlemin belgesi elimde yok; bu bir engel mi?","Belge olmadan da değerlendirme yapılabilir; yalnızca biraz daha özen ister. İşlemin yaklaşık tarihini, hangi bölgeye yapıldığını ve kaç kez tekrarlandığını hatırladığınız kadarıyla paylaşmanız yol gösterir. İçeriği bilinmeyen bir ürün söz konusuysa aynı bölgeye yeni bir işlem planlamadan önce bekleme süresi uzatılabilir ya da ek inceleme istenebilir."],["Ücret bilgisini nereden öğrenebilirim?","Sağlık hizmetlerinin tanıtımını düzenleyen yönetmelik, ücret bilgisinin internet sitelerinde yayımlanmasına izin vermez. Plan kişiye ve bölgeye göre şekillendiği için burada yazılacak bir rakam gerçeği de yansıtmazdı. Ücret, muayenede size özel plan belli olduktan sonra yüz yüze paylaşılır."]]</script>
 
-<!-- ═════════ KAPANIŞ ═════════ -->
 <!-- ═════════ BÖLGE PUSULASI ═════════ -->
 <section class="bolum bolum--buz2">
   <div class="sar">
@@ -247,11 +246,12 @@ ${S.bolgeler.map(([ad, s], i) => `
   </div>
 </section>
 
+<!-- ═════════ KAPANIŞ ═════════ -->
 <section class="g-son">
   <div class="sar">
     <p class="g-etiket g-etiket--orta">Sonraki adım</p>
     <h2>Planınızı bölgenizden başlayarak kuralım</h2>
-    <p class="g-sonalt">${S.marka} · ${S.iletisim.adres}, ${S.iletisim.ilce}. Randevu için ${S.iletisim.tel} numarasını arayabilir, aynı numaraya WhatsApp'tan yazabilir ya da iletişim sayfasındaki formu doldurabilirsiniz.</p>
+    <p class="g-sonalt">${S.marka} · ${S.iletisim.adres}, ${S.iletisim.ilce}. Randevu için ${S.iletisim.tel} numarasını arayabilir, aynı numaraya WhatsApp’tan yazabilir ya da iletişim sayfasındaki formu doldurabilirsiniz.</p>
     <div class="g-sonbtn">
       <a class="dgm dgm--bir" href="${r}iletisim/">Randevu talebi oluşturun</a>
       <a class="dgm dgm--iki" href="${r}hazirlik-listesi/arac/">Hazırlık listesini doldurun</a>

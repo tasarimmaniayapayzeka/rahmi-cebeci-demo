@@ -54,7 +54,7 @@ module.exports = {
       </div>
       <div class="kart">
         <span class="kart__ikon">${ik.kalkan}</span>
-        <span class="rozet">6698 sayılı Kanun</span>
+        <span class="rozet">Resmî Gazete 07.04.2016 · 29677 · 6698 sayılı Kanun</span>
         <h3 style="margin-top:8px">Kişisel Verilerin Korunması Kanunu</h3>
         <p>Kişisel verilerin hangi koşullarda işlenebileceğini düzenler. Sağlık bilgisi özel nitelikli veri sayılır ve daha sıkı korunur. İletişim formunun yalnız gerekli en az bilgiyi istemesi, şikâyet ayrıntısı sormaması bu kanunun sonucudur.</p>
       </div>

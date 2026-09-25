@@ -164,6 +164,10 @@ module.exports = {
         <p>Leke işlemlerinde de bütün renklerin eşitleneceğini söyleyemeyiz; birkaç seans gerekebilir ve bazı lekeler umulduğu kadar açılmayabilir. Değişimin ne kadar süreceği kişiden kişiye farklıdır. Genel yaklaşımımızı <a href="${r}yaklasimimiz/">nasıl çalışıyoruz</a> sayfasında anlattık.</p>
       </div>
     </div>
+    <div class="kutu kutu--acil" data-gr style="margin-top:22px">
+      <b>Beklemeden başvurmanız gereken bulgular</b>
+      <p>İşlemden sonra parmaklarınızda ya da el sırtınızda beyazlaşma, soğukluk, morumsu ağ görünümü, giderek artan şiddetli ağrı, hızla büyüyen şişlik ya da ateş olursa bizi <a href="tel:${S.iletisim.telHam}">${S.iletisim.tel}</a> numarasından hemen arayın. Telefonla ulaşamazsanız <b>112</b>’yi arayın ya da size en yakın acil servise gidin.</p>
+    </div>
   </div>
 </section>
 

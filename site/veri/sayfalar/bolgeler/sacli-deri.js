@@ -32,7 +32,7 @@ module.exports = {
 
 <!-- 2 ── VERİ BANDI -->
 <div class="g-band"><div class="sar">
-  <div data-gr><b><em data-gsay="4">0</em></b><span>En sık dökülme türü</span></div>
+  <div data-gr><b><em data-gsay="3">0</em></b><span>En sık dökülme türü</span></div>
   <div data-gr style="--d:70ms"><b><em data-gsay="5">0</em></b><span>Konuşulabilecek adım</span></div>
   <div data-gr style="--d:140ms"><b><em data-gsay="3">0</em>. ay</b><span>İlk anlamlı kontrol</span></div>
   <div data-gr style="--d:210ms"><b>50–100</b><span>Günlük olağan dökülme (tel)</span></div>
@@ -45,7 +45,7 @@ module.exports = {
     <div class="izgara izgara--2">
       <div class="kutu kutu--bilgi" data-gr>
         <b>Dökülme bir işarettir</b>
-        <p>Saç dökülmesi tek başına bir hastalık adı değildir; arkasındaki bir sürecin dışa yansımasıdır. Aynı görüntünün altında birbirinden çok farklı nedenler yatabilir: aileden gelen yatkınlıkla ilerleyen androgenetik dökülme, ateşli bir hastalık ya da ağır stresin iki–üç ay ardından başlayan telogen effluvium, demir ve tiroid sorunları, saçlı derinin kendi hastalıkları ve iz bırakarak ilerleyen dökülmeler. Her birinin yolu ayrıdır.</p>
+        <p>Saç dökülmesi tek başına bir hastalık adı değildir; arkasındaki bir sürecin dışa yansımasıdır. Aynı görüntünün altında birbirinden çok farklı nedenler yatabilir: aileden gelen yatkınlıkla ilerleyen androgenetik dökülme, ateşli bir hastalık ya da ağır stresin iki–dört ay ardından başlayan telogen effluvium, demir ve tiroid sorunları, saçlı derinin kendi hastalıkları ve iz bırakarak ilerleyen dökülmeler. Her birinin yolu ayrıdır.</p>
       </div>
       <div class="kutu kutu--bilgi" data-gr style="--d:80ms">
         <b>Nedeni bilinmeden başlamanın bedeli</b>
@@ -62,7 +62,7 @@ module.exports = {
     <div class="g-atlas-duzen">
       <div class="g-atlas" data-gr>
         <div class="g-atlas-kap">
-          <img src="${r}varliklar/gorsel/grup-saglik.webp" width="1600" height="900" alt="Üstten görülen düzenli bir hekim masası" loading="lazy">
+          <img src="${r}varliklar/gorsel/grup-sac.webp" width="1600" height="900" alt="Arkadan görülen, saç ayrım çizgisi belirgin koyu saçlı bir kadın başı" loading="lazy">
           <span class="g-ainot">Görsel yapay zekâ ile üretilmiştir</span>
           <div class="g-rozetk" data-grozet><b>Androgenetik dökülme</b><span>Yıllar içinde yavaşça ilerler; plan da uzun soluklu yapılır.</span></div>
         </div>

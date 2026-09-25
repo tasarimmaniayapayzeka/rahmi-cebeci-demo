@@ -214,7 +214,7 @@ module.exports = {
     </div>
     <div class="kutu kutu--acil" data-gr style="margin-top:22px">
       <b>Beklemeden başvurmanız gereken bulgular</b>
-      <p>İşlemden sonraki günlerde giderek artan şiddetli ağrı, dudakta ya da çevresinde beyazlaşma veya morumsu ağ görünümü, hızla büyüyen şişlik, ateş ya da görmede değişiklik olursa bizi <a href="tel:${S.iletisim.telHam}">${S.iletisim.tel}</a> numarasından hemen arayın. Telefonla ulaşamazsanız <b>112</b>'yi arayın ya da size en yakın acil servise gidin.</p>
+      <p>İşlemden sonraki günlerde giderek artan şiddetli ağrı, dudakta ya da çevresinde beyazlaşma veya morumsu ağ görünümü, hızla büyüyen şişlik, ateş ya da görmede değişiklik olursa bizi <a href="tel:${S.iletisim.telHam}">${S.iletisim.tel}</a> numarasından hemen arayın. Telefonla ulaşamazsanız <b>112</b>’yi arayın ya da size en yakın acil servise gidin.</p>
     </div>
   </div>
 </section>

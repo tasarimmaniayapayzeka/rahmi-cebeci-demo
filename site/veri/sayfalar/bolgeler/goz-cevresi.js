@@ -78,7 +78,7 @@ module.exports = {
     <div class="bolum-bas" data-gr>
       <p class="g-etiket">Üç ayrı konu</p>
       <h2>Göz altı, kaz ayağı ve kaş neden ayrı konulardır?</h2>
-      <p class="giris">Birbirine birkaç santimetre uzaklıkta olsalar da bu üç konunun nedeni, yanıtı ve riski farklıdır. Aşağı indikçe soldaki kart, okuduğunuz başlığa göre değişir.</p>
+      <p class="giris">Birbirine birkaç santimetre uzaklıkta olsalar da bu üç konunun nedeni, yanıtı ve riski farklıdır. Aşağı indikçe görseldeki kart, okuduğunuz başlığa göre değişir.</p>
     </div>
     <div class="g-atlas-duzen">
       <div class="g-atlas" data-gr>
@@ -212,7 +212,7 @@ module.exports = {
     </div>
     <div class="kutu kutu--acil" data-gr style="margin-top:22px">
       <b>Beklemeden başvurmanız gereken bulgular</b>
-      <p>İşlem sırasında ya da sonrasında görüşünüzde bulanıklaşma, görme alanınızda kararma ya da kayıp, göz çevresinde dayanılmaz ağrı, deride beyazlaşma veya morumsu ağ görünümü fark ederseniz hiç beklemeden bizi <a href="tel:${S.iletisim.telHam}">${S.iletisim.tel}</a> numarasından arayın. Telefonla ulaşamazsanız <b>112</b>'yi arayın ya da doğrudan en yakın acil servise gidin.</p>
+      <p>İşlem sırasında ya da sonrasında görüşünüzde bulanıklaşma, görme alanınızda kararma ya da kayıp, göz çevresinde dayanılmaz ağrı, deride beyazlaşma veya morumsu ağ görünümü fark ederseniz hiç beklemeden bizi <a href="tel:${S.iletisim.telHam}">${S.iletisim.tel}</a> numarasından arayın. Telefonla ulaşamazsanız <b>112</b>’yi arayın ya da doğrudan en yakın acil servise gidin.</p>
     </div>
   </div>
 </section>

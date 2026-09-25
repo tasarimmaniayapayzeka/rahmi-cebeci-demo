@@ -14,7 +14,7 @@ module.exports = {
       <nav class="kirinti" aria-label="Konum" style="position:relative;font-size:.76rem;color:var(--sessiz);display:flex;gap:7px;margin-bottom:18px"><a href="${r}" style="color:var(--sessiz);text-decoration:none">Ana sayfa</a> › <a href="${r}uygulamalar/" style="color:var(--sessiz);text-decoration:none">Uygulamalar</a> › <span>Pico lazer ile leke</span></nav>
       <p class="g-etiket">Cihaz ve Lazer · Cilt Tonu ve Leke</p>
       <h1>Pico lazerle leke: atımdan önce <span class="g-isik">lekenin adı</span> konur.</h1>
-      <p class="g-hero__alt">Pikosaniye lazer, derinin üst katmanlarında kümelenmiş melanin pigmentini çok kısa atımlarla hedef alır. Ancak ciltteki her koyu alan aynı kökenden gelmez ve hepsi lazere uygun değildir. Bu yüzden ilk iş, her lekeye dermatoskopla, yani büyütmeli ışıkla bakmaktır; adı konamayan bir lekeye atım yapılmaz.</p>
+      <p class="g-hero__alt">Pikosaniye lazer, derinin üst katmanlarında kümelenmiş melanin pigmentini çok kısa atımlarla hedef alır. Ancak ciltteki her koyu alan aynı kökenden gelmez ve hepsi lazere uygun değildir. Bu yüzden ilk iş, her lekeye büyütmeli ışık altında tek tek bakmaktır; adı konamayan bir lekeye atım yapılmaz.</p>
       <div class="g-hero__cta">
         <a class="dgm dgm--bir" href="${r}iletisim/">Randevu talebi</a>
         <a class="dgm dgm--iki" href="#ilkbolum">Nasıl çalışır? ↓</a>
@@ -33,7 +33,7 @@ module.exports = {
 <div class="g-band"><div class="sar">
   <div data-gr><b><em data-gsay="6">0</em></b><span>İncelemede ayrılan leke tipi</span></div>
   <div data-gr style="--d:70ms"><b><em data-gsay="5">0</em></b><span>Planlama adımı</span></div>
-  <div data-gr style="--d:140ms"><b>Önce</b><span>Dermatoskopik bakış</span></div>
+  <div data-gr style="--d:140ms"><b>Önce</b><span>Büyütmeli inceleme</span></div>
   <div data-gr style="--d:210ms"><b>Her gün</b><span>Güneş koruması</span></div>
 </div></div>
 
@@ -76,7 +76,7 @@ module.exports = {
       <div class="g-kutu g-b2" data-gr style="--d:140ms"><span class="g-ket">Protokol</span>
         <ol class="g-protokol">
           <li>Hikâye: leke ne zaman çıktı, büyüdü mü, yazın koyulaşıyor mu?</li>
-          <li>Dermatoskopla her lekeye tek tek bakış ve fotoğraf kaydı</li>
+          <li>Büyütmeli ışıkla her lekeye tek tek bakış ve fotoğraf kaydı</li>
           <li>Hazırlık haftaları: her gün güneş koruyucu, sert ürünlere ara</li>
           <li>Küçük bir alanda deneme; bilgilendirme ve imzalı onam</li>
           <li>Seans, kontrol ve güneş koruması eşliğinde izlem</li>
@@ -95,6 +95,10 @@ module.exports = {
         <p style="font-size:.92rem">Atım yapılan leke birkaç saat içinde bir ton koyulaşır ve çevresi hafifçe kızarır; bu beklenen bir görüntüdür. Üzerinde oluşan ince kabuk yaklaşık bir hafta içinde kendiliğinden düşer, koparılmaz. Seyrek de olsa ton açılması ya da koyulaşma, yanık ve iz görülebilir; koyu tende koyulaşma olasılığı daha yüksektir. Kaç seans gerektiği baştan söylenemez. Sonucun ne kadar kalıcı olacağını en çok güneş koruması belirler: geniş spektrumlu, yüksek faktörlü koruyucu her sabah sürülür ve gün içinde yenilenir; melazmada görünür ışığı da süzen renkli koruyucular tercih edilebilir. Sonuçlar kişiden kişiye değişir.</p>
       </div>
       <div class="g-kutu g-b2 g-kutu--cta" data-gr style="--d:140ms"><h3>Lekelerinize birlikte bakalım</h3><p>Hangi yolun uygun olduğu büyütmeli incelemeden sonra belli olur.</p><a class="dgm dgm--altin" href="${r}iletisim/">Randevu talebi</a></div>
+      <div class="kutu kutu--acil g-b6" data-gr>
+        <b>Beklemeden bize ulaşmanız gereken durumlar</b>
+        <p>Lekenin bir ton koyulaşması ve üzerinde ince bir kabuk oluşması beklenen seyirdir. Buna karşılık atım yapılan alanda kızarıklık çevreye yayılıyor, ağrı geçeceğine artıyor, su toplaması, sarı kabuk, akıntı ya da ateş oluyor veya kabuk düştüğünde altında kapanmayan bir yara kalıyorsa kontrol gününü beklemeyin. ${S.iletisim.tel} numarasından bize ulaşın; telefonla ulaşamıyorsanız en yakın acil servise gidin.</p>
+      </div>
     </div>
   </div>
 </section>
@@ -117,7 +121,7 @@ module.exports = {
     </div>
   </div>
 </div></section>
-<script type="application/json" data-gsoru-veri>[["Her koyu lekeye pico lazer yapılır mı?","Yapılmaz. Güneş lekesi, sivilce sonrası koyulaşma, melazma ve ben birbirine çok benzeyebilir ama her birinin yolu farklıdır; bir kısmında lazer hiç yer almaz. Muayenede önce dermatoskopla bakılır, lazerin uygun olup olmadığı ondan sonra söylenir."],["Melazmada pico lazerin yeri nedir?","Sıranın en sonundadır. Melazma güneş, ısı ve hormonlarla alevlenir; bu etkenler düzenlenmeden yapılan atım lekeyi bir süre açıp sonra daha koyu geri getirebilir. Aylarca sürdürülen koruma ve gerekirse krem tedavisinden sonra, yalnızca uygun kişilerde düşük enerjiyle konuşulur."],["Hangi mevsimde başlamak daha doğru?","Sonbahar ve kış daha elverişlidir. Uygulamadan önce cildin bronz olmaması, sonrasında da haftalarca güneşten korunması gerekir; yaz aylarında, tatil ve deniz döneminde bunu sağlamak zordur."],["Lekeler bir daha çıkmaz mı?","Çıkabilir. Güneş lekeleri çoğu zaman belirgin biçimde açılır, ancak güneş koruması bırakıldığında aynı yerde ya da yakınında yenileri oluşur. Melazmada geri dönüş daha sıktır. Tam düzelme taahhüt edilmez; sonuçlar kişiden kişiye değişir."],["Seanstan sonraki günler nasıl geçer?","İlk saatlerde leke bir ton koyulaşır ve çevresi hafifçe kızarır. Birkaç gün içinde lekenin üzerinde ince bir kabuk belirir ve yaklaşık bir hafta içinde kendiliğinden düşer; koparılmaz. Bu dönemde de her gün güneş koruyucu kullanılır."],["Ücret bilgisini nasıl öğrenebilirim?","Sağlık hizmetlerinin tanıtımını düzenleyen kurallar ücretlerin internette yayımlanmasına izin vermez. Kaç lekeye kaç seans gerektiği kişiye göre değiştiği için bu konu muayenede konuşulur."]]</script>
+<script type="application/json" data-gsoru-veri>[["Her koyu lekeye pico lazer yapılır mı?","Yapılmaz. Güneş lekesi, sivilce sonrası koyulaşma, melazma ve ben birbirine çok benzeyebilir ama her birinin yolu farklıdır; bir kısmında lazer hiç yer almaz. Muayenede önce büyütmeli ışıkla bakılır, lazerin uygun olup olmadığı ondan sonra söylenir."],["Melazmada pico lazerin yeri nedir?","Sıranın en sonundadır. Melazma güneş, ısı ve hormonlarla alevlenir; bu etkenler düzenlenmeden yapılan atım lekeyi bir süre açıp sonra daha koyu geri getirebilir. Aylarca sürdürülen koruma ve gerekirse krem tedavisinden sonra, yalnızca uygun kişilerde düşük enerjiyle konuşulur."],["Hangi mevsimde başlamak daha doğru?","Sonbahar ve kış daha elverişlidir. Uygulamadan önce cildin bronz olmaması, sonrasında da haftalarca güneşten korunması gerekir; yaz aylarında, tatil ve deniz döneminde bunu sağlamak zordur."],["Lekeler bir daha çıkmaz mı?","Çıkabilir. Güneş lekeleri çoğu zaman belirgin biçimde açılır, ancak güneş koruması bırakıldığında aynı yerde ya da yakınında yenileri oluşur. Melazmada geri dönüş daha sıktır. Tam düzelme taahhüt edilmez; sonuçlar kişiden kişiye değişir."],["Seanstan sonraki günler nasıl geçer?","İlk saatlerde leke bir ton koyulaşır ve çevresi hafifçe kızarır. Birkaç gün içinde lekenin üzerinde ince bir kabuk belirir ve yaklaşık bir hafta içinde kendiliğinden düşer; koparılmaz. Bu dönemde de her gün güneş koruyucu kullanılır."],["Ücret bilgisini nasıl öğrenebilirim?","Sağlık hizmetlerinin tanıtımını düzenleyen kurallar ücretlerin internette yayımlanmasına izin vermez. Kaç lekeye kaç seans gerektiği kişiye göre değiştiği için bu konu muayenede konuşulur."]]</script>
 
 <!-- KAPANIŞ -->
 <section class="g-son">

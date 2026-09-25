@@ -14,7 +14,7 @@ module.exports = {
       <nav class="kirinti" aria-label="Konum" style="position:relative;font-size:.76rem;color:var(--sessiz);display:flex;gap:7px;margin-bottom:18px"><a href="${r}" style="color:var(--sessiz);text-decoration:none">Ana sayfa</a> › <a href="${r}uygulamalar/" style="color:var(--sessiz);text-decoration:none">Uygulamalar</a> › <span>PRP</span></nav>
       <p class="g-etiket">Enjeksiyon Uygulamaları · Otolog Plazma</p>
       <h1>Kaynağı kendi kanınız, <span class="g-isik">hedefi cilt kalitesi</span> olan bir uygulama.</h1>
-      <p class="g-hero__alt">PRP, koldan alınan az miktarda kanın santrifüjle ayrıştırılmasıyla elde edilen, trombosit oranı yükseltilmiş plazmanın aynı randevuda yüz, boyun ya da el sırtı cildine verilmesidir. Cildin kendi yenilenme süreçlerinin desteklenmesi amaçlanır. Saç dökülmesine yönelik uygulama ayrı bir sayfada anlatılır; hangi bölgeye ne planlanacağı muayenede belirlenir.</p>
+      <p class="g-hero__alt">PRP, koldan alınan az miktarda kanın santrifüjle ayrıştırılmasıyla elde edilen, trombosit oranı yükseltilmiş plazmanın aynı randevuda yüz, boyun, dekolte ya da el sırtı cildine verilmesidir. Cildin kendi yenilenme süreçlerinin desteklenmesi amaçlanır. Saç dökülmesine yönelik uygulama ayrı bir sayfada anlatılır; hangi bölgeye ne planlanacağı muayenede belirlenir.</p>
       <div class="g-hero__cta">
         <a class="dgm dgm--bir" href="${r}iletisim/">Randevu talebi</a>
         <a class="dgm dgm--iki" href="#ilkbolum">Nedir, ne değildir ↓</a>
@@ -44,7 +44,7 @@ module.exports = {
     <div class="bolum-bas" data-gr>
       <p class="g-etiket">Tanım ve kapsam</p>
       <h2>PRP cilde ne yapar, hangi beklentiyi karşılamaz?</h2>
-      <p class="giris">Bu sayfa yüz ve vücut cildine yönelik PRP’yi anlatır. Şikâyetiniz saç seyrelmesiyse <a href="${r}uygulamalar/sac-prp/">saç PRP</a> sayfasına geçebilirsiniz; cilt tarafında <a href="${r}cilt-sorunlari/nem-kaybi-ve-donukluk/">nem kaybı ve donukluk</a> ile <a href="${r}cilt-sorunlari/gozenek-ve-cilt-dokusu/">gözenek ve cilt dokusu</a> sayfaları, bölge planı için <a href="${r}bolgeler/yuz/">yüz</a> sayfası yol gösterir.</p>
+      <p class="giris">Bu sayfa yüz, boyun, dekolte ve el sırtı cildine yönelik PRP’yi anlatır. Şikâyetiniz saç seyrelmesiyse <a href="${r}uygulamalar/sac-prp/">saç PRP</a> sayfasına geçebilirsiniz; cilt tarafında <a href="${r}cilt-sorunlari/nem-kaybi-ve-donukluk/">nem kaybı ve donukluk</a> ile <a href="${r}cilt-sorunlari/gozenek-ve-cilt-dokusu/">gözenek ve cilt dokusu</a> sayfaları, bölge planı için <a href="${r}bolgeler/yuz/">yüz</a> sayfası yol gösterir.</p>
     </div>
     <div class="izgara izgara--2">
       <div class="kutu kutu--bilgi" data-gr>
@@ -58,7 +58,7 @@ module.exports = {
         <p><b>Dolgu yerine geçmez:</b> elmacıkta, çene hattında ya da göz altında belirgin çöküntü varsa plazma bu boşluğu doldurmaz; hacim konusu <a href="${r}uygulamalar/dolgu-uygulamalari/">dolgu uygulamaları</a> sayfasında ele alınır.</p>
         <p><b>Mimik çizgilerini gevşetmez:</b> alında ya da kaş arasında kas hareketiyle derinleşen çizgiler başka bir planlamanın konusudur.</p>
         <p><b>Sarkmayı kaldırmaz:</b> deri ve alt doku belirgin biçimde yer değiştirdiyse PRP bu tabloyu geri çevirmez; cerrahi gerektiren bir durumun karşılığı olarak sunulamaz.</p>
-        <p><b>Vücudun geneline etki etmez:</b> PRP bir “kür” değildir; bağışıklık, enerji ya da genel sağlık üzerine öne sürülen iddiaların bilimsel dayanağı yoktur. Plazmanın etkisi, verildiği birkaç santimetrekarelik cilt alanında kalır.</p>
+        <p><b>Vücudun geneline etki etmez:</b> PRP bir “kür” değildir; bağışıklık, enerji ya da genel sağlık üzerine öne sürülen iddiaların bilimsel dayanağı yoktur. Plazmanın etkisi, verildiği cilt bölgesiyle sınırlı kalır; vücudun başka bir yerinde etki göstermesi beklenmez.</p>
       </div>
     </div>
     <div class="kutu kutu--bilgi" data-gr style="--d:140ms;margin-top:16px">
@@ -134,7 +134,7 @@ module.exports = {
     <div class="bolum-bas" data-gr>
       <p class="g-etiket">Seans düzeni</p>
       <h2>Kaç seans planlanır, etkinin süresi neye bağlıdır?</h2>
-      <p class="giris">Yüz ve vücut cildinde PRP genellikle birkaç seanslık bir dizi hâlinde, aralarında birkaç hafta bırakılarak uygulanır; kaç seans yapılacağı ilk görüşmede bir paket olarak sabitlenmez. Deri hücrelerinin yenilenmesi zaman aldığından, ilk seanstan birkaç gün sonra aynaya bakarak karar vermek doğru olmaz; değerlendirme dizinin ortasında ve sonunda yapılır. Bu kontrollerde üç yol vardır: aynı planla devam etmek, PRP’yi bir cihaz uygulamasıyla birleştirmek ya da diziyi bitirmek. Değişikliğin ne kadar süre korunacağını yaşınız, güneşle ilişkiniz, sigara ve genel sağlığınız belirler; aynı plan iki kişide farklı sonuç verebilir. Saçlı derideki takvim farklıdır ve <a href="${r}uygulamalar/sac-prp/">saç PRP</a> sayfasında ayrıca anlatılmıştır.</p>
+      <p class="giris">Yüz, boyun, dekolte ve el sırtı cildinde PRP genellikle birkaç seanslık bir dizi hâlinde, aralarında birkaç hafta bırakılarak uygulanır; kaç seans yapılacağı ilk görüşmede bir paket olarak sabitlenmez. Deri hücrelerinin yenilenmesi zaman aldığından, ilk seanstan birkaç gün sonra aynaya bakarak karar vermek doğru olmaz; değerlendirme dizinin ortasında ve sonunda yapılır. Bu kontrollerde üç yol vardır: aynı planla devam etmek, PRP’yi bir cihaz uygulamasıyla birleştirmek ya da diziyi bitirmek. Değişikliğin ne kadar süre korunacağını yaşınız, güneşle ilişkiniz, sigara ve genel sağlığınız belirler; aynı plan iki kişide farklı sonuç verebilir. Saçlı derideki takvim farklıdır ve <a href="${r}uygulamalar/sac-prp/">saç PRP</a> sayfasında ayrıca anlatılmıştır.</p>
     </div>
   </div>
 </section>

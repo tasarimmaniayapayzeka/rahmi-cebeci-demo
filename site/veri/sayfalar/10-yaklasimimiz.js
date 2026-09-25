@@ -53,7 +53,7 @@ module.exports = {
     <div class="bolum-bas" data-gr>
       <p class="g-etiket">Süreç</p>
       <h2>Her başvuruda aynı sırayı izleyen dört adım</h2>
-      <p class="giris">Sıra kısaltılmaz. Bir adım o gün gerekmiyorsa geçilebilir; ancak adımların yeri değişmez.</p>
+      <p class="giris">Sıra bozulmaz. O gün gerekmeyen bir adım atlanabilir; ancak yapılan adımlar hep bu dizilişle ilerler ve ilk adım her zaman muayenedir.</p>
     </div>
     <div class="g-katblok" data-gr>
       <span class="g-kno">01</span>
@@ -158,7 +158,7 @@ module.exports = {
     </div>
     <div class="kutu kutu--bilgi" data-gr style="--d:140ms">
       <b>Şeffaflık notu</b>
-      <p>Sitede ürün markası üzerinden tanıtım ya da ticari duyuru bulunmaz; uygulamalar yöntem ve etken madde adıyla anlatılır. Muayenehanedeki cihazların model bilgisi yalnızca muayenehane sayfasındaki cihaz listesinde, bilgilendirme amacıyla yer alır.</p>
+      <p>Sitede ürün markası üzerinden tanıtım ya da ticari duyuru bulunmaz; uygulamalar yöntem ve etken madde adıyla anlatılır. Muayenehanedeki cihazların model bilgisi yalnızca muayenehane sayfasındaki cihaz listesinde ve ilgili uygulama sayfasındaki tek bir “kullanılan cihaz” satırında, bilgilendirme amacıyla yer alır.</p>
     </div>
     <div class="dgm-sira" style="margin-top:22px">
       <a class="dgm dgm--iki" href="${r}yaklasimimiz/neden-bazi-islemleri-yapmiyoruz/">Neden bazı işlemleri yapmıyoruz ${ik.ok}</a>
