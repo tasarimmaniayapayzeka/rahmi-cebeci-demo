@@ -13,7 +13,7 @@ module.exports = {
   <div class="sar">
     <div>
       <nav class="kirinti" aria-label="Konum" style="position:relative;font-size:.76rem;color:var(--sessiz);display:flex;gap:7px;margin-bottom:18px"><a href="${r}" style="color:var(--sessiz);text-decoration:none">Ana sayfa</a> › <a href="${r}bolgeler/" style="color:var(--sessiz);text-decoration:none">Bölgeler</a> › <span>Saçlı Deri</span></nav>
-      <p class="g-etiket">Bölgeler · Saçlı deri</p>
+      <p class="g-etiket">Bölge rehberi · Saçlı deri</p>
       <h1>Dökülen saçta ilk soru: <span class="g-isik">neden?</span></h1>
       <p class="g-hero__alt">Saç dökülmesi kalıtsal yatkınlıktan, geçirilen bir hastalık ya da doğumdan, demir eksikliğinden ya da tiroid bozukluğundan kaynaklanabilir. Aynada hepsi benzer görünür; oysa her birinin yolu farklıdır. Bu yüzden önce sizi muayene eder, öykünüzü dinler ve gerekirse tahlil isteriz; nedeni belli olmayan bir dökülmede seans serisine başlamayız.</p>
       <div class="g-hero__cta">
@@ -25,7 +25,7 @@ module.exports = {
     <div class="g-tarama" data-gr>
       <img src="${r}varliklar/gorsel/bolge-sacli-deri.webp" width="1400" height="788" alt="Saç çizgisi düzgün, sade bir fonda çekilmiş kadın portresi" loading="eager">
       <div class="g-isin"></div>
-      <span class="g-ainot">Görsel yapay zekâ ile üretilmiştir</span>
+      <span class="g-ainot">Temsilî görsel · yapay zekâ ile üretildi</span>
     </div>
   </div>
 </section>
@@ -63,7 +63,7 @@ module.exports = {
       <div class="g-atlas" data-gr>
         <div class="g-atlas-kap">
           <img src="${r}varliklar/gorsel/grup-sac.webp" width="1600" height="900" alt="Arkadan görülen, saç ayrım çizgisi belirgin koyu saçlı bir kadın başı" loading="lazy">
-          <span class="g-ainot">Görsel yapay zekâ ile üretilmiştir</span>
+          <span class="g-ainot">Temsilî görsel · yapay zekâ ile üretildi</span>
           <div class="g-rozetk" data-grozet><b>Androgenetik dökülme</b><span>Yıllar içinde yavaşça ilerler; plan da uzun soluklu yapılır.</span></div>
         </div>
       </div>
@@ -99,14 +99,14 @@ module.exports = {
     <div class="bolum-bas" data-gr><p class="g-etiket">Uygulamalar</p><h2>Saçlı deri için hangi seçenekler konuşulabilir?</h2><p class="giris">Buradaki adımlar, dökülmenin nedeni bulunmuş ve uygun olduğu görülmüş kişilerde gündeme gelir. Her biri hekimin çizdiği ana planı destekleyen birer yardımcıdır, kendi başına bir çözüm değildir. Saç nakli ve öteki cerrahi yöntemler muayenehanede yapılmaz.</p></div>
     <div class="g-matris">
       <div class="g-mtab" data-gr>
-        <div class="g-mbas"><span>Uygulama</span><span>Hedef</span><span>İyileşme</span><span></span></div>
-        <a class="g-msatir" data-akt href="${r}uygulamalar/sac-mezoterapisi/" data-gg="${r}varliklar/gorsel/uyg-sac-mezoterapisi.webp" data-gb="Saç mezoterapisi" data-ga="Vitamin, mineral ve amino asitlerden oluşan karışımlar saçlı derinin üst katmanına küçük noktalar hâlinde verilir; seri olarak, haftalar arayla yapılır."><h4>Saç mezoterapisi</h4><span class="g-hucre"><i class="g-kcip g-kcip--1">DESTEK</i></span><span class="g-hucre">1 gün içinde</span><span class="g-git">→</span></a>
-        <a class="g-msatir" href="${r}uygulamalar/sac-prp/" data-gg="${r}varliklar/gorsel/uyg-sac-prp.webp" data-gb="Saç PRP" data-ga="Kendi kanınızdan ayrıştırılan, trombositten zengin plazmanın saçlı deriye uygulanmasıdır. Kansızlık, pıhtılaşma sorunları ve bazı ilaçlar planı değiştirir."><h4>Saç PRP</h4><span class="g-hucre"><i class="g-kcip g-kcip--3">PLAZMA</i></span><span class="g-hucre">1 gün içinde</span><span class="g-git">→</span></a>
-        <a class="g-msatir" href="${r}uygulamalar/eksozom/#sac" data-gg="${r}varliklar/gorsel/uyg-eksozom.webp" data-gb="Saçlı deride eksozom" data-ga="Hücrelerin birbirine gönderdiği sinyal moleküllerinden yararlanır; seçilmiş durumlarda konuşulur ve bilimsel kanıtın bugün hangi düzeyde olduğu size açıkça anlatılır."><h4>Saçlı deride eksozom</h4><span class="g-hucre"><i class="g-kcip g-kcip--1">DESTEK</i></span><span class="g-hucre">Muayenede belirlenir</span><span class="g-git">→</span></a>
-        <a class="g-msatir" href="${r}uygulamalar/hekim-muayenesi/" data-gg="${r}varliklar/gorsel/uyg-hekim-muayenesi.webp" data-gb="Hekim muayenesi" data-ga="Her uygulamadan önce atılması zorunlu adımdır; dökülmenin dağılımı, ne zamandır sürdüğü ve ailenizdeki benzer durumlar burada konuşulur."><h4>Hekim muayenesi</h4><span class="g-hucre"><i class="g-kcip g-kcip--1">İLK BASAMAK</i></span><span class="g-hucre">Aynı gün</span><span class="g-git">→</span></a>
-        <a class="g-msatir" href="${r}uygulamalar/uygulama-sonrasi-takip/" data-gg="${r}varliklar/gorsel/uyg-uygulama-sonrasi-takip.webp" data-gb="Uygulama sonrası takip" data-ga="Saçta yanıt aylar içinde ölçülür. Her kontrolde aynı ışık ve açıyla alınan kayıtlar, izlenime dayalı yorumların önüne geçer."><h4>Uygulama sonrası takip</h4><span class="g-hucre"><i class="g-kcip g-kcip--1">TAKİP</i></span><span class="g-hucre">Aylarla ölçülür</span><span class="g-git">→</span></a>
+        <div class="g-mbas"><span>Yöntem</span><span>Amaç</span><span>Toparlanma</span><span></span></div>
+        <a class="g-msatir" data-akt href="${r}uygulamalar/sac-mezoterapisi/" data-gg="${r}varliklar/gorsel/uyg-sac-mezoterapisi.webp" data-gb="Saç mezoterapisi" data-ga="Saçlı derinin üst katmanına, vitamin, mineral ve aminoasit içeren karışımlar küçük noktalar hâlinde verilir; haftalar arayla bir seri olarak sürdürülür."><h4>Saç mezoterapisi</h4><span class="g-hucre"><i class="g-kcip g-kcip--1">YARDIMCI</i></span><span class="g-hucre">Çoğunlukla ertesi gün</span><span class="g-git">→</span></a>
+        <a class="g-msatir" href="${r}uygulamalar/sac-prp/" data-gg="${r}varliklar/gorsel/uyg-sac-prp.webp" data-gb="Saç PRP" data-ga="Kendi kanınızdan ayrıştırılan, trombositten zengin plazmanın saçlı deriye uygulanmasıdır. Kansızlık, pıhtılaşma sorunları ve bazı ilaçlar planı değiştirir."><h4>Saç PRP</h4><span class="g-hucre"><i class="g-kcip g-kcip--3">KENDİ KANINIZ</i></span><span class="g-hucre">Çoğunlukla ertesi gün</span><span class="g-git">→</span></a>
+        <a class="g-msatir" href="${r}uygulamalar/eksozom/#sac" data-gg="${r}varliklar/gorsel/uyg-eksozom.webp" data-gb="Saçlı deride eksozom" data-ga="Hücrelerin birbirine gönderdiği sinyal moleküllerinden yararlanır; seçilmiş durumlarda konuşulur ve bilimsel kanıtın bugün hangi düzeyde olduğu size açıkça anlatılır."><h4>Saçlı deride eksozom</h4><span class="g-hucre"><i class="g-kcip g-kcip--1">YARDIMCI</i></span><span class="g-hucre">Muayenede belirlenir</span><span class="g-git">→</span></a>
+        <a class="g-msatir" href="${r}uygulamalar/hekim-muayenesi/" data-gg="${r}varliklar/gorsel/uyg-hekim-muayenesi.webp" data-gb="Hekim muayenesi" data-ga="Her uygulamadan önce atılması zorunlu adımdır; dökülmenin dağılımı, ne zamandır sürdüğü ve ailenizdeki benzer durumlar burada konuşulur."><h4>Hekim muayenesi</h4><span class="g-hucre"><i class="g-kcip g-kcip--1">BAŞLANGIÇ</i></span><span class="g-hucre">Aynı gün</span><span class="g-git">→</span></a>
+        <a class="g-msatir" href="${r}uygulamalar/uygulama-sonrasi-takip/" data-gg="${r}varliklar/gorsel/uyg-uygulama-sonrasi-takip.webp" data-gb="Uygulama sonrası takip" data-ga="Saçta yanıt aylar içinde ölçülür. Her kontrolde aynı ışık ve açıyla alınan kayıtlar, izlenime dayalı yorumların önüne geçer."><h4>Uygulama sonrası takip</h4><span class="g-hucre"><i class="g-kcip g-kcip--1">TAKİP</i></span><span class="g-hucre">Aylara yayılır</span><span class="g-git">→</span></a>
       </div>
-      <div class="g-onizle" data-gonizle data-gr><div class="g-gor"><img src="${r}varliklar/gorsel/uyg-sac-mezoterapisi.webp" alt=""></div><div class="g-ic"><h4>Saç mezoterapisi</h4><p>Vitamin, mineral ve amino asitlerden oluşan karışımlar saçlı derinin üst katmanına küçük noktalar hâlinde verilir; seri olarak, haftalar arayla yapılır.</p><a class="dgm dgm--iki" href="${r}uygulamalar/sac-mezoterapisi/">Sayfasına git →</a></div></div>
+      <div class="g-onizle" data-gonizle data-gr><div class="g-gor"><img src="${r}varliklar/gorsel/uyg-sac-mezoterapisi.webp" alt=""></div><div class="g-ic"><h4>Saç mezoterapisi</h4><p>Saçlı derinin üst katmanına, vitamin, mineral ve aminoasit içeren karışımlar küçük noktalar hâlinde verilir; haftalar arayla bir seri olarak sürdürülür.</p><a class="dgm dgm--iki" href="${r}uygulamalar/sac-mezoterapisi/">Sayfasına git →</a></div></div>
     </div>
   </div>
 </section>
@@ -130,7 +130,7 @@ module.exports = {
         <ul>
           <li><b>Nedeni bulunmamış dökülme:</b> muayene ve gerekli tahliller tamamlanmadan iğneyle yapılan bir işlem planlanmaz.</li>
           <li><b>Saçlı deride etkin enfeksiyon:</b> mantar, kıl kökü iltihabı (folikülit) ya da açık yara varsa önce bu iyileşir.</li>
-          <li><b>İz bırakan dökülme şüphesi:</b> parlak, kılsız ve sertleşmiş alanlar görülürse estetik amaçlı işlem yapılmaz; önce ayırıcı tanı konur.</li>
+          <li><b>Kalıcı iz bırakan dökülme kuşkusu:</b> deride kılsız, parlak ve sertleşmiş alanlar varsa estetik amaçlı işlem yapılmaz; önce ayırıcı tanı konur.</li>
           <li><b>Gebelik ve emzirme:</b> bu süreçte iğneyle yapılan işlemlere başlanmaz.</li>
           <li><b>Kanama sorunu ya da kan sulandırıcı ilaç:</b> saçlı deri bol kanlanan bir bölgedir; ilacınızda değişiklik gerekirse bu ancak ilacı veren hekimin onayıyla konuşulur.</li>
           <li><b>Plazma uygulamasına özel engeller:</b> ağır kansızlık, düşük trombosit sayısı ve bazı kan hastalıklarında PRP seçilmez.</li>
@@ -187,12 +187,12 @@ module.exports = {
 <!-- 9 ── KAPANIŞ -->
 <section class="g-son">
   <div class="sar">
-    <p class="g-etiket g-etiket--orta">Sonraki adım</p>
+    <p class="g-etiket g-etiket--orta">Bir adım ötesi</p>
     <h2>Önce nedeni bulalım, planı sonra yapalım</h2>
     <p class="g-sonalt">Dökülmenizin hangi türe uyduğunu birlikte anlamak için ${S.iletisim.semt} muayenehanemizden randevu talep edebilirsiniz. Son üç ay içinde yaptırdığınız tahliller varsa yanınızda getirin.</p>
     <div class="g-sonbtn">
       <a class="dgm dgm--bir" href="${r}iletisim/">Randevu talebi oluşturun</a>
-      <a class="dgm dgm--iki" href="${r}hazirlik-listesi/arac/">Hazırlık listesini doldurun</a>
+      <a class="dgm dgm--iki" href="${r}hazirlik-listesi/arac/">Muayeneye hazırlanın</a>
     </div>
   </div>
 </section>

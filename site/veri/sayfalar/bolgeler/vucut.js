@@ -13,7 +13,7 @@ module.exports = {
   <div class="sar">
     <div>
       <nav class="kirinti" aria-label="Konum" style="position:relative;font-size:.76rem;color:var(--sessiz);display:flex;gap:7px;margin-bottom:18px"><a href="${r}" style="color:var(--sessiz);text-decoration:none">Ana sayfa</a> › <a href="${r}bolgeler/" style="color:var(--sessiz);text-decoration:none">Bölgeler</a> › <span>Vücut</span></nav>
-      <p class="g-etiket">Bölgeler · Vücut</p>
+      <p class="g-etiket">Bölge rehberi · Vücut</p>
       <h1>Vücutta plan <span class="g-isik">bölgeye ve dokuya</span> göre kurulur.</h1>
       <p class="g-hero__alt">Karın, bel, kol ve bacakta en sık dile getirilen konular yerel yağ birikimi, selülit görünümü ve silinmek istenen dövmelerdir. Üçü farklı dokularda, farklı süreçlerle ortaya çıkar; aynı muayenede konuşulsalar da ayrı planlanırlar. Bu uygulamalar kilo vermenin yerine geçmez; amaç, belirli bir alandaki görünümde ölçülü bir değişim hedeflemektir.</p>
       <div class="g-hero__cta">
@@ -25,7 +25,7 @@ module.exports = {
     <div class="g-tarama" data-gr>
       <img src="${r}varliklar/gorsel/bolge-vucut.webp" width="1400" height="788" alt="Bel ve karın bölgesini gösteren üç boyutlu stilize görsel" loading="eager">
       <div class="g-isin"></div>
-      <span class="g-ainot">Görsel yapay zekâ ile üretilmiştir</span>
+      <span class="g-ainot">Temsilî görsel · yapay zekâ ile üretildi</span>
     </div>
   </div>
 </section>
@@ -68,7 +68,7 @@ module.exports = {
       <div class="g-atlas" data-gr>
         <div class="g-atlas-kap">
           <img src="${r}varliklar/gorsel/grup-cihaz.webp" width="1600" height="900" alt="Tepside duran lazer başlığının yakın plan görünümü" loading="lazy">
-          <span class="g-ainot">Görsel yapay zekâ ile üretilmiştir</span>
+          <span class="g-ainot">Temsilî görsel · yapay zekâ ile üretildi</span>
           <div class="g-rozetk" data-grozet><b>Bölgesel yağlanma</b><span>Kilo vermeye dirençli yerel birikim; genel kilo fazlasının yerine geçen bir çözüm değildir.</span></div>
         </div>
       </div>
@@ -104,7 +104,7 @@ module.exports = {
     <div class="bolum-bas" data-gr><p class="g-etiket">Uygulamalar</p><h2>Vücut için hangi seçenekler konuşulabilir?</h2><p class="giris">Aşağıdaki seçenekler muayenenin sonucuna göre ve ilgili bölgeye uyarlanarak değerlendirilir. Vücutta işlem yapılan alan yüzden çok daha geniştir; seans sayısı, aralıklar ve iyileşme süresi de buna göre değişir.</p></div>
     <div class="g-matris">
       <div class="g-mtab" data-gr>
-        <div class="g-mbas"><span>Uygulama</span><span>Hedef</span><span>İyileşme</span><span></span></div>
+        <div class="g-mbas"><span>Yöntem</span><span>Amaç</span><span>Toparlanma</span><span></span></div>
         <a class="g-msatir" data-akt href="${r}uygulamalar/bolgesel-lipoliz/" data-gg="${r}varliklar/gorsel/uyg-bolgesel-lipoliz.webp" data-gb="Bölgesel lipoliz" data-ga="Karın, bel, kol iç yüzü ve uylukta diyete dirençli yerel yağ birikiminde değerlendirilir. Kilo verme yöntemi değildir; genel kilo fazlası olanlarda planlanmaz."><h4>Bölgesel lipoliz</h4><span class="g-hucre"><i class="g-kcip g-kcip--3">YEREL YAĞ</i></span><span class="g-hucre">Birkaç gün şişlik</span><span class="g-git">→</span></a>
         <a class="g-msatir" href="${r}uygulamalar/selulit-gorunumu/" data-gg="${r}varliklar/gorsel/uyg-selulit-gorunumu.webp" data-gb="Selülit görünümü" data-ga="Mezoterapi, lipoliz ve cihaz desteğinin birlikte düşünüldüğü bir protokoldür; amaç yüzeydeki dalgalanmanın hafiflemesidir."><h4>Selülit görünümü</h4><span class="g-hucre"><i class="g-kcip g-kcip--1">CİLT YÜZEYİ</i></span><span class="g-hucre">Muayenede belirlenir</span><span class="g-git">→</span></a>
         <a class="g-msatir" href="${r}uygulamalar/pico-lazer-dovme-silme/" data-gg="${r}varliklar/gorsel/uyg-pico-lazer-dovme-silme.webp" data-gb="Pico lazer ile dövme silme" data-ga="Pikosaniye atımlarla mürekkep parçacıklarının küçültülmesi hedeflenir; seanslar arasında genellikle birkaç hafta bırakılır."><h4>Pico lazer ile dövme silme</h4><span class="g-hucre"><i class="g-kcip g-kcip--2">ENERJİ</i></span><span class="g-hucre">Birkaç gün–1 hafta</span><span class="g-git">→</span></a>
@@ -126,8 +126,8 @@ module.exports = {
     <div class="g-bento">
       <div class="g-kutu g-b3" data-gr><span class="g-ket">ADIMLAR</span>
         <ol class="g-protokol">
-          <li><b>Beklenti ve uygunluk:</b> hangi bölgede ne tür bir değişim istediğiniz konuşulur; beklenti cerrahi bir sonuca denk düşüyorsa uygulama önerilmez, yönlendirme yapılır.</li>
-          <li><b>Muayene ve neden araştırması:</b> yağ dağılımı, deri esnekliği ve selülitin derecesi değerlendirilir; hızlı kilo alımı, hormonal düzensizlik ya da tiroid kuşkusu varsa önce bunlar araştırılır, gerekirse tahlil istenir.</li>
+          <li><b>Beklenti ve uygunluk:</b> hangi bölgede ne tür bir değişim istediğiniz konuşulur; beklenen sonuç ancak cerrahiyle elde edilebilecekse bu uygulamalar önerilmez, ilgili branşa yönlendirilirsiniz.</li>
+          <li><b>Muayene ve altta yatan nedenin araştırılması:</b> yağ dağılımı, deri esnekliği ve selülitin derecesi değerlendirilir; hızlı kilo alımı, hormonal düzensizlik ya da tiroid kuşkusu varsa önce bunlar araştırılır, gerekirse tahlil istenir.</li>
           <li><b>Deneme alanı ve ayar:</b> lazerle yapılan işlemlerde önce küçük bir alanda deneme atışı yapılır; cildin yanıtı görülmeden bütün alana geçilmez.</li>
           <li><b>Seans serisi ve kontrol:</b> seans aralıklarını bölge ve yöntem belirler; her yeni seanstan önce bölgeyi yeniden muayene ederiz. Kontrollerde nelere bakıldığını <a href="${r}uygulamalar/uygulama-sonrasi-takip/">uygulama sonrası takip</a> sayfasında bulabilirsiniz.</li>
         </ol>
@@ -195,12 +195,12 @@ module.exports = {
 <!-- 9 ── KAPANIŞ -->
 <section class="g-son">
   <div class="sar">
-    <p class="g-etiket g-etiket--orta">Sonraki adım</p>
+    <p class="g-etiket g-etiket--orta">Bir adım ötesi</p>
     <h2>Vücut planınızı muayenede netleştirelim</h2>
     <p class="g-sonalt">İsteğinizin cerrahi olmayan bir yöntemle karşılanıp karşılanamayacağını ilk görüşmede açıkça konuşuyoruz. Değerlendirme için ${S.iletisim.semt} muayenehanemizden randevu talep edebilirsiniz.</p>
     <div class="g-sonbtn">
       <a class="dgm dgm--bir" href="${r}iletisim/">Randevu talebi oluşturun</a>
-      <a class="dgm dgm--iki" href="${r}hazirlik-listesi/arac/">Hazırlık listesini doldurun</a>
+      <a class="dgm dgm--iki" href="${r}hazirlik-listesi/arac/">Muayeneye hazırlanın</a>
     </div>
   </div>
 </section>

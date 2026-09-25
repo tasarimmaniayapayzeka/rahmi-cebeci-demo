@@ -13,11 +13,11 @@ module.exports = {
   <div class="sar">
     <p class="g-etiket">Yasal</p>
     <h1>KVKK Aydınlatma Metni</h1>
-    <p class="g-bhero__alt">6698 sayılı Kişisel Verilerin Korunması Kanunu’nun 10. maddesindeki aydınlatma yükümlülüğü kapsamında hazırlanan bu metin; muayenehaneye başvuran hastalar ile internet sitesini ziyaret edenlere ait kişisel verilerin hangi amaçlarla ve hangi hukuki sebeplere dayanılarak işlendiğini, kimlere aktarılabileceğini, ne kadar süre saklandığını ve ilgili kişi olarak sahip olduğunuz hakları anlatır. Sitede reklam pikseli, üçüncü taraf analitik aracı ya da profilleme yazılımı yer almaz.</p>
+    <p class="g-bhero__alt">Muayenehaneye gelen hastalar ve bu siteyi gezen ziyaretçiler hakkında hangi bilgilerin tutulduğunu, bunların ne için ve hangi hukuki dayanakla kullanıldığını, kimlerle paylaşılabileceğini, ne zaman silindiğini ve bu konuda hangi haklara sahip olduğunuzu bu sayfada bulabilirsiniz. Metin, aydınlatma yükümlülüğü gereği 6698 sayılı Kişisel Verilerin Korunması Kanunu (m. 10) esas alınarak hazırlanmıştır. Sitede ziyaretçileri izleyen bir reklam pikseli, dışarıdan bağlanan bir analitik hizmeti ya da profil çıkaran bir yazılım bulunmaz.</p>
     <div class="g-bmeta">
       <span><i></i>Son güncelleme: ${S.guncelleme}</span>
-      <span><i></i>Muayenehane yurt dışına veri aktarmaz</span>
-      <span><i></i>Reklam pikseli ve profilleme yok</span>
+      <span><i></i>Yurt dışına aktarım yapılmaz</span>
+      <span><i></i>İzleme ve profil çıkarma yok</span>
     </div>
   </div>
 </section>
@@ -28,24 +28,24 @@ module.exports = {
 
     <aside class="g-bmenu" aria-label="Sayfa içi başlıklar">
       <b>Bu sayfada</b>
-      <a href="#veri-sorumlusu">Veri sorumlusu</a>
-      <a href="#islenen-veriler">İşlenen veriler</a>
-      <a href="#erisim-kayitlari">Erişim kayıtları</a>
-      <a href="#site-araclari">Site araçları</a>
-      <a href="#isleme-amaclari">İşleme amaçları</a>
-      <a href="#veri-aktarimi">Veri aktarımı</a>
-      <a href="#saklama-sureleri">Saklama süreleri</a>
-      <a href="#haklariniz">Haklarınız</a>
-      <a href="#ilgili-basliklar">İlgili başlıklar</a>
+      <a href="#veri-sorumlusu">Sorumlu kişi</a>
+      <a href="#islenen-veriler">Tutulan bilgiler</a>
+      <a href="#erisim-kayitlari">Sunucu kayıtları</a>
+      <a href="#site-araclari">Etkileşimli araçlar</a>
+      <a href="#isleme-amaclari">Amaç ve dayanak</a>
+      <a href="#veri-aktarimi">Paylaşım</a>
+      <a href="#saklama-sureleri">Silinme zamanı</a>
+      <a href="#haklariniz">Başvuru haklarınız</a>
+      <a href="#ilgili-basliklar">Diğer yasal metinler</a>
     </aside>
 
     <div class="g-bgov">
 
       <div class="g-bblk" id="veri-sorumlusu">
-        <h2>Veri sorumlusu kimdir?</h2>
+        <h2>Verilerinizden kim sorumlu?</h2>
         <div class="yazi">
-          <p>6698 sayılı Kanun bakımından veri sorumlusu, muayenehanenin sahibi ve sorumlu tabibi sıfatıyla <b>${S.hekim.tam}</b> (${S.hekim.dallar}) olup muayenehane ${S.iletisim.adres}, ${S.iletisim.ilce} adresinde hizmet vermektedir.</p>
-          <p>Veri sorumlusu; kişisel verilerin hangi amaçla ve hangi araçlarla işleneceğine karar veren, veri kayıt sisteminin kurulmasından ve yönetilmesinden sorumlu olan gerçek kişidir. Muayene sırasında öğrenilen sağlık bilgileri ayrıca 1219 sayılı Kanun ile Türk Ceza Kanunu’nun sır saklamaya ilişkin hükümleri gereğince hekimin meslek sırrı yükümlülüğü altındadır.</p>
+          <p>Kanunun uygulanmasında veri sorumlusu, muayenehaneyi işleten ve sorumlu tabip olarak görev yapan <b>${S.hekim.tam}</b>’dir (${S.hekim.dallar}). Muayenehane ${S.iletisim.adres}, ${S.iletisim.ilce} adresinde bulunur.</p>
+          <p>Veri sorumlusu kavramı, verinin neden ve hangi yöntemle işleneceğini belirleyen, kayıt düzenini kuran ve işleten kişiyi anlatır. Bunun yanında muayenede hekime anlatılan her sağlık bilgisi bir meslek sırrıdır; 1219 sayılı Kanun ile Türk Ceza Kanunu’ndaki sır saklama hükümleri bu bilgiler için de geçerlidir.</p>
         </div>
         <ul class="bilgi-liste">
           <li>${ik.pin}<div><b>Adres</b>${S.iletisim.adres}<br>${S.iletisim.ilce}</div></li>
@@ -55,154 +55,154 @@ module.exports = {
       </div>
 
       <div class="g-bblk" id="islenen-veriler">
-        <h2>Hangi kişisel verileri işliyoruz?</h2>
-        <p class="giris">İşlenen veri türleri, sizinle kurulan ilişkinin niteliğine göre değişir. Siteyi yalnızca ziyaret eden bir kişiden ve muayene olan bir hastadan aynı bilgiler alınmaz.</p>
+        <h2>Hakkınızda hangi bilgiler tutulur?</h2>
+        <p class="giris">Tutulan bilgiler, bizimle hangi yoldan temas kurduğunuza bağlıdır. Yalnızca sayfaları gezen bir ziyaretçi ile muayeneye gelen bir hastanın kaydı aynı kapsamda olmaz.</p>
         <div class="izgara izgara--2">
           <div class="kart kart--duz">
-            <h3>Kimlik ve iletişim verileri</h3>
-            <p>Adınız ve soyadınız, doğum tarihiniz, T.C. kimlik numaranız ile size ulaşabilmemiz için telefon ve e-posta bilgileriniz. Kimlik numarası; hasta kaydının mevzuata uygun biçimde tutulması ve yasal bildirimlerin yapılabilmesi dışında bir amaçla istenmez.</p>
+            <h3>Kimlik ve iletişim bilgileri</h3>
+            <p>Ad-soyad, doğum tarihi ve T.C. kimlik numarası; size geri dönebilmek için telefon numaranız ve e-posta adresiniz. Kimlik numarasını yalnızca hasta kaydını mevzuata uygun tutmak ve zorunlu bildirimleri yapabilmek için isteriz.</p>
           </div>
           <div class="kart kart--duz">
-            <h3>Sağlık verileri (özel nitelikli)</h3>
-            <p>Başvuru nedeniniz ve öykünüz, muayene bulguları, tanı ve uygulama planı kayıtları, kullandığınız ilaçlar, bilinen aşırı duyarlılık ve reaksiyon öyküsü, istenen tetkiklerin sonuçları, yapılan işlemlere ait kayıtlar ve imzaladığınız aydınlatılmış onam belgeleri.</p>
+            <h3>Özel nitelikli sağlık bilgileri</h3>
+            <p>Sizi muayenehaneye getiren şikâyet ve geçmiş öyküyle birlikte muayene bulguları, tanı ve uygulama planına dair notlar, düzenli kullandığınız ilaçlar, daha önce yaşadığınız aşırı duyarlılık tepkileri, istenen tetkiklerin sonuçları, yapılan işlemlerin kayıtları ve imzaladığınız onam formları.</p>
           </div>
           <div class="kart kart--duz">
-            <h3>Görsel kayıtlar</h3>
-            <p>Klinik takip amacıyla fotoğraf çekilmesi, ancak bu konuda ayrıca bilgilendirilmeniz ve onay vermeniz hâlinde mümkündür. Çekilen görüntüler yalnızca hasta dosyanızda saklanır; tanıtımda, yayında veya sosyal medyada kullanılmaz.</p>
+            <h3>Fotoğraflar</h3>
+            <p>Takip için fotoğraf çekilecekse bu önce size açıklanır ve onayınız alınır; onay yoksa fotoğraf çekilmez. Görüntüler hasta dosyanızın dışına çıkmaz; tanıtım, yayın ya da sosyal medya için kullanılmaz.</p>
           </div>
           <div class="kart kart--duz">
-            <h3>İşlem güvenliği verileri</h3>
-            <p>Sitenin barındırıldığı sunucu, teknik zorunluluk gereği erişim kaydı tutar: IP adresi, erişim tarihi ve saati, istenen sayfa adresi, sunucunun yanıt kodu ve tarayıcı bilgisi.</p>
+            <h3>Teknik güvenlik kayıtları</h3>
+            <p>Siteyi barındıran sunucu, teknik bir zorunluluk olarak her ziyarette şunları kaydeder: IP adresi, ziyaretin tarih ve saati, açılan sayfanın adresi, sunucunun döndürdüğü durum kodu ve kullanılan tarayıcıya ait bilgi.</p>
           </div>
         </div>
       </div>
 
       <div class="g-bblk" id="erisim-kayitlari">
-        <h2>Sunucu erişim kayıtları ne içerir?</h2>
+        <h2>Sunucunun tuttuğu kayıtlarda neler var?</h2>
         <div class="yazi">
-          <p>Sitede sizi tanıyan, davranışınızı izleyen ya da tarayıcınıza kayıt bırakan bir yazılım çalışmaz. Yine de her internet sitesinde olduğu gibi, bir sayfayı açtığınızda barındırma hizmeti sağlayıcısının sunucusu teknik bir kayıt üretir; bu kayıtta <b>IP adresiniz</b>, erişim zamanı ve açtığınız sayfanın adresi bulunur.</p>
-          <p>Bu kayıtlar; sistem güvenliğini sağlamak, hata ve saldırıları tespit etmek ve 5651 sayılı Kanun’dan doğan yükümlülükleri yerine getirmek amacıyla işlenir. Hukuki sebepleri Kanun’un 5/2-ç maddesi (hukuki yükümlülük) ile 5/2-f maddesidir (meşru menfaat). Kayıtlar pazarlamada kullanılmaz, kişi profili çıkarmak için işlenmez ve üçüncü taraflarla paylaşılmaz.</p>
+          <p>Bu sitede sizi tanımaya, gezinmenizi takip etmeye veya tarayıcınızda iz bırakmaya yönelik bir yazılım yoktur. Buna karşın bir sayfa açıldığında, barındırma firmasının sunucusu tüm sitelerde olduğu gibi kısa bir teknik kayıt oluşturur. <b>IP adresiniz</b>, ziyaretin zamanı ve görüntülediğiniz sayfanın adresi bu kayda yazılır.</p>
+          <p>Kayıtlar; sistemi güvende tutmak, hataları ve olası saldırıları fark etmek ve 5651 sayılı Kanun’un getirdiği yükümlülüklere uymak için işlenir. Dayanak, hukuki yükümlülüğün yerine getirilmesi (Kanun m. 5/2-ç) ve meşru menfaattir (Kanun m. 5/2-f). Bu kayıtlarla pazarlama yapılmaz, kişi profili oluşturulmaz, üçüncü taraflara verilmez.</p>
         </div>
       </div>
 
       <div class="g-bblk" id="site-araclari">
-        <h2>Sitedeki etkileşimli araçlar verinizi nasıl kullanıyor?</h2>
+        <h2>Etkileşimli araçlar yanıtlarınızla ne yapar?</h2>
         <div class="yazi">
-          <p>Sitede hazırlık listesi, cilt tipi testi, bölge pusulası ve uygulama karşılaştırma gibi etkileşimli sayfalar bulunur. Bu sayfalar, veri işlemeyi en aza indirecek biçimde kurgulanmıştır.</p>
+          <p>Hazırlık listesi, cilt tipi testi, bölge pusulası ve uygulama karşılaştırma sayfaları etkileşimlidir. Bu sayfalar, olabildiğince az veriyle çalışacak şekilde tasarlandı.</p>
         </div>
         <div class="izgara izgara--2">
           <div class="kart kart--duz">
             <span class="kart__ikon">${ik.kalkan}</span>
-            <h3>Yanıtlar cihazınızdan çıkmaz</h3>
-            <p>İşaretlediğiniz maddeler ve verdiğiniz yanıtlar yalnızca tarayıcınızın içinde değerlendirilir. Sunucuya gönderilmez, tarafımıza ulaşmaz ve herhangi bir yerde saklanmaz.</p>
+            <h3>Hesaplama cihazınızda yapılır</h3>
+            <p>Seçtiğiniz maddeler ve yanıtlarınız tarayıcınızın içinde değerlendirilir; sunucuya iletilmez, bize ulaşmaz, hiçbir yerde kayıtlı kalmaz.</p>
           </div>
           <div class="kart kart--duz">
             <span class="kart__ikon">${ik.mercek}</span>
-            <h3>Tarayıcıya kayıt yazılmaz</h3>
-            <p>Araçlar çerez, yerel depolama (localStorage) ya da benzeri bir yöntemle cihazınıza kayıt bırakmaz. Sayfayı kapattığınızda veya yenilediğinizde yanıtlar bellekten silinir; Kanun’un 9. maddesi anlamında bir yurt dışına aktarım da gerçekleşmez.</p>
+            <h3>Cihazınızda iz kalmaz</h3>
+            <p>Araçlar çerez, yerel depolama (localStorage) veya benzer bir yöntem kullanmaz. Sayfa kapandığında ya da yenilendiğinde yanıtlar bellekten silinir; bu nedenle yurt dışına aktarım (Kanun m. 9) da söz konusu olmaz.</p>
           </div>
           <div class="kart kart--duz">
             <span class="kart__ikon">${ik.liste}</span>
-            <h3>Çıktı sizin elinizde</h3>
-            <p>Hazırlık listesinin sonucunu görüşmenize getirmek isterseniz yazdırabilir ya da ekran görüntüsü alabilirsiniz. Sonucu bize iletmek için ayrı bir gönderim yolu sunulmaz.</p>
+            <h3>Sonucu siz saklarsınız</h3>
+            <p>Hazırlık listesinin sonucunu muayeneye getirmek isterseniz yazıcıdan çıktı alabilir ya da ekran görüntüsünü kaydedebilirsiniz. Sonucu bize göndermenin ayrı bir yolu yoktur.</p>
           </div>
         </div>
         <div class="kutu kutu--bilgi">
-          <b>Bu araçlar tıbbi değerlendirme yerine geçmez</b>
-          <p>Araçlar tanı koymaz, hastalık taraması yapmaz ve muayenenin yerini tutmaz. Bir uygulamanın sizin için uygun olup olmadığına ancak muayeneden sonra hekim karar verir.</p>
+          <b>Araçlar muayene değildir</b>
+          <p>Bu sayfalar tanı koymaz, hastalık taraması yapmaz. Hangi uygulamanın size uyduğuna, muayenenizi yaptıktan sonra hekim karar verir.</p>
         </div>
       </div>
 
       <div class="g-bblk" id="isleme-amaclari">
-        <h2>Veriler hangi amaçla ve hangi hukuki sebeple işleniyor?</h2>
+        <h2>Bilgileriniz ne için ve hangi dayanakla kullanılır?</h2>
         <div class="yazi">
-          <p>Sağlık verileriniz; koruyucu hekimlik, tıbbî teşhis, tedavi ve bakım hizmetlerinin yürütülmesi ile sağlık hizmetlerinin planlanması ve yönetimi amacıyla, sır saklama yükümlülüğü altındaki hekim tarafından <b>Kanun’un 6/3. maddesi</b> kapsamında işlenir. Bu amaçlarla yapılan işleme için ayrıca açık rızanız istenmez.</p>
-          <p>Kimlik ve iletişim verileriniz; randevu oluşturmak, hasta kaydını tutmak, kontrol ve sonuç bilgisini size iletmek amacıyla Kanun’un 5/2-ç maddesi (hukuki yükümlülük) ile 5/2-c maddesi (sözleşmenin kurulması ve ifası) çerçevesinde işlenir.</p>
-          <p>Sitedeki iletişim formunu kullanırsanız, formda paylaştığınız bilgiler yalnızca talebinize yanıt verilebilmesi için ve <b>açık rızanıza</b> dayanılarak işlenir. Bu rızanın neyi kapsadığı ve nasıl geri alınacağı ayrı bir metinde anlatılmıştır.</p>
+          <p>Sağlık bilgileriniz, sır saklama yükümlülüğü taşıyan hekim tarafından <b>Kanun m. 6/3</b> çerçevesinde işlenir. Amaç; tıbbî teşhis, tedavi ve bakım hizmetleri ile koruyucu hekimliği yürütmek, sağlık hizmetlerini planlayıp yönetmektir. Bu amaçlarla sınırlı işleme için sizden ayrıca açık rıza alınmaz.</p>
+          <p>Randevunuzu ayarlamak, hasta kaydınızı oluşturmak ve kontrol ya da sonuç bilgisini size ulaştırmak için kimlik ve iletişim bilgileriniz kullanılır. Buradaki dayanaklar, hukuki yükümlülüğün yerine getirilmesi (Kanun m. 5/2-ç) ve işlemenin, aramızdaki sözleşmenin kurulması veya ifasıyla doğrudan ilgili olmasıdır (Kanun m. 5/2-c).</p>
+          <p>İletişim formunu doldurursanız yazdıklarınız yalnızca talebinize dönüş yapmak için ve <b>açık rızanız</b> temel alınarak işlenir. Bu rızanın sınırlarını ve nasıl geri çekebileceğinizi ayrı bir sayfada açıkladık.</p>
         </div>
         <div class="dgm-sira">
-          <a class="dgm dgm--iki" href="${r}yasal/acik-riza/">Açık rıza metni ${ik.ok}</a>
+          <a class="dgm dgm--iki" href="${r}yasal/acik-riza/">Açık rıza metnine git ${ik.ok}</a>
         </div>
       </div>
 
       <div class="g-bblk" id="veri-aktarimi">
-        <h2>Veriler kimlere aktarılabilir?</h2>
+        <h2>Bilgileriniz kimlerle paylaşılabilir?</h2>
         <div class="yazi">
-          <p>Kişisel verileriniz satılmaz, kiraya verilmez ve herhangi bir pazarlama listesine eklenmez. Aktarım yalnızca aşağıdaki sınırlı durumlarda ve amacın gerektirdiği ölçüde yapılır:</p>
+          <p>Verileriniz hiçbir koşulda satılmaz, kiralanmaz, bir pazarlama listesine konmaz. Paylaşım yalnızca aşağıda sayılan durumlarla sınırlıdır ve amacın gerektirdiğinden fazla bilgi verilmez:</p>
           <ul>
-            <li>Mevzuattan kaynaklanan bildirim yükümlülükleri çerçevesinde <b>T.C. Sağlık Bakanlığı</b> ile yetkili kamu kurum ve kuruluşlarına,</li>
-            <li>Talebiniz üzerine sevk veya konsültasyon için başvurduğunuz hekime ya da sağlık kuruluşuna,</li>
-            <li>Tetkik gerekmesi hâlinde, tetkiki yapacak sağlık kuruluşuna ve yalnızca o tetkik için gereken bilgilerle sınırlı olarak,</li>
-            <li>Hukuken geçerli bir talep bulunduğunda yargı mercileri ile idari makamlara,</li>
-            <li>Mali mevzuat uyarınca belge düzenlenmesi için mali müşavire.</li>
+            <li>Mevzuatın öngördüğü bildirimler için <b>T.C. Sağlık Bakanlığı</b>’na ve yetkili diğer kamu kurumlarına,</li>
+            <li>Sizin isteğinizle sevk edildiğiniz ya da görüşüne başvurulan hekime veya sağlık kuruluşuna,</li>
+            <li>Bir tetkik gerekirse, yalnızca o tetkikin gerektirdiği bilgilerle sınırlı olmak üzere tetkiki yapacak kuruluşa,</li>
+            <li>Hukuken geçerli bir istem bulunduğunda mahkemelere ve idari makamlara,</li>
+            <li>Vergi mevzuatının zorunlu kıldığı belgelerin düzenlenmesi için mali müşavire.</li>
           </ul>
-          <p><b>Muayenehane tarafından yurt dışına veri aktarımı yapılmaz.</b> Hasta dosyanız ve muayene kayıtlarınız yurt dışına gönderilmez; sitedeki etkileşimli araçlar da verinizi cihazınızdan dışarı çıkarmaz.</p>
-          <p>Sitede iki üçüncü taraf hizmete yer verilir. Konum haritası Google tarafından sunulan gömülü bir içeriktir; haritanın bulunduğu sayfa açıldığında tarayıcınız doğrudan Google sunucularına bağlanır ve IP adresi gibi teknik veriler Google’ın kendi gizlilik politikasına göre işlenir. WhatsApp bağlantısını kullanarak yazmayı seçerseniz yazışma, WhatsApp’ın kendi koşullarına tabi olur. Bu hizmetlerin işletmecileri yurt dışında yerleşiktir; bu nedenle sağlık durumunuza ilişkin ayrıntıları mesajla değil, muayenede paylaşmanızı rica ederiz.</p>
+          <p><b>Muayenehane yurt dışına veri aktarmaz.</b> Hasta dosyanız ve muayene notlarınız Türkiye dışına gönderilmez; sitedeki etkileşimli araçlar da yanıtlarınızı cihazınızın dışına taşımaz.</p>
+          <p>Sitede iki dış hizmet kullanılır. Konum haritası Google’ın sağladığı gömülü bir içeriktir; haritalı sayfayı açtığınızda tarayıcınız Google sunucularıyla doğrudan bağlantı kurar ve IP adresi gibi teknik bilgiler Google’ın gizlilik politikasına tabi olur. WhatsApp bağlantısıyla yazmayı tercih ederseniz yazışmanız WhatsApp’ın koşullarına göre yürür. Her iki hizmetin sağlayıcısı da yurt dışındadır. Sağlık durumunuzla ilgili ayrıntıları bu yollarla yazmak yerine muayenede anlatmanızı öneririz.</p>
         </div>
       </div>
 
       <div class="g-bblk" id="saklama-sureleri">
-        <h2>Ne kadar süreyle saklanıyor?</h2>
+        <h2>Bilgiler ne zaman silinir?</h2>
         <div class="yazi">
-          <p>Hasta dosyaları ve sağlık kayıtları, Kişisel Sağlık Verileri Hakkında Yönetmelik ve ilgili sağlık mevzuatında öngörülen asgari süre boyunca saklanır. Bu süre dolduğunda kayıtlar silinir, yok edilir ya da anonim hâle getirilir.</p>
-          <p>İletişim formundan gelen bilgiler, talebiniz sonuçlandıktan sonra makul bir süre içinde; rızanızı geri almanız durumunda ise beklemeksizin silinir. Sunucu erişim kayıtları mevzuatta öngörülen süre boyunca tutulur ve bu sürenin sonunda otomatik olarak silinir.</p>
+          <p>Kişisel Sağlık Verileri Hakkında Yönetmelik ve diğer sağlık mevzuatı, hasta dosyaları ile sağlık kayıtları için asgari bir saklama süresi belirler; kayıtlar bu süre boyunca korunur. Süre dolunca silinir, yok edilir veya anonimleştirilir.</p>
+          <p>İletişim formuyla gelen bilgiler, talebiniz yanıtlandıktan kısa ve makul bir süre sonra silinir; rıza geri çekildiğinde ise silme beklenmeden yapılır. Sunucu kayıtları mevzuatın öngördüğü süre kadar tutulur, sürenin bitiminde kendiliğinden silinir.</p>
         </div>
       </div>
 
       <div class="g-bblk" id="haklariniz">
-        <h2>6698 sayılı Kanun’un 11. maddesi kapsamındaki haklarınız</h2>
+        <h2>Kişisel verilerinizle ilgili haklarınız</h2>
         <div class="yazi">
-          <p>İlgili kişi olarak veri sorumlusuna başvurup aşağıdaki taleplerde bulunabilirsiniz:</p>
+          <p>6698 sayılı Kanun’un 11. maddesi uyarınca, veri sorumlusuna başvurarak şunları isteyebilirsiniz:</p>
           <ul>
-            <li>Kişisel verinizin işlenip işlenmediğini öğrenme,</li>
-            <li>İşlenmişse buna ilişkin bilgi talep etme,</li>
-            <li>İşlenme amacını ve amacına uygun kullanılıp kullanılmadığını öğrenme,</li>
-            <li>Yurt içinde veya yurt dışında verinin aktarıldığı üçüncü kişileri bilme,</li>
-            <li>Eksik veya yanlış işlenmişse düzeltilmesini isteme,</li>
-            <li>Kanun’un 7. maddesindeki şartlar çerçevesinde silinmesini veya yok edilmesini isteme,</li>
-            <li>Düzeltme, silme ve yok etme işlemlerinin verinin aktarıldığı üçüncü kişilere bildirilmesini isteme,</li>
-            <li>Münhasıran otomatik sistemlerle analiz edilmesi suretiyle aleyhinize bir sonuç doğmasına itiraz etme,</li>
-            <li>Kanuna aykırı işleme sebebiyle zarara uğramanız hâlinde zararın giderilmesini talep etme.</li>
+            <li>Hakkınızda kişisel veri işlenip işlenmediğini öğrenmek,</li>
+            <li>Veri işlendiyse bununla ilgili bilgi istemek,</li>
+            <li>Verilerin hangi amaçla işlendiğini ve bu amaca uygun kullanılıp kullanılmadığını öğrenmek,</li>
+            <li>Verilerin Türkiye içinde ya da dışında aktarıldığı üçüncü kişilerin kimler olduğunu bilmek,</li>
+            <li>Eksik ya da hatalı işlenen verilerin düzeltilmesini istemek,</li>
+            <li>Kanun’un 7. maddesindeki koşullar oluştuğunda verilerin silinmesini veya yok edilmesini istemek,</li>
+            <li>Yapılan düzeltme, silme ya da yok etme işlemlerinin, verilerin aktarıldığı üçüncü kişilere de bildirilmesini istemek,</li>
+            <li>Verilerin yalnızca otomatik sistemlerle analiz edilmesi sonucunda aleyhinize bir sonuç çıkmasına itiraz etmek,</li>
+            <li>Verilerin Kanun’a aykırı işlenmesi nedeniyle zarar gördüyseniz bu zararın giderilmesini istemek.</li>
           </ul>
-          <p>Başvurunuzu, Veri Sorumlusuna Başvuru Usul ve Esasları Hakkında Tebliğ’de öngörülen biçimde ve kimliğinizi doğrulayan bilgilerle birlikte; muayenehane adresine yazılı olarak ya da daha önce bildirdiğiniz ve kayıtlarımızda bulunan e-posta adresinizden <a href="mailto:${S.iletisim.editor}">${S.iletisim.editor}</a> adresine gönderebilirsiniz. Başvurular en geç <b>otuz gün</b> içinde sonuçlandırılır. Başvurunuz reddedilir ya da süresi içinde yanıtlanmazsa Kişisel Verileri Koruma Kurulu’na şikâyette bulunma hakkınız saklıdır.</p>
-          <p>Bu aydınlatma metni zaman zaman güncellenebilir. Geçerli sürüm her zaman bu sayfada yer alır; hangi sürümün yürürlükte olduğunu sayfadaki güncelleme tarihinden görebilirsiniz.</p>
+          <p>Başvurunun, kimliğinizi doğrulamaya yetecek bilgilerle birlikte ve Veri Sorumlusuna Başvuru Usul ve Esasları Hakkında Tebliğ’deki usule uygun olarak yapılması gerekir. Başvurunuzu muayenehane adresine yazılı olarak gönderebilir ya da daha önce bize bildirdiğiniz, kayıtlarımızda yer alan e-posta adresinizden <a href="mailto:${S.iletisim.editor}">${S.iletisim.editor}</a> adresine yazabilirsiniz. Talepler <b>otuz gün</b> aşılmadan yanıtlanır. Başvurunuz reddedilirse ya da bu süre dolduğu hâlde yanıt alamazsanız, şikâyetinizi Kişisel Verileri Koruma Kurulu önüne götürebilirsiniz.</p>
+          <p>Bu metin gerektiğinde güncellenir. Geçerli metin daima bu sayfada yayımlanır; en son hangi tarihte değiştiğini yukarıdaki güncelleme tarihinden izleyebilirsiniz.</p>
         </div>
       </div>
 
       <div class="g-bblk" id="ilgili-basliklar">
-        <h2>Bunları da okuyabilirsiniz</h2>
+        <h2>İlgili diğer sayfalar</h2>
         <div class="izgara izgara--2">
           <a class="kart" href="${r}yasal/acik-riza/">
             <h3>Açık rıza metni</h3>
-            <p>İletişim formunda rızaya dayanan bilgilerin neler olduğu ve rızanın geri alınma yolu.</p>
+            <p>Formda rızanıza dayanarak işlenen bilgiler ve rızanızı geri çekmenin yolu.</p>
             <span class="kart__ok">Oku ${ik.ok}</span>
           </a>
           <a class="kart" href="${r}yasal/cerez-politikasi/">
             <h3>Çerez politikası</h3>
-            <p>Sitenin neden çerez ve yerel depolama kullanmadığı; harita ve WhatsApp bağlantısının işleyişi.</p>
+            <p>Çereze ve yerel depolamaya neden ihtiyaç duymadığımız; harita ile WhatsApp bağlantısının nasıl çalıştığı.</p>
             <span class="kart__ok">Oku ${ik.ok}</span>
           </a>
           <a class="kart" href="${r}yasal/hasta-haklari/">
             <h3>Hasta hakları</h3>
-            <p>Bilgilendirilme, onam, mahremiyet ve başvuru haklarınız.</p>
+            <p>Bilgi alma, onam, mahremiyet ve başvuru yollarınız.</p>
             <span class="kart__ok">Oku ${ik.ok}</span>
           </a>
           <a class="kart" href="${r}yasal/icerik-ve-gorsel-yayin-ilkelerimiz/">
-            <h3>İçerik ve görsel yayın ilkelerimiz</h3>
-            <p>Öncesi–sonrası görseli ve hasta yorumu yayımlamayışımızın gerekçeleri.</p>
+            <h3>Yayın ilkelerimiz</h3>
+            <p>Sitede neden öncesi–sonrası fotoğrafına ve hasta yorumuna yer vermediğimiz.</p>
             <span class="kart__ok">Oku ${ik.ok}</span>
           </a>
           <a class="kart" href="${r}yaklasimimiz/">
             <h3>Yaklaşımımız</h3>
-            <p>Uygulamadan önce değerlendirme ilkesinin muayenehanedeki karşılığı.</p>
+            <p>Her uygulamadan önce değerlendirme yapma ilkesinin muayenehanede nasıl işlediği.</p>
             <span class="kart__ok">İncele ${ik.ok}</span>
           </a>
         </div>
       </div>
 
       <div class="g-bblk">
-        <h2>Aklınıza takılan bir nokta mı var?</h2>
-        <p class="giris">Kişisel verilerinize ilişkin taleplerinizi yazılı olarak iletebilir, randevu için bizimle iletişime geçebilirsiniz.</p>
+        <h2>Sorunuz mu var?</h2>
+        <p class="giris">Verilerinizle ilgili taleplerinizi yazılı olarak iletebilirsiniz; randevu için iletişim sayfasındaki yolları kullanabilirsiniz.</p>
         <div class="dgm-sira">
           <a class="dgm dgm--bir" href="${r}iletisim/">İletişim</a>
         </div>

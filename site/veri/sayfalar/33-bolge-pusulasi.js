@@ -46,7 +46,7 @@ module.exports = {
     <div class="pus" data-pus>
       <div class="pus-merkez" data-gr>
         <img src="${r}varliklar/gorsel/bolge-yuz.webp" width="1400" height="788" alt="Yüz bölgesini temsil eden görsel" loading="eager">
-        <span class="g-ainot">Görsel yapay zekâ ile üretilmiştir</span>
+        <span class="g-ainot">Temsilî görsel · yapay zekâ ile üretildi</span>
         <div class="pus-kart"><b></b><p></p><a class="dgm dgm--bir dgm--kucuk" href="#">Bölge sayfasını açın</a></div>
       </div>
       <div class="pus-liste" data-gr>

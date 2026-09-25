@@ -24,7 +24,7 @@ module.exports = {
     <div class="g-tarama" data-gr>
       <img src="${r}varliklar/gorsel/uyg-biyostimulan-uygulamalar.webp" width="1400" height="788" alt="Deri altında yeni oluşan kolajen liflerini simgeleyen ağ yapısının üç boyutlu çizimi" loading="eager">
       <div class="g-isin"></div>
-      <span class="g-ainot">Görsel yapay zekâ ile üretilmiştir</span>
+      <span class="g-ainot">Temsilî görsel · yapay zekâ ile üretildi</span>
       <div class="g-hud" data-ghud><b>İskele etkisi</b><div class="g-cizgi"></div><span>Verilen parçacıklar, çevrelerinde yeni bağ dokusu örülmesi için geçici bir çatı görevi görür.</span></div>
     </div>
   </div>
@@ -102,7 +102,7 @@ module.exports = {
         </ol>
       </div>
       <div class="g-kutu g-b2 g-kutu--gece" data-gr><span class="g-ket">İlke</span><p>“Az ve aralıklı vermek, bir seansta çok vermekten daha güvenlidir: eksik kalan sonra tamamlanabilir, fazlası geri alınamaz.”</p></div>
-      <div class="g-kutu g-b2 g-kutu--gorsel" data-gr style="--d:70ms"><img src="${r}varliklar/gorsel/uyg-biyostimulan-uygulamalar-2.webp" alt="Yanak ve çene hattı cildinin yumuşak ışıkta yakın planı" loading="lazy"><span class="g-ainot">Görsel yapay zekâ ile üretilmiştir</span></div>
+      <div class="g-kutu g-b2 g-kutu--gorsel" data-gr style="--d:70ms"><img src="${r}varliklar/gorsel/uyg-biyostimulan-uygulamalar-2.webp" alt="Yanak ve çene hattı cildinin yumuşak ışıkta yakın planı" loading="lazy"><span class="g-ainot">Temsilî görsel · yapay zekâ ile üretildi</span></div>
       <div class="g-kutu g-b2 g-kutu--cta" data-gr style="--d:140ms"><h3>Bölgenizi ve takviminizi konuşalım</h3><p>Yakında önemli bir gününüz varsa bunu en başta söyleyin.</p><a class="dgm dgm--altin" href="${r}iletisim/">Randevu talebi</a></div>
       <div class="kutu kutu--uyari g-b4" data-gr>
         <b>Kimlere uygulanmaz, ne zaman ertelenir?</b>
@@ -120,7 +120,7 @@ module.exports = {
       </div>
       <div class="kutu kutu--acil g-b2" data-gr style="--d:70ms">
         <b>Beklemeden başvurun</b>
-        <p>Uygulamadan sonraki saatlerde ya da günlerde ciltte beyazlaşma veya ağ biçiminde morarma, giderek şiddetlenen ağrı, görmede bulanıklık ya da kayıp, ateş, sıcak ve kızarık bir şişlik gelişirse kontrol gününü beklemeyin. Nefes darlığı, dudakta ya da dilde şişme ve yaygın kurdeşen olursa <b>112</b>’yi arayın veya size en yakın acil servise gidin.</p>
+        <p>Uygulamadan sonraki saatlerde ya da günlerde ciltte beyazlaşma veya ağ biçiminde morarma, giderek şiddetlenen ağrı, görmede bulanıklık ya da kayıp, ateş, sıcak ve kızarık bir şişlik gelişirse kontrol gününü beklemeyin. Nefes darlığı, dudakta ya da dilde şişme ve yaygın kurdeşen olursa <b>112</b> Acil Çağrı Merkezi’ni arayın ya da en yakın hastanenin acil birimine başvurun.</p>
       </div>
     </div>
   </div>
@@ -139,7 +139,7 @@ module.exports = {
 
 <!-- ═════ SORU TERMİNALİ ═════ -->
 <section class="bolum bolum--buz2"><div class="sar">
-  <div class="bolum-bas" data-gr><p class="g-etiket">Sorgulayın</p><h2>Bir soru seçin, yanıtını okuyun</h2></div>
+  <div class="bolum-bas" data-gr><p class="g-etiket">Sık gelen sorular</p><h2>Bir soru seçin, yanıtını okuyun</h2></div>
   <div class="g-sorgu" data-gr>
     <div class="g-sorgu-bas"><i></i><i></i><i></i><span>${S.marka.toLocaleLowerCase('tr')} · biyostimülan · soru-cevap</span></div>
     <div class="g-sorgu-ic">
@@ -151,7 +151,7 @@ module.exports = {
         <button class="g-ssoru" data-gs="4"><i>›</i>Uygulamadan sonra masaj yapmam gerekir mi?</button>
         <button class="g-ssoru" data-gs="5"><i>›</i>Ücret bilgisi neden sayfada yok?</button>
       </div>
-      <div class="g-scevap" data-gcevap aria-live="polite"><span class="g-yazan">Hekim onaylı yanıt</span><b></b><p></p><a class="dgm dgm--altin" href="${r}iletisim/" style="margin-top:8px">Muayenede konuşalım</a></div>
+      <div class="g-scevap" data-gcevap aria-live="polite"><span class="g-yazan">Hekimin yanıtı</span><b></b><p></p><a class="dgm dgm--altin" href="${r}iletisim/" style="margin-top:8px">Ayrıntısı muayenede</a></div>
     </div>
   </div>
 </div></section>
@@ -160,12 +160,12 @@ module.exports = {
 <!-- ═════ KAPANIŞ ═════ -->
 <section class="g-son">
   <div class="sar">
-    <p class="g-etiket g-etiket--orta">Sonraki adım</p>
+    <p class="g-etiket g-etiket--orta">Bir adım ötesi</p>
     <h2>Zamana yayılan bir plan, birlikte kurulur</h2>
     <p class="g-sonalt">Beklentiniz, takviminiz ve sağlık öykünüz ilk görüşmede birlikte ele alınır; değerlendirmenin sonunda başka bir yöntemin önerilmesi de mümkündür.</p>
     <div class="g-sonbtn">
       <a class="dgm dgm--bir" href="${r}iletisim/">Randevu talebi oluşturun</a>
-      <a class="dgm dgm--iki" href="${r}hazirlik-listesi/arac/">Hazırlık listesini doldurun</a>
+      <a class="dgm dgm--iki" href="${r}hazirlik-listesi/arac/">Muayeneye hazırlanın</a>
     </div>
   </div>
 </section>

@@ -12,8 +12,8 @@ module.exports = {
 <section class="g-hero">
   <div class="sar">
     <div>
-      <nav class="kirinti" aria-label="Konum" style="position:relative;font-size:.76rem;color:var(--sessiz);display:flex;gap:7px;margin-bottom:18px"><a href="${r}" style="color:var(--sessiz);text-decoration:none">Ana sayfa</a> › <a href="${r}cilt-sorunlari/" style="color:var(--sessiz);text-decoration:none">Cilt sorunları</a> › <span>Bölgesel yağlanma</span></nav>
-      <p class="g-etiket">Cilt sorunları · Bölgesel yağlanma</p>
+      <nav class="kirinti" aria-label="Konum" style="position:relative;font-size:.76rem;color:var(--sessiz);display:flex;gap:7px;margin-bottom:18px"><a href="${r}" style="color:var(--sessiz);text-decoration:none">Ana sayfa</a> › <a href="${r}cilt-sorunlari/" style="color:var(--sessiz);text-decoration:none">Sorunlar</a> › <span>Bölgesel yağlanma</span></nav>
+      <p class="g-etiket">Şikâyet rehberi · Bölgesel yağlanma</p>
       <h1>Sınırlı bir birikim, <span class="g-isik">sınırlı bir hedef</span></h1>
       <p class="g-hero__alt">Bölgesel yağlanma, düzenli beslenme ve harekete rağmen küçülmeyen, kenarları belirlenebilen yağ birikimlerini anlatır; bir kilo verme yöntemi ya da genel bir zayıflama başlığı değildir. Muayenehanemizde gıdı, karın, bel yanları ve bacak iç yüzü gibi bölgeler değerlendirilir. Karar vermeden önce yağ dokusu, ödem ve deri gevşekliği birbirinden ayrılır.</p>
       <div class="g-hero__cta">
@@ -25,7 +25,7 @@ module.exports = {
     <div class="g-tarama" data-gr>
       <img src="${r}varliklar/gorsel/sorun-yag.webp" width="1400" height="788" alt="Bel ve karın hattını yumuşak ışıkla gösteren sade bir vücut silueti" loading="eager">
       <div class="g-isin"></div>
-      <span class="g-ainot">Görsel yapay zekâ ile üretilmiştir</span>
+      <span class="g-ainot">Temsilî görsel · yapay zekâ ile üretildi</span>
     </div>
   </div>
 </section>
@@ -83,7 +83,7 @@ module.exports = {
     </div>
     <div class="g-matris">
       <div class="g-mtab" data-gr>
-        <div class="g-mbas"><span>Uygulama</span><span>Hedef</span><span>İyileşme</span><span></span></div>
+        <div class="g-mbas"><span>Yöntem</span><span>Amaç</span><span>Toparlanma</span><span></span></div>
         <a class="g-msatir" data-akt href="${r}uygulamalar/bolgesel-lipoliz/" data-gg="${r}varliklar/gorsel/uyg-bolgesel-lipoliz.webp" data-gb="Bölgesel lipoliz" data-ga="Gıdı, karın, bel yanları ve bacak iç yüzündeki kenarları belli, yüzeysel birikimlerde uygun bulunan kişilerde değerlendirilir."><h4>Bölgesel lipoliz</h4><span class="g-hucre"><i class="g-kcip g-kcip--1">YAĞ DOKUSU</i></span><span class="g-hucre">Günler içinde</span><span class="g-git">→</span></a>
         <a class="g-msatir" href="${r}uygulamalar/selulit-gorunumu/" data-gg="${r}varliklar/gorsel/uyg-selulit-gorunumu.webp" data-gb="Selülit görünümü" data-ga="Asıl şikâyet deri yüzeyindeki dalgalı görünümse hedef değişir; mezoterapi, lipoliz ve cihaz desteği birlikte planlanır."><h4>Selülit görünümü</h4><span class="g-hucre"><i class="g-kcip g-kcip--2">YÜZEY</i></span><span class="g-hucre">Muayenede belirlenir</span><span class="g-git">→</span></a>
         <a class="g-msatir" href="${r}uygulamalar/hekim-muayenesi/" data-gg="${r}varliklar/gorsel/uyg-hekim-muayenesi.webp" data-gb="Hekim muayenesi" data-ga="Sıvı birikimi öndeyse tiroit, böbrek ve kalp yönünden değerlendirme bu kapsamda yapılır."><h4>Hekim muayenesi</h4><span class="g-hucre"><i class="g-kcip g-kcip--3">ÖDEM</i></span><span class="g-hucre">Aynı gün</span><span class="g-git">→</span></a>
@@ -95,7 +95,7 @@ module.exports = {
 
 <!-- ═════════ SORU TERMİNALİ ═════════ -->
 <section class="bolum bolum--buz2"><div class="sar">
-  <div class="bolum-bas" data-gr><p class="g-etiket">Sorgulayın</p><h2>Sorunuzu seçin, cevap ekrana düşsün</h2></div>
+  <div class="bolum-bas" data-gr><p class="g-etiket">Sık gelen sorular</p><h2>Merak ettiğiniz soruya dokunun, yanıtı burada açılsın</h2></div>
   <div class="g-sorgu" data-gr>
     <div class="g-sorgu-bas"><i></i><i></i><i></i><span>${S.marka.toLocaleLowerCase('tr-TR')} · bölgesel yağlanma · soru-cevap</span></div>
     <div class="g-sorgu-ic">
@@ -107,7 +107,7 @@ module.exports = {
         <button class="g-ssoru" data-gs="4"><i>›</i>Kaç seans gerekecek?</button>
         <button class="g-ssoru" data-gs="5"><i>›</i>Ücret bilgisi neden sitede yok?</button>
       </div>
-      <div class="g-scevap" data-gcevap aria-live="polite"><span class="g-yazan">Hekim onaylı yanıt</span><b></b><p></p><a class="dgm dgm--altin" href="${r}iletisim/" style="margin-top:8px">Muayenede konuşalım</a></div>
+      <div class="g-scevap" data-gcevap aria-live="polite"><span class="g-yazan">Hekimin yanıtı</span><b></b><p></p><a class="dgm dgm--altin" href="${r}iletisim/" style="margin-top:8px">Ayrıntısı muayenede</a></div>
     </div>
   </div>
 </div></section>
@@ -116,12 +116,12 @@ module.exports = {
 <!-- ═════════ KAPANIŞ ═════════ -->
 <section class="g-son">
   <div class="sar">
-    <p class="g-etiket g-etiket--orta">Sonraki adım</p>
+    <p class="g-etiket g-etiket--orta">Bir adım ötesi</p>
     <h2>Hangi bölgenin, ne ölçüde değişebileceğini konuşalım</h2>
     <p class="g-sonalt">Uygun olmayan durumlar ilk görüşmede açıkça söylenir; gerekiyorsa hangi uzmanlık alanına başvurmanız gerektiği belirtilir.</p>
     <div class="g-sonbtn">
       <a class="dgm dgm--bir" href="${r}iletisim/">Randevu talebi oluşturun</a>
-      <a class="dgm dgm--iki" href="${r}hazirlik-listesi/arac/">Hazırlık listesini doldurun</a>
+      <a class="dgm dgm--iki" href="${r}hazirlik-listesi/arac/">Muayeneye hazırlanın</a>
     </div>
   </div>
 </section>

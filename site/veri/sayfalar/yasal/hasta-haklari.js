@@ -4,7 +4,7 @@ module.exports = {
   slug: 'yasal/hasta-haklari',
   tip: 'bilgi',
   baslik: 'Hasta Hakları — Bilgilendirme, Onam, Mahremiyet ve Başvuru',
-  aciklama: 'Hasta Hakları Yönetmeliği çerçevesinde bilgilendirilme, onam, mahremiyet ve hekim seçme haklarınız ile başvurabileceğiniz resmî başvuru ve şikâyet yolları.',
+  aciklama: 'Bilgi alma, onam, mahremiyet ve hekim seçimi gibi haklarınızın Hasta Hakları Yönetmeliği’ndeki karşılığı ve şikâyet için başvurabileceğiniz resmî kanallar.',
 
   icerik: (r, ik) => `
 
@@ -13,11 +13,11 @@ module.exports = {
   <div class="sar">
     <p class="g-etiket">Yasal</p>
     <h1>Hasta Hakları</h1>
-    <p class="g-bhero__alt">Sağlık hizmetinden yararlanan herkesin, Anayasa ve Hasta Hakları Yönetmeliği ile korunan hakları vardır. Bu haklar hekimin takdirine bırakılmış bir incelik değil, uymakla yükümlü olduğu kurallardır. Bu sayfada söz konusu hakların muayenehanedeki karşılığını ve bir sorunla karşılaştığınızda başvurabileceğiniz yolları bulabilirsiniz.</p>
+    <p class="g-bhero__alt">Muayenehaneye başvuran her kişinin hakları, Anayasa’dan ve Hasta Hakları Yönetmeliği’nden güç alır. Hekim bu kurallara uymakla yükümlüdür; bunlar iyi niyete ya da kişisel takdire bırakılmış ayrıcalıklar sayılmaz. Aşağıda her hakkın burada nasıl karşılandığını ve bir sorun yaşarsanız kime, hangi yolla başvurabileceğinizi okuyabilirsiniz.</p>
     <div class="g-bmeta">
       <span><i></i>Son güncelleme: ${S.guncelleme}</span>
-      <span><i></i>Dayanak: Hasta Hakları Yönetmeliği</span>
-      <span><i></i>Bakanlık iletişim hattı: 184</span>
+      <span><i></i>Temel düzenleme: Hasta Hakları Yönetmeliği</span>
+      <span><i></i>Sağlık Bakanlığı İletişim Merkezi: 184</span>
     </div>
   </div>
 </section>
@@ -28,172 +28,172 @@ module.exports = {
 
     <aside class="g-bmenu" aria-label="Sayfa içi başlıklar">
       <b>Bu sayfada</b>
-      <a href="#dayanak-nedir">Dayanak</a>
-      <a href="#temel-haklariniz">Temel haklarınız</a>
-      <a href="#aydinlatilmis-onam">Aydınlatılmış onam</a>
-      <a href="#hastanin-sorumluluklari">Sorumluluklar</a>
-      <a href="#basvuru-yollari">Başvuru yolları</a>
-      <a href="#ilgili-basliklar">İlgili başlıklar</a>
+      <a href="#dayanak-nedir">Hukuki çerçeve</a>
+      <a href="#temel-haklariniz">Sekiz temel hak</a>
+      <a href="#aydinlatilmis-onam">Onamın alınması</a>
+      <a href="#hastanin-sorumluluklari">Sizden beklenenler</a>
+      <a href="#basvuru-yollari">Şikâyet kanalları</a>
+      <a href="#ilgili-basliklar">Bağlantılı sayfalar</a>
     </aside>
 
     <div class="g-bgov">
 
       <div class="g-bblk" id="dayanak-nedir">
-        <h2>Haklarınız hangi düzenlemelere dayanıyor?</h2>
+        <h2>Haklarınızın hukuki çerçevesi</h2>
         <div class="yazi">
-          <p>Temel çerçeveyi 1998 tarihli Hasta Hakları Yönetmeliği belirler. Yönetmelik, kamu–özel ayrımı gözetmeden bütün sağlık kuruluşlarına ve dolayısıyla muayenehanelere de uygulanır. Bunun yanında 1219 sayılı Tababet ve Şuabatı San'atlarının Tarzı İcrasına Dair Kanun, 3359 sayılı Sağlık Hizmetleri Temel Kanunu, 6698 sayılı Kişisel Verilerin Korunması Kanunu ve Biyoloji ve Tıbbın Uygulanması Bakımından İnsan Hakları ve İnsan Haysiyetinin Korunması Sözleşmesi de yürürlüktedir.</p>
-          <p>Bu sayfa yönetmeliğin yerini almaz; haklarınızı özetler ve muayenehanede nasıl uygulandığını gösterir.</p>
+          <p>Hasta haklarının ana kaynağı, 1998’de yürürlüğe giren Hasta Hakları Yönetmeliği’dir. Yönetmelik kamu ya da özel ayrımı yapmaz; muayenehaneler de doğrudan kapsamındadır. Başka metinler de bağlayıcıdır: Türkiye’nin taraf olduğu Biyoloji ve Tıbbın Uygulanması Bakımından İnsan Hakları ve İnsan Haysiyetinin Korunması Sözleşmesi; hekimliğin nasıl icra edileceğini düzenleyen 1219 sayılı Tababet ve Şuabatı San'atlarının Tarzı İcrasına Dair Kanun; sağlık verilerinizi koruyan 6698 sayılı Kişisel Verilerin Korunması Kanunu; sağlık hizmetlerinin genel düzenini kuran 3359 sayılı Sağlık Hizmetleri Temel Kanunu.</p>
+          <p>Burada yazılanlar yönetmelik metninin yerine geçmez. Amaç, haklarınızı kısaca tanıtmak ve muayenehanede gündelik olarak nasıl uygulandığını göstermektir.</p>
         </div>
       </div>
 
       <div class="g-bblk" id="temel-haklariniz">
-        <h2>Temel haklarınız</h2>
-        <p class="giris">Yönetmelikte yer alan hakları, muayenehanedeki uygulamalarıyla birlikte aşağıda bulabilirsiniz.</p>
+        <h2>Sekiz temel hak ve buradaki karşılığı</h2>
+        <p class="giris">Yönetmelikte sayılan başlıca hakları ve her birinin muayenehanede nasıl hayata geçtiğini kartlarda özetledik.</p>
         <div class="izgara izgara--2">
           <div class="kart kart--duz">
             <span class="kart__ikon">${ik.kalp}</span>
-            <h3>Hizmetten adalet ve hakkaniyetle yararlanma</h3>
-            <p>Irk, dil, din, cinsiyet, siyasi görüş, ekonomik ya da sosyal durumunuz ne olursa olsun hizmete erişim hakkınız vardır. Sıra; tıbbi aciliyet ve randevu düzeni dışında bir ölçüte göre değiştirilmez.</p>
+            <h3>Eşit ve hakkaniyete uygun hizmet</h3>
+            <p>Cinsiyetiniz, ırkınız, inancınız, ana diliniz, siyasi düşünceniz ya da maddi ve sosyal koşullarınız hizmete erişiminizi kısıtlamaz. Kimin önce görüleceğini yalnız tıbbi aciliyet ile randevu saatleri belirler.</p>
           </div>
           <div class="kart kart--duz">
             <span class="kart__ikon">${ik.liste}</span>
-            <h3>Bilgi isteme ve bilgilendirilme</h3>
-            <p>Sağlık durumunuz, önerilen planın gerekçesi, olası etkileri, seçenekleri ve hiçbir işlem yapılmazsa neler beklenebileceği konusunda anlayabileceğiniz bir dille bilgilendirilme hakkınız vardır. Sorularınızı çekinmeden sorabilirsiniz.</p>
+            <h3>Bilgi alma hakkı</h3>
+            <p>Ne durumda olduğunuzu, size neden belirli bir planın önerildiğini, bu planın ne gibi etkiler doğurabileceğini, başka hangi yolların bulunduğunu ve hiçbir şey yapılmazsa ne olabileceğini öğrenmeye hakkınız vardır. Açıklama sizin anlayacağınız sözcüklerle yapılır; merak ettiğiniz her şeyi sorabilirsiniz.</p>
           </div>
           <div class="kart kart--duz">
             <span class="kart__ikon">${ik.onay}</span>
-            <h3>Rıza ve aydınlatılmış onam</h3>
-            <p>Bilgilendirilmeniz ve onayınız alınmadan hiçbir tıbbi işlem yapılamaz. Onam, imzalanan bir form olmadan önce, sorularınızın yanıtlandığı bir görüşmenin sonucudur.</p>
+            <h3>Onayınız olmadan işlem yapılmaz</h3>
+            <p>Size gerekli açıklama yapılıp onayınız alınmadıkça tıbbi bir işleme başlanamaz. İmzalanan form bu sürecin yalnız son adımıdır; asıl onam, sorularınıza karşılık bulduğunuz konuşmada oluşur.</p>
           </div>
           <div class="kart kart--duz">
             <span class="kart__ikon">${ik.kalkan}</span>
-            <h3>Reddetme ve durdurma</h3>
-            <p>Önerilen bir işlemi kabul etmeyebilir, başlamış bir süreci durdurabilirsiniz. Bu karar hizmet almanıza engel olmaz; yalnızca olası sonuçlarının size anlatılması ve kayda geçirilmesi gerekir.</p>
+            <h3>Kabul etmeme ve vazgeçme</h3>
+            <p>Size önerilen bir işleme hayır diyebilir, başlamış bir tedaviyi yarıda bırakabilirsiniz. Bu tercih sizi hizmetten yoksun bırakmaz; doğabilecek sonuçlar size açıklanır ve bu açıklama dosyanıza not edilir.</p>
           </div>
           <div class="kart kart--duz">
             <span class="kart__ikon">${ik.mercek}</span>
-            <h3>Mahremiyet ve sır saklama</h3>
-            <p>Muayene, kapısı kapalı bir odada, hekim ile sizin aranızda yapılır. Sağlık bilgileriniz izniniz olmadan yakınlarınız da dâhil kimseyle paylaşılmaz. Hekimin sır saklama yükümlülüğü ölümünüzden sonra da devam eder.</p>
+            <h3>Gizlilik ve mahremiyet</h3>
+            <p>Muayene kapalı bir odada, yalnız siz ve hekim varken yapılır. İzin vermediğiniz sürece sağlık bilgileriniz, aile üyeleriniz de dâhil olmak üzere hiç kimseye aktarılmaz. Hekimin bu bilgileri gizli tutma borcu siz hayatta olmasanız bile sürer.</p>
           </div>
           <div class="kart kart--duz">
             <span class="kart__ikon">${ik.yaprak}</span>
-            <h3>Hekimi seçme ve değiştirme</h3>
-            <p>Hekiminizi seçebilir, ikinci bir görüş alabilir ya da başka bir hekime başvurabilirsiniz. İstediğinizde kayıtlarınızın bir örneği size verilir.</p>
+            <h3>Hekim seçimi ve ikinci görüş</h3>
+            <p>Kimden hizmet alacağınıza siz karar verirsiniz; dilerseniz başka bir hekimin görüşünü alabilir ya da tedavinizi başka bir hekimle sürdürebilirsiniz. Talep ettiğinizde dosyanızın bir kopyası size teslim edilir.</p>
           </div>
           <div class="kart kart--duz">
             <span class="kart__ikon">${ik.damla}</span>
-            <h3>Kayıtlara erişim</h3>
-            <p>Hasta dosyanızı inceleyebilir, bir örneğini isteyebilir, eksik veya hatalı bilgilerin düzeltilmesini talep edebilirsiniz. Bu talepler yazılı olarak alınıp dosyanıza işlenir.</p>
+            <h3>Dosyanıza ulaşma</h3>
+            <p>Sağlık kayıtlarınızı görebilir, kopyasını alabilir, yanlış ya da eksik gördüğünüz bir bilginin düzeltilmesini isteyebilirsiniz. Bu isteklerinizi yazılı olarak alır ve dosyanıza ekleriz.</p>
           </div>
           <div class="kart kart--duz">
             <span class="kart__ikon">${ik.saat}</span>
-            <h3>Güvenlik ve insani değerlere saygı</h3>
-            <p>Sağlıklı ve güvenli bir ortamda, saygıyla karşılanarak hizmet alma hakkınız vardır. Bekleme süresi hakkında bilgi almayı ve düzenli bir karşılama görmeyi bekleyebilirsiniz.</p>
+            <h3>Güvenli ortam ve saygı</h3>
+            <p>Hizmeti sağlığınızı tehlikeye atmayan bir ortamda ve size saygı gösterilerek almak hakkınızdır. Ne kadar bekleyeceğinizi öğrenmek ve özenle karşılanmak da bu hakkın parçasıdır.</p>
           </div>
         </div>
       </div>
 
       <div class="g-bblk" id="aydinlatilmis-onam">
-        <h2>Aydınlatılmış onam süreci nasıl ilerler?</h2>
+        <h2>Onamınız nasıl alınır?</h2>
         <div class="yazi">
-          <p>Girişimsel bir uygulama planlandığında süreç her defasında aynı sırayla ilerler. Amaç imza almak değil, kararı sizinle birlikte vermektir.</p>
+          <p>Girişimsel bir uygulama gündeme geldiğinde hep aynı adımlar izlenir. Hedef, imza almaktan çok kararı sizinle ortaklaşa vermektir.</p>
         </div>
         <ol class="adimlar">
           <li>
-            <h4>Durumun açıklanması</h4>
-            <p>Muayene bulguları ve varsa tetkik sonuçları, tıbbi terimlerin gündelik karşılıkları kullanılarak anlatılır.</p>
+            <h4>Bulguların anlatılması</h4>
+            <p>Muayenede görülenler ve yapıldıysa tahlil ya da görüntüleme sonuçları, tıp dili yerine gündelik Türkçeyle açıklanır.</p>
           </li>
           <li>
-            <h4>Seçeneklerin değerlendirilmesi</h4>
-            <p>Uygun seçenekler, beklenen etkiler, olası istenmeyen durumlar, alternatifler ve hiçbir uygulama yapılmaması seçeneği birlikte ele alınır.</p>
+            <h4>Seçeneklerin tartılması</h4>
+            <p>Size uygun olabilecek yollar tek tek konuşulur: her birinden ne beklenebileceği, hangi istenmeyen etkilerin görülebileceği ve hiç uygulama yapmamanın ne anlama geldiği.</p>
           </li>
           <li>
-            <h4>Soru sorma ve düşünme süresi</h4>
-            <p>Aklınıza takılanları sorabilir, karar vermek için zaman isteyebilirsiniz. Aynı gün karar vermeniz beklenmez.</p>
+            <h4>Sorular ve düşünme payı</h4>
+            <p>Açık kalan noktaları sorabilir, kararınızı sonraya bırakabilirsiniz. Görüşmenin yapıldığı gün yanıt vermeniz gerekmez.</p>
           </li>
           <li>
-            <h4>Onamın kayda alınması</h4>
-            <p>Kararınız yazılı onam belgesiyle kayda geçirilir. Belgeyi imzaladıktan sonra da vazgeçme hakkınız sürer.</p>
+            <h4>Kararın yazıya geçirilmesi</h4>
+            <p>Verdiğiniz karar yazılı bir onam formuyla belgelenir. Formu imzalamış olmanız, sonradan fikir değiştirmenize engel değildir.</p>
           </li>
         </ol>
         <div class="kutu kutu--bilgi">
-          <b>Refakatçi ve tercüman</b>
-          <p>Görüşme sırasında bir yakınınızın yanınızda bulunmasını isteyebilirsiniz. Türkçe iletişimde zorlanıyorsanız, anlayabileceğiniz dilde bilgilendirilmeniz için birlikte bir çözüm aranır.</p>
+          <b>Yanınızda biri olsun isterseniz</b>
+          <p>Görüşmeye güvendiğiniz bir yakınınızla gelebilirsiniz. Türkçeyi rahat konuşamıyorsanız, açıklamaların size anlaşılır bir dilde ulaşması için birlikte yol ararız.</p>
         </div>
       </div>
 
       <div class="g-bblk" id="hastanin-sorumluluklari">
-        <h2>Hastanın sorumlulukları</h2>
+        <h2>Sizden beklenenler</h2>
         <div class="yazi">
-          <p>Yönetmelik, hakların yanında bazı sorumluluklara da yer verir. Bunlar şekilden ibaret değildir; doğrudan güvenliğinizle ilgilidir.</p>
+          <p>Yönetmelik yalnız hakları değil, hastaya düşen bazı görevleri de sayar. Bu görevler bir formalite değildir; uygulamanın sizin için güvenli olmasını sağlar.</p>
           <ul>
-            <li>Yakınmanızı, geçirdiğiniz hastalıkları ve daha önce yaşadığınız reaksiyonları eksiksiz anlatmak.</li>
-            <li>Kullandığınız bütün ilaçları, bitkisel ürünleri ve takviyeleri bildirmek; hiçbirini önemsiz görüp atlamamak.</li>
-            <li>Bilinen aşırı duyarlılık öykünüzü, hafif atlatmış olsanız bile paylaşmak.</li>
-            <li>Gebelik ya da emzirme durumunu, gebelik olasılığı da dâhil olmak üzere bildirmek.</li>
-            <li>Verilen plana uymak, uyamayacaksanız bunu söylemek ve kontrol randevularına gelmek.</li>
-            <li>Gelemeyeceğiniz bir randevuyu önceden bildirmek.</li>
+            <li>Şikâyetinizi, geçmişteki rahatsızlıklarınızı ve bugüne kadar gördüğünüz her türlü reaksiyonu atlamadan aktarmak.</li>
+            <li>Düzenli ya da ara sıra kullandığınız ilaçları, bitkisel ürün ve besin desteklerini de sayarak tam bir liste vermek.</li>
+            <li>Hafif geçmiş olsa bile bilinen aşırı duyarlılıklarınızı söylemek.</li>
+            <li>Gebe olduğunuzu, emzirdiğinizi ya da gebelik ihtimali bulunduğunu belirtmek.</li>
+            <li>Birlikte kararlaştırılan plana uymak; uyamayacağınız bir nokta varsa bunu açıkça söylemek ve kontrol randevularını aksatmamak.</li>
+            <li>Katılamayacağınız bir randevuyu vaktinden önce haber vermek.</li>
           </ul>
         </div>
         <div class="dgm-sira">
-          <a class="dgm dgm--iki" href="${r}hazirlik-listesi/">Görüşme öncesi hazırlık listesi ${ik.ok}</a>
+          <a class="dgm dgm--iki" href="${r}hazirlik-listesi/">Muayeneye hazırlık listesi ${ik.ok}</a>
         </div>
       </div>
 
       <div class="g-bblk" id="basvuru-yollari">
-        <h2>Başvuru ve şikâyet yolları</h2>
+        <h2>Şikâyet ve talepleriniz için kanallar</h2>
         <div class="yazi">
-          <p>Bir hakkınızın çiğnendiğini düşünüyorsanız başvurabileceğiniz kanallar bellidir. Bu yollar birbirinin seçeneğidir; birini kullanmanız diğerlerine başvurma hakkınızı ortadan kaldırmaz.</p>
+          <p>Haklarınızdan birine uyulmadığını düşünüyorsanız kullanabileceğiniz kanallar tanımlıdır. Bunlar yan yana işler; birine gitmiş olmanız ötekilerine başvurmanıza engel olmaz.</p>
         </div>
         <ul class="bilgi-liste">
-          <li>${ik.posta}<div><b>Doğrudan muayenehaneye</b>Talebinizi yazılı olarak <a href="mailto:${S.iletisim.editor}">${S.iletisim.editor}</a> adresine veya muayenehane adresine gönderebilirsiniz. Başvurunuz kayda geçirilir ve size en geç otuz gün içinde yazılı yanıt verilir.</div></li>
-          <li>${ik.tel}<div><b>Sağlık Bakanlığı iletişim merkezi</b>Sağlık hizmetleriyle ilgili başvurularınızı <b>184</b> numaralı hat aracılığıyla Bakanlığa iletebilirsiniz.</div></li>
-          <li>${ik.pin}<div><b>İl Sağlık Müdürlüğü</b>İstanbul İl Sağlık Müdürlüğü’ndeki hasta hakları birimine başvurabilirsiniz. Muayenehane bu müdürlüğün denetimi altındadır.</div></li>
-          <li>${ik.kalkan}<div><b>İstanbul Tabip Odası</b>Hekimin meslek uygulamalarına ilişkin başvurularınızı, hekimin kayıtlı olduğu tabip odasına yapabilirsiniz.</div></li>
-          <li>${ik.liste}<div><b>Kişisel verilere ilişkin başvurular</b>Kişisel verilerinize dair taleplerinizi önce veri sorumlusuna iletir, sonuç alamazsanız Kişisel Verileri Koruma Kurulu’na başvurabilirsiniz.</div></li>
+          <li>${ik.posta}<div><b>Önce bize yazın</b>Şikâyet ya da talebinizi <a href="mailto:${S.iletisim.editor}">${S.iletisim.editor}</a> adresine e-postayla veya muayenehane adresine yazılı olarak iletebilirsiniz. Her başvuru kayda alınır; yazılı yanıtımız otuz günü aşmadan size ulaşır.</div></li>
+          <li>${ik.tel}<div><b>Sağlık Bakanlığı İletişim Merkezi</b>Aldığınız sağlık hizmetine dair şikâyet ve önerilerinizi <b>184</b> numarayı arayarak Bakanlığa bildirebilirsiniz.</div></li>
+          <li>${ik.pin}<div><b>İl Sağlık Müdürlüğü</b>Muayenehaneyi denetleyen kurum İstanbul İl Sağlık Müdürlüğü’dür; müdürlük bünyesindeki hasta hakları birimine başvuru yapabilirsiniz.</div></li>
+          <li>${ik.kalkan}<div><b>İstanbul Tabip Odası</b>Mesleki tutum ve uygulamalara ilişkin şikâyetlerinizi, hekimin kayıtlı olduğu tabip odasına iletebilirsiniz.</div></li>
+          <li>${ik.liste}<div><b>Kişisel veri talepleri</b>Verilerinizle ilgili isteklerinizi ilk olarak veri sorumlusu sıfatıyla bize yöneltmeniz gerekir; yanıt alamaz ya da yanıtı yetersiz bulursanız Kişisel Verileri Koruma Kurulu’na başvurma yolunuz açıktır.</div></li>
         </ul>
         <div class="yazi">
-          <p>İdari başvuru yolları dava açma hakkınızı sınırlamaz. Hukuki ve cezai yollara başvurma hakkınız her durumda saklıdır.</p>
+          <p>Bu idari yollardan herhangi birini kullanmanız mahkemeye gitmenize engel değildir; hukuk ve ceza yargısına başvurma imkânınız her koşulda korunur.</p>
         </div>
         <div class="dgm-sira">
-          <a class="dgm dgm--iki" href="${r}yasal/kvkk-aydinlatma-metni/">Veri başvuru usulü ${ik.ok}</a>
+          <a class="dgm dgm--iki" href="${r}yasal/kvkk-aydinlatma-metni/">Verilerinizle ilgili başvuru ${ik.ok}</a>
         </div>
       </div>
 
       <div class="g-bblk" id="ilgili-basliklar">
-        <h2>Bunları da okuyabilirsiniz</h2>
+        <h2>Bağlantılı sayfalar</h2>
         <div class="izgara izgara--2">
           <a class="kart" href="${r}yasal/kullanim-kosullari/">
             <h3>Kullanım koşulları</h3>
-            <p>Sitedeki içeriğin sınırı ve hekim–hasta ilişkisinin ne zaman başladığı.</p>
+            <p>Sitedeki bilgilerin nerede bittiği ve hekimle aranızdaki ilişkinin başlangıç noktası.</p>
             <span class="kart__ok">Oku ${ik.ok}</span>
           </a>
           <a class="kart" href="${r}yasal/kvkk-aydinlatma-metni/">
             <h3>KVKK aydınlatma metni</h3>
-            <p>Sağlık verilerinizin nasıl işlendiği, ne kadar saklandığı ve haklarınız.</p>
+            <p>Muayene kayıtlarındaki sağlık verilerinizin işlenme gerekçesi, saklama süresi ve bu verilere ilişkin haklarınız.</p>
             <span class="kart__ok">Oku ${ik.ok}</span>
           </a>
           <a class="kart" href="${r}yaklasimimiz/">
             <h3>Yaklaşımımız</h3>
-            <p>Uygulamadan önce değerlendirme ilkesinin işleyişi.</p>
+            <p>Her uygulamadan önce değerlendirme yapma ilkemizin ayrıntıları.</p>
             <span class="kart__ok">İncele ${ik.ok}</span>
           </a>
           <a class="kart" href="${r}hekim/">
             <h3>Hekim</h3>
-            <p>${S.hekim.tam}: eğitim, uzmanlık ve sertifika bilgileri.</p>
+            <p>${S.hekim.tam} hakkında eğitim, uzmanlık ve sertifika bilgisi.</p>
             <span class="kart__ok">İncele ${ik.ok}</span>
           </a>
           <a class="kart" href="${r}yasal/icerik-ve-gorsel-yayin-ilkelerimiz/">
             <h3>İçerik ve görsel yayın ilkelerimiz</h3>
-            <p>Mahremiyetinizi korumak adına sitede yer vermediğimiz içerikler.</p>
+            <p>Mahremiyetiniz için sitede bilerek yayımlamadığımız içerikler.</p>
             <span class="kart__ok">Oku ${ik.ok}</span>
           </a>
         </div>
       </div>
 
       <div class="g-bblk">
-        <h2>Bize ulaşmak için</h2>
-        <p class="giris">Haklarınızla ilgili bir talebi ya da randevu isteğinizi iletişim sayfasından iletebilirsiniz.</p>
+        <h2>İletişim için</h2>
+        <p class="giris">Haklarınızla ilgili bir sorunuzu ya da randevu talebinizi iletişim sayfası üzerinden bize ulaştırabilirsiniz.</p>
         <div class="dgm-sira">
           <a class="dgm dgm--bir" href="${r}iletisim/">İletişim</a>
         </div>

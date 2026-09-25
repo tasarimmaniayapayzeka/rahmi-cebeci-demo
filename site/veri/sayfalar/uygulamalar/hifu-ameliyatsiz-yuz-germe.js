@@ -17,14 +17,14 @@ module.exports = {
       <p class="g-hero__alt">Büyüteçle toplanan güneş ışığı gibi, HIFU başlığından çıkan ses dalgaları da deri yüzeyini ısıtmadan geçip belirli bir derinlikte tek noktada birleşir. Bu noktalarda oluşan küçük ısı odakları dokuda yavaş ilerleyen bir onarımı başlatır. Halk arasında “ameliyatsız yüz germe” diye anılsa da cerrahinin yerini tutmaz; hedef, hafif–orta gevşemede sıkılıkta görünür bir değişimdir.</p>
       <div class="g-hero__cta">
         <a class="dgm dgm--bir" href="${r}iletisim/">Randevu talebi</a>
-        <a class="dgm dgm--iki" href="#ilkbolum">Nasıl çalışır? ↓</a>
+        <a class="dgm dgm--iki" href="#ilkbolum">Yöntemin işleyişi ↓</a>
       </div>
       <div class="g-tikler"><span><i></i>Seansı hekim uygular</span><span><i></i>Cerrahinin yerini tutmaz</span><span><i></i>İkinci–üçüncü ayda kontrol</span></div>
     </div>
     <div class="g-tarama" data-gr>
       <img src="${r}varliklar/gorsel/uyg-hifu-ameliyatsiz-yuz-germe.webp" width="1400" height="788" alt="Deri katmanlarında tek noktada toplanan ses dalgalarının üç boyutlu çizimi" loading="eager">
       <div class="g-isin"></div>
-      <span class="g-ainot">Görsel yapay zekâ ile üretilmiştir</span>
+      <span class="g-ainot">Temsilî görsel · yapay zekâ ile üretildi</span>
     </div>
   </div>
 </section>
@@ -40,7 +40,7 @@ module.exports = {
 <!-- BU NEDİR / BU NE DEĞİLDİR -->
 <section class="bolum" id="ilkbolum">
   <div class="sar">
-    <div class="bolum-bas" data-gr><p class="g-etiket">Tanım ve sınırlar</p><h2>HIFU ne yapar, neden bir ameliyat değildir?</h2><p class="giris">Yıllar içinde yüzde üç şey birden değişir: deri ve onu taşıyan bağ dokusu gevşer, yanaktaki yağ yastıkçıkları aşağı kayar ya da incelir, kemik desteği geriler. Ultrason enerjisinin etki ettiği yer bunlardan yalnızca biridir: gevşeyen taşıyıcı doku. Bu yüzden karar, yüzün bütünü değerlendirildikten sonra verilir. Tablonun tamamını <a href="${r}cilt-sorunlari/hacim-kaybi-ve-sarkma/">hacim kaybı ve sarkma</a> sayfasında anlattık.</p></div>
+    <div class="bolum-bas" data-gr><p class="g-etiket">Tanım ve sınırlar</p><h2>HIFU ne yapar, neden bir ameliyat değildir?</h2><p class="giris">Yıllar içinde yüzde üç şey birden değişir: deri ve onu taşıyan bağ dokusu gevşer, yanaktaki yağ yastıkçıkları aşağı kayar ya da incelir, kemik desteği geriler. Ultrason enerjisinin etki ettiği yer bunlardan yalnızca biridir: gevşeyen taşıyıcı doku. Bu yüzden karar, yüzün bütünü değerlendirildikten sonra verilir. Tablonun bütününe <a href="${r}cilt-sorunlari/hacim-kaybi-ve-sarkma/">hacim kaybı ve sarkma</a> sayfasından ulaşabilirsiniz.</p></div>
     <div class="izgara izgara--2">
       <div class="kutu kutu--bilgi" data-gr>
         <b>Bu nedir</b>
@@ -71,7 +71,7 @@ module.exports = {
         <div class="g-cubuk"><small><span>ALIN VE GÖZ ÇEVRESİ</span><span>Sığ odak</span></small><div class="g-ciz"><b class="g-cubuk-mavi" data-gw="24%"></b></div></div>
         <div class="g-cubuk"><small><span>BOYUN VE ÇENE ALTI</span><span>Orta odak</span></small><div class="g-ciz"><b class="g-cubuk-petrol" data-gw="58%"></b></div></div>
         <div class="g-cubuk"><small><span>YANAK VE ÇENE HATTI</span><span>Derin odak</span></small><div class="g-ciz"><b class="g-cubuk-bakir" data-gw="92%"></b></div></div>
-        <p style="font-size:.68rem;color:var(--sessiz);margin-top:8px">Çubuklar göreli simgedir; size özel plan muayenede kurulur.</p>
+        <p style="font-size:.68rem;color:var(--sessiz);margin-top:8px">Çubuk boyları yalnız karşılaştırma içindir; size özel plan muayenede kurulur.</p>
       </div>
       <div class="g-kutu g-b2" data-gr style="--d:140ms"><span class="g-ket">Protokol</span>
         <ol class="g-protokol">
@@ -88,7 +88,7 @@ module.exports = {
 <p>Son aylarda dolgu, askı ipi ya da ameliyat olduysanız dokunun yerine oturması beklenir; <a href="${r}uygulamalar/dolgu-uygulamalari/">dolgu uygulaması</a> geçmişiniz varsa hangi bölgeye ve ne zaman yapıldığını söyleyin. Yanaklarındaki yağ dokusu zaten ince olan birinde HIFU planlanmaz; ısı yüzü daha çökük gösterebilir.</p>
 <p>Keloid eğilimi, etkin bağ dokusu hastalıkları ve şekeri düzensiz seyreden diyabet uygunluğu değiştirir. Uygulama alanında metal implant, kalıcı yapay malzeme ya da incelenmemiş bir şişlik varsa o bölge atlanır; tiroid bezinin üzeri ve büyük damar ile sinirlerin deriye yakın geçtiği hatlar da uygulama dışında tutulur. Herhangi bir ilaca ya da maddeye aşırı duyarlılığınız varsa bunu da not ettirin.</p>
       </div>
-      <div class="g-kutu g-b2 g-kutu--gorsel" data-gr style="--d:70ms"><img src="${r}varliklar/gorsel/uyg-hifu-ameliyatsiz-yuz-germe-2.webp" alt="Yandan ışık alan çene hattı ve boyun profilinin yumuşak tonlu görünümü" loading="lazy"><span class="g-ainot">Görsel yapay zekâ ile üretilmiştir</span></div>
+      <div class="g-kutu g-b2 g-kutu--gorsel" data-gr style="--d:70ms"><img src="${r}varliklar/gorsel/uyg-hifu-ameliyatsiz-yuz-germe-2.webp" alt="Yandan ışık alan çene hattı ve boyun profilinin yumuşak tonlu görünümü" loading="lazy"><span class="g-ainot">Temsilî görsel · yapay zekâ ile üretildi</span></div>
       <div class="g-kutu g-b2 g-kutu--gece" data-gr><span class="g-ket">İlke</span><p>"Beklentiniz ancak cerrahiyle karşılanacaksa bunu seanstan önce söyleriz."</p></div>
       <div class="g-kutu g-b2" data-gr style="--d:70ms">
         <span class="g-ket">Seans sonrası</span>
@@ -97,7 +97,7 @@ module.exports = {
       <div class="g-kutu g-b2 g-kutu--cta" data-gr style="--d:140ms"><h3>Yüzünüzü görmeden karar vermeyelim</h3><p>Deri kalınlığınız ve yağ dağılımınız muayenede değerlendirilir.</p><a class="dgm dgm--altin" href="${r}iletisim/">Randevu talebi</a></div>
       <div class="kutu kutu--acil g-b6" data-gr>
         <b>Beklemeden bize ulaşmanız gereken durumlar</b>
-        <p>Sonraki günlerde deride kabarcık ya da açık yara belirirse, kızarıklık yayılır, ağrı artar, akıntı ya da ateş olursa; aynaya baktığınızda yüzünüzde bir yamukluk ya da gülümserken bir tarafta zayıflık görürseniz kontrol gününü beklemeyin. ${S.iletisim.tel} numarasından bize ulaşın; telefonla ulaşamıyorsanız <b>112</b>’yi arayın ya da en yakın acil servise gidin.</p>
+        <p>Sonraki günlerde deride kabarcık ya da açık yara belirirse, kızarıklık yayılır, ağrı artar, akıntı ya da ateş olursa; aynaya baktığınızda yüzünüzde bir yamukluk ya da gülümserken bir tarafta zayıflık görürseniz kontrol gününü beklemeyin. ${S.iletisim.tel} numarasından bize ulaşın; telefonla ulaşamıyorsanız <b>112</b> Acil Çağrı Merkezi’ni arayın ya da en yakın hastanenin acil birimine başvurun.</p>
       </div>
     </div>
   </div>
@@ -105,7 +105,7 @@ module.exports = {
 
 <!-- SORU TERMİNALİ -->
 <section class="bolum bolum--buz2"><div class="sar">
-  <div class="bolum-bas" data-gr><p class="g-etiket">Sorgulayın</p><h2>Sorunuzu seçin, cevap ekrana düşsün</h2></div>
+  <div class="bolum-bas" data-gr><p class="g-etiket">Sık gelen sorular</p><h2>Merak ettiğiniz soruya dokunun, yanıtı burada açılsın</h2></div>
   <div class="g-sorgu" data-gr>
     <div class="g-sorgu-bas"><i></i><i></i><i></i><span>${S.marka.toLowerCase()} · hifu · soru-cevap</span></div>
     <div class="g-sorgu-ic">
@@ -117,7 +117,7 @@ module.exports = {
         <button class="g-ssoru" data-gs="4"><i>›</i>Daha önce dolgu yaptırdım, HIFU olur mu?</button>
         <button class="g-ssoru" data-gs="5"><i>›</i>Ücret bilgisini nasıl öğrenebilirim?</button>
       </div>
-      <div class="g-scevap" data-gcevap aria-live="polite"><span class="g-yazan">Hekim onaylı yanıt</span><b></b><p></p><a class="dgm dgm--altin" href="${r}iletisim/" style="margin-top:8px">Muayenede konuşalım</a></div>
+      <div class="g-scevap" data-gcevap aria-live="polite"><span class="g-yazan">Hekimin yanıtı</span><b></b><p></p><a class="dgm dgm--altin" href="${r}iletisim/" style="margin-top:8px">Ayrıntısı muayenede</a></div>
     </div>
   </div>
 </div></section>
@@ -126,12 +126,12 @@ module.exports = {
 <!-- KAPANIŞ -->
 <section class="g-son">
   <div class="sar">
-    <p class="g-etiket g-etiket--orta">Sonraki adım</p>
+    <p class="g-etiket g-etiket--orta">Bir adım ötesi</p>
     <h2>HIFU’nun yüzünüzdeki yerini birlikte görelim</h2>
     <p class="g-sonalt">Sıkılık kaybının hangi katmandan kaynaklandığı belli olmadan HIFU’nun katkısı tahmin edilemez.</p>
     <div class="g-sonbtn">
       <a class="dgm dgm--bir" href="${r}iletisim/">Randevu talebi oluşturun</a>
-      <a class="dgm dgm--iki" href="${r}hazirlik-listesi/arac/">Hazırlık listesini doldurun</a>
+      <a class="dgm dgm--iki" href="${r}hazirlik-listesi/arac/">Muayeneye hazırlanın</a>
     </div>
   </div>
 </section>

@@ -24,7 +24,7 @@ module.exports = {
     <div class="g-tarama" data-gr>
       <img src="${r}varliklar/gorsel/uyg-sivi-yuz-germe.webp" width="1400" height="788" alt="Yüzü yumuşak yan ışıkla aydınlanmış orta yaşlı bir kadının profil portresi" loading="eager">
       <div class="g-isin"></div>
-      <span class="g-ainot">Görsel yapay zekâ ile üretilmiştir</span>
+      <span class="g-ainot">Temsilî görsel · yapay zekâ ile üretildi</span>
       <div class="g-hud" data-ghud><b>Kilit noktalar, küçük miktarlar</b><div class="g-cizgi"></div><span>Orta yüzde kurulan destek, alt yüzdeki gölgelerin görünümünü de değiştirebilir.</span></div>
     </div>
   </div>
@@ -100,7 +100,7 @@ module.exports = {
         <p><b style="color:var(--murekkep)">Taşıyıcıdan ayrıntıya</b><br>Önce orta yüz ve şakak, sonra alt yüz, en son ince ayar: her basamak, bir öncekinin sonucu görüldükten sonra planlanır.</p>
       </div>
       <div class="g-kutu g-b2" data-gr style="--d:70ms">
-        <span class="g-ket">Süreç çizgisi</span>
+        <span class="g-ket">Zaman akışı</span>
         <div class="g-cubuk"><small><span>İlk seans</span><span>Taşıyıcı noktalar</span></small><div class="g-ciz"><b class="g-cubuk-mavi" data-gw="35%"></b></div></div>
         <div class="g-cubuk"><small><span>Kontrol</span><span>Ödem çekildikten sonra</span></small><div class="g-ciz"><b class="g-cubuk-petrol" data-gw="65%"></b></div></div>
         <div class="g-cubuk"><small><span>Sonraki basamak</span><span>Alt yüz ve ince ayar</span></small><div class="g-ciz"><b class="g-cubuk-bakir" data-gw="95%"></b></div></div>
@@ -136,7 +136,7 @@ module.exports = {
         </ul>
         <p>Önceki uygulamalarınıza ait belge ve fotoğraflar, planın hangi noktadan başlayacağını belirlemede yol gösterir.</p>
       </div>
-      <div class="g-kutu g-b2 g-kutu--gorsel" data-gr style="--d:70ms"><img src="${r}varliklar/gorsel/uyg-sivi-yuz-germe-2.webp" alt="Yüzün orta ve alt bölümünü yumuşak yan ışıkta gösteren yakın plan" loading="lazy"><span class="g-ainot">Görsel yapay zekâ ile üretilmiştir</span></div>
+      <div class="g-kutu g-b2 g-kutu--gorsel" data-gr style="--d:70ms"><img src="${r}varliklar/gorsel/uyg-sivi-yuz-germe-2.webp" alt="Yüzün orta ve alt bölümünü yumuşak yan ışıkta gösteren yakın plan" loading="lazy"><span class="g-ainot">Temsilî görsel · yapay zekâ ile üretildi</span></div>
       <div class="g-kutu g-b3 g-kutu--gece" data-gr><span class="g-ket">İlke</span><p>“Bütün yüze bakmak, her yere ürün vermek demek değildir. Çoğu planda birkaç doğru nokta yeterlidir.”</p></div>
       <div class="g-kutu g-b3 g-kutu--cta" data-gr style="--d:70ms"><h3>Yüzünüzü bütün olarak değerlendirelim</h3><p>Planın kapsamı ve sırası muayeneden sonra netleşir.</p><a class="dgm dgm--altin" href="${r}iletisim/">Randevu talebi</a></div>
     </div>
@@ -167,7 +167,7 @@ module.exports = {
     </div>
     <div class="kutu kutu--acil" style="margin-top:22px" data-gr>
       <b>Beklemeden başvurmanız gereken belirtiler</b>
-      <p>Uygulama sırasında ya da sonrasında beklenenden çok daha şiddetli ağrı, derinin solması ya da beyazlaması, ağ biçiminde mor renk değişimi, görmede bulanıklık veya kayıp ve göz çevresinde şiddetli ağrı gelişirse vakit kaybetmeyin. Bu bulgular ürünün bir damarı tıkamış olabileceğini düşündürür. Hemen bize ulaşın; ulaşamazsanız <b>112</b>’yi arayın ya da en yakın acil servise gidin.</p>
+      <p>Uygulama sırasında ya da sonrasında beklenenden çok daha şiddetli ağrı, derinin solması ya da beyazlaması, ağ biçiminde mor renk değişimi, görmede bulanıklık veya kayıp ve göz çevresinde şiddetli ağrı gelişirse vakit kaybetmeyin. Bu bulgular ürünün bir damarı tıkamış olabileceğini düşündürür. Hemen bize ulaşın; ulaşamazsanız <b>112</b> Acil Çağrı Merkezi’ni arayın ya da en yakın hastanenin acil birimine başvurun.</p>
     </div>
     <div class="kutu kutu--bilgi" style="margin-top:16px" data-gr>
       <p>Hyalüronik asit ürünlerinin gerekli durumlarda enzimle çözülmesine ilişkin bilgiyi <a href="${r}uygulamalar/dolgu-uygulamalari/">dolgu uygulamaları</a> sayfasının riskler bölümünde bulabilirsiniz. Bu olasılık ve izlenecek yol, uygulamadan önce sizinle ayrıca konuşulur.</p>
@@ -223,7 +223,7 @@ module.exports = {
 
 <!-- ═════ SORU TERMİNALİ ═════ -->
 <section class="bolum bolum--buz2"><div class="sar">
-  <div class="bolum-bas" data-gr><p class="g-etiket">Sorgulayın</p><h2>Sorunuzu seçin, cevap ekrana düşsün</h2></div>
+  <div class="bolum-bas" data-gr><p class="g-etiket">Sık gelen sorular</p><h2>Merak ettiğiniz soruya dokunun, yanıtı burada açılsın</h2></div>
   <div class="g-sorgu" data-gr>
     <div class="g-sorgu-bas"><i></i><i></i><i></i><span>${S.marka} · sıvı yüz germe · soru-cevap</span></div>
     <div class="g-sorgu-ic">
@@ -235,7 +235,7 @@ module.exports = {
         <button class="g-ssoru" data-gs="4"><i>›</i>HIFU ile farkı nedir?</button>
         <button class="g-ssoru" data-gs="5"><i>›</i>Ücret bilgisi neden sitede yok?</button>
       </div>
-      <div class="g-scevap" data-gcevap aria-live="polite"><span class="g-yazan">Hekim onaylı yanıt</span><b></b><p></p><a class="dgm dgm--altin" href="${r}iletisim/" style="margin-top:8px">Muayenede konuşalım</a></div>
+      <div class="g-scevap" data-gcevap aria-live="polite"><span class="g-yazan">Hekimin yanıtı</span><b></b><p></p><a class="dgm dgm--altin" href="${r}iletisim/" style="margin-top:8px">Ayrıntısı muayenede</a></div>
     </div>
   </div>
 </div></section>
@@ -244,12 +244,12 @@ module.exports = {
 <!-- ═════ KAPANIŞ ═════ -->
 <section class="g-son">
   <div class="sar">
-    <p class="g-etiket g-etiket--orta">Sonraki adım</p>
+    <p class="g-etiket g-etiket--orta">Bir adım ötesi</p>
     <h2>Yüzünüzün bütününe birlikte bakalım</h2>
     <p class="g-sonalt">Hangi noktaların önce ele alınacağını ve cerrahi değerlendirmenin gerekip gerekmediğini muayenede konuşuruz. ${S.iletisim.adres}, ${S.iletisim.ilce}.</p>
     <div class="g-sonbtn">
       <a class="dgm dgm--bir" href="${r}iletisim/">Randevu talebi oluşturun</a>
-      <a class="dgm dgm--iki" href="${r}hazirlik-listesi/arac/">Hazırlık listesini doldurun</a>
+      <a class="dgm dgm--iki" href="${r}hazirlik-listesi/arac/">Muayeneye hazırlanın</a>
     </div>
   </div>
 </section>

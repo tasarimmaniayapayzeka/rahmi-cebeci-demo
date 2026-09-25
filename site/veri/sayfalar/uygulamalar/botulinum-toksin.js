@@ -24,7 +24,7 @@ module.exports = {
     <div class="g-tarama" data-gr>
       <img src="${r}varliklar/gorsel/uyg-botulinum-toksin.webp" width="1400" height="788" alt="İfadesi dingin bir kadının alın ve göz çevresini gösteren yakın plan portresi" loading="eager">
       <div class="g-isin"></div>
-      <span class="g-ainot">Görsel yapay zekâ ile üretilmiştir</span>
+      <span class="g-ainot">Temsilî görsel · yapay zekâ ile üretildi</span>
       <div class="g-hud" data-ghud><b>Etkisi yerel ve süreli</b><div class="g-cizgi"></div><span>Uygulanan kasın gücü bir süre azalır; aylar içinde kas eski çalışma düzenine döner.</span></div>
     </div>
   </div>
@@ -99,7 +99,7 @@ module.exports = {
         <p><b style="color:var(--murekkep)">Etkinin yerleşmesi</b><br>Değişiklik ilk günlerde başlar, yaklaşık iki haftada yerine oturur. Bu nedenle kontrol randevusu iki haftadan önceye verilmez.</p>
       </div>
       <div class="g-kutu g-b2" data-gr style="--d:70ms">
-        <span class="g-ket">Süreç çizgisi</span>
+        <span class="g-ket">Zaman akışı</span>
         <div class="g-cubuk"><small><span>İlk günler</span><span>Etki belirir</span></small><div class="g-ciz"><b class="g-cubuk-mavi" data-gw="30%"></b></div></div>
         <div class="g-cubuk"><small><span>2. hafta</span><span>Etki yerleşir</span></small><div class="g-ciz"><b class="g-cubuk-petrol" data-gw="70%"></b></div></div>
         <div class="g-cubuk"><small><span>Aylar içinde</span><span>Kas eski düzenine döner</span></small><div class="g-ciz"><b class="g-cubuk-bakir" data-gw="100%"></b></div></div>
@@ -134,7 +134,7 @@ module.exports = {
         </ul>
         <p>Kullandığınız ilaçların, takviyelerin ve daha önce yaptırdığınız uygulamaların listesini randevuya getirmeniz, planın doğru kurulmasına yardımcı olur.</p>
       </div>
-      <div class="g-kutu g-b2 g-kutu--gorsel" data-gr style="--d:70ms"><img src="${r}varliklar/gorsel/uyg-botulinum-toksin-2.webp" alt="Alın ve kaş bölgesinin gün ışığında yakın plan görünümü" loading="lazy"><span class="g-ainot">Görsel yapay zekâ ile üretilmiştir</span></div>
+      <div class="g-kutu g-b2 g-kutu--gorsel" data-gr style="--d:70ms"><img src="${r}varliklar/gorsel/uyg-botulinum-toksin-2.webp" alt="Alın ve kaş bölgesinin gün ışığında yakın plan görünümü" loading="lazy"><span class="g-ainot">Temsilî görsel · yapay zekâ ile üretildi</span></div>
       <div class="g-kutu g-b3 g-kutu--gece" data-gr><span class="g-ket">İlke</span><p>“İlk seans bir ölçüm gibidir: kasınızın doza nasıl yanıt verdiğini görmeden miktarı artırmayız, çünkü etkisini göstermeye başlayan doz geri çekilemez.”</p></div>
       <div class="g-kutu g-b3 g-kutu--cta" data-gr style="--d:70ms"><h3>Şikâyetinizi muayenede konuşalım</h3><p>Hangi bölgenin uygun olduğu değerlendirmeden sonra netleşir.</p><a class="dgm dgm--altin" href="${r}iletisim/">Randevu talebi</a></div>
     </div>
@@ -165,7 +165,7 @@ module.exports = {
     </div>
     <div class="kutu kutu--acil" style="margin-top:22px" data-gr>
       <b>Beklemeden başvurmanız gereken belirtiler</b>
-      <p>Yutkunmada zorlanma, konuşmanın bozulması, nefes almakta güçlük, çift görme, kollarda ya da bacaklarda yaygın güçsüzlük veya yüzde, dudakta ya da dilde hızla gelişen şişlik olursa randevu gününü beklemeyin. <b>112</b>’yi arayın ya da size en yakın acil servise gidin.</p>
+      <p>Yutkunmada zorlanma, konuşmanın bozulması, nefes almakta güçlük, çift görme, kollarda ya da bacaklarda yaygın güçsüzlük veya yüzde, dudakta ya da dilde hızla gelişen şişlik olursa randevu gününü beklemeyin. <b>112</b> Acil Çağrı Merkezi’ni arayın ya da en yakın hastanenin acil birimine başvurun.</p>
     </div>
   </div>
 </section>
@@ -206,7 +206,7 @@ module.exports = {
       <p>${S.hekim.tam}, uzmanlık alanı ve Sağlık Bakanlığı onaylı medikal estetik sertifikasının tanımladığı sınırlar içinde çalışır. Bu sınırların dışında kalan bir talepte uygulama yapılmaz, ilgili uzmanlık dalına başvurmanız önerilir. Hangi işlemleri neden yapmadığımızı <a href="${r}yaklasimimiz/neden-bazi-islemleri-yapmiyoruz/">neden bazı işlemleri yapmıyoruz</a> sayfasında açıkça anlattık.</p>
     </div>
     <div class="g-haplar" style="margin-top:22px" data-gr>
-      <a href="${r}bolgeler/goz-cevresi/">Göz çevresi planlaması</a>
+      <a href="${r}bolgeler/goz-cevresi/">Göz çevresinde plan</a>
       <a href="${r}cilt-sorunlari/mimik-cizgileri-ve-kirisiklik/">Mimik çizgileri ve kırışıklık</a>
       <a href="${r}cilt-sorunlari/asiri-terleme/">Aşırı terleme</a>
       <a href="${r}uygulamalar/dolgu-uygulamalari/">Dolgu uygulamaları</a>
@@ -218,7 +218,7 @@ module.exports = {
 
 <!-- ═════ SORU TERMİNALİ ═════ -->
 <section class="bolum bolum--buz2"><div class="sar">
-  <div class="bolum-bas" data-gr><p class="g-etiket">Sorgulayın</p><h2>Sorunuzu seçin, cevap ekrana düşsün</h2></div>
+  <div class="bolum-bas" data-gr><p class="g-etiket">Sık gelen sorular</p><h2>Merak ettiğiniz soruya dokunun, yanıtı burada açılsın</h2></div>
   <div class="g-sorgu" data-gr>
     <div class="g-sorgu-bas"><i></i><i></i><i></i><span>${S.marka} · botulinum toksin · soru-cevap</span></div>
     <div class="g-sorgu-ic">
@@ -230,7 +230,7 @@ module.exports = {
         <button class="g-ssoru" data-gs="4"><i>›</i>Daha önce hiç yaptırmadım; ilk seans nasıl olur?</button>
         <button class="g-ssoru" data-gs="5"><i>›</i>Ücret bilgisi neden sitede yok?</button>
       </div>
-      <div class="g-scevap" data-gcevap aria-live="polite"><span class="g-yazan">Hekim onaylı yanıt</span><b></b><p></p><a class="dgm dgm--altin" href="${r}iletisim/" style="margin-top:8px">Muayenede konuşalım</a></div>
+      <div class="g-scevap" data-gcevap aria-live="polite"><span class="g-yazan">Hekimin yanıtı</span><b></b><p></p><a class="dgm dgm--altin" href="${r}iletisim/" style="margin-top:8px">Ayrıntısı muayenede</a></div>
     </div>
   </div>
 </div></section>
@@ -239,12 +239,12 @@ module.exports = {
 <!-- ═════ KAPANIŞ ═════ -->
 <section class="g-son">
   <div class="sar">
-    <p class="g-etiket g-etiket--orta">Sonraki adım</p>
+    <p class="g-etiket g-etiket--orta">Bir adım ötesi</p>
     <h2>Şikâyetinizi dinleyerek başlayalım</h2>
     <p class="g-sonalt">Öykünüzü aldıktan sonra hangi adımların sizin için anlamlı olduğunu birlikte konuşuruz. ${S.iletisim.adres}, ${S.iletisim.ilce}.</p>
     <div class="g-sonbtn">
       <a class="dgm dgm--bir" href="${r}iletisim/">Randevu talebi oluşturun</a>
-      <a class="dgm dgm--iki" href="${r}hazirlik-listesi/arac/">Hazırlık listesini doldurun</a>
+      <a class="dgm dgm--iki" href="${r}hazirlik-listesi/arac/">Muayeneye hazırlanın</a>
     </div>
   </div>
 </section>

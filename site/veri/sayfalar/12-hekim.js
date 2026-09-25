@@ -190,12 +190,12 @@ module.exports = {
 <!-- ═════════ KAPANIŞ ═════════ -->
 <section class="g-son">
   <div class="sar">
-    <p class="g-etiket g-etiket--orta">Sonraki adım</p>
+    <p class="g-etiket g-etiket--orta">Bir adım ötesi</p>
     <h2>Önce konuşalım, sonra birlikte karar verelim</h2>
     <p class="g-sonalt">Randevu talebinizi iletişim sayfasındaki form, telefon ya da WhatsApp üzerinden iletebilirsiniz; plan muayenede birlikte kurulur.</p>
     <div class="g-sonbtn">
       <a class="dgm dgm--bir" href="${r}iletisim/">Randevu talebi oluşturun</a>
-      <a class="dgm dgm--iki" href="${r}hazirlik-listesi/arac/">Hazırlık listesini doldurun</a>
+      <a class="dgm dgm--iki" href="${r}hazirlik-listesi/arac/">Muayeneye hazırlanın</a>
     </div>
   </div>
 </section>

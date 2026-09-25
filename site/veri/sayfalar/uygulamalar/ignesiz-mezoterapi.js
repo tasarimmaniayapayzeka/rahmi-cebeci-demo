@@ -17,14 +17,14 @@ module.exports = {
       <p class="g-hero__alt">Cildin en dış katmanı, sürülen ürünlerin büyük kısmını içeri almayan bir kalkan gibidir. Elektroporasyonda çok kısa elektrik darbeleri bu kalkanda geçici aralıklar açar ve cilde sürülen solüsyon bu aralıklardan ilerler. Deri delinmez; buna karşılık ulaşılan derinlik ve içeri geçen miktar iğneli mezoterapiden azdır.</p>
       <div class="g-hero__cta">
         <a class="dgm dgm--bir" href="${r}iletisim/">Randevu talebi</a>
-        <a class="dgm dgm--iki" href="#ilkbolum">Nasıl çalışır? ↓</a>
+        <a class="dgm dgm--iki" href="#ilkbolum">Yöntemin işleyişi ↓</a>
       </div>
       <div class="g-tikler"><span><i></i>Deriye iğne girmez</span><span><i></i>Aynı gün işe dönülür</span><span><i></i>Elektronik implantta yapılmaz</span></div>
     </div>
     <div class="g-tarama" data-gr>
       <img src="${r}varliklar/gorsel/uyg-ignesiz-mezoterapi.webp" width="1400" height="788" alt="Cilt yüzeyinde parlayan şeffaf serum damlacıklarının makro görünümü" loading="eager">
       <div class="g-isin"></div>
-      <span class="g-ainot">Görsel yapay zekâ ile üretilmiştir</span>
+      <span class="g-ainot">Temsilî görsel · yapay zekâ ile üretildi</span>
     </div>
   </div>
 </section>
@@ -73,7 +73,7 @@ module.exports = {
         <div class="g-cubuk"><small><span>KÜÇÜK, SUDA ÇÖZÜNEN</span><span>Kolay ilerler</span></small><div class="g-ciz"><b class="g-cubuk-petrol" data-gw="85%"></b></div></div>
         <div class="g-cubuk"><small><span>ORTA BOY</span><span>Kısmen</span></small><div class="g-ciz"><b class="g-cubuk-mavi" data-gw="45%"></b></div></div>
         <div class="g-cubuk"><small><span>İRİ MOLEKÜL</span><span>Neredeyse hiç</span></small><div class="g-ciz"><b class="g-cubuk-bakir" data-gw="10%"></b></div></div>
-        <p style="font-size:.68rem;color:var(--sessiz);margin-top:8px">Çubuklar göreli simgedir; size özel plan muayenede kurulur.</p>
+        <p style="font-size:.68rem;color:var(--sessiz);margin-top:8px">Çubuk boyları yalnız karşılaştırma içindir; size özel plan muayenede kurulur.</p>
       </div>
       <div class="g-kutu g-b2" data-gr style="--d:140ms"><span class="g-ket">Protokol</span>
         <ol class="g-protokol">
@@ -90,7 +90,7 @@ module.exports = {
 <p>Yüzde uçuk, kıl dibi iltihabı, alevlenmiş egzama, enfeksiyon ya da kapanmamış bir yara varsa önce deri toparlanır. Vitamin, peptit, koruyucu madde ya da bitki özlerine karşı bilinen bir aşırı duyarlılığınız varsa solüsyon buna göre seçilir.</p>
 <p>Yüzünüzde sürekli kızarıklık yapan gül hastalığı (rozasea), kepeklenmeyle giden seboreik dermatit ya da yaygın iltihaplı sivilce varsa önce bunlar yatıştırılır. Kuşkulu bir ben önce büyütmeli olarak incelenir. Yüzde metal plaka ya da vida gibi bir implant varsa akımın o bölgeye verilip verilmeyeceğine ayrıca karar verilir. Yakın zamanda peeling, <a href="${r}uygulamalar/fraksiyonel-lazer/">lazer</a> ya da <a href="${r}uygulamalar/altin-igne-radyofrekans/">radyofrekans mikroiğne</a> yaptırdıysanız cildin önce kendini toparlaması gerekir.</p>
       </div>
-      <div class="g-kutu g-b2 g-kutu--gorsel" data-gr style="--d:70ms"><img src="${r}varliklar/gorsel/uyg-ignesiz-mezoterapi-2.webp" alt="Cam yüzey üzerinde şeffaf jel dalgasının yakın plan görünümü" loading="lazy"><span class="g-ainot">Görsel yapay zekâ ile üretilmiştir</span></div>
+      <div class="g-kutu g-b2 g-kutu--gorsel" data-gr style="--d:70ms"><img src="${r}varliklar/gorsel/uyg-ignesiz-mezoterapi-2.webp" alt="Cam yüzey üzerinde şeffaf jel dalgasının yakın plan görünümü" loading="lazy"><span class="g-ainot">Temsilî görsel · yapay zekâ ile üretildi</span></div>
       <div class="g-kutu g-b2 g-kutu--gece" data-gr><span class="g-ket">İlke</span><p>"İğnesiz yöntem iğneli yöntemin yedeği değil, başka bir hedefin aracıdır."</p></div>
       <div class="g-kutu g-b2" data-gr style="--d:70ms">
         <span class="g-ket">Seans sonrası</span>
@@ -99,7 +99,7 @@ module.exports = {
       <div class="g-kutu g-b2 g-kutu--cta" data-gr style="--d:140ms"><h3>Hedefinizi birlikte netleştirelim</h3><p>Hedef belli olmadan seans planı yapılmaz.</p><a class="dgm dgm--altin" href="${r}iletisim/">Randevu talebi</a></div>
       <div class="kutu kutu--acil g-b6" data-gr>
         <b>Hangi durumda hemen aramalısınız?</b>
-        <p>Seanstan sonra ciltte kaşıntılı kabarıklıklar belirir, kızarıklık yüzün başka bölgelerine yayılır ya da yanma hissi birkaç günde geçmezse kontrol gününü beklemeden ${S.iletisim.tel} numarasını arayın. Kabarıklıklar vücuda yayılır, dudakta ya da göz kapaklarında hızla şişlik gelişir, nefes almak ya da yutkunmak zorlaşırsa bizi aramakla vakit kaybetmeyin; doğrudan <b>112</b>’yi arayın ya da size en yakın acil servise gidin.</p>
+        <p>Seanstan sonra ciltte kaşıntılı kabarıklıklar belirir, kızarıklık yüzün başka bölgelerine yayılır ya da yanma hissi birkaç günde geçmezse kontrol gününü beklemeden ${S.iletisim.tel} numarasını arayın. Kabarıklıklar vücuda yayılır, dudakta ya da göz kapaklarında hızla şişlik gelişir, nefes almak ya da yutkunmak zorlaşırsa bizi aramakla vakit kaybetmeyin; doğrudan <b>112</b> Acil Çağrı Merkezi’ni arayın ya da en yakın hastanenin acil birimine başvurun.</p>
       </div>
     </div>
   </div>
@@ -107,7 +107,7 @@ module.exports = {
 
 <!-- SORU TERMİNALİ -->
 <section class="bolum bolum--buz2"><div class="sar">
-  <div class="bolum-bas" data-gr><p class="g-etiket">Sorgulayın</p><h2>Sorunuzu seçin, cevap ekrana düşsün</h2></div>
+  <div class="bolum-bas" data-gr><p class="g-etiket">Sık gelen sorular</p><h2>Merak ettiğiniz soruya dokunun, yanıtı burada açılsın</h2></div>
   <div class="g-sorgu" data-gr>
     <div class="g-sorgu-bas"><i></i><i></i><i></i><span>${S.marka.toLowerCase()} · iğnesiz mezoterapi · soru-cevap</span></div>
     <div class="g-sorgu-ic">
@@ -119,7 +119,7 @@ module.exports = {
         <button class="g-ssoru" data-gs="4"><i>›</i>Boyun ve ellere de yapılır mı?</button>
         <button class="g-ssoru" data-gs="5"><i>›</i>Ücret bilgisini nasıl öğrenebilirim?</button>
       </div>
-      <div class="g-scevap" data-gcevap aria-live="polite"><span class="g-yazan">Hekim onaylı yanıt</span><b></b><p></p><a class="dgm dgm--altin" href="${r}iletisim/" style="margin-top:8px">Muayenede konuşalım</a></div>
+      <div class="g-scevap" data-gcevap aria-live="polite"><span class="g-yazan">Hekimin yanıtı</span><b></b><p></p><a class="dgm dgm--altin" href="${r}iletisim/" style="margin-top:8px">Ayrıntısı muayenede</a></div>
     </div>
   </div>
 </div></section>
@@ -128,12 +128,12 @@ module.exports = {
 <!-- KAPANIŞ -->
 <section class="g-son">
   <div class="sar">
-    <p class="g-etiket g-etiket--orta">Sonraki adım</p>
+    <p class="g-etiket g-etiket--orta">Bir adım ötesi</p>
     <h2>Hangi yöntemin size uyduğunu birlikte seçelim</h2>
     <p class="g-sonalt">İğneli ya da iğnesiz yöntem arasındaki tercih, hedefinize ve cildinizin durumuna göre muayenede yapılır.</p>
     <div class="g-sonbtn">
       <a class="dgm dgm--bir" href="${r}iletisim/">Randevu talebi oluşturun</a>
-      <a class="dgm dgm--iki" href="${r}hazirlik-listesi/arac/">Hazırlık listesini doldurun</a>
+      <a class="dgm dgm--iki" href="${r}hazirlik-listesi/arac/">Muayeneye hazırlanın</a>
     </div>
   </div>
 </section>

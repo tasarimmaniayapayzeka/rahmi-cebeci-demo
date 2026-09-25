@@ -13,7 +13,7 @@ module.exports = {
   <div class="sar">
     <div>
       <nav class="kirinti" aria-label="Konum" style="position:relative;font-size:.76rem;color:var(--sessiz);display:flex;gap:7px;margin-bottom:18px"><a href="${r}" style="color:var(--sessiz);text-decoration:none">Ana sayfa</a> › <span>Sık sorulanlar</span></nav>
-      <p class="g-etiket">Sık sorulanlar · Soru-cevap</p>
+      <p class="g-etiket">Merak edilenler · Yirmi bir yanıt</p>
       <h1>Sıkça sorulan <span class="g-isik">sorular</span></h1>
       <p class="g-hero__alt">Bu sayfada, telefonda ve muayenede en sık duyduğumuz soruların yanıtları iki bölüm hâlinde yer alıyor. İlkinde randevu, ulaşım ve görüşme öncesi hazırlık; ikincisinde dövme silme dâhil uygulamaların seyri, sonrası, kapsam ve mevzuat yer alıyor. Yanıtlar genel bilgi verir; size özel plan muayeneden sonra kurulur.</p>
       <div class="g-hero__cta">
@@ -25,7 +25,7 @@ module.exports = {
     <div class="g-tarama" data-gr>
       <img src="${r}varliklar/gorsel/grup-saglik.webp" width="1600" height="900" alt="Üstten görülen, düzenli bir hekim çalışma masası" loading="eager">
       <div class="g-isin"></div>
-      <span class="g-ainot">Görsel yapay zekâ ile üretilmiştir</span>
+      <span class="g-ainot">Temsilî görsel · yapay zekâ ile üretildi</span>
       <div class="g-hud"><b>İki bölüm, yirmi bir soru</b><div class="g-cizgi"></div><span>Randevu · hazırlık · dövme silme · sonrası · kapsam</span></div>
     </div>
   </div>
@@ -120,9 +120,9 @@ module.exports = {
 <!-- ═════════ KAPANIŞ ═════════ -->
 <section class="g-son">
   <div class="sar">
-    <p class="g-etiket g-etiket--orta">Sonraki adım</p>
+    <p class="g-etiket g-etiket--orta">Bir adım ötesi</p>
     <h2>Başka bir sorunuz mu var?</h2>
-    <p class="g-sonalt">Randevu talep formunu doldurabilir ya da çalışma saatleri içinde telefonla ulaşabilirsiniz. Sorunuzu muayenede, hekiminize doğrudan sorarsınız.</p>
+    <p class="g-sonalt">İletişim sayfasındaki formdan randevu isteyebilir, muayenehane açıkken bizi telefonla da arayabilirsiniz. Sorunuzu muayenede, hekiminize doğrudan sorarsınız.</p>
     <div class="g-sonbtn">
       <a class="dgm dgm--bir" href="${r}iletisim/">Randevu talebi oluşturun</a>
       <a class="dgm dgm--iki" href="${r}hazirlik-listesi/arac/">Hazırlık listesine geçin</a>

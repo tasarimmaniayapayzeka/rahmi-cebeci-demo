@@ -242,12 +242,12 @@ module.exports = {
 <!-- ═════════ KAPANIŞ ═════════ -->
 <section class="g-son">
   <div class="sar">
-    <p class="g-etiket g-etiket--orta">Sonraki adım</p>
+    <p class="g-etiket g-etiket--orta">Bir adım ötesi</p>
     <h2>Aklınıza takılan bir şey varsa arayın</h2>
     <p class="g-sonalt">Yol tarifi, uygun gün ya da muayene süresiyle ilgili sorular için mesai saatlerinde bir telefon yeterli.</p>
     <div class="g-sonbtn">
       <a class="dgm dgm--bir" href="tel:${S.iletisim.telHam}">${S.iletisim.tel}</a>
-      <a class="dgm dgm--iki" href="${r}hazirlik-listesi/arac/">Hazırlık listesini doldurun</a>
+      <a class="dgm dgm--iki" href="${r}hazirlik-listesi/arac/">Muayeneye hazırlanın</a>
     </div>
   </div>
 </section>

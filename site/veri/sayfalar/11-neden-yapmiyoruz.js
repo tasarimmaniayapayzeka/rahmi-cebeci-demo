@@ -25,7 +25,7 @@ module.exports = {
     <div class="g-tarama" data-gr>
       <img src="${r}varliklar/gorsel/ic3d-gece-yuz.webp" width="900" height="1200" alt="Koyu tonlarda, sakin ifadeli bir yüz çalışması" loading="eager">
       <div class="g-isin"></div>
-      <span class="g-ainot">Görsel yapay zekâ ile üretilmiştir</span>
+      <span class="g-ainot">Temsilî görsel · yapay zekâ ile üretildi</span>
       <div class="g-hud"><b>Tek ölçüt</b><div class="g-cizgi"></div><span>Uzmanlık dalı ve Bakanlık yetki belgesi</span></div>
     </div>
   </div>
@@ -138,10 +138,10 @@ module.exports = {
         </div>
       </div>
       <div class="g-kutu g-b2 g-kutu--gece" data-gr style="--d:70ms"><span class="g-ket">İlke</span><p>“Neyin yapılmayacağını söylemek de hekimliğin bir parçasıdır.”</p></div>
-      <div class="g-kutu g-b2 g-kutu--gorsel" data-gr style="--d:140ms"><img src="${r}varliklar/gorsel/grup-saglik.webp" alt="Üstten görünen hekim çalışma masası" loading="lazy"><span class="g-ainot">Görsel yapay zekâ ile üretilmiştir</span></div>
+      <div class="g-kutu g-b2 g-kutu--gorsel" data-gr style="--d:140ms"><img src="${r}varliklar/gorsel/grup-saglik.webp" alt="Üstten görünen hekim çalışma masası" loading="lazy"><span class="g-ainot">Temsilî görsel · yapay zekâ ile üretildi</span></div>
       <div class="g-kutu g-b2" data-gr style="--d:210ms">
         <span class="g-ket">Hakkınız</span>
-        <p><b style="color:var(--murekkep)">Sormaktan çekinmeyin</b><br>Bir işlemden önce uygulayacak kişinin hekim olup olmadığını ve o işlem için yetki belgesi bulunup bulunmadığını sormak hakkınızdır.</p>
+        <p><b style="color:var(--murekkep)">Sormaktan çekinmeyin</b><br>İşlemi yapacak kişiye hekim olup olmadığını, bu işleme ilişkin yetki belgesinin bulunup bulunmadığını işlemden önce sorabilirsiniz; bu sizin hakkınızdır.</p>
       </div>
       <div class="g-kutu g-b2 g-kutu--cta" data-gr style="--d:280ms"><h3>Randevudan önce sorun</h3><p>Bir telefonla, isteğinizin burada karşılanıp karşılanmadığını öğrenebilirsiniz.</p><a class="dgm dgm--altin" href="${r}iletisim/">İletişime geçin</a></div>
     </div>
@@ -164,7 +164,7 @@ module.exports = {
 
 <!-- ═════════ SORU TERMİNALİ ═════════ -->
 <section class="bolum bolum--buz2"><div class="sar">
-  <div class="bolum-bas" data-gr><p class="g-etiket">Sorgulayın</p><h2>Sorunuzu seçin, cevap ekrana düşsün</h2></div>
+  <div class="bolum-bas" data-gr><p class="g-etiket">Sık gelen sorular</p><h2>Merak ettiğiniz soruya dokunun, yanıtı burada açılsın</h2></div>
   <div class="g-sorgu" data-gr>
     <div class="g-sorgu-bas"><i></i><i></i><i></i><span>${S.marka} · kapsam · soru-cevap</span></div>
     <div class="g-sorgu-ic">
@@ -176,7 +176,7 @@ module.exports = {
         <button class="g-ssoru" data-gs="4"><i>›</i>Bu liste ileride değişebilir mi?</button>
         <button class="g-ssoru" data-gs="5"><i>›</i>Ücreti nasıl öğrenirim?</button>
       </div>
-      <div class="g-scevap" data-gcevap aria-live="polite"><span class="g-yazan">Hekim onaylı yanıt</span><b></b><p></p><a class="dgm dgm--altin" href="${r}iletisim/" style="margin-top:8px">Muayenede konuşalım</a></div>
+      <div class="g-scevap" data-gcevap aria-live="polite"><span class="g-yazan">Hekimin yanıtı</span><b></b><p></p><a class="dgm dgm--altin" href="${r}iletisim/" style="margin-top:8px">Ayrıntısı muayenede</a></div>
     </div>
   </div>
 </div></section>
@@ -222,12 +222,12 @@ module.exports = {
 <!-- ═════════ KAPANIŞ ═════════ -->
 <section class="g-son">
   <div class="sar">
-    <p class="g-etiket g-etiket--orta">Sonraki adım</p>
+    <p class="g-etiket g-etiket--orta">Bir adım ötesi</p>
     <h2>Emin değilseniz randevudan önce sorun</h2>
     <p class="g-sonalt">İsteğinizin bu muayenehanenin kapsamına girip girmediğini bir telefon ya da WhatsApp mesajıyla öğrenebilirsiniz.</p>
     <div class="g-sonbtn">
       <a class="dgm dgm--bir" href="${r}iletisim/">İletişime geçin</a>
-      <a class="dgm dgm--iki" href="${r}hazirlik-listesi/arac/">Hazırlık listesini doldurun</a>
+      <a class="dgm dgm--iki" href="${r}hazirlik-listesi/arac/">Muayeneye hazırlanın</a>
     </div>
   </div>
 </section>

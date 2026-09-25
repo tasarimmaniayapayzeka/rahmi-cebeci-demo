@@ -13,11 +13,11 @@ module.exports = {
   <div class="sar">
     <p class="g-etiket">Yasal</p>
     <h1>İçerik ve Görsel Yayın İlkelerimiz</h1>
-    <p class="g-bhero__alt">Bu sitede bazı içerik türlerine bilerek yer vermiyoruz: ücret bilgisi, hasta yorumu ve deneyim aktarımı, öncesi–sonrası karşılaştırması, hasta görseli ve işlem anı görüntüsü. Bu tercih iki gerekçeye dayanır: yürürlükteki sağlık tanıtım mevzuatı ve hastada gerçekçi olmayan bir beklenti oluşturmama sorumluluğu. Sitedeki gerçek fotoğraflar muayenehaneye aittir; diğer görseller yapay zekâ ile üretilmiş temsilî görsellerdir ve bu durum, görselin sayfadaki tam boy hâlinin üzerinde rozetle belirtilir.</p>
+    <p class="g-bhero__alt">Sitemizde yer vermediğimiz içerikler bilinçli bir seçimin sonucudur: ücret bilgisi, hasta yorumları ve deneyim anlatıları, öncesi–sonrası karşılaştırmaları, hastalara ait fotoğraflar ve uygulama sırasında çekilmiş görüntüler. Bu seçimin iki dayanağı var: sağlık hizmetlerinin tanıtımına ilişkin güncel mevzuat ve hastada karşılığı olmayan bir beklenti uyandırmama kaygısı. Gerçek fotoğrafların tümü muayenehanemize aittir; geri kalan görseller yapay zekâ ile hazırlanmış temsilî görsellerdir ve sayfadaki büyük hâllerinin üzerinde bir rozetle belirtilir.</p>
     <div class="g-bmeta">
       <span><i></i>Son güncelleme: ${S.guncelleme}</span>
-      <span><i></i>Hasta görseli ve yorumu yayımlanmaz</span>
-      <span><i></i>Yapay zekâ görselleri rozetle işaretlenir</span>
+      <span><i></i>Hastalara ait görüntü ve yorum yok</span>
+      <span><i></i>Temsilî görseller rozetlidir</span>
     </div>
   </div>
 </section>
@@ -28,69 +28,69 @@ module.exports = {
 
     <aside class="g-bmenu" aria-label="Sayfa içi başlıklar">
       <b>Bu sayfada</b>
-      <a href="#kisaca-cerceve">Çerçeve kısaca</a>
-      <a href="#yayimlamadiklarimiz">Yayımlamadıklarımız</a>
-      <a href="#yayimladiklarimiz">Yayımladıklarımız</a>
-      <a href="#gorsellerin-kaynagi">Görsellerin kaynağı</a>
-      <a href="#icerik-ve-onay">Hazırlık ve onay</a>
-      <a href="#guncelleme-takvimi">Güncelleme takvimi</a>
-      <a href="#ilgili-basliklar">İlgili başlıklar</a>
+      <a href="#kisaca-cerceve">Dayanak</a>
+      <a href="#yayimlamadiklarimiz">Yer vermediğimiz içerikler</a>
+      <a href="#yayimladiklarimiz">Sitede bulacaklarınız</a>
+      <a href="#gorsellerin-kaynagi">Fotoğraf ve temsilî görsel</a>
+      <a href="#icerik-ve-onay">Hekim onayı</a>
+      <a href="#guncelleme-takvimi">Gözden geçirme düzeni</a>
+      <a href="#ilgili-basliklar">Diğer metinler</a>
     </aside>
 
     <div class="g-bgov">
 
       <div class="g-bblk" id="kisaca-cerceve">
-        <h2>Çerçeve kısaca</h2>
+        <h2>Dayanak</h2>
         <div class="yazi">
-          <p>Sağlık hizmeti sunucularının tanıtım ve bilgilendirme faaliyetleri ayrı bir yönetmelikle düzenlenir. Bu düzenlemenin özü şudur: sağlık hizmeti, ticari bir mal gibi pazarlanacak bir şey değildir; internet sitesinde yapılabilecek olan, hastanın bilinçli karar vermesine yardımcı olacak nesnel bilgilendirmedir. Talep yaratmaya, kıyaslamaya ya da yönlendirmeye dönük her öğe bu çerçevenin dışında kalır. İlgili düzenlemelerin özetini <a href="${r}mevzuat/">mevzuat sayfasında</a> bulabilirsiniz.</p>
-          <p>Denetim birden fazla kurumdan gelir. Mevzuata uygunluğu Sağlık Bakanlığı ve il sağlık müdürlükleri denetler; aynı içerik, tüketiciyi yanıltıcı reklam yönünden Reklam Kurulu tarafından ayrıca incelenebilir. Sınırın tam olarak nereden geçtiğini tartışmak yerine, o sınıra hiç yaklaşmamayı tercih ediyoruz.</p>
+          <p>Sağlık alanında hizmet verenlerin kendilerini nasıl tanıtabileceği, bu konuya özel bir yönetmelikle belirlenmiştir. Yönetmeliğin temel yaklaşımı açıktır: sağlık hizmeti bir tüketim ürünü gibi satışa sunulamaz; bir internet sitesinin yapabileceği, hastanın bilgiye dayalı karar vermesini kolaylaştıran tarafsız bir anlatım sunmaktır. Talep oluşturan, karşılaştırma yapan ya da hastayı belli bir yere yönelten her unsur bu sınırın dışında kalır. Konuyla ilgili düzenlemelerin kısa bir özeti <a href="${r}mevzuat/">mevzuat sayfasında</a> yer alıyor.</p>
+          <p>Bu içerikleri tek bir kurum denetlemez. Tanıtım kurallarına uyulup uyulmadığını il sağlık müdürlükleri ile Sağlık Bakanlığı inceler; aynı metin, tüketiciyi yanıltıp yanıltmadığı açısından Reklam Kurulu’nun da gündemine gelebilir. Biz sınırın tam yerini aramak yerine ona hiç yaklaşmamayı seçiyoruz.</p>
         </div>
       </div>
 
       <div class="g-bblk" id="yayimlamadiklarimiz">
-        <h2>Neleri yayımlamıyoruz, neden?</h2>
-        <p class="giris">Dört başlık ve her biri için ayrı bir gerekçe.</p>
+        <h2>Yer vermediğimiz içerikler ve gerekçeleri</h2>
+        <p class="giris">Dört içerik türü, her biri için ayrı bir açıklama.</p>
         <div class="izgara izgara--2">
           <div class="kart kart--duz">
             <span class="kart__ikon">${ik.kalkan}</span>
-            <h3>Ücret bilgisi ve teklif</h3>
-            <p>Sağlık hizmetinde ücret, bir listeden seçilecek bir kalem değildir. Hangi uygulamanın yapılacağı ancak muayeneden sonra netleşir; muayene olmadan söylenen bir rakam, gerçekte uygulanacak planı bilmeden verilmiş olur. Mevzuat da sağlık hizmetinin ücret üzerinden duyurulmasına ve özel teklif ilanına izin vermez. Ücret bilgisi yalnızca muayenede, size özgü plan konuşulduktan sonra kişisel olarak paylaşılır.</p>
+            <h3>Ücret ve teklif duyurusu</h3>
+            <p>Sağlık hizmetinin bedeli, bir katalogdan seçilen kalem gibi belirlenemez. Size hangi uygulamanın uygun olduğu muayenede ortaya çıkar; muayeneden önce söylenecek bir tutar, yapılacak işi bilmeden verilmiş olur. Yönetmelik de sağlık hizmetlerinin ücretle tanıtılmasını ve özel teklif duyurularını yasaklar. Tutar, muayenede size uygun plan belirlendikten sonra yalnızca sizinle paylaşılır.</p>
           </div>
           <div class="kart kart--duz">
             <span class="kart__ikon">${ik.kalp}</span>
-            <h3>Hasta yorumu ve teşekkür yazısı</h3>
-            <p>Bir kişinin memnuniyetini aktarmak, onda olanın sizde de olacağı izlenimini yaratır; oysa aynı uygulamanın sonucu kişiden kişiye değişebilir. Deneyim paylaşımı ayrıca kişinin sağlık durumunu açığa çıkararak mahremiyetini zedeler ve mevzuat bakımından tanıtım sayılır. Bu yüzden sitede hasta yorumu, teşekkür mektubu, memnuniyet oranı ya da yıldız puanı yer almaz; başka platformlarda bu tür içerik oluşturulması da istenmez.</p>
+            <h3>Yorum ve teşekkür mesajları</h3>
+            <p>Birinin memnun kaldığını anlatmak, aynı sonucun size de ulaşacağı düşüncesini doğurur; oysa aynı uygulama iki kişide farklı sonuç verebilir. Deneyim anlatıları, kişinin sağlık bilgisini ortaya koyduğu için mahremiyetini de zedeler ve mevzuata göre tanıtım kapsamına girer. Bu nedenle sitede yorum, teşekkür mesajı, memnuniyet yüzdesi ya da puan bulunmaz; hastalarımızdan başka platformlarda bu tür paylaşımlar yapmaları da istenmez.</p>
           </div>
           <div class="kart kart--duz">
             <span class="kart__ikon">${ik.mercek}</span>
             <h3>Öncesi–sonrası karşılaştırması</h3>
-            <p>Bu görseller ilk bakışta en nesnel kanıt gibi görünür, ama en çok yanıltabilecek olanlardır. Işığın yönü, poz, çekim mesafesi, makyaj, ödem ve fotoğrafın çekildiği saat görüntüyü belirgin biçimde değiştirir. Böyle bir görsel size ne olacağını değil, bir başkasında olanın seçilmiş bir anını gösterir. Beklenti yaratma etkisi nedeniyle mevzuat da bu paylaşımlara izin vermez.</p>
+            <p>Yan yana konmuş iki fotoğraf tarafsız bir kanıt izlenimi verir, fakat yanıltma olasılığı en yüksek görseller de bunlardır. Işığın geliş açısı, duruş, objektife uzaklık, makyaj, şişlik ve çekimin günün hangi saatinde yapıldığı sonucu belirgin biçimde değiştirir. Böyle bir karşılaştırma sizde ne olacağını anlatmaz; bir başkasında yaşanmış bir anın seçilmiş karesini gösterir. Beklenti oluşturduğu için mevzuat da bu görsellerin paylaşılmasını kabul etmez.</p>
           </div>
           <div class="kart kart--duz">
             <span class="kart__ikon">${ik.damla}</span>
-            <h3>İşlem anı görüntüsü</h3>
-            <p>İğne, kanül, kanama ya da uygulama anını gösteren fotoğraf ve videolar bilgi vermekten çok dikkat çekmeye yarar. İzleyende ya gereksiz bir kaygı ya da yanıltıcı bir kolaylık algısı uyandırır; üstelik hastanın bedenini tanıtım malzemesine dönüştürür. Sitede uygulama anına ait görüntü yer almaz.</p>
+            <h3>Uygulama sırasında çekilen görüntüler</h3>
+            <p>İğnenin, kanülün, kanamanın ya da uygulama sürecinin gösterildiği fotoğraf ve videolar bilgilendirmekten çok göz almaya yöneliktir. İzleyen kişide ya yersiz bir endişe ya da işin olduğundan kolay olduğu yanılgısını doğurur; ayrıca hastanın bedenini tanıtımın bir parçası hâline getirir. Bu nedenle sitede uygulama sırasında çekilmiş görüntü bulunmaz.</p>
           </div>
         </div>
         <div class="kutu kutu--uyari">
-          <b>Hastaya ait hiçbir içerik yayımlanmaz</b>
-          <p>Hastaya ait görüntü, kayıt ya da vaka anlatımı, kişi tanınmayacak hâle getirilse bile tanıtım amacıyla yayımlanmaz. Klinik takip için çekilen fotoğraflar yalnızca hasta dosyasında saklanır.</p>
+          <b>Hastalarımıza ait içerik paylaşılmaz</b>
+          <p>Bir hastaya ait fotoğraf, kayıt ya da vaka öyküsü, kimliği gizlenmiş olsa bile tanıtımda kullanılmaz. Tedavinin izlenmesi için çekilen fotoğraflar hastanın kendi dosyasında saklanır, başka bir yerde kullanılmaz.</p>
         </div>
       </div>
 
       <div class="g-bblk" id="yayimladiklarimiz">
-        <h2>Neleri yayımlıyoruz?</h2>
+        <h2>Sitede neler bulacaksınız?</h2>
         <div class="yazi">
-          <p>Kapsamı daralttığımızda geriye asıl işe yarayan bilgiler kalır. Sitede şunları bulabilirsiniz:</p>
+          <p>Bu içerikleri dışarıda bıraktığımızda, karar vermenizde gerçekten işe yarayacak bilgiler öne çıkıyor. Sayfalarda şunlara yer veriyoruz:</p>
           <ul>
-            <li>Bir yakınmanın ardında hangi farklı nedenlerin olabileceği ve bunların nasıl ayırt edildiği.</li>
-            <li>Bir uygulamanın ne olduğu ve en az bunun kadar önemli olarak ne olmadığı.</li>
-            <li>Hangi durumlarda uygulanmadığı ya da ertelendiği.</li>
-            <li>Olası etkilerin ve istenmeyen durumların açıkça sıralanması.</li>
-            <li>Muayenehanenin kapsamı dışında kalan ve başka bir branşa başvurmanızı önerdiğimiz konular.</li>
-            <li>Randevudan önce hazırlanmanızı kolaylaştıracak nesnel bilgiler.</li>
+            <li>Aynı yakınmanın hangi farklı nedenlerden kaynaklanabileceği ve bu nedenlerin birbirinden nasıl ayrıldığı.</li>
+            <li>Uygulamanın tanımı ve en az o kadar önemli olan yanıyla, neyi kapsamadığı.</li>
+            <li>Uygulamanın yapılmadığı ya da ileri bir tarihe bırakıldığı durumlar.</li>
+            <li>Beklenen etkiler ile istenmeyen durumların açık bir dökümü.</li>
+            <li>Muayenehanemizde ele alınmayan ve başka bir uzmanlık dalına yönelmenizi önerdiğimiz konular.</li>
+            <li>Randevuya hazırlanırken işinize yarayacak tarafsız bilgiler.</li>
           </ul>
-          <p>Marka adları konusundaki ilkemiz de aynı gerekçeye dayanır. Enjeksiyon uygulamalarında kullanılan ürünlerin marka adlarına yer verilmez; hangi ürünün kullanılacağına muayeneden sonra, kişiye göre karar verilir. Muayenehanedeki cihazların marka ve modeli ise yalnızca bilgi amacıyla, <a href="${r}klinik/">klinik sayfasındaki</a> cihaz listesinde ve ilgili uygulama sayfasındaki tek bir “kullanılan cihaz” satırında anılır; metinlerde cihazın genel adı kullanılır. Halk arasında yaygın adlarla bilinen uygulamalarda ise uygulamanın tıbbi karşılığı da aynı sayfada belirtilir.</p>
+          <p>Marka adlarına ilişkin tutumumuz da aynı düşünceden doğar. Enjeksiyonla yapılan uygulamalardaki ürünlerin markası sitede anılmaz; hangi ürünün seçileceği muayeneden sonra, kişiye özel olarak belirlenir. Muayenehanedeki cihazların marka ve modeli yalnızca bilgi vermek için, <a href="${r}klinik/">klinik sayfasındaki</a> cihaz listesinde ve ilgili uygulama sayfasındaki tek bir “kullanılan cihaz” satırında geçer; metinlerde cihazın genel adı kullanılır. Halk arasında farklı adlarla bilinen uygulamalarda da tıbbi adı aynı sayfada belirtilir.</p>
         </div>
         <div class="dgm-sira">
           <a class="dgm dgm--iki" href="${r}yaklasimimiz/neden-bazi-islemleri-yapmiyoruz/">Kapsamımızın sınırı ${ik.ok}</a>
@@ -98,84 +98,84 @@ module.exports = {
       </div>
 
       <div class="g-bblk" id="gorsellerin-kaynagi">
-        <h2>Görseller nereden geliyor, nasıl işaretleniyor?</h2>
+        <h2>Fotoğraflar ve temsilî görseller</h2>
         <div class="yazi">
-          <p>Sitede iki tür görsel kullanılır ve bunların hiçbiri hasta görüntüsü değildir. Birinci grup gerçek fotoğraflardır: hekimin portreleri, muayenehanenin bekleme salonu, karşılama bankosu, uygulama odası ve cihaz odası ile muayenehanede kullanılan cihazların fotoğrafları muayenehaneye aittir. Bu fotoğraflarda kişi, mekân ve cihazlar olduğundan farklı gösterilmez; bu nedenle üzerlerinde yapay zekâ rozeti bulunmaz.</p>
-          <p>İkinci grup, anlatımı desteklemek için yapay zekâ ile üretilmiş temsilî görsellerdir: yüz ve bölge görselleri, cilt katmanlarını gösteren kesitler, doku ve ortam görselleri gibi. Bu görsellerin sayfadaki tam boy hâlinin üzerinde <b>“Görsel yapay zekâ ile üretilmiştir”</b> rozeti bulunur. Rozet küçük puntoyla gizlenmez ya da sayfanın sonuna taşınmaz; görselin kendisi üzerinde okunur biçimde durur. Bölge ve cilt sorunu sayfalarında uygulama tablosunun yanında beliren küçük önizleme kartı ise aynı yapay zekâ görsellerinin küçültülmüş tekrarıdır; bu kartta ayrı bir rozet yer almaz, görselin rozetli tam boy hâli bağlantı verilen uygulama sayfasındadır.</p>
-          <p>Yapay zekâ ile üretilen görsellerin kullanılmadığı alanlar da bellidir: klinik bulgu anlatımı, bir tedavi sonucunu çağrıştıracak her tür kompozisyon, hekimin ya da çalışanların yerine geçecek bir temsil ve muayenehanenin mekânını ya da cihazlarını gerçekmiş gibi gösterme. Amaç, bir görsele bakan herkesin onun muayenehaneye ait gerçek bir fotoğraf mı, yoksa anlatımı destekleyen temsilî bir öğe mi olduğunu duraksamadan anlayabilmesidir.</p>
+          <p>Sitede iki çeşit görsel var; ikisi de hasta görüntüsü içermez. İlki gerçek fotoğraflardır: hekimin portreleri, bekleme salonu, karşılama bankosu, uygulama odası, cihaz odası ve muayenehanede kullanılan cihazların fotoğrafları muayenehanemize aittir. Bu fotoğraflarda kişiler, mekân ve cihazlar olduğundan başka türlü gösterilmez; bu yüzden üzerlerinde yapay zekâ rozeti yer almaz.</p>
+          <p>İkincisi, anlatılanı somutlaştırmak için yapay zekâ ile hazırlanmış temsilî görsellerdir: yüz ve bölge çizimleri, cilt katmanlarını gösteren kesitler, doku ve ortam görselleri bu gruptadır. Bu görsellerin sayfadaki büyük hâlinde <b>“Temsilî görsel · yapay zekâ ile üretildi”</b> rozeti yer alır. Rozet küçük bir dipnota ya da sayfa sonuna saklanmaz; doğrudan görselin üzerinde, okunabilir biçimde durur. Bölge ve cilt sorunu sayfalarında uygulama tablosunun yanında açılan küçük önizleme kartında ise aynı görsellerin küçük bir kopyası gösterilir; bu kartta ayrıca rozet bulunmaz, rozetli büyük hâli bağlantının götürdüğü uygulama sayfasındadır.</p>
+          <p>Yapay zekâ görsellerine başvurmadığımız alanlar da nettir: klinik bir bulguyu anlatmak, herhangi bir tedavi sonucunu düşündürecek bir kompozisyon kurmak, hekimi ya da ekibi temsil etmek, muayenehanenin kendisini veya cihazlarını gerçekmiş gibi göstermek. Amacımız, sitedeki herhangi bir görsele bakan kişinin onun muayenehaneye ait gerçek bir fotoğraf mı, yoksa konuyu anlatmaya yardım eden temsilî bir çizim mi olduğunu hemen ayırt edebilmesi.</p>
         </div>
       </div>
 
       <div class="g-bblk" id="icerik-ve-onay">
-        <h2>İçerikleri kim hazırlıyor, kim onaylıyor?</h2>
+        <h2>Metinleri kim yazıyor, kim onaylıyor?</h2>
         <div class="yazi">
-          <p>Sitedeki tıbbi içeriklerin tümü, muayenehanenin sahibi ve sorumlu tabibi <b>${S.hekim.tam}</b> (${S.hekim.dallar}) tarafından hazırlanır ya da hazırlanan taslak tıbbi doğruluk yönünden denetlenip onaylanır. Onaydan geçmemiş tıbbi metin yayımlanmaz.</p>
-          <p>Tıbbi sayfaların her biri bir künyeyle biter. Bu kutuda üç şey yazar: metni onaylayan hekim, sayfanın en son gözden geçirildiği tarih ve bildirimleriniz için site editörünün e-posta adresi (<a href="mailto:${S.iletisim.editor}">${S.iletisim.editor}</a>). Mevzuat bu bilgilerin belirtilmesini ister; bizim için asıl değeri, okuduğunuz metnin eskimiş olup olmadığını tek bakışta anlamanıza yardımcı olmasıdır.</p>
+          <p>Sitede yer alan tıbbi metinlerin hepsini muayenehanenin sahibi ve sorumlu tabibi <b>${S.hekim.tam}</b> (${S.hekim.dallar}) yazar ya da bir taslak üzerinden tıbbi doğruluğunu inceleyip onaylar. Hekimin onayından geçmeyen hiçbir tıbbi metin yayına girmez.</p>
+          <p>Tıbbi sayfaların altında birer künye yer alır. Bu kutuda metni onaylayan hekimin adı, sayfanın son kez gözden geçirildiği tarih ve bildirimleriniz için site editörünün e-posta adresi (<a href="mailto:${S.iletisim.editor}">${S.iletisim.editor}</a>) yer alır. Mevzuat bu bilgilerin yazılmasını şart koşar; bizim için asıl yararı, okuduğunuz metnin güncel olup olmadığını bir bakışta görebilmenizdir.</p>
         </div>
         <ol class="adimlar">
           <li>
             <h4>Taslak ve kaynak kontrolü</h4>
-            <p>Konu belirlenir, güncel klinik çerçeve incelenir; doğruluğundan emin olunmayan ayrıntı metne girmez.</p>
+            <p>Ele alınacak konu seçilir, güncel tıbbi bilgi gözden geçirilir; doğruluğundan kuşku duyulan hiçbir ayrıntı metne alınmaz.</p>
           </li>
           <li>
             <h4>Tıbbi denetim</h4>
-            <p>Hekim metni satır satır okur; abartılı anlatım, sonuç vaadi ve yönlendirici dil ayıklanır.</p>
+            <p>Hekim metnin her satırını okur; abartılı ifadeler, sonuca dair vaatler ve hastayı yönlendiren anlatım çıkarılır.</p>
           </li>
           <li>
             <h4>Mevzuat denetimi</h4>
-            <p>Metin; tanıtım, kişisel veri ve reklam mevzuatı açısından ayrıca kontrol edilir.</p>
+            <p>Metin ayrıca tanıtım kuralları, kişisel verilerin korunması ve reklam düzenlemeleri bakımından kontrol edilir.</p>
           </li>
           <li>
             <h4>Yayın ve tarihleme</h4>
-            <p>Sayfa yayına alınır ve künyeye güncelleme tarihi eklenir.</p>
+            <p>Yayına alınan sayfanın künyesine gözden geçirme tarihi işlenir.</p>
           </li>
         </ol>
       </div>
 
       <div class="g-bblk" id="guncelleme-takvimi">
-        <h2>Güncelleme takvimi</h2>
+        <h2>Gözden geçirme düzeni</h2>
         <div class="yazi">
-          <p>İçerikler yayımlandıktan sonra kendi hâline bırakılmaz. Uyguladığımız düzen şöyledir:</p>
+          <p>Bir sayfa yayına girdikten sonra da takip edilmeye devam eder. İzlediğimiz yol şöyle:</p>
           <ul>
-            <li><b>Düzenli aralıklarla</b> bütün tıbbi sayfalar baştan sona okunur ve güncelliği doğrulanır.</li>
-            <li><b>Uygulama sayfaları</b> ayrıca kapsam ve uygulanmayan durumlar yönünden daha sık gözden geçirilir.</li>
-            <li><b>Mevzuat değiştiğinde</b> yasal metinler ve değişiklikten etkilenen bütün sayfalar makul bir süre içinde güncellenir.</li>
-            <li><b>Muayenehanedeki uygulamada bir değişiklik olduğunda</b> ilgili sayfa beklenmeden düzeltilir.</li>
-            <li>Bir sayfa güncellendiğinde künyesindeki tarih de yenilenir; içerikte değişiklik yoksa tarihe dokunulmaz.</li>
+            <li><b>Belirli aralıklarla</b> tüm tıbbi sayfalar baştan sona yeniden okunur ve bilgilerin güncel olduğu doğrulanır.</li>
+            <li><b>Uygulama sayfaları</b> kapsamları ve uygulamanın yapılmadığı durumlar bakımından daha sık elden geçirilir.</li>
+            <li><b>Yeni bir düzenleme çıktığında</b> yasal metinlerle birlikte bundan etkilenen tüm sayfalar makul bir süre içinde yenilenir.</li>
+            <li><b>Muayenehanede bir uygulama değiştiğinde</b> bununla ilgili sayfa bir sonraki gözden geçirme beklenmeden düzeltilir.</li>
+            <li>Güncellenen sayfanın künyesindeki tarih de değişir; içerik aynı kaldıysa tarih yerinde durur.</li>
           </ul>
-          <p>Bir sayfada hatalı, eksik ya da güncelliğini yitirmiş bir bilgi görürseniz bize bildirmenizi rica ederiz. Bildirimlerinizi <a href="mailto:${S.iletisim.editor}">${S.iletisim.editor}</a> adresine gönderebilirsiniz; incelenir ve gerekiyorsa düzeltilir.</p>
+          <p>Bir sayfada yanlış, eksik ya da artık geçerliliği kalmamış bir bilgiyle karşılaşırsanız bize haber vermenizden memnuniyet duyarız. Bildiriminizi <a href="mailto:${S.iletisim.editor}">${S.iletisim.editor}</a> adresine yazabilirsiniz; her bildirim incelenir, gerekiyorsa sayfa düzeltilir.</p>
         </div>
       </div>
 
       <div class="g-bblk" id="ilgili-basliklar">
-        <h2>Bunları da okuyabilirsiniz</h2>
+        <h2>Diğer metinler</h2>
         <div class="izgara izgara--2">
           <a class="kart" href="${r}yasal/kullanim-kosullari/">
             <h3>Kullanım koşulları</h3>
-            <p>Site içeriğinin neden yalnızca bilgilendirme amaçlı olduğu.</p>
+            <p>Sitedeki içeriğin tıbbi görüşün yerini neden tutmadığı.</p>
           </a>
           <a class="kart" href="${r}yasal/hasta-haklari/">
             <h3>Hasta hakları</h3>
-            <p>Mahremiyet, bilgilendirilme ve onam haklarınız.</p>
+            <p>Bilgi alma, onam verme ve mahremiyetinizin korunması.</p>
           </a>
           <a class="kart" href="${r}yasal/kvkk-aydinlatma-metni/">
             <h3>KVKK aydınlatma metni</h3>
-            <p>Klinik takip fotoğrafları da dâhil olmak üzere verilerinizin işlenişi.</p>
+            <p>Takip fotoğrafları dâhil kişisel verilerinizin nasıl işlendiği.</p>
           </a>
           <a class="kart" href="${r}yaklasimimiz/">
             <h3>Yaklaşımımız</h3>
-            <p>Uygulamadan önce değerlendirme ilkesi.</p>
+            <p>Her uygulamadan önce değerlendirme yapma ilkemiz.</p>
           </a>
           <a class="kart" href="${r}bilgi/">
             <h3>Bilgi merkezi</h3>
-            <p>Bu ilkelere göre hazırlanmış bütün bilgilendirme içerikleri.</p>
+            <p>Burada anlatılan ilkelerle yazılmış tüm bilgilendirme yazıları.</p>
           </a>
         </div>
       </div>
 
       <div class="g-bblk">
-        <h2>Görüş ve düzeltme önerisi</h2>
-        <p class="giris">İçeriklerimizle ilgili görüşlerinizi ya da randevu talebinizi iletişim sayfasından bize ulaştırabilirsiniz.</p>
+        <h2>Önerileriniz ve düzeltmeleriniz</h2>
+        <p class="giris">Sitedeki içerikler hakkındaki düşüncelerinizi ya da randevu isteğinizi iletişim sayfası aracılığıyla bize ulaştırabilirsiniz.</p>
         <div class="dgm-sira">
           <a class="dgm dgm--bir" href="${r}iletisim/">İletişim</a>
         </div>

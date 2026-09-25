@@ -23,8 +23,8 @@ module.exports = {
       <a class="kart" data-egim href="${r}uygulamalar/#${slugla(g.grup)}" data-reveal style="--d:${i * 70}ms">
         <span class="kart__ikon">${ik[g.ikon]}</span>
         <h3>${g.grup}</h3>
-        <p>${g.ogeler.slice(0, 4).map(o => o[0]).join(' · ')}${g.ogeler.length > 4 ? ' ve diğerleri' : ''}</p>
-        <span class="kart__ok">${g.ogeler.length} uygulama ${ik.ok}</span>
+        <p>${g.ogeler.length > 4 ? g.ogeler.slice(0, 4).map(o => o[0]).join(', ') + ' ve diğerleri' : g.ogeler.slice(0, -1).map(o => o[0]).join(', ') + ' ve ' + g.ogeler[g.ogeler.length - 1][0]}</p>
+        <span class="kart__ok">${g.ogeler.length} ayrı sayfa ${ik.ok}</span>
       </a>`).join('');
 
     const sorunKart = S.sorunlar.slice(0, 8).map(([ad, s], i) => `
@@ -147,8 +147,8 @@ module.exports = {
       </div>
       <div class="yolc-sahne" data-reveal>
         <div class="yolc-ciz" aria-hidden="true"><i></i></div>
-        <span class="g-ainot">Görsel yapay zekâ ile üretilmiştir</span>
-        ${['Muayene', 'Planlama', 'Uygulama günü', 'Takip ve kontrol'].map((ad, i) =>
+        <span class="g-ainot">Temsilî görsel · yapay zekâ ile üretildi</span>
+        ${['Muayene', 'Plan', 'İşlem günü', 'Kontroller'].map((ad, i) =>
           `<div class="yolc-adim"><span class="yolc-no">${i + 1}</span><img src="${r}varliklar/gorsel/asama-${['muayene', 'plan', 'gun', 'takip'][i]}.webp" width="400" height="400" alt="" loading="lazy"><b>${ad}</b><p></p></div>`).join('')}
       </div>
     </div>
@@ -269,8 +269,8 @@ module.exports = {
     <div class="izgara izgara--2">
       <a class="kart" data-egim href="${r}hazirlik-listesi/arac/" data-reveal style="--d:0ms">
         <span class="kart__ikon">${ik.liste}</span>
-        <span class="rozet">12 madde · 2 dakika</span>
-        <h3 style="margin-top:8px">Görüşme öncesi hazırlık listesi</h3>
+        <span class="rozet">12 madde, yaklaşık 2 dakika</span>
+        <h3 style="margin-top:8px">Muayeneye hazırlık listesi</h3>
         <p>Muayenede söylemeniz gereken ilaç, sağlık öyküsü ve önceki uygulama bilgilerini toparlamanıza yardım eder. Tanı koymaz, tarama yapmaz, işlem önermez ve uygunluk kararı vermez.</p>
         <span class="kart__ok">Listeyi açın ${ik.ok}</span>
       </a>
@@ -296,9 +296,9 @@ module.exports = {
           <p class="giris" style="margin-top:10px">Bir kategori seçerek listeyi daraltabilirsiniz. Burada yer almayan sorular için sık sorulan sorular sayfasına göz atın.</p>
         </div>
         <div class="sss2__filtre" data-sss-filtre role="group" aria-label="Soru kategorileri">
-          <button type="button" data-kat="hepsi" aria-pressed="true">Tümü <span class="adet">8</span></button>
-          <button type="button" data-kat="randevu" aria-pressed="false">Randevu ve süreç <span class="adet">3</span></button>
-          <button type="button" data-kat="uygulama" aria-pressed="false">Uygulamalar <span class="adet">3</span></button>
+          <button type="button" data-kat="hepsi" aria-pressed="true">Hepsi <span class="adet">8</span></button>
+          <button type="button" data-kat="randevu" aria-pressed="false">Randevu ve işleyiş <span class="adet">3</span></button>
+          <button type="button" data-kat="uygulama" aria-pressed="false">Uygulama soruları <span class="adet">3</span></button>
           <button type="button" data-kat="kapsam" aria-pressed="false">Kapsam ve mevzuat <span class="adet">2</span></button>
         </div>
         <div class="dgm-sira">
@@ -338,7 +338,7 @@ module.exports = {
         </ul>
         <div class="dgm-sira" style="margin-top:26px">
           <a class="dgm dgm--bir" href="${r}iletisim/">Randevu talebi oluşturun</a>
-          <a class="dgm dgm--iki" href="https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(S.iletisim.adres + ' ' + S.iletisim.ilce)}" rel="noopener">Yol tarifi alın</a>
+          <a class="dgm dgm--iki" href="https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(S.iletisim.adres + ' ' + S.iletisim.ilce)}" rel="noopener">Haritada rota açın</a>
         </div>
       </div>
       <div data-reveal style="--d:120ms">

@@ -12,19 +12,19 @@ module.exports = {
   <div class="sar">
     <div>
       <nav class="kirinti" aria-label="Konum" style="position:relative;font-size:.76rem;color:var(--sessiz);display:flex;gap:7px;margin-bottom:18px"><a href="${r}" style="color:var(--sessiz);text-decoration:none">Ana sayfa</a> › <a href="${r}uygulamalar/" style="color:var(--sessiz);text-decoration:none">Uygulamalar</a> › <span>Saç PRP</span></nav>
-      <p class="g-etiket">Saç ve Saçlı Deri · PRP</p>
+      <p class="g-etiket">Saç uygulaması · PRP</p>
       <h1>Saç PRP: <span class="g-isik">kendi kanınızdan hazırlanan plazma</span></h1>
       <p class="g-hero__alt">Saç PRP’de koldan alınan az miktarda kan kapalı bir tüpte santrifüj edilir; trombositten zengin plazma bölümü ayrılarak aynı seansta saçlı deriye uygulanır. Hedeflenen, kıl kökünü çevreleyen dokunun kendi onarım süreçlerinin desteklenmesidir. Yeni saç kökü oluşturmaz ve dökülmenin nedenini araştırmanın yerine geçmez.</p>
       <div class="g-hero__cta">
         <a class="dgm dgm--bir" href="${r}iletisim/">Randevu talebi</a>
-        <a class="dgm dgm--iki" href="#ilkbolum">Nasıl ilerler? ↓</a>
+        <a class="dgm dgm--iki" href="#ilkbolum">Seyrini okuyun ↓</a>
       </div>
       <div class="g-tikler"><span><i></i>Hazırlık ve uygulama aynı seansta</span><span><i></i>Plazma yalnız size ait, saklanmaz</span><span><i></i>Karar kan tetkikiyle birlikte</span></div>
     </div>
     <div class="g-tarama" data-gr>
       <img src="${r}varliklar/gorsel/uyg-sac-prp.webp" width="1400" height="788" alt="Işıkta parlayan sağlıklı saç tellerinin yakın plan görüntüsü" loading="eager">
       <div class="g-isin"></div>
-      <span class="g-ainot">Görsel yapay zekâ ile üretilmiştir</span>
+      <span class="g-ainot">Temsilî görsel · yapay zekâ ile üretildi</span>
     </div>
   </div>
 </section>
@@ -68,11 +68,11 @@ module.exports = {
         <p><b style="color:var(--murekkep)">Yanıtın değerlendirilmesi</b><br>Tek seansta fark beklenmez; saç döngüsü aylar sürer ve beklenen yanıt görülmezse program sürdürülmez.</p>
       </div>
       <div class="g-kutu g-b2" data-gr style="--d:70ms">
-        <span class="g-ket">SÜREÇ ÇİZGİSİ</span>
+        <span class="g-ket">ZAMAN ÖLÇEĞİ</span>
         <div class="g-cubuk"><small><span>SEANS</span><span>40–60 dk</span></small><div class="g-ciz"><b class="g-cubuk-mavi" data-gw="18%"></b></div></div>
-        <div class="g-cubuk"><small><span>SEANS ARALIĞI</span><span>4–6 hafta</span></small><div class="g-ciz"><b class="g-cubuk-petrol" data-gw="55%"></b></div></div>
-        <div class="g-cubuk"><small><span>DEĞERLENDİRME</span><span>3. ay ve sonrası</span></small><div class="g-ciz"><b class="g-cubuk-bakir" data-gw="90%"></b></div></div>
-        <p style="font-size:.7rem;color:var(--sessiz);margin-top:8px">Çubuklar göreli simgedir; asıl plan muayenede belirlenir.</p>
+        <div class="g-cubuk"><small><span>SEANSLAR ARASI</span><span>4–6 hafta</span></small><div class="g-ciz"><b class="g-cubuk-petrol" data-gw="55%"></b></div></div>
+        <div class="g-cubuk"><small><span>DEĞERLENDİRME</span><span>3. aydan itibaren</span></small><div class="g-ciz"><b class="g-cubuk-bakir" data-gw="90%"></b></div></div>
+        <p style="font-size:.7rem;color:var(--sessiz);margin-top:8px">Çubuk boyları yalnız karşılaştırma içindir; asıl plan muayenede belirlenir.</p>
       </div>
       <div class="g-kutu g-b2" data-gr style="--d:140ms"><span class="g-ket">PROTOKOL</span>
         <ol class="g-protokol">
@@ -86,15 +86,15 @@ module.exports = {
       <div class="g-kutu g-b2" data-gr style="--d:70ms"><span class="g-ket">SONRASI</span>
         <p style="font-size:.92rem">Aynı gün olağan düzene dönülebilir. İlk yarım gün saçlı deri yıkanmaz, kaşınmaz ve ovalanmaz; şapka, bere ya da sıkı toka takılmaz, kan alınan kolla ağır yük taşınmaz. İki gün boyunca hamam, sauna, havuz, deniz ve yoğun terleten egzersiz ertelenir; saç boyası ve kimyasal işlemler de bu süreden sonraya bırakılır. Sonrasında ılık su ve yumuşak şampuanla normal yıkamaya geçilir; iğne noktaları birkaç gün dokununca duyarlı kalabilir.</p>
       </div>
-      <div class="g-kutu g-b2" data-gr style="--d:140ms"><span class="g-ket">OLASI ETKİLER</span>
+      <div class="g-kutu g-b2" data-gr style="--d:140ms"><span class="g-ket">BEKLENEBİLECEK ETKİLER</span>
         <p style="font-size:.92rem">Kendi plazmanız kullanıldığı için ürüne karşı aşırı duyarlılık beklenmez; yine de her girişimsel işlemde olduğu gibi istenmeyen etkiler görülebilir. Sık ve kısa süreli: kızarıklık, şişlik, batma, kan alınan yerde morluk. Daha az sık: kan verirken sersemlik, gün içinde geçen bir baş ağrısı, ilk haftalarda dökülen saç miktarında geçici artış. Nadir: uygulama alanında enfeksiyon, uzun süre ele gelen küçük sertlik, kan alınan kolda geçici his azalması.</p>
       </div>
       <div class="kutu kutu--uyari g-b4" data-gr>
         <b>Kimlere uygulanmaz, hangi durumlarda ertelenir?</b>
         <p>Bir kan ürünüyle çalışıldığı için uygunluk ayrıca dikkatle değerlendirilir ve çoğu zaman öncesinde kan tetkiki istenir.</p>
-        <p><b>Uygulama yapılmayan durumlar:</b></p>
+        <p><b>Bu durumlarda uygulama yapılmaz:</b></p>
         <ul>
-          <li>Trombosit sayısını ya da işlevini bozan kan hastalıkları</li>
+          <li>Trombositlerin sayısını ya da çalışmasını etkileyen kan hastalıkları</li>
           <li>Kontrolsüz pıhtılaşma bozukluğu veya ileri evre karaciğer hastalığı</li>
           <li>Tedavisi süren kanser hastalığı</li>
           <li>Saçlı deride aktif enfeksiyon ya da kapanmamış yara</li>
@@ -104,7 +104,7 @@ module.exports = {
         <ul>
           <li>Kan sulandırıcı ya da trombosit işlevini etkileyen ilaç kullanımı</li>
           <li>Belirgin kansızlık veya düşük trombosit sayısı</li>
-          <li>Ateşli hastalık, yakın zamanda geçirilmiş enfeksiyon ya da yeni yapılmış aşı</li>
+          <li>Ateşle seyreden bir hastalık, yeni atlatılmış bir enfeksiyon ya da kısa süre önce yapılan aşı</li>
           <li>Kaynağı araştırılmamış dökülme — önce neden ortaya konur</li>
           <li>Damar bulmada güçlük, iğne kaygısı ya da bayılma öyküsü</li>
         </ul>
@@ -121,7 +121,7 @@ module.exports = {
   <div class="sar">
     <div class="kutu kutu--acil" data-gr>
       <b>Beklemeden başvurmanız gereken durumlar</b>
-      <p>Saçlı deride ya da kan alınan kolda giderek artan ağrı, sıcaklık, akıntı, yayılan kızarıklık veya ateş gelişirse kontrol gününü beklemeden muayenehaneyi arayın. Solunum güçlüğü, dudak ya da göz kapaklarında hızla gelişen şişlik veya bayılacak gibi olmayla birlikte yayılan kaşıntılı döküntü acil bir durumdur: <b>112</b>’yi arayın ya da en yakın acil servise gidin.</p>
+      <p>Saçlı deride ya da kan alınan kolda giderek artan ağrı, sıcaklık, akıntı, yayılan kızarıklık veya ateş gelişirse kontrol gününü beklemeden muayenehaneyi arayın. Solunum güçlüğü, dudak ya da göz kapaklarında hızla gelişen şişlik veya bayılacak gibi olmayla birlikte yayılan kaşıntılı döküntü acil bir durumdur: <b>112</b> Acil Çağrı Merkezi’ni arayın ya da en yakın hastanenin acil birimine başvurun.</p>
     </div>
     <div class="kutu kutu--uyari" data-gr style="margin-top:16px;--d:70ms">
       <b>Uyarı</b>
@@ -137,7 +137,7 @@ module.exports = {
 
 <!-- ═════ SORU TERMİNALİ ═════ -->
 <section class="bolum bolum--buz2"><div class="sar">
-  <div class="bolum-bas" data-gr><p class="g-etiket">Sorgulayın</p><h2>Sorunuzu seçin, cevap ekrana düşsün</h2></div>
+  <div class="bolum-bas" data-gr><p class="g-etiket">Sık gelen sorular</p><h2>Merak ettiğiniz soruya dokunun, yanıtı burada açılsın</h2></div>
   <div class="g-sorgu" data-gr>
     <div class="g-sorgu-bas"><i></i><i></i><i></i><span>${S.marka.toLocaleLowerCase('tr')} · saç prp · soru-cevap</span></div>
     <div class="g-sorgu-ic">
@@ -149,7 +149,7 @@ module.exports = {
         <button class="g-ssoru" data-gs="4"><i>›</i>İlk haftalarda dökülme artarsa ne yapmalıyım?</button>
         <button class="g-ssoru" data-gs="5"><i>›</i>Ücret bilgisini nasıl öğrenirim?</button>
       </div>
-      <div class="g-scevap" data-gcevap aria-live="polite"><span class="g-yazan">Hekim onaylı yanıt</span><b></b><p></p><a class="dgm dgm--altin" href="${r}iletisim/" style="margin-top:8px">Muayenede konuşalım</a></div>
+      <div class="g-scevap" data-gcevap aria-live="polite"><span class="g-yazan">Hekimin yanıtı</span><b></b><p></p><a class="dgm dgm--altin" href="${r}iletisim/" style="margin-top:8px">Ayrıntısı muayenede</a></div>
     </div>
   </div>
 </div></section>
@@ -158,12 +158,12 @@ module.exports = {
 <!-- ═════ KAPANIŞ ═════ -->
 <section class="g-son">
   <div class="sar">
-    <p class="g-etiket g-etiket--orta">Sonraki adım</p>
+    <p class="g-etiket g-etiket--orta">Bir adım ötesi</p>
     <h2>Önce kan tablosu, sonra plan</h2>
     <p class="g-sonalt">Dökülmenin nedeni ve kan değerleriniz görülmeden saç PRP planlanmaz. ${S.iletisim.adres}, ${S.iletisim.ilce}.</p>
     <div class="g-sonbtn">
       <a class="dgm dgm--bir" href="${r}iletisim/">Randevu talebi oluşturun</a>
-      <a class="dgm dgm--iki" href="${r}hazirlik-listesi/arac/">Hazırlık listesini doldurun</a>
+      <a class="dgm dgm--iki" href="${r}hazirlik-listesi/arac/">Muayeneye hazırlanın</a>
     </div>
   </div>
 </section>

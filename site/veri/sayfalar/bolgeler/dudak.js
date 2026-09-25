@@ -13,7 +13,7 @@ module.exports = {
   <div class="sar">
     <div>
       <nav class="kirinti" aria-label="Konum" style="position:relative;font-size:.76rem;color:var(--sessiz);display:flex;gap:7px;margin-bottom:18px"><a href="${r}" style="color:var(--sessiz);text-decoration:none">Ana sayfa</a> › <a href="${r}bolgeler/" style="color:var(--sessiz);text-decoration:none">Bölgeler</a> › <span>Dudak</span></nav>
-      <p class="g-etiket">Bölgeler · Dudak</p>
+      <p class="g-etiket">Bölge rehberi · Dudak</p>
       <h1>Dudakta amaç daha fazlası değil, <span class="g-isik">doğru oran</span>.</h1>
       <p class="g-hero__alt">Dudağınızın ince göründüğünü, kenarının silikleştiğini ya da sürekli kuruduğunu düşünüyor olabilirsiniz; bu üç yakınmanın kaynağı da çözümü de birbirinden farklıdır. Çoğu zaman gereken daha çok ürün değil, üst ve alt dudak arasındaki dengenin korunmasıdır. Ölçüyü bir fotoğraf ya da moda değil, yüzünüzün kendi oranları belirler; kimi durumda en doğru adım hiçbir şey eklememektir.</p>
       <div class="g-hero__cta">
@@ -25,7 +25,7 @@ module.exports = {
     <div class="g-tarama" data-gr>
       <img src="${r}varliklar/gorsel/ic3d-dudak.webp" width="1400" height="788" alt="Dudak kenarını ve yüzey dokusunu yakından gösteren üç boyutlu çizim" loading="eager">
       <div class="g-isin"></div>
-      <span class="g-ainot">Görsel yapay zekâ ile üretilmiştir</span>
+      <span class="g-ainot">Temsilî görsel · yapay zekâ ile üretildi</span>
       <div class="g-hud"><b>Her gülüşte görünür</b><div class="g-cizgi"></div><span>Konuşma, gülümseme, yemek: dudaktaki her değişiklik en çok bu anlarda göze çarpar.</span></div>
     </div>
   </div>
@@ -51,7 +51,7 @@ module.exports = {
       <div class="g-atlas" data-gr>
         <div class="g-atlas-kap">
           <img src="${r}varliklar/gorsel/yuz-3d-c.webp" width="900" height="1200" alt="Dudağın yüz bütünündeki yerini gösteren, sola dönük üç boyutlu kadın profili" loading="lazy">
-          <span class="g-ainot">Görsel yapay zekâ ile üretilmiştir</span>
+          <span class="g-ainot">Temsilî görsel · yapay zekâ ile üretildi</span>
           <div class="g-rozetk" data-grozet><b>Hacim</b><span>Ne kadar dolgunluğun uygun olduğunu iki dudağın oranı ve yüz genişliği söyler.</span></div>
         </div>
       </div>
@@ -154,7 +154,7 @@ module.exports = {
     </div>
     <div class="g-matris">
       <div class="g-mtab" data-gr>
-        <div class="g-mbas"><span>Uygulama</span><span>Hedef</span><span>İyileşme</span><span></span></div>
+        <div class="g-mbas"><span>Yöntem</span><span>Amaç</span><span>Toparlanma</span><span></span></div>
         <a class="g-msatir" data-akt href="${r}uygulamalar/dolgu-uygulamalari/" data-gg="${r}varliklar/gorsel/uyg-dolgu-uygulamalari.webp" data-gb="Dolgu uygulamaları" data-ga="Hacmin azaldığı ya da kenarın silikleştiği tabloda düşünülür; dudak için yumuşak kıvamlı, dokuya uyum sağlayan ürünler seçilir."><h4>Dolgu uygulamaları</h4><span class="g-hucre"><i class="g-kcip g-kcip--1">Hacim / kenar</i></span><span class="g-hucre">İlk hafta</span><span class="g-git">→</span></a>
         <a class="g-msatir" href="${r}uygulamalar/genclik-asisi-skinbooster/" data-gg="${r}varliklar/gorsel/uyg-genclik-asisi-skinbooster.webp" data-gb="Gençlik aşısı (skinbooster)" data-ga="Kuru, mat ve dikey ince çizgili dudak yüzeyinde konuşulur; dudağı büyütmez."><h4>Gençlik aşısı (skinbooster)</h4><span class="g-hucre"><i class="g-kcip g-kcip--2">Nem / yüzey</i></span><span class="g-hucre">Muayenede belirlenir</span><span class="g-git">→</span></a>
         <a class="g-msatir" href="${r}uygulamalar/mezoterapi/" data-gg="${r}varliklar/gorsel/uyg-mezoterapi.webp" data-gb="Mezoterapi" data-ga="Yüzeyin nemini ve koruyucu bariyerini desteklemeye yönelik ikinci bir seçenektir."><h4>Mezoterapi</h4><span class="g-hucre"><i class="g-kcip g-kcip--2">Nem / yüzey</i></span><span class="g-hucre">Muayenede belirlenir</span><span class="g-git">→</span></a>
@@ -193,7 +193,7 @@ module.exports = {
         <ul>
           <li>Gebelik ya da emzirme</li>
           <li>Dudakta ya da çevresinde etkin uçuk, enfeksiyon veya açık yara</li>
-          <li>Kullanılacak ürüne karşı bilinen aşırı duyarlılık</li>
+          <li>Kullanılacak içeriğe karşı daha önce görülmüş aşırı duyarlılık tepkisi</li>
           <li>Yüzün kendi oranlarını aşmayı hedefleyen istekler</li>
           <li>Dudakta zaten sınıra ulaşmış miktarda ürün bulunması</li>
         </ul>
@@ -214,7 +214,7 @@ module.exports = {
     </div>
     <div class="kutu kutu--acil" data-gr style="margin-top:22px">
       <b>Beklemeden başvurmanız gereken bulgular</b>
-      <p>İşlemden sonraki günlerde giderek artan şiddetli ağrı, dudakta ya da çevresinde beyazlaşma veya morumsu ağ görünümü, hızla büyüyen şişlik, ateş ya da görmede değişiklik olursa bizi <a href="tel:${S.iletisim.telHam}">${S.iletisim.tel}</a> numarasından hemen arayın. Telefonla ulaşamazsanız <b>112</b>’yi arayın ya da size en yakın acil servise gidin.</p>
+      <p>İşlemden sonraki günlerde giderek artan şiddetli ağrı, dudakta ya da çevresinde beyazlaşma veya morumsu ağ görünümü, hızla büyüyen şişlik, ateş ya da görmede değişiklik olursa bizi <a href="tel:${S.iletisim.telHam}">${S.iletisim.tel}</a> numarasından hemen arayın. Telefonla ulaşamazsanız <b>112</b> Acil Çağrı Merkezi’ni arayın ya da en yakın hastanenin acil birimine başvurun.</p>
     </div>
   </div>
 </section>
@@ -242,12 +242,12 @@ module.exports = {
 <!-- ═════════ KAPANIŞ ═════════ -->
 <section class="g-son">
   <div class="sar">
-    <p class="g-etiket g-etiket--orta">Sonraki adım</p>
+    <p class="g-etiket g-etiket--orta">Bir adım ötesi</p>
     <h2>Dudağınız için ölçülü bir plan yapalım</h2>
     <p class="g-sonalt">${S.iletisim.adres}, ${S.iletisim.ilce} — muayenede dolgunluğu, kenarı ve nemi tek tek inceliyor, bir işleme gerçekten ihtiyaç olup olmadığına birlikte karar veriyoruz.</p>
     <div class="g-sonbtn">
       <a class="dgm dgm--bir" href="${r}iletisim/">Randevu talebi oluşturun</a>
-      <a class="dgm dgm--iki" href="${r}hazirlik-listesi/arac/">Hazırlık listesini doldurun</a>
+      <a class="dgm dgm--iki" href="${r}hazirlik-listesi/arac/">Muayeneye hazırlanın</a>
     </div>
   </div>
 </section>

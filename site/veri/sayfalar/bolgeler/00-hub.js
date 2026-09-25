@@ -3,7 +3,7 @@ const S = require('../../site');
 /* bölge kartları ve pusula için kısa tarifler — kartların sırası site.js'teki S.bolgeler dizisinden gelir */
 const NOT = {
   'yuz': 'Alın, elmacık ve çene hattı birbirine yaslanır. Bir noktaya verilen destek komşusunun görünüşünü de değiştirdiği için yüz, parçalara bölünmeden tek plan olarak ele alınır.',
-  'goz-cevresi': 'Göz altı, kaz ayağı ve kaş çevresini kapsar. Derinin en ince olduğu bu alanda küçük bir fark bile göze çarpar; karar başka bölgelerden çok daha temkinli verilir.',
+  'goz-cevresi': 'Kaz ayağı çizgilerini, göz altını ve kaşın çevresini kapsar. Derinin en ince olduğu bu alanda küçük bir fark bile göze çarpar; karar başka bölgelerden çok daha temkinli verilir.',
   'dudak': 'Dudakta üç ayrı konu vardır: dolgunluk, kenar çizgisinin netliği ve yüzeyin nemi. Çoğu yakınma daha fazla hacimle değil, mevcut oranı koruyarak karşılanır.',
   'cene-ve-jawline': 'Kemik desteği, çene altındaki yağ, derinin gerginliği ve çiğneme kası çene hattının netliğini birlikte belirler. Planı, bunlardan hangisinin ağır bastığı yönlendirir.',
   'boyun-ve-dekolte': 'Boyun gün boyu eğilip döner, derisi yüzdekinden incedir ve altında yastık görevi görecek yağ azdır. Yüz için seçilen ayar burada yeniden hesaplanır.',
@@ -45,7 +45,7 @@ module.exports = {
     <div class="g-tarama" data-gr>
       <img src="${r}varliklar/gorsel/yuz-3d-c.webp" width="900" height="1200" alt="Bölgelere göre planlamayı simgeleyen, sola dönük üç boyutlu kadın profili" loading="eager">
       <div class="g-isin"></div>
-      <span class="g-ainot">Görsel yapay zekâ ile üretilmiştir</span>
+      <span class="g-ainot">Temsilî görsel · yapay zekâ ile üretildi</span>
       <button class="g-nokta" data-gn="ust" style="--x:35%;--y:25%" aria-label="Üst yüz"><span data-ad="Üst yüz"></span></button>
       <button class="g-nokta" data-gn="orta" style="--x:31%;--y:42%" aria-label="Orta yüz"><span data-ad="Orta yüz"></span></button>
       <button class="g-nokta" data-gn="alt" style="--x:35%;--y:55%" aria-label="Alt yüz"><span data-ad="Alt yüz"></span></button>
@@ -164,7 +164,7 @@ ${S.bolgeler.map(([ad, s], i) => `
           <li><b>Yazılı bilgilendirme ve onam.</b>&nbsp;Amaçlanan etki, görülebilecek istenmeyen durumlar ve böyle bir durumda neler yapılacağı size yazılı olarak verilir. Onamınız alınmadan işleme geçilmez; kontrol tarihini aynı gün birlikte belirleriz.</li>
         </ol>
       </div>
-      <div class="g-kutu g-b2 g-kutu--gorsel" data-gr style="--d:70ms"><img src="${r}varliklar/gorsel/hekim-masasi.webp" alt="Hekim masasında, açık bir not defterinin yanında masaya konmuş, üst üste duran eller" loading="lazy"><span class="g-ainot">Görsel yapay zekâ ile üretilmiştir</span></div>
+      <div class="g-kutu g-b2 g-kutu--gorsel" data-gr style="--d:70ms"><img src="${r}varliklar/gorsel/hekim-masasi.webp" alt="Hekim masasında, açık bir not defterinin yanında masaya konmuş, üst üste duran eller" loading="lazy"><span class="g-ainot">Temsilî görsel · yapay zekâ ile üretildi</span></div>
     </div>
     <div class="izgara izgara--2" style="margin-top:22px">
       <div class="kutu kutu--uyari" data-gr>
@@ -172,7 +172,7 @@ ${S.bolgeler.map(([ad, s], i) => `
         <ul>
           <li>Gebelik ya da emzirme dönemi</li>
           <li>İşlem alanında etkin bir enfeksiyon, açık yara ya da iltihaplı lezyon</li>
-          <li>Kullanılacak ürüne karşı bilinen aşırı duyarlılık</li>
+          <li>Kullanılacak içeriğe karşı daha önce görülmüş aşırı duyarlılık tepkisi</li>
           <li>Uygulamanın sağlayabileceğini aşan beklentiler</li>
           <li>Muayenehanenin kapsamı dışında kalan istekler</li>
         </ul>
@@ -194,7 +194,7 @@ ${S.bolgeler.map(([ad, s], i) => `
     </div>
     <div class="kutu kutu--acil" data-gr style="margin-top:22px">
       <b>Bir sorun gelişirse</b>
-      <p>İşlemden sonra sizi kaygılandıran bir değişiklik olursa ilk adım bizi <a href="tel:${S.iletisim.telHam}">${S.iletisim.tel}</a> numarasından aramaktır. Artarak süren şiddetli ağrı, derinin beyazlaşması ya da morumsu, ağ gibi bir renk alması, görmede bozulma, hızla büyüyen şişlik veya ateş gibi bulgularda zaman kaybetmeyin. Telefonla bize ulaşamazsanız <b>112</b>’yi arayın ya da size en yakın acil servise gidin.</p>
+      <p>İşlemden sonra sizi kaygılandıran bir değişiklik olursa ilk adım bizi <a href="tel:${S.iletisim.telHam}">${S.iletisim.tel}</a> numarasından aramaktır. Artarak süren şiddetli ağrı, derinin beyazlaşması ya da morumsu, ağ gibi bir renk alması, görme bulanıklığı, kısa sürede büyüyen bir şişlik ya da ateş gibi bulgularda zaman kaybetmeyin. Telefonla bize ulaşamazsanız <b>112</b> Acil Çağrı Merkezi’ni arayın ya da en yakın hastanenin acil birimine başvurun.</p>
     </div>
   </div>
 </section>
@@ -230,8 +230,8 @@ ${S.bolgeler.map(([ad, s], i) => `
     <div class="pus" data-pus>
       <div class="pus-merkez" data-gr>
         <img src="${r}varliklar/gorsel/bolge-yuz.webp" width="1400" height="788" alt="Yüz bölgesini temsil eden görsel" loading="lazy">
-        <span class="g-ainot">Görsel yapay zekâ ile üretilmiştir</span>
-        <div class="pus-kart"><b></b><p></p><a class="dgm dgm--bir dgm--kucuk" href="#">Bölge sayfasına git</a></div>
+        <span class="g-ainot">Temsilî görsel · yapay zekâ ile üretildi</span>
+        <div class="pus-kart"><b></b><p></p><a class="dgm dgm--bir dgm--kucuk" href="#">Bu bölgenin sayfasını açın</a></div>
       </div>
       <div class="pus-liste" data-gr>
         ${S.bolgeler.map(([ad, sl]) => `<button type="button" class="pus-oge" data-pus-oge="${sl}"><i></i>${ad}</button>`).join('')}
@@ -249,12 +249,12 @@ ${S.bolgeler.map(([ad, s], i) => `
 <!-- ═════════ KAPANIŞ ═════════ -->
 <section class="g-son">
   <div class="sar">
-    <p class="g-etiket g-etiket--orta">Sonraki adım</p>
+    <p class="g-etiket g-etiket--orta">Bir adım ötesi</p>
     <h2>Planınızı bölgenizden başlayarak kuralım</h2>
     <p class="g-sonalt">${S.marka} · ${S.iletisim.adres}, ${S.iletisim.ilce}. Randevu için ${S.iletisim.tel} numarasını arayabilir, aynı numaraya WhatsApp’tan yazabilir ya da iletişim sayfasındaki formu doldurabilirsiniz.</p>
     <div class="g-sonbtn">
       <a class="dgm dgm--bir" href="${r}iletisim/">Randevu talebi oluşturun</a>
-      <a class="dgm dgm--iki" href="${r}hazirlik-listesi/arac/">Hazırlık listesini doldurun</a>
+      <a class="dgm dgm--iki" href="${r}hazirlik-listesi/arac/">Muayeneye hazırlanın</a>
     </div>
   </div>
 </section>

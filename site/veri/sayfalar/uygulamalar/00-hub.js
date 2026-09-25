@@ -14,11 +14,11 @@ const kimlik = t => t
 /* her grubun kendi başına okunabilen tanıtım paragrafı (anahtar = kimlik(grup)) */
 const GRUP_NOT = {
   'enjeksiyon-uygulamalari':
-    'Bu gruptaki uygulamalarda ürün, ince iğne ya da kanülle belirli bir deri katmanına ve ölçülü miktarda bırakılır. Kullanılan ürünün adı, seri numarası, miktarı ve uygulandığı bölge dosyanıza yazılır. Hepsi girişimsel olduğu için yazılı onam alınır; gebelik ve emzirme döneminde ertelenir, kanama eğilimi ve daha önce yaşanan reaksiyonlar ayrıca sorulur. Karın, bel ve bacak gibi vücut bölgelerindeki lipoliz ve selülit planları da bu grupta yer alır.',
+    'Bu gruptaki uygulamalarda ürün, ince iğne ya da kanülle belirli bir deri katmanına ve ölçülü miktarda bırakılır. Kullanılan ürünün adı, seri numarası, miktarı ve uygulandığı bölge dosyanıza yazılır. Hepsi girişimsel işlemlerdir; bu nedenle önce yazılı onamınız alınır. Gebelikte ve emzirirken bu uygulamalar bekletilir; kanamaya yatkınlığınız ve geçmişte yaşadığınız tepkiler ayrıca sorgulanır. Karın, bel ve bacak gibi vücut bölgelerindeki lipoliz ve selülit planları da bu grupta yer alır.',
   'cihaz-destekli-uygulamalar':
     'Bu gruptaki işlemlerde deriye lazer ışığı, radyofrekans, odaklanmış ultrason ya da elektroporasyon yoluyla enerji verilir. Etki cihazın ayarına ve cilt tipine bağlıdır; iki kişide aynı ayarla çalışıldığında bile yanıt farklı olabilir. Bu nedenle kalp pili taşıyıp taşımadığınız, sara nöbeti geçirip geçirmediğiniz, uygulama alanında metal bir parça bulunup bulunmadığı ve son haftalarda güneşlenip güneşlenmediğiniz ayrıca sorulur. Pikosaniye lazerle dövme silme de bu başlık altındadır.',
   'sac-ve-sacli-deri':
-    'Saçlı deri uygulamalarında ilk iş dökülmenin nedenini bulmaktır. Düşük demir depoları, tiroid bezinin az ya da çok çalışması, doğumdan sonraki aylar veya kullanılan bir ilaç dökülmenin tek başına sebebi olabilir. Neden ortaya konmadan başlanan bir uygulama beklenen katkıyı sağlamaz; bu yüzden gerekli görülen kan tetkikleri sonuçlanmadan plan yapılmaz.',
+    'Burada atılan ilk adım, dökülmenin neden kaynaklandığını bulmaktır. Düşük demir depoları, tiroid bezinin az ya da çok çalışması, doğumdan sonraki aylar veya kullanılan bir ilaç dökülmenin tek başına sebebi olabilir. Neden ortaya konmadan başlanan bir uygulama beklenen katkıyı sağlamaz; bu yüzden gerekli görülen kan tetkikleri sonuçlanmadan plan yapılmaz.',
   'degerlendirme-ve-takip':
     'Bu iki başlık bir işlem değil, her planın başı ve sonudur. Hekim muayenesinde genel sağlık durumunuz ve beklentiniz değerlendirilerek uygun olan ile olmayan ayrılır; uygulama sonrası takipte ise iyileşme izlenir, gerekiyorsa plan durdurulur ya da değiştirilir.',
 };
@@ -49,7 +49,7 @@ module.exports = {
     <div class="g-tarama" data-gr>
       <img src="${r}varliklar/gorsel/grup-cihaz.webp" width="1600" height="900" alt="Tepside duran bir lazer cihazı başlığının yakın plan görüntüsü" loading="eager">
       <div class="g-isin"></div>
-      <span class="g-ainot">Görsel yapay zekâ ile üretilmiştir</span>
+      <span class="g-ainot">Temsilî görsel · yapay zekâ ile üretildi</span>
     </div>
   </div>
 </section>
@@ -100,7 +100,7 @@ ${S.katalog.map((g, i) => `
         <span class="kart__ikon">${ik[g.ikon]}</span>
         <h3>${ad}</h3>
         <p>${not}</p>
-        <span class="kart__ok">Detay ${ik.ok}</span>
+        <span class="kart__ok">Sayfayı açın ${ik.ok}</span>
       </a>`).join('\n      ')}
     </div>
   </div>
@@ -210,7 +210,7 @@ ${S.katalog.map((g, i) => `
       </div>
       <div class="yolc-sahne" data-gr>
         <div class="yolc-ciz" aria-hidden="true"><i></i></div>
-        ${['Muayene', 'Planlama', 'Uygulama günü', 'Takip ve kontrol'].map((ad, i) =>
+        ${['Muayene', 'Plan', 'İşlem günü', 'Kontroller'].map((ad, i) =>
           `<div class="yolc-adim"><span class="yolc-no">${i + 1}</span><img src="${r}varliklar/gorsel/asama-${['muayene', 'plan', 'gun', 'takip'][i]}.webp" width="400" height="400" alt="" loading="lazy"><b>${ad}</b><p></p></div>`).join('')}
       </div>
     </div>
@@ -221,12 +221,12 @@ ${S.katalog.map((g, i) => `
 
 <section class="g-son">
   <div class="sar">
-    <p class="g-etiket g-etiket--orta">Sonraki adım</p>
+    <p class="g-etiket g-etiket--orta">Bir adım ötesi</p>
     <h2>Size uygun başlığı muayenede birlikte belirleyelim</h2>
     <p class="g-sonalt">Yakınmanız dinlenip değerlendirilmeden hiçbir uygulama önerilmez. ${S.iletisim.adres}, ${S.iletisim.ilce}.</p>
     <div class="g-sonbtn">
       <a class="dgm dgm--bir" href="${r}iletisim/">Randevu talebi oluşturun</a>
-      <a class="dgm dgm--iki" href="${r}hazirlik-listesi/arac/">Hazırlık listesini doldurun</a>
+      <a class="dgm dgm--iki" href="${r}hazirlik-listesi/arac/">Muayeneye hazırlanın</a>
     </div>
   </div>
 </section>

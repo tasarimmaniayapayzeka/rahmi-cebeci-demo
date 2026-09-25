@@ -12,8 +12,8 @@ module.exports = {
 <section class="g-hero">
   <div class="sar">
     <div>
-      <nav class="kirinti" aria-label="Konum" style="position:relative;font-size:.76rem;color:var(--sessiz);display:flex;gap:7px;margin-bottom:18px"><a href="${r}" style="color:var(--sessiz);text-decoration:none">Ana sayfa</a> › <a href="${r}cilt-sorunlari/" style="color:var(--sessiz);text-decoration:none">Cilt sorunları</a> › <span>Nem kaybı ve donukluk</span></nav>
-      <p class="g-etiket">Cilt sorunları · Nem ve bariyer</p>
+      <nav class="kirinti" aria-label="Konum" style="position:relative;font-size:.76rem;color:var(--sessiz);display:flex;gap:7px;margin-bottom:18px"><a href="${r}" style="color:var(--sessiz);text-decoration:none">Ana sayfa</a> › <a href="${r}cilt-sorunlari/" style="color:var(--sessiz);text-decoration:none">Sorunlar</a> › <span>Nem kaybı ve donukluk</span></nav>
+      <p class="g-etiket">Şikâyet rehberi · Nem ve bariyer</p>
       <h1>Donuk cilt, ışığı <span class="g-isik">dağıtan bir yüzeydir</span></h1>
       <p class="g-hero__alt">Su kaybeden cildin yüzeyi düzgünlüğünü yitirir ve ışığı tek bir yöne değil her yöne saçar; ortaya mat, grimsi ve yorgun bir görüntü çıkar. Bunun ardında çoğunlukla derinin en dış katmanındaki koruyucu tabakanın zayıflaması vardır. Böyle bir ciltte ilk adım genellikle yeni bir şey eklemek değil, cildi yoran alışkanlıkları bırakmaktır.</p>
       <div class="g-hero__cta">
@@ -25,7 +25,7 @@ module.exports = {
     <div class="g-tarama" data-gr>
       <img src="${r}varliklar/gorsel/sorun-nem-kaybi-ve-donukluk.webp" width="1400" height="788" alt="Cilt yüzeyinde parlayan küçük bir su damlasının yakın çekimi" loading="eager">
       <div class="g-isin"></div>
-      <span class="g-ainot">Görsel yapay zekâ ile üretilmiştir</span>
+      <span class="g-ainot">Temsilî görsel · yapay zekâ ile üretildi</span>
     </div>
   </div>
 </section>
@@ -88,7 +88,7 @@ module.exports = {
     </div>
     <div class="g-matris">
       <div class="g-mtab" data-gr>
-        <div class="g-mbas"><span>Uygulama</span><span>Hedef</span><span>İyileşme</span><span></span></div>
+        <div class="g-mbas"><span>Yöntem</span><span>Amaç</span><span>Toparlanma</span><span></span></div>
         <a class="g-msatir" data-akt href="${r}uygulamalar/genclik-asisi-skinbooster/" data-gg="${r}varliklar/gorsel/uyg-genclik-asisi-skinbooster.webp" data-gb="Gençlik aşısı (skinbooster)" data-ga="Hacim eklemeden derinin su tutma kapasitesini ve esnekliğini desteklemeyi amaçlar; koruyucu katman onarıldıktan sonra konuşulur."><h4>Gençlik aşısı (skinbooster)</h4><span class="g-hucre"><i class="g-kcip g-kcip--1">NEM</i></span><span class="g-hucre">Muayenede belirlenir</span><span class="g-git">→</span></a>
         <a class="g-msatir" href="${r}uygulamalar/mezoterapi/" data-gg="${r}varliklar/gorsel/uyg-mezoterapi.webp" data-gb="Mezoterapi" data-ga="Vitamin, mineral ve hyalüronik asit içeren karışımlarla derinin niteliğini aşamalı olarak desteklemeye yöneliktir."><h4>Mezoterapi</h4><span class="g-hucre"><i class="g-kcip g-kcip--1">NEM</i></span><span class="g-hucre">Muayenede belirlenir</span><span class="g-git">→</span></a>
         <a class="g-msatir" href="${r}uygulamalar/ignesiz-mezoterapi/" data-gg="${r}varliklar/gorsel/uyg-ignesiz-mezoterapi.webp" data-gb="İğnesiz mezoterapi" data-ga="Aktif maddelerin iğne kullanılmadan deriye iletilmesini hedefler; daha hafif bir başlangıç isteyenlerde değerlendirilir."><h4>İğnesiz mezoterapi</h4><span class="g-hucre"><i class="g-kcip g-kcip--2">YÜZEY</i></span><span class="g-hucre">Muayenede belirlenir</span><span class="g-git">→</span></a>
@@ -101,7 +101,7 @@ module.exports = {
 
 <!-- ═════════ SORU TERMİNALİ ═════════ -->
 <section class="bolum bolum--buz2"><div class="sar">
-  <div class="bolum-bas" data-gr><p class="g-etiket">Sorgulayın</p><h2>Sorunuzu seçin, cevap ekrana düşsün</h2></div>
+  <div class="bolum-bas" data-gr><p class="g-etiket">Sık gelen sorular</p><h2>Merak ettiğiniz soruya dokunun, yanıtı burada açılsın</h2></div>
   <div class="g-sorgu" data-gr>
     <div class="g-sorgu-bas"><i></i><i></i><i></i><span>${S.marka.toLocaleLowerCase('tr-TR')} · nem ve bariyer · soru-cevap</span></div>
     <div class="g-sorgu-ic">
@@ -113,7 +113,7 @@ module.exports = {
         <button class="g-ssoru" data-gs="4"><i>›</i>Matlık için soyucu bir işlem daha hızlı olmaz mı?</button>
         <button class="g-ssoru" data-gs="5"><i>›</i>Ücret bilgisi neden sitede yok?</button>
       </div>
-      <div class="g-scevap" data-gcevap aria-live="polite"><span class="g-yazan">Hekim onaylı yanıt</span><b></b><p></p><a class="dgm dgm--altin" href="${r}iletisim/" style="margin-top:8px">Muayenede konuşalım</a></div>
+      <div class="g-scevap" data-gcevap aria-live="polite"><span class="g-yazan">Hekimin yanıtı</span><b></b><p></p><a class="dgm dgm--altin" href="${r}iletisim/" style="margin-top:8px">Ayrıntısı muayenede</a></div>
     </div>
   </div>
 </div></section>
@@ -122,12 +122,12 @@ module.exports = {
 <!-- ═════════ KAPANIŞ ═════════ -->
 <section class="g-son">
   <div class="sar">
-    <p class="g-etiket g-etiket--orta">Sonraki adım</p>
+    <p class="g-etiket g-etiket--orta">Bir adım ötesi</p>
     <h2>Cildinizi neyin yorduğunu birlikte bulalım</h2>
     <p class="g-sonalt">Muayenede kullandığınız ürünler baştan sona gözden geçirilir; bir şey eklemeden önce neyin bırakılacağı birlikte kararlaştırılır.</p>
     <div class="g-sonbtn">
       <a class="dgm dgm--bir" href="${r}iletisim/">Randevu talebi oluşturun</a>
-      <a class="dgm dgm--iki" href="${r}hazirlik-listesi/arac/">Hazırlık listesini doldurun</a>
+      <a class="dgm dgm--iki" href="${r}hazirlik-listesi/arac/">Muayeneye hazırlanın</a>
     </div>
   </div>
 </section>

@@ -24,7 +24,7 @@ module.exports = {
     <div class="g-tarama" data-gr>
       <img src="${r}varliklar/gorsel/uyg-genclik-asisi-skinbooster.webp" width="1400" height="788" alt="Nemli görünen yanak cildinin gün ışığında yakın plan görünümü" loading="eager">
       <div class="g-isin"></div>
-      <span class="g-ainot">Görsel yapay zekâ ile üretilmiştir</span>
+      <span class="g-ainot">Temsilî görsel · yapay zekâ ile üretildi</span>
       <div class="g-hud" data-ghud><b>Hedef katman: dermis</b><div class="g-cizgi"></div><span>Akışkan jel ince bir ağ gibi yayılır; kabarıklık ya da hacim oluşturmaz.</span></div>
     </div>
   </div>
@@ -97,7 +97,7 @@ module.exports = {
         </ol>
       </div>
       <div class="g-kutu g-b2 g-kutu--gece" data-gr><span class="g-ket">İlke</span><p>“Cildin susuzluğu hacimle, hacim kaybı nemle giderilmez. Önce hangisiyle karşı karşıya olduğumuzu ayırırız.”</p></div>
-      <div class="g-kutu g-b2 g-kutu--gorsel" data-gr style="--d:70ms"><img src="${r}varliklar/gorsel/ic3d-katman.webp" alt="Üst deri, dermis ve deri altı katmanlarını gösteren üç boyutlu kesit çizimi" loading="lazy"><span class="g-ainot">Görsel yapay zekâ ile üretilmiştir</span></div>
+      <div class="g-kutu g-b2 g-kutu--gorsel" data-gr style="--d:70ms"><img src="${r}varliklar/gorsel/ic3d-katman.webp" alt="Üst deri, dermis ve deri altı katmanlarını gösteren üç boyutlu kesit çizimi" loading="lazy"><span class="g-ainot">Temsilî görsel · yapay zekâ ile üretildi</span></div>
       <div class="g-kutu g-b2 g-kutu--cta" data-gr style="--d:140ms"><h3>Size uygun olup olmadığını konuşalım</h3><p>Karar, cildiniz değerlendirildikten sonra birlikte verilir.</p><a class="dgm dgm--altin" href="${r}iletisim/">Randevu talebi</a></div>
       <div class="kutu kutu--uyari g-b4" data-gr>
         <b>Hangi durumlarda uygulanmaz, hangilerinde ertelenir?</b>
@@ -114,7 +114,7 @@ module.exports = {
       </div>
       <div class="kutu kutu--acil g-b2" data-gr style="--d:70ms">
         <b>Beklemeden başvurun</b>
-        <p>Uygulamadan sonra giderek artan ağrı, deride solma ya da mor–gri renk değişimi, görmeyle ilgili herhangi bir yakınma, yayılan şişlik veya ateş gelişirse randevu gününü beklemeyin. Bizi <a href="tel:${S.iletisim.telHam}">${S.iletisim.tel}</a> numarasından arayın; telefonla ulaşamazsanız <b>112</b>’yi arayın ya da size en yakın acil servise gidin.</p>
+        <p>Uygulamadan sonra giderek artan ağrı, deride solma ya da mor–gri renk değişimi, görmeyle ilgili herhangi bir yakınma, yayılan şişlik veya ateş gelişirse randevu gününü beklemeyin. Bizi <a href="tel:${S.iletisim.telHam}">${S.iletisim.tel}</a> numarasından arayın; telefonla ulaşamazsanız <b>112</b> Acil Çağrı Merkezi’ni arayın ya da en yakın hastanenin acil birimine başvurun.</p>
       </div>
     </div>
   </div>
@@ -133,7 +133,7 @@ module.exports = {
 
 <!-- ═════ SORU TERMİNALİ ═════ -->
 <section class="bolum bolum--buz2"><div class="sar">
-  <div class="bolum-bas" data-gr><p class="g-etiket">Sorgulayın</p><h2>Sorunuzu seçin, cevap ekrana düşsün</h2></div>
+  <div class="bolum-bas" data-gr><p class="g-etiket">Sık gelen sorular</p><h2>Merak ettiğiniz soruya dokunun, yanıtı burada açılsın</h2></div>
   <div class="g-sorgu" data-gr>
     <div class="g-sorgu-bas"><i></i><i></i><i></i><span>${S.marka} · gençlik aşısı · soru-cevap</span></div>
     <div class="g-sorgu-ic">
@@ -145,7 +145,7 @@ module.exports = {
         <button class="g-ssoru" data-gs="4"><i>›</i>Kaç seanslık bir program planlanır?</button>
         <button class="g-ssoru" data-gs="5"><i>›</i>Ücret bilgisi neden sitede yok?</button>
       </div>
-      <div class="g-scevap" data-gcevap aria-live="polite"><span class="g-yazan">Hekim onaylı yanıt</span><b></b><p></p><a class="dgm dgm--altin" href="${r}iletisim/" style="margin-top:8px">Muayenede konuşalım</a></div>
+      <div class="g-scevap" data-gcevap aria-live="polite"><span class="g-yazan">Hekimin yanıtı</span><b></b><p></p><a class="dgm dgm--altin" href="${r}iletisim/" style="margin-top:8px">Ayrıntısı muayenede</a></div>
     </div>
   </div>
 </div></section>
@@ -154,12 +154,12 @@ module.exports = {
 <!-- ═════ KAPANIŞ ═════ -->
 <section class="g-son">
   <div class="sar">
-    <p class="g-etiket g-etiket--orta">Sonraki adım</p>
+    <p class="g-etiket g-etiket--orta">Bir adım ötesi</p>
     <h2>Cildinizi değerlendirerek başlayalım</h2>
-    <p class="g-sonalt">Cildinizdeki değişikliği konuşmak ve size uygun seçeneği birlikte belirlemek için randevu talebi oluşturabilirsiniz.</p>
+    <p class="g-sonalt">Cildinizde fark ettiğiniz değişikliği muayenede birlikte değerlendirir, size uyan seçeneği orada netleştiririz.</p>
     <div class="g-sonbtn">
       <a class="dgm dgm--bir" href="${r}iletisim/">Randevu talebi oluşturun</a>
-      <a class="dgm dgm--iki" href="${r}hazirlik-listesi/arac/">Hazırlık listesini doldurun</a>
+      <a class="dgm dgm--iki" href="${r}hazirlik-listesi/arac/">Muayeneye hazırlanın</a>
     </div>
   </div>
 </section>

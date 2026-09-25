@@ -13,7 +13,7 @@ module.exports = {
   <div class="sar">
     <div>
       <nav class="kirinti" aria-label="Konum" style="position:relative;font-size:.76rem;color:var(--sessiz);display:flex;gap:7px;margin-bottom:18px"><a href="${r}" style="color:var(--sessiz);text-decoration:none">Ana sayfa</a> › <a href="${r}bolgeler/" style="color:var(--sessiz);text-decoration:none">Bölgeler</a> › <span>Yüz</span></nav>
-      <p class="g-etiket">Bölgeler · Yüz</p>
+      <p class="g-etiket">Bölge rehberi · Yüz</p>
       <h1>Tek bir çizgiye değil, <span class="g-isik">yüzün bütününe</span> bakılır.</h1>
       <p class="g-hero__alt">Alın, elmacık ve çene hattı ayrı bölgeler gibi görünse de birbirine yaslanır. Orta yüze eklenen destek ağız kenarının görünümünü, alt yüzdeki bir değişiklik ise yüzün genel oranını etkiler. Muayenede önce değişimin hangi katmanda olduğu ayrılır, ardından bir basamağa gerçekten ihtiyaç olup olmadığı konuşulur; kimi zaman varılan karar hiçbir işlem yapmamaktır.</p>
       <div class="g-hero__cta">
@@ -25,7 +25,7 @@ module.exports = {
     <div class="g-tarama" data-gr>
       <img src="${r}varliklar/gorsel/bolge-yuz.webp" width="1400" height="788" alt="Sade bir fonda önden bakan, doğal görünümlü bir kadın yüzü" loading="eager">
       <div class="g-isin"></div>
-      <span class="g-ainot">Görsel yapay zekâ ile üretilmiştir</span>
+      <span class="g-ainot">Temsilî görsel · yapay zekâ ile üretildi</span>
       <button class="g-nokta" data-gn="ust" style="--x:50%;--y:13%" aria-label="Üst yüz"><span data-ad="Üst yüz"></span></button>
       <button class="g-nokta" data-gn="orta" style="--x:44%;--y:29%" aria-label="Orta yüz"><span data-ad="Orta yüz"></span></button>
       <button class="g-nokta" data-gn="alt" style="--x:50%;--y:38%" aria-label="Alt yüz"><span data-ad="Alt yüz"></span></button>
@@ -114,7 +114,7 @@ module.exports = {
       <div class="g-atlas" data-gr>
         <div class="g-atlas-kap">
           <img src="${r}varliklar/gorsel/yuz-3d-d.webp" width="900" height="1200" alt="Üst, orta ve alt yüz bölgelerinin işaretlendiği, sağa dönük üç boyutlu kadın profili" loading="lazy">
-          <span class="g-ainot">Görsel yapay zekâ ile üretilmiştir</span>
+          <span class="g-ainot">Temsilî görsel · yapay zekâ ile üretildi</span>
           <button class="g-nokta" data-gn="ust" style="--x:68%;--y:22%" aria-label="Üst yüz"><span data-ad="Üst yüz"></span></button>
           <button class="g-nokta" data-gn="orta" style="--x:66%;--y:40%" aria-label="Orta yüz"><span data-ad="Orta yüz"></span></button>
           <button class="g-nokta" data-gn="alt" style="--x:65%;--y:54%" aria-label="Alt yüz"><span data-ad="Alt yüz"></span></button>
@@ -123,20 +123,20 @@ module.exports = {
       </div>
       <div>
         <div class="g-katblok" data-gkat="ust" data-gr>
-          <span class="g-kno">01 · ÜST YÜZ</span>
+          <span class="g-kno">01 · ÜST KAT</span>
           <h3>Alın, kaş ve şakak</h3>
           <p>Bu bölgede belirleyici olan kas etkinliğidir; alındaki yatay çizgiler ve iki kaş arasındaki dikey çizgi en sık dile getirilen şikâyetlerdir. Şakakta hacim azaldığında üst yüz daralmış ve yorgun görünür. Buradaki her müdahale kaşın yüksekliğini ve kavisini değiştirebileceği için doz ve uygulama noktaları sınırlı tutulur.</p>
           <div class="g-haplar"><a href="${r}uygulamalar/botulinum-toksin/">Botulinum toksin</a><a href="${r}cilt-sorunlari/mimik-cizgileri-ve-kirisiklik/">Mimik çizgileri</a></div>
         </div>
         <div class="g-katblok" data-gkat="orta" data-gr>
-          <span class="g-kno">02 · ORTA YÜZ</span>
+          <span class="g-kno">02 · ORTA KAT</span>
           <h3>Elmacık, yanak ve göz altı geçişi</h3>
           <p>Orta yüz, üstündeki ve altındaki bölgelere destek veren kattır. Burada hacim azaldığında etkisi iki yönde görülür: göz altında gölge, ağız kenarında belirginleşen kıvrım. Alt yüzden yakınan birinde ilk incelenen yerin çoğu zaman elmacık hattı olması bundandır.</p>
           <div class="g-haplar"><a href="${r}uygulamalar/dolgu-uygulamalari/">Dolgu uygulamaları</a><a href="${r}uygulamalar/sivi-yuz-germe/">Sıvı yüz germe</a><a href="${r}bolgeler/goz-cevresi/">Göz çevresi</a></div>
         </div>
         <div class="g-katblok" data-gkat="alt" data-gr>
-          <span class="g-kno">03 · ALT YÜZ</span>
-          <h3>Ağız çevresi, çene ucu ve çene hattı</h3>
+          <span class="g-kno">03 · ALT KAT</span>
+          <h3>Dudak köşeleri, çene ucu ve çene hattı</h3>
           <p>Yüzün alt kenarı ne kadar net görünüyor? Bu bölgede sorulan asıl soru budur. Dudak köşelerinden aşağı uzanan çizgilere, çene ucunun ne kadar öne çıktığına ve kulak önünden çeneye uzanan hattın keskinliğine birlikte bakılır. Çene hattını ve dudağı ayrıntılı olarak kendi sayfalarında ele aldık.</p>
           <div class="g-haplar"><a href="${r}bolgeler/cene-ve-jawline/">Çene ve çene hattı</a><a href="${r}bolgeler/dudak/">Dudak</a></div>
         </div>
@@ -155,7 +155,7 @@ module.exports = {
     </div>
     <div class="g-matris">
       <div class="g-mtab" data-gr>
-        <div class="g-mbas"><span>Uygulama</span><span>Hedef</span><span>İyileşme</span><span></span></div>
+        <div class="g-mbas"><span>Yöntem</span><span>Amaç</span><span>Toparlanma</span><span></span></div>
         <a class="g-msatir" data-akt href="${r}uygulamalar/botulinum-toksin/" data-gg="${r}varliklar/gorsel/uyg-botulinum-toksin.webp" data-gb="Botulinum toksin" data-ga="Hareketle beliren çizgilerde değerlendirilir; önce çizginin yalnız mimik sırasında mı ortaya çıktığı ayrılır."><h4>Botulinum toksin</h4><span class="g-hucre"><i class="g-kcip g-kcip--1">Mimik çizgisi</i></span><span class="g-hucre">Birkaç gün</span><span class="g-git">→</span></a>
         <a class="g-msatir" href="${r}uygulamalar/dolgu-uygulamalari/" data-gg="${r}varliklar/gorsel/uyg-dolgu-uygulamalari.webp" data-gb="Dolgu uygulamaları" data-ga="Belirgin hacim kaybında eksilen desteği, yüzün kendi oranlarını aşmadan tamamlamayı amaçlar."><h4>Dolgu uygulamaları</h4><span class="g-hucre"><i class="g-kcip g-kcip--1">Hacim desteği</i></span><span class="g-hucre">Birkaç gün</span><span class="g-git">→</span></a>
         <a class="g-msatir" href="${r}uygulamalar/sivi-yuz-germe/" data-gg="${r}varliklar/gorsel/uyg-sivi-yuz-germe.webp" data-gb="Sıvı yüz germe" data-ga="Destek ihtiyacı tek noktada değil, yüzün birkaç bölgesine yayılmışsa bütüncül bir plan olarak konuşulur."><h4>Sıvı yüz germe</h4><span class="g-hucre"><i class="g-kcip g-kcip--1">Bütüncül destek</i></span><span class="g-hucre">Muayenede belirlenir</span><span class="g-git">→</span></a>
@@ -219,7 +219,7 @@ module.exports = {
     </div>
     <div class="kutu kutu--acil" data-gr style="margin-top:22px">
       <b>Bir sorun gelişirse</b>
-      <p>İşlemden sonra sizi tedirgin eden bir değişiklik olursa ilk olarak bizi <a href="tel:${S.iletisim.telHam}">${S.iletisim.tel}</a> numarasından arayın. Dinmeyen ve giderek artan ağrı, derinin bembeyaz olması ya da morumsu bir ağ görünümü alması, bulanık görme, hızla kabaran şişlik ya da ateş gibi durumlarda vakit kaybetmeyin; telefonla ulaşamazsanız <b>112</b>’yi arayın veya size en yakın acil servise gidin.</p>
+      <p>İşlemden sonra sizi tedirgin eden bir değişiklik olursa ilk olarak bizi <a href="tel:${S.iletisim.telHam}">${S.iletisim.tel}</a> numarasından arayın. Dinmeyen ve giderek artan ağrı, derinin bembeyaz olması ya da morumsu bir ağ görünümü alması, bulanık görme, hızla kabaran şişlik ya da ateş gibi durumlarda vakit kaybetmeyin; telefonla ulaşamazsanız <b>112</b> Acil Çağrı Merkezi’ni arayın ya da en yakın hastanenin acil birimine başvurun.</p>
     </div>
   </div>
 </section>
@@ -247,12 +247,12 @@ module.exports = {
 <!-- ═════════ KAPANIŞ ═════════ -->
 <section class="g-son">
   <div class="sar">
-    <p class="g-etiket g-etiket--orta">Sonraki adım</p>
+    <p class="g-etiket g-etiket--orta">Bir adım ötesi</p>
     <h2>Yüzünüzü bir bütün olarak değerlendirelim</h2>
     <p class="g-sonalt">${S.iletisim.adres}, ${S.iletisim.ilce} — muayenede önce değişimin hangi katmandan kaynaklandığını ayırıyor, ardından bir adıma gerçekten ihtiyaç olup olmadığını birlikte konuşuyoruz.</p>
     <div class="g-sonbtn">
       <a class="dgm dgm--bir" href="${r}iletisim/">Randevu talebi oluşturun</a>
-      <a class="dgm dgm--iki" href="${r}hazirlik-listesi/arac/">Hazırlık listesini doldurun</a>
+      <a class="dgm dgm--iki" href="${r}hazirlik-listesi/arac/">Muayeneye hazırlanın</a>
     </div>
   </div>
 </section>

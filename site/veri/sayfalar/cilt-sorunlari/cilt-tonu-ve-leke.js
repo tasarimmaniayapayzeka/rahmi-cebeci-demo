@@ -12,8 +12,8 @@ module.exports = {
 <section class="g-hero">
   <div class="sar">
     <div>
-      <nav class="kirinti" aria-label="Konum" style="position:relative;font-size:.76rem;color:var(--sessiz);display:flex;gap:7px;margin-bottom:18px"><a href="${r}" style="color:var(--sessiz);text-decoration:none">Ana sayfa</a> › <a href="${r}cilt-sorunlari/" style="color:var(--sessiz);text-decoration:none">Cilt sorunları</a> › <span>Cilt tonu ve leke</span></nav>
-      <p class="g-etiket">Cilt sorunları · Leke</p>
+      <nav class="kirinti" aria-label="Konum" style="position:relative;font-size:.76rem;color:var(--sessiz);display:flex;gap:7px;margin-bottom:18px"><a href="${r}" style="color:var(--sessiz);text-decoration:none">Ana sayfa</a> › <a href="${r}cilt-sorunlari/" style="color:var(--sessiz);text-decoration:none">Sorunlar</a> › <span>Cilt tonu ve leke</span></nav>
+      <p class="g-etiket">Şikâyet rehberi · Leke</p>
       <h1>Benzer görünen lekeler <span class="g-isik">farklı yollardan</span> gelir</h1>
       <p class="g-hero__alt">Güneşin yıllar içinde bıraktığı lekeler, ışığa ve hormonlara duyarlı melazma ve bir iltihabın ardından kalan koyulaşma birbirine benzeyebilir; ancak her biri başka bir plan ister. Türü belirlenmeden yapılan bir müdahale lekeyi koyulaştırabilir ve toparlanmayı uzatabilir. Bu yüzden önce lekenin türü ayrılır.</p>
       <div class="g-hero__cta">
@@ -25,7 +25,7 @@ module.exports = {
     <div class="g-tarama" data-gr>
       <img src="${r}varliklar/gorsel/sorun-cilt-tonu-ve-leke.webp" width="1400" height="788" alt="Elmacık bölgesinde açık kahverengi lekeler bulunan yüz cildinin yakın çekimi" loading="eager">
       <div class="g-isin"></div>
-      <span class="g-ainot">Görsel yapay zekâ ile üretilmiştir</span>
+      <span class="g-ainot">Temsilî görsel · yapay zekâ ile üretildi</span>
     </div>
   </div>
 </section>
@@ -85,7 +85,7 @@ module.exports = {
     </div>
     <div class="g-matris">
       <div class="g-mtab" data-gr>
-        <div class="g-mbas"><span>Uygulama</span><span>Hedef</span><span>İyileşme</span><span></span></div>
+        <div class="g-mbas"><span>Yöntem</span><span>Amaç</span><span>Toparlanma</span><span></span></div>
         <a class="g-msatir" data-akt href="${r}uygulamalar/pico-lazer-leke/" data-gg="${r}varliklar/gorsel/uyg-pico-lazer-leke.webp" data-gb="Pico lazer ile leke" data-ga="Güneşe bağlı, kenarı net yüzeysel lekelerde pikosaniye atımlarla pigmentin hedeflenmesi amaçlanır; melazmada ilk seçenek değildir."><h4>Pico lazer ile leke</h4><span class="g-hucre"><i class="g-kcip g-kcip--1">PİGMENT</i></span><span class="g-hucre">Muayenede belirlenir</span><span class="g-git">→</span></a>
         <a class="g-msatir" href="${r}uygulamalar/mezoterapi/" data-gg="${r}varliklar/gorsel/uyg-mezoterapi.webp" data-gb="Mezoterapi" data-ga="Deri içine uygulanan içeriklerle, ısı oluşturmayan destekleyici bir seçenek olarak uygun görülen kişilerde değerlendirilir."><h4>Mezoterapi</h4><span class="g-hucre"><i class="g-kcip g-kcip--2">DESTEK</i></span><span class="g-hucre">Muayenede belirlenir</span><span class="g-git">→</span></a>
         <a class="g-msatir" href="${r}uygulamalar/karbon-peeling/" data-gg="${r}varliklar/gorsel/uyg-karbon-peeling.webp" data-gb="Karbon peeling" data-ga="Cilt tonunda genel donukluk ve yüzeysel düzensizlikte, tolerans değerlendirildikten sonra konuşulabilecek bir yüzey uygulamasıdır."><h4>Karbon peeling</h4><span class="g-hucre"><i class="g-kcip g-kcip--3">YÜZEY</i></span><span class="g-hucre">Muayenede belirlenir</span><span class="g-git">→</span></a>
@@ -98,7 +98,7 @@ module.exports = {
 
 <!-- ═════════ SORU TERMİNALİ ═════════ -->
 <section class="bolum bolum--buz2"><div class="sar">
-  <div class="bolum-bas" data-gr><p class="g-etiket">Sorgulayın</p><h2>Sorunuzu seçin, cevap ekrana düşsün</h2></div>
+  <div class="bolum-bas" data-gr><p class="g-etiket">Sık gelen sorular</p><h2>Merak ettiğiniz soruya dokunun, yanıtı burada açılsın</h2></div>
   <div class="g-sorgu" data-gr>
     <div class="g-sorgu-bas"><i></i><i></i><i></i><span>${S.marka.toLocaleLowerCase('tr-TR')} · leke · soru-cevap</span></div>
     <div class="g-sorgu-ic">
@@ -110,7 +110,7 @@ module.exports = {
         <button class="g-ssoru" data-gs="4"><i>›</i>İşlemden sonra lekem koyulaşabilir mi?</button>
         <button class="g-ssoru" data-gs="5"><i>›</i>Ücret bilgisi neden sitede yok?</button>
       </div>
-      <div class="g-scevap" data-gcevap aria-live="polite"><span class="g-yazan">Hekim onaylı yanıt</span><b></b><p></p><a class="dgm dgm--altin" href="${r}iletisim/" style="margin-top:8px">Muayenede konuşalım</a></div>
+      <div class="g-scevap" data-gcevap aria-live="polite"><span class="g-yazan">Hekimin yanıtı</span><b></b><p></p><a class="dgm dgm--altin" href="${r}iletisim/" style="margin-top:8px">Ayrıntısı muayenede</a></div>
     </div>
   </div>
 </div></section>
@@ -119,12 +119,12 @@ module.exports = {
 <!-- ═════════ KAPANIŞ ═════════ -->
 <section class="g-son">
   <div class="sar">
-    <p class="g-etiket g-etiket--orta">Sonraki adım</p>
+    <p class="g-etiket g-etiket--orta">Bir adım ötesi</p>
     <h2>Lekenizin nereden geldiğini muayenede ayıralım</h2>
     <p class="g-sonalt">Lekenin kaynağı belirlendikten sonra hangi adımla başlanacağı ve korunmanın nasıl sürdürüleceği birlikte planlanır.</p>
     <div class="g-sonbtn">
       <a class="dgm dgm--bir" href="${r}iletisim/">Randevu talebi oluşturun</a>
-      <a class="dgm dgm--iki" href="${r}hazirlik-listesi/arac/">Hazırlık listesini doldurun</a>
+      <a class="dgm dgm--iki" href="${r}hazirlik-listesi/arac/">Muayeneye hazırlanın</a>
     </div>
   </div>
 </section>

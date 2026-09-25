@@ -17,14 +17,14 @@ module.exports = {
       <p class="g-hero__alt">Pikosaniye lazer, derinin üst katmanlarında kümelenmiş melanin pigmentini çok kısa atımlarla hedef alır. Ancak ciltteki her koyu alan aynı kökenden gelmez ve hepsi lazere uygun değildir. Bu yüzden ilk iş, her lekeye büyütmeli ışık altında tek tek bakmaktır; adı konamayan bir lekeye atım yapılmaz.</p>
       <div class="g-hero__cta">
         <a class="dgm dgm--bir" href="${r}iletisim/">Randevu talebi</a>
-        <a class="dgm dgm--iki" href="#ilkbolum">Nasıl çalışır? ↓</a>
+        <a class="dgm dgm--iki" href="#ilkbolum">Yöntemin işleyişi ↓</a>
       </div>
       <div class="g-tikler"><span><i></i>Büyütmeli inceleme ilk adım</span><span><i></i>Tipi belirsiz lekeye atım yok</span><span><i></i>Güneş koruması zorunlu</span></div>
     </div>
     <div class="g-tarama" data-gr>
       <img src="${r}varliklar/gorsel/uyg-pico-lazer-leke.webp" width="1400" height="788" alt="Yanak cildinde dağınık, açık kahverengi yüzeysel lekelerin yumuşak ışıkta yakın planı" loading="eager">
       <div class="g-isin"></div>
-      <span class="g-ainot">Görsel yapay zekâ ile üretilmiştir</span>
+      <span class="g-ainot">Temsilî görsel · yapay zekâ ile üretildi</span>
     </div>
   </div>
 </section>
@@ -32,8 +32,8 @@ module.exports = {
 <!-- VERİ BANDI -->
 <div class="g-band"><div class="sar">
   <div data-gr><b><em data-gsay="6">0</em></b><span>İncelemede ayrılan leke tipi</span></div>
-  <div data-gr style="--d:70ms"><b><em data-gsay="5">0</em></b><span>Planlama adımı</span></div>
-  <div data-gr style="--d:140ms"><b>Önce</b><span>Büyütmeli inceleme</span></div>
+  <div data-gr style="--d:70ms"><b><em data-gsay="5">0</em></b><span>Adımda kurulan plan</span></div>
+  <div data-gr style="--d:140ms"><b>İlk iş</b><span>Lekeyi büyüterek incelemek</span></div>
   <div data-gr style="--d:210ms"><b>Her gün</b><span>Güneş koruması</span></div>
 </div></div>
 
@@ -71,7 +71,7 @@ module.exports = {
         <div class="g-cubuk"><small><span>YÜZEYSEL GÜNEŞ LEKESİ</span><span>Yanıt daha belirgin</span></small><div class="g-ciz"><b class="g-cubuk-petrol" data-gw="85%"></b></div></div>
         <div class="g-cubuk"><small><span>SİVİLCE SONRASI KOYULAŞMA</span><span>Önce sivilce durmalı</span></small><div class="g-ciz"><b class="g-cubuk-mavi" data-gw="45%"></b></div></div>
         <div class="g-cubuk"><small><span>MELAZMA</span><span>Son basamak, düşük enerji</span></small><div class="g-ciz"><b class="g-cubuk-bakir" data-gw="15%"></b></div></div>
-        <p style="font-size:.68rem;color:var(--sessiz);margin-top:8px">Çubuklar göreli simgedir; size özel plan muayenede kurulur.</p>
+        <p style="font-size:.68rem;color:var(--sessiz);margin-top:8px">Çubuk boyları yalnız karşılaştırma içindir; size özel plan muayenede kurulur.</p>
       </div>
       <div class="g-kutu g-b2" data-gr style="--d:140ms"><span class="g-ket">Protokol</span>
         <ol class="g-protokol">
@@ -88,7 +88,7 @@ module.exports = {
 <p>Deriyi ışığa duyarlı yapan ilaçlar ve bitkisel takviyeler, akne için ağızdan alınan isotretinoin ve bölgeye yakın zamanda yapılmış başka işlemler bekleme gerektirebilir. Yüzde uçuk, iltihaplı sivilce, alevlenmiş egzama ya da açık yara varken lazer iyileşmeyi uzatabileceği için önce deri toparlanır.</p>
 <p>Güneşle alevlenen deri hastalıkları, vitiligo gibi renk kaybıyla giden tablolar ve keloid eğilimi lazeri uygun olmaktan çıkarır. Gebelik ve emzirmede leke davranışı hormonlarla değiştiğinden plan bu dönemin sonrasına bırakılır. Tatil, açık havada çalışma ya da deniz sezonu gibi güneşten korunmanın aksayacağı bir dönem yaklaşıyorsa uygulamayı ertelemek daha doğrudur.</p>
       </div>
-      <div class="g-kutu g-b2 g-kutu--gorsel" data-gr style="--d:70ms"><img src="${r}varliklar/gorsel/uyg-pico-lazer-leke-2.webp" alt="El sırtında güneşe bağlı açık kahverengi lekelerin yakın plan görünümü" loading="lazy"><span class="g-ainot">Görsel yapay zekâ ile üretilmiştir</span></div>
+      <div class="g-kutu g-b2 g-kutu--gorsel" data-gr style="--d:70ms"><img src="${r}varliklar/gorsel/uyg-pico-lazer-leke-2.webp" alt="El sırtında güneşe bağlı açık kahverengi lekelerin yakın plan görünümü" loading="lazy"><span class="g-ainot">Temsilî görsel · yapay zekâ ile üretildi</span></div>
       <div class="g-kutu g-b2 g-kutu--gece" data-gr><span class="g-ket">İlke</span><p>"Önce tanı, sonra atım; bu sıra hiç değişmez."</p></div>
       <div class="g-kutu g-b2" data-gr style="--d:70ms">
         <span class="g-ket">Seans sonrası</span>
@@ -105,7 +105,7 @@ module.exports = {
 
 <!-- SORU TERMİNALİ -->
 <section class="bolum bolum--buz2"><div class="sar">
-  <div class="bolum-bas" data-gr><p class="g-etiket">Sorgulayın</p><h2>Sorunuzu seçin, cevap ekrana düşsün</h2></div>
+  <div class="bolum-bas" data-gr><p class="g-etiket">Sık gelen sorular</p><h2>Merak ettiğiniz soruya dokunun, yanıtı burada açılsın</h2></div>
   <div class="g-sorgu" data-gr>
     <div class="g-sorgu-bas"><i></i><i></i><i></i><span>${S.marka.toLowerCase()} · leke · soru-cevap</span></div>
     <div class="g-sorgu-ic">
@@ -117,7 +117,7 @@ module.exports = {
         <button class="g-ssoru" data-gs="4"><i>›</i>Seanstan sonraki günler nasıl geçer?</button>
         <button class="g-ssoru" data-gs="5"><i>›</i>Ücret bilgisini nasıl öğrenebilirim?</button>
       </div>
-      <div class="g-scevap" data-gcevap aria-live="polite"><span class="g-yazan">Hekim onaylı yanıt</span><b></b><p></p><a class="dgm dgm--altin" href="${r}iletisim/" style="margin-top:8px">Muayenede konuşalım</a></div>
+      <div class="g-scevap" data-gcevap aria-live="polite"><span class="g-yazan">Hekimin yanıtı</span><b></b><p></p><a class="dgm dgm--altin" href="${r}iletisim/" style="margin-top:8px">Ayrıntısı muayenede</a></div>
     </div>
   </div>
 </div></section>
@@ -126,12 +126,12 @@ module.exports = {
 <!-- KAPANIŞ -->
 <section class="g-son">
   <div class="sar">
-    <p class="g-etiket g-etiket--orta">Sonraki adım</p>
+    <p class="g-etiket g-etiket--orta">Bir adım ötesi</p>
     <h2>Lekelerinizin haritasını birlikte çıkaralım</h2>
     <p class="g-sonalt">Hangi lekenin lazere uygun olduğu, hangisinin yalnızca izlenmesi gerektiği muayenede belli olur.</p>
     <div class="g-sonbtn">
       <a class="dgm dgm--bir" href="${r}iletisim/">Randevu talebi oluşturun</a>
-      <a class="dgm dgm--iki" href="${r}hazirlik-listesi/arac/">Hazırlık listesini doldurun</a>
+      <a class="dgm dgm--iki" href="${r}hazirlik-listesi/arac/">Muayeneye hazırlanın</a>
     </div>
   </div>
 </section>

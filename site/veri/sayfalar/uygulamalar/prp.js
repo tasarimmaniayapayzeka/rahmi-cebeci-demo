@@ -24,7 +24,7 @@ module.exports = {
     <div class="g-tarama" data-gr>
       <img src="${r}varliklar/gorsel/uyg-prp.webp" width="1400" height="788" alt="Santrifüj tüplerinde katmanlarına ayrılmış açık sarı plazmanın yakın planı" loading="eager">
       <div class="g-isin"></div>
-      <span class="g-ainot">Görsel yapay zekâ ile üretilmiştir</span>
+      <span class="g-ainot">Temsilî görsel · yapay zekâ ile üretildi</span>
       <div class="g-hud" data-ghud><b>Neden “PRP”?</b><div class="g-cizgi"></div><span>İngilizce platelet-rich plasma ifadesinin kısaltmasıdır; Türkçe karşılığı trombositten zengin plazmadır.</span></div>
     </div>
   </div>
@@ -98,7 +98,7 @@ module.exports = {
         </ol>
       </div>
       <div class="g-kutu g-b2 g-kutu--gece" data-gr><span class="g-ket">İlke</span><p>“Seans sayısını artırmak, yanıt vermeyen bir cildin çözümü değildir.”</p></div>
-      <div class="g-kutu g-b2 g-kutu--gorsel" data-gr style="--d:70ms"><img src="${r}varliklar/gorsel/uyg-prp-2.webp" alt="Uygulama odasında hazırlanmış steril malzeme tepsisi" loading="lazy"><span class="g-ainot">Görsel yapay zekâ ile üretilmiştir</span></div>
+      <div class="g-kutu g-b2 g-kutu--gorsel" data-gr style="--d:70ms"><img src="${r}varliklar/gorsel/uyg-prp-2.webp" alt="Uygulama odasında hazırlanmış steril malzeme tepsisi" loading="lazy"><span class="g-ainot">Temsilî görsel · yapay zekâ ile üretildi</span></div>
       <div class="g-kutu g-b2 g-kutu--cta" data-gr style="--d:140ms"><h3>Cildinize uygun mu, birlikte bakalım</h3><p>Karar, muayene ve öykünüz değerlendirildikten sonra verilir.</p><a class="dgm dgm--altin" href="${r}iletisim/">Randevu talebi</a></div>
       <div class="kutu kutu--uyari g-b4" data-gr>
         <b>Hangi durumlarda uygulanmaz, hangilerinde beklenir?</b>
@@ -122,7 +122,7 @@ module.exports = {
       </div>
       <div class="kutu kutu--acil g-b2" data-gr style="--d:70ms">
         <b>Beklemeden başvurmanız gereken durumlar</b>
-        <p>İlk günlerdeki hafif kızarıklık ve şişlik her gün biraz daha azalmalıdır. Tersine ağrı artıyor, bölge ısınıyor, iltihaplı bir akıntı ya da büyüyen bir kızarıklık beliriyor veya ateşiniz çıkıyorsa kontrol gününü beklemeden muayenehaneye ulaşın. Soluk almakta güçlük, vücuda yayılan döküntü ya da bayılma hissi acil durumdur: <b>112</b>’yi arayın veya size en yakın acil servise gidin.</p>
+        <p>İlk günlerdeki hafif kızarıklık ve şişlik her gün biraz daha azalmalıdır. Tersine ağrı artıyor, bölge ısınıyor, iltihaplı bir akıntı ya da büyüyen bir kızarıklık beliriyor veya ateşiniz çıkıyorsa kontrol gününü beklemeden muayenehaneye ulaşın. Soluk almakta güçlük, vücuda yayılan döküntü ya da bayılma hissi acil durumdur: <b>112</b> Acil Çağrı Merkezi’ni arayın ya da en yakın hastanenin acil birimine başvurun.</p>
       </div>
     </div>
   </div>
@@ -141,7 +141,7 @@ module.exports = {
 
 <!-- ═════ SORU TERMİNALİ ═════ -->
 <section class="bolum bolum--buz2"><div class="sar">
-  <div class="bolum-bas" data-gr><p class="g-etiket">Sorgulayın</p><h2>Bir soru seçin, yanıtını okuyun</h2></div>
+  <div class="bolum-bas" data-gr><p class="g-etiket">Sık gelen sorular</p><h2>Bir soru seçin, yanıtını okuyun</h2></div>
   <div class="g-sorgu" data-gr>
     <div class="g-sorgu-bas"><i></i><i></i><i></i><span>${S.marka.toLocaleLowerCase('tr')} · prp · soru-cevap</span></div>
     <div class="g-sorgu-ic">
@@ -153,7 +153,7 @@ module.exports = {
         <button class="g-ssoru" data-gs="4"><i>›</i>Saç dökülmem için de aynı işlem mi yapılır?</button>
         <button class="g-ssoru" data-gs="5"><i>›</i>Ücret bilgisi neden sayfada yer almıyor?</button>
       </div>
-      <div class="g-scevap" data-gcevap aria-live="polite"><span class="g-yazan">Hekim onaylı yanıt</span><b></b><p></p><a class="dgm dgm--altin" href="${r}iletisim/" style="margin-top:8px">Muayenede konuşalım</a></div>
+      <div class="g-scevap" data-gcevap aria-live="polite"><span class="g-yazan">Hekimin yanıtı</span><b></b><p></p><a class="dgm dgm--altin" href="${r}iletisim/" style="margin-top:8px">Ayrıntısı muayenede</a></div>
     </div>
   </div>
 </div></section>
@@ -162,12 +162,12 @@ module.exports = {
 <!-- ═════ KAPANIŞ ═════ -->
 <section class="g-son">
   <div class="sar">
-    <p class="g-etiket g-etiket--orta">Sonraki adım</p>
+    <p class="g-etiket g-etiket--orta">Bir adım ötesi</p>
     <h2>Cildinizi önce birlikte değerlendirelim</h2>
     <p class="g-sonalt">Hangi uygulamanın size uygun olduğu, şikâyetiniz ve öykünüz dinlendikten sonra belli olur; ${S.iletisim.semt}’deki muayenehanemiz için randevu talebi bırakabilirsiniz.</p>
     <div class="g-sonbtn">
       <a class="dgm dgm--bir" href="${r}iletisim/">Randevu talebi oluşturun</a>
-      <a class="dgm dgm--iki" href="${r}hazirlik-listesi/arac/">Hazırlık listesini doldurun</a>
+      <a class="dgm dgm--iki" href="${r}hazirlik-listesi/arac/">Muayeneye hazırlanın</a>
     </div>
   </div>
 </section>

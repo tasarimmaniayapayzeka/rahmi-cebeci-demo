@@ -22,7 +22,7 @@ module.exports = {
   <div class="sar">
     <div class="arac" data-cilt-tipi>
 
-      <p class="etiket">Bilgilendirme aracı</p>
+      <p class="etiket">Öz gözlem aracı</p>
       <h1>Cilt Tipi Eğilim Testi</h1>
       <p class="giris" style="margin:12px 0 24px">On iki kısa soru, cildinizin üç konudaki <em>eğilimini</em> tarif etmenize yardım eder: yağ ile nem arasındaki denge, çevreye karşı hassasiyet ve iz ya da leke bırakma. Bir tanı aracı değildir; cilt tipinizi belirlemek için cildin muayenede, yakından incelenmesi gerekir. Amacı, randevuya gelmeden önce cildinizi kendi gözlemlerinizle anlatmayı kolaylaştırmaktır.</p>
 

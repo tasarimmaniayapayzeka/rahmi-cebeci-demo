@@ -32,9 +32,9 @@ module.exports = {
 <!-- ═════════ G · VERİ BANDI ═════════ -->
 <div class="g-band"><div class="sar">
   <div data-gr><b>Randevulu</b><span>Acele edilmeyen görüşme</span></div>
-  <div data-gr style="--d:60ms"><b><em data-gsay="4">0</em></b><span>Bölümlü görüşme</span></div>
-  <div data-gr style="--d:120ms"><b><em data-gsay="6">0</em></b><span>Yüz analizi başlığı</span></div>
-  <div data-gr style="--d:180ms"><b>Tek</b><span>Değerlendiren hekim</span></div>
+  <div data-gr style="--d:60ms"><b><em data-gsay="4">0</em></b><span>Aşamada ilerleyen görüşme</span></div>
+  <div data-gr style="--d:120ms"><b><em data-gsay="6">0</em></b><span>Başlıkta yüz incelemesi</span></div>
+  <div data-gr style="--d:180ms"><b>Tek</b><span>Hekim, baştan sona</span></div>
 </div></div>
 
 <!-- ═════════ NEDEN GEREKLİ ═════════ -->
@@ -78,7 +78,7 @@ module.exports = {
         <div class="g-cubuk"><small><span>Bölgeye bakış</span><span>Orta</span></small><div class="g-ciz"><b class="g-cubuk-petrol" data-gw="60%"></b></div></div>
         <div class="g-cubuk"><small><span>Genel sağlık ve ilaçlar</span><span>En geniş</span></small><div class="g-ciz"><b class="g-cubuk-bakir" data-gw="90%"></b></div></div>
         <div class="g-cubuk"><small><span>Yazılı plan ve imza</span><span>Son</span></small><div class="g-ciz"><b class="g-cubuk-mavi" data-gw="50%"></b></div></div>
-        <p style="font-size:.7rem;color:var(--sessiz);margin:10px 0 0">Çubuklar göreli simgedir; asıl süre görüşmede belirlenir.</p>
+        <p style="font-size:.7rem;color:var(--sessiz);margin:10px 0 0">Çubuk boyları yalnız karşılaştırma içindir; asıl süre görüşmede belirlenir.</p>
       </div>
       <div class="g-kutu g-b2" data-gr style="--d:140ms"><span class="g-ket">Dört bölüm</span>
         <ol class="g-protokol">
@@ -153,9 +153,9 @@ module.exports = {
     </div>
     <div class="izgara izgara--2">
       <div class="kart kart--duz" data-gr>
-        <h4>İlaç ve takviye sorgusu</h4>
+        <h4>Kullandığınız ilaçlar ve takviyeler</h4>
         <ul>
-          <li>Kan sulandırıcılar ve trombosit işlevini etkileyen ilaçlar</li>
+          <li>Kanı sulandıran ya da trombositlerin çalışmasını etkileyen ilaçlar</li>
           <li>Bağışıklığı baskılayan tedaviler ve kortizon kullanımı</li>
           <li>Düzenli alınan ağrı kesiciler ve iltihap giderici ilaçlar</li>
           <li>Tiroid, şeker ve tansiyon için kullanılan ilaçlar</li>
@@ -176,7 +176,7 @@ module.exports = {
     <div class="kutu kutu--bilgi" data-gr style="margin-top:22px">
       <b>Takip edilen bir hastalığınız varsa belgelerini getirin</b>
       <p>Tiroid, şeker, tansiyon ya da kansızlık gibi düzenli izlenen bir durumunuz varsa son kontrolünüze ait belgeleri, son aylarda yaptırdığınız kan tetkikleri varsa çıktılarını yanınızda getirin. Bu bilgiler hem uygulamanın zamanlamasını hem de seçilecek yöntemi etkileyebilir; eksik bir bilgi varsa gerekli tetkik bu görüşmede istenir.</p>
-      <p style="margin-top:10px">İlaçlarınızın kutularını ya da adlarını yazdığınız bir listeyi getirmeniz görüşmeyi kolaylaştırır. Hazırlanması gerekenleri <a href="${r}hazirlik-listesi/">hazırlık listesi</a> sayfasında maddeler hâlinde topladık.</p>
+      <p style="margin-top:10px">İlaçlarınızın kutularını ya da adlarını yazdığınız bir listeyi getirmeniz görüşmeyi kolaylaştırır. Yanınızda getirmeniz yararlı olanların tam dökümü <a href="${r}hazirlik-listesi/">hazırlık listesi</a> sayfasında yer alıyor.</p>
     </div>
   </div>
 </section>
@@ -236,7 +236,7 @@ module.exports = {
 
 <!-- ═════════ SORU TERMİNALİ ═════════ -->
 <section class="bolum bolum--buz2"><div class="sar">
-  <div class="bolum-bas" data-gr><p class="g-etiket">Sorgulayın</p><h2>Sorunuzu seçin, cevap ekrana düşsün</h2></div>
+  <div class="bolum-bas" data-gr><p class="g-etiket">Sık gelen sorular</p><h2>Merak ettiğiniz soruya dokunun, yanıtı burada açılsın</h2></div>
   <div class="g-sorgu" data-gr>
     <div class="g-sorgu-bas"><i></i><i></i><i></i><span>rahmi-cebeci · muayene · soru-cevap</span></div>
     <div class="g-sorgu-ic">
@@ -249,7 +249,7 @@ module.exports = {
         <button class="g-ssoru" data-gs="5"><i>›</i>Fotoğrafım çekilir mi?</button>
         <button class="g-ssoru" data-gs="6"><i>›</i>Ücret bilgisini nasıl öğrenirim?</button>
       </div>
-      <div class="g-scevap" data-gcevap aria-live="polite"><span class="g-yazan">Hekim onaylı yanıt</span><b></b><p></p><a class="dgm dgm--altin" href="${r}iletisim/" style="margin-top:8px">Muayenede konuşalım</a></div>
+      <div class="g-scevap" data-gcevap aria-live="polite"><span class="g-yazan">Hekimin yanıtı</span><b></b><p></p><a class="dgm dgm--altin" href="${r}iletisim/" style="margin-top:8px">Ayrıntısı muayenede</a></div>
     </div>
   </div>
 </div></section>
@@ -309,7 +309,7 @@ module.exports = {
       </a>
       <a class="kart" href="${r}sikca-sorulan-sorular/" data-gr style="--d:140ms">
         <h3>Sıkça sorulan sorular</h3>
-        <p>Randevu, görüşme ve uygulama süreciyle ilgili sık gelen sorular.</p>
+        <p>Randevudan kontrole kadar en çok merak edilen konuların yanıtları.</p>
         <span class="kart__ok">İncele ${ik.ok}</span>
       </a>
     </div>
@@ -319,12 +319,12 @@ module.exports = {
 <!-- ═════════ G · KAPANIŞ ═════════ -->
 <section class="g-son">
   <div class="sar">
-    <p class="g-etiket g-etiket--orta">Sonraki adım</p>
+    <p class="g-etiket g-etiket--orta">Bir adım ötesi</p>
     <h2>Her plan bir görüşmeyle başlar</h2>
     <p class="g-sonalt">Sorunuzu getirin; hangi uygulamanın gerektiğine, belki de hiçbirinin gerekmediğine birlikte karar verelim. ${S.iletisim.adres}, ${S.iletisim.ilce}.</p>
     <div class="g-sonbtn">
       <a class="dgm dgm--bir" href="${r}iletisim/">Randevu talebi oluşturun</a>
-      <a class="dgm dgm--iki" href="${r}hazirlik-listesi/arac/">Hazırlık listesini doldurun</a>
+      <a class="dgm dgm--iki" href="${r}hazirlik-listesi/arac/">Muayeneye hazırlanın</a>
     </div>
   </div>
 </section>

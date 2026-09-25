@@ -25,7 +25,7 @@ module.exports = {
     <div class="g-tarama" data-gr>
       <img src="${r}varliklar/gorsel/doku-cilt.webp" width="1600" height="900" alt="Yumuşak ışık altında cilt yüzeyinin yakından görünümü" loading="eager">
       <div class="g-isin"></div>
-      <span class="g-ainot">Görsel yapay zekâ ile üretilmiştir</span>
+      <span class="g-ainot">Temsilî görsel · yapay zekâ ile üretildi</span>
       <div class="g-hud"><b>Hekim denetiminden geçen yazılar</b><div class="g-cizgi"></div><span>Her yazıda hazırlayan hekim ve son güncelleme tarihi yer alır</span></div>
     </div>
   </div>
@@ -206,7 +206,7 @@ module.exports = {
 <!-- ═════════ KAPANIŞ ═════════ -->
 <section class="g-son">
   <div class="sar">
-    <p class="g-etiket g-etiket--orta">Sonraki adım</p>
+    <p class="g-etiket g-etiket--orta">Bir adım ötesi</p>
     <h2>Yazılmasını istediğiniz bir konu var mı?</h2>
     <p class="g-sonalt">Bu bölümün başlıklarını muayenede sorulan sorular şekillendiriyor. Aklınızdaki konuyu görüşmede iletebilir ya da iletişim kanallarından bize yazabilirsiniz.</p>
     <div class="g-sonbtn">

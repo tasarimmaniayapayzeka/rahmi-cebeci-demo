@@ -12,8 +12,8 @@ module.exports = {
 <section class="g-hero">
   <div class="sar">
     <div>
-      <nav class="kirinti" aria-label="Konum" style="position:relative;font-size:.76rem;color:var(--sessiz);display:flex;gap:7px;margin-bottom:18px"><a href="${r}" style="color:var(--sessiz);text-decoration:none">Ana sayfa</a> › <a href="${r}cilt-sorunlari/" style="color:var(--sessiz);text-decoration:none">Cilt sorunları</a> › <span>Mimik çizgileri ve kırışıklık</span></nav>
-      <p class="g-etiket">Cilt sorunları · Mimik ve kırışıklık</p>
+      <nav class="kirinti" aria-label="Konum" style="position:relative;font-size:.76rem;color:var(--sessiz);display:flex;gap:7px;margin-bottom:18px"><a href="${r}" style="color:var(--sessiz);text-decoration:none">Ana sayfa</a> › <a href="${r}cilt-sorunlari/" style="color:var(--sessiz);text-decoration:none">Sorunlar</a> › <span>Mimik çizgileri ve kırışıklık</span></nav>
+      <p class="g-etiket">Şikâyet rehberi · Mimik ve kırışıklık</p>
       <h1>Önce çizginin <span class="g-isik">nereden geldiğine</span> bakıyoruz</h1>
       <p class="g-hero__alt">Yüzdeki çizgilerin bir kısmı yalnız kaş kaldırdığınızda ya da gülümsediğinizde ortaya çıkar; bir kısmı ise yüzünüz tamamen dinlenirken de yerinde durur. İlki kas hareketinin, ikincisi deride yerleşmiş yapısal değişimin izidir. Hangisinin ağır bastığı anlaşılmadan hangi yöntemin konuşulacağına karar verilemez.</p>
       <div class="g-hero__cta">
@@ -25,7 +25,7 @@ module.exports = {
     <div class="g-tarama" data-gr>
       <img src="${r}varliklar/gorsel/sorun-mimik-cizgileri.webp" width="1400" height="788" alt="Göz kenarında hafif mimik çizgileri bulunan, gülümseyen bir kadın yüzü" loading="eager">
       <div class="g-isin"></div>
-      <span class="g-ainot">Görsel yapay zekâ ile üretilmiştir</span>
+      <span class="g-ainot">Temsilî görsel · yapay zekâ ile üretildi</span>
       <button class="g-nokta" data-gn="ust" style="--x:23%;--y:13%" aria-label="Alın ve kaş arası"><span data-ad="Alın"></span></button>
       <button class="g-nokta" data-gn="orta" style="--x:51%;--y:29%" aria-label="Göz kenarı"><span data-ad="Göz kenarı"></span></button>
       <button class="g-nokta" data-gn="alt" style="--x:40%;--y:69%" aria-label="Dudak çevresi"><span data-ad="Dudak çevresi"></span></button>
@@ -73,7 +73,7 @@ module.exports = {
     </div>
     <div class="kutu kutu--uyari" data-gr style="margin-top:18px">
       <b>Birden ortaya çıkan yüz asimetrisi acil bir durumdur</b>
-      <p>Saatler ya da günler içinde gelişen tek taraflı yüz düşüklüğü, göz kapağını kapatamama, ağız kenarından sıvı kaçırma veya konuşmada bozulma estetik değerlendirmenin konusu değildir. Böyle bir durumda beklemeden 112’yi arayın ya da en yakın acil servise başvurun.</p>
+      <p>Saatler ya da günler içinde gelişen tek taraflı yüz düşüklüğü, göz kapağını kapatamama, ağız kenarından sıvı kaçırma veya konuşmada bozulma estetik değerlendirmenin konusu değildir. Vakit geçirmeden 112 Acil Çağrı Merkezi’ni arayın veya size en yakın hastanenin acil birimine gidin.</p>
     </div>
   </div>
 </section>
@@ -88,7 +88,7 @@ module.exports = {
     </div>
     <div class="g-matris">
       <div class="g-mtab" data-gr>
-        <div class="g-mbas"><span>Uygulama</span><span>Hedef</span><span>İyileşme</span><span></span></div>
+        <div class="g-mbas"><span>Yöntem</span><span>Amaç</span><span>Toparlanma</span><span></span></div>
         <a class="g-msatir" data-akt href="${r}uygulamalar/botulinum-toksin/" data-gg="${r}varliklar/gorsel/uyg-botulinum-toksin.webp" data-gb="Botulinum toksin" data-ga="Hareketin baskın olduğu çizgilerde ilgili kasların çalışma gücünün azaltılması hedeflenir; etkinin süresi kişiden kişiye değişir."><h4>Botulinum toksin</h4><span class="g-hucre"><i class="g-kcip g-kcip--1">HAREKET</i></span><span class="g-hucre">Muayenede belirlenir</span><span class="g-git">→</span></a>
         <a class="g-msatir" href="${r}uygulamalar/dolgu-uygulamalari/" data-gg="${r}varliklar/gorsel/uyg-dolgu-uygulamalari.webp" data-gb="Dolgu uygulamaları" data-ga="Derinleşmiş statik çizgilerde ve hacim kaybının eşlik ettiği bölgelerde ölçülü miktarla destek sağlanması amaçlanır."><h4>Dolgu uygulamaları</h4><span class="g-hucre"><i class="g-kcip g-kcip--2">HACİM</i></span><span class="g-hucre">Muayenede belirlenir</span><span class="g-git">→</span></a>
         <a class="g-msatir" href="${r}uygulamalar/genclik-asisi-skinbooster/" data-gg="${r}varliklar/gorsel/uyg-genclik-asisi-skinbooster.webp" data-gb="Gençlik aşısı (skinbooster)" data-ga="Hacim eklemeden derinin nem ve esneklik niteliğini desteklemeye yöneliktir; ince statik çizgilerde konuşulur."><h4>Gençlik aşısı (skinbooster)</h4><span class="g-hucre"><i class="g-kcip g-kcip--2">DOKU</i></span><span class="g-hucre">Muayenede belirlenir</span><span class="g-git">→</span></a>
@@ -101,7 +101,7 @@ module.exports = {
 
 <!-- ═════════ SORU TERMİNALİ ═════════ -->
 <section class="bolum bolum--buz2"><div class="sar">
-  <div class="bolum-bas" data-gr><p class="g-etiket">Sorgulayın</p><h2>Sorunuzu seçin, cevap ekrana düşsün</h2></div>
+  <div class="bolum-bas" data-gr><p class="g-etiket">Sık gelen sorular</p><h2>Merak ettiğiniz soruya dokunun, yanıtı burada açılsın</h2></div>
   <div class="g-sorgu" data-gr>
     <div class="g-sorgu-bas"><i></i><i></i><i></i><span>${S.marka.toLocaleLowerCase('tr-TR')} · mimik çizgileri · soru-cevap</span></div>
     <div class="g-sorgu-ic">
@@ -113,7 +113,7 @@ module.exports = {
         <button class="g-ssoru" data-gs="4"><i>›</i>Uygulamadan sonra mimiklerim donuk görünür mü?</button>
         <button class="g-ssoru" data-gs="5"><i>›</i>Ücret bilgisi neden sitede yok?</button>
       </div>
-      <div class="g-scevap" data-gcevap aria-live="polite"><span class="g-yazan">Hekim onaylı yanıt</span><b></b><p></p><a class="dgm dgm--altin" href="${r}iletisim/" style="margin-top:8px">Muayenede konuşalım</a></div>
+      <div class="g-scevap" data-gcevap aria-live="polite"><span class="g-yazan">Hekimin yanıtı</span><b></b><p></p><a class="dgm dgm--altin" href="${r}iletisim/" style="margin-top:8px">Ayrıntısı muayenede</a></div>
     </div>
   </div>
 </div></section>
@@ -122,12 +122,12 @@ module.exports = {
 <!-- ═════════ KAPANIŞ ═════════ -->
 <section class="g-son">
   <div class="sar">
-    <p class="g-etiket g-etiket--orta">Sonraki adım</p>
+    <p class="g-etiket g-etiket--orta">Bir adım ötesi</p>
     <h2>Çizgilerinizin kaynağını muayenede birlikte görelim</h2>
     <p class="g-sonalt">Yüzünüz önce dinlenirken, sonra hareket hâlindeyken incelenir; hangi çizginin hangi gruba ait olduğu size tek tek gösterilir.</p>
     <div class="g-sonbtn">
       <a class="dgm dgm--bir" href="${r}iletisim/">Randevu talebi oluşturun</a>
-      <a class="dgm dgm--iki" href="${r}hazirlik-listesi/arac/">Hazırlık listesini doldurun</a>
+      <a class="dgm dgm--iki" href="${r}hazirlik-listesi/arac/">Muayeneye hazırlanın</a>
     </div>
   </div>
 </section>

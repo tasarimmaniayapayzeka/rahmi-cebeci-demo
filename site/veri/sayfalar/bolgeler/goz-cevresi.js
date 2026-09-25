@@ -13,7 +13,7 @@ module.exports = {
   <div class="sar">
     <div>
       <nav class="kirinti" aria-label="Konum" style="position:relative;font-size:.76rem;color:var(--sessiz);display:flex;gap:7px;margin-bottom:18px"><a href="${r}" style="color:var(--sessiz);text-decoration:none">Ana sayfa</a> › <a href="${r}bolgeler/" style="color:var(--sessiz);text-decoration:none">Bölgeler</a> › <span>Göz Çevresi</span></nav>
-      <p class="g-etiket">Bölgeler · Göz çevresi</p>
+      <p class="g-etiket">Bölge rehberi · Göz çevresi</p>
       <h1>Yüzün en ince derisi, <span class="g-isik">en temkinli</span> planı ister.</h1>
       <p class="g-hero__alt">Alt göz kapağında deri milimetrenin altına iner ve burada oluşan en küçük düzensizlik bile karşınızdakinin gözüne çarpar. Koyu halkalar, göz kenarındaki kırışıklar ve kaşın düşmesi dışarıdan birbirine karışsa da her birinin nedeni başkadır. Muayenede önce bu nedenler ayrılır; sonuç çoğu zaman beklemek ya da hiç işlem yapmamak olur ve bu da tıbben yerinde bir yanıttır.</p>
       <div class="g-hero__cta">
@@ -25,7 +25,7 @@ module.exports = {
     <div class="g-tarama" data-gr>
       <img src="${r}varliklar/gorsel/ic3d-goz.webp" width="1400" height="788" alt="Alt göz kapağı ve göz kenarının yakın plan üç boyutlu çizimi" loading="eager">
       <div class="g-isin"></div>
-      <span class="g-ainot">Görsel yapay zekâ ile üretilmiştir</span>
+      <span class="g-ainot">Temsilî görsel · yapay zekâ ile üretildi</span>
       <div class="g-hud"><b>Milimetrenin altında deri</b><div class="g-cizgi"></div><span>Burada karar eşiği, yüzün diğer bölgelerinden daha yüksek tutulur.</span></div>
     </div>
   </div>
@@ -84,7 +84,7 @@ module.exports = {
       <div class="g-atlas" data-gr>
         <div class="g-atlas-kap">
           <img src="${r}varliklar/gorsel/yuz-3d-c.webp" width="900" height="1200" alt="Göz çevresinin yüzdeki yerini gösteren, sola dönük üç boyutlu kadın profili" loading="lazy">
-          <span class="g-ainot">Görsel yapay zekâ ile üretilmiştir</span>
+          <span class="g-ainot">Temsilî görsel · yapay zekâ ile üretildi</span>
           <div class="g-rozetk" data-grozet><b>Göz altı</b><span>Koyu halkanın arkasında beş ayrı neden olabilir; hangisi olduğu bilinmeden işlem düşünülmez.</span></div>
         </div>
       </div>
@@ -161,7 +161,7 @@ module.exports = {
     </div>
     <div class="g-matris">
       <div class="g-mtab" data-gr>
-        <div class="g-mbas"><span>Uygulama</span><span>Hedef</span><span>İyileşme</span><span></span></div>
+        <div class="g-mbas"><span>Yöntem</span><span>Amaç</span><span>Toparlanma</span><span></span></div>
         <a class="g-msatir" data-akt href="${r}uygulamalar/botulinum-toksin/" data-gg="${r}varliklar/gorsel/uyg-botulinum-toksin.webp" data-gb="Botulinum toksin" data-ga="Gülerken göz kenarında beliren kas kaynaklı çizgilerde, az noktaya düşük dozla düşünülür."><h4>Botulinum toksin</h4><span class="g-hucre"><i class="g-kcip g-kcip--1">Kaz ayağı</i></span><span class="g-hucre">Birkaç gün</span><span class="g-git">→</span></a>
         <a class="g-msatir" href="${r}uygulamalar/dolgu-uygulamalari/#goz-alti" data-gg="${r}varliklar/gorsel/uyg-dolgu-uygulamalari.webp" data-gb="Göz altı dolgusu" data-ga="Yalnızca yanakla kapak arasındaki çukurun belirgin olduğu tabloda konuşulur; uygun olmadığı durumlar çoktur."><h4>Göz altı dolgusu</h4><span class="g-hucre"><i class="g-kcip g-kcip--1">Hacim kaybı</i></span><span class="g-hucre">1 haftaya varabilir</span><span class="g-git">→</span></a>
         <a class="g-msatir" href="${r}uygulamalar/somon-dna-polinukleotid/" data-gg="${r}varliklar/gorsel/uyg-somon-dna-polinukleotid.webp" data-gb="Somon DNA ve polinükleotid" data-ga="İncelmiş ve yorgun görünen alt kapak derisinde dokunun toparlanmasını desteklemek amacıyla düşünülür; hacim vermez."><h4>Somon DNA ve polinükleotid</h4><span class="g-hucre"><i class="g-kcip g-kcip--2">Cilt kalitesi</i></span><span class="g-hucre">Muayenede belirlenir</span><span class="g-git">→</span></a>
@@ -193,7 +193,7 @@ module.exports = {
           <li>Alt kapakta belirgin sarkma ya da öne taşan yağ torbası</li>
           <li>Koyuluğun renk birikiminden ya da seçilen damarlardan kaynaklandığı tablolar — dolgu bu durumlarda uygulanmaz; renk ve damar sorunu kendi başlıkları altında konuşulur</li>
           <li>Düşük göz kapağı ya da görme alanını daraltan bir sorun</li>
-          <li>Gebelik, emzirme ya da kullanılacak ürüne karşı bilinen aşırı duyarlılık</li>
+          <li>Gebelik, emzirme ya da kullanılacak içeriğe karşı daha önce görülmüş aşırı duyarlılık tepkisi</li>
         </ul>
       </div>
       <div class="kutu kutu--uyari" data-gr style="--d:70ms">
@@ -240,12 +240,12 @@ module.exports = {
 <!-- ═════════ KAPANIŞ ═════════ -->
 <section class="g-son">
   <div class="sar">
-    <p class="g-etiket g-etiket--orta">Sonraki adım</p>
+    <p class="g-etiket g-etiket--orta">Bir adım ötesi</p>
     <h2>Göz çevrenizi önce birlikte inceleyelim</h2>
     <p class="g-sonalt">${S.iletisim.adres}, ${S.iletisim.ilce} — muayenede önce koyu halkanın ya da çizginin nedenini buluyor, bir işleme gerek olup olmadığını ancak ondan sonra konuşuyoruz.</p>
     <div class="g-sonbtn">
       <a class="dgm dgm--bir" href="${r}iletisim/">Randevu talebi oluşturun</a>
-      <a class="dgm dgm--iki" href="${r}hazirlik-listesi/arac/">Hazırlık listesini doldurun</a>
+      <a class="dgm dgm--iki" href="${r}hazirlik-listesi/arac/">Muayeneye hazırlanın</a>
     </div>
   </div>
 </section>

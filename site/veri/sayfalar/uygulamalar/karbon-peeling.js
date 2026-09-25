@@ -17,14 +17,14 @@ module.exports = {
       <p class="g-hero__alt">Yüze ince bir tabaka siyah karbon losyonu sürülür ve kuruması beklenir. Ardından pikosaniye lazer yüz boyunca gezdirilir; koyu tanecikler enerjiyi üzerine çeker ve dağılırken yüzeydeki ölü hücreleri, gözenek ağzındaki birikimi de beraberinde götürür. Etki derine inmez; bu yüzden birkaç seanslık bir dizi olarak planlanır.</p>
       <div class="g-hero__cta">
         <a class="dgm dgm--bir" href="${r}iletisim/">Randevu talebi</a>
-        <a class="dgm dgm--iki" href="#ilkbolum">Nasıl çalışır? ↓</a>
+        <a class="dgm dgm--iki" href="#ilkbolum">Yöntemin işleyişi ↓</a>
       </div>
       <div class="g-tikler"><span><i></i>Etki yüzeyde kalır</span><span><i></i>Günlük bakımla birlikte düşünülür</span><span><i></i>Gözler mutlaka korunur</span></div>
     </div>
     <div class="g-tarama" data-gr>
       <img src="${r}varliklar/gorsel/uyg-karbon-peeling.webp" width="1400" height="788" alt="Mermer bir yüzeyde spatulayla yayılmış mat siyah losyonun yakın planı" loading="eager">
       <div class="g-isin"></div>
-      <span class="g-ainot">Görsel yapay zekâ ile üretilmiştir</span>
+      <span class="g-ainot">Temsilî görsel · yapay zekâ ile üretildi</span>
     </div>
   </div>
 </section>
@@ -32,7 +32,7 @@ module.exports = {
 <!-- VERİ BANDI -->
 <div class="g-band"><div class="sar">
   <div data-gr><b><em data-gsay="2">0</em></b><span>Aşamalı tarama</span></div>
-  <div data-gr style="--d:70ms"><b>4–6</b><span>Seanslık dizi</span></div>
+  <div data-gr style="--d:70ms"><b>4–6</b><span>Seans, olağan seri uzunluğu</span></div>
   <div data-gr style="--d:140ms"><b>2–4&#8239;hf</b><span>Seanslar arası</span></div>
   <div data-gr style="--d:210ms"><b>20–30&#8239;dk</b><span>Bir seans</span></div>
 </div></div>
@@ -40,7 +40,7 @@ module.exports = {
 <!-- BU NEDİR / BU NE DEĞİLDİR -->
 <section class="bolum" id="ilkbolum">
   <div class="sar">
-    <div class="bolum-bas" data-gr><p class="g-etiket">Tanım ve sınırlar</p><h2>Karbon peeling cilde ne yapar, nerede yetersiz kalır?</h2><p class="giris">Gün ortasında parlayan alın ve burun, belirginleşen gözenekler ve mat, yorgun bir görünüm çoğunlukla aynı kişide bir arada görülür. Bunun altında çoğu zaman yağ bezlerinin çalışkanlığı ve evdeki bakım alışkanlıkları yatar. Bu şikâyetlerin nedenlerini <a href="${r}cilt-sorunlari/gozenek-ve-cilt-dokusu/">gözenek ve cilt dokusu</a> ile <a href="${r}cilt-sorunlari/nem-kaybi-ve-donukluk/">ciltte nem kaybı ve donukluk</a> sayfalarında anlattık.</p></div>
+    <div class="bolum-bas" data-gr><p class="g-etiket">Tanım ve sınırlar</p><h2>Karbon peeling cilde ne yapar, nerede yetersiz kalır?</h2><p class="giris">Gün ortasında parlayan alın ve burun, belirginleşen gözenekler ve mat, yorgun bir görünüm çoğunlukla aynı kişide bir arada görülür. Bunun altında çoğu zaman yağ bezlerinin çalışkanlığı ve evdeki bakım alışkanlıkları yatar. Nedenleri iki ayrı sayfada ele aldık: <a href="${r}cilt-sorunlari/nem-kaybi-ve-donukluk/">ciltte nem kaybı ve donukluk</a> ve <a href="${r}cilt-sorunlari/gozenek-ve-cilt-dokusu/">gözenek ve cilt dokusu</a>.</p></div>
     <div class="izgara izgara--2">
       <div class="kutu kutu--bilgi" data-gr>
         <b>Bu nedir</b>
@@ -71,7 +71,7 @@ module.exports = {
         <div class="g-cubuk"><small><span>GÖZENEK GÖRÜNÜMÜ</span><span>Geçici azalma</span></small><div class="g-ciz"><b class="g-cubuk-petrol" data-gw="70%"></b></div></div>
         <div class="g-cubuk"><small><span>PARLAMA VE DONUKLUK</span><span>Yüzeyde tazelenme</span></small><div class="g-ciz"><b class="g-cubuk-mavi" data-gw="60%"></b></div></div>
         <div class="g-cubuk"><small><span>ÇUKUR İZ VE LEKE</span><span>Hedef dışı</span></small><div class="g-ciz"><b class="g-cubuk-bakir" data-gw="8%"></b></div></div>
-        <p style="font-size:.68rem;color:var(--sessiz);margin-top:8px">Çubuklar göreli simgedir; size özel plan muayenede kurulur.</p>
+        <p style="font-size:.68rem;color:var(--sessiz);margin-top:8px">Çubuk boyları yalnız karşılaştırma içindir; size özel plan muayenede kurulur.</p>
       </div>
       <div class="g-kutu g-b2" data-gr style="--d:140ms"><span class="g-ket">Protokol</span>
         <ol class="g-protokol">
@@ -88,7 +88,7 @@ module.exports = {
 <p>Deriyi ışığa duyarlı yapan ilaçları ve sarı kantaron gibi bitkisel ürünleri soruyoruz. Akne için ağızdan isotretinoin kullandıysanız ya da asitli ürünlerinizi henüz bırakmadıysanız seans ertelenir. Daha önce bir yüz ürününe ya da uyuşturucu kreme tepki verdiyseniz ürünün adını getirin; losyon içeriği buna göre seçilir ya da uygulamadan vazgeçilir.</p>
 <p>Birçok üründe yanan, gerilen ya da kızaran bir cildin koruyucu tabakası zaten zayıflamıştır; lazerden önce bu tabakanın onarılması gerekir. Güneşle alevlenen deri hastalıkları, vitiligo gibi renk kaybıyla giden tablolar, keloid eğilimi, gebelik ve emzirme, yara iyileşmesini bozan durumlar ve alan içinde incelenmemiş pigmentli lekeler uygulamaya engeldir.</p>
       </div>
-      <div class="g-kutu g-b2 g-kutu--gorsel" data-gr style="--d:70ms"><img src="${r}varliklar/gorsel/uyg-karbon-peeling-2.webp" alt="Burun kanadı çevresinde parlak, yağlı cilt yüzeyinin yakın planı" loading="lazy"><span class="g-ainot">Görsel yapay zekâ ile üretilmiştir</span></div>
+      <div class="g-kutu g-b2 g-kutu--gorsel" data-gr style="--d:70ms"><img src="${r}varliklar/gorsel/uyg-karbon-peeling-2.webp" alt="Burun kanadı çevresinde parlak, yağlı cilt yüzeyinin yakın planı" loading="lazy"><span class="g-ainot">Temsilî görsel · yapay zekâ ile üretildi</span></div>
       <div class="g-kutu g-b2 g-kutu--gece" data-gr><span class="g-ket">İlke</span><p>"Günlük bakım oturmadıysa seans sayısını artırmak çözüm olmaz."</p></div>
       <div class="g-kutu g-b2" data-gr style="--d:70ms">
         <span class="g-ket">Seans sonrası</span>
@@ -97,7 +97,7 @@ module.exports = {
       <div class="g-kutu g-b2 g-kutu--cta" data-gr style="--d:140ms"><h3>Sırayı birlikte kuralım</h3><p>Plan, cildinizin yağlanma eğilimi görüldükten sonra kurulur.</p><a class="dgm dgm--altin" href="${r}iletisim/">Randevu talebi</a></div>
       <div class="kutu kutu--acil g-b6" data-gr>
         <b>Ne zaman hemen haber vermelisiniz?</b>
-        <p>Seanstan sonra kızarıklık azalacağına yayılıyorsa, ağrı artıyorsa, deride su toplaması, açık yara, akıntı ya da ateş fark ederseniz bekleyip görmeyin. ${S.iletisim.tel} numarasından bize ulaşın; telefonla ulaşamıyorsanız <b>112</b>’yi arayın ya da en yakın acil servise gidin.</p>
+        <p>Seanstan sonra kızarıklık azalacağına yayılıyorsa, ağrı artıyorsa, deride su toplaması, açık yara, akıntı ya da ateş fark ederseniz bekleyip görmeyin. ${S.iletisim.tel} numarasından bize ulaşın; telefonla ulaşamıyorsanız <b>112</b> Acil Çağrı Merkezi’ni arayın ya da en yakın hastanenin acil birimine başvurun.</p>
       </div>
     </div>
   </div>
@@ -105,7 +105,7 @@ module.exports = {
 
 <!-- SORU TERMİNALİ -->
 <section class="bolum bolum--buz2"><div class="sar">
-  <div class="bolum-bas" data-gr><p class="g-etiket">Sorgulayın</p><h2>Sorunuzu seçin, cevap ekrana düşsün</h2></div>
+  <div class="bolum-bas" data-gr><p class="g-etiket">Sık gelen sorular</p><h2>Merak ettiğiniz soruya dokunun, yanıtı burada açılsın</h2></div>
   <div class="g-sorgu" data-gr>
     <div class="g-sorgu-bas"><i></i><i></i><i></i><span>${S.marka.toLowerCase()} · karbon peeling · soru-cevap</span></div>
     <div class="g-sorgu-ic">
@@ -117,7 +117,7 @@ module.exports = {
         <button class="g-ssoru" data-gs="4"><i>›</i>Seanstan sonra nelerden kaçınmalıyım?</button>
         <button class="g-ssoru" data-gs="5"><i>›</i>Ücret bilgisini nasıl öğrenebilirim?</button>
       </div>
-      <div class="g-scevap" data-gcevap aria-live="polite"><span class="g-yazan">Hekim onaylı yanıt</span><b></b><p></p><a class="dgm dgm--altin" href="${r}iletisim/" style="margin-top:8px">Muayenede konuşalım</a></div>
+      <div class="g-scevap" data-gcevap aria-live="polite"><span class="g-yazan">Hekimin yanıtı</span><b></b><p></p><a class="dgm dgm--altin" href="${r}iletisim/" style="margin-top:8px">Ayrıntısı muayenede</a></div>
     </div>
   </div>
 </div></section>
@@ -126,12 +126,12 @@ module.exports = {
 <!-- KAPANIŞ -->
 <section class="g-son">
   <div class="sar">
-    <p class="g-etiket g-etiket--orta">Sonraki adım</p>
+    <p class="g-etiket g-etiket--orta">Bir adım ötesi</p>
     <h2>Önce bakım düzeni mi, önce seans mı?</h2>
     <p class="g-sonalt">Yağlanmaya eğilimli ciltte kalıcı farkı çoğu zaman seans değil, evde her gün yapılan bakım belirler.</p>
     <div class="g-sonbtn">
       <a class="dgm dgm--bir" href="${r}iletisim/">Randevu talebi oluşturun</a>
-      <a class="dgm dgm--iki" href="${r}hazirlik-listesi/arac/">Hazırlık listesini doldurun</a>
+      <a class="dgm dgm--iki" href="${r}hazirlik-listesi/arac/">Muayeneye hazırlanın</a>
     </div>
   </div>
 </section>

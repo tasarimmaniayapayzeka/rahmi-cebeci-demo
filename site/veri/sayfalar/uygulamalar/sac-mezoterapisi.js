@@ -12,19 +12,19 @@ module.exports = {
   <div class="sar">
     <div>
       <nav class="kirinti" aria-label="Konum" style="position:relative;font-size:.76rem;color:var(--sessiz);display:flex;gap:7px;margin-bottom:18px"><a href="${r}" style="color:var(--sessiz);text-decoration:none">Ana sayfa</a> › <a href="${r}uygulamalar/" style="color:var(--sessiz);text-decoration:none">Uygulamalar</a> › <span>Saç mezoterapisi</span></nav>
-      <p class="g-etiket">Saç ve Saçlı Deri · Mezoterapi</p>
+      <p class="g-etiket">Saç uygulaması · Mezoterapi</p>
       <h1>Saç mezoterapisi: <span class="g-isik">saçlı deriye ölçülü destek</span></h1>
       <p class="g-hero__alt">Saç mezoterapisinde vitamin, eser element, aminoasit ve düşük yoğunlukta hyalüronik asit içeren bir karışım, ince iğneyle saçlı derinin pek çok noktasına küçük miktarlarda verilir. Hedeflenen, saç kökünü çevreleyen dokunun beslenmesini desteklemektir. Kaybedilmiş saçı geri getirmez; dökülmenin kaynağı araştırılmadan plan yapılmaz, seans sayısı kişiye göre belirlenir.</p>
       <div class="g-hero__cta">
         <a class="dgm dgm--bir" href="${r}iletisim/">Randevu talebi</a>
-        <a class="dgm dgm--iki" href="#ilkbolum">Nasıl ilerler? ↓</a>
+        <a class="dgm dgm--iki" href="#ilkbolum">Seyrini okuyun ↓</a>
       </div>
       <div class="g-tikler"><span><i></i>Karışıma reçeteli ilaç katılmaz</span><span><i></i>Seans sayısı kişiye göre</span><span><i></i>Ara kontrolle ilerler</span></div>
     </div>
     <div class="g-tarama" data-gr>
       <img src="${r}varliklar/gorsel/uyg-sac-mezoterapisi.webp" width="1400" height="788" alt="Sırtı dönük bir kadının omuzlarına uzanan hacimli saçları" loading="eager">
       <div class="g-isin"></div>
-      <span class="g-ainot">Görsel yapay zekâ ile üretilmiştir</span>
+      <span class="g-ainot">Temsilî görsel · yapay zekâ ile üretildi</span>
     </div>
   </div>
 </section>
@@ -68,11 +68,11 @@ module.exports = {
         <p><b style="color:var(--murekkep)">İlk anlamlı değerlendirme</b><br>Saç kökünün büyüme döngüsü aylar sürer; birkaç seansın hemen ardından yapılan bir karşılaştırma yanıltıcı olabilir.</p>
       </div>
       <div class="g-kutu g-b2" data-gr style="--d:70ms">
-        <span class="g-ket">SÜREÇ ÇİZGİSİ</span>
+        <span class="g-ket">ZAMAN ÖLÇEĞİ</span>
         <div class="g-cubuk"><small><span>SEANS</span><span>20–30 dk</span></small><div class="g-ciz"><b class="g-cubuk-mavi" data-gw="15%"></b></div></div>
-        <div class="g-cubuk"><small><span>SEANS ARALIĞI</span><span>2–4 hafta</span></small><div class="g-ciz"><b class="g-cubuk-petrol" data-gw="50%"></b></div></div>
-        <div class="g-cubuk"><small><span>DEĞERLENDİRME</span><span>3. ay ve sonrası</span></small><div class="g-ciz"><b class="g-cubuk-bakir" data-gw="90%"></b></div></div>
-        <p style="font-size:.7rem;color:var(--sessiz);margin-top:8px">Çubuklar göreli simgedir; asıl plan muayenede belirlenir.</p>
+        <div class="g-cubuk"><small><span>SEANSLAR ARASI</span><span>2–4 hafta</span></small><div class="g-ciz"><b class="g-cubuk-petrol" data-gw="50%"></b></div></div>
+        <div class="g-cubuk"><small><span>DEĞERLENDİRME</span><span>3. aydan itibaren</span></small><div class="g-ciz"><b class="g-cubuk-bakir" data-gw="90%"></b></div></div>
+        <p style="font-size:.7rem;color:var(--sessiz);margin-top:8px">Çubuk boyları yalnız karşılaştırma içindir; asıl plan muayenede belirlenir.</p>
       </div>
       <div class="g-kutu g-b2" data-gr style="--d:140ms"><span class="g-ket">PROTOKOL</span>
         <ol class="g-protokol">
@@ -86,15 +86,15 @@ module.exports = {
       <div class="g-kutu g-b2" data-gr style="--d:70ms"><span class="g-ket">SONRASI</span>
         <p style="font-size:.92rem">Aynı gün işe ve günlük düzene dönülebilir. İlk yarım gün saçlı deri yıkanmaz ve ovalanmaz; bere, şapka ya da sıkı saç bağı kullanılmaz. İki gün boyunca hamam, sauna, havuz, deniz ve çok terleten spor ertelenir; boya ve diğer kimyasal saç işlemleri de bu süreden sonraya bırakılır. Ardından ılık su ve yumuşak bir şampuanla alışılmış yıkamaya geçilir. Önerilerin tamamı size yazılı olarak da verilir.</p>
       </div>
-      <div class="g-kutu g-b2" data-gr style="--d:140ms"><span class="g-ket">OLASI ETKİLER</span>
-        <p style="font-size:.92rem">Sık ve kısa süreli: iğne noktalarında kızarma ve sızı, saçlı deride bir süre gerilme, taranırken ya da dokunulunca duyarlılık; küçük kabuklar birkaç günde kendiliğinden düşer. Daha az sık: küçük morluklar, geçici baş ağrısı ya da sersemlik hissi, ertesi güne uzanan hafif sızı. Nadir: uygulama bölgesinde enfeksiyon, karışımdaki bir bileşene aşırı duyarlılık, uzun süren kızarık kabarıklıklar.</p>
+      <div class="g-kutu g-b2" data-gr style="--d:140ms"><span class="g-ket">BEKLENEBİLECEK ETKİLER</span>
+        <p style="font-size:.92rem">Sık görülen ve kısa sürenler: iğne noktalarında kızarma ve sızı, saçlı deride bir süre gerilme, taranırken ya da dokunulunca duyarlılık; küçük kabuklar birkaç günde kendiliğinden düşer. Daha az sık: küçük morluklar, geçici baş ağrısı ya da sersemlik hissi, ertesi güne uzanan hafif sızı. Nadir: uygulama bölgesinde enfeksiyon, karışımdaki bir bileşene aşırı duyarlılık, uzun süren kızarık kabarıklıklar.</p>
       </div>
       <div class="kutu kutu--uyari g-b4" data-gr>
         <b>Kimlere uygulanmaz, hangi durumlarda ertelenir?</b>
         <p>Uygun olup olmadığınıza muayene ve öykünün ardından karar verilir; bu listeye bakarak kendi kararınızı vermeyin.</p>
-        <p><b>Uygulama yapılmayan durumlar:</b></p>
+        <p><b>Bu durumlarda uygulama yapılmaz:</b></p>
         <ul>
-          <li>Saçlı deride aktif enfeksiyon, iltihaplı sivilce ya da kapanmamış yara</li>
+          <li>Saçlı deride etkin enfeksiyon, iltihaplı sivilce ya da henüz kapanmamış yara</li>
           <li>Karışımdaki bileşenlerden birine karşı daha önce yaşanmış aşırı duyarlılık</li>
           <li>Kontrol altına alınmamış kanama ya da pıhtılaşma bozukluğu</li>
           <li>Gebelik ve emzirme</li>
@@ -112,7 +112,7 @@ module.exports = {
         </ul>
         <p>Karışımlarda vitaminlerin yanında aminoasitler ve koruyucu maddeler de bulunabilir. Daha önce bir ilaç, kozmetik ürün ya da takviye sonrasında tepki yaşadıysanız bunu muayenede mutlaka belirtin.</p>
       </div>
-      <div class="g-kutu g-b2 g-kutu--gorsel" data-gr><img src="${r}varliklar/gorsel/hekim-masasi.webp" alt="Masadaki açık defterin üzerinde not alan eller" loading="lazy"><span class="g-ainot">Görsel yapay zekâ ile üretilmiştir</span></div>
+      <div class="g-kutu g-b2 g-kutu--gorsel" data-gr><img src="${r}varliklar/gorsel/hekim-masasi.webp" alt="Masadaki açık defterin üzerinde not alan eller" loading="lazy"><span class="g-ainot">Temsilî görsel · yapay zekâ ile üretildi</span></div>
       <div class="g-kutu g-b2 g-kutu--cta" data-gr><h3>Nedeni birlikte arayalım</h3><p>Dökülmenin kaynağı belli olmadan uygulama planlanmaz.</p><a class="dgm dgm--altin" href="${r}iletisim/">Randevu talebi</a></div>
     </div>
   </div>
@@ -123,7 +123,7 @@ module.exports = {
   <div class="sar">
     <div class="kutu kutu--acil" data-gr>
       <b>Beklemeden başvurmanız gereken durumlar</b>
-      <p>Saçlı deride giderek artan ağrı, sıcaklık, akıntı, yayılan kızarıklık ya da ateş ortaya çıkarsa kontrol gününü beklemeden muayenehaneyi arayın. Nefes almada güçlük, yüzde şişme ya da yaygın döküntüyle birlikte baş dönmesi yaşarsanız <b>112</b>’yi arayın veya en yakın acil servise gidin.</p>
+      <p>Saçlı deride giderek artan ağrı, sıcaklık, akıntı, yayılan kızarıklık ya da ateş ortaya çıkarsa kontrol gününü beklemeden muayenehaneyi arayın. Nefes almada güçlük, yüzde şişme ya da yaygın döküntüyle birlikte baş dönmesi yaşarsanız <b>112</b> Acil Çağrı Merkezi’ni arayın ya da en yakın hastanenin acil birimine başvurun.</p>
     </div>
     <div class="kutu kutu--uyari" data-gr style="margin-top:16px;--d:70ms">
       <b>Uyarı</b>
@@ -138,7 +138,7 @@ module.exports = {
 
 <!-- ═════ SORU TERMİNALİ ═════ -->
 <section class="bolum bolum--buz2"><div class="sar">
-  <div class="bolum-bas" data-gr><p class="g-etiket">Sorgulayın</p><h2>Sorunuzu seçin, cevap ekrana düşsün</h2></div>
+  <div class="bolum-bas" data-gr><p class="g-etiket">Sık gelen sorular</p><h2>Merak ettiğiniz soruya dokunun, yanıtı burada açılsın</h2></div>
   <div class="g-sorgu" data-gr>
     <div class="g-sorgu-bas"><i></i><i></i><i></i><span>${S.marka.toLocaleLowerCase('tr')} · saç mezoterapisi · soru-cevap</span></div>
     <div class="g-sorgu-ic">
@@ -150,7 +150,7 @@ module.exports = {
         <button class="g-ssoru" data-gs="4"><i>›</i>Erkeklerde uygulanabilir mi?</button>
         <button class="g-ssoru" data-gs="5"><i>›</i>Ücret bilgisini nasıl öğrenirim?</button>
       </div>
-      <div class="g-scevap" data-gcevap aria-live="polite"><span class="g-yazan">Hekim onaylı yanıt</span><b></b><p></p><a class="dgm dgm--altin" href="${r}iletisim/" style="margin-top:8px">Muayenede konuşalım</a></div>
+      <div class="g-scevap" data-gcevap aria-live="polite"><span class="g-yazan">Hekimin yanıtı</span><b></b><p></p><a class="dgm dgm--altin" href="${r}iletisim/" style="margin-top:8px">Ayrıntısı muayenede</a></div>
     </div>
   </div>
 </div></section>
@@ -159,12 +159,12 @@ module.exports = {
 <!-- ═════ KAPANIŞ ═════ -->
 <section class="g-son">
   <div class="sar">
-    <p class="g-etiket g-etiket--orta">Sonraki adım</p>
+    <p class="g-etiket g-etiket--orta">Bir adım ötesi</p>
     <h2>Önce nedeni, sonra planı konuşalım</h2>
     <p class="g-sonalt">Saç dökülmesinin kaynağı ortaya konmadan bir uygulama takvimi hazırlanmaz. ${S.iletisim.adres}, ${S.iletisim.ilce}.</p>
     <div class="g-sonbtn">
       <a class="dgm dgm--bir" href="${r}iletisim/">Randevu talebi oluşturun</a>
-      <a class="dgm dgm--iki" href="${r}hazirlik-listesi/arac/">Hazırlık listesini doldurun</a>
+      <a class="dgm dgm--iki" href="${r}hazirlik-listesi/arac/">Muayeneye hazırlanın</a>
     </div>
   </div>
 </section>

@@ -68,7 +68,7 @@ module.exports = {
 <!-- ═════════ KAPANIŞ ═════════ -->
 <section class="g-son">
   <div class="sar">
-    <p class="g-etiket g-etiket--orta">Sonraki adım</p>
+    <p class="g-etiket g-etiket--orta">Bir adım ötesi</p>
     <h2>Randevu için mi gelmiştiniz?</h2>
     <p class="g-sonalt">Talebinizi iletişim sayfasındaki formdan gönderebilir ya da çalışma saatleri içinde ${S.iletisim.tel} numarasını arayabilirsiniz.</p>
     <div class="g-sonbtn">

@@ -17,14 +17,14 @@ module.exports = {
       <p class="g-hero__alt">Uygulama sonrası takip, işlemden sonraki iyileşmenin önceden belirlenmiş kontrollerle izlenmesidir. Kontrolde iyileşmenin zamanında ilerleyip ilerlemediği değerlendirilir, evdeki bakım adımları birlikte gözden geçirilir ve beklenmeyen bir bulgu varsa büyümeden ele alınır. Takibi uygulamayı yapan hekim yürütür; kontrol, planın ayrı düşünülemeyecek bir parçasıdır.</p>
       <div class="g-hero__cta">
         <a class="dgm dgm--bir" href="${r}iletisim/">Randevu talebi</a>
-        <a class="dgm dgm--iki" href="#ilkbolum">Nasıl ilerler? ↓</a>
+        <a class="dgm dgm--iki" href="#ilkbolum">Seyrini okuyun ↓</a>
       </div>
       <div class="g-tikler"><span><i></i>Yazılı bakım talimatı</span><span><i></i>Gerekirse randevu öne alınır</span><span><i></i>Her adım dosyaya işlenir</span></div>
     </div>
     <div class="g-tarama" data-gr>
       <img src="${r}varliklar/gorsel/uyg-uygulama-sonrasi-takip.webp" width="1400" height="788" alt="Bir saat, krem kavanozu ve açık not defterinin durduğu masa üstü" loading="eager">
       <div class="g-isin"></div>
-      <span class="g-ainot">Görsel yapay zekâ ile üretilmiştir</span>
+      <span class="g-ainot">Temsilî görsel · yapay zekâ ile üretildi</span>
     </div>
   </div>
 </section>
@@ -66,11 +66,11 @@ module.exports = {
         <p><b style="color:var(--murekkep)">Takip neden yapılır?</b><br>İyileşmenin seyrini görmek, geç ortaya çıkan bulguları yakalamak ve günlük düzene dönüşü doğru zamanlamak için.</p>
       </div>
       <div class="g-kutu g-b2" data-gr style="--d:70ms">
-        <span class="g-ket">SÜREÇ ÇİZGİSİ</span>
+        <span class="g-ket">ZAMAN ÖLÇEĞİ</span>
         <div class="g-cubuk"><small><span>ERKEN KONTROL</span><span>Günler</span></small><div class="g-ciz"><b class="g-cubuk-mavi" data-gw="24%"></b></div></div>
         <div class="g-cubuk"><small><span>GEÇ DÖNEM KONTROLÜ</span><span>Haftalar</span></small><div class="g-ciz"><b class="g-cubuk-petrol" data-gw="58%"></b></div></div>
-        <div class="g-cubuk"><small><span>İZLEME PENCERESİ</span><span>Aylar</span></small><div class="g-ciz"><b class="g-cubuk-bakir" data-gw="92%"></b></div></div>
-        <p style="font-size:.7rem;color:var(--sessiz);margin-top:8px">Çubuklar göreli simgedir; zamanlama yapılan uygulamaya göre belirlenir.</p>
+        <div class="g-cubuk"><small><span>UZUN İZLEM</span><span>Aylar</span></small><div class="g-ciz"><b class="g-cubuk-bakir" data-gw="92%"></b></div></div>
+        <p style="font-size:.7rem;color:var(--sessiz);margin-top:8px">Çubuk boyları yalnız karşılaştırma içindir; zamanlama yapılan uygulamaya göre belirlenir.</p>
       </div>
       <div class="g-kutu g-b2" data-gr style="--d:140ms"><span class="g-ket">PROTOKOL</span>
         <ol class="g-protokol">
@@ -91,17 +91,17 @@ module.exports = {
       </div>
       <div class="kutu kutu--uyari g-b4" data-gr>
         <b>Hangi durumlarda kontrol günü beklenmez?</b>
-        <p>Takip randevusu kural olarak ertelenmez. Aşağıdaki durumlarda planlanan kontrolü beklemeden değerlendirme gerekir; bazılarında kontrolün içeriği de değişir.</p>
+        <p>Kontrol gününüzü ileriye atmamanızı öneririz. Şu durumlardan biri varsa o günü de beklemeden görülmeniz gerekir; bazılarında kontrolün içeriği de değişir.</p>
         <ul>
           <li><b>Enfeksiyonu düşündüren bulgular:</b> ağrınız artıyorsa, kızarıklık genişliyorsa, bölge ısınıyorsa, akıntı ya da ateş varsa beklemeyin; sizi daha erken bir güne alalım.</li>
           <li><b>Hızla büyüyen şişlik:</b> saatler içinde artan ve yayılan bir şişlikte vakit kaybetmeden başvurun.</li>
-          <li><b>Görme, his, ağrı ya da renk değişikliği:</b> dolgu ve benzeri enjeksiyon uygulamalarından sonra ciltte ani solukluk ya da beyazlama, ağ biçiminde morarma, beklenenle orantısız ağrı, uyuşma ya da görmede bulanıklık veya kayıp olursa bu bir kontrol konusu değil, dakikaların önemli olduğu bir durumdur. Hemen ${S.iletisim.tel} numarasından bizi arayın; ulaşamazsanız <b>112</b>’yi arayın ya da en yakın acil servise gidin.</li>
+          <li><b>Görme, his, ağrı ya da renk değişikliği:</b> dolgu ve benzeri enjeksiyon uygulamalarından sonra ciltte ani solukluk ya da beyazlama, ağ biçiminde morarma, beklenenle orantısız ağrı, uyuşma ya da görmede bulanıklık veya kayıp olursa bu bir kontrol konusu değil, dakikaların önemli olduğu bir durumdur. Hemen ${S.iletisim.tel} numarasından bizi arayın; ulaşamazsanız <b>112</b> Acil Çağrı Merkezi’ni arayın ya da en yakın hastanenin acil birimine başvurun.</li>
           <li><b>İki görüşme arasında geçirilen hastalık, yapılan aşı ya da diş tedavisi:</b> bölgede alevlenmeye yol açabilir; bu durumu bize bildirin.</li>
           <li><b>Yeni başlanan ilaç ve takviyeler:</b> iki görüşme arasında başladığınız her ilaç dosyanıza eklenir.</li>
           <li><b>Elle fark edilen sertlik ya da yumru:</b> olağan kontrol yeterli olmaz; ayrı bir değerlendirme planlanır.</li>
         </ul>
       </div>
-      <div class="g-kutu g-b2 g-kutu--gorsel" data-gr><img src="${r}varliklar/gorsel/hekim-masasi.webp" alt="Masada dosya notlarını tutan eller" loading="lazy"><span class="g-ainot">Görsel yapay zekâ ile üretilmiştir</span></div>
+      <div class="g-kutu g-b2 g-kutu--gorsel" data-gr><img src="${r}varliklar/gorsel/hekim-masasi.webp" alt="Masada dosya notlarını tutan eller" loading="lazy"><span class="g-ainot">Temsilî görsel · yapay zekâ ile üretildi</span></div>
       <div class="g-kutu g-b2 g-kutu--cta" data-gr><h3>Kontrol tarihinizi belirleyelim</h3><p>Kontrol ayrı bir işlem değil, planın bir parçasıdır.</p><a class="dgm dgm--altin" href="${r}iletisim/">Randevu talebi</a></div>
     </div>
   </div>
@@ -112,7 +112,7 @@ module.exports = {
   <div class="sar">
     <div class="kutu kutu--acil" data-gr>
       <b>Acil bulgular</b>
-      <p>Nefes almakta zorlanma, yüzde ya da dilde aniden gelişen şişlik, yutkunma güçlüğü veya yaygın döküntüyle birlikte baş dönmesi olursa kontrol randevusunu beklemeyin; <b>112</b>’yi arayın ya da en yakın acil servise gidin. Enjeksiyon uygulamalarından sonra görmede ani bulanıklık ya da kayıp, uygulama bölgesinde ani beyazlama ya da ağ biçiminde morarma da aynı ölçüde acildir: hemen bizi arayın, ulaşamazsanız <b>112</b>’yi arayın ya da en yakın acil servise gidin.</p>
+      <p>Nefes almakta zorlanma, yüzde ya da dilde aniden gelişen şişlik, yutkunma güçlüğü veya yaygın döküntüyle birlikte baş dönmesi olursa kontrol randevusunu beklemeyin; <b>112</b> Acil Çağrı Merkezi’ni arayın ya da en yakın hastanenin acil birimine başvurun. Enjeksiyon uygulamalarından sonra görmede ani bulanıklık ya da kayıp, uygulama bölgesinde ani beyazlama ya da ağ biçiminde morarma da aynı ölçüde acildir: hemen bizi arayın, ulaşamazsanız <b>112</b> Acil Çağrı Merkezi’ni arayın ya da en yakın hastanenin acil birimine başvurun.</p>
     </div>
     <div class="kutu kutu--uyari" data-gr style="margin-top:16px;--d:70ms">
       <b>Uyarı</b>
@@ -127,7 +127,7 @@ module.exports = {
 
 <!-- ═════ SORU TERMİNALİ ═════ -->
 <section class="bolum bolum--buz2"><div class="sar">
-  <div class="bolum-bas" data-gr><p class="g-etiket">Sorgulayın</p><h2>Sorunuzu seçin, cevap ekrana düşsün</h2></div>
+  <div class="bolum-bas" data-gr><p class="g-etiket">Sık gelen sorular</p><h2>Merak ettiğiniz soruya dokunun, yanıtı burada açılsın</h2></div>
   <div class="g-sorgu" data-gr>
     <div class="g-sorgu-bas"><i></i><i></i><i></i><span>rahmi-cebeci · takip · soru-cevap</span></div>
     <div class="g-sorgu-ic">
@@ -139,7 +139,7 @@ module.exports = {
         <button class="g-ssoru" data-gs="4"><i>›</i>Kontrol randevusunda neler yapılır?</button>
         <button class="g-ssoru" data-gs="5"><i>›</i>Ücret bilgisini nasıl öğrenirim?</button>
       </div>
-      <div class="g-scevap" data-gcevap aria-live="polite"><span class="g-yazan">Hekim onaylı yanıt</span><b></b><p></p><a class="dgm dgm--altin" href="${r}iletisim/" style="margin-top:8px">Muayenede konuşalım</a></div>
+      <div class="g-scevap" data-gcevap aria-live="polite"><span class="g-yazan">Hekimin yanıtı</span><b></b><p></p><a class="dgm dgm--altin" href="${r}iletisim/" style="margin-top:8px">Ayrıntısı muayenede</a></div>
     </div>
   </div>
 </div></section>
@@ -148,12 +148,12 @@ module.exports = {
 <!-- ═════ KAPANIŞ ═════ -->
 <section class="g-son">
   <div class="sar">
-    <p class="g-etiket g-etiket--orta">Sonraki adım</p>
+    <p class="g-etiket g-etiket--orta">Bir adım ötesi</p>
     <h2>Kontrol tarihinizi birlikte planlayalım</h2>
     <p class="g-sonalt">Kontrol randevunuzu ${S.iletisim.tel} numarasından telefonla ya da WhatsApp üzerinden teyit edebilirsiniz. ${S.iletisim.adres}, ${S.iletisim.ilce}.</p>
     <div class="g-sonbtn">
       <a class="dgm dgm--bir" href="${r}iletisim/">Randevu talebi oluşturun</a>
-      <a class="dgm dgm--iki" href="${r}hazirlik-listesi/arac/">Hazırlık listesini doldurun</a>
+      <a class="dgm dgm--iki" href="${r}hazirlik-listesi/arac/">Muayeneye hazırlanın</a>
     </div>
   </div>
 </section>

@@ -12,8 +12,8 @@ module.exports = {
 <section class="g-hero">
   <div class="sar">
     <div>
-      <nav class="kirinti" aria-label="Konum" style="position:relative;font-size:.76rem;color:var(--sessiz);display:flex;gap:7px;margin-bottom:18px"><a href="${r}" style="color:var(--sessiz);text-decoration:none">Ana sayfa</a> › <a href="${r}cilt-sorunlari/" style="color:var(--sessiz);text-decoration:none">Cilt sorunları</a> › <span>Hacim kaybı ve sarkma</span></nav>
-      <p class="g-etiket">Cilt sorunları · Hacim ve sarkma</p>
+      <nav class="kirinti" aria-label="Konum" style="position:relative;font-size:.76rem;color:var(--sessiz);display:flex;gap:7px;margin-bottom:18px"><a href="${r}" style="color:var(--sessiz);text-decoration:none">Ana sayfa</a> › <a href="${r}cilt-sorunlari/" style="color:var(--sessiz);text-decoration:none">Sorunlar</a> › <span>Hacim kaybı ve sarkma</span></nav>
+      <p class="g-etiket">Şikâyet rehberi · Hacim ve sarkma</p>
       <h1>Düşen yüz, çoğu zaman <span class="g-isik">desteğini yitirmiş</span> bir yüzdür</h1>
       <p class="g-hero__alt">Yaş ilerledikçe yüz iskeleti küçülür, yağ bölmeleri incelir ya da aşağı kayar, dokuları yerinde tutan bağlar gevşer. Aynada gördüğünüz yorgunluk bu değişimlerin bileşkesidir. Plan, hangi katmanın önde olduğuna göre değiştiği için ilk iş katmanları birbirinden ayırmaktır.</p>
       <div class="g-hero__cta">
@@ -25,7 +25,7 @@ module.exports = {
     <div class="g-tarama" data-gr>
       <img src="${r}varliklar/gorsel/sorun-hacim-kaybi-ve-sarkma.webp" width="1400" height="788" alt="Elmacık ve çene hattı belirgin bir kadın yüzünün yumuşak ışıklı yan portresi" loading="eager">
       <div class="g-isin"></div>
-      <span class="g-ainot">Görsel yapay zekâ ile üretilmiştir</span>
+      <span class="g-ainot">Temsilî görsel · yapay zekâ ile üretildi</span>
       <button class="g-nokta" data-gn="ust" style="--x:57%;--y:18%" aria-label="Şakak ve göz çevresi"><span data-ad="Şakak"></span></button>
       <button class="g-nokta" data-gn="orta" style="--x:53%;--y:27%" aria-label="Elmacık"><span data-ad="Elmacık"></span></button>
       <button class="g-nokta" data-gn="alt" style="--x:53%;--y:35%" aria-label="Çene hattı"><span data-ad="Çene hattı"></span></button>
@@ -91,7 +91,7 @@ module.exports = {
     </div>
     <div class="g-matris">
       <div class="g-mtab" data-gr>
-        <div class="g-mbas"><span>Uygulama</span><span>Hedef</span><span>İyileşme</span><span></span></div>
+        <div class="g-mbas"><span>Yöntem</span><span>Amaç</span><span>Toparlanma</span><span></span></div>
         <a class="g-msatir" data-akt href="${r}uygulamalar/hifu-ameliyatsiz-yuz-germe/" data-gg="${r}varliklar/gorsel/uyg-hifu-ameliyatsiz-yuz-germe.webp" data-gb="HIFU (ameliyatsız yüz germe)" data-ga="Gevşemenin önde olduğu yüzlerde odaklanmış ultrasonla derin destek katmanında sıkılaşma hedeflenir; cerrahinin yerini tutmaz."><h4>HIFU (ameliyatsız yüz germe)</h4><span class="g-hucre"><i class="g-kcip g-kcip--2">SIKILAŞMA</i></span><span class="g-hucre">Muayenede belirlenir</span><span class="g-git">→</span></a>
         <a class="g-msatir" href="${r}uygulamalar/sivi-yuz-germe/" data-gg="${r}varliklar/gorsel/uyg-sivi-yuz-germe.webp" data-gb="Sıvı yüz germe" data-ga="Hacim kaybının birden çok bölgede görüldüğü yüzlerde, destek noktalarına yayılan bütüncül bir dolgu planıdır."><h4>Sıvı yüz germe</h4><span class="g-hucre"><i class="g-kcip g-kcip--1">HACİM</i></span><span class="g-hucre">Muayenede belirlenir</span><span class="g-git">→</span></a>
         <a class="g-msatir" href="${r}uygulamalar/biyostimulan-uygulamalar/" data-gg="${r}varliklar/gorsel/uyg-biyostimulan-uygulamalar.webp" data-gb="Biyostimülan uygulamalar" data-ga="Derinin kendi kolajen yapımını zamana yayarak desteklemeyi amaçlar; değişim aylar içinde kademeli izlenir."><h4>Biyostimülan uygulamalar</h4><span class="g-hucre"><i class="g-kcip g-kcip--3">DOKU</i></span><span class="g-hucre">Muayenede belirlenir</span><span class="g-git">→</span></a>
@@ -104,7 +104,7 @@ module.exports = {
 
 <!-- ═════════ SORU TERMİNALİ ═════════ -->
 <section class="bolum bolum--buz2"><div class="sar">
-  <div class="bolum-bas" data-gr><p class="g-etiket">Sorgulayın</p><h2>Sorunuzu seçin, cevap ekrana düşsün</h2></div>
+  <div class="bolum-bas" data-gr><p class="g-etiket">Sık gelen sorular</p><h2>Merak ettiğiniz soruya dokunun, yanıtı burada açılsın</h2></div>
   <div class="g-sorgu" data-gr>
     <div class="g-sorgu-bas"><i></i><i></i><i></i><span>${S.marka.toLocaleLowerCase('tr-TR')} · hacim ve sarkma · soru-cevap</span></div>
     <div class="g-sorgu-ic">
@@ -116,7 +116,7 @@ module.exports = {
         <button class="g-ssoru" data-gs="4"><i>›</i>Etkisi ne kadar sürer?</button>
         <button class="g-ssoru" data-gs="5"><i>›</i>Ücret bilgisi neden sitede yok?</button>
       </div>
-      <div class="g-scevap" data-gcevap aria-live="polite"><span class="g-yazan">Hekim onaylı yanıt</span><b></b><p></p><a class="dgm dgm--altin" href="${r}iletisim/" style="margin-top:8px">Muayenede konuşalım</a></div>
+      <div class="g-scevap" data-gcevap aria-live="polite"><span class="g-yazan">Hekimin yanıtı</span><b></b><p></p><a class="dgm dgm--altin" href="${r}iletisim/" style="margin-top:8px">Ayrıntısı muayenede</a></div>
     </div>
   </div>
 </div></section>
@@ -125,12 +125,12 @@ module.exports = {
 <!-- ═════════ KAPANIŞ ═════════ -->
 <section class="g-son">
   <div class="sar">
-    <p class="g-etiket g-etiket--orta">Sonraki adım</p>
+    <p class="g-etiket g-etiket--orta">Bir adım ötesi</p>
     <h2>Yüzünüzde hangi katmanın değiştiğini birlikte görelim</h2>
     <p class="g-sonalt">Muayenede yüzünüzün tamamı değerlendirilir; önceliğin hacimde mi yoksa destekte mi olduğu size açıkça anlatılır.</p>
     <div class="g-sonbtn">
       <a class="dgm dgm--bir" href="${r}iletisim/">Randevu talebi oluşturun</a>
-      <a class="dgm dgm--iki" href="${r}hazirlik-listesi/arac/">Hazırlık listesini doldurun</a>
+      <a class="dgm dgm--iki" href="${r}hazirlik-listesi/arac/">Muayeneye hazırlanın</a>
     </div>
   </div>
 </section>

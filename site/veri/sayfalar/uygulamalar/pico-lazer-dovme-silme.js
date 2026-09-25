@@ -17,7 +17,7 @@ module.exports = {
       <p class="g-hero__alt">Pikosaniye, saniyenin trilyonda biridir; pico lazer enerjisini bu kadar kısa süren atımlarla verir. Hedef, deri içindeki mürekkep taneciklerini ısınmaya fırsat bulmadan ufalamak ve bu kırıntıların vücut tarafından haftalar içinde taşınmasını sağlamaktır. Tam silinme taahhüt edilmez; amaç, görünümün her seansla biraz daha açılmasıdır.</p>
       <div class="g-hero__cta">
         <a class="dgm dgm--bir" href="${r}iletisim/">Randevu talebi</a>
-        <a class="dgm dgm--iki" href="#ilkbolum">Nasıl çalışır? ↓</a>
+        <a class="dgm dgm--iki" href="#ilkbolum">Yöntemin işleyişi ↓</a>
       </div>
       <div class="g-tikler"><span><i></i>Tam silinme taahhüt edilmez</span><span><i></i>Önce küçük alanda deneme</span><span><i></i>Ben üzerine atım yapılmaz</span></div>
     </div>
@@ -87,7 +87,7 @@ module.exports = {
         <div class="g-cubuk"><small><span>SİYAH–KOYU GRİ</span><span>Belirgin açılma</span></small><div class="g-ciz"><b class="g-cubuk-petrol" data-gw="90%"></b></div></div>
         <div class="g-cubuk"><small><span>KIRMIZI–PEMBE</span><span>Değişken</span></small><div class="g-ciz"><b class="g-cubuk-mavi" data-gw="55%"></b></div></div>
         <div class="g-cubuk"><small><span>YEŞİL–MAVİ–SARI</span><span>Yavaş ve sınırlı</span></small><div class="g-ciz"><b class="g-cubuk-bakir" data-gw="15%"></b></div></div>
-        <p style="font-size:.68rem;color:var(--sessiz);margin-top:8px">Çubuklar göreli simgedir; size özel plan muayenede kurulur.</p>
+        <p style="font-size:.68rem;color:var(--sessiz);margin-top:8px">Çubuk boyları yalnız karşılaştırma içindir; size özel plan muayenede kurulur.</p>
       </div>
       <div class="g-kutu g-b2" data-gr style="--d:140ms"><span class="g-ket">Protokol</span>
         <ol class="g-protokol">
@@ -104,7 +104,7 @@ module.exports = {
 <p>Dövmenin bulunduğu deride güneş yanığı, açık yara, iltihap ya da alevlenmiş egzama varsa önce deri toparlanır; lazer iyileşmeyi uzatabilir. Dövmede daha önce mürekkebe bağlı kaşıntı, kabarma ya da sertleşme olduysa lazer bu tepkiyi artırabilir.</p>
 <p>Kabarık iz ya da keloid yapma eğilimi, vitiligo gibi renk kaybıyla giden tablolar, gebelik ve emzirme, kontrolsüz diyabet ve yara iyileşmesini bozan durumlar uygulamayı engeller ya da erteler. Alan içindeki benlere ve incelenmemiş pigmentli lekelere atım yapılmaz; önce büyütmeli olarak bakılır. Akne için ağızdan ilaç (isotretinoin) kullandıysanız ya da bölgeye yakın zamanda başka bir işlem yapıldıysa bir süre beklenir.</p>
       </div>
-      <div class="g-kutu g-b2 g-kutu--gorsel" data-gr style="--d:70ms"><img src="${r}varliklar/gorsel/uyg-pico-lazer-dovme-silme-2.webp" alt="Ön kol derisinde ince çizgili siyah dövmenin yumuşak ışıkta yakın planı" loading="lazy"><span class="g-ainot">Görsel yapay zekâ ile üretilmiştir</span></div>
+      <div class="g-kutu g-b2 g-kutu--gorsel" data-gr style="--d:70ms"><img src="${r}varliklar/gorsel/uyg-pico-lazer-dovme-silme-2.webp" alt="Ön kol derisinde ince çizgili siyah dövmenin yumuşak ışıkta yakın planı" loading="lazy"><span class="g-ainot">Temsilî görsel · yapay zekâ ile üretildi</span></div>
       <div class="g-kutu g-b2 g-kutu--gece" data-gr><span class="g-ket">İlke</span><p>"Açılmayacağını öngördüğümüz bir dövme için seans dizisi başlatmıyoruz."</p></div>
       <div class="g-kutu g-b2" data-gr style="--d:70ms">
         <span class="g-ket">Sonrası</span>
@@ -158,7 +158,7 @@ module.exports = {
 
 <!-- SORU TERMİNALİ -->
 <section class="bolum bolum--buz2"><div class="sar">
-  <div class="bolum-bas" data-gr><p class="g-etiket">Sorgulayın</p><h2>Sorunuzu seçin, cevap ekrana düşsün</h2></div>
+  <div class="bolum-bas" data-gr><p class="g-etiket">Sık gelen sorular</p><h2>Merak ettiğiniz soruya dokunun, yanıtı burada açılsın</h2></div>
   <div class="g-sorgu" data-gr>
     <div class="g-sorgu-bas"><i></i><i></i><i></i><span>${S.marka.toLowerCase()} · dövme silme · soru-cevap</span></div>
     <div class="g-sorgu-ic">
@@ -170,7 +170,7 @@ module.exports = {
         <button class="g-ssoru" data-gs="4"><i>›</i>Uygulama sırasında ne hissedilir?</button>
         <button class="g-ssoru" data-gs="5"><i>›</i>Ücret bilgisini nasıl öğrenebilirim?</button>
       </div>
-      <div class="g-scevap" data-gcevap aria-live="polite"><span class="g-yazan">Hekim onaylı yanıt</span><b></b><p></p><a class="dgm dgm--altin" href="${r}iletisim/" style="margin-top:8px">Muayenede konuşalım</a></div>
+      <div class="g-scevap" data-gcevap aria-live="polite"><span class="g-yazan">Hekimin yanıtı</span><b></b><p></p><a class="dgm dgm--altin" href="${r}iletisim/" style="margin-top:8px">Ayrıntısı muayenede</a></div>
     </div>
   </div>
 </div></section>
@@ -179,12 +179,12 @@ module.exports = {
 <!-- KAPANIŞ -->
 <section class="g-son">
   <div class="sar">
-    <p class="g-etiket g-etiket--orta">Sonraki adım</p>
+    <p class="g-etiket g-etiket--orta">Bir adım ötesi</p>
     <h2>Önce dövmenize bakalım, sonra planı konuşalım</h2>
     <p class="g-sonalt">Rengi, derinliği ve bulunduğu bölgeyi görmeden verilecek her seans tahmini eksik kalır.</p>
     <div class="g-sonbtn">
       <a class="dgm dgm--bir" href="${r}iletisim/">Randevu talebi oluşturun</a>
-      <a class="dgm dgm--iki" href="${r}hazirlik-listesi/arac/">Hazırlık listesini doldurun</a>
+      <a class="dgm dgm--iki" href="${r}hazirlik-listesi/arac/">Muayeneye hazırlanın</a>
     </div>
   </div>
 </section>

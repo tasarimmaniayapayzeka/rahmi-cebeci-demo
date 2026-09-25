@@ -12,8 +12,8 @@ module.exports = {
 <section class="g-hero">
   <div class="sar">
     <div>
-      <nav class="kirinti" aria-label="Konum" style="position:relative;font-size:.76rem;color:var(--sessiz);display:flex;gap:7px;margin-bottom:18px"><a href="${r}" style="color:var(--sessiz);text-decoration:none">Ana sayfa</a> › <a href="${r}cilt-sorunlari/" style="color:var(--sessiz);text-decoration:none">Cilt sorunları</a> › <span>Selülit görünümü</span></nav>
-      <p class="g-etiket">Cilt sorunları · Selülit</p>
+      <nav class="kirinti" aria-label="Konum" style="position:relative;font-size:.76rem;color:var(--sessiz);display:flex;gap:7px;margin-bottom:18px"><a href="${r}" style="color:var(--sessiz);text-decoration:none">Ana sayfa</a> › <a href="${r}cilt-sorunlari/" style="color:var(--sessiz);text-decoration:none">Sorunlar</a> › <span>Selülit görünümü</span></nav>
+      <p class="g-etiket">Şikâyet rehberi · Selülit</p>
       <h1>Selülit bir hastalık değil, <span class="g-isik">bir yapı özelliğidir</span></h1>
       <p class="g-hero__alt">Selülit, deri altındaki yağ bölmelerinin ve onları deriye bağlayan ince lif bantlarının yüzeyde dalgalı, portakal kabuğunu andıran bir görünüm oluşturmasıdır. Ergenlik sonrasında kadınların büyük çoğunluğunda bir ölçüde bulunur ve zayıf kişilerde de görülür. Uygulamalarda hedef bu yapıyı değiştirmek değil, yüzeydeki görünümü yumuşatmaktır.</p>
       <div class="g-hero__cta">
@@ -25,7 +25,7 @@ module.exports = {
     <div class="g-tarama" data-gr>
       <img src="${r}varliklar/gorsel/sorun-selulit.webp" width="1400" height="788" alt="Bacağın arka yüzünde deri yüzeyini yumuşak yan ışıkla gösteren sade görsel" loading="eager">
       <div class="g-isin"></div>
-      <span class="g-ainot">Görsel yapay zekâ ile üretilmiştir</span>
+      <span class="g-ainot">Temsilî görsel · yapay zekâ ile üretildi</span>
     </div>
   </div>
 </section>
@@ -67,7 +67,7 @@ module.exports = {
     </div>
     <div class="kutu kutu--uyari" data-gr style="margin-top:18px">
       <b>Selülitle karıştırılmaması gereken durumlar</b>
-      <p>İki bacakta simetrik, ayak bileğinde birden sona eren, dokunmakla ağrıyan ve kolay morarma eğilimi gösteren bir dolgunluk lipödemi düşündürür; ayaklara kadar inen şişlik ise lenf ya da toplardamar sorunlarının işareti olabilir. Bu durumlar ayrı bir değerlendirme gerektirir. Bacakta aniden gelişen kızarıklık, sıcaklık, ağrı ve ateş bir deri enfeksiyonuna; tek bacakta ani şişlik ve ağrı ise pıhtıya işaret edebilir. Böyle bir durumda beklemeden <b>112</b>’yi arayın ya da size en yakın acil servise gidin.</p>
+      <p>İki bacakta simetrik, ayak bileğinde birden sona eren, dokunmakla ağrıyan ve kolay morarma eğilimi gösteren bir dolgunluk lipödemi düşündürür; ayaklara kadar inen şişlik ise lenf ya da toplardamar sorunlarının işareti olabilir. Bu durumlar ayrı bir değerlendirme gerektirir. Bacakta aniden gelişen kızarıklık, sıcaklık, ağrı ve ateş bir deri enfeksiyonuna; tek bacakta ani şişlik ve ağrı ise pıhtıya işaret edebilir. Böyle bir durumda beklemeden <b>112</b> Acil Çağrı Merkezi’ni arayın ya da en yakın hastanenin acil birimine başvurun.</p>
     </div>
   </div>
 </section>
@@ -82,7 +82,7 @@ module.exports = {
     </div>
     <div class="g-matris">
       <div class="g-mtab" data-gr>
-        <div class="g-mbas"><span>Uygulama</span><span>Hedef</span><span>İyileşme</span><span></span></div>
+        <div class="g-mbas"><span>Yöntem</span><span>Amaç</span><span>Toparlanma</span><span></span></div>
         <a class="g-msatir" data-akt href="${r}uygulamalar/selulit-gorunumu/" data-gg="${r}varliklar/gorsel/uyg-selulit-gorunumu.webp" data-gb="Selülit görünümü" data-ga="Mezoterapi, lipoliz ve cihaz desteğinin bir arada planlandığı, yüzeydeki düzensizliği yumuşatmaya yönelik bir programdır."><h4>Selülit görünümü</h4><span class="g-hucre"><i class="g-kcip g-kcip--1">YÜZEY</i></span><span class="g-hucre">Muayenede belirlenir</span><span class="g-git">→</span></a>
         <a class="g-msatir" href="${r}uygulamalar/bolgesel-lipoliz/" data-gg="${r}varliklar/gorsel/uyg-bolgesel-lipoliz.webp" data-gb="Bölgesel lipoliz" data-ga="Selülit alanına kenarları belli bir yağ birikimi eşlik ediyorsa, bu birikimi hedeflemek amacıyla değerlendirilir."><h4>Bölgesel lipoliz</h4><span class="g-hucre"><i class="g-kcip g-kcip--2">YAĞ DOKUSU</i></span><span class="g-hucre">Günler içinde</span><span class="g-git">→</span></a>
         <a class="g-msatir" href="${r}uygulamalar/mezoterapi/" data-gg="${r}varliklar/gorsel/uyg-mezoterapi.webp" data-gb="Mezoterapi" data-ga="Deri içine uygulanan karışımlarla doku niteliğini ve yüzey görünümünü desteklemek amacıyla konuşulur."><h4>Mezoterapi</h4><span class="g-hucre"><i class="g-kcip g-kcip--2">DOKU</i></span><span class="g-hucre">Muayenede belirlenir</span><span class="g-git">→</span></a>
@@ -95,7 +95,7 @@ module.exports = {
 
 <!-- ═════════ SORU TERMİNALİ ═════════ -->
 <section class="bolum bolum--buz2"><div class="sar">
-  <div class="bolum-bas" data-gr><p class="g-etiket">Sorgulayın</p><h2>Sorunuzu seçin, cevap ekrana düşsün</h2></div>
+  <div class="bolum-bas" data-gr><p class="g-etiket">Sık gelen sorular</p><h2>Merak ettiğiniz soruya dokunun, yanıtı burada açılsın</h2></div>
   <div class="g-sorgu" data-gr>
     <div class="g-sorgu-bas"><i></i><i></i><i></i><span>${S.marka.toLocaleLowerCase('tr-TR')} · selülit · soru-cevap</span></div>
     <div class="g-sorgu-ic">
@@ -107,7 +107,7 @@ module.exports = {
         <button class="g-ssoru" data-gs="4"><i>›</i>Selülit ile bölgesel yağlanma aynı şey mi?</button>
         <button class="g-ssoru" data-gs="5"><i>›</i>Ücret bilgisi neden sitede yok?</button>
       </div>
-      <div class="g-scevap" data-gcevap aria-live="polite"><span class="g-yazan">Hekim onaylı yanıt</span><b></b><p></p><a class="dgm dgm--altin" href="${r}iletisim/" style="margin-top:8px">Muayenede konuşalım</a></div>
+      <div class="g-scevap" data-gcevap aria-live="polite"><span class="g-yazan">Hekimin yanıtı</span><b></b><p></p><a class="dgm dgm--altin" href="${r}iletisim/" style="margin-top:8px">Ayrıntısı muayenede</a></div>
     </div>
   </div>
 </div></section>
@@ -116,12 +116,12 @@ module.exports = {
 <!-- ═════════ KAPANIŞ ═════════ -->
 <section class="g-son">
   <div class="sar">
-    <p class="g-etiket g-etiket--orta">Sonraki adım</p>
+    <p class="g-etiket g-etiket--orta">Bir adım ötesi</p>
     <h2>Selülit evrenizi ve beklentinizi birlikte değerlendirelim</h2>
     <p class="g-sonalt">Muayenede görünümün evresi, eşlik eden yağ birikimi ve karıştırılabilecek durumlar tek tek ele alınır.</p>
     <div class="g-sonbtn">
       <a class="dgm dgm--bir" href="${r}iletisim/">Randevu talebi oluşturun</a>
-      <a class="dgm dgm--iki" href="${r}hazirlik-listesi/arac/">Hazırlık listesini doldurun</a>
+      <a class="dgm dgm--iki" href="${r}hazirlik-listesi/arac/">Muayeneye hazırlanın</a>
     </div>
   </div>
 </section>

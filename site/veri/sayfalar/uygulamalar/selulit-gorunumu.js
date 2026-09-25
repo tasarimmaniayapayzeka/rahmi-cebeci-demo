@@ -17,14 +17,14 @@ module.exports = {
       <p class="g-hero__alt">Selülit, deri altındaki yağ bölmelerinin, deriyi alttaki dokulara bağlayan ince bağ dokusu bantlarının arasından yukarı doğru kabarmasıyla oluşan pürüzlü görünümdür. Muayenehanemizde mezoterapi, bölgesel lipoliz ve cihaz basamaklarının kişiye göre birleştirildiği bir planla görünümün düzelmesi hedeflenir. Kilo vermenin ya da beslenme düzeninin yerine geçmez.</p>
       <div class="g-hero__cta">
         <a class="dgm dgm--bir" href="${r}iletisim/">Randevu talebi</a>
-        <a class="dgm dgm--iki" href="#ilkbolum">Nasıl çalışır? ↓</a>
+        <a class="dgm dgm--iki" href="#ilkbolum">Yöntemin işleyişi ↓</a>
       </div>
       <div class="g-tikler"><span><i></i>Hastalık değil, görünüm</span><span><i></i>Basamaklı, kişiye özel plan</span><span><i></i>İlk değerlendirme 2.–3. ayda</span></div>
     </div>
     <div class="g-tarama" data-gr>
       <img src="${r}varliklar/gorsel/uyg-selulit-gorunumu.webp" width="1400" height="788" alt="Uyluk arka yüzünde hafif pürüzlü cilt dokusunun yumuşak ışıkta yakın planı" loading="eager">
       <div class="g-isin"></div>
-      <span class="g-ainot">Görsel yapay zekâ ile üretilmiştir</span>
+      <span class="g-ainot">Temsilî görsel · yapay zekâ ile üretildi</span>
     </div>
   </div>
 </section>
@@ -88,7 +88,7 @@ module.exports = {
 <p>Bacakta belirgin varis, derin toplardamar pıhtısı öyküsü, nedeni bilinmeyen ödem ya da lipödem şüphesi varsa önce bu durumlar değerlendirilir; kalp veya böbrek kaynaklı ödemde uygulama yapılmaz. Kan sulandırıcı kullanıyorsanız ya da pıhtılaşma sorununuz varsa bunu belirtin; ilacınızı kendi başınıza bırakmayın. Mezoterapi ya da lipoliz içeriğine karşı daha önce aşırı duyarlılık yaşadıysanız mutlaka söyleyin.</p>
 <p>Cihaz basamağı için kalp pili ya da vücuda yerleştirilmiş başka bir elektronik cihaz, uygulama alanında metal implant, his kaybı olan bölgeler ve süren kanser tedavisi ayrıca değerlendirilir; bu durumlarda radyofrekans basamağı çoğu zaman plandan çıkarılır. Kontrolsüz şeker hastalığı ve bağışıklığı baskılayan tedavilerde karar, sizi izleyen hekimin görüşüyle verilir.</p>
       </div>
-      <div class="g-kutu g-b2 g-kutu--gorsel" data-gr style="--d:70ms"><img src="${r}varliklar/gorsel/uyg-selulit-gorunumu-2.webp" alt="Uyluk ve kalça hattının yandan, doğal ışıkta görünümü" loading="lazy"><span class="g-ainot">Görsel yapay zekâ ile üretilmiştir</span></div>
+      <div class="g-kutu g-b2 g-kutu--gorsel" data-gr style="--d:70ms"><img src="${r}varliklar/gorsel/uyg-selulit-gorunumu-2.webp" alt="Uyluk ve kalça hattının yandan, doğal ışıkta görünümü" loading="lazy"><span class="g-ainot">Temsilî görsel · yapay zekâ ile üretildi</span></div>
       <div class="g-kutu g-b2 g-kutu--gece" data-gr><span class="g-ket">İlke</span><p>“Pürüzsüz bir yüzey değil, daha düzgün bir görünüm hedeflenir; beklenti buna göre kurulur.”</p></div>
       <div class="g-kutu g-b2" data-gr style="--d:70ms">
         <span class="g-ket">Seans sonrası</span>
@@ -97,7 +97,7 @@ module.exports = {
       <div class="g-kutu g-b2 g-kutu--cta" data-gr style="--d:140ms"><h3>Evrenizi birlikte belirleyelim</h3><p>Plan, bölge görülmeden ve evre belirlenmeden önerilmez.</p><a class="dgm dgm--altin" href="${r}iletisim/">Randevu talebi</a></div>
       <div class="kutu kutu--acil g-b6" data-gr>
         <b>Hemen arayın</b>
-        <p>Uygulama alanında giderek büyüyen, sıcak ve ağrılı bir kızarıklık, ateş, akıntı, deride kararma ya da su toplaması fark ederseniz kontrol gününü beklemeden ${S.iletisim.tel} numarasından muayenehaneye ulaşın. Bacakta tek taraflı, ani başlayan şişlik ve ağrı, nefes darlığı ya da göğüs ağrısı olursa doğrudan <b>112</b>’yi arayın veya size en yakın acil servise gidin.</p>
+        <p>Uygulama alanında giderek büyüyen, sıcak ve ağrılı bir kızarıklık, ateş, akıntı, deride kararma ya da su toplaması fark ederseniz kontrol gününü beklemeden ${S.iletisim.tel} numarasından muayenehaneye ulaşın. Bacakta tek taraflı, ani başlayan şişlik ve ağrı, nefes darlığı ya da göğüs ağrısı olursa doğrudan <b>112</b> Acil Çağrı Merkezi’ni arayın ya da en yakın hastanenin acil birimine başvurun.</p>
       </div>
     </div>
   </div>
@@ -105,7 +105,7 @@ module.exports = {
 
 <!-- SORU TERMİNALİ -->
 <section class="bolum bolum--buz2"><div class="sar">
-  <div class="bolum-bas" data-gr><p class="g-etiket">Sorgulayın</p><h2>Bir soru seçin, yanıtını okuyun</h2></div>
+  <div class="bolum-bas" data-gr><p class="g-etiket">Sık gelen sorular</p><h2>Bir soru seçin, yanıtını okuyun</h2></div>
   <div class="g-sorgu" data-gr>
     <div class="g-sorgu-bas"><i></i><i></i><i></i><span>${S.marka.toLocaleLowerCase('tr')} · selülit görünümü · soru-cevap</span></div>
     <div class="g-sorgu-ic">
@@ -117,7 +117,7 @@ module.exports = {
         <button class="g-ssoru" data-gs="4"><i>›</i>Selülit ile selülit enfeksiyonu aynı şey mi?</button>
         <button class="g-ssoru" data-gs="5"><i>›</i>Ücret bilgisi neden sayfada yok?</button>
       </div>
-      <div class="g-scevap" data-gcevap aria-live="polite"><span class="g-yazan">Hekim onaylı yanıt</span><b></b><p></p><a class="dgm dgm--altin" href="${r}iletisim/" style="margin-top:8px">Muayenede konuşalım</a></div>
+      <div class="g-scevap" data-gcevap aria-live="polite"><span class="g-yazan">Hekimin yanıtı</span><b></b><p></p><a class="dgm dgm--altin" href="${r}iletisim/" style="margin-top:8px">Ayrıntısı muayenede</a></div>
     </div>
   </div>
 </div></section>
@@ -126,12 +126,12 @@ module.exports = {
 <!-- KAPANIŞ -->
 <section class="g-son">
   <div class="sar">
-    <p class="g-etiket g-etiket--orta">Sonraki adım</p>
+    <p class="g-etiket g-etiket--orta">Bir adım ötesi</p>
     <h2>Gerçekçi bir hedefle başlayalım</h2>
     <p class="g-sonalt">Deri gevşekliği ön plandaysa ya da beklenti dokunun tümüyle ortadan kalkmasıysa bu plan önerilmez; bunu ilk görüşmede açıkça konuşuruz.</p>
     <div class="g-sonbtn">
       <a class="dgm dgm--bir" href="${r}iletisim/">Randevu talebi oluşturun</a>
-      <a class="dgm dgm--iki" href="${r}hazirlik-listesi/arac/">Hazırlık listesini doldurun</a>
+      <a class="dgm dgm--iki" href="${r}hazirlik-listesi/arac/">Muayeneye hazırlanın</a>
     </div>
   </div>
 </section>

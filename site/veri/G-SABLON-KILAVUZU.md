@@ -68,7 +68,7 @@ DİKKAT: g-hero .sar zaten grid — iç sarmalayıcı KULLANMA, doğrudan iki ç
     <div class="g-tarama" data-gr>
       <img src="${r}varliklar/gorsel/UYGUN.webp" width="900" height="1200" alt="..." loading="eager">
       <div class="g-isin"></div>
-      <span class="g-ainot">Görsel yapay zekâ ile üretilmiştir</span>
+      <span class="g-ainot">Temsilî görsel · yapay zekâ ile üretildi</span>
       <!-- İSTEĞE BAĞLI noktalar (yalnız yüz görseli varsa): -->
       <button class="g-nokta" data-gn="X" style="--x:..%;--y:..%" aria-label="..."><span data-ad="KISA AD"></span></button>
       <div class="g-hud" data-ghud><b>...</b><div class="g-cizgi"></div><span>...</span></div>
@@ -114,7 +114,7 @@ Bölüm kabuğu her zaman: `<section class="bolum"><div class="sar">…</div></s
   <div class="g-kutu g-b2" data-gr style="--d:140ms"><span class="g-ket">PROTOKOL</span>
     <ol class="g-protokol"><li>…</li>…(4–5)…</ol></div>
   <div class="g-kutu g-b2 g-kutu--gece" data-gr><span class="g-ket">İLKE</span><p>"Alıntı cümle."</p></div>
-  <div class="g-kutu g-b2 g-kutu--gorsel" data-gr><img src="…" alt="…" loading="lazy"><span class="g-ainot">Görsel yapay zekâ ile üretilmiştir</span></div>
+  <div class="g-kutu g-b2 g-kutu--gorsel" data-gr><img src="…" alt="…" loading="lazy"><span class="g-ainot">Temsilî görsel · yapay zekâ ile üretildi</span></div>
   <div class="g-kutu g-b2 g-kutu--cta" data-gr><h3>CTA başlığı</h3><p>Tek cümle.</p><a class="dgm dgm--altin" href="${r}iletisim/">Randevu talebi</a></div>
 </div>
 ```

@@ -13,7 +13,7 @@ module.exports = {
   <div class="sar">
     <div>
       <nav class="kirinti" aria-label="Konum" style="position:relative;font-size:.76rem;color:var(--sessiz);display:flex;gap:7px;margin-bottom:18px"><a href="${r}" style="color:var(--sessiz);text-decoration:none">Ana sayfa</a> › <a href="${r}bolgeler/" style="color:var(--sessiz);text-decoration:none">Bölgeler</a> › <span>El</span></nav>
-      <p class="g-etiket">Bölgeler · El</p>
+      <p class="g-etiket">Bölge rehberi · El</p>
       <h1>Eller yaşı <span class="g-isik">yüzden önce</span> ele verebilir.</h1>
       <p class="g-hero__alt">Yüzünüze gösterdiğiniz özeni çoğu zaman ellerinize gösteremezsiniz; güneş koruyucu nadiren sürülür, eller gün boyu suya ve deterjana değer. Zamanla deri altındaki yağ yastığı incelir, damarlar ve tendonlar belirginleşir, kahverengi lekeler çoğalır. Planda dolgunluk kaybı ile lekeler iki ayrı konu olarak ele alınır ve farklı seanslara bölünür.</p>
       <div class="g-hero__cta">
@@ -25,7 +25,7 @@ module.exports = {
     <div class="g-tarama" data-gr>
       <img src="${r}varliklar/gorsel/bolge-el.webp" width="1400" height="788" alt="Ellerin sırt yüzünü gösteren üç boyutlu stilize görsel" loading="eager">
       <div class="g-isin"></div>
-      <span class="g-ainot">Görsel yapay zekâ ile üretilmiştir</span>
+      <span class="g-ainot">Temsilî görsel · yapay zekâ ile üretildi</span>
     </div>
   </div>
 </section>
@@ -63,7 +63,7 @@ module.exports = {
       <div class="g-atlas" data-gr>
         <div class="g-atlas-kap">
           <img src="${r}varliklar/gorsel/grup-cilt-bakimi.webp" width="1600" height="900" alt="Bakım sırasında bir elin ve jelin yakın plan görünümü" loading="lazy">
-          <span class="g-ainot">Görsel yapay zekâ ile üretilmiştir</span>
+          <span class="g-ainot">Temsilî görsel · yapay zekâ ile üretildi</span>
           <div class="g-rozetk" data-grozet><b>Hacim kaybı</b><span>Kemikler ve tendonlar değişmez; üzerlerini örten katman incelir.</span></div>
         </div>
       </div>
@@ -99,7 +99,7 @@ module.exports = {
     <div class="bolum-bas" data-gr><p class="g-etiket">Uygulamalar</p><h2>Eller için hangi seçenekler konuşulabilir?</h2><p class="giris">Muayenede gördüğümüz tabloya göre tek bir seçenek yeterli olabilir ya da birkaç seçenek haftalara bölünerek sıralanabilir. Hedefimiz dolgun görünen bir el değil, incelmiş örtüye ölçülü bir destek vermektir.</p></div>
     <div class="g-matris">
       <div class="g-mtab" data-gr>
-        <div class="g-mbas"><span>Uygulama</span><span>Hedef</span><span>İyileşme</span><span></span></div>
+        <div class="g-mbas"><span>Yöntem</span><span>Amaç</span><span>Toparlanma</span><span></span></div>
         <a class="g-msatir" data-akt href="${r}uygulamalar/dolgu-uygulamalari/" data-gg="${r}varliklar/gorsel/uyg-dolgu-uygulamalari.webp" data-gb="Dolgu uygulamaları" data-ga="Dolgunluk kaybı belirginse tendon ve damarların üstündeki katmana az miktarda yerleştirilir; fazlası eli şişkin ve yapay gösterir."><h4>Dolgu uygulamaları</h4><span class="g-hucre"><i class="g-kcip g-kcip--3">HACİM</i></span><span class="g-hucre">1–2 hafta dolgunluk hissi</span><span class="g-git">→</span></a>
         <a class="g-msatir" href="${r}uygulamalar/biyostimulan-uygulamalar/" data-gg="${r}varliklar/gorsel/uyg-biyostimulan-uygulamalar.webp" data-gb="Biyostimülan uygulamalar" data-ga="Kolajen yapımını zamana yayarak artırmayı hedefler; incelmiş el sırtı derisine kademeli destek olarak düşünülebilir."><h4>Biyostimülan uygulamalar</h4><span class="g-hucre"><i class="g-kcip g-kcip--3">HACİM</i></span><span class="g-hucre">Muayenede belirlenir</span><span class="g-git">→</span></a>
         <a class="g-msatir" href="${r}uygulamalar/genclik-asisi-skinbooster/" data-gg="${r}varliklar/gorsel/uyg-genclik-asisi-skinbooster.webp" data-gb="Gençlik aşısı (skinbooster)" data-ga="Dolgunluk eklemez; derinin su tutma gücünü ve dokusunu iyileştirmeyi amaçlar. İnce ve kuru el sırtında sık konuşulan bir seçenektir."><h4>Gençlik aşısı (skinbooster)</h4><span class="g-hucre"><i class="g-kcip g-kcip--1">CİLT KALİTESİ</i></span><span class="g-hucre">Birkaç saat–1 gün</span><span class="g-git">→</span></a>
@@ -166,7 +166,7 @@ module.exports = {
     </div>
     <div class="kutu kutu--acil" data-gr style="margin-top:22px">
       <b>Beklemeden başvurmanız gereken bulgular</b>
-      <p>İşlemden sonra parmaklarınızda ya da el sırtınızda beyazlaşma, soğukluk, morumsu ağ görünümü, giderek artan şiddetli ağrı, hızla büyüyen şişlik ya da ateş olursa bizi <a href="tel:${S.iletisim.telHam}">${S.iletisim.tel}</a> numarasından hemen arayın. Telefonla ulaşamazsanız <b>112</b>’yi arayın ya da size en yakın acil servise gidin.</p>
+      <p>İşlemden sonra parmaklarınızda ya da el sırtınızda beyazlaşma, soğukluk, morumsu ağ görünümü, giderek artan şiddetli ağrı, hızla büyüyen şişlik ya da ateş olursa bizi <a href="tel:${S.iletisim.telHam}">${S.iletisim.tel}</a> numarasından hemen arayın. Telefonla ulaşamazsanız <b>112</b> Acil Çağrı Merkezi’ni arayın ya da en yakın hastanenin acil birimine başvurun.</p>
     </div>
   </div>
 </section>
@@ -194,12 +194,12 @@ module.exports = {
 <!-- 9 ── KAPANIŞ -->
 <section class="g-son">
   <div class="sar">
-    <p class="g-etiket g-etiket--orta">Sonraki adım</p>
+    <p class="g-etiket g-etiket--orta">Bir adım ötesi</p>
     <h2>Ellerinize bakalım, sonra karar verelim</h2>
     <p class="g-sonalt">Ellerinizdeki değişimin dolgunluk kaybından mı yoksa lekelerden mi kaynaklandığını birlikte ayırmak için ${S.iletisim.semt} muayenehanemizden randevu talep edebilirsiniz.</p>
     <div class="g-sonbtn">
       <a class="dgm dgm--bir" href="${r}iletisim/">Randevu talebi oluşturun</a>
-      <a class="dgm dgm--iki" href="${r}hazirlik-listesi/arac/">Hazırlık listesini doldurun</a>
+      <a class="dgm dgm--iki" href="${r}hazirlik-listesi/arac/">Muayeneye hazırlanın</a>
     </div>
   </div>
 </section>

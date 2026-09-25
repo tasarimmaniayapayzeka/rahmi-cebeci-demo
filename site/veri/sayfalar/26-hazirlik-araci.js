@@ -14,7 +14,7 @@ module.exports = {
     <nav class="kirinti" aria-label="Konum">
       <a href="${r}">Ana sayfa</a><span aria-hidden="true">›</span>
       <a href="${r}hazirlik-listesi/">Hazırlık listesi</a><span aria-hidden="true">›</span>
-      <span>Liste</span>
+      <span>Doldurulabilir liste</span>
     </nav>
   </div>
 </section>
@@ -23,16 +23,16 @@ module.exports = {
   <div class="sar">
     <div class="arac" data-hazirlik>
 
-      <p class="etiket">Hazırlık</p>
+      <p class="etiket">Muayene öncesi araç</p>
       <h1>Görüşme Öncesi Hazırlık Listesi</h1>
 
       <div class="arac__kapi" data-kapi>
-        <p>Aşağıdaki 12 madde, muayenede hekiminize anlatmanız gereken bilgileri önceden hatırlamanız için hazırlandı. <strong>Verdiğiniz cevaplar yalnızca bu cihazda işlenir; bize iletilmez ve hiçbir yerde saklanmaz.</strong> Cevabını bilmediğiniz maddelerde “Bilmiyorum” seçeneğini işaretlemekten çekinmeyin; hekiminiz o konuyu muayenede sizinle birlikte netleştirir.</p>
+        <p>Buradaki 12 madde, muayenede hekiminize anlatmanız gereken bilgileri önceden hatırlamanız için hazırlandı. <strong>Verdiğiniz cevaplar yalnızca bu cihazda işlenir; bize iletilmez ve hiçbir yerde saklanmaz.</strong> Cevabını bilmediğiniz maddelerde “Bilmiyorum” seçeneğini işaretlemekten çekinmeyin; hekiminiz o konuyu muayenede sizinle birlikte netleştirir.</p>
         <p><strong>Liste bir tanı, tarama ya da uygunluk değerlendirmesi değildir.</strong> Sizin için hastalık taraması yapmaz, teşhise varmaz, ilaç ya da işlem tavsiye etmez; hiçbir uygulama için “uygunsunuz” ya da “uygun değilsiniz” gibi bir sonuç üretmez.</p>
 
         <div class="kutu kutu--acil" style="margin-top:16px">
           <b>Şu anda acil bir şikâyetiniz varsa listeyi bırakın</b>
-          <p>Nefes almakta zorlanma, yüzde hızla gelişen şişlik, dayanılmaz ağrı ya da görmede ani değişiklik gibi bir durumda vakit kaybetmeden <b>112</b>’yi arayın veya en yakın acil servise gidin.</p>
+          <p>Nefes almakta zorlanma, yüzde hızla gelişen şişlik, dayanılmaz ağrı ya da görmede ani değişiklik gibi bir durumda vakit kaybetmeden <b>112</b> Acil Çağrı Merkezi’ni arayın ya da en yakın hastanenin acil birimine başvurun.</p>
         </div>
 
         <div class="arac__onay">

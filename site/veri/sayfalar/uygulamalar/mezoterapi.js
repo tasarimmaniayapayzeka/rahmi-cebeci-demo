@@ -24,7 +24,7 @@ module.exports = {
     <div class="g-tarama" data-gr>
       <img src="${r}varliklar/gorsel/uyg-mezoterapi.webp" width="1400" height="788" alt="Açık renk kumaş üzerinde duran cam ampuller ve küçük bir serum şişesi" loading="eager">
       <div class="g-isin"></div>
-      <span class="g-ainot">Görsel yapay zekâ ile üretilmiştir</span>
+      <span class="g-ainot">Temsilî görsel · yapay zekâ ile üretildi</span>
       <div class="g-hud" data-ghud><b>Karışım kişiye göre hazırlanır</b><div class="g-cizgi"></div><span>Hangi üründen, hangi seriden, nereye ne kadar verildiği kayıt altına alınır.</span></div>
     </div>
   </div>
@@ -32,8 +32,8 @@ module.exports = {
 
 <!-- ═════ VERİ BANDI ═════ -->
 <div class="g-band"><div class="sar">
-  <div data-gr><b>0,01–0,05</b><span>ml / nokta</span></div>
-  <div data-gr style="--d:60ms"><b>2–4</b><span>Hafta arayla seans</span></div>
+  <div data-gr><b>0,01–0,05</b><span>ml, her noktaya</span></div>
+  <div data-gr style="--d:60ms"><b>2–4</b><span>Haftada bir seans aralığı</span></div>
   <div data-gr style="--d:120ms"><b>15–30</b><span>Dakika (yüz için)</span></div>
   <div data-gr style="--d:180ms"><b><em data-gsay="4">0</em></b><span>Protokol basamağı</span></div>
 </div></div>
@@ -77,7 +77,7 @@ module.exports = {
         <p><b style="color:var(--murekkep)">Seans aralığı</b><br>İlk dönemde seanslar iki–dört haftada bir yapılır; cilt yanıt verdikçe aralık açılır ve bakım seansları konuşulur.</p>
       </div>
       <div class="g-kutu g-b2" data-gr style="--d:70ms">
-        <span class="g-ket">Süreç çizgisi</span>
+        <span class="g-ket">Zaman akışı</span>
         <div class="g-cubuk"><small><span>Uygulama günü</span><span>Kızarıklık söner</span></small><div class="g-ciz"><b class="g-cubuk-mavi" data-gw="25%"></b></div></div>
         <div class="g-cubuk"><small><span>İlk hafta</span><span>Olası morluk solar</span></small><div class="g-ciz"><b class="g-cubuk-petrol" data-gw="60%"></b></div></div>
         <div class="g-cubuk"><small><span>2–4. hafta</span><span>Sonraki seans kararı</span></small><div class="g-ciz"><b class="g-cubuk-bakir" data-gw="90%"></b></div></div>
@@ -104,7 +104,7 @@ module.exports = {
           <li><b>Gerçekçi olmayan beklenti:</b> hacim, sıkılaşma ya da çizgilerin silinmesi gibi mezoterapinin veremeyeceği bir sonuç bekleniyorsa uygulama önerilmez.</li>
         </ul>
       </div>
-      <div class="g-kutu g-b2 g-kutu--gorsel" data-gr style="--d:70ms"><img src="${r}varliklar/gorsel/uyg-mezoterapi-2.webp" alt="Boyun ve dekolte cildinin yumuşak gün ışığında yakın plan görünümü" loading="lazy"><span class="g-ainot">Görsel yapay zekâ ile üretilmiştir</span></div>
+      <div class="g-kutu g-b2 g-kutu--gorsel" data-gr style="--d:70ms"><img src="${r}varliklar/gorsel/uyg-mezoterapi-2.webp" alt="Boyun ve dekolte cildinin yumuşak gün ışığında yakın plan görünümü" loading="lazy"><span class="g-ainot">Temsilî görsel · yapay zekâ ile üretildi</span></div>
       <div class="g-kutu g-b3 g-kutu--gece" data-gr><span class="g-ket">İlke</span><p>“Şişenin üzerindeki ad değil, içindekiler önemlidir. Size uygulanacak her bileşeni adıyla söyler, dosyanıza yazarız.”</p></div>
       <div class="g-kutu g-b3 g-kutu--cta" data-gr style="--d:70ms"><h3>Cildinizi yakından görelim</h3><p>Hangi karışımın, hangi aralıkla uygulanacağı muayeneden sonra belli olur.</p><a class="dgm dgm--altin" href="${r}iletisim/">Randevu talebi</a></div>
     </div>
@@ -191,7 +191,7 @@ module.exports = {
 
 <!-- ═════ SORU TERMİNALİ ═════ -->
 <section class="bolum bolum--buz2"><div class="sar">
-  <div class="bolum-bas" data-gr><p class="g-etiket">Sorgulayın</p><h2>Sorunuzu seçin, cevap ekrana düşsün</h2></div>
+  <div class="bolum-bas" data-gr><p class="g-etiket">Sık gelen sorular</p><h2>Merak ettiğiniz soruya dokunun, yanıtı burada açılsın</h2></div>
   <div class="g-sorgu" data-gr>
     <div class="g-sorgu-bas"><i></i><i></i><i></i><span>${S.marka} · mezoterapi · soru-cevap</span></div>
     <div class="g-sorgu-ic">
@@ -203,7 +203,7 @@ module.exports = {
         <button class="g-ssoru" data-gs="4"><i>›</i>Saç dökülmesi için de aynı uygulama mı yapılıyor?</button>
         <button class="g-ssoru" data-gs="5"><i>›</i>Ücret bilgisi neden sitede yok?</button>
       </div>
-      <div class="g-scevap" data-gcevap aria-live="polite"><span class="g-yazan">Hekim onaylı yanıt</span><b></b><p></p><a class="dgm dgm--altin" href="${r}iletisim/" style="margin-top:8px">Muayenede konuşalım</a></div>
+      <div class="g-scevap" data-gcevap aria-live="polite"><span class="g-yazan">Hekimin yanıtı</span><b></b><p></p><a class="dgm dgm--altin" href="${r}iletisim/" style="margin-top:8px">Ayrıntısı muayenede</a></div>
     </div>
   </div>
 </div></section>
@@ -212,12 +212,12 @@ module.exports = {
 <!-- ═════ KAPANIŞ ═════ -->
 <section class="g-son">
   <div class="sar">
-    <p class="g-etiket g-etiket--orta">Sonraki adım</p>
+    <p class="g-etiket g-etiket--orta">Bir adım ötesi</p>
     <h2>Cildinize uygun planı birlikte kuralım</h2>
     <p class="g-sonalt">Öykünüzü ve cildinizi değerlendirmeden mezoterapinin sizin için doğru seçenek olup olmadığını söyleyemeyiz.</p>
     <div class="g-sonbtn">
       <a class="dgm dgm--bir" href="${r}iletisim/">Randevu talebi oluşturun</a>
-      <a class="dgm dgm--iki" href="${r}hazirlik-listesi/arac/">Hazırlık listesini doldurun</a>
+      <a class="dgm dgm--iki" href="${r}hazirlik-listesi/arac/">Muayeneye hazırlanın</a>
     </div>
   </div>
 </section>

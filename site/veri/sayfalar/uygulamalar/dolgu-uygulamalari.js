@@ -24,7 +24,7 @@ module.exports = {
     <div class="g-tarama" data-gr>
       <img src="${r}varliklar/gorsel/uyg-dolgu-uygulamalari.webp" width="1400" height="788" alt="Cam yüzey üzerinde duran berrak jel damlalarının yakın plan görünümü" loading="eager">
       <div class="g-isin"></div>
-      <span class="g-ainot">Görsel yapay zekâ ile üretilmiştir</span>
+      <span class="g-ainot">Temsilî görsel · yapay zekâ ile üretildi</span>
       <div class="g-hud" data-ghud><b>Altı bölge, tek yüz</b><div class="g-cizgi"></div><span>Bir bölgeye verilen destek komşusunu da etkiler; bölgeler birlikte düşünülür.</span></div>
     </div>
   </div>
@@ -132,7 +132,7 @@ module.exports = {
         <p><b style="color:var(--murekkep)">Muayeneden kontrole</b><br>Her basamak yazılı onamla ilerler; kontrol günü, şişliğin gerilemesine zaman tanınarak belirlenir.</p>
       </div>
       <div class="g-kutu g-b2" data-gr style="--d:70ms">
-        <span class="g-ket">Süreç çizgisi</span>
+        <span class="g-ket">Zaman akışı</span>
         <div class="g-cubuk"><small><span>İşlem günü</span><span>Şişlik başlar</span></small><div class="g-ciz"><b class="g-cubuk-mavi" data-gw="25%"></b></div></div>
         <div class="g-cubuk"><small><span>İlk günler</span><span>Ödem çekilir</span></small><div class="g-ciz"><b class="g-cubuk-petrol" data-gw="60%"></b></div></div>
         <div class="g-cubuk"><small><span>Kontrol</span><span>Son görünüm</span></small><div class="g-ciz"><b class="g-cubuk-bakir" data-gw="95%"></b></div></div>
@@ -152,8 +152,8 @@ module.exports = {
         <p><b>Uygulamanın yapılmadığı durumlar:</b></p>
         <ul>
           <li>Hyalüronik asit ürünlerine ya da içerdikleri yardımcı maddelere karşı bilinen aşırı duyarlılık</li>
-          <li>İşlem yapılacak alanda aktif enfeksiyon, iltihaplı sivilce veya iyileşmemiş yara</li>
-          <li>Aynı bölgede daha önce yapılmış ve içeriği bilinmeyen ya da vücutta yıkılmayan (kalıcı) bir ürün</li>
+          <li>Uygulama alanında etkin enfeksiyon, iltihaplı sivilce ya da henüz kapanmamış bir yara</li>
+          <li>Aynı bölgeye geçmişte verilmiş, içeriği bilinmeyen ya da vücutta yıkılmayan (kalıcı) bir ürün</li>
           <li>Göz altı uygulaması için: bölgede ödem eğilimi, belirgin alt kapak gevşekliği veya yağ yastıkçığı çıkıntısı (torbalanma)</li>
           <li>Gebelik ve emzirme dönemi</li>
           <li>Uygulamanın karşılayamayacağı bir sonuç beklentisi</li>
@@ -168,7 +168,7 @@ module.exports = {
         </ul>
         <p>Önceki dolgularınıza ait bir belge, ürün etiketi ya da kayıt varsa randevuya getirmeniz, planın güvenle kurulmasına doğrudan katkı sağlar.</p>
       </div>
-      <div class="g-kutu g-b2 g-kutu--gorsel" data-gr style="--d:70ms"><img src="${r}varliklar/gorsel/ic3d-dudak.webp" alt="Dudak ve ağız çevresinin üç boyutlu çizimle gösterilmiş yakın planı" loading="lazy"><span class="g-ainot">Görsel yapay zekâ ile üretilmiştir</span></div>
+      <div class="g-kutu g-b2 g-kutu--gorsel" data-gr style="--d:70ms"><img src="${r}varliklar/gorsel/ic3d-dudak.webp" alt="Dudak ve ağız çevresinin üç boyutlu çizimle gösterilmiş yakın planı" loading="lazy"><span class="g-ainot">Temsilî görsel · yapay zekâ ile üretildi</span></div>
       <div class="g-kutu g-b3 g-kutu--gece" data-gr><span class="g-ket">İlke</span><p>“Dolguda asıl beceri, nerede duracağını bilmektir. Şişlik çekilip yüz son hâlini göstermeden ürün eklenmez.”</p></div>
       <div class="g-kutu g-b3 g-kutu--cta" data-gr style="--d:70ms"><h3>Bölgenizi birlikte inceleyelim</h3><p>Hangi bölgenin, hangi sırayla ele alınacağı muayenede netleşir.</p><a class="dgm dgm--altin" href="${r}iletisim/">Randevu talebi</a></div>
     </div>
@@ -199,7 +199,7 @@ module.exports = {
     </div>
     <div class="kutu kutu--acil" style="margin-top:22px" data-gr>
       <b>Beklemeden başvurmanız gereken belirtiler</b>
-      <p>İşlem sırasında ya da sonrasında orantısız şiddette ağrı, derinin solması ya da beyazlaması, ağ biçiminde mor renk değişimi, görmede bulanıklık veya kayıp ve göz çevresinde şiddetli ağrı, ürünün bir damarı tıkamış olabileceğini düşündürür. Bu tabloda her dakika önemlidir; hemen bize ulaşın, ulaşamazsanız <b>112</b>’yi arayın ya da en yakın acil servise gidin.</p>
+      <p>İşlem sırasında ya da sonrasında orantısız şiddette ağrı, derinin solması ya da beyazlaması, ağ biçiminde mor renk değişimi, görmede bulanıklık veya kayıp ve göz çevresinde şiddetli ağrı, ürünün bir damarı tıkamış olabileceğini düşündürür. Bu tabloda her dakika önemlidir; hemen bize ulaşın, ulaşamazsanız <b>112</b> Acil Çağrı Merkezi’ni arayın ya da en yakın hastanenin acil birimine başvurun.</p>
     </div>
     <div class="kutu kutu--bilgi" style="margin-top:16px" data-gr>
       <p><b>Dolgu çözme:</b> Hyalüronik asit dolgular, gerekli görüldüğünde hyalüronidaz adlı bir enzimle dokuda parçalanabilir. Damar tıkanıklığı şüphesinde bu enzim zaman kaybetmeden ve yeterli miktarda kullanılır; fazlalık, yer değiştirme ya da görünür kabarıklık gibi acil olmayan durumlarda ise ayrı bir değerlendirmeyle planlanır. Enzim yalnızca hyalüronik asit içeren ürünleri çözer, bölgedeki doğal hyalüronik asidi de etkileyebildiği için geçici bir çöküklük bırakabilir ve kendisi de aşırı duyarlılık reaksiyonuna yol açabilir. Bu nedenle bir geri alma düğmesi gibi görülmez; yalnız hekim kararıyla ve acil müdahale hazırlığı olan bir ortamda uygulanır.</p>
@@ -255,7 +255,7 @@ module.exports = {
 
 <!-- ═════ SORU TERMİNALİ ═════ -->
 <section class="bolum bolum--buz2"><div class="sar">
-  <div class="bolum-bas" data-gr><p class="g-etiket">Sorgulayın</p><h2>Sorunuzu seçin, cevap ekrana düşsün</h2></div>
+  <div class="bolum-bas" data-gr><p class="g-etiket">Sık gelen sorular</p><h2>Merak ettiğiniz soruya dokunun, yanıtı burada açılsın</h2></div>
   <div class="g-sorgu" data-gr>
     <div class="g-sorgu-bas"><i></i><i></i><i></i><span>${S.marka} · dolgu · soru-cevap</span></div>
     <div class="g-sorgu-ic">
@@ -267,7 +267,7 @@ module.exports = {
         <button class="g-ssoru" data-gs="4"><i>›</i>Dolgu ile botulinum toksin arasındaki fark ne?</button>
         <button class="g-ssoru" data-gs="5"><i>›</i>Ücret bilgisi neden sitede yok?</button>
       </div>
-      <div class="g-scevap" data-gcevap aria-live="polite"><span class="g-yazan">Hekim onaylı yanıt</span><b></b><p></p><a class="dgm dgm--altin" href="${r}iletisim/" style="margin-top:8px">Muayenede konuşalım</a></div>
+      <div class="g-scevap" data-gcevap aria-live="polite"><span class="g-yazan">Hekimin yanıtı</span><b></b><p></p><a class="dgm dgm--altin" href="${r}iletisim/" style="margin-top:8px">Ayrıntısı muayenede</a></div>
     </div>
   </div>
 </div></section>
@@ -276,12 +276,12 @@ module.exports = {
 <!-- ═════ KAPANIŞ ═════ -->
 <section class="g-son">
   <div class="sar">
-    <p class="g-etiket g-etiket--orta">Sonraki adım</p>
+    <p class="g-etiket g-etiket--orta">Bir adım ötesi</p>
     <h2>Bölgenizi ve beklentinizi birlikte konuşalım</h2>
     <p class="g-sonalt">Hangi bölgenin önce ele alınacağını muayeneden sonra birlikte kararlaştırırız. ${S.iletisim.adres}, ${S.iletisim.ilce}.</p>
     <div class="g-sonbtn">
       <a class="dgm dgm--bir" href="${r}iletisim/">Randevu talebi oluşturun</a>
-      <a class="dgm dgm--iki" href="${r}hazirlik-listesi/arac/">Hazırlık listesini doldurun</a>
+      <a class="dgm dgm--iki" href="${r}hazirlik-listesi/arac/">Muayeneye hazırlanın</a>
     </div>
   </div>
 </section>

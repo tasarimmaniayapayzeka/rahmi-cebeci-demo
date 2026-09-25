@@ -12,8 +12,8 @@ module.exports = {
 <section class="g-hero">
   <div class="sar">
     <div>
-      <nav class="kirinti" aria-label="Konum" style="position:relative;font-size:.76rem;color:var(--sessiz);display:flex;gap:7px;margin-bottom:18px"><a href="${r}" style="color:var(--sessiz);text-decoration:none">Ana sayfa</a> › <a href="${r}cilt-sorunlari/" style="color:var(--sessiz);text-decoration:none">Cilt sorunları</a> › <span>Gözenek ve cilt dokusu</span></nav>
-      <p class="g-etiket">Cilt sorunları · Doku</p>
+      <nav class="kirinti" aria-label="Konum" style="position:relative;font-size:.76rem;color:var(--sessiz);display:flex;gap:7px;margin-bottom:18px"><a href="${r}" style="color:var(--sessiz);text-decoration:none">Ana sayfa</a> › <a href="${r}cilt-sorunlari/" style="color:var(--sessiz);text-decoration:none">Sorunlar</a> › <span>Gözenek ve cilt dokusu</span></nav>
+      <p class="g-etiket">Şikâyet rehberi · Doku</p>
       <h1>Gözenekleriniz çoğalmaz; <span class="g-isik">görünürlükleri</span> artar</h1>
       <p class="g-hero__alt">Kaç gözeneğiniz olduğu doğuştan belirlenir ve bu sayı değişmez. Zamanla değişen, gözeneklerin ne kadar dikkat çektiğidir. Yağ salgısı, kanal ağzında tıkanma, yüzeyin kalınlaşması ve çevredeki destek dokunun azalması görünürlüğü artırır. Pürüzlü yüzey ve akne izi başka süreçlerle oluştuğu için ayrıca değerlendirilir.</p>
       <div class="g-hero__cta">
@@ -25,7 +25,7 @@ module.exports = {
     <div class="g-tarama" data-gr>
       <img src="${r}varliklar/gorsel/sorun-gozenek-ve-cilt-dokusu.webp" width="1400" height="788" alt="Yanak ve burun geçişinde cilt yüzeyinin dokusunu gösteren makro çekim" loading="eager">
       <div class="g-isin"></div>
-      <span class="g-ainot">Görsel yapay zekâ ile üretilmiştir</span>
+      <span class="g-ainot">Temsilî görsel · yapay zekâ ile üretildi</span>
     </div>
   </div>
 </section>
@@ -59,8 +59,8 @@ module.exports = {
     <div class="g-katblok" data-gr style="--d:180ms">
       <span class="g-kno">04</span>
       <h3>Akne izinin yüzeyde yarattığı iniş çıkışlar</h3>
-      <p>Akne izi, iltihabın derinde yol açtığı doku kaybının ya da aşırı doku yapımının kalıcı sonucudur. Yüzeyde biriken bir tabaka olmadığı için yüzeysel işlemlerle kaybolmaz. Çukur izler yandan gelen ışıkta belirginleşir; kabarık izler daha çok sırtta, omuzlarda ve çene hattında görülür. Yüzeyi düz olup yalnız rengi farklı kalan alanlar ise iz değil, renk değişikliğidir. İz planlamasına geçmeden önce aktif aknenin sakinleşmiş olması gerekir.</p>
-      <div class="g-haplar"><a href="${r}cilt-sorunlari/akne-ve-akne-izi/">Akne ve akne izi</a><a href="${r}cilt-sorunlari/cilt-tonu-ve-leke/">Cilt tonu ve leke</a></div>
+      <p>Akne izi, iltihabın derinde yol açtığı doku kaybının ya da aşırı doku yapımının kalıcı sonucudur. Yüzeyde biriken bir tabaka olmadığı için yüzeysel işlemlerle kaybolmaz. Çukur izler yandan gelen ışıkta belirginleşir; kabarık izler daha çok sırtta, omuzlarda ve çene hattında görülür. Yüzeyi düz olup yalnız rengi farklı kalan alanlar ise iz değil, renk değişikliğidir. İz için plan yapılabilmesi, etkin aknenin önce yatışmasına bağlıdır.</p>
+      <div class="g-haplar"><a href="${r}cilt-sorunlari/cilt-tonu-ve-leke/">Cilt tonu ve leke</a><a href="${r}cilt-sorunlari/akne-ve-akne-izi/">Akne ve akne izi</a></div>
     </div>
     <div class="g-katblok" data-gr style="--d:240ms">
       <span class="g-kno">05</span>
@@ -84,7 +84,7 @@ module.exports = {
     </div>
     <div class="g-matris">
       <div class="g-mtab" data-gr>
-        <div class="g-mbas"><span>Uygulama</span><span>Hedef</span><span>İyileşme</span><span></span></div>
+        <div class="g-mbas"><span>Yöntem</span><span>Amaç</span><span>Toparlanma</span><span></span></div>
         <a class="g-msatir" data-akt href="${r}uygulamalar/altin-igne-radyofrekans/" data-gg="${r}varliklar/gorsel/uyg-altin-igne-radyofrekans.webp" data-gb="Altın iğne radyofrekans" data-ga="Gözenek çevresindeki destek dokuyu ve iz alanlarını hedefler; değişim aylar içinde, aşamalı olarak izlenir."><h4>Altın iğne radyofrekans</h4><span class="g-hucre"><i class="g-kcip g-kcip--3">DESTEK</i></span><span class="g-hucre">Muayenede belirlenir</span><span class="g-git">→</span></a>
         <a class="g-msatir" href="${r}uygulamalar/fraksiyonel-lazer/" data-gg="${r}varliklar/gorsel/uyg-fraksiyonel-lazer.webp" data-gb="Fraksiyonel lazer" data-ga="Kontrollü mikro alanlarla yüzey dokusunun ve iz düzensizliğinin yenilenmesini uyarmayı amaçlar."><h4>Fraksiyonel lazer</h4><span class="g-hucre"><i class="g-kcip g-kcip--3">İZ / DOKU</i></span><span class="g-hucre">Muayenede belirlenir</span><span class="g-git">→</span></a>
         <a class="g-msatir" href="${r}uygulamalar/karbon-peeling/" data-gg="${r}varliklar/gorsel/uyg-karbon-peeling.webp" data-gb="Karbon peeling" data-ga="Yağlanma ve kanal ağzında tıkanma eğiliminde, yüzeyin daha düzgün görünmesine yönelik bir uygulamadır."><h4>Karbon peeling</h4><span class="g-hucre"><i class="g-kcip g-kcip--1">YÜZEY</i></span><span class="g-hucre">Muayenede belirlenir</span><span class="g-git">→</span></a>
@@ -97,7 +97,7 @@ module.exports = {
 
 <!-- ═════════ SORU TERMİNALİ ═════════ -->
 <section class="bolum bolum--buz2"><div class="sar">
-  <div class="bolum-bas" data-gr><p class="g-etiket">Sorgulayın</p><h2>Sorunuzu seçin, cevap ekrana düşsün</h2></div>
+  <div class="bolum-bas" data-gr><p class="g-etiket">Sık gelen sorular</p><h2>Merak ettiğiniz soruya dokunun, yanıtı burada açılsın</h2></div>
   <div class="g-sorgu" data-gr>
     <div class="g-sorgu-bas"><i></i><i></i><i></i><span>${S.marka.toLocaleLowerCase('tr-TR')} · gözenek ve doku · soru-cevap</span></div>
     <div class="g-sorgu-ic">
@@ -109,7 +109,7 @@ module.exports = {
         <button class="g-ssoru" data-gs="4"><i>›</i>Dokudaki değişim ne zaman fark edilir?</button>
         <button class="g-ssoru" data-gs="5"><i>›</i>Ücret bilgisi neden sitede yok?</button>
       </div>
-      <div class="g-scevap" data-gcevap aria-live="polite"><span class="g-yazan">Hekim onaylı yanıt</span><b></b><p></p><a class="dgm dgm--altin" href="${r}iletisim/" style="margin-top:8px">Muayenede konuşalım</a></div>
+      <div class="g-scevap" data-gcevap aria-live="polite"><span class="g-yazan">Hekimin yanıtı</span><b></b><p></p><a class="dgm dgm--altin" href="${r}iletisim/" style="margin-top:8px">Ayrıntısı muayenede</a></div>
     </div>
   </div>
 </div></section>
@@ -118,12 +118,12 @@ module.exports = {
 <!-- ═════════ KAPANIŞ ═════════ -->
 <section class="g-son">
   <div class="sar">
-    <p class="g-etiket g-etiket--orta">Sonraki adım</p>
+    <p class="g-etiket g-etiket--orta">Bir adım ötesi</p>
     <h2>Cildinizde hangi bileşenin öne çıktığını birlikte görelim</h2>
     <p class="g-sonalt">Muayenede cilt yüzeyiniz yandan ışıkla ve büyütmeli olarak incelenir; gözenek, pürüz ve iz ayrı başlıklar hâlinde değerlendirilir.</p>
     <div class="g-sonbtn">
       <a class="dgm dgm--bir" href="${r}iletisim/">Randevu talebi oluşturun</a>
-      <a class="dgm dgm--iki" href="${r}hazirlik-listesi/arac/">Hazırlık listesini doldurun</a>
+      <a class="dgm dgm--iki" href="${r}hazirlik-listesi/arac/">Muayeneye hazırlanın</a>
     </div>
   </div>
 </section>

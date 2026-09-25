@@ -12,8 +12,8 @@ module.exports = {
 <section class="g-hero">
   <div class="sar">
     <div>
-      <nav class="kirinti" aria-label="Konum" style="position:relative;font-size:.76rem;color:var(--sessiz);display:flex;gap:7px;margin-bottom:18px"><a href="${r}" style="color:var(--sessiz);text-decoration:none">Ana sayfa</a> › <a href="${r}cilt-sorunlari/" style="color:var(--sessiz);text-decoration:none">Cilt sorunları</a> › <span>Dövme ve kalıcı makyaj</span></nav>
-      <p class="g-etiket">Cilt sorunları · Dövme ve kalıcı makyaj</p>
+      <nav class="kirinti" aria-label="Konum" style="position:relative;font-size:.76rem;color:var(--sessiz);display:flex;gap:7px;margin-bottom:18px"><a href="${r}" style="color:var(--sessiz);text-decoration:none">Ana sayfa</a> › <a href="${r}cilt-sorunlari/" style="color:var(--sessiz);text-decoration:none">Sorunlar</a> › <span>Dövme ve kalıcı makyaj</span></nav>
+      <p class="g-etiket">Şikâyet rehberi · Dövme ve kalıcı makyaj</p>
       <h1>Pişman olunan dövmede <span class="g-isik">yanıtı mürekkep belirler</span></h1>
       <p class="g-hero__alt">Bir dövmenin, kalıcı makyajın ya da mikroblading kaşın lazerle açılması; mürekkebin rengine, deride ne kadar derinde ve ne yoğunlukta durduğuna, dövmenin yaşına ve bulunduğu bölgeye göre farklı hızda ilerler. Pikosaniye lazerle hedeflenen, görünümün seanslar boyunca kademeli olarak açılmasıdır. Kaç seans gerekeceği ve nereye varılabileceği muayenede konuşulur.</p>
       <div class="g-hero__cta">
@@ -25,7 +25,7 @@ module.exports = {
     <div class="g-tarama" data-gr>
       <img src="${r}varliklar/gorsel/sorun-dovme-ve-kalici-makyaj.webp" width="1400" height="788" alt="Ön kolda solmaya başlamış ince çizgili bir dövmenin yakın görünümü" loading="eager">
       <div class="g-isin"></div>
-      <span class="g-ainot">Görsel yapay zekâ ile üretilmiştir</span>
+      <span class="g-ainot">Temsilî görsel · yapay zekâ ile üretildi</span>
     </div>
   </div>
 </section>
@@ -82,7 +82,7 @@ module.exports = {
     </div>
     <div class="g-matris">
       <div class="g-mtab" data-gr>
-        <div class="g-mbas"><span>Uygulama</span><span>Hedef</span><span>İyileşme</span><span></span></div>
+        <div class="g-mbas"><span>Yöntem</span><span>Amaç</span><span>Toparlanma</span><span></span></div>
         <a class="g-msatir" data-akt href="${r}uygulamalar/pico-lazer-dovme-silme/" data-gg="${r}varliklar/gorsel/uyg-pico-lazer-dovme-silme.webp" data-gb="Pico lazer ile dövme silme" data-ga="Pikosaniye atımlarla mürekkep parçacıklarının küçültülmesi hedeflenir; görünüm seanslar boyunca kademeli olarak açılır."><h4>Pico lazer ile dövme silme</h4><span class="g-hucre"><i class="g-kcip g-kcip--1">MÜREKKEP</i></span><span class="g-hucre">Birkaç gün–1 hafta</span><span class="g-git">→</span></a>
         <a class="g-msatir" href="${r}uygulamalar/hekim-muayenesi/" data-gg="${r}varliklar/gorsel/uyg-hekim-muayenesi.webp" data-gb="Hekim muayenesi" data-ga="Dövmenin rengi, yaşı, bölgesi, cilt tonunuz ve kullandığınız ilaçlar değerlendirilir; gerekiyorsa test atışı planlanır."><h4>Hekim muayenesi</h4><span class="g-hucre"><i class="g-kcip g-kcip--3">DEĞERLENDİRME</i></span><span class="g-hucre">Aynı gün</span><span class="g-git">→</span></a>
         <a class="g-msatir" href="${r}uygulamalar/uygulama-sonrasi-takip/" data-gg="${r}varliklar/gorsel/uyg-uygulama-sonrasi-takip.webp" data-gb="Uygulama sonrası takip" data-ga="Seanslar arasında derinin iyileşmesi, olası renk değişimleri ve bir sonraki seansın zamanı kontrol randevularında izlenir."><h4>Uygulama sonrası takip</h4><span class="g-hucre"><i class="g-kcip g-kcip--2">İZLEM</i></span><span class="g-hucre">Randevuya göre</span><span class="g-git">→</span></a>
@@ -94,7 +94,7 @@ module.exports = {
 
 <!-- ═════════ SORU TERMİNALİ ═════════ -->
 <section class="bolum bolum--buz2"><div class="sar">
-  <div class="bolum-bas" data-gr><p class="g-etiket">Sorgulayın</p><h2>Sorunuzu seçin, cevap ekrana düşsün</h2></div>
+  <div class="bolum-bas" data-gr><p class="g-etiket">Sık gelen sorular</p><h2>Merak ettiğiniz soruya dokunun, yanıtı burada açılsın</h2></div>
   <div class="g-sorgu" data-gr>
     <div class="g-sorgu-bas"><i></i><i></i><i></i><span>${S.marka.toLocaleLowerCase('tr-TR')} · dövme ve kalıcı makyaj · soru-cevap</span></div>
     <div class="g-sorgu-ic">
@@ -106,7 +106,7 @@ module.exports = {
         <button class="g-ssoru" data-gs="4"><i>›</i>Üzerine yeni dövme yaptırmak için açtırabilir miyim?</button>
         <button class="g-ssoru" data-gs="5"><i>›</i>Ücret bilgisi neden sitede yok?</button>
       </div>
-      <div class="g-scevap" data-gcevap aria-live="polite"><span class="g-yazan">Hekim onaylı yanıt</span><b></b><p></p><a class="dgm dgm--altin" href="${r}iletisim/" style="margin-top:8px">Muayenede konuşalım</a></div>
+      <div class="g-scevap" data-gcevap aria-live="polite"><span class="g-yazan">Hekimin yanıtı</span><b></b><p></p><a class="dgm dgm--altin" href="${r}iletisim/" style="margin-top:8px">Ayrıntısı muayenede</a></div>
     </div>
   </div>
 </div></section>
@@ -115,12 +115,12 @@ module.exports = {
 <!-- ═════════ KAPANIŞ ═════════ -->
 <section class="g-son">
   <div class="sar">
-    <p class="g-etiket g-etiket--orta">Sonraki adım</p>
+    <p class="g-etiket g-etiket--orta">Bir adım ötesi</p>
     <h2>Dövmenizin nasıl yanıt verebileceğini birlikte konuşalım</h2>
     <p class="g-sonalt">Muayenede mürekkebin rengi, yaşı, bölgesi ve cilt tonunuz değerlendirilir; gerekiyorsa ilk adım olarak test atışı planlanır.</p>
     <div class="g-sonbtn">
       <a class="dgm dgm--bir" href="${r}iletisim/">Randevu talebi oluşturun</a>
-      <a class="dgm dgm--iki" href="${r}hazirlik-listesi/arac/">Hazırlık listesini doldurun</a>
+      <a class="dgm dgm--iki" href="${r}hazirlik-listesi/arac/">Muayeneye hazırlanın</a>
     </div>
   </div>
 </section>

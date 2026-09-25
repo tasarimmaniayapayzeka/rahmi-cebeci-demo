@@ -13,11 +13,11 @@ module.exports = {
   <div class="sar">
     <p class="g-etiket">Yasal</p>
     <h1>Açık Rıza Metni</h1>
-    <p class="g-bhero__alt">Bu metin yalnızca internet sitesindeki iletişim formunu kapsar. Formu gönderdiğinizde yazdığınız ad ve iletişim bilgileri, seçtiğiniz konu ve mesajınız; yalnızca talebinize dönüş yapılabilmesi amacıyla, 6698 sayılı Kanun’un 5/1. maddesi uyarınca açık rızanız temel alınarak işlenir. Rıza vermeniz zorunlu değildir; dilerseniz bize telefonla da ulaşabilirsiniz.</p>
+    <p class="g-bhero__alt">Buradaki rıza, sitedeki iletişim formuyla sınırlıdır. Formu gönderdiğinizde paylaştığınız ad ve iletişim bilgisi, seçtiğiniz konu ve mesajınız size geri dönebilmemiz dışında hiçbir amaçla kullanılmaz; bu işlemenin hukuki dayanağı açık rızanızdır (6698 sayılı Kanun, m. 5/1). Rıza vermek zorunda değilsiniz; isterseniz telefonla aramanız da mümkündür.</p>
     <div class="g-bmeta">
       <span><i></i>Son güncelleme: ${S.guncelleme}</span>
-      <span><i></i>Yalnızca iletişim formu için geçerli</span>
-      <span><i></i>Rıza isteğe bağlıdır</span>
+      <span><i></i>Kapsam: yalnız iletişim formu</span>
+      <span><i></i>Rıza tamamen size bağlıdır</span>
     </div>
   </div>
 </section>
@@ -28,74 +28,74 @@ module.exports = {
 
     <aside class="g-bmenu" aria-label="Sayfa içi başlıklar">
       <b>Bu sayfada</b>
-      <a href="#acik-riza-nedir">Açık rıza nedir?</a>
-      <a href="#rizanin-kapsami">Rızanın kapsamı</a>
-      <a href="#kapsamda-olmayanlar">Kapsam dışı kalanlar</a>
+      <a href="#acik-riza-nedir">Tanım ve gerekçe</a>
+      <a href="#rizanin-kapsami">Neleri kapsar?</a>
+      <a href="#kapsamda-olmayanlar">Neleri kapsamaz?</a>
       <a href="#riza-zorunlu-mu">Zorunlu mu?</a>
-      <a href="#rizayi-geri-alma">Rızayı geri alma</a>
-      <a href="#ilgili-basliklar">İlgili başlıklar</a>
+      <a href="#rizayi-geri-alma">Geri çekme</a>
+      <a href="#ilgili-basliklar">Diğer yasal metinler</a>
     </aside>
 
     <div class="g-bgov">
 
       <div class="g-bblk" id="acik-riza-nedir">
-        <h2>Açık rıza ne demek, neden yalnızca form için isteniyor?</h2>
+        <h2>Açık rıza nedir, neden yalnız formda gerekir?</h2>
         <div class="yazi">
-          <p>Kanun açık rızayı “belirli bir konuya ilişkin, bilgilendirilmeye dayanan ve özgür iradeyle açıklanan rıza” olarak tanımlar. Bu tanımın karşılanması için üç koşulun bir arada bulunması gerekir: rızanın neye verildiği açıkça belirlenmiş olmalı, kişi önceden bilgilendirilmiş olmalı ve onay herhangi bir baskı olmaksızın verilmiş olmalıdır.</p>
-          <p>Muayenehanedeki veri işleme faaliyetlerinin çoğunun dayanağı açık rıza değildir. Muayenede elde edilen sağlık verileri; koruyucu hekimlik ile tıbbî teşhis, tedavi ve bakım hizmetlerinin yürütülmesi amacıyla, sır saklama yükümlülüğü altındaki hekim tarafından Kanun’un 6/3. maddesine göre işlenir. Hasta kaydının tutulması ise mevzuatın öngördüğü bir yükümlülüktür. Bu işlemlerin hukuki dayanağı farklı olduğundan ayrıca rızanız alınmaz.</p>
-          <p>İletişim formu ise hiçbir yasal zorunluluktan doğmayan, tamamen isteğe bağlı bir iletişim yoludur. Formu kullanmadığınız sürece bu kanal üzerinden hakkınızda kayıt oluşmaz; formun tek hukuki dayanağının açık rızanız olmasının nedeni de budur.</p>
+          <p>Kanun’a göre açık rıza, “belirli bir konuya ilişkin, bilgilendirilmeye dayanan ve özgür iradeyle açıklanan rıza” demektir. Başka bir deyişle rızanın geçerli olabilmesi için neye onay verildiği net olmalı, onaydan önce bilgi verilmiş olmalı ve kişi hiçbir baskı altında kalmadan karar vermiş olmalıdır.</p>
+          <p>Muayenehanede yapılan veri işlemenin çoğunda dayanak açık rıza değildir. Muayenede öğrenilen sağlık bilgilerini, sır saklama yükümlülüğü taşıyan hekim Kanun m. 6/3 çerçevesinde işler; amaç tıbbî teşhis, tedavi ve bakım hizmetleri ile koruyucu hekimliğin sunulmasıdır. Hasta kaydı tutmak da mevzuattan doğan bir görevdir. Dayanakları farklı olduğu için bu işlemlerde sizden ayrıca rıza istenmez.</p>
+          <p>Form ise hiçbir yasal yükümlülüğe bağlı olmayan, kullanıp kullanmamanın tümüyle size kaldığı bir iletişim kanalıdır. Formu doldurmadığınız sürece bu yoldan hakkınızda bir kayıt oluşmaz; formun tek dayanağının açık rıza olması bundandır.</p>
         </div>
         <div class="dgm-sira">
-          <a class="dgm dgm--iki" href="${r}yasal/kvkk-aydinlatma-metni/">Aydınlatma metnini okuyun ${ik.ok}</a>
+          <a class="dgm dgm--iki" href="${r}yasal/kvkk-aydinlatma-metni/">KVKK aydınlatma metnine git ${ik.ok}</a>
         </div>
       </div>
 
       <div class="g-bblk" id="rizanin-kapsami">
-        <h2>Rıza tam olarak neyi kapsıyor?</h2>
-        <p class="giris">Kapsamı bilinçli olarak dar tuttuk: aşağıda sayılmayan hiçbir veri form aracılığıyla işlenmez.</p>
+        <h2>Rızanız neleri kapsar?</h2>
+        <p class="giris">Kapsamı bilerek dar tuttuk. Aşağıda sayılmayan hiçbir bilgi formdan alınmaz ve işlenmez.</p>
         <div class="izgara izgara--2">
           <div class="kart kart--duz">
-            <h3>İşlenen veriler</h3>
-            <p>Ad ve soyadınız, telefon numaranız, isteğe bağlı olarak e-posta adresiniz, seçtiğiniz başvuru konusu ve mesaj alanına yazdığınız not. Kötüye kullanımı önlemek için gönderimin tarihi, saati ve gönderildiği IP adresi de talebe eklenir. Formda bunların dışında bir alan yer almaz.</p>
+            <h3>Formdan alınan bilgiler</h3>
+            <p>Ad-soyad, telefon numarası, dilerseniz e-posta adresi, seçtiğiniz konu ve mesaj kutusuna yazdığınız metin. Formun kötüye kullanılmasını önlemek amacıyla gönderimin tarihi, saati ve IP adresi de talebe eklenir. Formda başka bir alan bulunmaz.</p>
           </div>
           <div class="kart kart--duz">
-            <h3>İşleme amacı</h3>
-            <p>Talebinizin okunması, randevu takviminde uygun zamanın belirlenmesi ve size geri dönülmesi. Veriler bu amacın dışında kullanılmaz.</p>
+            <h3>Kullanım amacı</h3>
+            <p>Mesajınızı okumak, randevu takviminde size uyan bir zaman bulmak ve sizinle iletişime geçmek. Bilgiler bunun dışında bir amaçla kullanılmaz.</p>
           </div>
           <div class="kart kart--duz">
-            <h3>Kimler erişebilir</h3>
-            <p>Yalnızca muayenehanenin sahibi ve sorumlu tabibi ${S.hekim.tam} ile randevu düzenini yürüten muayenehane çalışanı. Veriler üçüncü kişilere aktarılmaz, yurt dışına gönderilmez.</p>
+            <h3>Erişim</h3>
+            <p>Bilgileri yalnız muayenehanenin sahibi ve sorumlu tabibi ${S.hekim.tam} ile randevuları düzenleyen muayenehane çalışanı görebilir. Hiçbir üçüncü kişiyle paylaşılmaz, Türkiye dışına çıkarılmaz.</p>
           </div>
           <div class="kart kart--duz">
-            <h3>Saklama süresi</h3>
-            <p>Talebiniz sonuçlandıktan sonra makul bir süre içinde silinir. Talep randevuya dönüşürse gerekli bilgiler hasta kaydına geçer ve o kaydın tabi olduğu saklama kuralına bağlı olur.</p>
+            <h3>Silinme</h3>
+            <p>Talebiniz sonuçlanınca, makul bir süre geçmeden silinir. Talep randevuyla sonuçlanırsa gerekli bilgiler hasta kaydınıza geçer; bundan sonra o kaydın saklama kuralları uygulanır.</p>
           </div>
         </div>
       </div>
 
       <div class="g-bblk" id="kapsamda-olmayanlar">
-        <h2>Bu rızanın kapsamadığı işlemler</h2>
+        <h2>Rızanızın dışında kalan işlemler</h2>
         <div class="yazi">
-          <p>Bu metinle verilen rıza aşağıdakilerin hiçbirini kapsamaz; veriler bu amaçlarla kullanılamaz:</p>
+          <p>Bu sayfadaki rıza, aşağıdaki işlemlerin hiçbirine izin vermez; form bilgileri bu amaçlarla kullanılmaz:</p>
           <ul>
-            <li>Tanıtım, duyuru ya da toplu elektronik ileti gönderimi. Formdan edinilen iletişim bilgileriyle size pazarlama iletisi gönderilmez ve ticari elektronik ileti listesi oluşturulmaz.</li>
-            <li>Verilerin üçüncü bir kişiye, iş ortağına veya tanıtım ajansına aktarılması.</li>
-            <li>Yurt dışına aktarım. Bu rıza, form verilerinin yurt dışındaki bir alıcıya aktarılmasını kapsamaz.</li>
-            <li>Profilleme ve otomatik karar. Mesajınızı bir yazılım değerlendirip hakkınızda sonuç üretmez; her mesaj bir kişi tarafından okunur.</li>
-            <li>Form aracılığıyla sağlık verisi toplanması. Form bu amaçla tasarlanmamıştır.</li>
+            <li>Tanıtım, duyuru veya toplu ileti gönderimi. Formdaki iletişim bilgilerinize pazarlama mesajı yollanmaz, bu bilgilerle ticari elektronik ileti listesi kurulmaz.</li>
+            <li>Bilgilerin başka bir kişiye, iş ortağına ya da reklam ajansına verilmesi.</li>
+            <li>Yurt dışına aktarım. Form bilgilerinin yurt dışındaki herhangi bir alıcıya gönderilmesi bu rızaya dahil değildir.</li>
+            <li>Profilleme ve otomatik karar. Mesajlar bir yazılıma değerlendirtilmez, hakkınızda otomatik sonuç üretilmez; her mesajı bir kişi okur.</li>
+            <li>Formla sağlık verisi toplanması. Form bu iş için tasarlanmadı.</li>
           </ul>
         </div>
         <div class="kutu kutu--uyari">
-          <b>Mesaj alanına sağlık bilginizi yazmayın</b>
-          <p>Şikâyetinizin ayrıntısını, kullandığınız ilaçları, tanılarınızı veya tetkik sonuçlarınızı forma eklemeyin. Bunlar özel nitelikli kişisel veridir ve muayenede, hekimle yüz yüze konuşulmalıdır. Form için uygun gün ve saat tercihiniz gibi kısa bir randevu notu yeterlidir.</p>
+          <b>Mesajınıza sağlık bilgisi eklemeyin</b>
+          <p>Şikâyetinizin ayrıntılarını, ilaçlarınızı, tanılarınızı ya da tetkik sonuçlarınızı formda paylaşmayın. Bunlar özel nitelikli kişisel verilerdir ve muayenede hekimle yüz yüze konuşulur. Forma, randevu için uygun olduğunuz gün ve saat gibi kısa bir not yazmanız yeterlidir.</p>
         </div>
       </div>
 
       <div class="g-bblk" id="riza-zorunlu-mu">
-        <h2>Rıza vermek zorunlu mu?</h2>
+        <h2>Formu kullanmak zorunlu mu?</h2>
         <div class="yazi">
-          <p>Hayır. Açık rıza ancak özgür iradeyle verildiğinde geçerlidir; bir hizmetin ön koşulu hâline getirilen rıza geçerli sayılmaz. Formu doldurmamanız, muayenehaneden hizmet almanızı hiçbir biçimde etkilemez.</p>
-          <p>Formu kullanmak istemezseniz randevu talebinizi doğrudan telefonla iletebilirsiniz. Telefonla yapılan görüşmelerde de yalnızca randevu için gereken en az bilgi kayda alınır.</p>
+          <p>Zorunlu değil. Rızanın hukuken hüküm doğurması için kişinin özgürce karar vermesi gerekir; bir hizmete erişim şartına bağlanan rıza hukuken geçerli kabul edilmez. Formu kullanmamanız, muayenehaneden hizmet almanıza hiçbir şekilde engel olmaz.</p>
+          <p>Randevu için doğrudan telefon edebilirsiniz. Telefonda da randevunun gerektirdiğinden fazla bilgi kaydedilmez.</p>
         </div>
         <ul class="bilgi-liste">
           <li>${ik.tel}<div><b>Telefon</b><a href="tel:${S.iletisim.telHam}">${S.iletisim.tel}</a></div></li>
@@ -104,59 +104,59 @@ module.exports = {
       </div>
 
       <div class="g-bblk" id="rizayi-geri-alma">
-        <h2>Rızanızı nasıl geri alabilirsiniz?</h2>
+        <h2>Rızanızı geri çekmek istediğinizde</h2>
         <div class="yazi">
-          <p>Verdiğiniz rızayı dilediğiniz zaman ve herhangi bir gerekçe göstermeden geri alabilirsiniz. Talebinizi <a href="mailto:${S.iletisim.editor}">${S.iletisim.editor}</a> adresine gönderebilir ya da muayenehaneye yazılı olarak ulaştırabilirsiniz.</p>
+          <p>Rızanızı istediğiniz an ve gerekçe belirtmeden geri çekebilirsiniz. Bunun için <a href="mailto:${S.iletisim.editor}">${S.iletisim.editor}</a> adresine yazmanız ya da muayenehaneye yazılı bir talep ulaştırmanız yeterlidir.</p>
         </div>
         <ol class="adimlar">
           <li>
-            <h4>Talebinizi gönderin</h4>
-            <p>“Açık rızamı geri alıyorum” ifadesini ve formu doldururken kullandığınız ad ile iletişim bilgisini yazmanız, kaydın bulunması için yeterlidir.</p>
+            <h4>Talebinizi iletin</h4>
+            <p>“Form için verdiğim rızayı geri çekiyorum” cümlesiyle birlikte formda kullandığınız adı ve iletişim bilgisini yazmanız, kaydınızı bulmamız için yeterlidir.</p>
           </li>
           <li>
-            <h4>Kayıt bulunur ve silinir</h4>
-            <p>Talebiniz ulaştığında forma bağlı kayıt beklemeksizin silinir; yedeklerde bir kopyası varsa oradan da çıkarılır.</p>
+            <h4>Kaydınız silinir</h4>
+            <p>Talep elimize ulaştığı anda formdan gelen kayıt bekletilmeden silinir; yedeklerde kopyası bulunuyorsa o da kaldırılır.</p>
           </li>
           <li>
-            <h4>Yazılı olarak bilgilendirilirsiniz</h4>
-            <p>İşlemin tamamlandığı, mevzuattaki otuz günlük süre aşılmadan size bildirilir.</p>
+            <h4>Size yazılı dönüş yapılır</h4>
+            <p>Silme işleminin tamamlandığı, mevzuattaki otuz günlük süre içinde size bildirilir.</p>
           </li>
         </ol>
         <div class="yazi">
-          <p>Rızanın geri alınması ileriye dönük sonuç doğurur: geri alma anına kadar hukuka uygun biçimde yapılmış işlemleri geçersiz kılmaz, yalnızca o andan sonraki işlemeyi sona erdirir.</p>
-          <p>Şu noktanın altını çizmek gerekir: muayene olduysanız, rızanızı geri almanız oluşan tıbbi kayıtların silinmesini sağlamaz. Bu kayıtların dayanağı açık rıza değil, sağlık mevzuatındaki saklama yükümlülüğüdür ve mevzuattaki süre dolmadan silinemezler. Geri alma yalnızca iletişim formundan kaynaklanan kaydı kapsar.</p>
+          <p>Geri çekme yalnızca ileriye dönük etki doğurur. Rızanızı geri çektiğiniz tarihe kadar hukuka uygun olarak yapılmış işlemler geçerliliğini korur; o tarihten sonra ise form bilgileriniz artık işlenmez.</p>
+          <p>Bir noktayı özellikle belirtelim: muayene olduysanız, rızanızı geri çekmeniz bu muayeneye ait tıbbi kayıtları sildirmez. Bu kayıtların dayanağı sağlık mevzuatındaki saklama yükümlülüğüdür, açık rıza değildir; mevzuattaki süre dolmadan silinemezler. Geri çekme, yalnız iletişim formundan doğan kaydı etkiler.</p>
         </div>
       </div>
 
       <div class="g-bblk" id="ilgili-basliklar">
-        <h2>Bunları da okuyabilirsiniz</h2>
+        <h2>Diğer yasal metinler</h2>
         <div class="izgara izgara--2">
           <a class="kart" href="${r}yasal/kvkk-aydinlatma-metni/">
             <h3>KVKK aydınlatma metni</h3>
-            <p>Veri sorumlusu, işlenen veri türleri, hukuki sebepler, saklama süreleri ve haklarınız.</p>
+            <p>Verilerinizden kimin sorumlu olduğu, hangi bilgilerin hangi dayanakla tutulduğu, ne zaman silindiği ve size tanınan haklar.</p>
             <span class="kart__ok">Oku ${ik.ok}</span>
           </a>
           <a class="kart" href="${r}yasal/cerez-politikasi/">
             <h3>Çerez politikası</h3>
-            <p>Sitenin çerez ve izleme yazılımı kullanmama nedeni; harita ve WhatsApp bağlantısı.</p>
+            <p>Neden çerez ve izleme yazılımı kullanmadığımız; harita ile WhatsApp bağlantısı.</p>
             <span class="kart__ok">Oku ${ik.ok}</span>
           </a>
           <a class="kart" href="${r}yasal/kullanim-kosullari/">
             <h3>Kullanım koşulları</h3>
-            <p>İçeriğin bilgilendirme amacı ve hekim–hasta ilişkisinin ne zaman başladığı.</p>
+            <p>Sitedeki bilgilerin amacı ve hekim–hasta ilişkisinin hangi noktada kurulduğu.</p>
             <span class="kart__ok">Oku ${ik.ok}</span>
           </a>
           <a class="kart" href="${r}hazirlik-listesi/">
             <h3>Hazırlık listesi</h3>
-            <p>Randevudan önce hazırlanmanıza yardımcı olan ve yalnızca cihazınızda çalışan liste.</p>
+            <p>Randevuya hazırlanmanızı kolaylaştıran, yalnız kendi cihazınızda çalışan kontrol listesi.</p>
             <span class="kart__ok">Aç ${ik.ok}</span>
           </a>
         </div>
       </div>
 
       <div class="g-bblk">
-        <h2>Randevu için</h2>
-        <p class="giris">Formu kullanmak istemezseniz telefonla ya da WhatsApp üzerinden ulaşabilirsiniz; bütün talepler aynı randevu takvimine işlenir.</p>
+        <h2>Randevu almak isterseniz</h2>
+        <p class="giris">Form yerine telefonu ya da WhatsApp’ı da kullanabilirsiniz; hangi yoldan gelirse gelsin bütün talepler aynı randevu takvimine kaydedilir.</p>
         <div class="dgm-sira">
           <a class="dgm dgm--bir" href="${r}iletisim/">İletişim</a>
         </div>

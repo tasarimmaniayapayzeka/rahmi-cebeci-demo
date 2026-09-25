@@ -13,7 +13,7 @@ module.exports = {
   <div class="sar">
     <div>
       <nav class="kirinti" aria-label="Konum" style="position:relative;font-size:.76rem;color:var(--sessiz);display:flex;gap:7px;margin-bottom:18px"><a href="${r}" style="color:var(--sessiz);text-decoration:none">Ana sayfa</a> › <a href="${r}bolgeler/" style="color:var(--sessiz);text-decoration:none">Bölgeler</a> › <span>Çene ve Jawline</span></nav>
-      <p class="g-etiket">Bölgeler · Çene ve çene hattı</p>
+      <p class="g-etiket">Bölge rehberi · Çene ve çene hattı</p>
       <h1>Silik bir çene hattının <span class="g-isik">tek bir nedeni</span> yoktur.</h1>
       <p class="g-hero__alt">Kulak önünden çene ucuna uzanan hattın ne kadar keskin göründüğü; alt çene kemiğinin şekline, çene altında biriken yağa, derinin toparlanma gücüne ve çiğneme kasının kalınlığına bağlıdır. Her birinin yanıtı ayrı olduğu için önce hangisinin öne çıktığını anlamamız gerekir. Bu bölgede yüzünüze yandan bakmak, karşıdan bakmak kadar bilgi verir.</p>
       <div class="g-hero__cta">
@@ -25,7 +25,7 @@ module.exports = {
     <div class="g-tarama" data-gr>
       <img src="${r}varliklar/gorsel/bolge-cene-ve-jawline.webp" width="1400" height="788" alt="Çene hattı belirgin bir kadının yandan yakın plan görünümü" loading="eager">
       <div class="g-isin"></div>
-      <span class="g-ainot">Görsel yapay zekâ ile üretilmiştir</span>
+      <span class="g-ainot">Temsilî görsel · yapay zekâ ile üretildi</span>
       <div class="g-hud"><b>Alt yüzün kenarı</b><div class="g-cizgi"></div><span>Kulak önünden çene ucuna uzanan bu hatta günlük dilde “jawline” da deniyor.</span></div>
     </div>
   </div>
@@ -84,7 +84,7 @@ module.exports = {
       <div class="g-atlas" data-gr>
         <div class="g-atlas-kap">
           <img src="${r}varliklar/gorsel/yuz-3d-b.webp" width="900" height="1200" alt="Çene hattını yandan gösteren, sağa dönük üç boyutlu yüz profili" loading="lazy">
-          <span class="g-ainot">Görsel yapay zekâ ile üretilmiştir</span>
+          <span class="g-ainot">Temsilî görsel · yapay zekâ ile üretildi</span>
           <div class="g-rozetk" data-grozet><b>Çene altı</b><span>Buradaki dolgunluğu yapanın yağ, gevşek deri ya da kas olduğu birkaç basit muayene hareketiyle anlaşılır.</span></div>
         </div>
       </div>
@@ -106,7 +106,7 @@ module.exports = {
         <div class="g-katblok" data-gkat="profil" data-gr>
           <span class="g-kno">03 · PROFİL</span>
           <h3>Karar yandan verilir</h3>
-          <p>Bu bölgedeki yakınmaların büyük bir kısmı yandan bakınca anlaşılır. Çene ucunun ne kadar önde olduğu, çene altı ile boyun arasındaki açı ve alt dudakla çene ucunun birbirine göre yeri ancak profilden değerlendirilebilir.</p>
+          <p>Bu bölgedeki yakınmaların büyük bir kısmı yandan bakınca anlaşılır. Çene ucunun öne ne kadar çıktığı, boyunla çene altının yaptığı açı, alt dudağın çene ucuna göre konumu; bunların üçü de ancak profilden okunabilir.</p>
 <p>Geride kalan bir çene ucu burnu olduğundan iri, boynu da olduğundan kısa gösterebilir; bu durumda çene altına değil, çene ucunun desteğine bakmak gerekir. Muayenede başınızın duruşunu sabitler, yüzünüze hem sessizken hem konuşurken bakar ve sağ–sol farklarını not ederiz.</p>
           <div class="g-haplar"><a href="${r}uygulamalar/dolgu-uygulamalari/">Dolgu uygulamaları</a><a href="${r}bolgeler/yuz/">Yüz bölgesi planlaması</a></div>
         </div>
@@ -129,7 +129,7 @@ module.exports = {
     </div>
     <div class="g-matris">
       <div class="g-mtab" data-gr>
-        <div class="g-mbas"><span>Uygulama</span><span>Hedef</span><span>İyileşme</span><span></span></div>
+        <div class="g-mbas"><span>Yöntem</span><span>Amaç</span><span>Toparlanma</span><span></span></div>
         <a class="g-msatir" data-akt href="${r}uygulamalar/dolgu-uygulamalari/" data-gg="${r}varliklar/gorsel/uyg-dolgu-uygulamalari.webp" data-gb="Dolgu uygulamaları" data-ga="Kemik desteği zayıfsa çene ucuna ve çene hattı boyunca düşünülür; burada şeklini koruyabilen, daha yoğun kıvamlı ürünler seçilir."><h4>Dolgu uygulamaları</h4><span class="g-hucre"><i class="g-kcip g-kcip--1">Kemik desteği</i></span><span class="g-hucre">Şişlik inince</span><span class="g-git">→</span></a>
         <a class="g-msatir" href="${r}uygulamalar/botulinum-toksin/" data-gg="${r}varliklar/gorsel/uyg-botulinum-toksin.webp" data-gb="Botulinum toksin" data-ga="Kalınlaşmış çiğneme kasında gündeme gelir; incelme yavaş olur ve çoğunlukla birkaç hafta içinde fark edilir."><h4>Botulinum toksin</h4><span class="g-hucre"><i class="g-kcip g-kcip--1">Kas kalınlığı</i></span><span class="g-hucre">Muayenede belirlenir</span><span class="g-git">→</span></a>
         <a class="g-msatir" href="${r}uygulamalar/bolgesel-lipoliz/" data-gg="${r}varliklar/gorsel/uyg-bolgesel-lipoliz.webp" data-gb="Bölgesel lipoliz" data-ga="Çene altındaki yerel yağ birikimi ön plandaysa düşünülebilir; kilo vermeye yönelik bir yöntem değildir."><h4>Bölgesel lipoliz</h4><span class="g-hucre"><i class="g-kcip g-kcip--2">Yerel yağ</i></span><span class="g-hucre">Muayenede belirlenir</span><span class="g-git">→</span></a>
@@ -158,8 +158,8 @@ module.exports = {
         <ul>
           <li>Gebelik ya da emzirme</li>
           <li>İşlem alanında etkin enfeksiyon ya da iltihaplı sivilce</li>
-          <li>Kullanılacak ürüne karşı bilinen aşırı duyarlılık</li>
-          <li>Belirgin deri fazlalığı nedeniyle cerrahi değerlendirme gerektiren tablolar</li>
+          <li>Kullanılacak içeriğe karşı daha önce görülmüş aşırı duyarlılık tepkisi</li>
+          <li>Deri fazlası belirgin olduğu için cerrahi görüş gerektiren tablolar</li>
           <li>Çene altındaki şişliğin tükürük bezi ya da lenf bezi kaynaklı olduğu durumlar</li>
           <li>Miyastenia gravis, Lambert–Eaton sendromu gibi sinir ile kas arasındaki iletimi bozan hastalıklar — kası gevşeten uygulamalar bu durumlarda yapılmaz</li>
         </ul>
@@ -191,7 +191,7 @@ module.exports = {
     </div>
     <div class="kutu kutu--acil" data-gr style="margin-top:22px">
       <b>Beklemeden başvurmanız gereken bulgular</b>
-      <p>İşlemden sonra giderek artan şiddetli ağrı, deride beyazlaşma ya da morumsu ağ görünümü, hızla kabaran şişlik, ateş, yutkunurken zorlanma ya da nefes darlığı olursa bekletmeden bizi <a href="tel:${S.iletisim.telHam}">${S.iletisim.tel}</a> numarasından arayın. Telefonla ulaşamazsanız <b>112</b>’yi arayın ya da size en yakın acil servise gidin.</p>
+      <p>İşlemden sonra giderek artan şiddetli ağrı, deride beyazlaşma ya da morumsu ağ görünümü, hızla kabaran şişlik, ateş, yutkunurken zorlanma ya da nefes darlığı olursa bekletmeden bizi <a href="tel:${S.iletisim.telHam}">${S.iletisim.tel}</a> numarasından arayın. Telefonla ulaşamazsanız <b>112</b> Acil Çağrı Merkezi’ni arayın ya da en yakın hastanenin acil birimine başvurun.</p>
     </div>
   </div>
 </section>
@@ -219,12 +219,12 @@ module.exports = {
 <!-- ═════════ KAPANIŞ ═════════ -->
 <section class="g-son">
   <div class="sar">
-    <p class="g-etiket g-etiket--orta">Sonraki adım</p>
+    <p class="g-etiket g-etiket--orta">Bir adım ötesi</p>
     <h2>Çene hattınıza yandan da birlikte bakalım</h2>
     <p class="g-sonalt">${S.iletisim.adres}, ${S.iletisim.ilce} — muayenede kemik yapısını, çene altını, derinin gerginliğini ve çiğneme kasını ayrı ayrı inceliyor; planı ancak en belirgin etkeni bulduktan sonra yazıyoruz.</p>
     <div class="g-sonbtn">
       <a class="dgm dgm--bir" href="${r}iletisim/">Randevu talebi oluşturun</a>
-      <a class="dgm dgm--iki" href="${r}hazirlik-listesi/arac/">Hazırlık listesini doldurun</a>
+      <a class="dgm dgm--iki" href="${r}hazirlik-listesi/arac/">Muayeneye hazırlanın</a>
     </div>
   </div>
 </section>

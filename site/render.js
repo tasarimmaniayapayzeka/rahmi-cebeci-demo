@@ -186,12 +186,12 @@ function alt(sayfa) {
 /* ---------- sayfa künyesi ---------- */
 function kunye() {
   return `<div class="kunye">
-  <p>Bu içerik <b>${S.hekim.tam}</b> (${S.hekim.dallar}) tarafından hazırlanmış ve tıbbi doğruluk yönünden denetlenmiştir.</p>
+  <p>Metni hazırlayan ve tıbbi açıdan gözden geçiren: <b>${S.hekim.tam}</b> (${S.hekim.dallar}).</p>
   <div class="kunye__tarih">
     <span>Son güncelleme: <b>${S.guncelleme}</b></span>
     <span>Editör: ${S.iletisim.editor}</span>
   </div>
-  <p>Bu sayfadaki bilgiler genel bilgilendirme amaçlıdır; tanı veya tedavi önerisi niteliği taşımaz ve hekim muayenesinin yerine geçmez. Sonuçlar kişiden kişiye değişiklik gösterebilir.</p>
+  <p>Buradaki anlatım herkese yöneliktir; size özel bir teşhis ya da tedavi planı sunmaz, muayenenin yerini tutmaz. Her uygulamanın etkisi kişiye göre farklı olur.</p>
 </div>`;
 }
 

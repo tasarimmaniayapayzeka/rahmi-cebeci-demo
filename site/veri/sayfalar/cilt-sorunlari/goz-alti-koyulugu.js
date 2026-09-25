@@ -12,8 +12,8 @@ module.exports = {
 <section class="g-hero">
   <div class="sar">
     <div>
-      <nav class="kirinti" aria-label="Konum" style="position:relative;font-size:.76rem;color:var(--sessiz);display:flex;gap:7px;margin-bottom:18px"><a href="${r}" style="color:var(--sessiz);text-decoration:none">Ana sayfa</a> › <a href="${r}cilt-sorunlari/" style="color:var(--sessiz);text-decoration:none">Cilt sorunları</a> › <span>Göz altı koyuluğu</span></nav>
-      <p class="g-etiket">Cilt sorunları · Göz altı</p>
+      <nav class="kirinti" aria-label="Konum" style="position:relative;font-size:.76rem;color:var(--sessiz);display:flex;gap:7px;margin-bottom:18px"><a href="${r}" style="color:var(--sessiz);text-decoration:none">Ana sayfa</a> › <a href="${r}cilt-sorunlari/" style="color:var(--sessiz);text-decoration:none">Sorunlar</a> › <span>Göz altı koyuluğu</span></nav>
+      <p class="g-etiket">Şikâyet rehberi · Göz altı</p>
       <h1>Göz altındaki koyuluğun <span class="g-isik">birden çok kaynağı</span> olabilir</h1>
       <p class="g-hero__alt">Koyu görünüm beş ayrı kaynaktan gelebilir: deride artan pigment, ince deriden seçilen damarlar, zamanla incelen deri, gözyaşı oluğunda azalan hacim ve biriken sıvı. Çoğu kişide bunlardan birkaçı bir aradadır. Öne çıkan kaynak bulunmadan seçilen bir yöntemden beklenen sonuç alınamayabilir.</p>
       <div class="g-hero__cta">
@@ -25,7 +25,7 @@ module.exports = {
     <div class="g-tarama" data-gr>
       <img src="${r}varliklar/gorsel/sorun-goz-alti-koyulugu.webp" width="1400" height="788" alt="Doğal ışıkta göz çevresi ve göz altı bölgesinin yakın plan görünümü" loading="eager">
       <div class="g-isin"></div>
-      <span class="g-ainot">Görsel yapay zekâ ile üretilmiştir</span>
+      <span class="g-ainot">Temsilî görsel · yapay zekâ ile üretildi</span>
     </div>
   </div>
 </section>
@@ -85,7 +85,7 @@ module.exports = {
     </div>
     <div class="g-matris">
       <div class="g-mtab" data-gr>
-        <div class="g-mbas"><span>Uygulama</span><span>Hedef</span><span>İyileşme</span><span></span></div>
+        <div class="g-mbas"><span>Yöntem</span><span>Amaç</span><span>Toparlanma</span><span></span></div>
         <a class="g-msatir" data-akt href="${r}uygulamalar/dolgu-uygulamalari/#goz-alti" data-gg="${r}varliklar/gorsel/uyg-dolgu-uygulamalari.webp" data-gb="Göz altı dolgusu" data-ga="Yalnız gözyaşı oluğundaki hacim kaybının öne çıktığı durumlarda konuşulur; bölgenin ince yapısı özenli planlama gerektirir."><h4>Göz altı dolgusu</h4><span class="g-hucre"><i class="g-kcip g-kcip--1">HACİM</i></span><span class="g-hucre">Muayenede belirlenir</span><span class="g-git">→</span></a>
         <a class="g-msatir" href="${r}uygulamalar/somon-dna-polinukleotid/" data-gg="${r}varliklar/gorsel/uyg-somon-dna-polinukleotid.webp" data-gb="Somon DNA ve polinükleotid" data-ga="İncelmiş ve saydamlaşmış göz altı derisinde doku niteliğini aşamalı olarak desteklemeyi amaçlar."><h4>Somon DNA ve polinükleotid</h4><span class="g-hucre"><i class="g-kcip g-kcip--3">İNCELİK</i></span><span class="g-hucre">Muayenede belirlenir</span><span class="g-git">→</span></a>
         <a class="g-msatir" href="${r}uygulamalar/mezoterapi/" data-gg="${r}varliklar/gorsel/uyg-mezoterapi.webp" data-gb="Mezoterapi" data-ga="Pigment bileşeninde, göz çevresine uygun içerik ve derinlikte, uygun bulunan kişilerde değerlendirilir."><h4>Mezoterapi</h4><span class="g-hucre"><i class="g-kcip g-kcip--2">PİGMENT</i></span><span class="g-hucre">Muayenede belirlenir</span><span class="g-git">→</span></a>
@@ -98,7 +98,7 @@ module.exports = {
 
 <!-- ═════════ SORU TERMİNALİ ═════════ -->
 <section class="bolum bolum--buz2"><div class="sar">
-  <div class="bolum-bas" data-gr><p class="g-etiket">Sorgulayın</p><h2>Sorunuzu seçin, cevap ekrana düşsün</h2></div>
+  <div class="bolum-bas" data-gr><p class="g-etiket">Sık gelen sorular</p><h2>Merak ettiğiniz soruya dokunun, yanıtı burada açılsın</h2></div>
   <div class="g-sorgu" data-gr>
     <div class="g-sorgu-bas"><i></i><i></i><i></i><span>${S.marka.toLocaleLowerCase('tr-TR')} · göz altı · soru-cevap</span></div>
     <div class="g-sorgu-ic">
@@ -110,7 +110,7 @@ module.exports = {
         <button class="g-ssoru" data-gs="4"><i>›</i>Tek bir işlemle bütün koyuluk düzelir mi?</button>
         <button class="g-ssoru" data-gs="5"><i>›</i>Ücret bilgisi neden sitede yok?</button>
       </div>
-      <div class="g-scevap" data-gcevap aria-live="polite"><span class="g-yazan">Hekim onaylı yanıt</span><b></b><p></p><a class="dgm dgm--altin" href="${r}iletisim/" style="margin-top:8px">Muayenede konuşalım</a></div>
+      <div class="g-scevap" data-gcevap aria-live="polite"><span class="g-yazan">Hekimin yanıtı</span><b></b><p></p><a class="dgm dgm--altin" href="${r}iletisim/" style="margin-top:8px">Ayrıntısı muayenede</a></div>
     </div>
   </div>
 </div></section>
@@ -119,12 +119,12 @@ module.exports = {
 <!-- ═════════ KAPANIŞ ═════════ -->
 <section class="g-son">
   <div class="sar">
-    <p class="g-etiket g-etiket--orta">Sonraki adım</p>
+    <p class="g-etiket g-etiket--orta">Bir adım ötesi</p>
     <h2>Göz altınızdaki koyuluğun kaynağını birlikte bulalım</h2>
     <p class="g-sonalt">Muayenede beş olası kaynak tek tek gözden geçirilir; hangisinden başlanacağı size özel olarak planlanır.</p>
     <div class="g-sonbtn">
       <a class="dgm dgm--bir" href="${r}iletisim/">Randevu talebi oluşturun</a>
-      <a class="dgm dgm--iki" href="${r}hazirlik-listesi/arac/">Hazırlık listesini doldurun</a>
+      <a class="dgm dgm--iki" href="${r}hazirlik-listesi/arac/">Muayeneye hazırlanın</a>
     </div>
   </div>
 </section>

@@ -13,14 +13,14 @@ module.exports = {
   <div class="sar">
     <div>
       <nav class="kirinti" aria-label="Konum" style="position:relative;font-size:.76rem;color:var(--sessiz);display:flex;gap:7px;margin-bottom:18px"><a href="${r}" style="color:var(--sessiz);text-decoration:none">Ana sayfa</a> › <span>Mevzuat</span></nav>
-      <p class="g-etiket">Mevzuat · Yayın sınırları</p>
+      <p class="g-etiket">Mevzuat · İçerik sınırları</p>
       <h1>Uyduğumuz <span class="g-isik">mevzuat</span></h1>
       <p class="g-hero__alt">Sitedeki her sayfa, Türkiye’de sağlık hizmeti sunanların tanıtım ve bilgilendirme faaliyetlerine getirilen kurallar gözetilerek yazıldı. Bu sayfada hangi düzenlemeleri esas aldığımızı ve bunun içeriğe nasıl yansıdığını anlatıyoruz. Sitede bulamadığınız bazı bilgiler bir unutkanlık değil, bu kuralların sonucudur.</p>
     </div>
     <div class="g-tarama" data-gr>
       <img src="${r}varliklar/gorsel/ic3d-gece-doku.webp" width="1400" height="788" alt="Koyu tonlarda, yakından görülen cilt dokusu" loading="eager">
       <div class="g-isin"></div>
-      <span class="g-ainot">Görsel yapay zekâ ile üretilmiştir</span>
+      <span class="g-ainot">Temsilî görsel · yapay zekâ ile üretildi</span>
     </div>
   </div>
 </section>
@@ -36,27 +36,27 @@ module.exports = {
     <div class="izgara izgara--2">
       <div class="kart">
         <span class="kart__ikon">${ik.kalkan}</span>
-        <span class="rozet">Resmî Gazete 12.11.2025 · 33075</span>
+        <span class="rozet">12.11.2025 tarihli, 33075 sayılı RG</span>
         <h3 style="margin-top:8px">Sağlık Hizmetlerinde Tanıtım ve Bilgilendirme Faaliyetleri Hakkında Yönetmelik</h3>
-        <p>Sağlık kuruluşlarının ve sağlık meslek mensuplarının internet siteleri başta olmak üzere bütün mecralardaki tanıtım ve bilgilendirme içeriklerine sınır çizen ana düzenlemedir. Önceki tanıtım yönetmeliğinin yerini almıştır. Bu sitedeki ifade tercihlerinin çoğu doğrudan bu metne dayanır.</p>
+        <p>Temel düzenleme budur: sağlık kuruluşları ile sağlık meslek mensupları, internet sitesi dâhil hangi mecrada olursa olsun, tanıtım ve bilgilendirme içeriklerini bu yönetmeliğin sınırları içinde hazırlar. Önceki tanıtım yönetmeliğinin yerini almıştır. Bu sitedeki ifade tercihlerinin çoğu doğrudan bu metne dayanır.</p>
       </div>
       <div class="kart">
         <span class="kart__ikon">${ik.liste}</span>
-        <span class="rozet">Resmî Gazete 19.04.2025 · 32875</span>
+        <span class="rozet">19.04.2025 tarihli, 32875 sayılı RG</span>
         <h3 style="margin-top:8px">Ayakta Teşhis ve Tedavi Yapılan Özel Sağlık Kuruluşları Hakkında Yönetmelik</h3>
-        <p>Muayenehaneler dâhil, ayakta hizmet veren özel sağlık kuruluşlarının nasıl açılacağını, nasıl işleyeceğini, hangi fiziki ve personel koşullarını taşıyacağını ve hangi işlemleri yapabileceğini belirler. Muayenehanede yapılan uygulamaların sınırı bu çerçevenin içinde kalır.</p>
+        <p>Ayakta hizmet veren özel sağlık kuruluşlarının (muayenehaneler de bunlara dâhildir) nasıl açılacağını, nasıl işleyeceğini, hangi fiziki ve personel koşullarını taşıyacağını ve hangi işlemleri yapabileceğini belirler. Muayenehanede yapılan uygulamaların sınırı bu çerçevenin içinde kalır.</p>
       </div>
       <div class="kart">
         <span class="kart__ikon">${ik.mercek}</span>
-        <span class="rozet">Değişiklik · Resmî Gazete 01.07.2026 · 33297</span>
+        <span class="rozet">Son değişiklik: 01.07.2026 tarihli, 33297 sayılı RG</span>
         <h3 style="margin-top:8px">Ticari Reklam ve Haksız Ticari Uygulamalar Yönetmeliği</h3>
-        <p>Reklam içeriklerinin doğru, dürüst ve yanıltıcı olmayan biçimde hazırlanmasını şart koşar. Sağlıkla ilgili metinler, Bakanlık düzenlemelerinin yanında tüketiciyi koruyan bu kurallara da tabidir. Gizli reklam, abartılı vaat ve kanıtlanamayan üstünlük iddiası bu yönetmelik kapsamında ele alınır.</p>
+        <p>Tüketiciye yönelik her reklamın doğru, dürüst ve yanıltmayan bir dille hazırlanmasını zorunlu tutar. Sağlıkla ilgili metinler, Bakanlık düzenlemelerinin yanında tüketiciyi koruyan bu kurallara da tabidir. Gizli reklam, abartılı vaat ve kanıtlanamayan üstünlük iddiası bu yönetmelik kapsamında ele alınır.</p>
       </div>
       <div class="kart">
         <span class="kart__ikon">${ik.kalkan}</span>
-        <span class="rozet">Resmî Gazete 07.04.2016 · 29677 · 6698 sayılı Kanun</span>
+        <span class="rozet">6698 sayılı Kanun · 07.04.2016 tarihli, 29677 sayılı RG</span>
         <h3 style="margin-top:8px">Kişisel Verilerin Korunması Kanunu</h3>
-        <p>Kişisel verilerin hangi koşullarda işlenebileceğini düzenler. Sağlık bilgisi özel nitelikli veri sayılır ve daha sıkı korunur. İletişim formunun yalnız gerekli en az bilgiyi istemesi, şikâyet ayrıntısı sormaması bu kanunun sonucudur.</p>
+        <p>Bir bilginin hangi şartlarla işlenebileceğinin çerçevesini çizer. Sağlık bilgisi özel nitelikli veri sayılır ve daha sıkı korunur. İletişim formunun yalnız gerekli en az bilgiyi istemesi, şikâyet ayrıntısı sormaması bu kanunun sonucudur.</p>
       </div>
     </div>
   </div>
@@ -93,10 +93,10 @@ module.exports = {
       <p>Başka bir siteye verilen bağlantı, içeriğinden sorumlu olmadığımız bir sayfayı öneriyormuşuz izlenimi yaratabilir. Bu nedenle bilgilendirme sayfalarında dış bağlantı yer almaz. Site dışına açılan adresler yalnızca bize ulaşmanızı kolaylaştıran kanallardır: WhatsApp hattı ve haritadaki yol tarifi gibi. Kaynaklarla ilgili sorularınızı muayenede sorabilirsiniz.</p>
 
       <h3>Sayfaların sonundaki hekim adı ve tarih ne işe yarar?</h3>
-      <p>Tıbbi bilgi içeren her sayfanın sonunda içeriği hazırlayan hekimin adı ve uzmanlığı, son güncelleme tarihi ve site editörüne ulaşabileceğiniz adres bulunur. Bu sayede bir metnin güncel olup olmadığını ve hangi hekimin sorumluluğunda hazırlandığını kendiniz kontrol edebilirsiniz. Sayfanın alt kısmında muayenehaneye ait künye bilgileri de yer alır.</p>
+      <p>Tıbbi bilgi içeren her sayfanın sonunda içeriği hazırlayan hekimin adı ve uzmanlığı, metnin en son gözden geçirildiği tarih ve editöre yazabileceğiniz e-posta adresi bulunur. Bu sayede bir metnin güncel olup olmadığını ve hangi hekimin sorumluluğunda hazırlandığını kendiniz kontrol edebilirsiniz. Sayfanın alt kısmında muayenehaneye ait künye bilgileri de yer alır.</p>
 
       <h3>Denetim iki ayrı kurumda yapılabilir</h3>
-      <p>Sağlıkla ilgili tanıtım içerikleri bir yandan Sağlık Bakanlığı ve il sağlık müdürlüklerinin, öte yandan Reklam Kurulu’nun incelemesine konu olabilir. Aynı metin iki farklı çerçeveden ayrı ayrı değerlendirilebilir. Sitedeki içerik bu nedenle tek bir düzenlemeye göre değil, yukarıdaki başlıkların tümü birlikte gözetilerek yazılmıştır.</p>
+      <p>Sağlıkla ilgili tanıtım içerikleri bir yandan il sağlık müdürlükleri ile Sağlık Bakanlığının, öte yandan Reklam Kurulu’nun incelemesine konu olabilir. Aynı metin iki farklı çerçeveden ayrı ayrı değerlendirilebilir. Sitedeki içerik bu nedenle tek bir düzenlemeye göre değil, yukarıdaki başlıkların tümü birlikte gözetilerek yazılmıştır.</p>
     </div>
 
     <div class="kutu kutu--bilgi" style="margin-top:28px">
@@ -132,11 +132,11 @@ module.exports = {
       <a class="kart" href="${r}yaklasimimiz/neden-bazi-islemleri-yapmiyoruz/">
         <h3>Neden bazı işlemleri yapmıyoruz</h3>
         <p>Muayenehanenin kapsamının nerede bittiği ve başka bir dala başvurmanızın önerildiği durumlar.</p>
-        <span class="kart__ok">Oku ${ik.ok}</span>
+        <span class="kart__ok">Sayfaya git ${ik.ok}</span>
       </a>
       <a class="kart" href="${r}sikca-sorulan-sorular/">
         <h3>Sıkça sorulan sorular</h3>
-        <p>Randevu, kapsam ve uygulama süreciyle ilgili sık gelen soruların kısa yanıtları.</p>
+        <p>Kapsam, uygulama süreci ve randevuyla ilgili en çok sorulanlara kısa yanıtlar.</p>
         <span class="kart__ok">Sorulara git ${ik.ok}</span>
       </a>
     </div>
@@ -146,12 +146,12 @@ module.exports = {
 <!-- ═════════ KAPANIŞ ═════════ -->
 <section class="g-son">
   <div class="sar">
-    <p class="g-etiket g-etiket--orta">Sonraki adım</p>
+    <p class="g-etiket g-etiket--orta">Bir adım ötesi</p>
     <h2>Aklınızda bir soru kaldıysa</h2>
-    <p class="g-sonalt">Sitede yanıtını bulamadığınız konuları muayenede sorabilirsiniz. Randevu talebinizi iletişim sayfasından iletebilirsiniz.</p>
+    <p class="g-sonalt">Sitede yanıtı olmayan konuları muayene sırasında hekime danışabilirsiniz. Randevu için iletişim sayfasındaki kanalları kullanabilirsiniz.</p>
     <div class="g-sonbtn">
-      <a class="dgm dgm--bir" href="${r}iletisim/">İletişim sayfasına gidin</a>
-      <a class="dgm dgm--iki" href="${r}sikca-sorulan-sorular/">Sık sorulanlara göz atın</a>
+      <a class="dgm dgm--bir" href="${r}iletisim/">İletişim bilgileri</a>
+      <a class="dgm dgm--iki" href="${r}sikca-sorulan-sorular/">Sorulara göz atın</a>
     </div>
   </div>
 </section>

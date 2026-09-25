@@ -120,7 +120,7 @@ Kaynak sayfadaki `varliklar/gorsel/…webp` yolu **aynı desenle** yeni slug'a �
 - Uygulama: `uyg-<yeni-slug>.webp` (+ ikinci görsel `uyg-<yeni-slug>-2.webp`)
 - Bölge: `bolge-<slug>.webp` · Sorun: `sorun-<slug>.webp` · grup/ic3d/yuz-3d görselleri aynen kalır.
 - Görsel dosyalarını SEN üretmezsin; yol ve alt metni yazarsın (alt metin yeni içeriğe göre yeniden yazılır).
-- Yapay zekâ rozeti (`<span class="g-ainot">Görsel yapay zekâ ile üretilmiştir</span>`) kaynakta
+- Yapay zekâ rozeti (`<span class="g-ainot">Temsilî görsel · yapay zekâ ile üretildi</span>`) kaynakta
   olduğu yerde KALIR; yalnız aşağıdaki GERÇEK fotoğraflarda kaldırılır.
 
 GERÇEK fotoğraflar (`varliklar/foto/…`, 1400×788 kırpılmış):

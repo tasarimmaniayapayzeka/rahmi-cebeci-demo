@@ -219,7 +219,7 @@ module.exports = {
   <div class="sar sar--dar">
     <div class="kutu kutu--acil" data-gr>
       <b>Randevu beklemeyin</b>
-      <p>Uygulamadan sonra nefes almakta zorlanırsanız, yüzünüzde ya da dilinizde hızla artan bir şişlik olursa, işlem bölgesinde giderek yayılan solukluk veya morumsu, ağ görünümlü bir renk değişikliği, dayanılmaz ağrı ya da görme bozukluğu fark ederseniz vakit kaybetmeden <b>112</b>’yi arayın veya en yakın acil servise gidin.</p>
+      <p>Uygulamadan sonra nefes almakta zorlanırsanız, yüzünüzde ya da dilinizde hızla artan bir şişlik olursa, işlem bölgesinde giderek yayılan solukluk veya morumsu, ağ görünümlü bir renk değişikliği, dayanılmaz ağrı ya da görme bozukluğu fark ederseniz vakit kaybetmeden <b>112</b> Acil Çağrı Merkezi’ni arayın ya da en yakın hastanenin acil birimine başvurun.</p>
     </div>
   </div>
 </section>
@@ -264,12 +264,12 @@ module.exports = {
 <!-- ═════════ KAPANIŞ ═════════ -->
 <section class="g-son">
   <div class="sar">
-    <p class="g-etiket g-etiket--orta">Sonraki adım</p>
+    <p class="g-etiket g-etiket--orta">Bir adım ötesi</p>
     <h2>Randevu için bize ulaşın</h2>
     <p class="g-sonalt">${S.iletisim.adres}, ${S.iletisim.ilce}. Arayabilir, WhatsApp’tan yazabilir ya da formu doldurabilirsiniz.</p>
     <div class="g-sonbtn">
       <a class="dgm dgm--bir" href="${r}iletisim/">Randevu talebi oluşturun</a>
-      <a class="dgm dgm--iki" href="${r}hazirlik-listesi/arac/">Hazırlık listesini doldurun</a>
+      <a class="dgm dgm--iki" href="${r}hazirlik-listesi/arac/">Muayeneye hazırlanın</a>
     </div>
   </div>
 </section>

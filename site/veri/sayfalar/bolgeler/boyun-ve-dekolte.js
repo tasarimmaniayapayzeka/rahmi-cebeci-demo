@@ -13,7 +13,7 @@ module.exports = {
   <div class="sar">
     <div>
       <nav class="kirinti" aria-label="Konum" style="position:relative;font-size:.76rem;color:var(--sessiz);display:flex;gap:7px;margin-bottom:18px"><a href="${r}" style="color:var(--sessiz);text-decoration:none">Ana sayfa</a> › <a href="${r}bolgeler/" style="color:var(--sessiz);text-decoration:none">Bölgeler</a> › <span>Boyun ve Dekolte</span></nav>
-      <p class="g-etiket">Bölgeler · Boyun ve dekolte</p>
+      <p class="g-etiket">Bölge rehberi · Boyun ve dekolte</p>
       <h1>Boyun, <span class="g-isik">yüzün devamı değil</span>; kendi planı olan bir bölgedir.</h1>
       <p class="g-hero__alt">Boynun ve göğüs üstünün derisi yüzdekinden ince, yağ bezleri daha seyrek ve deriyi taşıyan dokular daha zayıftır. Bu yüzden halka şeklindeki çizgiler, gevşeme ve güneşin bıraktığı kahverengi–kırmızı lekeler burada daha erken görünür. Yüzünüz için seçilen ayarı ve miktarı buraya aynen taşımak yerine bu bölgeye özel, daha yumuşak bir plan yaparız.</p>
       <div class="g-hero__cta">
@@ -25,7 +25,7 @@ module.exports = {
     <div class="g-tarama" data-gr>
       <img src="${r}varliklar/gorsel/bolge-boyun-ve-dekolte.webp" width="1400" height="788" alt="Boyun ve göğüs üstünü gösteren üç boyutlu stilize görsel" loading="eager">
       <div class="g-isin"></div>
-      <span class="g-ainot">Görsel yapay zekâ ile üretilmiştir</span>
+      <span class="g-ainot">Temsilî görsel · yapay zekâ ile üretildi</span>
     </div>
   </div>
 </section>
@@ -63,7 +63,7 @@ module.exports = {
       <div class="g-atlas" data-gr>
         <div class="g-atlas-kap">
           <img src="${r}varliklar/gorsel/doku-cilt.webp" width="1600" height="900" alt="Deri yüzeyinin dokusunu yakın plan gösteren görsel" loading="lazy">
-          <span class="g-ainot">Görsel yapay zekâ ile üretilmiştir</span>
+          <span class="g-ainot">Temsilî görsel · yapay zekâ ile üretildi</span>
           <div class="g-rozetk" data-grozet><b>Çizgiler ve bantlar</b><span>Halka çizgi ile dikey bant farklı yapılardan doğar; planları da farklıdır.</span></div>
         </div>
       </div>
@@ -99,7 +99,7 @@ module.exports = {
     <div class="bolum-bas" data-gr><p class="g-etiket">Uygulamalar</p><h2>Boyun ve göğüs üstü için hangi seçenekler var?</h2><p class="giris">Bu bölgede ilk hedef dolgunluk kazandırmak değil, derinin kendisini güçlendirmektir. Muayenede ortaya çıkan tabloya göre tek bir seçenekle yetinilebilir ya da birkaç seçenek aylara bölünerek sıralanabilir; aynı gün birkaç yöntem üst üste konmaz.</p></div>
     <div class="g-matris">
       <div class="g-mtab" data-gr>
-        <div class="g-mbas"><span>Uygulama</span><span>Hedef</span><span>İyileşme</span><span></span></div>
+        <div class="g-mbas"><span>Yöntem</span><span>Amaç</span><span>Toparlanma</span><span></span></div>
         <a class="g-msatir" data-akt href="${r}uygulamalar/genclik-asisi-skinbooster/" data-gg="${r}varliklar/gorsel/uyg-genclik-asisi-skinbooster.webp" data-gb="Gençlik aşısı (skinbooster)" data-ga="Deriye hacim eklemeden su tutma gücünü artırmayı hedefler; bu bölgede sıklıkla ilk düşünülen seçenektir."><h4>Gençlik aşısı (skinbooster)</h4><span class="g-hucre"><i class="g-kcip g-kcip--1">CİLT KALİTESİ</i></span><span class="g-hucre">Birkaç saat–1 gün</span><span class="g-git">→</span></a>
         <a class="g-msatir" href="${r}uygulamalar/mezoterapi/" data-gg="${r}varliklar/gorsel/uyg-mezoterapi.webp" data-gb="Mezoterapi" data-ga="Vitamin ve hafif yoğunlukta hyalüronik asit, derinin üst katmanlarına küçük noktalar hâlinde verilir; birkaç hafta arayla seri olarak planlanır."><h4>Mezoterapi</h4><span class="g-hucre"><i class="g-kcip g-kcip--1">CİLT KALİTESİ</i></span><span class="g-hucre">Birkaç saat–1 gün</span><span class="g-git">→</span></a>
         <a class="g-msatir" href="${r}uygulamalar/somon-dna-polinukleotid/" data-gg="${r}varliklar/gorsel/uyg-somon-dna-polinukleotid.webp" data-gb="Somon DNA ve polinükleotid" data-ga="Dokunun kendini onarma sürecini desteklemek amaçlanır. Balıktan elde edildiği için balık ve deniz ürünlerine karşı aşırı duyarlılık önceden sorulur."><h4>Somon DNA ve polinükleotid</h4><span class="g-hucre"><i class="g-kcip g-kcip--1">CİLT KALİTESİ</i></span><span class="g-hucre">Muayenede belirlenir</span><span class="g-git">→</span></a>
@@ -166,7 +166,7 @@ module.exports = {
     </div>
     <div class="kutu kutu--acil" data-gr style="margin-top:22px">
       <b>Beklemeden başvurmanız gereken bulgular</b>
-      <p>Boyundaki kas gevşetici uygulamadan sonra yutkunmada zorlanma, ses kısıklığı ya da nefes darlığı; cihazla yapılan işlemlerden sonra deride kabarcık ya da açık yara, yayılan kızarıklık, akıntı ya da ateş; her işlemden sonra giderek artan şiddetli ağrı, hızla kabaran şişlik ya da deride beyazlaşma–morumsu ağ görünümü olursa kontrol gününü beklemeyin. Bizi <a href="tel:${S.iletisim.telHam}">${S.iletisim.tel}</a> numarasından hemen arayın; telefonla ulaşamazsanız <b>112</b>’yi arayın ya da size en yakın acil servise gidin.</p>
+      <p>Boyundaki kas gevşetici uygulamadan sonra yutkunmada zorlanma, ses kısıklığı ya da nefes darlığı; cihazla yapılan işlemlerden sonra deride kabarcık ya da açık yara, yayılan kızarıklık, akıntı ya da ateş; her işlemden sonra giderek artan şiddetli ağrı, hızla kabaran şişlik ya da deride beyazlaşma–morumsu ağ görünümü olursa kontrol gününü beklemeyin. Bizi <a href="tel:${S.iletisim.telHam}">${S.iletisim.tel}</a> numarasından hemen arayın; telefonla ulaşamazsanız <b>112</b> Acil Çağrı Merkezi’ni arayın ya da en yakın hastanenin acil birimine başvurun.</p>
     </div>
   </div>
 </section>
@@ -194,12 +194,12 @@ module.exports = {
 <!-- 9 ── KAPANIŞ -->
 <section class="g-son">
   <div class="sar">
-    <p class="g-etiket g-etiket--orta">Sonraki adım</p>
+    <p class="g-etiket g-etiket--orta">Bir adım ötesi</p>
     <h2>Önce bölgenizi tanıyalım, sonra karar verelim</h2>
     <p class="g-sonalt">Boyun ve dekoltede hangi adımın önce atılacağı, hangi yöntemin seçileceği kadar önemlidir. Bölgenize birlikte bakmak için ${S.iletisim.semt} muayenehanemizden randevu talep edebilirsiniz.</p>
     <div class="g-sonbtn">
       <a class="dgm dgm--bir" href="${r}iletisim/">Randevu talebi oluşturun</a>
-      <a class="dgm dgm--iki" href="${r}hazirlik-listesi/arac/">Hazırlık listesini doldurun</a>
+      <a class="dgm dgm--iki" href="${r}hazirlik-listesi/arac/">Muayeneye hazırlanın</a>
     </div>
   </div>
 </section>

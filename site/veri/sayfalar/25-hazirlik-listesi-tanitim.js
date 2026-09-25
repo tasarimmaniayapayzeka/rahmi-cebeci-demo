@@ -25,7 +25,7 @@ module.exports = {
     <div class="g-tarama" data-gr>
       <img src="${r}varliklar/gorsel/yuz-3d.webp" width="900" height="1200" alt="Yandan görülen bir kadın yüzünün üç boyutlu çizimi" loading="eager">
       <div class="g-isin"></div>
-      <span class="g-ainot">Görsel yapay zekâ ile üretilmiştir</span>
+      <span class="g-ainot">Temsilî görsel · yapay zekâ ile üretildi</span>
       <div class="g-hud"><b>12 madde, yaklaşık iki dakika</b><div class="g-cizgi"></div><span>Sonunda randevuya götürebileceğiniz bir özet oluşur</span></div>
     </div>
   </div>
@@ -158,7 +158,7 @@ module.exports = {
     </div>
     <div class="kutu kutu--acil" data-gr style="--d:70ms;margin-top:16px">
       <b>Acil bir durumda listeyle vakit kaybetmeyin</b>
-      <p>Nefes almakta zorlanma, yutkunma güçlüğü, dudakta ya da dilde hızla gelişen şişlik, yaygın döküntüyle birlikte baş dönmesi gibi bulgularda hemen <b>112</b>’yi arayın ya da en yakın acil servise gidin.</p>
+      <p>Nefes almakta zorlanma, yutkunma güçlüğü, dudakta ya da dilde hızla gelişen şişlik, yaygın döküntüyle birlikte baş dönmesi gibi bulgularda hemen <b>112</b> Acil Çağrı Merkezi’ni arayın ya da en yakın hastanenin acil birimine başvurun.</p>
     </div>
   </div>
 </section>
@@ -198,7 +198,7 @@ module.exports = {
 <!-- ═════════ KAPANIŞ ═════════ -->
 <section class="g-son">
   <div class="sar">
-    <p class="g-etiket g-etiket--orta">Sonraki adım</p>
+    <p class="g-etiket g-etiket--orta">Bir adım ötesi</p>
     <h2>Görüşmeden önce birkaç dakika ayırın</h2>
     <p class="g-sonalt">On iki madde, birkaç dakika. Cevaplarınız cihazınızda kalır; hazırlığınız bittiğinde randevu talebinizi iletebilirsiniz.</p>
     <div class="g-sonbtn">
