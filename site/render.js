@@ -293,7 +293,7 @@ const sayfalar = topla(SAYFA_DIR);
    ki önbellek damgası yeni içerikten hesaplansın */
 fs.writeFileSync(path.join(KOK, 'varliklar', 'js', 'asistan-dizin.js'),
   '/* render.js üretir — elle DÜZENLEME (kaynak: veri/asistan.js + veri/site.js) */\n' +
-  'window.RC_ASISTAN = ' + JSON.stringify(ASISTAN.paket(sayfalar)) + ';\n', 'utf8');
+  'window.RC_ASISTAN = ' + JSON.stringify(ASISTAN.paket(sayfalar, ik)) + ';\n', 'utf8');
 let n = 0;
 for (const s of sayfalar) {
   const hedef = s.slug ? path.join(CIKTI, s.slug, 'index.html') : path.join(CIKTI, 'index.html');
@@ -469,12 +469,51 @@ if (!$mesajlar || end($mesajlar)['role'] !== 'user') bitir(400, ['hata' => 'bici
 $sayfa = mb_substr(strip_tags((string) ($govde['sayfa'] ?? '')), 0, 120);
 
 $istem = <<<'ISTEM'
-${ASISTAN.istem(sayfalar)}
+${ASISTAN.istem(sayfalar, ik)}
 ISTEM;
+
+/* ---------- site bilgisi: soruya en yakın üç sayfanın metni ---------- */
+function sadelestir(string $s): string {
+  $s = mb_strtolower($s, 'UTF-8');
+  $s = str_replace("\u{307}", '', $s);
+  $s = strtr($s, ['ç' => 'c', 'ğ' => 'g', 'ı' => 'i', 'ö' => 'o', 'ş' => 's', 'ü' => 'u', 'â' => 'a', 'î' => 'i', 'û' => 'u']);
+  $s = (string) preg_replace('/[^a-z0-9 ]+/', ' ', $s);
+  return trim((string) preg_replace('/\s+/', ' ', $s));
+}
+$bankaHam = <<<'VERI'
+${JSON.stringify(ASISTAN.bilgiBankasi(sayfalar, ik))}
+VERI;
+$BANKA = json_decode($bankaHam, true) ?: [];
+$sorgu = ''; $kullanici = 0;
+foreach (array_reverse($mesajlar) as $m) {
+  if ($m['role'] !== 'user') continue;
+  $sorgu .= ' ' . $m['content'];
+  if (++$kullanici >= 2) break;
+}
+$DOLGU = ['nasil', 'neden', 'icin', 'kadar', 'olur', 'yapiliyor', 'yapilir', 'musunuz', 'misiniz', 'istiyorum', 'nedir',
+  'hangi', 'bana', 'benim', 'bunu', 'sonra', 'once', 'daha', 'gibi', 'oluyor', 'yapiyor', 'sizde', 'burada', 'merhaba', 'acaba', 'mumkun'];
+$kelimeler = array_values(array_unique(array_filter(explode(' ', sadelestir($sorgu)),
+  function ($k) use ($DOLGU) { return strlen($k) >= 4 && !in_array($k, $DOLGU, true); })));
+$puanlar = [];
+foreach ($BANKA as $i => $b) {
+  $p = 0.0;
+  foreach ($kelimeler as $k) {
+    $kok = substr($k, 0, 5);
+    if (strpos(' ' . $b['k'], ' ' . $kok) !== false) $p += 3;
+    $p += min(3, substr_count(' ' . $b['ms'], ' ' . $kok)) * 0.5;
+  }
+  if ($p >= 3) $puanlar[$i] = $p;
+}
+arsort($puanlar);
+$ekBilgi = '';
+foreach (array_slice(array_keys($puanlar), 0, 3) as $i) {
+  $ekBilgi .= "\n\n### " . $BANKA[$i]['a'] . ' (/' . $BANKA[$i]['y'] . ")\n" . mb_substr((string) $BANKA[$i]['m'], 0, 2600);
+}
+if ($ekBilgi !== '') $ekBilgi = "\n\nSİTEDEN İLGİLİ SAYFALAR" . $ekBilgi;
 
 $istek = [
   'model' => (string) ($A['model'] ?? 'gpt-5-mini'),
-  'messages' => array_merge([['role' => 'system', 'content' => $istem . "\n\nZiyaretçinin şu an bulunduğu sayfa: " . $sayfa]], $mesajlar),
+  'messages' => array_merge([['role' => 'system', 'content' => $istem . $ekBilgi . "\n\nZiyaretçinin şu an bulunduğu sayfa: " . $sayfa]], $mesajlar),
   'max_completion_tokens' => (int) ($A['cikti'] ?? 900),
 ];
 if (!empty($A['akil'])) $istek['reasoning_effort'] = (string) $A['akil'];
