@@ -493,23 +493,54 @@ a.kart:hover .kart__ok{gap:11px}
   mask-image:radial-gradient(70% 70% at 72% 30%, #000 0%, transparent 75%)}
 .hero--v2 .hero__ic{position:relative;z-index:1}
 
-.molekul{position:relative;aspect-ratio:1/1.06;max-width:520px;margin:0 auto;width:100%}
-.molekul canvas{position:absolute;inset:0;width:100%;height:100%}
-.molekul__rozet{position:absolute;background:var(--beyaz);border:1px solid var(--cizgi);
-  border-radius:var(--r-md);padding:11px 15px;box-shadow:var(--golge-md);max-width:210px;z-index:2}
-.molekul__rozet b{display:block;font-family:var(--font-baslik);font-weight:600;
-  color:var(--murekkep);font-size:.92rem;margin-bottom:2px}
-.molekul__rozet span{font-size:.74rem;color:var(--govde);line-height:1.45;display:block}
-.molekul__rozet--1{top:6%;left:-2%;animation:yuz 7s var(--ease) infinite}
-.molekul__rozet--2{bottom:10%;right:-2%;animation:yuz 8s var(--ease) 1.2s infinite}
-@keyframes yuz{0%,100%{transform:translateY(0)}50%{transform:translateY(-9px)}}
-@media (prefers-reduced-motion:reduce){.molekul__rozet{animation:none}}
-/* Mobilde kanvas kapalı: mutlak konumlu kanvas statik kartların ÜSTÜNE
-   çizip metni noktalarla kapatıyordu + oran boş alan bırakıyordu (12 Ağu) */
-@media (max-width:520px){
-  .molekul{aspect-ratio:auto}
-  .molekul canvas{display:none}
-  .molekul__rozet{position:static;max-width:none;margin-top:10px;animation:none}}
+/* ---------- ana sayfa: deri katmanı kesiti (sürekli hareketli) ---------- */
+.katman{position:relative;max-width:520px;margin:0 auto;width:100%}
+.katman__etiket{font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;font-weight:800;color:var(--bakir);margin:0 0 6px 4px}
+.katman__sahne{transition:transform .35s var(--ease);will-change:transform}
+.katman svg{display:block;width:100%;height:auto;overflow:visible;font-family:var(--font-govde)}
+/* ortam: her zaman hareketli */
+.katman .lif path{animation:kLif 7s ease-in-out infinite alternate;animation-delay:var(--g,0s)}
+.katman .yag circle{transform-box:fill-box;transform-origin:center;animation:kYag 4.6s ease-in-out infinite alternate;animation-delay:var(--g,0s)}
+.katman .tarama{animation:kTara 9s ease-in-out infinite alternate;opacity:.55}
+.katman .toz circle{opacity:0;animation:kToz var(--s,7s) linear infinite;animation-delay:var(--g,0s)}
+.katman .bas{animation:kBas 3.2s ease-in-out infinite}
+/* cihazlar */
+.katman [data-katman-g]{opacity:.3;transition:opacity .5s var(--ease)}
+.katman [data-katman-g].aktif{opacity:1}
+.katman .aktif .kay{animation:kKay 5.2s ease-in-out 1s infinite}
+.katman .isin{stroke-dasharray:var(--u,300);stroke-dashoffset:var(--u,300)}
+.katman .aktif .isin{animation:kIsin 1s var(--ease) forwards}
+.katman .akis{stroke-dasharray:6 34;opacity:0;stroke-linecap:round}
+.katman .aktif .akis{opacity:.95;animation:kAkis .9s linear infinite;animation-delay:calc(1s + var(--g,0s))}
+.katman .odak{transform-box:fill-box;transform-origin:center;opacity:0}
+.katman .aktif .odak{animation:kOdak 1.6s var(--ease) infinite;animation-delay:calc(.9s + var(--g,0s))}
+.katman .pig{transform-box:fill-box;transform-origin:center}
+.katman .aktif .pig{animation:kPig 2.4s var(--ease) infinite;animation-delay:calc(1s + var(--g,0s))}
+@keyframes kLif{from{transform:translateX(-10px)}to{transform:translateX(10px)}}
+@keyframes kYag{from{transform:scale(.95)}to{transform:scale(1.05)}}
+@keyframes kTara{from{transform:translateX(-190px)}to{transform:translateX(190px)}}
+@keyframes kToz{0%{opacity:0;transform:translateY(0)}15%{opacity:.8}85%{opacity:.5}100%{opacity:0;transform:translateY(-120px)}}
+@keyframes kBas{0%,100%{transform:translateY(0)}50%{transform:translateY(-4px)}}
+@keyframes kKay{0%,100%{transform:translateX(0)}25%{transform:translateX(-12px)}75%{transform:translateX(12px)}}
+@keyframes kIsin{to{stroke-dashoffset:0}}
+@keyframes kAkis{from{stroke-dashoffset:40}to{stroke-dashoffset:0}}
+@keyframes kOdak{0%{opacity:.95;transform:scale(.45)}100%{opacity:0;transform:scale(2.3)}}
+@keyframes kPig{0%{transform:none;opacity:1}55%{transform:translate(var(--dx),var(--dy)) scale(.5);opacity:.15}100%{transform:none;opacity:1}}
+.katman__secim{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:12px}
+.katman__secim button{font:inherit;text-align:left;cursor:pointer;padding:10px 12px;border-radius:var(--r-md);
+  border:1px solid var(--cizgi);background:rgba(255,255,255,.55);color:var(--govde);transition:all var(--t-orta) var(--ease)}
+.katman__secim button:hover{border-color:var(--cizgi-2);background:var(--beyaz)}
+.katman__secim button[aria-pressed="true"]{border-color:var(--bakir);background:var(--beyaz);box-shadow:var(--golge-sm)}
+.katman__secim b{display:block;font-family:var(--font-baslik);font-weight:600;font-size:.86rem;color:var(--murekkep)}
+.katman__secim span{display:block;font-size:.68rem;line-height:1.35;color:var(--sessiz);margin-top:2px}
+.katman__not{margin:10px 4px 0;font-size:.84rem;line-height:1.55;color:var(--govde);min-height:4.2em}
+@media (max-width:520px){.katman__secim{grid-template-columns:1fr}.katman__not{min-height:0}}
+@media (prefers-reduced-motion:reduce){
+  .katman *{animation:none !important}
+  .katman [data-katman-g]{opacity:1}
+  .katman .isin{stroke-dashoffset:0}
+  .katman .odak{opacity:.6}
+  .katman .toz circle{opacity:.35}}
 
 /* ============================================================
    SÜREÇ AKIŞI — çizilen hat + kademeli düğümler

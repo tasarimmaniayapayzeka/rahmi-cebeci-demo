@@ -1,7 +1,7 @@
 /* ============================================================
    ANA SAYFA ETKİLEŞİMLERİ
-   1. Molekül ağı — canvas'ta 3B döner nokta kafesi (hyalüronik
-      asit ağı metaforu). Bağımlılıksız; el yazması perspektif.
+   1. Katman kesiti — üç cihazın hangi deri derinliğine çalıştığı;
+      SVG + CSS animasyon, sırayla ya da tıklayınca.
    2. Kayarak açılma — IntersectionObserver, kademeli gecikme.
    3. Sayaç bandı — görününce sayılar yukarı sayar.
    4. Yüz haritası — SVG nokta ↔ liste ↔ bilgi kartı senkronu.
@@ -13,86 +13,39 @@
   'use strict';
   var AZALT = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-  /* ---------- 1. MOLEKÜL AĞI ---------- */
+  /* ---------- 1. KATMAN KESİTİ ----------
+     Üç cihaz sırayla kendi derinliğinde "atım" yapar; düğmeye
+     basılınca otomatik geçiş durur. Görünür değilken döngü bekler. */
   (function () {
-    var tuval = document.querySelector('[data-molekul]');
-    if (!tuval) return;
-    var ctx = tuval.getContext('2d');
-    var N = 84, f = 460;                       // nokta sayısı, odak uzaklığı
-    var noktalar = [], baglar = [], atomlar = [3, 17, 31, 47, 63, 79];
-
-    // fibonacci küresi — düzgün dağılım
-    var ALTIN = Math.PI * (3 - Math.sqrt(5));
-    for (var i = 0; i < N; i++) {
-      var y = 1 - (i / (N - 1)) * 2;
-      var r = Math.sqrt(1 - y * y);
-      var t = ALTIN * i;
-      noktalar.push({ x: Math.cos(t) * r, y: y, z: Math.sin(t) * r });
+    var kok = document.querySelector('[data-katman]');
+    if (!kok) return;
+    var dgm = kok.querySelectorAll('[data-katman-sec]');
+    var gruplar = kok.querySelectorAll('[data-katman-g]');
+    var not = kok.querySelector('[data-katman-not]');
+    var sira = ['pico', 'rf', 'hifu'], i = 0, zaman = null, durdu = false;
+    function sec(k) {
+      gruplar.forEach(function (g) { g.classList.toggle('aktif', g.getAttribute('data-katman-g') === k); });
+      dgm.forEach(function (b) {
+        var a = b.getAttribute('data-katman-sec') === k;
+        b.setAttribute('aria-pressed', a ? 'true' : 'false');
+        if (a && not) not.textContent = b.getAttribute('data-not');
+      });
     }
-    // sabit topoloji: yakın komşular bağlanır (kafes görünümü)
-    for (var a = 0; a < N; a++) {
-      for (var b = a + 1; b < N; b++) {
-        var dx = noktalar[a].x - noktalar[b].x,
-            dy = noktalar[a].y - noktalar[b].y,
-            dz = noktalar[a].z - noktalar[b].z;
-        if (dx * dx + dy * dy + dz * dz < 0.16) baglar.push([a, b]);
-      }
-    }
-
-    var W = 0, H = 0, DPR = Math.min(2, window.devicePixelRatio || 1);
-    function boyutla() {
-      var k = tuval.parentElement.getBoundingClientRect();
-      W = Math.round(k.width); H = Math.round(k.height);
-      tuval.width = W * DPR; tuval.height = H * DPR;
-      ctx.setTransform(DPR, 0, 0, DPR, 0, 0);
-    }
-    boyutla();
-    new ResizeObserver(boyutla).observe(tuval.parentElement);
-
-    var a1 = 0.4, a2 = 0.15, calisiyor = false, gorunur = true;
-    function kare() {
-      if (!gorunur) { calisiyor = false; return; }
-      a1 += 0.0028; a2 += 0.0017;
-      var R = Math.min(W, H) * 0.36, cx = W / 2, cy = H / 2;
-      var c1 = Math.cos(a1), s1 = Math.sin(a1), c2 = Math.cos(a2), s2 = Math.sin(a2);
-      var p = new Array(N);
-      for (var i = 0; i < N; i++) {
-        var n = noktalar[i];
-        var x = n.x * c1 + n.z * s1, z1 = -n.x * s1 + n.z * c1;   // Y ekseni
-        var y = n.y * c2 - z1 * s2, z = n.y * s2 + z1 * c2;       // X ekseni
-        var olcek = f / (f + z * R);
-        p[i] = { x: cx + x * R * olcek, y: cy + y * R * olcek, d: (z + 1) / 2, o: olcek };
-      }
-      ctx.clearRect(0, 0, W, H);
-      // bağlar — derinliğe göre solan buz mavisi
-      for (var j = 0; j < baglar.length; j++) {
-        var u = p[baglar[j][0]], v = p[baglar[j][1]];
-        var alfa = 0.34 * (1 - (u.d + v.d) / 2) + 0.05;
-        ctx.strokeStyle = 'rgba(143,184,204,' + alfa.toFixed(3) + ')';
-        ctx.lineWidth = 1;
-        ctx.beginPath(); ctx.moveTo(u.x, u.y); ctx.lineTo(v.x, v.y); ctx.stroke();
-      }
-      // düğümler — petrol; birkaç bakır "atom"
-      for (var k2 = 0; k2 < N; k2++) {
-        var q = p[k2];
-        var atom = atomlar.indexOf(k2) !== -1;
-        var yr = (atom ? 4.6 : 2.2) * q.o;
-        ctx.fillStyle = atom
-          ? 'rgba(142,91,35,' + (0.9 - q.d * 0.55).toFixed(3) + ')'
-          : 'rgba(15,74,96,' + (0.85 - q.d * 0.6).toFixed(3) + ')';
-        ctx.beginPath(); ctx.arc(q.x, q.y, yr, 0, 6.2832); ctx.fill();
-      }
-      requestAnimationFrame(kare);
-    }
-    function baslat() { if (!calisiyor) { calisiyor = true; requestAnimationFrame(kare); } }
-
-    if (AZALT) { gorunur = true; a1 = 0.9; a2 = 0.4; kare(); gorunur = false; }  // tek durağan kare
-    else {
-      new IntersectionObserver(function (g) {
-        gorunur = g[0].isIntersecting;
-        if (gorunur) baslat();
-      }, { threshold: 0.05 }).observe(tuval);
-    }
+    function dur() { if (zaman) { clearInterval(zaman); zaman = null; } }
+    dgm.forEach(function (b) {
+      b.addEventListener('click', function () {
+        durdu = true; dur();
+        i = sira.indexOf(b.getAttribute('data-katman-sec'));
+        sec(sira[i]);
+      });
+    });
+    sec(sira[0]);
+    if (AZALT || !('IntersectionObserver' in window)) return;
+    new IntersectionObserver(function (e) {
+      if (e[0].isIntersecting && !durdu && !zaman) {
+        zaman = setInterval(function () { i = (i + 1) % sira.length; sec(sira[i]); }, 3800);
+      } else if (!e[0].isIntersecting) dur();
+    }, { threshold: 0.15 }).observe(kok);
   })();
 
   /* ---------- 2. KAYARAK AÇILMA ---------- */

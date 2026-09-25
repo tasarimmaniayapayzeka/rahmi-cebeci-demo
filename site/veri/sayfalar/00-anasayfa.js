@@ -52,16 +52,82 @@ module.exports = {
         <li>${ik.onay} Kontrol randevusu planın içinde</li>
       </ul>
     </div>
-    <div class="molekul">
-      <canvas data-molekul aria-hidden="true"></canvas>
-      <div class="molekul__rozet molekul__rozet--1">
-        <b>Karar muayenede</b>
-        <span>Hangi uygulamanın uygun olduğu, bölge görülüp öykünüz dinlendikten sonra konuşulur.</span>
+    <div class="katman" data-katman>
+      <p class="katman__etiket">Her cihaz kendi derinliğinde çalışır</p>
+      <div class="katman__sahne" data-egim>
+      <svg viewBox="0 0 480 440" role="img" aria-label="Deri kesiti: pikosaniye lazer üst deriye, altın iğne radyofrekans orta deriye, HIFU derin destek katmanına etki eder">
+        <defs>
+          <clipPath id="kDeri"><path d="M20 100 C80 88 140 110 200 98 S320 88 380 100 S440 104 460 96 V398 Q460 420 438 420 H42 Q20 420 20 398 Z"/></clipPath>
+          <linearGradient id="kPico" gradientUnits="userSpaceOnUse" x1="0" y1="58" x2="0" y2="122"><stop offset="0" stop-color="#E6CF8E"/><stop offset="1" stop-color="#B4452F"/></linearGradient>
+          <linearGradient id="kRf" gradientUnits="userSpaceOnUse" x1="0" y1="56" x2="0" y2="208"><stop offset="0" stop-color="#E6CF8E"/><stop offset="1" stop-color="#C9822E"/></linearGradient>
+          <linearGradient id="kHifu" gradientUnits="userSpaceOnUse" x1="0" y1="62" x2="0" y2="302"><stop offset="0" stop-color="#E6CF8E"/><stop offset="1" stop-color="#85641C"/></linearGradient>
+          <radialGradient id="kParilti"><stop offset="0" stop-color="#FFF4D6" stop-opacity=".9"/><stop offset="1" stop-color="#FFF4D6" stop-opacity="0"/></radialGradient>
+        </defs>
+        <g clip-path="url(#kDeri)">
+          <rect x="20" y="80" width="440" height="60" fill="#F5E1CE"/>
+          <rect x="20" y="140" width="440" height="130" fill="#EDCFB5"/>
+          <rect x="20" y="270" width="440" height="150" fill="#F4E7CF"/>
+          <g class="lif" fill="none" stroke="#D6A987" stroke-width="1.4" opacity=".6">
+            <path d="M0 170 C90 160 150 182 230 170 S380 160 480 172" style="--g:0s"/>
+            <path d="M0 196 C100 186 170 206 250 194 S400 186 480 198" style="--g:-1.5s"/>
+            <path d="M0 222 C80 214 160 232 240 220 S390 212 480 224" style="--g:-3s"/>
+            <path d="M0 246 C110 238 180 256 260 244 S400 238 480 250" style="--g:-4.5s"/>
+          </g>
+          <g class="yag" fill="#F9EFDD" stroke="#E6D2AE" stroke-width="1.2"><circle cx="60" cy="300" r="18" style="--g:0s"/><circle cx="102" cy="332" r="22" style="--g:0.7s"/><circle cx="152" cy="304" r="15" style="--g:1.4s"/><circle cx="192" cy="346" r="20" style="--g:2.0999999999999996s"/><circle cx="242" cy="312" r="17" style="--g:2.8s"/><circle cx="292" cy="350" r="22" style="--g:0s"/><circle cx="322" cy="392" r="17" style="--g:0.7s"/><circle cx="410" cy="330" r="20" style="--g:1.4s"/><circle cx="66" cy="372" r="20" style="--g:2.0999999999999996s"/><circle cx="140" cy="386" r="18" style="--g:2.8s"/><circle cx="232" cy="392" r="20" style="--g:0s"/><circle cx="418" cy="392" r="16" style="--g:0.7s"/><circle cx="404" cy="296" r="13" style="--g:1.4s"/><circle cx="270" cy="300" r="12" style="--g:2.0999999999999996s"/></g>
+          <path d="M20 140 C90 134 150 146 240 139 S390 133 460 141" fill="none" stroke="#DDB99A" stroke-width="1.2"/>
+          <path d="M20 270 C100 262 170 280 250 268 S400 262 460 272" fill="none" stroke="#C9A27A" stroke-width="2.2" opacity=".75"/>
+          <ellipse class="tarama" cx="240" cy="200" rx="60" ry="170" fill="url(#kParilti)"/>
+        </g>
+        <path d="M20 100 C80 88 140 110 200 98 S320 88 380 100 S440 104 460 96" fill="none" stroke="#C99E7E" stroke-width="1.6"/>
+        <g class="katman__ad" font-size="11" fill="#6C675E" letter-spacing=".08em">
+          <text x="444" y="130" text-anchor="end">ÜST DERİ</text>
+          <text x="444" y="260" text-anchor="end">ORTA DERİ</text>
+          <text x="444" y="408" text-anchor="end">DERİN DESTEK KATMANI</text>
+        </g>
+        <g data-katman-g="pico">
+          <g fill="#3E2A1C"><circle class="pig" cx="110" cy="117" r="3.2" style="--dx:-14px;--dy:3px;--g:0s"/><circle class="pig" cx="118" cy="124" r="2.6" style="--dx:-5px;--dy:12px;--g:0.12s"/><circle class="pig" cx="127" cy="116" r="3" style="--dx:13px;--dy:-3px;--g:0.24s"/><circle class="pig" cx="131" cy="125" r="2.4" style="--dx:15px;--dy:9px;--g:0.36s"/><circle class="pig" cx="114" cy="129" r="2.2" style="--dx:-10px;--dy:13px;--g:0s"/><circle class="pig" cx="123" cy="111" r="2.2" style="--dx:5px;--dy:-11px;--g:0.12s"/><circle class="pig" cx="104" cy="126" r="2" style="--dx:-17px;--dy:10px;--g:0.24s"/><circle class="pig" cx="136" cy="119" r="1.8" style="--dx:18px;--dy:1px;--g:0.36s"/></g>
+          <g class="kay">
+            <g class="bas"><rect x="108" y="20" width="24" height="36" rx="7" fill="#1C1B18"/><rect x="113" y="50" width="14" height="6" rx="2" fill="#D9B75A"/></g>
+            <line class="isin" x1="120" y1="58" x2="120" y2="120" stroke="url(#kPico)" stroke-width="3" style="--u:64"/>
+            <line class="akis" x1="120" y1="58" x2="120" y2="120" stroke="#FFF1D0" stroke-width="3"/>
+            <circle class="odak" cx="120" cy="120" r="10" fill="none" stroke="#B4452F" stroke-width="2"/>
+          </g>
+        </g>
+        <g data-katman-g="rf">
+          <g class="kay">
+            <g class="bas"><rect x="220" y="24" width="40" height="30" rx="6" fill="#1C1B18"/><rect x="224" y="50" width="32" height="5" rx="2" fill="#D9B75A"/></g>
+            <g stroke="url(#kRf)" stroke-width="2"><line class="isin" x1="228" y1="56" x2="228" y2="206" style="--u:152"/><line class="isin" x1="234" y1="56" x2="234" y2="206" style="--u:152"/><line class="isin" x1="240" y1="56" x2="240" y2="206" style="--u:152"/><line class="isin" x1="246" y1="56" x2="246" y2="206" style="--u:152"/><line class="isin" x1="252" y1="56" x2="252" y2="206" style="--u:152"/></g>
+            <g stroke="#FFF1D0" stroke-width="2"><line class="akis" x1="228" y1="56" x2="228" y2="206" style="--g:0s"/><line class="akis" x1="240" y1="56" x2="240" y2="206" style="--g:0.2s"/><line class="akis" x1="252" y1="56" x2="252" y2="206" style="--g:0.4s"/></g>
+            <g fill="rgba(217,150,70,.55)"><ellipse class="odak" cx="228" cy="206" rx="7" ry="5" style="--g:0s"/><ellipse class="odak" cx="240" cy="206" rx="7" ry="5" style="--g:0.25s"/><ellipse class="odak" cx="252" cy="206" rx="7" ry="5" style="--g:0.5s"/></g>
+          </g>
+        </g>
+        <g data-katman-g="hifu">
+          <g class="kay">
+            <g class="bas"><path d="M332 28h56a6 6 0 0 1 6 6v12a14 14 0 0 1-14 14h-40a14 14 0 0 1-14-14v-12a6 6 0 0 1 6-6z" fill="#1C1B18"/><rect x="340" y="56" width="40" height="4" rx="2" fill="#D9B75A"/></g>
+            <g stroke="url(#kHifu)" stroke-width="2">
+              <line class="isin" x1="338" y1="62" x2="360" y2="300" style="--u:242"/>
+              <line class="isin" x1="360" y1="62" x2="360" y2="300" style="--u:240"/>
+              <line class="isin" x1="382" y1="62" x2="360" y2="300" style="--u:242"/>
+            </g>
+            <g stroke="#FFF1D0" stroke-width="2">
+              <line class="akis" x1="338" y1="62" x2="360" y2="300"/>
+              <line class="akis" x1="360" y1="62" x2="360" y2="300" style="--g:.3s"/>
+              <line class="akis" x1="382" y1="62" x2="360" y2="300" style="--g:.15s"/>
+            </g>
+            <ellipse class="odak" cx="360" cy="300" rx="13" ry="7" fill="none" stroke="#85641C" stroke-width="2"/>
+            <ellipse class="odak" cx="360" cy="300" rx="13" ry="7" fill="none" stroke="#85641C" stroke-width="1.5" style="--g:.85s"/>
+            <ellipse cx="360" cy="300" rx="4" ry="2.6" fill="#85641C"/>
+          </g>
+        </g>
+        <g class="toz" fill="#D9B75A"><circle cx="40" cy="380" r="1.2" style="--g:0s;--s:6s"/><circle cx="137" cy="327" r="1.7999999999999998" style="--g:0.61s;--s:7s"/><circle cx="234" cy="274" r="2.4" style="--g:1.22s;--s:8s"/><circle cx="331" cy="221" r="1.2" style="--g:1.83s;--s:9s"/><circle cx="428" cy="168" r="1.7999999999999998" style="--g:2.44s;--s:6s"/><circle cx="125" cy="375" r="2.4" style="--g:3.05s;--s:7s"/><circle cx="222" cy="322" r="1.2" style="--g:3.66s;--s:8s"/><circle cx="319" cy="269" r="1.7999999999999998" style="--g:4.27s;--s:9s"/><circle cx="416" cy="216" r="2.4" style="--g:4.88s;--s:6s"/><circle cx="113" cy="163" r="1.2" style="--g:5.49s;--s:7s"/><circle cx="210" cy="370" r="1.7999999999999998" style="--g:0.09999999999999964s;--s:8s"/><circle cx="307" cy="317" r="2.4" style="--g:0.71s;--s:9s"/><circle cx="404" cy="264" r="1.2" style="--g:1.3200000000000003s;--s:6s"/><circle cx="101" cy="211" r="1.7999999999999998" style="--g:1.9299999999999997s;--s:7s"/><circle cx="198" cy="158" r="2.4" style="--g:2.539999999999999s;--s:8s"/><circle cx="295" cy="365" r="1.2" style="--g:3.1500000000000004s;--s:9s"/></g>
+      </svg>
       </div>
-      <div class="molekul__rozet molekul__rozet--2">
-        <b>Cildin yapı taşları</b>
-        <span>Hyalüronik asit ve kolajen: pek çok uygulamanın desteklemeyi hedeflediği doğal yapılar.</span>
+      <div class="katman__secim">
+        <button type="button" data-katman-sec="pico" aria-pressed="true" data-not="Atım, saniyenin trilyonda biri ölçeğinde sürer. Deri içindeki mürekkep ya da pigment ufalanır; vücut bu parçacıkları sonraki haftalarda kendi yoluyla uzaklaştırır."><b>Pikosaniye lazer</b><span>Üst deri · pigment, mürekkep</span></button>
+        <button type="button" data-katman-sec="rf" aria-pressed="false" data-not="Çok ince iğneler orta deriye iner ve ısıyı yalnız uçlarından verir. Hedef, kolajen ağının yenilenmesini uyarmaktır; deri yüzeyi büyük ölçüde korunur."><b>Altın iğne RF</b><span>Orta deri · kolajen ağı</span></button>
+        <button type="button" data-katman-sec="hifu" aria-pressed="false" data-not="Ultrason dalgaları deriyi geçip derindeki taşıyıcı katmanda tek bir noktada toplanır. Kesi yapılmaz; sıkılaşma hedefi haftalar içinde değerlendirilir."><b>HIFU</b><span>Derin destek katmanı</span></button>
       </div>
+      <p class="katman__not" data-katman-not aria-live="polite">Atım, saniyenin trilyonda biri ölçeğinde sürer. Deri içindeki mürekkep ya da pigment ufalanır; vücut bu parçacıkları sonraki haftalarda kendi yoluyla uzaklaştırır.</p>
     </div>
   </div>
 </section>
