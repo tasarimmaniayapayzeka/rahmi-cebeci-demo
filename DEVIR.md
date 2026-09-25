@@ -29,9 +29,9 @@ Pages 1-2 dk gecikir; canlıyı dışarıdan doğrula. Yerel önizleme: `node si
 - Tıbbi sayfalarda hekim künyesi + editör satırı basılıyor (render.js).
 - `site/denetle.js` eklendi (Türkçe harf duyarlı yasaklı ifade taraması).
 
-## Bilerek bırakılanlar (hekim onayı gerekiyor)
+## Hekim onayı alınanlar (25 Eyl 2026)
 
-Aşağıdaki süre ve sayılar sayfalarda genel bilgi olarak duruyor; muayenehaneden teyit edilmedi. Hekim onaylamazsa nitel ifadeye çevrilecek:
+✅ Aşağıdaki süre ve sayılar **hekim tarafından teyit edildi**, sayfalarda olduğu gibi kalır:
 - Seans süreleri: mezoterapi 15–30 dk, altın iğne 30–60 dk, HIFU 60–90 dk, iğnesiz mezoterapi 20–40 dk, karbon peeling 20–30 dk, saç mezoterapisi 20–30 dk, saç PRP 40–60 dk.
 - Saç PRP kan miktarı 10–20 ml; PRP "~1 saat" ve "~4 hafta aralık"; boyun ve el sayfalarında "2–4 hafta sonra kontrol".
 - Dövme silme seans aralığı 6–8 hafta (SSS'de de geçiyor).
@@ -43,7 +43,6 @@ Küçük, ertelenen kozmetik bulgular: tiroid/tiroit tek yazıma indirilmedi; so
 
 - **Cadde adı yazımı:** kaynak sitede "Ebuziya", resmî ad büyük olasılıkla "Ebuzziya" (çift z). Teyit gelince `site/veri/site.js` → `adres` tek satır.
 - E-posta adresi (şu an yer tutucu `randevu@drrahmicebeci.com`).
-- Yukarıdaki hekim onayı listesi.
 - Markaya özel görseller (şimdiki yapay zekâ görselleri Salvera setinin sıcak tonlu kopyası).
 - Alan adı ve canlıya geçiş kararı: `site.js` → `ALAN` + `demo:false`; cPanel paketi `yayin-hazirla.js` ile hazır.
 
