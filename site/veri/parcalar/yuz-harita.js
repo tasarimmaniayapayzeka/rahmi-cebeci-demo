@@ -62,7 +62,7 @@ function listeUret() {
 function panelUret(r) {
   return BOLGELER.map(([slug, ad, aciklama], i) => {
     const haplar = (BOLGE_UYGULAMA[slug] || []).map(([uad, uslug]) =>
-      `<a class="yh-hap" href="${r}uygulamalar/${uslug.includes('#') ? uslug.replace('#', '/#') : uslug + '/'}">${uad}${OK_MINI}</a>`).join('');
+      `<a class="yh-hap" href="${r}uygulamalar/${uslug.includes('#') ? uslug.replace('/#', '#').replace('#', '/#') : uslug + '/'}">${uad}${OK_MINI}</a>`).join('');
     return `<div class="yh-kart" data-kart="${slug}"${i === 0 ? ' data-acik="1"' : ' hidden'}>
       <span class="yh-kart__etiket">Bölge</span>
       <h3>${ad}</h3>
