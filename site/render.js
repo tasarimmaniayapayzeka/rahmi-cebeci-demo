@@ -253,7 +253,6 @@ ${sayfa.noindex ? '<meta name="robots" content="noindex,follow">\n' : S.demo ? '
 <script type="application/ld+json">${JSON.stringify(jsonld)}</script>
 </head>
 <body${S.demo ? ' data-demo="1"' : ''}>
-${S.demo ? '<div class="demo-serit" role="note">Sunum sürümü — tasarım ve metinler onaya tabidir; canlı site değildir.</div>' : ''}
 <div class="g-okucu" aria-hidden="true"></div>
 <svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
 <linearGradient id="gDonutGrad" x1="0" y1="0" x2="1" y2="1">

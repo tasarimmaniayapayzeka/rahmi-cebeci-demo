@@ -898,3 +898,15 @@ a.kart:hover .kart__ok{gap:11px}
 }
 .cekmece__alt{display:block;margin:12px 0 2px;font-size:.64rem;letter-spacing:.16em;text-transform:uppercase;font-weight:800;color:var(--bakir)}
 .cekmece a[aria-current]{color:var(--bakir);font-weight:800}
+
+/* ---------- mobil çekmece düzeltmeleri (25 Eyl) ----------
+   - demo şeridi (z130) çekmecenin başını ve kapat düğmesini örtüyordu
+   - ".cekmece a{border-left}" sıfırlaması telefon düğmesinin sol kenarını siliyordu
+   - dar ekranda panelin solunda sayfanın göründüğü şerit kalıyordu: panel tam genişlik */
+.cekmece{z-index:140}
+.cekmece a.dgm{border:1px solid transparent}
+.cekmece a.dgm--iki{border-color:var(--cizgi-2);background:transparent}
+.cekmece a.dgm--iki:hover{border-color:var(--petrol);background:var(--petrol-yikama)}
+@media (max-width:560px){
+  .cekmece__panel{width:100%;border-left:0}
+}
