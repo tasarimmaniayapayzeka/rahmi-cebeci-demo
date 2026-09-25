@@ -26,9 +26,9 @@ module.exports = {
       <img src="${r}varliklar/gorsel/sorun-hacim-kaybi-ve-sarkma.webp" width="1400" height="788" alt="Elmacık ve çene hattı belirgin bir kadın yüzünün yumuşak ışıklı yan portresi" loading="eager">
       <div class="g-isin"></div>
       <span class="g-ainot">Görsel yapay zekâ ile üretilmiştir</span>
-      <button class="g-nokta" data-gn="ust" style="--x:35%;--y:25%" aria-label="Şakak ve göz çevresi"><span data-ad="Şakak"></span></button>
-      <button class="g-nokta" data-gn="orta" style="--x:31%;--y:42%" aria-label="Elmacık"><span data-ad="Elmacık"></span></button>
-      <button class="g-nokta" data-gn="alt" style="--x:35%;--y:55%" aria-label="Çene hattı"><span data-ad="Çene hattı"></span></button>
+      <button class="g-nokta" data-gn="ust" style="--x:57%;--y:18%" aria-label="Şakak ve göz çevresi"><span data-ad="Şakak"></span></button>
+      <button class="g-nokta" data-gn="orta" style="--x:53%;--y:27%" aria-label="Elmacık"><span data-ad="Elmacık"></span></button>
+      <button class="g-nokta" data-gn="alt" style="--x:53%;--y:35%" aria-label="Çene hattı"><span data-ad="Çene hattı"></span></button>
       <div class="g-hud" data-ghud><b>Destek haritası</b><div class="g-cizgi"></div><span>Bir noktaya dokunun, o bölgenin notu açılsın</span></div>
     </div>
   </div>

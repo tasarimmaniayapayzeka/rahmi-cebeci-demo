@@ -26,9 +26,9 @@ module.exports = {
       <img src="${r}varliklar/gorsel/sorun-mimik-cizgileri.webp" width="1400" height="788" alt="Göz kenarında hafif mimik çizgileri bulunan, gülümseyen bir kadın yüzü" loading="eager">
       <div class="g-isin"></div>
       <span class="g-ainot">Görsel yapay zekâ ile üretilmiştir</span>
-      <button class="g-nokta" data-gn="ust" style="--x:68%;--y:22%" aria-label="Alın ve kaş arası"><span data-ad="Alın"></span></button>
-      <button class="g-nokta" data-gn="orta" style="--x:66%;--y:40%" aria-label="Göz kenarı"><span data-ad="Göz kenarı"></span></button>
-      <button class="g-nokta" data-gn="alt" style="--x:65%;--y:54%" aria-label="Dudak çevresi"><span data-ad="Dudak çevresi"></span></button>
+      <button class="g-nokta" data-gn="ust" style="--x:23%;--y:13%" aria-label="Alın ve kaş arası"><span data-ad="Alın"></span></button>
+      <button class="g-nokta" data-gn="orta" style="--x:51%;--y:29%" aria-label="Göz kenarı"><span data-ad="Göz kenarı"></span></button>
+      <button class="g-nokta" data-gn="alt" style="--x:40%;--y:69%" aria-label="Dudak çevresi"><span data-ad="Dudak çevresi"></span></button>
       <div class="g-hud" data-ghud><b>Mimik haritası</b><div class="g-cizgi"></div><span>Bir noktaya dokunun, o bölgenin notu açılsın</span></div>
     </div>
   </div>

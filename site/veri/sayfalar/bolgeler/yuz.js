@@ -20,15 +20,15 @@ module.exports = {
         <a class="dgm dgm--bir" href="${r}iletisim/">Randevu talebi</a>
         <a class="dgm dgm--iki" href="#butun">Planlama nasıl yapılır? ↓</a>
       </div>
-      <div class="g-tikler"><span><i></i>Uygulamayı hekim yapar</span><span><i></i>Adım adım plan</span><span><i></i>Kontrol randevusu dâhil</span></div>
+      <div class="g-tikler"><span><i></i>Uygulamayı hekim yapar</span><span><i></i>Adım adım plan</span><span><i></i>Kontrol randevusu planın içinde</span></div>
     </div>
     <div class="g-tarama" data-gr>
       <img src="${r}varliklar/gorsel/bolge-yuz.webp" width="1400" height="788" alt="Sade bir fonda önden bakan, doğal görünümlü bir kadın yüzü" loading="eager">
       <div class="g-isin"></div>
       <span class="g-ainot">Görsel yapay zekâ ile üretilmiştir</span>
-      <button class="g-nokta" data-gn="ust" style="--x:50%;--y:22%" aria-label="Üst yüz"><span data-ad="Üst yüz"></span></button>
-      <button class="g-nokta" data-gn="orta" style="--x:45%;--y:40%" aria-label="Orta yüz"><span data-ad="Orta yüz"></span></button>
-      <button class="g-nokta" data-gn="alt" style="--x:50%;--y:54%" aria-label="Alt yüz"><span data-ad="Alt yüz"></span></button>
+      <button class="g-nokta" data-gn="ust" style="--x:50%;--y:13%" aria-label="Üst yüz"><span data-ad="Üst yüz"></span></button>
+      <button class="g-nokta" data-gn="orta" style="--x:44%;--y:29%" aria-label="Orta yüz"><span data-ad="Orta yüz"></span></button>
+      <button class="g-nokta" data-gn="alt" style="--x:50%;--y:38%" aria-label="Alt yüz"><span data-ad="Alt yüz"></span></button>
       <div class="g-hud" data-ghud><b>Üç bölge birbirine yaslanır</b><div class="g-cizgi"></div><span>Bir noktaya dokunun; o bölgenin yüzde neyi belirlediğini görün.</span></div>
     </div>
   </div>

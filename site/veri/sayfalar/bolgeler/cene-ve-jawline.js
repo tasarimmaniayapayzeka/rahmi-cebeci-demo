@@ -20,7 +20,7 @@ module.exports = {
         <a class="dgm dgm--bir" href="${r}iletisim/">Randevu talebi</a>
         <a class="dgm dgm--iki" href="#belirleyen">Dört etken ↓</a>
       </div>
-      <div class="g-tikler"><span><i></i>Uygulamayı hekim yapar</span><span><i></i>Adım adım plan</span><span><i></i>Kontrol randevusu dâhil</span></div>
+      <div class="g-tikler"><span><i></i>Uygulamayı hekim yapar</span><span><i></i>Adım adım plan</span><span><i></i>Kontrol randevusu planın içinde</span></div>
     </div>
     <div class="g-tarama" data-gr>
       <img src="${r}varliklar/gorsel/bolge-cene-ve-jawline.webp" width="1400" height="788" alt="Çene hattı belirgin bir kadının yandan yakın plan görünümü" loading="eager">

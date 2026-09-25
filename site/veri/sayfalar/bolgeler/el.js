@@ -20,7 +20,7 @@ module.exports = {
         <a class="dgm dgm--bir" href="${r}iletisim/">Randevu talebi</a>
         <a class="dgm dgm--iki" href="#neden">Ellerde ne değişir? ↓</a>
       </div>
-      <div class="g-tikler"><span><i></i>Uygulamayı hekim yapar</span><span><i></i>Hacim ve leke ayrı günlerde</span><span><i></i>Kontrol randevusu dâhil</span></div>
+      <div class="g-tikler"><span><i></i>Uygulamayı hekim yapar</span><span><i></i>Hacim ve leke ayrı günlerde</span><span><i></i>Kontrol randevusu planın içinde</span></div>
     </div>
     <div class="g-tarama" data-gr>
       <img src="${r}varliklar/gorsel/bolge-el.webp" width="1400" height="788" alt="Ellerin sırt yüzünü gösteren üç boyutlu stilize görsel" loading="eager">

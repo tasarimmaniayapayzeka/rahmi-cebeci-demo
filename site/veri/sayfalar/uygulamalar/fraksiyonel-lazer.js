@@ -107,7 +107,7 @@ module.exports = {
       <div class="g-kutu g-b2 g-kutu--cta" data-gr><h3>Takviminize uygun bir plan kuralım</h3><p>Derinlik, iyileşmeye ayırabileceğiniz günler konuşulmadan seçilmez.</p><a class="dgm dgm--altin" href="${r}iletisim/">Randevu talebi</a></div>
       <div class="kutu kutu--acil g-b4" data-gr>
         <b>Kontrol gününü beklemeyin</b>
-        <p>Günler geçtikçe artan ağrı, yayılan kızarıklık ya da şişlik, sarı kabuk veya akıntı, ateş, küme hâlinde su toplaması ya da kapanmayan açık bir alan fark ederseniz ${S.iletisim.tel} numarasından bize ulaşın; ulaşamıyorsanız en yakın acil servise gidin.</p>
+        <p>Günler geçtikçe artan ağrı, yayılan kızarıklık ya da şişlik, sarı kabuk veya akıntı, ateş, küme hâlinde su toplaması ya da kapanmayan açık bir alan fark ederseniz ${S.iletisim.tel} numarasından bize ulaşın; ulaşamıyorsanız <b>112</b>’yi arayın ya da en yakın acil servise gidin.</p>
       </div>
     </div>
   </div>

@@ -97,7 +97,7 @@ module.exports = {
       <div class="g-kutu g-b2 g-kutu--cta" data-gr style="--d:140ms"><h3>Sırayı birlikte kuralım</h3><p>Plan, cildinizin yağlanma eğilimi görüldükten sonra kurulur.</p><a class="dgm dgm--altin" href="${r}iletisim/">Randevu talebi</a></div>
       <div class="kutu kutu--acil g-b6" data-gr>
         <b>Ne zaman hemen haber vermelisiniz?</b>
-        <p>Seanstan sonra kızarıklık azalacağına yayılıyorsa, ağrı artıyorsa, deride su toplaması, açık yara, akıntı ya da ateş fark ederseniz bekleyip görmeyin. ${S.iletisim.tel} numarasından bize ulaşın; telefonla ulaşamıyorsanız en yakın acil servise gidin.</p>
+        <p>Seanstan sonra kızarıklık azalacağına yayılıyorsa, ağrı artıyorsa, deride su toplaması, açık yara, akıntı ya da ateş fark ederseniz bekleyip görmeyin. ${S.iletisim.tel} numarasından bize ulaşın; telefonla ulaşamıyorsanız <b>112</b>’yi arayın ya da en yakın acil servise gidin.</p>
       </div>
     </div>
   </div>

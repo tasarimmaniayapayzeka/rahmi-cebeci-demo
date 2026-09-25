@@ -42,9 +42,9 @@ module.exports = {
       <img src="${r}varliklar/gorsel/grup-cilt-bakimi.webp" width="1600" height="900" alt="Yüze jel kıvamında bakım ürünü uygulanırken çekilmiş sakin bir kare" loading="eager">
       <div class="g-isin"></div>
       <span class="g-ainot">Görsel yapay zekâ ile üretilmiştir</span>
-      <button class="g-nokta" data-gn="ust" style="--x:35%;--y:25%" aria-label="Üst yüz"><span data-ad="Üst yüz"></span></button>
-      <button class="g-nokta" data-gn="orta" style="--x:31%;--y:42%" aria-label="Orta yüz"><span data-ad="Orta yüz"></span></button>
-      <button class="g-nokta" data-gn="alt" style="--x:35%;--y:55%" aria-label="Alt yüz"><span data-ad="Alt yüz"></span></button>
+      <button class="g-nokta" data-gn="ust" style="--x:66%;--y:21%" aria-label="Üst yüz"><span data-ad="Üst yüz"></span></button>
+      <button class="g-nokta" data-gn="orta" style="--x:62%;--y:30%" aria-label="Orta yüz"><span data-ad="Orta yüz"></span></button>
+      <button class="g-nokta" data-gn="alt" style="--x:56%;--y:37%" aria-label="Alt yüz"><span data-ad="Alt yüz"></span></button>
       <div class="g-hud" data-ghud><b>Yüz haritası</b><div class="g-cizgi"></div><span>Bir noktaya dokunun, o bölgenin notu açılsın</span></div>
     </div>
   </div>
