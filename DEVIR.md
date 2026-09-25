@@ -32,6 +32,10 @@ Pages 1-2 dk gecikir; canlıyı dışarıdan doğrula. Yerel önizleme: `node si
 - E-posta müşteriden geldi: **info@rahmicebeci.com.tr** (site.js).
 - Cadde adı müşteriyle teyit edildi: **Ebuzziya** (çift z), site.js düzeltildi.
 
+## Metin özgünlüğü (Salvera ile karşılaştırma)
+
+`node site/benzerlik.js` — iki sitenin görünen metnini karşılaştırır. Son ölçüm: 8 kelimelik ortak dizi **%0,0**, 5 kelimelik **%1,4** (yalnız kanun/yönetmelik adları ve uygulama/bölge adları), birebir aynı cümle **0 / 3722**. Yeni metin eklendikten sonra tekrar çalıştır; 8 kelime oranı %0,3 üstüne çıkmamalı.
+
 ## Hekim onayı alınanlar (25 Eyl 2026)
 
 ✅ Aşağıdaki süre ve sayılar **hekim tarafından teyit edildi**, sayfalarda olduğu gibi kalır:
