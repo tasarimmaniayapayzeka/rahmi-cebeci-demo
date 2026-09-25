@@ -1,5 +1,5 @@
 const S = require('../site');
-const YH = require('../parcalar/yuz-harita');
+const BS = require('../parcalar/bolge-serit');
 const OZ = require('../parcalar/uygulama-ozet');
 
 /* Ana sayfa — molekül hero, öne çıkan dövme silme kartı, süreç akışı,
@@ -223,21 +223,15 @@ module.exports = {
   </div>
 </section>
 
-<!-- ═════════ YÜZ HARİTASI ═════════ -->
+<!-- ═════════ BÖLGE ŞERİDİ ═════════ -->
 <section class="bolum">
   <div class="sar">
     <div class="bolum-bas" data-reveal>
       <p class="etiket">Bölgeler</p>
-      <h2>Haritada bir bölge seçin</h2>
-      <p class="giris">Her bölgenin deri kalınlığı, damar yapısı ve kas hareketi farklıdır; aynı uygulama bu yüzden her bölgede aynı biçimde yapılmaz. Haritadaki noktalardan ya da yandaki listeden bir bölgeye dokunarak başlayın.</p>
+      <h2>Sekiz bölge, sekiz ayrı plan</h2>
+      <p class="giris">Deri kalınlığı, damar ağı ve kas hareketi bölgeden bölgeye değişir; dudakta uygun olan miktar göz çevresine taşınmaz. Bir şeride dokunun ya da imleci üzerine getirin: o bölgenin nasıl ele alındığı ve hangi uygulamaların konuşulduğu açılır.</p>
     </div>
-    <div class="yuz-harita" data-yuz-harita data-reveal>
-      <div class="yuz-harita__sahne">${YH.sahneUret(r)}</div>
-      <div class="yuz-harita__sag">
-        <div class="yuz-harita__liste" role="group" aria-label="Bölge seçimi">${YH.listeUret()}</div>
-        ${YH.panelUret(r)}
-      </div>
-    </div>
+    <div data-reveal>${BS.seritUret(r)}</div>
   </div>
 </section>
 

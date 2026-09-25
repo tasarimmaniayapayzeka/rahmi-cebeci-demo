@@ -73,4 +73,4 @@ function panelUret(r) {
   }).join('\n');
 }
 
-module.exports = { sahneUret, listeUret, panelUret, BOLGELER };
+module.exports = { sahneUret, listeUret, panelUret, BOLGELER, BOLGE_UYGULAMA };

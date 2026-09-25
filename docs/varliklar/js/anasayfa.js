@@ -4,7 +4,7 @@
       SVG + CSS animasyon, sırayla ya da tıklayınca.
    2. Kayarak açılma — IntersectionObserver, kademeli gecikme.
    3. Sayaç bandı — görününce sayılar yukarı sayar.
-   4. Yüz haritası — SVG nokta ↔ liste ↔ bilgi kartı senkronu.
+   4. Bölge şeridi — genişleyen dikey paneller, otomatik ilerleme.
    5. SSS filtresi — kategori düğmeleri.
    6. 3B kart eğimi — yalnız fare (pointer:fine), ≤6°.
    Hepsi prefers-reduced-motion'a saygılı.
@@ -85,30 +85,49 @@
     sayaclar.forEach(function (e) { io.observe(e); });
   })();
 
-  /* ---------- 4. YÜZ HARİTASI ---------- */
+  /* ---------- 4. BÖLGE ŞERİDİ ----------
+     Seçilen şerit genişler. Görünürken 6 sn'de bir kendi ilerler;
+     fare üstündeyken durur, tıklanınca otomatik ilerleme kapanır.
+     Masaüstünde fareyle üzerine gelmek de seçer. */
   (function () {
-    var kap = document.querySelector('[data-yuz-harita]');
-    if (!kap) return;
-    var noktalar = kap.querySelectorAll('[data-nokta]');
-    var liste = kap.querySelectorAll('[data-liste]');
-    var kartlar = kap.querySelectorAll('[data-kart]');
-
-    function sec(slug) {
-      noktalar.forEach(function (n) { n.dataset.secili = n.dataset.nokta === slug ? '1' : ''; });
-      liste.forEach(function (b) { b.setAttribute('aria-pressed', b.dataset.liste === slug ? 'true' : 'false'); });
-      kartlar.forEach(function (k) {
-        var acik = k.dataset.kart === slug;
-        k.hidden = !acik;
-        // yeniden akıştan sonra geçişin oynaması için çift kare
-        if (acik) { k.removeAttribute('data-acik'); requestAnimationFrame(function () { requestAnimationFrame(function () { k.setAttribute('data-acik', '1'); }); }); }
+    var kok = document.querySelector('[data-serit]');
+    if (!kok) return;
+    var ogeler = [].slice.call(kok.querySelectorAll('[data-serit-oge]'));
+    var bar = kok.querySelector('.serit__ilerleme i');
+    var SURE = 6000, i = 0, zaman = null, durdu = false, gorunur = false;
+    var fare = window.matchMedia('(pointer:fine)').matches;
+    function ac(n) {
+      i = n;
+      ogeler.forEach(function (o, k) {
+        var a = k === n;
+        if (a) o.setAttribute('data-acik', ''); else o.removeAttribute('data-acik');
+        o.querySelector('.serit__bas').setAttribute('aria-selected', a ? 'true' : 'false');
       });
+      if (bar) { bar.style.animation = 'none'; void bar.offsetWidth; bar.style.animation = ''; }
     }
-    noktalar.forEach(function (n) {
-      n.addEventListener('click', function () { sec(n.dataset.nokta); });
-      n.addEventListener('keydown', function (e) { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); sec(n.dataset.nokta); } });
+    function dur() { if (zaman) { clearInterval(zaman); zaman = null; } kok.classList.remove('oynuyor'); }
+    function bas() {
+      if (AZALT || durdu || !gorunur) return;
+      dur(); kok.classList.add('oynuyor');
+      if (bar) { bar.style.animation = 'none'; void bar.offsetWidth; bar.style.animation = ''; }
+      zaman = setInterval(function () { ac((i + 1) % ogeler.length); }, SURE);
+    }
+    ogeler.forEach(function (o, k) {
+      o.querySelector('.serit__bas').addEventListener('click', function () { durdu = true; dur(); ac(k); });
+      if (fare) o.addEventListener('mouseenter', function () { if (k !== i) ac(k); });
     });
-    liste.forEach(function (b) { b.addEventListener('click', function () { sec(b.dataset.liste); }); });
-    sec('yuz');
+    kok.addEventListener('keydown', function (e) {
+      if (e.key !== 'ArrowRight' && e.key !== 'ArrowLeft' && e.key !== 'ArrowDown' && e.key !== 'ArrowUp') return;
+      e.preventDefault(); durdu = true; dur();
+      var n = (i + (e.key === 'ArrowRight' || e.key === 'ArrowDown' ? 1 : -1) + ogeler.length) % ogeler.length;
+      ac(n); ogeler[n].querySelector('.serit__bas').focus();
+    });
+    kok.addEventListener('mouseenter', dur);
+    kok.addEventListener('mouseleave', bas);
+    ac(0);
+    if ('IntersectionObserver' in window) {
+      new IntersectionObserver(function (e) { gorunur = e[0].isIntersecting; if (gorunur) bas(); else dur(); }, { threshold: 0.25 }).observe(kok);
+    }
   })();
 
   /* ---------- 5. SSS FİLTRESİ ---------- */
