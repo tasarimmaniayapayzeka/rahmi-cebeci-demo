@@ -58,6 +58,18 @@ Küçük, ertelenen kozmetik bulgular: tiroid/tiroit tek yazıma indirilmedi; so
 - Canlıya alma: `site/sunucu/ASISTAN-KURULUM.md`. Kullanıcı kararı: sunucu tarafı PHP, servis OpenAI, **bu siteye ayrı anahtar**
   (Salvera anahtarı kullanılmaz). Anahtar `/home/<hesap>/rahmi-asistan-gizli.php` (webroot dışı, .gitignore'da).
 - `canli:true` olunca KVKK metnindeki asistan/yurt dışı aktarım paragrafları kendiliğinden değişir; hukukçu onayı gerekir.
+- Parçalar (25 Eyl): tanıtım ekranı (yalnız ana sayfa + dışarıdan geliş; `?asistan=tanitim` zorlar) · sesli mod
+  (Web Speech bas-konuş + cihaz sesiyle okuma) · hizmet/harita/kaynak kartları · 4 adımlı randevu akışı
+  (hizmet→gün→saat→iletişim; demo WhatsApp, canlı `iletisim-gonder.php` `bicim=json`) · 5 soruluk cilt eğilimi testi ·
+  paylaş (WhatsApp/e-posta/PDF=yazdır) · sayfaya özel öneri kartı (%50 kaydırma/25 sn) · fotoğrafla ön
+  değerlendirme (3 onay, EXIF silinir, `GÖZLEM:` satırı, puan/yüzde YOK) · telefon/e-posta/TC gizleme.
+- Bilerek YAPILMAYAN: güzellik çarkı/kupon/indirim (33075 Tanıtım Yönetmeliği), fotoğrafta yüzde/skor.
+- YÖNETİM PANELİ → ayrı ürün olarak **35-Asistan-Platformu**'nda yapılıyor (25 Eyl gece): lead, konuşma kayıtları,
+  denetim/erişim, ekip, tek/çoklu IP, iletişim bırakanlar + aç/kapa modüller. Bu sitenin 59 sayfası orada yerel
+  "rahmi" müşterisine aktarıldı (sağlık profili, kurumsal paket, randevu/uyum/fotoğraf açık). Geçiş adımları:
+  35'in `belgeler/KURULUM.md` §10 — sitede eski widget dosyaları yerine tek satır gömme kodu gelecek.
+  Konuşma kaydı başlayınca widget'taki "cihazınızdan çıkmaz / kaydetmez" cümleleri ve KVKK metni DEĞİŞMELİ
+  (platformdaki Uyum Merkezi bilgilendirme metni hazır; kayıt onaysız, dürüst bilgi notuyla — kullanıcı kararı).
 
 ## Müşteriden beklenenler
 
