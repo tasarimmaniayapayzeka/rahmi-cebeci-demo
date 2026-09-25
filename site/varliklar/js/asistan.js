@@ -203,9 +203,6 @@
         '<textarea id="asis-girdi" rows="1" maxlength="' + SINIR_KARAKTER + '" placeholder="Sorunuzu yazın…" autocomplete="off"></textarea>' +
         '<button class="asis__gonder" type="submit" aria-label="Gönder">' + ik.gonder + '</button>' +
       '</form>' +
-      '<p class="asis__not">' + (CANLI
-        ? 'Yanıtlar yapay zekâ ile üretilir, hata içerebilir ve muayenenin yerini tutmaz. Sağlık, kimlik ya da iletişim bilgisi yazmayın.'
-        : 'Yanıtlar sitedeki bilgilerden gelir ve muayenenin yerini tutmaz; yazdıklarınız cihazınızdan çıkmaz.') + '</p>' +
     '</section>';
   document.body.appendChild(kok);
 
@@ -224,7 +221,10 @@
     return d;
   }
   function karsila() {
-    ekle('a', '<p>Merhaba, ben ' + kacir(V.marka) + ' muayenehanesinin ön bilgi asistanıyım. Uygulamalar, bölgeler, cilt sorunları, randevu ve ulaşımla ilgili sorularınızı yanıtlayıp sizi doğru sayfaya yönlendirebilirim.</p>');
+    ekle('a', '<p>Merhaba, ben ' + kacir(V.marka) + ' muayenehanesinin ön bilgi asistanıyım. Uygulamalar, bölgeler, cilt sorunları, randevu ve ulaşımla ilgili sorularınızı yanıtlayıp sizi doğru sayfaya yönlendirebilirim.</p>' +
+      '<p class="asis__uyari">' + (CANLI
+        ? 'Yanıtlar yapay zekâ ile üretilir, hata içerebilir ve muayenenin yerini tutmaz. Sağlık, kimlik ya da iletişim bilgisi yazmayın.'
+        : 'Yanıtlar sitedeki bilgilerden gelir ve muayenenin yerini tutmaz; yazdıklarınız cihazınızdan çıkmaz.') + '</p>');
     ekle('oneri', ONERI.map(function (s) { return '<button type="button">' + kacir(s) + '</button>'; }).join(''));
   }
   function onayIste(sonra) {
@@ -239,20 +239,73 @@
     });
   }
 
+  /* ---------- mobil: tam ekran panel ----------
+     - arka sayfa sabitlenir (iOS'ta overflow:hidden yetmez; body fixed + kaydırma konumu saklanır)
+     - panel yüksekliği görünen alana (visualViewport) eşitlenir: klavye açılınca ya da
+       adres çubuğu gizlenip göründüğünde yazı kutusu ekranın dışına kaçmaz
+     - açılışta yazı kutusuna otomatik odak YOK: klavye kendiliğinden açılıp sohbeti örtüyordu */
+  var MOBIL = window.matchMedia('(max-width: 820px)');
+  var kilitY = 0, kilitli = false;
+  function kilitle() {
+    if (!MOBIL.matches || kilitli) return;
+    kilitY = window.scrollY || window.pageYOffset || 0;
+    var b = document.body.style;
+    b.position = 'fixed'; b.top = -kilitY + 'px'; b.left = '0'; b.right = '0'; b.width = '100%';
+    document.documentElement.classList.add('asis-kilit');
+    kilitli = true;
+  }
+  function kilitAc() {
+    if (!kilitli) return;
+    var b = document.body.style;
+    b.position = ''; b.top = ''; b.left = ''; b.right = ''; b.width = '';
+    document.documentElement.classList.remove('asis-kilit');
+    /* sitede scroll-behavior:smooth var; geri dönüş animasyonsuz olmalı */
+    var h = document.documentElement, eski = h.style.scrollBehavior;
+    h.style.scrollBehavior = 'auto';
+    window.scrollTo(0, kilitY);
+    h.style.scrollBehavior = eski;
+    kilitli = false;
+  }
+  function alanAyarla() {
+    if (panel.hidden || !MOBIL.matches || !window.visualViewport) { panel.style.height = ''; panel.style.top = ''; return; }
+    var vv = window.visualViewport;
+    panel.style.height = Math.round(vv.height) + 'px';
+    panel.style.top = Math.round(vv.offsetTop) + 'px';
+  }
+  if (window.visualViewport) {
+    window.visualViewport.addEventListener('resize', alanAyarla);
+    window.visualViewport.addEventListener('scroll', alanAyarla);
+  }
+  /* klavye açılınca son mesaj görünür kalsın */
+  girdi.addEventListener('focus', function () {
+    if (MOBIL.matches) setTimeout(function () { alanAyarla(); sohbetAlani.scrollTop = sohbetAlani.scrollHeight; }, 300);
+  });
+
   function ac() {
     sonAcan = document.activeElement;
     panel.hidden = false;
     kok.classList.add('asis--acik');
+    kilitle();
+    alanAyarla();
     document.querySelectorAll('[data-asistan-ac]').forEach(function (b) { b.setAttribute('aria-expanded', 'true'); });
     if (!sohbetAlani.children.length) karsila();
-    setTimeout(function () { girdi.focus(); }, 60);
+    if (!MOBIL.matches) setTimeout(function () { girdi.focus(); }, 60);
+    else panel.querySelector('[data-asis-kapa]').focus({ preventScroll: true });
   }
   function kapa() {
     panel.hidden = true;
     kok.classList.remove('asis--acik');
+    kilitAc();
+    alanAyarla();
     document.querySelectorAll('[data-asistan-ac]').forEach(function (b) { b.setAttribute('aria-expanded', 'false'); });
-    if (sonAcan && sonAcan.focus) sonAcan.focus();
+    if (sonAcan && sonAcan.focus) sonAcan.focus({ preventScroll: true });
   }
+  /* ekran döndürülür ya da genişlik değişirse kilit durumu güncellenir */
+  (MOBIL.addEventListener ? MOBIL.addEventListener.bind(MOBIL, 'change') : MOBIL.addListener.bind(MOBIL))(function () {
+    if (panel.hidden) return;
+    if (MOBIL.matches) kilitle(); else kilitAc();
+    alanAyarla();
+  });
   document.addEventListener('click', function (e) {
     var t = e.target;
     if (t.closest('[data-asistan-ac]')) { e.preventDefault(); panel.hidden ? ac() : kapa(); }

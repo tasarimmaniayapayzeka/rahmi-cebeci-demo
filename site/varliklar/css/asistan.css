@@ -148,3 +148,26 @@
 .asis__harita-alt a{flex:1;min-width:120px;text-align:center;padding:8px 10px;border-radius:var(--r-sm);font-size:.78rem;font-weight:800;
   text-decoration:none;border:1px solid var(--murekkep);color:var(--murekkep)}
 .asis__harita-alt a:first-child{background:var(--murekkep);color:var(--beyaz)}
+
+/* ---------- sohbet alanı en geniş hâlinde (25 Eyl): sabit parçalar inceltildi ----------
+   başlık 81→~50, hızlı satır 60→~34, not sohbetin içine taşındı; masaüstünde panel ekran boyu */
+.asis__bas{padding:9px 10px 9px 16px;border-bottom-width:1px}
+.asis__ad{font-size:.98rem}
+.asis__alt{margin-top:1px;font-size:.62rem}
+.asis__ikon{width:34px;height:34px}
+.asis__hizli a{flex-direction:row;gap:6px;padding:8px 4px;font-size:.72rem}
+.asis__hizli svg{width:15px;height:15px}
+.asis__akis{padding:14px 14px 10px;gap:10px;scrollbar-width:thin;scrollbar-color:rgba(133,100,28,.45) transparent}
+.asis__akis::-webkit-scrollbar{width:6px}
+.asis__akis::-webkit-scrollbar-thumb{background:rgba(133,100,28,.45);border-radius:6px}
+.asis__form{margin:6px 10px 10px}
+.asis__uyari{margin-top:6px!important;font-size:.74rem;line-height:1.45;color:var(--sessiz)}
+.asis__kart-g{height:84px}
+@media (min-width:821px){
+  .asis__panel{width:min(420px,calc(100vw - 44px));height:min(820px,calc(100vh - 44px))}
+}
+@media (max-width:820px){
+  .asis__panel{padding-bottom:env(safe-area-inset-bottom)}
+}
+@media (max-width:820px){html.asis-kilit,html.asis-kilit body{overflow:hidden}}
+@media (max-width:820px){.asis__panel{overscroll-behavior:contain}.asis__akis{-webkit-overflow-scrolling:touch;touch-action:pan-y}.asis__kartlar--kay{touch-action:pan-x pan-y}}
