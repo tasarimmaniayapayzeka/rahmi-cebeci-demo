@@ -89,7 +89,7 @@ module.exports = {
 <p>Yüzde iltihaplı sivilce, uçuk, alevlenmiş egzama, güneş yanığı ya da açık yara varken iğne ve ısı iyileşmeyi bozabileceği için önce deri toparlanır. Akne için isotretinoin kullandıysanız bırakma tarihinizi söyleyin; ne kadar bekleneceğine hekim karar verir.</p>
 <p>Kabarık iz ya da keloid yapma eğilimi, vitiligo gibi renk kaybıyla giden tablolar, gebelik ve emzirme, şekeri düzensiz seyreden diyabet, bağışıklığı baskılayan ilaçlar, kanama eğilimi ve kan sulandırıcı kullanımı planı değiştirir. Altın, nikel gibi metallere, uyuşturucu kremlere ya da ilaçlara karşı bilinen duyarlılığınızı işlemden önce bildirin.</p>
       </div>
-      <div class="g-kutu g-b2 g-kutu--gorsel" data-gr style="--d:70ms"><img src="${r}varliklar/gorsel/uyg-altin-igne-radyofrekans-2.webp" alt="Yanak cildinde belirgin gözeneklerin yumuşak ışıkta yakın plan görünümü" loading="lazy"><span class="g-ainot">Temsilî görsel · yapay zekâ ile üretildi</span></div>
+      <div class="g-kutu g-b2 g-kutu--gorsel" data-gr style="--d:70ms"><img src="${r}varliklar/gorsel/uyg-altin-igne-radyofrekans-2.webp" alt="Deri altındaki kolajen liflerini simgeleyen örgü" loading="lazy"><span class="g-ainot">Temsilî görsel · yapay zekâ ile üretildi</span></div>
       <div class="g-kutu g-b2 g-kutu--gece" data-gr><span class="g-ket">İlke</span><p>"İzin adını koymadan yöntem seçmiyoruz."</p></div>
       <div class="g-kutu g-b2" data-gr style="--d:70ms">
         <span class="g-ket">Seans sonrası</span>

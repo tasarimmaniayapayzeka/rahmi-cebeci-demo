@@ -33,6 +33,11 @@ for (const s of sayfalar) {
     if (u.endsWith('/')) hedef = path.join(hedef, 'index.html');
     if (!fs.existsSync(hedef)) (/\.(webp|png|svg|jpe?g)$/.test(u) ? eksik : kirik).add(u + '  ←  ' + ad);
   }
+  /* veri özniteliklerine gömülü görsel yolları (data-gg vb.) — src/href dışında kalanlar */
+  for (const g of h.matchAll(/varliklar\/(?:gorsel|foto)\/[a-z0-9-]+\.(?:webp|png|jpe?g)/g)) {
+    const yol = g[0];
+    if (!fs.existsSync(path.join(KOK, yol))) eksik.add(yol + '  ←  ' + ad);
+  }
   const metin = h.replace(/<script[\s\S]*?<\/script>/g, ' ');
   const k = metin.match(KALINTI); if (k) kalinti.push(ad + ': ' + k[0]);
   const y = h.match(YASAK); if (y) yasak.push(ad + ': ' + y[0]);

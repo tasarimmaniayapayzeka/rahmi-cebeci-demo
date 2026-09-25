@@ -23,7 +23,7 @@ module.exports = {
       <div class="g-tikler"><span><i></i>Önce mürekkep ve deri değerlendirilir</span><span><i></i>Muayene ve plan hekimde</span><span><i></i>Gerekirse test atışı</span></div>
     </div>
     <div class="g-tarama" data-gr>
-      <img src="${r}varliklar/gorsel/sorun-dovme-ve-kalici-makyaj.webp" width="1400" height="788" alt="Ön kolda solmaya başlamış ince çizgili bir dövmenin yakın görünümü" loading="eager">
+      <img src="${r}varliklar/gorsel/sorun-dovme-ve-kalici-makyaj.webp" width="1400" height="788" alt="Lazer uygulamasında kullanılan başlığın yakın görünümü" loading="eager">
       <div class="g-isin"></div>
       <span class="g-ainot">Temsilî görsel · yapay zekâ ile üretildi</span>
     </div>

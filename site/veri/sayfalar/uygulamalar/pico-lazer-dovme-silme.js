@@ -104,7 +104,7 @@ module.exports = {
 <p>Dövmenin bulunduğu deride güneş yanığı, açık yara, iltihap ya da alevlenmiş egzama varsa önce deri toparlanır; lazer iyileşmeyi uzatabilir. Dövmede daha önce mürekkebe bağlı kaşıntı, kabarma ya da sertleşme olduysa lazer bu tepkiyi artırabilir.</p>
 <p>Kabarık iz ya da keloid yapma eğilimi, vitiligo gibi renk kaybıyla giden tablolar, gebelik ve emzirme, kontrolsüz diyabet ve yara iyileşmesini bozan durumlar uygulamayı engeller ya da erteler. Alan içindeki benlere ve incelenmemiş pigmentli lekelere atım yapılmaz; önce büyütmeli olarak bakılır. Akne için ağızdan ilaç (isotretinoin) kullandıysanız ya da bölgeye yakın zamanda başka bir işlem yapıldıysa bir süre beklenir.</p>
       </div>
-      <div class="g-kutu g-b2 g-kutu--gorsel" data-gr style="--d:70ms"><img src="${r}varliklar/gorsel/uyg-pico-lazer-dovme-silme-2.webp" alt="Ön kol derisinde ince çizgili siyah dövmenin yumuşak ışıkta yakın planı" loading="lazy"><span class="g-ainot">Temsilî görsel · yapay zekâ ile üretildi</span></div>
+      <div class="g-kutu g-b2 g-kutu--gorsel" data-gr style="--d:70ms"><img src="${r}varliklar/gorsel/uyg-pico-lazer-dovme-silme-2.webp" alt="Kol iç yüzündeki deri; dövmenin sık yapıldığı alanlardan biri" loading="lazy"><span class="g-ainot">Temsilî görsel · yapay zekâ ile üretildi</span></div>
       <div class="g-kutu g-b2 g-kutu--gece" data-gr><span class="g-ket">İlke</span><p>"Açılmayacağını öngördüğümüz bir dövme için seans dizisi başlatmıyoruz."</p></div>
       <div class="g-kutu g-b2" data-gr style="--d:70ms">
         <span class="g-ket">Sonrası</span>

@@ -88,7 +88,7 @@ module.exports = {
 <p>Bacakta belirgin varis, derin toplardamar pıhtısı öyküsü, nedeni bilinmeyen ödem ya da lipödem şüphesi varsa önce bu durumlar değerlendirilir; kalp veya böbrek kaynaklı ödemde uygulama yapılmaz. Kan sulandırıcı kullanıyorsanız ya da pıhtılaşma sorununuz varsa bunu belirtin; ilacınızı kendi başınıza bırakmayın. Mezoterapi ya da lipoliz içeriğine karşı daha önce aşırı duyarlılık yaşadıysanız mutlaka söyleyin.</p>
 <p>Cihaz basamağı için kalp pili ya da vücuda yerleştirilmiş başka bir elektronik cihaz, uygulama alanında metal implant, his kaybı olan bölgeler ve süren kanser tedavisi ayrıca değerlendirilir; bu durumlarda radyofrekans basamağı çoğu zaman plandan çıkarılır. Kontrolsüz şeker hastalığı ve bağışıklığı baskılayan tedavilerde karar, sizi izleyen hekimin görüşüyle verilir.</p>
       </div>
-      <div class="g-kutu g-b2 g-kutu--gorsel" data-gr style="--d:70ms"><img src="${r}varliklar/gorsel/uyg-selulit-gorunumu-2.webp" alt="Uyluk ve kalça hattının yandan, doğal ışıkta görünümü" loading="lazy"><span class="g-ainot">Temsilî görsel · yapay zekâ ile üretildi</span></div>
+      <div class="g-kutu g-b2 g-kutu--gorsel" data-gr style="--d:70ms"><img src="${r}varliklar/gorsel/uyg-selulit-gorunumu-2.webp" alt="Işık alan kol ve vücut derisi" loading="lazy"><span class="g-ainot">Temsilî görsel · yapay zekâ ile üretildi</span></div>
       <div class="g-kutu g-b2 g-kutu--gece" data-gr><span class="g-ket">İlke</span><p>“Pürüzsüz bir yüzey değil, daha düzgün bir görünüm hedeflenir; beklenti buna göre kurulur.”</p></div>
       <div class="g-kutu g-b2" data-gr style="--d:70ms">
         <span class="g-ket">Seans sonrası</span>
