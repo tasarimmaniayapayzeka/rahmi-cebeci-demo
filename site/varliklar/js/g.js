@@ -112,7 +112,8 @@
   document.querySelectorAll('.g-mtab').forEach(function (t) {
     var etk = [].map.call(t.querySelectorAll('.g-mbas span'), function (s) { return s.textContent.trim(); });
     t.querySelectorAll('.g-msatir').forEach(function (s) {
-      if (s.dataset.gg) s.style.setProperty('--gg', 'url("' + s.dataset.gg + '")');
+      /* mutlak adres: göreli yol stil dosyasının klasörüne göre çözülüyordu, alt klasörde (GitHub Pages) görsel boş kalıyordu */
+      if (s.dataset.gg) s.style.setProperty('--gg', 'url("' + new URL(s.dataset.gg, location.href).href + '")');
       s.querySelectorAll('.g-hucre').forEach(function (h, i) { if (etk[i + 1]) h.setAttribute('data-etiket', etk[i + 1]); });
     });
   });

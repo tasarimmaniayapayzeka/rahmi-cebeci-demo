@@ -672,3 +672,7 @@ main:has(>.g-hero)>.sar{order:9}
 .izgara--2:has(>.kutu--uyari)>.kutu--uyari+.kutu--uyari{box-shadow:inset 1px 0 0 rgba(240,232,215,.1),inset 0 4px 0 #6B5A33}
 /* kemer çerçevede yapay zekâ etiketi kavisin dışına taşmasın: üst orta */
 .g-atlas-kap .g-ainot{left:50%;right:auto;top:26px;transform:translateX(-50%);white-space:nowrap}
+
+/* kart içeriği sola yaslı, tam genişlik (tablo satırının ortalama ayarı kartlara geçiyordu) */
+.g-msatir{align-items:stretch !important;text-align:left}
+.g-msatir>*{align-self:stretch}
