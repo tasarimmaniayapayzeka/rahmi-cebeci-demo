@@ -607,3 +607,57 @@ main:has(>.g-hero)>section:has(.g-sorgu){order:2}
 main:has(>.g-hero)>section:has(.g-bento){order:3}
 main:has(>.g-hero)>.g-son{order:8}
 main:has(>.g-hero)>.sar{order:9}
+
+
+/* ---------- 34 · ATLAS: sağda kemer çerçeve, solda ilerleme çizgili kat kartları ---------- */
+@media(min-width:960px){
+  .g-atlas-duzen{grid-template-columns:1.08fr .92fr}
+  .g-atlas-duzen>.g-atlas{order:2}
+}
+.g-atlas-kap{border-radius:260px 260px 26px 26px;border:0;background:#1C1B1E;
+  outline:1px solid rgba(217,183,90,.55);outline-offset:9px;box-shadow:0 40px 80px -40px rgba(20,18,14,.7)}
+.g-atlas-kap img{transition:transform 1.2s var(--ease)}
+.g-atlas:hover .g-atlas-kap img{transform:scale(1.04)}
+.g-rozetk{left:50%;right:auto;bottom:18px;transform:translateX(-50%);width:min(88%,380px);max-width:none;text-align:center;
+  background:rgba(20,20,22,.8);border:1px solid rgba(217,183,90,.35);border-radius:16px;backdrop-filter:blur(8px)}
+.g-rozetk b{color:var(--gece-bakir)}
+.g-rozetk span{color:#D8D1C4}
+@media(max-width:700px){.g-rozetk{transform:none;width:auto;left:auto;border-radius:0;background:#1C1B1E;border:0;text-align:left}}
+.g-atlas-duzen>div:not(.g-atlas){position:relative;padding-left:30px}
+.g-atlas-duzen>div:not(.g-atlas)::before{content:"";position:absolute;left:8px;top:6px;bottom:6px;width:1px;
+  background:linear-gradient(var(--gece-bakir),rgba(217,183,90,.15))}
+.g-atlas-duzen .g-katblok{position:relative;border:1px solid transparent;border-radius:20px;padding:22px 24px;margin-bottom:12px;
+  transition:background .45s var(--ease),border-color .45s,box-shadow .45s,opacity .45s}
+.g-atlas-duzen .g-katblok:first-child{padding-top:22px}
+.g-atlas-duzen .g-katblok::before{content:"";position:absolute;left:-28px;top:30px;width:13px;height:13px;border-radius:50%;
+  background:var(--buz);border:2px solid rgba(217,183,90,.5);transition:all .35s}
+.g-atlas-duzen .g-katblok[data-gkat]:not([data-akt]){opacity:.62}
+.g-atlas-duzen .g-katblok[data-akt]{background:var(--beyaz);border-color:var(--cizgi);box-shadow:0 24px 50px -32px rgba(20,18,14,.45);opacity:1}
+.g-atlas-duzen .g-katblok[data-akt]::before{background:var(--gece-bakir);border-color:var(--gece-bakir);box-shadow:0 0 0 5px rgba(217,183,90,.2)}
+.g-katblok .g-kno{display:inline-block;padding:5px 11px;border-radius:999px;background:#1C1B1E;color:var(--gece-bakir);
+  font-family:var(--font-govde);font-size:.66rem;font-weight:800;letter-spacing:.16em}
+.g-haplar a{border-color:rgba(217,183,90,.45);background:transparent}
+.g-haplar a:hover{background:#1C1B1E;color:var(--gece-bakir);border-color:#1C1B1E}
+
+/* ---------- 34 · UYGULAMA TABLOSU → görselli kart ızgarası ---------- */
+.g-matris{grid-template-columns:1fr !important}
+.g-onizle{display:none !important}
+.g-mtab{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:16px;border:0;background:none;overflow:visible;border-radius:0}
+.g-mbas{display:none !important}
+.g-msatir{display:flex !important;flex-direction:column;gap:10px;padding:0 0 18px !important;border:1px solid var(--cizgi) !important;
+  border-radius:20px;background:var(--beyaz);overflow:hidden;position:relative;
+  transition:transform .35s var(--ease),box-shadow .35s,border-color .35s}
+.g-msatir::before{content:"";display:block;height:150px;background:#1C1B1E var(--gg,none) center/cover no-repeat;
+  transition:transform .8s var(--ease)}
+.g-msatir:hover,.g-msatir[data-akt]{background:var(--beyaz)}
+.g-msatir:hover{transform:translateY(-5px);box-shadow:0 26px 50px -30px rgba(20,18,14,.5);border-color:rgba(217,183,90,.55) !important}
+.g-msatir h4{padding:0 18px;font-size:1.05rem}
+.g-msatir .g-hucre{padding:0 18px;font-size:.84rem !important;grid-column:auto !important}
+.g-msatir .g-hucre[data-etiket]::before{content:attr(data-etiket);display:block;font-size:.6rem;letter-spacing:.16em;text-transform:uppercase;
+  font-weight:800;color:var(--sessiz);margin-bottom:3px}
+.g-msatir .g-git{position:absolute;top:12px;right:12px;background:rgba(20,20,22,.7);border-color:rgba(217,183,90,.5) !important;
+  color:var(--gece-bakir) !important;backdrop-filter:blur(6px);grid-row:auto !important}
+.g-msatir:hover .g-git{background:var(--gece-bakir) !important;color:#1A1A1D !important;transform:rotate(-35deg)}
+.g-kcip--1{background:#F3EAD6;color:var(--bakir)}
+.g-kcip--2{background:#E9EEE6;color:#3F5A3A}
+.g-kcip--3{background:#EFE4EA;color:#6B3F58}

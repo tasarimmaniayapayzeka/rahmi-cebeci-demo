@@ -79,7 +79,11 @@
       katlar.forEach(function (b) {
         if (b.getBoundingClientRect().top <= orta) secilen = b;
       });
-      if (secilen !== aktifKat) { aktifKat = secilen; noktaSec(secilen.dataset.gkat); }
+      if (secilen !== aktifKat) {
+        aktifKat = secilen; noktaSec(secilen.dataset.gkat);
+        /* 34: okunan kat kartı öne çıkar */
+        katlar.forEach(function (b) { if (b === secilen) b.setAttribute('data-akt', ''); else b.removeAttribute('data-akt'); });
+      }
     };
     addEventListener('scroll', secKat, { passive: true });
     addEventListener('resize', secKat, { passive: true });
@@ -101,6 +105,16 @@
   }, { threshold: .1 });
   document.querySelectorAll('.g-kutu, .g-donutkap').forEach(function (k) {
     if (k.querySelector('[data-gyuzde],[data-gw]')) ioG.observe(k);
+  });
+
+  /* 34: tablo satırları kart olur — görsel satırın kendi data-gg'sinden,
+     hücre etiketleri tablo başlığından gelir (başlık satırı gizli) */
+  document.querySelectorAll('.g-mtab').forEach(function (t) {
+    var etk = [].map.call(t.querySelectorAll('.g-mbas span'), function (s) { return s.textContent.trim(); });
+    t.querySelectorAll('.g-msatir').forEach(function (s) {
+      if (s.dataset.gg) s.style.setProperty('--gg', 'url("' + s.dataset.gg + '")');
+      s.querySelectorAll('.g-hucre').forEach(function (h, i) { if (etk[i + 1]) h.setAttribute('data-etiket', etk[i + 1]); });
+    });
   });
 
   /* matris → önizleme */
