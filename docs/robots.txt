@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://tasarimmaniayapayzeka.github.io/rahmi-cebeci-demo/sitemap.xml

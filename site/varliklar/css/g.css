@@ -1,0 +1,470 @@
+/* ============================================================
+   G TASARIM SİSTEMİ — iç sayfa bileşenleri (g- öneki)
+   tokens.css üstüne gelir; eski site.css bileşenleriyle çakışmaz.
+   Kaynak: /tasarim-g/ konsepti (kullanıcı onayı, 11 Ağu 2026).
+   Davranışlar: varliklar/js/g.js (data-öznitelik sözleşmesi).
+   ============================================================ */
+:root{
+  --g-cy:#E6CF8E; --g-cy2:#B8912E; --g-gb:#D9B75A;
+  --g-z0:#111114; --g-camciz:rgba(240,232,215,.14);
+}
+
+/* ---------- okuma çubuğu ---------- */
+.g-okucu{position:fixed;top:0;left:0;height:3px;width:0;z-index:120;
+  background:linear-gradient(90deg,var(--petrol),var(--bakir));transition:width .1s linear}
+
+/* ---------- reveal ---------- */
+[data-gr]{opacity:0;transform:translateY(24px);
+  transition:opacity .75s var(--ease),transform .75s var(--ease);transition-delay:var(--d,0ms)}
+[data-gr].g-gorunur{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){[data-gr]{opacity:1;transform:none;transition:none}}
+
+/* ---------- etiket / başlık ---------- */
+.g-etiket{display:inline-flex;align-items:center;gap:10px;font-size:.76rem;
+  letter-spacing:.24em;text-transform:uppercase;font-weight:800;color:var(--bakir);margin-bottom:14px}
+.g-etiket::before{content:"";width:26px;height:1px;background:currentColor}
+.g-etiket--orta{justify-content:center}
+
+/* ---------- HERO (ışık taraması) ---------- */
+.g-hero{position:relative;background:linear-gradient(180deg,var(--buz-2) 0%,var(--buz) 100%);
+  overflow:hidden;padding:clamp(2.2rem,5vw,3.6rem) 0 clamp(2.2rem,5vw,3.4rem)}
+.g-hero::before{content:"";position:absolute;inset:0;pointer-events:none;
+  background:radial-gradient(52% 70% at 78% 26%,rgba(143,184,204,.28),transparent 65%)}
+.g-hero .sar{position:relative;display:grid;gap:clamp(26px,5vw,66px);grid-template-columns:1fr;align-items:center}
+/* Görsel kolonu her yerde geniş — "görsel az daha büyüsün" (12 Ağu, tüm site) */
+@media(min-width:960px){.g-hero .sar{grid-template-columns:.94fr 1fr}
+  .g-hero--genis .sar{grid-template-columns:.94fr 1fr}}
+/* anywhere ŞART: "Hidrodermabrazyon:" 360px'te 344,9px ölçülüyor ve hero
+   kolonunu 20,9px taşırıyordu (break-word bunu bölmez) — 12 Ağu denetimi */
+.g-hero h1{font-size:clamp(2.2rem,5.2vw,3.8rem);overflow-wrap:anywhere}
+@media(max-width:430px){.g-hero h1{font-size:1.95rem}}
+.g-hero h1 .g-isik{background:linear-gradient(100deg,var(--petrol) 0%,var(--g-cy2) 55%,var(--petrol) 100%);
+  background-size:200% 100%;-webkit-background-clip:text;background-clip:text;color:transparent}
+@media(prefers-reduced-motion:no-preference){.g-hero h1 .g-isik{animation:gIsikAk 5s linear infinite}}
+@keyframes gIsikAk{to{background-position:-200% 0}}
+.g-hero__alt{font-size:1.08rem;max-width:50ch;margin-top:16px}
+.g-hero__cta{display:flex;flex-wrap:wrap;gap:13px;margin-top:26px}
+.g-tikler{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px 20px;
+  margin-top:28px;padding-top:22px;border-top:1px solid var(--cizgi);font-size:.83rem;font-weight:700}
+.g-tikler span{display:flex;gap:8px;align-items:center}
+/* dar ekranda 2'li dengesiz sarıyordu (12 Ağu, hekim) — tek sütun liste */
+@media(max-width:600px){.g-tikler{grid-template-columns:1fr;gap:10px}}
+.g-tikler i{width:6px;height:6px;border-radius:50%;background:var(--gece-bakir);flex:none}
+
+/* tarama sahnesi */
+.g-tarama{position:relative;border-radius:24px;overflow:hidden;border:1px solid var(--cizgi);
+  box-shadow:0 34px 80px -34px rgba(10,39,51,.4),0 0 50px -22px rgba(63,167,189,.2)}
+.g-tarama img{width:100%;height:auto;display:block}
+.g-isin{position:absolute;left:0;right:0;height:120px;top:-25%;z-index:2;pointer-events:none;
+  background:linear-gradient(180deg,transparent,rgba(15,74,96,.1) 45%,rgba(63,167,189,.34) 50%,rgba(15,74,96,.1) 55%,transparent)}
+@media(prefers-reduced-motion:no-preference){.g-isin{animation:gTaran 5.2s var(--ease) infinite}}
+@keyframes gTaran{0%{top:-25%}55%{top:105%}100%{top:105%}}
+.g-nokta{position:absolute;left:var(--x);top:var(--y);z-index:3;width:44px;height:44px;margin:-22px;
+  border:0;background:none;cursor:pointer;display:flex;align-items:center;justify-content:center}
+.g-nokta span{width:11px;height:11px;border-radius:50%;background:var(--petrol);position:relative;
+  box-shadow:0 0 0 2px #fff,0 2px 10px rgba(10,39,51,.35);
+  transition:transform .2s var(--ease),background .2s}
+.g-nokta span::after{content:attr(data-ad);position:absolute;left:50%;top:20px;transform:translateX(-50%);
+  font-size:.54rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--murekkep);
+  background:rgba(244,248,250,.9);padding:2px 7px;border-radius:5px;white-space:nowrap;
+  box-shadow:0 2px 8px rgba(10,39,51,.18);opacity:0;transition:opacity .2s}
+.g-nokta:hover span::after,.g-nokta[data-akt] span::after{opacity:1}
+.g-nokta[data-akt] span{background:var(--bakir);transform:scale(1.4);
+  box-shadow:0 0 0 2px #fff,0 0 14px 3px rgba(142,91,35,.45)}
+/* HUD fotoğrafın ÜZERİNDE DEĞİL, ALTINDA sabit bant — kart görseli
+   kapatıyordu (dudak/göz sayfaları, 12 Ağu): hangi kompozisyon olursa
+   olsun binme ihtimali sıfır. */
+.g-hud{position:static;display:block;background:rgba(244,248,250,.96);
+  border:0;border-top:1px solid var(--cizgi);border-radius:0;padding:12px 16px;max-width:none}
+.g-hud b{font-family:var(--font-baslik);color:var(--murekkep);font-size:.95rem;display:block}
+.g-hud span{font-size:.76rem;color:var(--govde)}
+.g-hud .g-cizgi{height:1px;background:linear-gradient(90deg,var(--petrol),transparent);margin:6px 0}
+/* 9,6px + yarı saydam zemin fotoğraf üstünde okunmuyordu (12 Ağu denetimi) */
+.g-ainot{position:absolute;right:12px;top:12px;z-index:3;font-size:.72rem;color:var(--govde);
+  background:rgba(255,255,255,.94);padding:4px 10px;border-radius:99px}
+
+/* ---------- veri bandı + sayaç ---------- */
+.g-band{background:var(--buz-2);border-top:1px solid var(--cizgi);border-bottom:1px solid var(--cizgi)}
+.g-band .sar{display:grid;grid-template-columns:repeat(2,1fr);gap:20px;padding-block:24px}
+@media(min-width:820px){.g-band .sar{grid-template-columns:repeat(4,1fr)}}
+.g-band b{font-family:var(--font-baslik);font-size:1.9rem;color:var(--murekkep);display:block;line-height:1}
+.g-band b em{font-style:normal;color:var(--petrol)}
+.g-band span{font-size:.66rem;letter-spacing:.14em;text-transform:uppercase;font-weight:800;color:var(--sessiz)}
+
+/* ---------- atlas (kaydırma-senkron) ---------- */
+.g-atlas-duzen{display:grid;gap:clamp(22px,4vw,56px);grid-template-columns:1fr;align-items:start}
+@media(min-width:960px){.g-atlas-duzen{grid-template-columns:.92fr 1.08fr}}
+.g-atlas-duzen>*{min-width:0}
+.g-atlas{position:relative}
+@media(min-width:960px){.g-atlas{position:sticky;top:86px}}
+.g-atlas-kap{position:relative;border-radius:22px;overflow:hidden;border:1px solid var(--cizgi);
+  box-shadow:0 30px 70px -30px rgba(10,39,51,.45)}
+.g-atlas-kap img{width:100%;height:auto;display:block}
+.g-rozetk{position:absolute;left:14px;bottom:14px;background:rgba(244,248,250,.95);
+  border:1px solid var(--cizgi);border-radius:12px;padding:10px 16px;z-index:4;
+  box-shadow:0 8px 26px -12px rgba(10,39,51,.4);max-width:74%}
+.g-rozetk b{font-family:var(--font-baslik);color:var(--murekkep);font-size:.98rem;display:block}
+.g-rozetk span{font-size:.76rem;color:var(--govde)}
+/* mobilde atlas kartı fotoğrafın neredeyse tamamını kapatıyordu → altına iner
+   (HUD/pusula ile aynı ders, 12 Ağu) */
+@media(max-width:700px){
+  .g-rozetk{position:static;max-width:none;border:0;border-top:1px solid var(--cizgi);
+    border-radius:0;box-shadow:none;background:rgba(244,248,250,.98)}}
+.g-katblok{padding:26px 0;border-top:1px solid var(--cizgi)}
+.g-katblok:first-child{border-top:0;padding-top:0}
+.g-katblok .g-kno{font-family:var(--font-baslik);font-size:.85rem;color:var(--bakir);
+  letter-spacing:.18em;display:block;margin-bottom:8px}
+.g-katblok h3{font-size:1.5rem;margin-bottom:10px}
+.g-katblok p{font-size:.98rem;max-width:52ch}
+.g-haplar{display:flex;flex-wrap:wrap;gap:9px;margin-top:14px}
+.g-haplar a{background:var(--beyaz);border:1px solid var(--cizgi-2);border-radius:99px;
+  padding:9px 17px;font-size:.84rem;font-weight:700;color:var(--murekkep);text-decoration:none;
+  transition:background .2s,color .2s,transform .2s var(--ease)}
+.g-haplar a:hover{background:var(--petrol);color:#fff;transform:translateY(-2px)}
+
+/* ---------- bento + canlı infografikler ---------- */
+/* align-items:start ŞART — kısa kutu (ör. KAPSAM) uzun komşusu kadar uzayıp
+   içi bomboş kalıyordu (bölge sayfaları, 12 Ağu). Ölçüm: 473px kutuda 304px boşluk → 0 */
+.g-bento{display:grid;gap:16px;grid-template-columns:1fr;align-items:start}
+@media(min-width:820px){.g-bento{grid-template-columns:repeat(6,1fr)}
+  .g-b2{grid-column:span 2}.g-b3{grid-column:span 3}.g-b4{grid-column:span 4}.g-b6{grid-column:span 6}}
+.g-bento>*{min-width:0}
+.g-kutu{background:var(--beyaz);border:1px solid var(--cizgi);border-radius:18px;padding:22px;
+  position:relative;overflow:hidden;transition:transform .3s var(--ease),box-shadow .3s}
+.g-kutu:hover{transform:translateY(-4px);box-shadow:0 22px 50px -22px rgba(10,39,51,.3)}
+.g-kutu .g-ket{font-size:.62rem;letter-spacing:.2em;text-transform:uppercase;font-weight:800;
+  color:var(--bakir);display:block;margin-bottom:10px}
+.g-kutu--gece{background:var(--gece);border-color:var(--gece)}
+.g-kutu--gece p{font-family:var(--font-baslik);color:var(--gece-metin);font-size:1.1rem;line-height:1.4;margin:0}
+.g-kutu--gece .g-ket{color:var(--gece-bakir)}
+.g-kutu--gorsel{padding:0}
+.g-kutu--gorsel img{width:100%;height:100%;min-height:190px;object-fit:cover;display:block;aspect-ratio:16/9}
+.g-kutu--cta{background:linear-gradient(130deg,var(--petrol),var(--petrol-koyu));border-color:var(--petrol);
+  display:flex;flex-direction:column;gap:12px;justify-content:center}
+.g-kutu--cta h3{color:#fff;font-size:1.28rem}
+.g-kutu--cta p{color:rgba(230,240,245,.82);font-size:.88rem;margin:0}
+.g-kutu--cta .dgm{align-self:flex-start}
+
+/* donut — sürekli dönen altın kuyruk + nefes */
+.g-donutkap{display:flex;gap:18px;align-items:center}
+.g-donut{position:relative;width:100px;height:100px;flex:none}
+.g-donut svg{transform:rotate(-90deg);overflow:visible}
+.g-donut .g-iz{fill:none;stroke:var(--buz-3);stroke-width:10}
+.g-donut .g-dol{fill:none;stroke:url(#gDonutGrad);stroke-width:10;stroke-linecap:round;
+  stroke-dasharray:283;stroke-dashoffset:283;transition:stroke-dashoffset 1.3s var(--ease)}
+.g-donut .g-kom{fill:none;stroke:var(--g-gb);stroke-width:10;stroke-linecap:round;
+  stroke-dasharray:12 271;opacity:.9}
+/* metin daireye SIĞMALI: "3 özellik" gibi iki kelimeli değerler 1.4rem'de
+   halkanın dışına taşıyordu (12 Ağu) — iki satıra iner, punto ölçülü */
+.g-donut b{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;
+  font-family:var(--font-baslik);font-size:1.02rem;line-height:1.12;text-align:center;
+  padding:0 13px;overflow-wrap:anywhere;color:var(--murekkep);transition:transform .25s var(--ease)}
+.g-donutkap:hover .g-donut b{transform:scale(1.12)}
+@media(prefers-reduced-motion:no-preference){
+  .g-donut svg{filter:drop-shadow(0 0 8px rgba(127,216,232,.28));animation:gNefes 3.2s ease-in-out infinite alternate}
+  .g-donut .g-kom{animation:gTur 3.6s linear infinite;transform-origin:50% 50%}
+  .g-donutkap:hover .g-kom{animation-duration:1.1s}
+}
+@keyframes gTur{to{transform:rotate(360deg)}}
+@keyframes gNefes{from{filter:drop-shadow(0 0 6px rgba(127,216,232,.2))}to{filter:drop-shadow(0 0 14px rgba(127,216,232,.42))}}
+
+/* akan çubuklar */
+.g-cubuk{border-radius:10px;padding:6px 8px;margin:6px -8px 0;transition:background .2s}
+.g-cubuk:hover{background:var(--buz)}
+.g-cubuk small{display:flex;justify-content:space-between;font-size:.7rem;font-weight:800;
+  letter-spacing:.06em;color:var(--govde);margin-bottom:6px}
+.g-cubuk small span:last-child{font-variant-numeric:tabular-nums;display:inline-block;
+  transition:color .2s,transform .2s var(--ease)}
+.g-cubuk:hover small span:last-child{color:var(--petrol);transform:scale(1.15)}
+.g-cubuk .g-ciz{height:8px;border-radius:99px;background:var(--buz-2);overflow:hidden;position:relative}
+.g-cubuk .g-ciz b{display:block;height:100%;width:0;border-radius:99px;position:relative;overflow:hidden;
+  background-size:220% 100%;transition:width 1.2s var(--ease),filter .25s}
+.g-cubuk:hover .g-ciz b{filter:brightness(1.18) saturate(1.15)}
+.g-cubuk .g-ciz b::after{content:"";position:absolute;inset:0;border-radius:99px;opacity:0;
+  background:linear-gradient(105deg,transparent 30%,rgba(255,255,255,.55) 50%,transparent 70%);
+  background-size:240% 100%}
+@media(prefers-reduced-motion:no-preference){
+  .g-cubuk .g-ciz b{animation:gAkis 3s linear infinite}
+  .g-cubuk .g-ciz b::after{opacity:1;animation:gSuzul 2.3s ease-in-out infinite}
+}
+@keyframes gAkis{to{background-position:-220% 0}}
+@keyframes gSuzul{0%{background-position:220% 0}100%{background-position:-120% 0}}
+.g-cubuk-mavi{background-image:linear-gradient(90deg,#3FA7BD,#7FD8E8,#3FA7BD)}
+.g-cubuk-petrol{background-image:linear-gradient(90deg,#16607C,#7FD8E8,#16607C)}
+.g-cubuk-bakir{background-image:linear-gradient(90deg,#8E5B23,#D6A961,#8E5B23)}
+
+/* protokol listesi */
+.g-protokol{list-style:none;margin:0;padding:0;counter-reset:gp}
+.g-protokol li{counter-increment:gp;display:flex;gap:12px;align-items:baseline;padding:9px 0;
+  border-bottom:1px dashed var(--cizgi);font-size:.92rem}
+.g-protokol li:last-child{border-bottom:0}
+.g-protokol li::before{content:counter(gp,decimal-leading-zero);font-family:var(--font-baslik);
+  color:var(--bakir);font-size:.85rem;flex:none}
+
+/* ---------- uygulama matrisi ---------- */
+.g-matris{display:grid;gap:20px;grid-template-columns:1fr;align-items:start}
+@media(min-width:1000px){.g-matris{grid-template-columns:1.25fr .75fr}}
+.g-matris>*{min-width:0}
+.g-mtab{border:1px solid var(--cizgi);border-radius:16px;overflow:hidden;background:var(--beyaz)}
+/* son iz 34px sabit: .g-mbas'ın boş hücresi 0px oluyordu, başlıklar veriyle
+   hizalanmıyordu (12 Ağu ajan denetimi) */
+.g-mbas,.g-msatir{display:grid;grid-template-columns:1.4fr .8fr .8fr 34px;gap:10px;align-items:center;padding:14px 18px}
+.g-mbas{background:var(--buz-2);font-size:.63rem;letter-spacing:.16em;text-transform:uppercase;
+  font-weight:800;color:var(--sessiz)}
+.g-msatir{border-top:1px solid var(--cizgi);text-decoration:none;cursor:pointer;transition:background .15s}
+.g-msatir:hover,.g-msatir[data-akt]{background:var(--buz)}
+.g-msatir h4{font-size:.99rem}
+.g-msatir .g-hucre{font-size:.79rem;color:var(--govde)}
+.g-kcip{display:inline-block;border-radius:99px;padding:3px 10px;font-size:.65rem;font-weight:800;letter-spacing:.06em}
+.g-kcip--1{background:var(--buz-2);color:var(--petrol-orta)}
+.g-kcip--2{background:var(--sicak);color:var(--bakir)}
+.g-kcip--3{background:#EDE4F0;color:#6A3E7C}
+.g-msatir .g-git{width:34px;height:34px;border-radius:50%;border:1px solid var(--cizgi-2);
+  display:flex;align-items:center;justify-content:center;color:var(--murekkep);
+  transition:background .2s,color .2s,transform .3s var(--ease)}
+.g-msatir:hover .g-git{background:var(--petrol);border-color:var(--petrol);color:#fff;transform:rotate(-35deg)}
+/* MOBİL MATRİS: 4 sütun 360px'te eziliyordu; kabın overflow:hidden'ı taşmayı
+   gizlediği için tarayıcı ölçümünde görünmüyordu (12 Ağu ajan denetimi) */
+@media(max-width:760px){
+  .g-mbas{display:none}
+  .g-msatir{grid-template-columns:1fr 34px;gap:4px 12px;padding:13px 15px}
+  .g-msatir h4{grid-column:1/2}
+  .g-msatir .g-hucre{grid-column:1/2;font-size:.78rem}
+  .g-msatir .g-git{grid-column:2/3;grid-row:1/span 3;align-self:center;flex:none}}
+.g-onizle{position:sticky;top:86px;border:1px solid var(--cizgi);border-radius:16px;overflow:hidden;
+  background:var(--beyaz);display:none}
+@media(min-width:1000px){.g-onizle{display:block}}
+.g-onizle .g-gor{aspect-ratio:16/9;overflow:hidden;background:var(--buz-2)}
+.g-onizle .g-gor img{width:100%;height:100%;object-fit:cover;display:block}
+.g-onizle .g-ic{padding:18px 20px}
+.g-onizle h4{font-size:1.1rem;margin-bottom:6px}
+.g-onizle p{font-size:.86rem;margin:0 0 12px}
+
+/* ---------- soru terminali (açık) ---------- */
+.g-sorgu{background:var(--beyaz);border:1px solid var(--cizgi);border-radius:20px;overflow:hidden}
+.g-sorgu-bas{display:flex;gap:8px;padding:13px 18px;border-bottom:1px solid var(--cizgi);align-items:center}
+.g-sorgu-bas i{width:10px;height:10px;border-radius:50%;background:var(--buz-3)}
+.g-sorgu-bas i:first-child{background:var(--g-gb)}
+.g-sorgu-bas span{margin-left:8px;font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;
+  font-weight:800;color:var(--sessiz)}
+.g-sorgu-ic{padding:clamp(16px,3vw,26px);display:grid;gap:clamp(16px,3vw,28px);grid-template-columns:1fr}
+@media(min-width:960px){.g-sorgu-ic{grid-template-columns:.95fr 1.05fr}}
+.g-sorgu-ic>*{min-width:0}
+.g-slistem{display:flex;flex-direction:column;gap:8px}
+.g-ssoru{text-align:left;border:1px solid transparent;background:none;color:var(--govde);
+  font-family:var(--font-govde);font-size:.94rem;font-weight:700;padding:12px 15px;border-radius:11px;
+  cursor:pointer;display:flex;gap:12px;align-items:center;transition:background .2s,color .2s,border-color .2s}
+.g-ssoru i{font-style:normal;color:var(--sessiz);font-family:var(--font-baslik)}
+.g-ssoru:hover{background:var(--buz-2);color:var(--murekkep)}
+.g-ssoru[data-akt]{background:rgba(15,74,96,.07);border-color:rgba(15,74,96,.3);color:var(--murekkep)}
+.g-ssoru[data-akt] i{color:var(--petrol)}
+.g-scevap{background:var(--buz);border:1px solid var(--cizgi);border-radius:14px;
+  padding:clamp(16px,2.6vw,24px);min-height:240px}
+.g-scevap .g-yazan{font-size:.64rem;letter-spacing:.2em;text-transform:uppercase;font-weight:800;
+  color:var(--bakir);display:block;margin-bottom:9px}
+.g-scevap b{font-family:var(--font-baslik);font-size:1.14rem;color:var(--murekkep);display:block;margin-bottom:9px}
+.g-scevap p{font-size:.95rem;color:var(--govde)}
+.g-skapa{display:none}
+/* MOBİL AKORDİYON: yanıt tıklanan sorunun hemen altında açılır (12 Ağu) */
+@media(max-width:959px){
+  .g-scevap{min-height:0;margin:8px 0 6px;position:relative;
+    border-color:var(--petrol);box-shadow:0 14px 34px -22px rgba(15,74,96,.5)}
+  @media(prefers-reduced-motion:no-preference){.g-scevap{animation:gAcilim .3s var(--ease)}}
+  .g-scevap b{padding-right:44px}
+  .g-skapa{display:grid;place-items:center;position:absolute;right:10px;top:10px;
+    width:36px;height:36px;border:1px solid var(--cizgi);border-radius:50%;background:#fff;
+    color:var(--murekkep);font-size:1.25rem;line-height:1;cursor:pointer;padding:0}
+  .g-skapa:hover{border-color:var(--petrol);color:var(--petrol)}
+  .g-ssoru{padding:14px 15px}
+  .g-ssoru[data-akt] i{transform:rotate(90deg);display:inline-block;transition:transform .2s}}
+@keyframes gAcilim{from{opacity:0;transform:translateY(-8px)}}
+.g-imlec{display:inline-block;width:9px;height:1.1em;background:var(--petrol);vertical-align:-2px;margin-left:2px}
+@media(prefers-reduced-motion:no-preference){.g-imlec{animation:gYan 1s steps(2) infinite}}
+@keyframes gYan{to{opacity:0}}
+
+/* ---------- büyük kapanış ---------- */
+.g-son{position:relative;overflow:hidden;background:var(--buz-2)}
+.g-son::before{content:"";position:absolute;inset:0;pointer-events:none;
+  background:radial-gradient(50% 90% at 50% 112%,rgba(15,74,96,.1),transparent 70%)}
+/* Üst dolgu bilinçli kısa: künye bloğu kalkınca önceki bölümün alt
+   dolgusuyla birleşip büyük boşluk oluşuyordu; alt dolgu künyenin yerini
+   doldurur — CTA'lar footer'a yapışmasın (11 Ağu ekran görüntüsü). */
+.g-son .sar{position:relative;text-align:center;padding-block:clamp(1.1rem,2.4vw,2rem) clamp(2.8rem,5.6vw,4.8rem)}
+.g-son h2{font-size:clamp(1.9rem,4.6vw,3.2rem);max-width:22ch;margin:0 auto 16px}
+.g-son .g-sonalt{max-width:52ch;margin:0 auto 28px}
+.g-son .g-sonbtn{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+.g-kunye{font-size:.76rem;color:var(--sessiz);border-top:1px solid var(--cizgi);
+  margin-top:clamp(2.2rem,4.6vw,3.6rem);padding:20px 0 30px;display:flex;flex-wrap:wrap;
+  gap:8px 22px;justify-content:center;text-align:center}
+.g-kunye b{color:var(--govde)}
+
+/* ---------- düğme türevleri (site .dgm üstüne) ---------- */
+.dgm--cy{background:linear-gradient(120deg,var(--g-cy),var(--g-cy2));color:var(--g-z0)}
+.dgm--cy:hover{box-shadow:0 0 32px -8px rgba(127,216,232,.6);color:var(--g-z0)}
+.dgm--altin{background:var(--g-gb);color:var(--g-z0)}
+.dgm--altin:hover{background:#E6BE79;color:var(--g-z0)}
+
+/* ---------- yasal belge düzeni (g-bhero + g-bmenu + g-bgov) ---------- */
+.g-bhero{position:relative;overflow:hidden;background:linear-gradient(180deg,var(--buz-2) 0%,var(--buz) 100%);
+  padding:clamp(2.4rem,5vw,3.6rem) 0 clamp(1.7rem,3.4vw,2.4rem)}
+.g-bhero::before{content:"";position:absolute;inset:0;pointer-events:none;
+  background:radial-gradient(46% 74% at 82% 18%,rgba(143,184,204,.26),transparent 65%)}
+.g-bhero .sar{position:relative}
+.g-bhero h1{font-size:clamp(2rem,4.4vw,3.1rem);max-width:26ch}
+.g-bhero__alt{max-width:64ch;margin-top:14px;font-size:1.04rem}
+.g-bmeta{display:flex;flex-wrap:wrap;gap:9px;margin-top:22px}
+.g-bmeta span{display:inline-flex;align-items:center;gap:8px;font-size:.76rem;font-weight:700;color:var(--petrol);
+  background:rgba(255,255,255,.72);border:1px solid var(--cizgi);border-radius:99px;padding:6px 13px}
+.g-bmeta i{width:6px;height:6px;border-radius:50%;background:var(--g-cy2);flex:none}
+
+.g-belge{padding:clamp(2rem,4.2vw,3.2rem) 0 clamp(2.6rem,5vw,4rem)}
+.g-belge .sar{display:grid;gap:clamp(22px,3.5vw,52px);grid-template-columns:1fr;align-items:start}
+@media(min-width:960px){.g-belge .sar{grid-template-columns:248px minmax(0,1fr)}}
+
+.g-bmenu{position:sticky;top:86px;border:1px solid var(--cizgi);border-radius:14px;
+  background:rgba(255,255,255,.66);backdrop-filter:blur(6px);padding:16px 12px}
+.g-bmenu b{display:block;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--sessiz);margin:0 0 10px 12px}
+.g-bmenu a{display:block;padding:8px 12px;border-left:2px solid var(--cizgi);color:var(--sessiz);text-decoration:none;
+  font-size:.84rem;font-weight:650;line-height:1.35;transition:color .2s,border-color .2s,background .2s}
+.g-bmenu a:hover{color:var(--petrol)}
+.g-bmenu a[data-akt]{color:var(--petrol);border-left-color:var(--petrol);
+  background:linear-gradient(90deg,rgba(127,216,232,.14),transparent 80%)}
+@media(max-width:959px){
+  .g-bmenu{position:static;display:flex;gap:2px;overflow-x:auto;padding:8px;border-radius:12px;-webkit-overflow-scrolling:touch}
+  .g-bmenu b{display:none}
+  .g-bmenu{gap:8px}
+  .g-bmenu a{border-left:0;border-bottom:2px solid transparent;white-space:nowrap;padding:11px 14px}
+  .g-bmenu a[data-akt]{border-bottom-color:var(--petrol);background:none}}
+@media print{.g-bmenu{display:none}.g-belge .sar{grid-template-columns:1fr}}
+
+.g-bgov{counter-reset:gbol;min-width:0}
+.g-bblk{padding:clamp(1.7rem,3.2vw,2.5rem) 0;border-top:1px solid var(--cizgi)}
+.g-bblk:first-child{border-top:0;padding-top:.2rem}
+.g-bblk>h2{display:flex;align-items:center;gap:14px;font-size:clamp(1.35rem,2.6vw,1.8rem);
+  margin-bottom:14px;scroll-margin-top:96px}
+.g-bblk>h2::before{counter-increment:gbol;content:counter(gbol,decimal-leading-zero);flex:none;
+  display:inline-grid;place-items:center;width:34px;height:34px;border-radius:10px;border:1px solid var(--cizgi);
+  background:linear-gradient(135deg,rgba(127,216,232,.18),rgba(255,255,255,.6));
+  color:var(--petrol);font-size:.78rem;font-weight:800;letter-spacing:.04em}
+.g-bblk .izgara{margin-top:18px}
+.g-bblk .kutu{margin-top:18px}
+.g-bblk .dgm-sira{margin-top:20px}
+
+/* ---------- konu akordiyonu (bilgi hub — "gözü yoruyor" 12 Ağu) ---------- */
+.g-akor{display:grid;gap:14px;margin-top:8px}
+.g-akor details{border:1px solid var(--cizgi);border-radius:16px;background:#fff;overflow:hidden;
+  transition:box-shadow .25s}
+.g-akor details[open]{box-shadow:0 18px 44px -26px rgba(10,39,51,.25)}
+.g-akor summary{display:flex;align-items:center;gap:14px;cursor:pointer;list-style:none;
+  padding:18px 22px;font-family:var(--font-baslik);font-size:clamp(1.08rem,2vw,1.3rem);
+  font-weight:600;color:var(--murekkep)}
+.g-akor summary::-webkit-details-marker{display:none}
+.g-akor summary:hover{color:var(--petrol)}
+.g-akor .g-okc{width:28px;height:28px;flex:none;display:grid;place-items:center;border-radius:50%;
+  border:1px solid var(--cizgi);color:var(--petrol);font-weight:700;transition:transform .25s,background .25s}
+.g-akor details[open] .g-okc{transform:rotate(45deg);background:var(--buz-2)}
+.g-akor .g-adet{margin-left:auto;font-family:var(--font-govde);font-size:.7rem;font-weight:800;
+  letter-spacing:.08em;text-transform:uppercase;color:var(--petrol);background:var(--buz-2);
+  border:1px solid var(--cizgi);border-radius:99px;padding:4px 12px;white-space:nowrap}
+.g-akor .g-aic{padding:2px 22px 20px;display:grid;gap:0 clamp(18px,3vw,44px)}
+@media(min-width:860px){.g-akor .g-aic{grid-template-columns:1fr 1fr}}
+.g-akor .g-aog{padding:13px 0;border-top:1px solid var(--cizgi)}
+.g-akor .g-aog h4{font-size:1rem;margin:0 0 4px}
+.g-akor .g-aog p{font-size:.88rem;color:var(--govde);margin:0}
+
+/* ---------- YOLCULUK SİMÜLATÖRÜ (uygulamalar hub) ---------- */
+.yolc-sec{display:flex;gap:12px;flex-wrap:wrap;align-items:center;margin-bottom:26px}
+/* font-size 16px: iOS altındaki değerlerde odaklanınca sayfayı yakınlaştırıyor */
+.yolc-sec select{flex:1;min-width:240px;height:52px;padding:0 16px;border:1px solid var(--cizgi-2);
+  border-radius:14px;background:#fff;font-family:var(--font-govde);font-size:16px;
+  font-weight:700;color:var(--murekkep);cursor:pointer}
+.yolc-sec select:focus{outline:2px solid var(--petrol)}
+.yolc-sahne{position:relative;display:grid;gap:16px;grid-template-columns:1fr}
+@media(min-width:860px){.yolc-sahne{grid-template-columns:repeat(4,1fr)}}
+.yolc-ciz{position:absolute;left:4%;right:4%;top:44px;height:3px;border-radius:99px;
+  background:var(--cizgi);display:none}
+@media(min-width:860px){.yolc-ciz{display:block}}
+.yolc-ciz i{display:block;height:100%;width:0;border-radius:99px;
+  background:linear-gradient(90deg,var(--petrol),var(--g-cy2));transition:width .9s var(--ease)}
+.yolc-adim{position:relative;background:#fff;border:1px solid var(--cizgi);border-radius:18px;
+  padding:18px 16px 16px;text-align:center;opacity:.45;transform:translateY(6px);
+  transition:opacity .5s,transform .5s,box-shadow .5s,border-color .5s}
+.yolc-adim[data-akt]{opacity:1;transform:none;border-color:var(--petrol);
+  box-shadow:0 22px 44px -24px rgba(15,74,96,.4)}
+.yolc-adim img{width:78px;height:78px;border-radius:20px;object-fit:cover;margin:0 auto 10px;
+  display:block;filter:saturate(.4);transition:filter .5s,transform .5s}
+.yolc-adim[data-akt] img{filter:none;transform:scale(1.06)}
+.yolc-adim b{display:block;font-family:var(--font-baslik);font-size:1.02rem;margin-bottom:6px}
+.yolc-adim p{font-size:.82rem;color:var(--govde);line-height:1.5;min-height:3.6em;margin:0}
+.yolc-adim .yolc-no{position:absolute;top:-11px;left:50%;transform:translateX(-50%);
+  width:24px;height:24px;border-radius:50%;display:grid;place-items:center;
+  background:var(--buz-2);border:1px solid var(--cizgi);color:var(--petrol);
+  font-size:.7rem;font-weight:800;transition:background .4s,color .4s}
+.yolc-adim[data-akt] .yolc-no{background:var(--petrol);color:#fff;border-color:var(--petrol)}
+
+/* ---------- BÖLGE PUSULASI (bölgeler hub) ---------- */
+.pus{display:grid;gap:clamp(20px,3.5vw,44px);grid-template-columns:1fr;align-items:center}
+@media(min-width:960px){.pus{grid-template-columns:1fr 1.1fr}}
+.pus-merkez{position:relative;border-radius:24px;overflow:hidden;border:1px solid var(--cizgi);
+  box-shadow:0 30px 70px -30px rgba(10,39,51,.4)}
+/* oran SABİT: kaynak görseller farklı en-boyda olsa bile kutu boyu değişmez
+   → bölge değişince sayfa kaymaz (12 Ağu: dikey boyun/bel üstü görselleri) */
+.pus-merkez img{width:100%;height:auto;display:block;aspect-ratio:16/9;object-fit:cover;
+  transition:opacity .35s}
+.pus-merkez img.pus-gecis{opacity:.25}
+/* kart görselin ÜSTÜNDE değil ALTINDA: yüzü kapatıyordu (HUD ile aynı ders) */
+.pus-kart{background:rgba(244,248,250,.96);border-top:1px solid var(--cizgi);padding:14px 16px;
+  opacity:0;transition:opacity .35s}
+.pus-kart[data-akt]{opacity:1}
+.pus-kart b{font-family:var(--font-baslik);font-size:1.05rem;display:block;margin-bottom:4px}
+/* tarif tam 4 satıra sabit: satır sayısı bölgeye göre değişince kutu boyu
+   oynuyor ve sayfa kayıyordu (12 Ağu) */
+.pus-kart p{font-size:.82rem;line-height:1.5;color:var(--govde);margin:0 0 10px;
+  min-height:calc(1.5em * 4);display:-webkit-box;-webkit-line-clamp:4;-webkit-box-orient:vertical;
+  overflow:hidden}
+.pus-liste{display:grid;gap:9px;grid-template-columns:repeat(2,1fr)}
+@media(min-width:640px){.pus-liste{grid-template-columns:repeat(2,1fr)}}
+.pus-oge{display:flex;align-items:center;gap:10px;padding:13px 15px;cursor:pointer;text-align:left;
+  border:1px solid var(--cizgi);border-radius:14px;background:#fff;
+  font-family:var(--font-govde);font-size:.88rem;font-weight:700;color:var(--murekkep);
+  transition:border-color .25s,box-shadow .25s,transform .25s}
+.pus-oge i{width:9px;height:9px;border-radius:50%;background:var(--cizgi-2);flex:none;transition:background .25s,box-shadow .25s}
+.pus-oge:hover{border-color:var(--petrol);transform:translateY(-2px)}
+.pus-oge[data-akt]{border-color:var(--petrol);box-shadow:0 16px 34px -20px rgba(15,74,96,.45)}
+.pus-oge[data-akt] i{background:var(--bakir);box-shadow:0 0 10px 2px rgba(142,91,35,.4)}
+
+/* ---------- KARŞILAŞTIRMA MASASI ---------- */
+.kar-sec{display:grid;gap:12px;grid-template-columns:1fr;margin-bottom:24px}
+@media(min-width:700px){.kar-sec{grid-template-columns:1fr auto 1fr}}
+.kar-sec select{height:52px;padding:0 16px;border:1px solid var(--cizgi-2);border-radius:14px;
+  background:#fff;font-family:var(--font-govde);font-size:16px;font-weight:700;
+  color:var(--murekkep);cursor:pointer;min-width:0}
+.kar-sec select:focus{outline:2px solid var(--petrol)}
+.kar-vs{display:grid;place-items:center;font-family:var(--font-baslik);font-weight:600;
+  color:var(--petrol);font-size:1.05rem}
+.kar-tablo{display:grid;gap:10px}
+.kar-satir{display:grid;gap:2px 14px;grid-template-columns:1fr;padding:14px 16px;
+  background:#fff;border:1px solid var(--cizgi);border-radius:14px;
+  opacity:0;transform:translateY(8px);transition:opacity .45s,transform .45s}
+.kar-satir[data-gorunur]{opacity:1;transform:none}
+@media(min-width:700px){.kar-satir{grid-template-columns:150px 1fr 1fr;align-items:start}}
+.kar-satir>b{font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;color:var(--petrol);
+  font-weight:800;padding-top:2px}
+.kar-satir>p{margin:0;font-size:.87rem;color:var(--govde);line-height:1.55}
+@media(max-width:699px){.kar-satir>p:first-of-type{margin-bottom:6px;padding-bottom:6px;
+  border-bottom:1px dashed var(--cizgi)}}
+.kar-satir .kar-ad{font-weight:800;color:var(--murekkep)}
+
+/* ---------- kutu içi nefes payı (12 Ağu: "yazı çok yoğun, 2'ye böl") ---------- */
+.kutu p+p{margin-top:14px}
+.g-kutu p+p{margin-top:14px}
+/* seyrek alıntı kartı: dikey ortalı + dev tırnak glifi + ışıma —
+   "sağ kutu içi çok boş" (12 Ağu), 43 sayfada aynı kart */
+.g-kutu--gece{position:relative;overflow:hidden;display:flex;flex-direction:column;justify-content:center}
+.g-kutu--gece::before{content:"";position:absolute;inset:0;pointer-events:none;
+  background:radial-gradient(70% 70% at 82% 88%,rgba(127,216,232,.16),transparent 65%)}
+.g-kutu--gece::after{content:"\201D";position:absolute;right:14px;top:-8px;pointer-events:none;
+  font-family:var(--font-baslik);font-size:clamp(5rem,9vw,8rem);line-height:1;color:rgba(127,216,232,.22)}
+.g-kutu--gece .g-ket{margin-bottom:auto;position:relative;z-index:1}
+.g-kutu--gece p{position:relative;z-index:1;font-size:clamp(1.15rem,1rem + .7vw,1.5rem);
+  line-height:1.5;margin-block:auto;max-width:26ch}

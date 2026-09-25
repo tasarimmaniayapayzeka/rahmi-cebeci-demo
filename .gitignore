@@ -1,0 +1,11 @@
+# bağımlılıklar
+node_modules/
+
+# geçici dosyalar
+*.yedek-*
+*.log
+Thumbs.db
+desktop.ini
+
+
+# docs/ = GitHub Pages çıktısı (depoda tutulur). yayin/ = cPanel paketi (ileride).
