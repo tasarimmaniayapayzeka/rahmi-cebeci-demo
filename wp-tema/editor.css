@@ -1,0 +1,8 @@
+/* Klasik Editör içindeki görünüm (yalnız yönetim panelinde yüklenir; sitenin stilleri üstüne küçük ayarlar) */
+body.rc-editor { padding: 16px 12px 40px; margin: 0; max-width: none; }
+/* editörde bölümler sınırlarıyla görünsün: nerede başlayıp bittikleri anlaşılır */
+body.rc-editor > section { outline: 1px dashed rgba(133, 100, 28, .28); outline-offset: -1px; }
+/* JSON veri blokları ve betikler editörde görünmez kalır (silinmez) */
+body.rc-editor script { display: none !important; }
+/* ekranda gizli başlangıç durumları editörde görünür olsun */
+body.rc-editor [data-gr], body.rc-editor [data-grozet] { opacity: 1 !important; transform: none !important; }

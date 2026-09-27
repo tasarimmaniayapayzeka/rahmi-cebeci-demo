@@ -1,0 +1,575 @@
+{
+ "marka": "Dr. Rahmi Cebeci",
+ "markaAlt": "Medikal Estetik",
+ "guncelleme": "25.09.2026",
+ "sonInceleme": "2026-09-25",
+ "iletisim": {
+  "adres": "Cevizlik Mah. Ebuzziya Cad. No:47/1",
+  "ilce": "Bakırköy / İstanbul",
+  "semt": "Bakırköy",
+  "tel": "0539 933 08 08",
+  "telHam": "+905399330808",
+  "wa": "+90 539 933 08 08",
+  "waHam": "905399330808",
+  "cep": "+90 539 933 08 08",
+  "cepHam": "+905399330808",
+  "eposta": "info@rahmicebeci.com.tr",
+  "editor": "info@rahmicebeci.com.tr",
+  "saatler": [
+   [
+    "Pazartesi – Cumartesi",
+    "09:00 – 19:00"
+   ],
+   [
+    "Pazar",
+    "Kapalı"
+   ]
+  ]
+ },
+ "hekim": {
+  "tam": "Uzm. Dr. Rahmi Cebeci",
+  "dallar": "Aile Hekimliği Uzmanı · Medikal Estetik Sertifikalı"
+ },
+ "yasal": [
+  [
+   "KVKK Aydınlatma Metni",
+   "/yasal/kvkk-aydinlatma-metni/"
+  ],
+  [
+   "Açık Rıza",
+   "/yasal/acik-riza/"
+  ],
+  [
+   "Çerez Politikası",
+   "/yasal/cerez-politikasi/"
+  ],
+  [
+   "Kullanım Koşulları",
+   "/yasal/kullanim-kosullari/"
+  ],
+  [
+   "Hasta Hakları",
+   "/yasal/hasta-haklari/"
+  ],
+  [
+   "Yayın ve Görsel Kullanım Esaslarımız",
+   "/yasal/icerik-ve-gorsel-yayin-ilkelerimiz/"
+  ]
+ ],
+ "menu": [
+  {
+   "ad": "Tanışalım",
+   "yol": "/klinik/",
+   "alt": [
+    {
+     "ad": "Muayenehanemiz",
+     "yol": "/klinik/",
+     "not": "Muayenehane ve çalışma düzeni"
+    },
+    {
+     "ad": "Hekim",
+     "yol": "/hekim/",
+     "not": "Uzm. Dr. Rahmi Cebeci"
+    },
+    {
+     "ad": "Randevudan kontrole",
+     "yol": "/yaklasimimiz/",
+     "not": "Dört adımda planlama düzeni"
+    },
+    {
+     "ad": "Soru ve yanıtlar",
+     "yol": "/sikca-sorulan-sorular/"
+    },
+    {
+     "ad": "Okuma Köşesi",
+     "yol": "/bilgi/"
+    },
+    {
+     "ad": "Cilt Eğilimi Testi",
+     "yol": "/cilt-tipi-testi/",
+     "not": "On iki soruda cildinizin eğilimi"
+    },
+    {
+     "ad": "Bölge Rehberi",
+     "yol": "/bolge-pusulasi/",
+     "not": "Yüzden vücuda sekiz bölge"
+    },
+    {
+     "ad": "Yan Yana Karşılaştır",
+     "yol": "/uygulama-karsilastirma/",
+     "not": "Seçtiğiniz iki uygulama karşı karşıya"
+    }
+   ]
+  },
+  {
+   "ad": "Uygulamalar",
+   "yol": "/uygulamalar/",
+   "mega": [
+    {
+     "baslik": "Enjeksiyonla Yapılanlar",
+     "ogeler": [
+      {
+       "ad": "Botulinum Toksin",
+       "yol": "/uygulamalar/botulinum-toksin/"
+      },
+      {
+       "ad": "Dolgu Uygulamaları",
+       "yol": "/uygulamalar/dolgu-uygulamalari/"
+      },
+      {
+       "ad": "Sıvı Yüz Germe",
+       "yol": "/uygulamalar/sivi-yuz-germe/"
+      },
+      {
+       "ad": "Gençlik Aşısı (Skinbooster)",
+       "yol": "/uygulamalar/genclik-asisi-skinbooster/"
+      },
+      {
+       "ad": "Somon DNA ve Polinükleotid",
+       "yol": "/uygulamalar/somon-dna-polinukleotid/"
+      },
+      {
+       "ad": "Mezoterapi",
+       "yol": "/uygulamalar/mezoterapi/"
+      },
+      {
+       "ad": "PRP",
+       "yol": "/uygulamalar/prp/"
+      },
+      {
+       "ad": "Biyostimülan Uygulamalar",
+       "yol": "/uygulamalar/biyostimulan-uygulamalar/"
+      },
+      {
+       "ad": "Eksozom",
+       "yol": "/uygulamalar/eksozom/"
+      },
+      {
+       "ad": "Bölgesel Lipoliz",
+       "yol": "/uygulamalar/bolgesel-lipoliz/"
+      },
+      {
+       "ad": "Selülit Görünümü",
+       "yol": "/uygulamalar/selulit-gorunumu/"
+      }
+     ]
+    },
+    {
+     "baslik": "Cihaz Destekli Uygulamalar",
+     "ogeler": [
+      {
+       "ad": "Pico Lazer ile Dövme Silme",
+       "yol": "/uygulamalar/pico-lazer-dovme-silme/"
+      },
+      {
+       "ad": "Pico Lazer ile Leke",
+       "yol": "/uygulamalar/pico-lazer-leke/"
+      },
+      {
+       "ad": "Fraksiyonel Lazer",
+       "yol": "/uygulamalar/fraksiyonel-lazer/"
+      },
+      {
+       "ad": "Altın İğne Radyofrekans",
+       "yol": "/uygulamalar/altin-igne-radyofrekans/"
+      },
+      {
+       "ad": "HIFU — Ameliyatsız Sıkılaştırma",
+       "yol": "/uygulamalar/hifu-ameliyatsiz-yuz-germe/"
+      },
+      {
+       "ad": "İğnesiz Mezoterapi",
+       "yol": "/uygulamalar/ignesiz-mezoterapi/"
+      },
+      {
+       "ad": "Karbon Peeling",
+       "yol": "/uygulamalar/karbon-peeling/"
+      }
+     ]
+    },
+    {
+     "baslik": "Saç Sağlığı",
+     "ogeler": [
+      {
+       "ad": "Saç Mezoterapisi",
+       "yol": "/uygulamalar/sac-mezoterapisi/"
+      },
+      {
+       "ad": "Saç PRP",
+       "yol": "/uygulamalar/sac-prp/"
+      }
+     ]
+    },
+    {
+     "baslik": "Değerlendirme ve Takip",
+     "ogeler": [
+      {
+       "ad": "Hekim Muayenesi",
+       "yol": "/uygulamalar/hekim-muayenesi/"
+      },
+      {
+       "ad": "Uygulama Sonrası Kontrol",
+       "yol": "/uygulamalar/uygulama-sonrasi-takip/"
+      }
+     ]
+    }
+   ],
+   "alt": [
+    {
+     "ad": "Botulinum Toksin",
+     "yol": "/uygulamalar/botulinum-toksin/",
+     "grup": "Enjeksiyonlar"
+    },
+    {
+     "ad": "Dolgu Uygulamaları",
+     "yol": "/uygulamalar/dolgu-uygulamalari/",
+     "grup": "Enjeksiyonlar"
+    },
+    {
+     "ad": "Sıvı Yüz Germe",
+     "yol": "/uygulamalar/sivi-yuz-germe/",
+     "grup": "Enjeksiyonlar"
+    },
+    {
+     "ad": "Gençlik Aşısı (Skinbooster)",
+     "yol": "/uygulamalar/genclik-asisi-skinbooster/",
+     "grup": "Enjeksiyonlar"
+    },
+    {
+     "ad": "Somon DNA ve Polinükleotid",
+     "yol": "/uygulamalar/somon-dna-polinukleotid/",
+     "grup": "Enjeksiyonlar"
+    },
+    {
+     "ad": "Mezoterapi",
+     "yol": "/uygulamalar/mezoterapi/",
+     "grup": "Enjeksiyonlar"
+    },
+    {
+     "ad": "PRP",
+     "yol": "/uygulamalar/prp/",
+     "grup": "Enjeksiyonlar"
+    },
+    {
+     "ad": "Biyostimülan Uygulamalar",
+     "yol": "/uygulamalar/biyostimulan-uygulamalar/",
+     "grup": "Enjeksiyonlar"
+    },
+    {
+     "ad": "Eksozom",
+     "yol": "/uygulamalar/eksozom/",
+     "grup": "Enjeksiyonlar"
+    },
+    {
+     "ad": "Bölgesel Lipoliz",
+     "yol": "/uygulamalar/bolgesel-lipoliz/",
+     "grup": "Enjeksiyonlar"
+    },
+    {
+     "ad": "Selülit Görünümü",
+     "yol": "/uygulamalar/selulit-gorunumu/",
+     "grup": "Enjeksiyonlar"
+    },
+    {
+     "ad": "Pico Lazer ile Dövme Silme",
+     "yol": "/uygulamalar/pico-lazer-dovme-silme/",
+     "grup": "Cihaz ve Lazer"
+    },
+    {
+     "ad": "Pico Lazer ile Leke",
+     "yol": "/uygulamalar/pico-lazer-leke/",
+     "grup": "Cihaz ve Lazer"
+    },
+    {
+     "ad": "Fraksiyonel Lazer",
+     "yol": "/uygulamalar/fraksiyonel-lazer/",
+     "grup": "Cihaz ve Lazer"
+    },
+    {
+     "ad": "Altın İğne Radyofrekans",
+     "yol": "/uygulamalar/altin-igne-radyofrekans/",
+     "grup": "Cihaz ve Lazer"
+    },
+    {
+     "ad": "HIFU — Ameliyatsız Sıkılaştırma",
+     "yol": "/uygulamalar/hifu-ameliyatsiz-yuz-germe/",
+     "grup": "Cihaz ve Lazer"
+    },
+    {
+     "ad": "İğnesiz Mezoterapi",
+     "yol": "/uygulamalar/ignesiz-mezoterapi/",
+     "grup": "Cihaz ve Lazer"
+    },
+    {
+     "ad": "Karbon Peeling",
+     "yol": "/uygulamalar/karbon-peeling/",
+     "grup": "Cihaz ve Lazer"
+    },
+    {
+     "ad": "Saç Mezoterapisi",
+     "yol": "/uygulamalar/sac-mezoterapisi/",
+     "grup": "Saç sağlığı"
+    },
+    {
+     "ad": "Saç PRP",
+     "yol": "/uygulamalar/sac-prp/",
+     "grup": "Saç sağlığı"
+    },
+    {
+     "ad": "Hekim Muayenesi",
+     "yol": "/uygulamalar/hekim-muayenesi/",
+     "grup": "Değerlendirme"
+    },
+    {
+     "ad": "Uygulama Sonrası Kontrol",
+     "yol": "/uygulamalar/uygulama-sonrasi-takip/",
+     "grup": "Değerlendirme"
+    },
+    {
+     "ad": "Uygulamaların tamamı",
+     "yol": "/uygulamalar/"
+    }
+   ]
+  },
+  {
+   "ad": "Bölgeler",
+   "yol": "/bolgeler/",
+   "alt": [
+    {
+     "ad": "Yüz",
+     "yol": "/bolgeler/yuz/",
+     "not": "Üst, orta ve alt yüz birlikte"
+    },
+    {
+     "ad": "Göz Çevresi",
+     "yol": "/bolgeler/goz-cevresi/",
+     "not": "Göz altı çukuru, kaz ayağı, kaş"
+    },
+    {
+     "ad": "Dudak",
+     "yol": "/bolgeler/dudak/",
+     "not": "Kontur, dolgunluk ve kuruluk"
+    },
+    {
+     "ad": "Çene ve Jawline",
+     "yol": "/bolgeler/cene-ve-jawline/",
+     "not": "Çene hattı, gıdı ve profil"
+    },
+    {
+     "ad": "Saçlı Deri",
+     "yol": "/bolgeler/sacli-deri/",
+     "not": "Saç ve saçlı deri uygulamaları"
+    },
+    {
+     "ad": "Boyun ve Dekolte",
+     "yol": "/bolgeler/boyun-ve-dekolte/",
+     "not": "Yatay çizgiler ve güneş izi"
+    },
+    {
+     "ad": "El",
+     "yol": "/bolgeler/el/",
+     "not": "El sırtı cildi"
+    },
+    {
+     "ad": "Vücut",
+     "yol": "/bolgeler/vucut/",
+     "not": "Karın, bel, kol ve bacak — lipoliz, selülit, dövme"
+    }
+   ]
+  },
+  {
+   "ad": "Cilt Sorunları",
+   "yol": "/cilt-sorunlari/",
+   "alt": [
+    {
+     "ad": "Mimik Çizgileri ve Kırışıklık",
+     "yol": "/cilt-sorunlari/mimik-cizgileri-ve-kirisiklik/"
+    },
+    {
+     "ad": "Hacim Kaybı ve Sarkma",
+     "yol": "/cilt-sorunlari/hacim-kaybi-ve-sarkma/"
+    },
+    {
+     "ad": "Göz Altı Koyuluğu",
+     "yol": "/cilt-sorunlari/goz-alti-koyulugu/"
+    },
+    {
+     "ad": "Akne ve Akne İzi",
+     "yol": "/cilt-sorunlari/akne-ve-akne-izi/"
+    },
+    {
+     "ad": "Cilt Tonu ve Leke",
+     "yol": "/cilt-sorunlari/cilt-tonu-ve-leke/"
+    },
+    {
+     "ad": "Gözenek ve Cilt Dokusu",
+     "yol": "/cilt-sorunlari/gozenek-ve-cilt-dokusu/"
+    },
+    {
+     "ad": "Ciltte Nem Kaybı ve Donukluk",
+     "yol": "/cilt-sorunlari/nem-kaybi-ve-donukluk/"
+    },
+    {
+     "ad": "Saç Dökülmesi",
+     "yol": "/cilt-sorunlari/sac-dokulmesi/"
+    },
+    {
+     "ad": "Aşırı Terleme",
+     "yol": "/cilt-sorunlari/asiri-terleme/"
+    },
+    {
+     "ad": "Bölgesel Yağlanma",
+     "yol": "/cilt-sorunlari/bolgesel-yaglanma/"
+    },
+    {
+     "ad": "Selülit Görünümü",
+     "yol": "/cilt-sorunlari/selulit/"
+    },
+    {
+     "ad": "Dövme ve Kalıcı Makyaj",
+     "yol": "/cilt-sorunlari/dovme-ve-kalici-makyaj/"
+    }
+   ]
+  },
+  {
+   "ad": "Dövme Silme",
+   "yol": "/uygulamalar/pico-lazer-dovme-silme/"
+  },
+  {
+   "ad": "İletişim",
+   "yol": "/iletisim/"
+  }
+ ],
+ "altbilgi": [
+  {
+   "baslik": "Tanışalım",
+   "bag": [
+    [
+     "Muayenehanemiz",
+     "/klinik/"
+    ],
+    [
+     "Hekim",
+     "/hekim/"
+    ],
+    [
+     "Randevudan kontrole",
+     "/yaklasimimiz/"
+    ],
+    [
+     "Soru ve yanıtlar",
+     "/sikca-sorulan-sorular/"
+    ],
+    [
+     "İletişim",
+     "/iletisim/"
+    ]
+   ]
+  },
+  {
+   "baslik": "Uygulamalar",
+   "tumu": [
+    "Uygulamaların tamamı",
+    "/uygulamalar/"
+   ],
+   "bag": [
+    [
+     "Botulinum Toksin",
+     "/uygulamalar/botulinum-toksin/"
+    ],
+    [
+     "Dolgu Uygulamaları",
+     "/uygulamalar/dolgu-uygulamalari/"
+    ],
+    [
+     "Sıvı Yüz Germe",
+     "/uygulamalar/sivi-yuz-germe/"
+    ],
+    [
+     "Gençlik Aşısı (Skinbooster)",
+     "/uygulamalar/genclik-asisi-skinbooster/"
+    ],
+    [
+     "Somon DNA ve Polinükleotid",
+     "/uygulamalar/somon-dna-polinukleotid/"
+    ]
+   ]
+  },
+  {
+   "baslik": "Bölgeler",
+   "tumu": [
+    "Sekiz bölgenin tamamı",
+    "/bolgeler/"
+   ],
+   "bag": [
+    [
+     "Yüz",
+     "/bolgeler/yuz/"
+    ],
+    [
+     "Göz Çevresi",
+     "/bolgeler/goz-cevresi/"
+    ],
+    [
+     "Dudak",
+     "/bolgeler/dudak/"
+    ],
+    [
+     "Çene ve Jawline",
+     "/bolgeler/cene-ve-jawline/"
+    ],
+    [
+     "Saçlı Deri",
+     "/bolgeler/sacli-deri/"
+    ]
+   ]
+  },
+  {
+   "baslik": "Cilt sorunları",
+   "tumu": [
+    "Bütün şikâyet başlıkları",
+    "/cilt-sorunlari/"
+   ],
+   "bag": [
+    [
+     "Mimik Çizgileri ve Kırışıklık",
+     "/cilt-sorunlari/mimik-cizgileri-ve-kirisiklik/"
+    ],
+    [
+     "Hacim Kaybı ve Sarkma",
+     "/cilt-sorunlari/hacim-kaybi-ve-sarkma/"
+    ],
+    [
+     "Göz Altı Koyuluğu",
+     "/cilt-sorunlari/goz-alti-koyulugu/"
+    ],
+    [
+     "Akne ve Akne İzi",
+     "/cilt-sorunlari/akne-ve-akne-izi/"
+    ],
+    [
+     "Cilt Tonu ve Leke",
+     "/cilt-sorunlari/cilt-tonu-ve-leke/"
+    ]
+   ]
+  }
+ ],
+ "ik": {
+  "ok": "<svg viewBox=\"0 0 16 16\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M3 8h10M9 4l4 4-4 4\"/></svg>",
+  "onay": "<svg viewBox=\"0 0 16 16\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.7\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M2.5 8.5l3.5 3.5 7.5-8\"/></svg>",
+  "kalp": "<svg viewBox=\"0 0 20 20\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M10 17s-6.5-4.2-6.5-8.6A3.7 3.7 0 0 1 10 6.2a3.7 3.7 0 0 1 6.5 2.2C16.5 12.8 10 17 10 17z\"/></svg>",
+  "mercek": "<svg viewBox=\"0 0 20 20\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" aria-hidden=\"true\"><circle cx=\"8.8\" cy=\"8.8\" r=\"5.3\"/><path d=\"M12.8 12.8L17 17\"/></svg>",
+  "kalkan": "<svg viewBox=\"0 0 20 20\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M10 2.5l6 2.2v4.6c0 4-2.6 6.8-6 8.2-3.4-1.4-6-4.2-6-8.2V4.7z\"/><path d=\"M7.6 10l1.7 1.7L13 8\" stroke-linecap=\"round\"/></svg>",
+  "damla": "<svg viewBox=\"0 0 20 20\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M10 2.5c3 3.6 5 6.2 5 8.6a5 5 0 0 1-10 0c0-2.4 2-5 5-8.6z\"/></svg>",
+  "yaprak": "<svg viewBox=\"0 0 20 20\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M16.5 3.5C9 3.5 4.5 7 4.5 12.5c0 1.4.4 2.6 1 3.5C7 13 10 10.6 14 9.5c-3.2 1.8-5.6 4.2-7 7.5 1 .4 2.1.5 3 .5 5.5 0 6.5-6.5 6.5-14z\"/></svg>",
+  "liste": "<svg viewBox=\"0 0 20 20\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" aria-hidden=\"true\"><path d=\"M7 5.5h9M7 10h9M7 14.5h9M3.6 5.5h.01M3.6 10h.01M3.6 14.5h.01\"/></svg>",
+  "saat": "<svg viewBox=\"0 0 20 20\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" aria-hidden=\"true\"><circle cx=\"10\" cy=\"10\" r=\"7.3\"/><path d=\"M10 5.8V10l2.8 1.8\"/></svg>",
+  "pin": "<svg viewBox=\"0 0 20 20\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M10 17.5s5.5-4.9 5.5-9a5.5 5.5 0 1 0-11 0c0 4.1 5.5 9 5.5 9z\"/><circle cx=\"10\" cy=\"8.4\" r=\"2.1\"/></svg>",
+  "tel": "<svg viewBox=\"0 0 20 20\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M6.4 3.2 8 6.3 6.4 8c.9 1.9 2.4 3.4 4.3 4.3l1.7-1.6 3.1 1.6-.4 2.6c-.1.7-.7 1.2-1.4 1.2C8.2 16.1 3.9 11.8 3.2 6.3c-.1-.7.4-1.4 1.2-1.5z\"/></svg>",
+  "wa": "<svg viewBox=\"0 0 20 20\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M3 17l1.1-3.6A7 7 0 1 1 6.9 16z\"/><path d=\"M7.4 7.6c.3 2.6 2.4 4.7 5 5l.9-1.4 1.5.7-.2 1.2c-2.9.4-6.5-2.6-6.9-6l1.1-.2z\" stroke-width=\"1.2\"/></svg>",
+  "posta": "<svg viewBox=\"0 0 20 20\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linejoin=\"round\" aria-hidden=\"true\"><rect x=\"2.6\" y=\"4.4\" width=\"14.8\" height=\"11.2\" rx=\"1.6\"/><path d=\"M2.9 5.4 10 10.6l7.1-5.2\"/></svg>",
+  "menu": "<svg viewBox=\"0 0 20 20\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.7\" stroke-linecap=\"round\" aria-hidden=\"true\"><path d=\"M3 6h14M3 10h14M3 14h14\"/></svg>",
+  "kapa": "<svg viewBox=\"0 0 20 20\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.7\" stroke-linecap=\"round\" aria-hidden=\"true\"><path d=\"M5 5l10 10M15 5L5 15\"/></svg>",
+  "asagi": "<svg viewBox=\"0 0 12 12\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.7\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M2.5 4.5 6 8l3.5-3.5\"/></svg>"
+ }
+}

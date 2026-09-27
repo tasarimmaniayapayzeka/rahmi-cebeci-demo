@@ -15,3 +15,6 @@ desktop.ini
 
 # ön bilgi asistanı: gerçek anahtar dosyası asla depoya girmez
 rahmi-asistan-gizli.php
+
+# yerel WordPress deneme ortamı (çekirdek + SQLite + giriş bilgisi) — depoya girmez
+wp-yerel/
