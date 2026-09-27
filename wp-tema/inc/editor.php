@@ -16,14 +16,16 @@ add_filter('tiny_mce_before_init', function ($in) {
 	$in['wpautop'] = false;                 /* <p> eklenmez/silinmez: kaydedilen HTML = görünen HTML */
 	$in['verify_html'] = false;             /* öğe/öznitelik temizliği yok (SVG, data-*, aria-*, boş <i>) */
 	$in['valid_elements'] = '*[*]';
-	$in['extended_valid_elements'] = '*[*]';
+	/* TinyMCE'nin varsayılan şeması boş div/p/li/td'yi <br> ya da &nbsp; ile doldurur, boş a/span/b/i'yi siler;
+	   tasarımdaki boş süs katmanları (<div class="g-isin"></div>, <i></i>) bozulmasın diye bu öğeler önekSİZ yeniden tanımlanır */
+	$in['extended_valid_elements'] = '*[*],div[*],p[*],li[*],td[*],th[*],h1[*],h2[*],h3[*],h4[*],h5[*],h6[*],pre[*],address[*],caption[*],'
+		. 'a[*],span[*],i[*],b[*],strong[*],em[*],ul[*],ol[*],table[*],tbody[*],tr[*],sub[*],sup[*],blockquote[*],font[*]';
 	$in['valid_children'] = '+body[style|script|svg|section|header|footer|nav|aside|article|figure|details|form],'
 		. '+a[div|p|h2|h3|h4|span|svg|img|ul|ol|li|b|section|figure|article],+button[svg|span|b|i|div|img],'
 		. '+div[svg|script|section|details|form],+span[svg|div|b|img],+li[svg|div|a|details],+p[svg],'
 		. '+label[svg|input|span|div],+summary[svg|span|b|i],+figure[svg|div]';
 	$in['element_format'] = 'html';         /* xhtml olsaydı <script> içi CDATA ile sarılır → JSON veri blokları bozulurdu */
 	$in['forced_root_block'] = false;       /* üst düzeydeki bölümleri <p> içine almaz */
-	$in['remove_trailing_brs'] = false;
 	$in['keep_styles'] = true;
 	$in['allow_unsafe_link_target'] = true; /* target="_blank" bağlantılara kendiliğinden rel eklemesin */
 	$in['allow_html_in_named_anchor'] = true;
@@ -40,10 +42,12 @@ add_filter('tiny_mce_before_init', function ($in) {
 
 /* editör, sitenin kendi stilleriyle açılır — yazı nasıl görünecekse öyle görünür */
 add_action('admin_init', function () {
+	/* tam adres şart: "/varliklar/..." verilirse WordPress onu tema klasöründe arar, bulamayınca atar */
+	$alan = untrailingslashit(home_url());
 	add_editor_style([
-		rc_varlik('varliklar/css/tokens.css'),
-		rc_varlik('varliklar/css/site.css'),
-		rc_varlik('varliklar/css/g.css'),
+		$alan . rc_varlik('varliklar/css/tokens.css'),
+		$alan . rc_varlik('varliklar/css/site.css'),
+		$alan . rc_varlik('varliklar/css/g.css'),
 		get_theme_file_uri('editor.css'),
 	]);
 });

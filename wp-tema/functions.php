@@ -12,10 +12,11 @@ defined('RC_404_AD') || define('RC_404_AD', 'sayfa-bulunamadi');   /* 404 içeri
 /* site bilgisi, menü, altbilgi, ikonlar — site/wp-aktar.js üretir (elle düzenleme) */
 function rc($anahtar = null) {
 	static $v = null;
-	if ($v === null) $v = json_decode((string) file_get_contents(RC_TEMA . '/inc/veri.json'), true) ?: [];
+	if ($v === null) $v = rc_ayar_uygula(json_decode((string) file_get_contents(RC_TEMA . '/inc/veri.json'), true) ?: []);
 	return $anahtar === null ? $v : ($v[$anahtar] ?? null);
 }
 
+require RC_TEMA . '/inc/ayarlar.php';    /* "Site bilgileri" ekranı: telefon, adres, hekim künyesi… (panelde kaydedilen veri.json'u ezer) */
 require RC_TEMA . '/inc/temizlik.php';   /* WordPress'in başlığa/gövdeye eklediklerini kapatır */
 require RC_TEMA . '/inc/editor.php';     /* Klasik Editör + TinyMCE: işaretleme korunur */
 require RC_TEMA . '/inc/meta.php';       /* sayfa ayarları kutusu: SEO başlığı, açıklama, tür, noindex, betikler */
