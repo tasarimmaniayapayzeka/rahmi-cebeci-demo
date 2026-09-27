@@ -20,7 +20,8 @@ ALAN=rahmicebeci.com.tr
 SUNUCU=https://mt-lunar.guzelhosting.com:2083
 DEPO=/home/rahmicebeci/repositories/rahmi-cebeci
 TOKEN_DOSYA="$HOME/.cpanel-$HESAP-token"
-KOK="$(cd "$(dirname "$0")/.." && pwd)"
+# Windows'ta git.exe'ye C:/… biçimi gerekir (yol çevirisi yukarıda kapalı); Mac/Linux'ta pwd -W yok → düz pwd
+KOK="$(cd "$(dirname "$0")/.." && { pwd -W 2>/dev/null || pwd; })"
 
 [ -s "$TOKEN_DOSYA" ] || { echo "belirteç dosyası yok: $TOKEN_DOSYA"; exit 2; }
 
