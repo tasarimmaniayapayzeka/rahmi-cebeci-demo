@@ -18,3 +18,6 @@ rahmi-asistan-gizli.php
 
 # yerel WordPress deneme ortamı (çekirdek + SQLite + giriş bilgisi) — depoya girmez
 wp-yerel/
+
+# SEO/özgünlük denetim raporları (iç notlar, Copyscape bilgisi) — depo herkese açık, girmez
+seo-denetim/

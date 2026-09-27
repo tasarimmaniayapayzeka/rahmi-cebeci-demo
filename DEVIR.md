@@ -19,7 +19,16 @@ gidiş-dönüş testi. Örnekler: 03-Griarts (statik→WP, 0 piksel fark), 26-Ta
 - Yerel: `wp-yerel/baslat.bat` → http://127.0.0.1:8066 (giriş `wp-yerel/giris.txt`, git dışı). Kontrol: `node wp-yerel/karsilastir.js`.
 - İçerik kaynağı geçiş boyunca `site/veri/` → `node site/wp-aktar.js` → `wp-mu/rc-icerik.json`. Canlıda müşteri panelden
   düzenlemeye başlayınca kaynak WordPress olur; aktarıcı düzenlenmiş sayfaları atlar.
-- SEO/özgünlük denetimi (ayrı ajan, salt okuma): `seo-denetim/RAPOR-2026-09-28.md`. Copyscape ücretli → çalıştırılmadı, onay bekliyor.
+- SEO/özgünlük denetimi (ayrı ajan, salt okuma; git dışı): `seo-denetim/RAPOR-2026-09-28.md`.
+  **SEO: 0/66 geçti** (icerik-denetci ort. 48,8; ölçüm sınırı düzeltilmiş kopya 54,9; eşik 85 + İhsan kuralları tam).
+  Salt teknik düzeltmelerle öngörü ~75,6 (ölçüm değil); 85 için hekim onaylı metin değişikliği şart.
+  **Kopya: temiz** — Salvera 8-gram %0,0–0,03 · eski drrahmicebeci.com %0,01 · site içinde paragraf kopyası yok
+  (10 sayfada birebir aynı "ücret" SSS cevabı; 5 kanibalizasyon çifti, en belirgini selülit sorun ↔ selülit uygulama).
+  **Açık kalemler:** SSS cevapları 46 sayfada yalnız JSON'da (arama motoru görmez + görsel editörde düzenlenemez →
+  HTML'e taşınmalı, FAQPage şeması) · Organization/MedicalBusiness, BreadcrumbList, og:image yok · title 65/66 > 60 karakter
+  (YAZIM-KILAVUZU 50–65 diyor, standart ≤60 — karar) · etken madde adları (botulinum toksin 16, hyalüronik asit 15, "botoks" 7
+  sayfa) standart md.61 → hukukçu · odak kelimeler önerildi, kullanıcı onayı bekliyor · Copyscape ≈ $8,19 (66 sayfa gövde+SSS),
+  bakiye $18,04 → onay bekliyor · WP'de site haritası noindex modunda kapalı (açılışta kontrol).
 
 ## 28 Eylül — site kendi alan adında kuruldu (statik, GEÇİCİ)
 
