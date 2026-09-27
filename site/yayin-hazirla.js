@@ -1,18 +1,24 @@
 /* ============================================================
-   YAYIN PAKETİ HAZIRLAYICI
-   docs/ klasörünü 'yayin/' klasörüne kopyalar; iç sunum prototiplerini
-   (tasarim-*, tasarimlar) DIŞARIDA bırakır ve .htaccess ekler.
-   Kullanım:  node render.js && node yayin-hazirla.js
+   CANLI YAYIN PAKETİ — rahmicebeci.com.tr
+   Siteyi canlı hedefle (RC_HEDEF=canli: gerçek alan adı, demo şeridi yok,
+   form iletisim-gonder.php'ye gider) depo kökündeki yayin/ klasörüne
+   derler, .htaccess ekler ve denetler. yayin/ depoya girer; cPanel git
+   onu çeker ve .cpanel.yml ile public_html'e kopyalar.
+   Kullanım:  node site/render.js && node site/yayin-hazirla.js
    ============================================================ */
 const fs = require('fs');
 const path = require('path');
+const { execFileSync } = require('child_process');
 
 const KOK = __dirname;
-const KAYNAK = path.join(KOK, '..', 'docs');
-const HEDEF = path.join(KOK, 'yayin');
-const S = require('./veri/site');
+const HEDEF = path.join(KOK, '..', 'yayin');
+const HESAP = 'rahmicebeci';   /* cPanel hesabı (mt-lunar.guzelhosting.com) */
 
-/* canlıya ÇIKMAYACAK klasörler — iç sunum/demo prototipleri */
+process.env.RC_HEDEF = 'canli';
+const S = require('./veri/site');
+if (S.hedef !== 'canli') throw new Error('site.js canlı hedefi okumadı');
+
+/* canlıya ÇIKMAYACAK klasörler — iç sunum/demo prototipleri (derleme üretmez; güvenlik ağı) */
 const HARIC = new Set([
   'tasarim-a', 'tasarim-b', 'tasarim-c', 'tasarim-d', 'tasarim-e', 'tasarim-f',
   'tasarim-g', 'tasarim-g-koyu', 'tasarimlar',
@@ -21,28 +27,22 @@ const HARIC = new Set([
 function sil(p) {
   if (fs.existsSync(p)) fs.rmSync(p, { recursive: true, force: true });
 }
-function kopyala(src, dst, kokMu = false) {
-  fs.mkdirSync(dst, { recursive: true });
-  for (const g of fs.readdirSync(src, { withFileTypes: true })) {
-    if (kokMu && HARIC.has(g.name)) continue;
-    const a = path.join(src, g.name), b = path.join(dst, g.name);
-    if (g.isDirectory()) kopyala(a, b); else fs.copyFileSync(a, b);
-  }
-}
 
 sil(HEDEF);
-kopyala(KAYNAK, HEDEF, true);
+execFileSync(process.execPath, [path.join(KOK, 'render.js')], {
+  stdio: 'inherit',
+  env: { ...process.env, RC_HEDEF: 'canli', RC_CIKTI: HEDEF },
+});
 
 /* ---------- .htaccess ---------- */
-const alan = S.alan.replace(/^https?:\/\//, '');
 const htaccess = `# BEGIN cPanel-generated php ini directives, do not edit
 # (guzelhosting kurulumundan devralındı — PHP hata günlüğü)
 <IfModule php7_module>
-   php_value error_log "/home/HESAP/logs/php.error.log"
+   php_value error_log "/home/${HESAP}/logs/php.error.log"
    php_flag log_errors On
 </IfModule>
 <IfModule lsapi_module>
-   php_value error_log "/home/HESAP/logs/php.error.log"
+   php_value error_log "/home/${HESAP}/logs/php.error.log"
    php_flag log_errors On
 </IfModule>
 # END cPanel-generated php ini directives, do not edit
@@ -112,7 +112,9 @@ function tara(dir, on = '') {
       dosya++;
       if (/\.(html|php|css|js)$/.test(g.name)) {
         const m = fs.readFileSync(tam, 'utf8');
-        if (/localhost:\d+/.test(m)) uyarilar.push('localhost adresi: ' + on + g.name);
+        if (/localhost:\d+|127\.0\.0\.1/.test(m)) uyarilar.push('yerel adres: ' + on + g.name);
+        if (/github\.io/.test(m)) uyarilar.push('demo adresi (github.io): ' + on + g.name);
+        if (/data-demo=/.test(m)) uyarilar.push('demo kipi açık: ' + on + g.name);
         if (/sk-[A-Za-z0-9_-]{20,}/.test(m)) uyarilar.push('!!! API ANAHTARI: ' + on + g.name);
         /* yalnız GERÇEK bağlantı/kaynak; yorum satırındaki geçişler sayılmaz */
         if (/(href|src|action)="[^"]*(tasarim-[a-g]|tasarimlar)\//.test(m))
@@ -129,8 +131,7 @@ for (const d of HARIC) {
 }
 if (!fs.existsSync(path.join(HEDEF, 'sitemap.xml'))) uyarilar.push('sitemap.xml yok');
 
-console.log(`yayin/ hazır → ${toplam} dosya`);
-console.log(`hariç tutulan: ${[...HARIC].join(', ')}`);
-console.log(uyarilar.length ? 'UYARILAR:\n  ' + uyarilar.join('\n  ') : 'denetim temiz (localhost yok, anahtar yok, demo bağlantısı yok)');
-console.log(`\nSunucuya: yayin/ içeriğinin TAMAMI → /home/<hesap>/public_html/`);
-console.log(`Not: sunucu tarafı iletisim-gonder.php (form) ve asistan.php (ön bilgi asistanı). Asistan anahtarı: sunucu/ASISTAN-KURULUM.md`);
+console.log(`\nyayin/ hazır → ${toplam} dosya · ${S.alan} · ${S.noindex ? 'noindex (arama motorlarına KAPALI)' : 'arama motorlarına AÇIK'}`);
+console.log(uyarilar.length ? 'UYARILAR:\n  ' + uyarilar.join('\n  ') : 'denetim temiz (yerel adres yok, anahtar yok, demo izi yok)');
+console.log(`Sonra: node site/denetle.js yayin → commit + push → cPanel: Update from Remote + Deploy HEAD Commit (.cpanel.yml)`);
+if (uyarilar.length) process.exitCode = 1;

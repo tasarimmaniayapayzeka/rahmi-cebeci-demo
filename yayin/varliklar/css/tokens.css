@@ -1,0 +1,137 @@
+/* ============================================================
+   GECE ALTIN — Tasarım Sistemi v1
+   Dr. Rahmi Cebeci · Bakırköy · medikal estetik muayenehanesi
+   ------------------------------------------------------------
+   Palet, muayenehanenin mevcut logosundan (altın #D4AF37 / antrasit)
+   türetildi. Salvera'nın "Buzul" (petrol-mavi) sisteminden bilinçli
+   olarak uzaklaşıldı: fildişi zemin, antrasit eylem rengi, altın
+   vurgu. Tüm metin renkleri WCAG 2.1 göreli parlaklık formülüyle
+   fildişi zemin üstünde ≥4.5:1 olacak biçimde seçildi.
+   ------------------------------------------------------------
+   KURALLAR (token seviyesinde kilitli):
+   1. --dekor açık zeminde METİN OLAMAZ. Yalnız ikon, dolgu, ayraç.
+   2. --bakir (altın) geniş yüzey olamaz — etiket, 1px çizgi, rozet.
+   3. --acil YALNIZ acil/112 kutusu. Diğer tüm uyarılar --uyari.
+   4. Gece panelleri toplam sayfa alanının ≤%25'i.
+   5. Saf beyaz ve saf siyah yalnız düğme metni olarak kullanılır.
+   6. Emoji YASAK — yalnız çizgi SVG ikon.
+   7. Öncesi-sonrası, hasta görseli, yorum/puan, fiyat bileşeni
+      bu sistemde TANIMLI DEĞİLDİR ve üretilmez.
+   ============================================================ */
+
+/* ---------- Fontlar (self-host — Google hotlink yok) ---------- */
+/* Outfit değişken font: tek dosya 100–900 ağırlığı taşır */
+@font-face{font-family:'Outfit';font-style:normal;font-weight:100 900;font-display:swap;
+  src:url('../fonts/outfit-var-ext.woff2') format('woff2');
+  unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;}
+@font-face{font-family:'Outfit';font-style:normal;font-weight:100 900;font-display:swap;
+  src:url('../fonts/outfit-var-lat.woff2') format('woff2');
+  unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;}
+
+@font-face{font-family:'Mulish';font-style:normal;font-weight:400;font-display:swap;
+  src:url('../fonts/mulish-400-ext.woff2') format('woff2');
+  unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;}
+@font-face{font-family:'Mulish';font-style:normal;font-weight:400;font-display:swap;
+  src:url('../fonts/mulish-400-lat.woff2') format('woff2');
+  unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;}
+@font-face{font-family:'Mulish';font-style:normal;font-weight:600;font-display:swap;
+  src:url('../fonts/mulish-600-ext.woff2') format('woff2');
+  unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;}
+@font-face{font-family:'Mulish';font-style:normal;font-weight:600;font-display:swap;
+  src:url('../fonts/mulish-600-lat.woff2') format('woff2');
+  unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;}
+@font-face{font-family:'Mulish';font-style:normal;font-weight:700;font-display:swap;
+  src:url('../fonts/mulish-700-ext.woff2') format('woff2');
+  unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;}
+@font-face{font-family:'Mulish';font-style:normal;font-weight:700;font-display:swap;
+  src:url('../fonts/mulish-700-lat.woff2') format('woff2');
+  unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;}
+
+:root{
+  /* ---------- Yüzey (fildişi) ---------- */
+  --buz:#FAF7F1;        /* ana zemin */
+  --buz-2:#F3EDE2;      /* alternatif bölüm, kart */
+  --buz-3:#EADFCC;      /* girinti, rozet dolgusu */
+  --sicak:#F6EDE6;      /* ILIK ikincil yüzey — portre/hekim/empati blokları */
+  --sicak-2:#ECDFD3;
+  --beyaz:#FFFFFF;
+
+  /* ---------- Gece panelleri (antrasit, ≤%25) ---------- */
+  --gece:#1A1A1D;
+  --gece-2:#232327;
+  --gece-3:#2E2D31;
+  --gece-metin:#F1ECE2;    /* 15.6:1 */
+  --gece-metin-2:#B9B2A6;  /*  8.3:1 */
+  --gece-bakir:#D9B75A;    /*  8.1:1 — altın, yalnız gece zemininde */
+
+  /* ---------- Metin ---------- */
+  --murekkep:#1C1B18;   /* başlık — fildişi üstünde 16.4:1 */
+  --govde:#4B4842;      /* gövde  — 8.2:1 */
+  --sessiz:#6C675E;     /* üçüncül — 4.9:1 */
+
+  /* ---------- Eylem (antrasit) ---------- */
+  --petrol:#1C1B18;       /* BİRİNCİL CTA — beyazla 16.4:1 */
+  --petrol-koyu:#000000;  /* hover */
+  --petrol-orta:#7A5A14;  /* bağlantı — fildişi üstünde 5.4:1 */
+  --petrol-yikama:rgba(28,27,24,.06);
+
+  /* ---------- Vurgu (altın) ---------- */
+  --bakir:#85641C;      /* etiket/ayraç/rozet — fildişi 5.0 · sıcak 4.8 · buz-2 4.6 */
+  --bakir-acik:#D9B75A; /* yalnız gece zemininde */
+  --dekor:#E2CFA0;      /* DEKORATİF — metin OLAMAZ */
+
+  /* ---------- Çizgi ---------- */
+  --cizgi:#E6DED0;
+  --cizgi-2:#D8CDB9;
+  --cizgi-sicak:#E4D6C8;
+
+  /* ---------- Durum ---------- */
+  --olumlu:#2F5F3E;     /* 7.0:1 */
+  --uyari:#8A5A16;      /* 5.5:1 — TÜM uyarılar */
+  --acil:#A32020;       /* 7.1:1 — YALNIZ 112/acil kutusu */
+
+  /* ---------- Tipografi ---------- */
+  --font-baslik:'Outfit',system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;
+  --font-govde:'Mulish',system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;
+  --font-kod:ui-monospace,'Cascadia Mono',Consolas,monospace;
+
+  --fs-h1:clamp(2rem,4.6vw,3.15rem);
+  --fs-h2:clamp(1.5rem,3vw,2.1rem);
+  --fs-h3:1.3rem;
+  --fs-h4:1.05rem;
+  --fs-govde:1.0625rem;   /* 17px */
+  --fs-sm:.9375rem;       /* 15px */
+  --fs-xs:.8125rem;       /* 13px */
+  --fs-etiket:.66rem;
+
+  --lh-govde:1.7;
+  /* 1.18 — TR büyük diakritikleri (İ Ğ Ş Ç Ö Ü) için zorunlu pay. DÜŞÜRMEYİN. */
+  --lh-baslik:1.18;
+  --ls-etiket:.2em;
+
+  /* ---------- Ölçü ---------- */
+  --wrap:1180px;
+  --wrap-dar:720px;      /* okuma genişliği ~68 karakter */
+  --oluk:clamp(1.125rem,4vw,2.5rem);
+  --bolum:clamp(3.25rem,7vw,6rem);
+  --r-sm:6px; --r-md:10px; --r-lg:16px; --r-hap:999px;
+
+  --golge-sm:0 1px 2px rgba(28,27,24,.05),0 4px 12px -6px rgba(28,27,24,.10);
+  --golge-md:0 2px 4px rgba(28,27,24,.06),0 14px 34px -14px rgba(28,27,24,.16);
+  --golge-lg:0 4px 8px rgba(28,27,24,.07),0 24px 52px -22px rgba(28,27,24,.22);
+
+  /* ---------- Hareket ---------- */
+  --ease:cubic-bezier(.22,.61,.36,1);
+  --t-hizli:150ms; --t-orta:280ms; --t-yavas:520ms;
+
+  --bar-h:0px;   /* mobil sticky çubuk yüksekliği */
+}
+
+@media (max-width:820px){ :root{ --bar-h:70px; } }
+
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{
+    animation-duration:.01ms !important; animation-iteration-count:1 !important;
+    transition-duration:.01ms !important; scroll-behavior:auto !important;
+  }
+}

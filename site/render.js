@@ -10,7 +10,8 @@ const S = require('./veri/site');
 const ASISTAN = require('./veri/asistan');
 
 const KOK = __dirname;
-const CIKTI = path.join(KOK, '..', 'docs');   /* depo kökü/docs → GitHub Pages */
+/* depo kökü/docs → GitHub Pages; canlı derleme (yayin-hazirla.js) RC_CIKTI ile yayin/'a yazar */
+const CIKTI = process.env.RC_CIKTI ? path.resolve(process.env.RC_CIKTI) : path.join(KOK, '..', 'docs');
 const SAYFA_DIR = path.join(KOK, 'veri', 'sayfalar');
 
 /* ---------- ÖNBELLEK DAMGASI ----------
@@ -239,7 +240,7 @@ function duzen(sayfa) {
 <title>${kacir(sayfa.baslik)}${sayfa.slug ? ' | ' + S.marka : ''}</title>
 <meta name="description" content="${kacir(sayfa.aciklama)}">
 <link rel="canonical" href="${url}">
-${sayfa.noindex ? '<meta name="robots" content="noindex,follow">\n' : S.demo ? '<meta name="robots" content="noindex,nofollow">\n' : ''}<meta name="theme-color" content="#FAF7F1">
+${sayfa.noindex ? '<meta name="robots" content="noindex,follow">\n' : S.noindex ? '<meta name="robots" content="noindex,nofollow">\n' : ''}<meta name="theme-color" content="#FAF7F1">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="tr_TR">
 <meta property="og:site_name" content="${S.marka}">

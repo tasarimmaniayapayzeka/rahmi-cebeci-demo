@@ -9,18 +9,27 @@
    ============================================================ */
 
 const MARKA = 'Dr. Rahmi Cebeci';
-/* Demo yayını GitHub Pages'te. Alan adına geçince tek satır değişir:
-   const ALAN = 'https://drrahmicebeci.com'; ve demo: false yapılır. */
-const ALAN  = 'https://tasarimmaniayapayzeka.github.io/rahmi-cebeci-demo';
+/* İki yayın hedefi aynı kaynaktan derlenir:
+   - demo  (varsayılan)     : GitHub Pages → docs/   (render.js)
+   - canli (RC_HEDEF=canli) : rahmicebeci.com.tr → yayin/ (yayin-hazirla.js; cPanel git ile çeker) */
+const HEDEF = process.env.RC_HEDEF === 'canli' ? 'canli' : 'demo';
+const ALAN  = HEDEF === 'canli'
+  ? 'https://rahmicebeci.com.tr'
+  : 'https://tasarimmaniayapayzeka.github.io/rahmi-cebeci-demo';
+/* false: canlı alan adı arama motorlarına KAPALI (her sayfa noindex) — müşteri onayıyla true yapılır */
+const CANLI_ACIK = false;
 
 module.exports = {
   marka: MARKA,
   markaAlt: 'Medikal Estetik',
   alan: ALAN,
+  hedef: HEDEF,
   dil: 'tr',
 
-  /* true: her sayfaya noindex + üst demo şeridi basılır (sunum sürümü) */
-  demo: true,
+  /* true: üst demo şeridi + form WhatsApp'a düşer (sunum sürümü; yalnız GitHub Pages) */
+  demo: HEDEF === 'demo',
+  /* true: her sayfaya noindex basılır */
+  noindex: HEDEF === 'demo' || !CANLI_ACIK,
 
   /* Ön bilgi asistanı. canli:false iken yalnız sayfadaki hazır yanıtlarla
      çalışır (sunucuya, dışarıya hiçbir şey gitmez). Anahtar sunucuya

@@ -1,12 +1,13 @@
 /* ============================================================
    YAYIN ÖNCESİ DENETİM — 34-Rahmi-Cebeci
-   Kullanım: node site/render.js && node site/denetle.js
+   Kullanım: node site/render.js && node site/denetle.js [klasör]
+   (klasör verilmezse docs/; canlı paket için: node site/denetle.js yayin)
    Kırık iç bağlantı, eksik görsel, Salvera kalıntısı, yasaklı
    ifade. Hata varsa çıkış kodu 1.
    ============================================================ */
 const fs = require('fs');
 const path = require('path');
-const KOK = path.join(__dirname, '..', 'docs');
+const KOK = process.argv[2] ? path.resolve(process.argv[2]) : path.join(__dirname, '..', 'docs');
 
 const sayfalar = [];
 (function gez(d) {

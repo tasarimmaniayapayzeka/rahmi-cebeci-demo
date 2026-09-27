@@ -1,0 +1,29 @@
+---
+# cPanel Git™ Version Control dağıtım tarifi — Dr. Rahmi Cebeci (rahmicebeci.com.tr)
+# ------------------------------------------------------------
+# Canlıya YALNIZ yayin/ klasörü çıkar. Bu klasörü `node site/yayin-hazirla.js`
+# canlı hedefle (gerçek alan adı, demo şeridi yok) derler. docs/ GitHub Pages
+# demosudur, sunucuya kopyalanmaz.
+#
+# Sunucu mt-lunar.guzelhosting.com (LiteSpeed): rsync ÇALIŞMIYOR, yalnız
+# /bin/cp ve /bin/mkdir. Kabuk globu (*) gizli dosyaları kapsamaz; .htaccess
+# bu yüzden ayrıca kopyalanır. $(date) cPanel görev motorunda HASH(0x…)
+# hatası verir — düz /bin/date kullanılır.
+#
+# YAYIN AKIŞI:
+#   1. node site/render.js            (demo → docs/)
+#   2. node site/yayin-hazirla.js     (canlı → yayin/ + .htaccess + denetim)
+#   3. node site/denetle.js && node site/denetle.js yayin
+#   4. git add -A && git commit && git push
+#   5. cPanel API: VersionControl/update + VersionControlDeployment/create
+#
+# İLK KURULUM (bir kez): Git Version Control → Create
+#   Clone URL: https://github.com/tasarimmaniayapayzeka/rahmi-cebeci-demo.git
+#   Repository Path: repositories/rahmi-cebeci
+deployment:
+  tasks:
+    - export DEPLOYPATH=$HOME/public_html
+    - /bin/mkdir -p $DEPLOYPATH
+    - /bin/cp -R yayin/* $DEPLOYPATH/
+    - /bin/cp -f yayin/.htaccess $DEPLOYPATH/.htaccess
+    - /bin/date >> $HOME/deploy.log
