@@ -1,6 +1,14 @@
 # DEVİR — 34-Rahmi-Cebeci
 
-**Son güncelleme: 25 Eylül 2026 (öğleden sonra oturumu)**
+**Son güncelleme: 27 Eylül 2026**
+
+> **SIRADAKİ İŞ — asistan platformuna geçiş.** Site, TasarımMania'nın çok müşterili asistan platformuna (35-Asistan-Platformu)
+> ilk müşteri olarak bağlanacak. Adım adım plan ve iki sekmenin iş bölümü:
+> `../35-Asistan-Platformu/belgeler/RAHMI-GECIS-PLANI.md`. Bu sekme yalnız BU klasörü değiştirir (Aşama 2: eski asistan
+> dosyalarının çıkarılması, tek satır gömme kodu, metin/KVKK güncellemesi — hukukçu onayıyla, yayın). Platform tarafı
+> (hesap, ayarlar, bilgi bankası) platform sekmesinde yapılır. Önkoşullar ve onaylar planın başında.
+
+_(25 Eylül 2026 öğleden sonra oturumunun notları aşağıda.)_
 
 ## Durum (ölçülmüş)
 
