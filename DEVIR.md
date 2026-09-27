@@ -1,6 +1,54 @@
 # DEVİR — 34-Rahmi-Cebeci
 
-**Son güncelleme: 27 Eylül 2026**
+**Son güncelleme: 28 Eylül 2026 (gece)**
+
+## 28 Eylül — site kendi alan adında kuruldu (ÖNCE BUNU OKU)
+
+🟢 **https://rahmicebeci.com.tr** yayında — **noindex** (arama motorlarına kapalı), demo şeridi yok, form gerçek.
+GitHub Pages demosu (`docs/`) olduğu gibi duruyor.
+
+| Ne | Durum (ölçüldü) |
+|---|---|
+| Sunucu | `mt-lunar.guzelhosting.com:2083`, cPanel hesabı `rahmicebeci`, ana alan adı rahmicebeci.com.tr (başka alan adı yok) |
+| Belirteç | `C:\Users\İHSAN\.cpanel-rahmicebeci-token` (kullanıcı Not Defteri'ne yapıştırdı; sohbete yazılmadı) |
+| Kurulum öncesi | `public_html` boştu (yalnız cPanel dosyaları) — silinen bir şey yok |
+| Git | cPanel deposu `/home/rahmicebeci/repositories/rahmi-cebeci` ← GitHub `rahmi-cebeci-demo` (public), dal `main` |
+| Dağıtım | `.cpanel.yml`: `yayin/` → `public_html` (cp; rsync yok) — ilk dağıtım 0 hatayla bitti |
+| Dışarıdan | site haritasındaki 66 sayfa 200 · http→https, www→çıplak, `/hekim`→`/hekim/` 301 · 404 doğru · `.htaccess`/`.md`/`.cpanel.yml` 403 · güvenlik başlıkları var · konsol temiz, fontlar yüklü |
+| SSL | Let's Encrypt (alan + www + mail), bitiş 26 Ara 2026 — AutoSSL yeniler |
+| E-posta | MX yerel. **info@rahmicebeci.com.tr kutusu kullanıcı tarafından 28 Eyl'de açıldı** (öncesinde form postası "No Such User" ile düşecekti) |
+
+**İki hedef, tek kaynak:** `site.js` → `RC_HEDEF=canli` gerçek alan adı + demo kapalı. `CANLI_ACIK = false` → her sayfa
+noindex. Arama motorlarına açmak = `true` + yeniden yayın (**müşteri onayıyla**; eski drrahmicebeci.com'dan 301 planı da o gün).
+
+**Yayın akışı (canlı):**
+```
+node site/render.js && node site/yayin-hazirla.js       # docs/ (demo) + yayin/ (canlı)
+node site/denetle.js && node site/denetle.js yayin      # ikisi de 0 hata
+git add -A && git commit -m "…" && git push origin main
+bash site/canli-yayinla.sh                              # hesap kontrolü → Update from Remote → Deploy → dışarıdan 200
+```
+
+**Sabah sırayla:**
+1. Formu gerçek bir denemeyle sına (kullanıcı onayıyla, "TEST" yazan bir talep) → info@ kutusuna düştüğünü webmail'den gör.
+   Düşmezse: SPF/DKIM (cPanel › Email Deliverability) ve `mail()` gönderen adresi.
+2. Mobil görünüm ve birkaç iç sayfa gözle (375 px).
+3. Açık kararlar: arama motorlarına açılış tarihi · drrahmicebeci.com yönlendirmesi (bugünkü site RvDesign yapımı; barındırması bilinmiyor) ·
+   HSTS (her şey oturunca) · markaya özel görseller.
+4. Asistan: sitede hâlâ ESKİ asistan (hazır yanıt kipi, `canli:false`; `asistan.php` 405/503 döner, anahtar yok).
+   Platform geçişi (aşağıda) platform canlıya çıkınca.
+
+**Platform geçişi için not (hukukçuya gidecek):** platform widget'ı asistan AÇILMASA da her sayfa yüklemesinde
+`sohbet/baslat` çağırır: kalıcı ziyaretçi belirteci (localStorage `asistan.<pk>.belirtec`), sayfa adresi/başlığı,
+referrer, utm/gclid/fbclid, cihaz türü; tam IP 30 gün. Sitenin bugünkü KVKK ve çerez metinleri "izleme yok, yerel depolama
+yok" diyor — geçişte bu metinler de değişmeli (yalnız "konuşmalar kaydedilir" cümlesi yetmez). Platformda "yalnız
+açılınca bağlan" seçeneği 35 sekmesine önerildi. Yerel platform rahmi sitesine `http://localhost:8060`'ı zaten izinli
+tutuyor → geçiş yerelde uçtan uca denenebilir. Canlı platformun izinli alan adlarına `https://rahmicebeci.com.tr` eklenmeli
+(yerelde `rahmicebeci.com.tr` ve `*.rahmicebeci.com.tr` var).
+
+Not: `git count-objects` "no corresponding .pack" uyarısı veriyor (eşsiz .idx artıkları) — zararsız, push çalışıyor.
+
+---
 
 > **SIRADAKİ İŞ — asistan platformuna geçiş.** Site, TasarımMania'nın çok müşterili asistan platformuna (35-Asistan-Platformu)
 > ilk müşteri olarak bağlanacak. Adım adım plan ve iki sekmenin iş bölümü:

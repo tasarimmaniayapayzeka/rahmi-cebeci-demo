@@ -33,11 +33,12 @@ node site/render.js        # veri/ → docs/
 node site/server.js        # http://localhost:8060
 ```
 
-## Yayın (demo)
-GitHub Pages, `main` dalı `/docs` klasöründen:
-https://tasarimmaniayapayzeka.github.io/rahmi-cebeci-demo/
-`site.js` içinde `demo: true` olduğu sürece her sayfa **noindex** ve üstte demo şeridi taşır.
-Alan adına geçişte: `ALAN` değişir, `demo: false` yapılır, `.cpanel.yml` eklenir.
+## Yayın
+- **Demo** — GitHub Pages, `main` dalı `/docs`: https://tasarimmaniayapayzeka.github.io/rahmi-cebeci-demo/
+  (noindex + üst demo şeridi, form WhatsApp'a düşer).
+- **Canlı** — https://rahmicebeci.com.tr (guzelhosting cPanel, hesap `rahmicebeci`). `node site/yayin-hazirla.js`
+  canlı hedefle `yayin/`'a derler; cPanel git depoyu çeker, `.cpanel.yml` `yayin/`'ı `public_html`'e kopyalar.
+  Yayın: commit + push → `bash site/canli-yayinla.sh`. `site.js` → `CANLI_ACIK` false iken canlı da noindex.
 
 ## Bilinen açık kalemler
 - E-posta adresi müşteriden teyit edilmedi (`site.js` → yer tutucu).
