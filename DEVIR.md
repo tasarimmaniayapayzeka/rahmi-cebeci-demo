@@ -2,7 +2,26 @@
 
 **Son güncelleme: 28 Eylül 2026 (gece)**
 
-## 28 Eylül — site kendi alan adında kuruldu (ÖNCE BUNU OKU)
+## ⛔ KARAR (28 Eyl gece, kullanıcı): SİTE WORDPRESS + KLASİK EDİTÖR OLARAK KURULACAK
+
+Şu an sunucudaki statik sürüm **GEÇİCİ**dir, böyle kalmayacak. Kullanıcı: "site wp olarak klasik editöre uygun olarak
+kurulacak, bana bir daha bunu dedirtme". Kural genel talimatlara da yazıldı (`~/.claude/CLAUDE.md`).
+Standart: kendi temamız (bugünkü tasarım birebir), Classic Editor, Gutenberg kapalı, `wpautop` kapalı (kaydedilen HTML =
+görünen HTML), etkileşimli parçalar kısa kod/şablon, SEO meta post meta'da, Yoast veri taşındıktan sonra,
+gidiş-dönüş testi. Örnekler: 03-Griarts (statik→WP, 0 piksel fark), 26-TasarimMania-WP şartnamesi, 04-Ramazan-Ersoy.
+
+**WordPress geçiş planı (sabah netleşecek):**
+1. **Envanter:** 66 sayfa + etkileşimli bileşenler (yüz haritası/noktalar, cilt tipi testi, hazırlık listesi, bölge
+   pusulası, uygulama karşılaştırma/simülatör, SSS, asistan) → hangisi içerik (Klasik Editör), hangisi kısa kod/şablon.
+2. **Tema** `wp-tema/` (depoda): `render.js` düzeninden header/footer/şablonlar, varlıklar aynı; JSON-LD, canonical,
+   og, noindex bayrağı temadan. İletişim formu tema içinde (`admin-post`), `mail()` kapalıysa SMTP.
+3. **Yerelde kur ve karşılaştır** (XAMPP): her sayfa statik ↔ WP ekran görüntüsü farkı; Klasik Editör gidiş-dönüşü.
+4. **Sunucu:** WordPress'i **kullanıcı** cPanel'den kurar (yönetici parolasını kendisi seçer; ben hesap/parola
+   oluşturmam). Kök `public_html` — statik dosyalar kaldırılır (hepsi git geçmişinde). `.cpanel.yml` → tema +
+   mu-plugin'ler. İçerik tek seferlik mu-plugin yükleyiciyle (Griarts/Ramazan deseni). Classic Editor + (sonra) Yoast.
+5. Kontroller Imunify kuralıyla (≤2 istek/sn).
+
+## 28 Eylül — site kendi alan adında kuruldu (statik, GEÇİCİ)
 
 🟢 **https://rahmicebeci.com.tr** yayında — **noindex** (arama motorlarına kapalı), demo şeridi yok, form gerçek.
 GitHub Pages demosu (`docs/`) olduğu gibi duruyor.
@@ -37,8 +56,9 @@ bash site/canli-yayinla.sh                              # hesap kontrolü → Up
 - Engel yenirse: site ya da cPanel zaman aşımına düşer / 403 captcha sayfası gelir → kullanıcı guzelhosting'den IP'yi beyaz listeye aldırır.
 
 **Sabah sırayla:**
+0. **WordPress geçişi** (yukarıdaki plan) — önce envanter ve kullanıcıyla kısa onay, sonra tema.
 1. Formu gerçek bir denemeyle sına (kullanıcı onayıyla, "TEST" yazan bir talep) → info@ kutusuna düştüğünü webmail'den gör.
-   Düşmezse: SPF/DKIM (cPanel › Email Deliverability) ve `mail()` gönderen adresi.
+   Düşmezse: bu sunucuda `mail()` kapalı olabilir (Griarts/Ramazan'da kapalıydı) → SMTP; SPF/DKIM (Email Deliverability).
 2. Mobil görünüm ve birkaç iç sayfa gözle (375 px).
 3. Açık kararlar: arama motorlarına açılış tarihi · drrahmicebeci.com yönlendirmesi (bugünkü site RvDesign yapımı; barındırması bilinmiyor) ·
    HSTS (her şey oturunca) · markaya özel görseller.
