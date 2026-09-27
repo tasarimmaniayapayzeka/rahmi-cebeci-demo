@@ -62,6 +62,6 @@ echo "dağıtım #$ID: $DURUM"
 [ "$DURUM" = basarili ] || { echo "kayıt: cPanel › Git Version Control › Manage › Pull or Deploy"; exit 1; }
 
 # 5. dışarıdan doğrula
-KOD=$(curl -s -o /dev/null -w '%{http_code}' --max-time 30 "https://$ALAN/")
+KOD=$(env -u MSYS_NO_PATHCONV curl -s -o /dev/null -w '%{http_code}' --max-time 30 "https://$ALAN/")   # /dev/null çevrilsin
 echo "https://$ALAN/ → $KOD"
 [ "$KOD" = 200 ]
