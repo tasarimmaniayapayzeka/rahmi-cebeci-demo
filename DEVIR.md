@@ -29,6 +29,13 @@ git add -A && git commit -m "…" && git push origin main
 bash site/canli-yayinla.sh                              # hesap kontrolü → Update from Remote → Deploy → dışarıdan 200
 ```
 
+**⚠️ Imunify360 — IP engeli yeme (kullanıcı uyarısı; başka projelerde yaşandı):**
+- Siteye istekler **ardışık**, saniyede **en çok 2** (`sleep 0.6`), en çok 2 eşzamanlı. Toplu sayfa taraması yapılacaksa yavaş.
+- `/.env`, `/.git`, `/wp-admin`, `/.htaccess` gibi saldırı imzalı yollar **yoklanmaz** (28 Eyl gecesi bir kez `.htaccess`/`.cpanel.yml`
+  403 kontrolü yapıldı + 66 sayfa beklemesiz tarandı; engel olmadı ama tekrarlanmayacak).
+- cPanel API (2083) çağrıları da seyrek: `canli-yayinla.sh` 3 sn aralıkla yoklar, bu yeterli.
+- Engel yenirse: site ya da cPanel zaman aşımına düşer / 403 captcha sayfası gelir → kullanıcı guzelhosting'den IP'yi beyaz listeye aldırır.
+
 **Sabah sırayla:**
 1. Formu gerçek bir denemeyle sına (kullanıcı onayıyla, "TEST" yazan bir talep) → info@ kutusuna düştüğünü webmail'den gör.
    Düşmezse: SPF/DKIM (cPanel › Email Deliverability) ve `mail()` gönderen adresi.
