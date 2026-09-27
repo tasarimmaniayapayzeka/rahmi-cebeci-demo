@@ -6,3 +6,15 @@ body.rc-editor > section { outline: 1px dashed rgba(133, 100, 28, .28); outline-
 body.rc-editor script { display: none !important; }
 /* ekranda gizli başlangıç durumları editörde görünür olsun */
 body.rc-editor [data-gr], body.rc-editor [data-grozet] { opacity: 1 !important; transform: none !important; }
+/* TinyMCE'nin JSON veri blokları için koyduğu yer tutucular gizli: yanlışlıkla silinmesin */
+body.rc-editor img.mce-object-script { display: none !important; }
+
+/* Etkileşimli bileşenler sitede JS ile açılıp kapanır; editörde hepsi açık ve alt alta durur ki
+   resimlere ve yazılara ayrı ayrı tıklanabilsin (yalnız editör görünümü — site değişmez) */
+body.rc-editor .serit__raf { display: block !important; height: auto !important; }
+body.rc-editor .serit__oge { position: relative !important; display: block !important; height: auto !important; flex: none !important; margin: 0 0 18px !important; overflow: visible !important; }
+body.rc-editor .serit__oge > img { position: static !important; display: block !important; width: 100% !important; height: auto !important; opacity: 1 !important; filter: none !important; transform: none !important; }
+body.rc-editor .serit__bas,
+body.rc-editor .serit__metin { position: static !important; opacity: 1 !important; visibility: visible !important; transform: none !important; pointer-events: auto !important; }
+body.rc-editor .serit__metin { background: #1C1B18; padding: 16px 18px; border-radius: 0 0 14px 14px; }
+body.rc-editor .g-nokta { pointer-events: none; }

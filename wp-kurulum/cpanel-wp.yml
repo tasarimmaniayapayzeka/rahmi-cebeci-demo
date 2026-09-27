@@ -1,0 +1,28 @@
+---
+# cPanel Git™ dağıtım tarifi — WordPress sürümü (rahmicebeci.com.tr)
+# ------------------------------------------------------------
+# SABAH KURULUMUNDA depo kökündeki .cpanel.yml'in YERİNE geçer (şu anki .cpanel.yml statik yayındır).
+# WordPress çekirdeği ve veritabanı cPanel'den kurulur (kullanıcı); bu tarif yalnız bizim dosyalarımızı getirir:
+#   wp-tema/      → wp-content/themes/rahmi-cebeci/
+#   wp-mu/        → wp-content/mu-plugins/   (içerik aktarıcı + rc-icerik.json)
+#   site/varliklar→ varliklar/               (stil, betik, görsel, yazı tipi — sayfalar /varliklar/… adresler)
+#   yayin/*.php   → iletisim-gonder.php, asistan.php (form alıcısı, eski asistan ucu)
+#   wp-kurulum/htaccess → .htaccess
+# Statik sürümün klasörleri silinir: Apache var olan klasörü WordPress'ten önce sunar, kalırsa WP sayfaları görünmez.
+# Sunucu mt-lunar (LiteSpeed): rsync YOK, yalnız cp/rm/mkdir; $(date) yerine düz /bin/date.
+deployment:
+  tasks:
+    - export DEPLOYPATH=$HOME/public_html
+    - /bin/mkdir -p $DEPLOYPATH/wp-content/themes/rahmi-cebeci $DEPLOYPATH/wp-content/mu-plugins $DEPLOYPATH/varliklar
+    - /bin/cp -R wp-tema/. $DEPLOYPATH/wp-content/themes/rahmi-cebeci/
+    - /bin/cp -R wp-mu/. $DEPLOYPATH/wp-content/mu-plugins/
+    - /bin/cp -R site/varliklar/. $DEPLOYPATH/varliklar/
+    - /bin/cp -f yayin/iletisim-gonder.php $DEPLOYPATH/iletisim-gonder.php
+    - /bin/cp -f yayin/asistan.php $DEPLOYPATH/asistan.php
+    - /bin/cp -f wp-kurulum/htaccess $DEPLOYPATH/.htaccess
+    # statik sürümün kalıntıları (WordPress sayfalarını gölgeler)
+    - /bin/rm -f $DEPLOYPATH/index.html $DEPLOYPATH/404.html $DEPLOYPATH/sitemap.xml $DEPLOYPATH/robots.txt
+    - /bin/rm -rf $DEPLOYPATH/404 $DEPLOYPATH/bilgi $DEPLOYPATH/bolge-pusulasi $DEPLOYPATH/bolgeler $DEPLOYPATH/cilt-sorunlari $DEPLOYPATH/cilt-tipi-testi
+    - /bin/rm -rf $DEPLOYPATH/hazirlik-listesi $DEPLOYPATH/hekim $DEPLOYPATH/iletisim $DEPLOYPATH/klinik $DEPLOYPATH/mevzuat $DEPLOYPATH/sikca-sorulan-sorular
+    - /bin/rm -rf $DEPLOYPATH/uygulama-karsilastirma $DEPLOYPATH/uygulamalar $DEPLOYPATH/yaklasimimiz $DEPLOYPATH/yasal
+    - /bin/date >> $HOME/deploy.log

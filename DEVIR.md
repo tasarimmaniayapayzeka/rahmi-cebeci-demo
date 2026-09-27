@@ -10,16 +10,16 @@ Standart: kendi temamız (bugünkü tasarım birebir), Classic Editor, Gutenberg
 görünen HTML), etkileşimli parçalar kısa kod/şablon, SEO meta post meta'da, Yoast veri taşındıktan sonra,
 gidiş-dönüş testi. Örnekler: 03-Griarts (statik→WP, 0 piksel fark), 26-TasarimMania-WP şartnamesi, 04-Ramazan-Ersoy.
 
-**WordPress geçiş planı (sabah netleşecek):**
-1. **Envanter:** 66 sayfa + etkileşimli bileşenler (yüz haritası/noktalar, cilt tipi testi, hazırlık listesi, bölge
-   pusulası, uygulama karşılaştırma/simülatör, SSS, asistan) → hangisi içerik (Klasik Editör), hangisi kısa kod/şablon.
-2. **Tema** `wp-tema/` (depoda): `render.js` düzeninden header/footer/şablonlar, varlıklar aynı; JSON-LD, canonical,
-   og, noindex bayrağı temadan. İletişim formu tema içinde (`admin-post`), `mail()` kapalıysa SMTP.
-3. **Yerelde kur ve karşılaştır** (XAMPP): her sayfa statik ↔ WP ekran görüntüsü farkı; Klasik Editör gidiş-dönüşü.
-4. **Sunucu:** WordPress'i **kullanıcı** cPanel'den kurar (yönetici parolasını kendisi seçer; ben hesap/parola
-   oluşturmam). Kök `public_html` — statik dosyalar kaldırılır (hepsi git geçmişinde). `.cpanel.yml` → tema +
-   mu-plugin'ler. İçerik tek seferlik mu-plugin yükleyiciyle (Griarts/Ramazan deseni). Classic Editor + (sonra) Yoast.
-5. Kontroller Imunify kuralıyla (≤2 istek/sn).
+**✅ 28 Eyl gecesi YERELDE BİTTİ — sabah sunucu kurulumu: `wp-kurulum/KURULUM.md` (adım adım, kim ne yapar).**
+- Tema `wp-tema/` (header/menü/altbilgi/künye render.js ile aynı HTML), içerik aktarıcı `wp-mu/rc-aktar.php`
+  (Araçlar › Site içeriği tek düğme; elle düzenlenmiş sayfaya dokunmaz), köprü `node site/wp-aktar.js`.
+- Ölçümler: WP ↔ statik **66/66 birebir** · Klasik Editör gidiş-dönüşü **67/67** · 8 sayfa gerçekten kaydedildi → aynı ·
+  mobil taşma 0/65 · editörde 105/105 resim tıklanabilir · Site bilgileri ekranı (telefon değişimi 38 sayfaya işledi) ·
+  boş WP + tek düğme provası → 66/66.
+- Yerel: `wp-yerel/baslat.bat` → http://127.0.0.1:8066 (giriş `wp-yerel/giris.txt`, git dışı). Kontrol: `node wp-yerel/karsilastir.js`.
+- İçerik kaynağı geçiş boyunca `site/veri/` → `node site/wp-aktar.js` → `wp-mu/rc-icerik.json`. Canlıda müşteri panelden
+  düzenlemeye başlayınca kaynak WordPress olur; aktarıcı düzenlenmiş sayfaları atlar.
+- SEO/özgünlük denetimi (ayrı ajan, salt okuma): `seo-denetim/RAPOR-2026-09-28.md`. Copyscape ücretli → çalıştırılmadı, onay bekliyor.
 
 ## 28 Eylül — site kendi alan adında kuruldu (statik, GEÇİCİ)
 
@@ -56,7 +56,7 @@ bash site/canli-yayinla.sh                              # hesap kontrolü → Up
 - Engel yenirse: site ya da cPanel zaman aşımına düşer / 403 captcha sayfası gelir → kullanıcı guzelhosting'den IP'yi beyaz listeye aldırır.
 
 **Sabah sırayla:**
-0. **WordPress geçişi** (yukarıdaki plan) — önce envanter ve kullanıcıyla kısa onay, sonra tema.
+0. **WordPress kurulumu** — `wp-kurulum/KURULUM.md` 1→5 (1. adımı kullanıcı cPanel'den yapar).
 1. Formu gerçek bir denemeyle sına (kullanıcı onayıyla, "TEST" yazan bir talep) → info@ kutusuna düştüğünü webmail'den gör.
    Düşmezse: bu sunucuda `mail()` kapalı olabilir (Griarts/Ramazan'da kapalıydı) → SMTP; SPF/DKIM (Email Deliverability).
 2. Mobil görünüm ve birkaç iç sayfa gözle (375 px).

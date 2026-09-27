@@ -80,6 +80,73 @@ function rc_aktar(array $o = []) {
 	return $r;
 }
 
+/* ---------- İLK KURULUM (sunucuda komut satırı yok): Araçlar › Site içeriği ----------
+   Tek düğme: temayı etkinleştirir, kalıcı bağlantıları /%postname%/ yapar, WordPress'in örnek içeriğini
+   siler, 66 sayfayı aktarır (elle düzenlenmiş sayfalara dokunmaz), ana sayfayı ayarlar. Tekrar basmak güvenlidir. */
+function rc_ilk_kurulum(bool $ustune) {
+	$r = ['adimlar' => []];
+	if (get_stylesheet() !== 'rahmi-cebeci' && wp_get_theme('rahmi-cebeci')->exists()) {
+		switch_theme('rahmi-cebeci');
+		$r['adimlar'][] = 'Tema etkinleştirildi: Dr. Rahmi Cebeci';
+	}
+	if (get_option('permalink_structure') !== '/%postname%/') {
+		global $wp_rewrite;
+		$wp_rewrite->set_permalink_structure('/%postname%/');
+		$r['adimlar'][] = 'Kalıcı bağlantılar: /%postname%/';
+	}
+	/* WordPress'in kurulumda eklediği örnek yazı/sayfa (başka içerik silinmez) */
+	foreach ([['post', 'hello-world'], ['post', 'merhaba-dunya'], ['page', 'sample-page'], ['page', 'ornek-sayfa']] as [$tur, $ad]) {
+		$p = get_page_by_path($ad, OBJECT, $tur);
+		if ($p && (int) $p->post_author === 1 && strtotime($p->post_modified_gmt) - strtotime($p->post_date_gmt) < 60) {
+			wp_delete_post($p->ID, true);
+			$r['adimlar'][] = "Örnek içerik silindi: $ad";
+		}
+	}
+	$r['aktarim'] = rc_aktar(['ustune_yaz' => $ustune]);
+	flush_rewrite_rules(true);
+	return $r;
+}
+
+add_action('admin_menu', function () {
+	add_management_page('Site içeriği', 'Site içeriği', 'manage_options', 'rc-site-icerigi', 'rc_ilk_kurulum_ekrani');
+});
+
+function rc_ilk_kurulum_ekrani() {
+	if (!current_user_can('manage_options')) return;
+	$sonuc = null;
+	if (isset($_POST['rc_kur'])) {
+		check_admin_referer('rc_ilk_kurulum');
+		$sonuc = rc_ilk_kurulum(!empty($_POST['rc_ustune']));
+	}
+	$v = json_decode((string) file_get_contents(__DIR__ . '/rc-icerik.json'), true);
+	$toplam = count($v['sayfalar'] ?? []);
+	$var = 0;
+	foreach ($v['sayfalar'] ?? [] as $s) {
+		$ad = $s['yol'] === '' ? 'anasayfa' : ($s['yol'] === '404' ? RC_404_AD : $s['ad']);
+		if (get_page_by_path($s['ebeveyn'] !== '' ? $s['ebeveyn'] . '/' . $ad : $ad, OBJECT, 'page')) $var++;
+	}
+	?>
+	<div class="wrap">
+		<h1>Site içeriği</h1>
+		<p>Sitenin <?php echo (int) $toplam; ?> sayfası bu paketle gelir (üretim: <?php echo esc_html(substr((string) ($v['uretim'] ?? ''), 0, 16)); ?>). Şu an WordPress'te bulunan: <b><?php echo (int) $var; ?></b>.</p>
+		<p>Tema: <b><?php echo esc_html(wp_get_theme()->get('Name')); ?></b> · Kalıcı bağlantılar: <code><?php echo esc_html(get_option('permalink_structure') ?: 'düz'); ?></code> ·
+			Arama motorları: <b><?php echo get_option('blog_public') ? 'AÇIK' : 'kapalı (noindex)'; ?></b></p>
+		<?php if ($sonuc) : $a = $sonuc['aktarim']; ?>
+			<div class="notice notice-success"><p><b>Tamam.</b> <?php echo esc_html(implode(' · ', $sonuc['adimlar'])); ?></p>
+				<p>Yeni <?php echo count($a['yeni'] ?? []); ?> · güncellenen <?php echo count($a['guncellenen'] ?? []); ?> · aynı <?php echo (int) ($a['ayni'] ?? 0); ?>
+				· panelde düzenlendiği için atlanan <?php echo count($a['elle'] ?? []); ?> · hata <?php echo count($a['hata'] ?? []); ?></p>
+				<?php foreach (['elle' => 'Atlanan (elle düzenlenmiş)', 'fark' => 'Kayıtta değişen', 'hata' => 'Hata'] as $k => $e) if (!empty($a[$k])) echo '<p>' . esc_html($e . ': ' . implode(', ', $a[$k])) . '</p>'; ?>
+			</div>
+		<?php endif; ?>
+		<form method="post">
+			<?php wp_nonce_field('rc_ilk_kurulum'); ?>
+			<p><label><input type="checkbox" name="rc_ustune" value="1"> Panelde düzenlenmiş sayfaların da üzerine yaz <em>(yalnız ilk kurulumda gerekirse; düzenlemeler kaybolur)</em></label></p>
+			<?php submit_button('Kur ve içeriği aktar', 'primary', 'rc_kur'); ?>
+		</form>
+	</div>
+	<?php
+}
+
 if (defined('WP_CLI') && WP_CLI) {
 	WP_CLI::add_command('rc aktar', function ($args, $assoc) {
 		$r = rc_aktar(['ustune_yaz' => isset($assoc['ustune-yaz'])]);
