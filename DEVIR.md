@@ -1,6 +1,47 @@
 # DEVİR — 34-Rahmi-Cebeci
 
-**Son güncelleme: 28 Eylül 2026 (gece)**
+**Son güncelleme: 28 Eylül 2026 (akşam, gün sonu)**
+
+## ▶ YARIN BURADAN BAŞLA (29 Eyl)
+
+**Durum:** rahmicebeci.com.tr WordPress + Klasik Editör olarak canlı, **arama motorlarına kapalı (noindex)**. Yerel = GitHub.
+Sunucudaki site güncel: son deploy'dan sonraki commit'ler (logo, bu not) sunucuya kopyalanan hiçbir dosyaya dokunmuyor. 66 sayfa canlıda statikle birebir; bütün metin ve resimler panelden düzenlenebiliyor; Yoast'ta
+65 sayfanın odak kelimesi ve 147 karakterlik açıklaması hazır. Yarım kalan iş yok.
+
+**Bugün son iş: logo (613da6c)** — `logo-yuksek/`. Sitedeki amblem ve tam logo Higgsfield ile 4K'ya büyütüldü (bytedance,
+**net 4 kredi**, kalan ~959; 3:1 logo ilk denemede hata verdi → kare tuvale konup tekrarlandı, kredi iade edildi). Büyütücü
+zemini beyaza çeviriyor; `logo-isle.php` şeffaflığı doygunluktan (kırmızı − mavi) geri hesaplıyor ve gri kırıntıları siliyor.
+176 px'lik amblemin büyütmesi tırtıklıydı, kullanılmadı: kare amblem `amblem-yataydan.php` ile yatay logodan kesildi.
+GD'li PHP: `01-EsteTouch/estetouch-wp/php/php.exe` (XAMPP'te GD yok). Ham `*-ham.png` dosyaları git dışı.
+
+| Dosya | Nereye |
+|---|---|
+| `rahmi-cebeci-amblem-1024.png` (kare, şeffaf) | Yoast SEO › Ayarlar › **Site temsili** › Kuruluş logosu |
+| `rahmi-cebeci-paylasim-1200x630.png` (#FAF7F1 zemin) | Yoast SEO › Ayarlar › **Site temelleri** › Site görseli (og varsayılanı) |
+| `rahmi-cebeci-logo-yatay.png` (4000×1284, şeffaf) | baskı/sunum |
+| amblem `-2048`, `-512`, `-1024-beyaz` | yedek boyutlar. Not: tema `wp_site_icon`'u kaldırıyor, favicon temanın `favicon.svg`'si; WP site simgesi yüklense de basılmaz |
+
+Dosyalar kullanıcıya gönderildi; **Yoast'a henüz yüklenmedi.** Kullanıcıya "ben de yerleştirebilirim" dendi, cevap bekleniyor.
+
+**Kullanıcı kararı bekleyenler (sırayla sor, onaysız başlama):**
+1. **Yoast site temsili + logo:** Person "Cebeci" + Gravatar yanlış → Kuruluş "Dr. Rahmi Cebeci" + `amblem-1024` logo,
+   site görseli `paylasim-1200x630`. Kullanıcı kendisi yapabilir ya da "yap" derse: medyaya yükle (REST, uygulama parolası)
+   → `WPSEO_Options` (`company_or_person=company`, `company_name`, `company_logo`/`_id`, `og_default_image`/`_id`) mu-plugin
+   ya da `rc/v1/kurulum` üzerinden; sonra 2–3 sayfada şemayı dışarıdan doğrula (1500 ms aralık).
+2. **Site sloganı** "Bakırk&ouml;y Estetik Merkezi": kodlama bozuk + "merkez" muayenehane için sorunlu olabilir.
+   Öneri: "Uzm. Dr. Rahmi Cebeci — Bakırköy medikal estetik muayenehanesi".
+3. **Form testi:** info@ adresine "TEST" yazan tek talep (onayla) → webmail'de gör; `randevu-talepleri.log` ve `eposta-hatalari.log`'a bak.
+4. **Copyscape** ≈ $8,19 (66 sayfa), bakiye $18,04 → onay.
+5. **Odak anahtar kelimeleri** Yoast'a yazıldı; kullanıcı listeyi onaylamadı (değişiklik gerekirse `site/veri/sayfalar/*.js` → `odak`).
+6. **Arama motorlarına açılış** (müşteri onayı): `site.js` `CANLI_ACIK=true` + WP Ayarlar › Okuma (blog_public) + Yoast site
+   haritası/canonical kontrolü + drrahmicebeci.com'dan 301 (barındırması bilinmiyor, RvDesign yapımı).
+7. Hukukçu: etken madde adları (botulinum toksin, hyalüronik asit, "botoks"), asistan platformu geçişinde KVKK/çerez metinleri.
+8. Müşteriden: markaya özel görseller.
+9. Aşama 2 (asistan platformu geçişi): 35 canlıya çıkınca — aşağıdaki plan.
+
+**Kurallar (değişmez):** Imunify — canlıya ardışık, toplu işte 1500 ms, tarayıcı User-Agent, hassas yol yoklanmaz, engel belirtisinde
+dur. Parola/belirteç sohbete yazılmaz (dosyalar: `~/.cpanel-rahmicebeci-token`, `~/.rahmicebeci-wp-pass`). Higgsfield ve
+Copyscape para harcar → önce sor. Hekim onaylı metinler onaysız değişmez. HSTS kapalı kalır. Salvera (24) deposuna dokunma.
 
 ## 🟢 28 Eyl sabah: rahmicebeci.com.tr WORDPRESS OLARAK CANLI (noindex)
 
@@ -24,8 +65,7 @@
   Tema Yoast varken yalnız stil/tema rengi/FAQPage basar; başlık/açıklama/robots/og/WebPage Yoast'ta (tıbbi → MedicalWebPage).
   Canlı doğrulama: her etiket 1 kez, açıklama kaynakla aynı, "Başlık | Dr. Rahmi Cebeci", ayraç `|`. Canonical noindex iken yok
   (Yoast), açılışta gelir. Aktarıcı panelde değiştirilen Yoast alanlarına dokunmaz (`_rc_aktarim_meta_ozet`).
-  ⚠️ Karar bekleyen: Yoast "site temsili" = Person "Cebeci" + Gravatar (yanlış) → Kuruluş "Dr. Rahmi Cebeci" + logo önerildi;
-  site sloganı "Bakırk&ouml;y Estetik Merkezi" (bozuk kodlama + "merkez" muayenehane kuralına aykırı olabilir).
+  ⚠️ Karar bekleyen: site temsili ve slogan → yukarıda "YARIN BURADAN BAŞLA" 1–2. Logo dosyaları hazır (`logo-yuksek/`).
 - Yayın: değişiklik → commit → push → `bash site/canli-yayinla.sh` (tema/mu-plugin/varlıklar). İçerik güncellemesi:
   `node site/wp-aktar.js` → push/deploy → `POST rc/v1/kurulum` (panelde düzenlenmiş sayfalara dokunmaz).
 
@@ -51,11 +91,11 @@ gidiş-dönüş testi. Örnekler: 03-Griarts (statik→WP, 0 piksel fark), 26-Ta
   Salt teknik düzeltmelerle öngörü ~75,6 (ölçüm değil); 85 için hekim onaylı metin değişikliği şart.
   **Kopya: temiz** — Salvera 8-gram %0,0–0,03 · eski drrahmicebeci.com %0,01 · site içinde paragraf kopyası yok
   (10 sayfada birebir aynı "ücret" SSS cevabı; 5 kanibalizasyon çifti, en belirgini selülit sorun ↔ selülit uygulama).
-  **Açık kalemler:** SSS cevapları 46 sayfada yalnız JSON'da (arama motoru görmez + görsel editörde düzenlenemez →
-  HTML'e taşınmalı, FAQPage şeması) · Organization/MedicalBusiness, BreadcrumbList, og:image yok · title 65/66 > 60 karakter
-  (YAZIM-KILAVUZU 50–65 diyor, standart ≤60 — karar) · etken madde adları (botulinum toksin 16, hyalüronik asit 15, "botoks" 7
-  sayfa) standart md.61 → hukukçu · odak kelimeler önerildi, kullanıcı onayı bekliyor · Copyscape ≈ $8,19 (66 sayfa gövde+SSS),
-  bakiye $18,04 → onay bekliyor · WP'de site haritası noindex modunda kapalı (açılışta kontrol).
+  **Açık kalemler:** ~~SSS cevapları yalnız JSON'da~~ (✅ 0aa4143 sayfanın içine taşındı) · ~~açıklama/odak~~ (✅ 62071d3 Yoast) ·
+  Organization/MedicalBusiness (Yoast site temsili Kuruluş yapılınca gelir), og:image (Yoast site görseli yüklenince gelir) ·
+  title 65/66 > 60 karakter (YAZIM-KILAVUZU 50–65 diyor, standart ≤60 — karar) · etken madde adları (botulinum toksin 16,
+  hyalüronik asit 15, "botoks" 7 sayfa) standart md.61 → hukukçu · odak kelimeler kullanıcı onayı bekliyor · Copyscape ≈ $8,19
+  (66 sayfa gövde+SSS), bakiye $18,04 → onay bekliyor · WP'de site haritası noindex modunda kapalı (açılışta kontrol).
 
 ## 28 Eylül — site kendi alan adında kuruldu (statik, GEÇİCİ)
 
@@ -91,8 +131,8 @@ bash site/canli-yayinla.sh                              # hesap kontrolü → Up
 - cPanel API (2083) çağrıları da seyrek: `canli-yayinla.sh` 3 sn aralıkla yoklar, bu yeterli.
 - Engel yenirse: site ya da cPanel zaman aşımına düşer / 403 captcha sayfası gelir → kullanıcı guzelhosting'den IP'yi beyaz listeye aldırır.
 
-**Sabah sırayla:**
-0. **WordPress kurulumu** — `wp-kurulum/KURULUM.md` 1→5 (1. adımı kullanıcı cPanel'den yapar).
+**Sabah sırayla (28 Eyl gecesi yazıldı — güncel liste en üstte):**
+0. ✅ **WordPress kurulumu** — `wp-kurulum/KURULUM.md` 1→5 (28 Eyl sabah bitti).
 1. Formu gerçek bir denemeyle sına (kullanıcı onayıyla, "TEST" yazan bir talep) → info@ kutusuna düştüğünü webmail'den gör.
    Düşmezse: bu sunucuda `mail()` kapalı olabilir (Griarts/Ramazan'da kapalıydı) → SMTP; SPF/DKIM (Email Deliverability).
 2. Mobil görünüm ve birkaç iç sayfa gözle (375 px).
