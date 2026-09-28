@@ -20,6 +20,14 @@ const TABLO = {
   'marka/rahmi-cebeci-amblem-1024.png': { ad: 'dr-rahmi-cebeci-logo-kare', alt: 'Dr. Rahmi Cebeci logosu, altın CR amblemi', baslik: 'Logo — kare, şeffaf (Yoast kuruluş logosu)' },
   'marka/rahmi-cebeci-paylasim-1200x630.png': { ad: 'dr-rahmi-cebeci-paylasim-gorseli', alt: 'Dr. Rahmi Cebeci Bakırköy medikal estetik muayenehanesi logosu', baslik: 'Paylaşım görseli 1200×630 (Yoast site görseli)' },
 
+  'marka/rahmi-cebeci-paylasim-siyah.png': { ad: 'dr-rahmi-cebeci-logo-siyah-zemin', alt: 'Siyah zemin üzerinde altın renkli Dr. Rahmi Cebeci logosu; Bakırköy medikal estetik muayenehanesi', baslik: 'Ana sayfa — siyah zeminli logo (öne çıkan görsel)' },   /* ana sayfa · paylasimGorseli */
+
+  /* ---------- sayfada görünmeyen öne çıkan görseller (üstünde görsel olmayan sayfalar; Higgsfield Nano Banana Pro 4K, 28 Eyl) ---------- */
+  'gorsel/sayfa-bulunamadi-404.webp': { ad: 'sayfa-bulunamadi-404', alt: 'Traverten kaide üzerinde altın rengi 404 rakamları; aradığınız sayfa bulunamadı', baslik: '404 — sayfa bulunamadı (öne çıkan görsel)' },
+  'gorsel/cilt-tipi-testi-dokular.webp': { ad: 'cilt-tipi-testi-krem-jel-yag-pudra', alt: 'Cilt tipi testini simgeleyen dört cam kapta krem, jel, yağ damlası ve pudra dokuları', baslik: 'Cilt tipi testi (öne çıkan görsel)' },   /* cilt tipi testi */
+  'gorsel/uygulama-karsilastirma-kapak.webp': { ad: 'uygulama-karsilastirma-ampul-lazer-basligi', alt: 'Uygulama karşılaştırma: ince bir altın çizgiyle ayrılmış iki cam tepside ampul ve lazer başlığı', baslik: 'Uygulama karşılaştırma (öne çıkan görsel)' },   /* uygulama karşılaştırma */
+  'gorsel/hazirlik-listesi-arac-kapak.webp': { ad: 'hazirlik-listesi-onay-karti-havlu-su', alt: 'Görüşme öncesi hazırlık listesi: onay işaretli kart, havlu, su bardağı, çıkarılmış küpeler ve toka', baslik: 'Hazırlık listesi aracı (öne çıkan görsel)' },   /* hazırlık listesi */
+
   /* ---------- hekim ve muayenehane (gerçek fotoğraflar) ---------- */
   'foto/hekim-portre.webp': { ad: 'uzm-dr-rahmi-cebeci-portre', alt: 'Uzm. Dr. Rahmi Cebeci, Bakırköy’deki muayenehanesinde ayakta ve kolları bağlı', baslik: 'Uzm. Dr. Rahmi Cebeci — portre' },   /* hekim · rahmi cebeci */
   'foto/hekim-koltuk.webp': { ad: 'muayene-sureci-dr-rahmi-cebeci', alt: 'Muayene sürecini yürüten Uzm. Dr. Rahmi Cebeci, Bakırköy’deki muayenehanesinde koltukta otururken', baslik: 'Uzm. Dr. Rahmi Cebeci — muayenehanede' },   /* yaklasimimiz · muayene süreci */

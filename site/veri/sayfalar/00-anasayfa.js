@@ -15,6 +15,7 @@ module.exports = {
   baslik: `${S.marka} — Medikal Estetik ve Dövme Silme, Bakırköy`,
   aciklama: 'Bakırköy medikal estetik muayenehanesi — pico lazerle dövme silme, dolgu, botulinum toksin ve cihaz uygulamaları tek hekimde, muayeneyle planlanır.',
   odak: 'bakırköy medikal estetik',   /* Yoast odak anahtar kelimesi */
+  paylasimGorseli: 'marka/rahmi-cebeci-paylasim-siyah.png',   /* sayfada görünmez: WordPress öne çıkan görsel (paylaşım/Google) — medya.js kaydı */
 
   icerik: (r, ik) => {
     /* hub'daki bölüm id'leri grup adının slug'ı — kartlar oraya iner */

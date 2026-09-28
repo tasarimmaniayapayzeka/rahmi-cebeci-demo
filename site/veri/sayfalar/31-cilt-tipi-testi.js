@@ -7,6 +7,7 @@ module.exports = {
   baslik: 'Cilt Eğilimi Öz Değerlendirmesi — Nem, Duyarlılık ve Leke Eğilimi',
   aciklama: 'Cilt tipi testi — on iki soruda yağlanma ya da kuruluk, hassasiyet ile leke eğiliminizi tarif etmenize yardımcı olur. Yanıtlar cihazınızdan çıkmaz.',
   odak: 'cilt tipi testi',   /* Yoast odak anahtar kelimesi */
+  paylasimGorseli: 'gorsel/cilt-tipi-testi-dokular.webp',   /* sayfada görünmez: WordPress öne çıkan görsel (paylaşım/Google) — medya.js kaydı */
 
   icerik: (r, ik) => `
 

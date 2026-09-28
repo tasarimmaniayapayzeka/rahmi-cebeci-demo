@@ -3,6 +3,7 @@ const S = require('../site');
 module.exports = {
   slug: '404',
   tip: 'bilgi',
+  paylasimGorseli: 'gorsel/sayfa-bulunamadi-404.webp',   /* sayfada görünmez: WordPress öne çıkan görsel (paylaşım/Google) — medya.js kaydı */
   baslik: 'Sayfa Bulunamadı — Aradığınız Adres Taşınmış Olabilir',
   aciklama: 'Aradığınız sayfaya ulaşılamadı; bağlantı eski kalmış ya da adres yeniden düzenlenmiş olabilir. Buradan ana bölümlere ve iletişim sayfasına geçebilirsiniz.',
 

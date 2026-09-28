@@ -124,6 +124,9 @@ Kaynak sayfadaki `varliklar/gorsel/…webp` yolu **aynı desenle** yeni slug'a �
   Sayfaya yazılan `alt="…"` derlemede tablodakiyle değiştirilir; tabloda kaydı olmayan görselde render.js durur.
   Kapak görselinin alt metninde sayfanın odak kelimesi geçer. Yeni görsel → tabloya kayıt → `node site/wp-aktar.js`
   → yayın → `POST rc/v1/kurulum` (görsel kütüphaneye girer, sayfadaki adres kütüphanedekine çevrilir).
+- Sayfanın **öne çıkan görseli** (WordPress sağ sütun; paylaşım ve Google) üstteki `loading="eager"` görseldir. Üstünde görsel
+  olmayan sayfada sayfa dosyasına `paylasimGorseli: 'gorsel/…'` yazılır (sayfada görünmez; medya.js kaydı gerekir).
+  Şu an: ana sayfa (siyah zeminli logo), 404, cilt tipi testi, uygulama karşılaştırma, hazırlık aracı. Yasal metinlerde yok.
 - Yapay zekâ rozeti (`<span class="g-ainot">Temsilî görsel · yapay zekâ ile üretildi</span>`) kaynakta
   olduğu yerde KALIR; yalnız aşağıdaki GERÇEK fotoğraflarda kaldırılır.
 

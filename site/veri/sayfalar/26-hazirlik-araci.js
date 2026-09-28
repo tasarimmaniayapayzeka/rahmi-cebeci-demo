@@ -7,6 +7,7 @@ module.exports = {
   baslik: 'Görüşmeye Hazırlık Notları — 12 Maddelik Kontrol',
   aciklama: 'Hazırlık listesi: muayenede hekiminize söylemeniz gereken on iki başlığı sırayla hatırlatır. Cevaplar yalnız cihazınızda işlenir, bize gönderilmez.',
   odak: 'hazırlık listesi',   /* Yoast odak anahtar kelimesi */
+  paylasimGorseli: 'gorsel/hazirlik-listesi-arac-kapak.webp',   /* sayfada görünmez: WordPress öne çıkan görsel (paylaşım/Google) — medya.js kaydı */
 
   icerik: (r, ik) => `
 

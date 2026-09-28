@@ -9,6 +9,7 @@ module.exports = {
   baslik: 'Yan Yana Tablo — Seçtiğiniz İki Uygulama Karşı Karşıya',
   aciklama: 'Uygulama karşılaştırma tablosu: iki uygulamayı hedef, uygulama sırasındaki his, iyileşme, etkinin başlangıcı ve kalıcılık açısından yan yana görün.',
   odak: 'uygulama karşılaştırma',   /* Yoast odak anahtar kelimesi */
+  paylasimGorseli: 'gorsel/uygulama-karsilastirma-kapak.webp',   /* sayfada görünmez: WordPress öne çıkan görsel (paylaşım/Google) — medya.js kaydı */
 
   icerik: (r, ik) => `
 

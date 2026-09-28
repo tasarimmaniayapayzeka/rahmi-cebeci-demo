@@ -53,11 +53,14 @@ const disa = sayfalar.map((s, i) => ({
   sira: i,
   icerik: MEDYA.altUygula(s.icerik('/', ik), s.slug),
 }));
-/* kapak = sayfanın üstündeki görsel (loading="eager") → WordPress'te öne çıkan görsel (Yoast og:image ve şema) */
-for (const d of disa) {
+/* kapak = sayfanın üstündeki görsel (loading="eager") → WordPress'te öne çıkan görsel (Yoast og:image ve şema).
+   Üstünde görsel olmayan sayfada sayfa dosyasındaki paylasimGorseli (sayfada görünmez, yalnız öne çıkan görsel). */
+for (const [i, d] of disa.entries()) {
   const m = d.icerik.match(/<img\b[^>]*loading="eager"[^>]*>/);
   const k = m && m[0].match(/src="\/varliklar\/([^"]+)"/);
-  d.kapak = k ? k[1] : '';
+  const p = sayfalar.find(s => s.slug === d.yol).paylasimGorseli || '';
+  if (p && !MEDYA.TABLO[p]) throw new Error(`/${d.yol}: paylasimGorseli medya.js'te yok: ${p}`);
+  d.kapak = k ? k[1] : p;
 }
 /* ortam kütüphanesi: tablodaki her görsel (sunucuda /varliklar/<kaynak> dosyasından kopyalanır) */
 const medya = Object.entries(MEDYA.TABLO).map(([kaynak, v]) => {
