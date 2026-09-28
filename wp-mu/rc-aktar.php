@@ -26,7 +26,27 @@ function rc_aktar(array $o = []) {
 	if (!$v || empty($v['sayfalar'])) return ['hata' => ['rc-icerik.json okunamadı']];
 
 	kses_remove_filters();   /* SVG, data-*, JSON veri blokları kırpılmasın (oturumsuz komut satırında kses açık olurdu) */
-	$r = ['yeni' => [], 'guncellenen' => [], 'ayni' => 0, 'elle' => [], 'fark' => [], 'hata' => [], 'meta_elle' => [], 'meta_yazilan' => []];
+	$r = ['yeni' => [], 'guncellenen' => [], 'ayni' => 0, 'elle' => [], 'fark' => [], 'hata' => [], 'meta_elle' => [], 'meta_yazilan' => [],
+		'elle_gorsel' => [], 'kapak' => 0];
+
+	/* önce görseller (rc-medya.php): hepsi Ortam kütüphanesine girmeden sayfalara geçilmez — yarım adresli sayfa olmasın.
+	   medya_sinir: bir çağrıda en çok kaç yeni görsel (sunucuda zaman aşımı olmasın); kalan varsa tekrar çağrılır. */
+	$adres = [];
+	if (!empty($v['medya']) && function_exists('rc_medya_aktar')) {
+		$r['medya'] = rc_medya_aktar($v['medya'], (int) ($o['medya_sinir'] ?? 0));
+		if ($r['medya']['kalan'] || $r['medya']['hata']) { kses_init(); return $r; }
+		$adres = rc_medya_adresleri();
+	}
+	$tazele = [];
+	/* öne çıkan görsel = sayfanın kapağı; panelde başka görsel seçildiyse dokunulmaz */
+	$kapakYaz = function ($id, $s) use ($adres, $ustune, &$r, &$tazele) {
+		if (($s['kapak'] ?? '') === '' || !isset($adres[$s['kapak']])) return;
+		$kid = $adres[$s['kapak']][0];
+		$simdiki = (int) get_post_meta($id, '_thumbnail_id', true);
+		if ($simdiki && !$ustune && $simdiki !== (int) get_post_meta($id, '_rc_kapak_id', true)) return;
+		if ($simdiki !== $kid) { set_post_thumbnail($id, $kid); $r['kapak']++; $tazele[] = $id; }
+		update_post_meta($id, '_rc_kapak_id', $kid);
+	};
 
 	/* sayfası olmayan ara klasörler: taslak ebeveyn (adres üretmez, alt sayfaların yolu doğru olur) */
 	foreach ($v['eksikEbeveyn'] as $e) {
@@ -36,6 +56,7 @@ function rc_aktar(array $o = []) {
 	}
 
 	foreach ($v['sayfalar'] as $s) {
+		if ($adres) $s['icerik'] = rc_medya_icerige($s['icerik'], $adres);
 		$ad = $s['yol'] === '' ? 'anasayfa' : ($s['yol'] === '404' ? RC_404_AD : $s['ad']);
 		$yol = $s['ebeveyn'] !== '' ? $s['ebeveyn'] . '/' . $ad : $ad;
 		$ebeveyn = 0;
@@ -58,7 +79,17 @@ function rc_aktar(array $o = []) {
 				$r['ayni']++;
 				$id = $var->ID;
 			} elseif (!$ustune && $son && $simdi !== $son) {
-				$r['elle'][] = $yol;   /* panelde düzenlenmiş — dokunma */
+				/* panelde düzenlenmiş — metne dokunma; yalnız /varliklar/ görsel adresleri kütüphanedekine çevrilir
+				   (aktarım özeti değişmez: sayfa "elle düzenlenmiş" kalır) */
+				$r['elle'][] = $yol;
+				if ($adres) {
+					$yeniIcerik = rc_medya_icerige($var->post_content, $adres);
+					if ($yeniIcerik !== $var->post_content) {
+						wp_update_post(wp_slash(['ID' => $var->ID, 'post_content' => $yeniIcerik]));
+						$r['elle_gorsel'][] = $yol;
+					}
+				}
+				$kapakYaz($var->ID, $s);
 				continue;
 			} else {
 				$veri['ID'] = $var->ID;
@@ -91,6 +122,7 @@ function rc_aktar(array $o = []) {
 			update_post_meta($id, '_rc_aktarim_meta_ozet', rc_meta_ozeti($id));
 			$r['meta_yazilan'][] = $id;
 		}
+		$kapakYaz($id, $s);
 		/* kaydedilen içerik kaynağın birebir aynısı mı (WordPress kayıtta bir şey değiştirdiyse raporla) */
 		$kayitli = get_post_field('post_content', $id, 'raw');
 		if ($kayitli !== $s['icerik']) $r['fark'][] = $yol;
@@ -101,7 +133,7 @@ function rc_aktar(array $o = []) {
 	if ($on) { update_option('show_on_front', 'page'); update_option('page_on_front', $on->ID); }
 	/* Yoast ön yüzde meta alanlarını değil kendi dizinini (indexables) okur; dizin yazının kaydedilmesiyle tazelenir.
 	   İçerik değişmeden kaydetmek yeni sürüm (revision) üretmez. */
-	if (defined('WPSEO_VERSION')) foreach (array_unique($r['meta_yazilan']) as $id) wp_update_post(['ID' => $id]);
+	if (defined('WPSEO_VERSION')) foreach (array_unique(array_merge($r['meta_yazilan'], $tazele)) as $id) wp_update_post(['ID' => $id]);
 	$r['meta_yazilan'] = count(array_unique($r['meta_yazilan']));
 	kses_init();
 	return $r;
@@ -110,7 +142,7 @@ function rc_aktar(array $o = []) {
 /* ---------- İLK KURULUM (sunucuda komut satırı yok): Araçlar › Site içeriği ----------
    Tek düğme: temayı etkinleştirir, kalıcı bağlantıları /%postname%/ yapar, WordPress'in örnek içeriğini
    siler, 66 sayfayı aktarır (elle düzenlenmiş sayfalara dokunmaz), ana sayfayı ayarlar. Tekrar basmak güvenlidir. */
-function rc_ilk_kurulum(bool $ustune) {
+function rc_ilk_kurulum(bool $ustune, int $medya_sinir = 0) {
 	$r = ['adimlar' => []];
 	/* ilk kurulumda site arama motorlarına KAPALI başlar (Softaculous bu seçeneği sormuyor);
 	   açılış müşteri onayıyla Ayarlar › Okuma'dan yapılır — sonraki basışlarda bu ayara dokunulmaz */
@@ -141,7 +173,7 @@ function rc_ilk_kurulum(bool $ustune) {
 			$r['adimlar'][] = "Örnek içerik silindi: $ad";
 		}
 	}
-	$r['aktarim'] = rc_aktar(['ustune_yaz' => $ustune]);
+	$r['aktarim'] = rc_aktar(['ustune_yaz' => $ustune, 'medya_sinir' => $medya_sinir]);
 	flush_rewrite_rules(true);
 	return $r;
 }
@@ -155,7 +187,7 @@ function rc_ilk_kurulum_ekrani() {
 	$sonuc = null;
 	if (isset($_POST['rc_kur'])) {
 		check_admin_referer('rc_ilk_kurulum');
-		$sonuc = rc_ilk_kurulum(!empty($_POST['rc_ustune']));
+		$sonuc = rc_ilk_kurulum(!empty($_POST['rc_ustune']), 20);
 	}
 	$v = json_decode((string) file_get_contents(__DIR__ . '/rc-icerik.json'), true);
 	$toplam = count($v['sayfalar'] ?? []);
@@ -170,8 +202,14 @@ function rc_ilk_kurulum_ekrani() {
 		<p>Sitenin <?php echo (int) $toplam; ?> sayfası bu paketle gelir (üretim: <?php echo esc_html(substr((string) ($v['uretim'] ?? ''), 0, 16)); ?>). Şu an WordPress'te bulunan: <b><?php echo (int) $var; ?></b>.</p>
 		<p>Tema: <b><?php echo esc_html(wp_get_theme()->get('Name')); ?></b> · Kalıcı bağlantılar: <code><?php echo esc_html(get_option('permalink_structure') ?: 'düz'); ?></code> ·
 			Arama motorları: <b><?php echo get_option('blog_public') ? 'AÇIK' : 'kapalı (noindex)'; ?></b></p>
-		<?php if ($sonuc) : $a = $sonuc['aktarim']; ?>
+		<?php if ($sonuc && !empty($sonuc['aktarim']['medya']) && ($sonuc['aktarim']['medya']['kalan'] || $sonuc['aktarim']['medya']['hata'])) : $md = $sonuc['aktarim']['medya']; ?>
+			<div class="notice notice-warning"><p><b>Görseller Ortam kütüphanesine alınıyor:</b> bu turda <?php echo count($md['yeni']); ?> görsel eklendi,
+				<?php echo (int) $md['kalan']; ?> görsel kaldı. <b>Düğmeye bir kez daha basın</b> (sayfalar görseller bitince aktarılır).</p>
+				<?php if ($md['hata']) echo '<p>' . esc_html('Hata: ' . implode(', ', $md['hata'])) . '</p>'; ?></div>
+		<?php elseif ($sonuc) : $a = $sonuc['aktarim']; ?>
 			<div class="notice notice-success"><p><b>Tamam.</b> <?php echo esc_html(implode(' · ', $sonuc['adimlar'])); ?></p>
+				<?php if (!empty($a['medya'])) : ?><p>Görseller: yeni <?php echo count($a['medya']['yeni']); ?> · güncellenen <?php echo (int) $a['medya']['guncellenen']; ?>
+					· aynı <?php echo (int) $a['medya']['ayni']; ?> · panelde düzenlendiği için atlanan <?php echo count($a['medya']['elle']); ?> · öne çıkan görseli atanan sayfa <?php echo (int) $a['kapak']; ?></p><?php endif; ?>
 				<p>Yeni <?php echo count($a['yeni'] ?? []); ?> · güncellenen <?php echo count($a['guncellenen'] ?? []); ?> · aynı <?php echo (int) ($a['ayni'] ?? 0); ?>
 				· panelde düzenlendiği için atlanan <?php echo count($a['elle'] ?? []); ?> · hata <?php echo count($a['hata'] ?? []); ?></p>
 				<?php foreach (['elle' => 'Atlanan (elle düzenlenmiş)', 'fark' => 'Kayıtta değişen', 'hata' => 'Hata'] as $k => $e) if (!empty($a[$k])) echo '<p>' . esc_html($e . ': ' . implode(', ', $a[$k])) . '</p>'; ?>
@@ -200,7 +238,10 @@ function rc_durum() {
 		'tema' => get_stylesheet(), 'kalici_baglanti' => get_option('permalink_structure'),
 		'arama_motorlari' => get_option('blog_public') ? 'acik' : 'kapali', 'on_sayfa' => (int) get_option('page_on_front'),
 		'wp' => get_bloginfo('version'), 'php' => PHP_VERSION, 'mail_kapali' => in_array('mail', array_map('trim', explode(',', (string) ini_get('disable_functions'))), true),
-		'smtp_yerel' => rc_smtp_yoklama(), 'yoast' => rc_yoast_durum()];
+		'smtp_yerel' => rc_smtp_yoklama(), 'yoast' => rc_yoast_durum(),
+		'medya' => ['paket' => count($v['medya'] ?? []), 'kutuphanede' => function_exists('rc_medya_adresleri') ? count(rc_medya_adresleri()) : 0,
+			'webp_duzenleyici' => wp_image_editor_supports(['mime_type' => 'image/webp']),
+			'one_cikan' => count(get_posts(['post_type' => 'page', 'post_status' => 'any', 'numberposts' => -1, 'fields' => 'ids', 'meta_key' => '_thumbnail_id']))]];
 }
 
 /* Yoast alanları: kaç sayfada odak anahtar kelime ve meta açıklama var, açıklama uzunlukları */
@@ -230,12 +271,17 @@ add_action('rest_api_init', function () {
 	$yonetici = fn() => current_user_can('manage_options');
 	register_rest_route('rc/v1', '/durum', ['methods' => 'GET', 'permission_callback' => $yonetici, 'callback' => fn() => rc_durum()]);
 	register_rest_route('rc/v1', '/kurulum', ['methods' => 'POST', 'permission_callback' => $yonetici,
-		'callback' => fn(WP_REST_Request $r) => array_merge(rc_ilk_kurulum((bool) $r->get_param('ustune_yaz')), ['durum' => rc_durum()])]);
+		'callback' => fn(WP_REST_Request $r) => array_merge(rc_ilk_kurulum((bool) $r->get_param('ustune_yaz'),
+			max(1, (int) ($r->get_param('medya_sinir') ?: 12))), ['durum' => rc_durum()])]);
 });
 
 if (defined('WP_CLI') && WP_CLI) {
 	WP_CLI::add_command('rc aktar', function ($args, $assoc) {
 		$r = rc_aktar(['ustune_yaz' => isset($assoc['ustune-yaz'])]);
+		if (!empty($r['medya'])) WP_CLI::log(sprintf('görseller: yeni %d · güncellenen %d · aynı %d · panelde düzenlenmiş (atlandı) %d · hata %d · öne çıkan görsel atanan %d · görsel adresi çevrilen elle sayfa %d',
+			count($r['medya']['yeni']), $r['medya']['guncellenen'], $r['medya']['ayni'], count($r['medya']['elle']), count($r['medya']['hata']),
+			$r['kapak'] ?? 0, count($r['elle_gorsel'] ?? [])));
+		if (!empty($r['medya']['hata'])) WP_CLI::log('görsel hatası: ' . implode(', ', $r['medya']['hata']));
 		WP_CLI::log(sprintf('yeni %d · güncellenen %d · aynı %d · elle düzenlenmiş (atlandı) %d · kayıtta değişen %d · hata %d · meta yazılan %d · meta elle (atlandı) %d',
 			count($r['yeni'] ?? []), count($r['guncellenen'] ?? []), $r['ayni'] ?? 0, count($r['elle'] ?? []), count($r['fark'] ?? []), count($r['hata'] ?? []),
 			(int) ($r['meta_yazilan'] ?? 0), count($r['meta_elle'] ?? [])));

@@ -92,6 +92,8 @@ add_action('admin_init', function () {
 		$o[$yol] = $d;
 	}
 	update_option(RC_AYAR, $o, false);
+	$logo = isset($_POST['rc_logo_id']) ? absint($_POST['rc_logo_id']) : 0;
+	update_option('rc_logo_id', ($logo && wp_attachment_is_image($logo)) ? $logo : 0, false);
 	$yeni = rc_ayar_uygula(json_decode((string) file_get_contents(RC_TEMA . '/inc/veri.json'), true) ?: []);
 	$rapor = ['sayfa' => 0, 'catisan' => []];
 	if (!empty($_POST['rc_icerikte'])) {
@@ -132,6 +134,17 @@ function rc_ayar_ekrani() {
 			<?php wp_nonce_field('rc_site_bilgileri'); ?>
 			<input type="hidden" name="rc_eylem" value="site_bilgileri">
 			<table class="form-table" role="presentation">
+				<?php $logo = rc_logo(); ?>
+				<tr>
+					<th scope="row">Logo</th>
+					<td><img id="rc-logo-onizleme" src="<?php echo esc_url($logo['src']); ?>" alt="" width="64" height="64"
+							style="object-fit:contain;background:#FAF7F1;border:1px solid #dcdcde;border-radius:6px;padding:6px">
+						<input type="hidden" name="rc_logo_id" id="rc-logo-id" value="<?php echo (int) get_option('rc_logo_id'); ?>">
+						<p><button type="button" class="button" id="rc-logo-sec">Logoyu değiştir</button>
+							<button type="button" class="button-link" id="rc-logo-sifirla">Varsayılana dön</button></p>
+						<p class="description">Her sayfanın başlığında, marka adının solunda görünen amblem (kare, şeffaf zeminli PNG uygun).
+							Ortam kütüphanesinden seçilir; alt metni oradaki "Alternatif metin" alanından gelir.</p></td>
+				</tr>
 				<?php foreach (rc_ayar_alanlari() as $yol => [$etiket, $aciklama]) : $k = 'rc_' . str_replace('.', '_', $yol); ?>
 				<tr>
 					<th scope="row"><label for="<?php echo esc_attr($k); ?>"><?php echo esc_html($etiket); ?></label></th>
@@ -150,5 +163,29 @@ function rc_ayar_ekrani() {
 			<?php submit_button('Kaydet'); ?>
 		</form>
 	</div>
+	<script>
+	(function () {
+		var kimlik = document.getElementById('rc-logo-id'), resim = document.getElementById('rc-logo-onizleme'), cerceve;
+		document.getElementById('rc-logo-sec').addEventListener('click', function () {
+			if (!cerceve) {
+				cerceve = wp.media({ title: 'Logo', library: { type: 'image' }, multiple: false, button: { text: 'Logo olarak kullan' } });
+				cerceve.on('select', function () {
+					var ek = cerceve.state().get('selection').first().toJSON();
+					kimlik.value = ek.id;
+					resim.src = ek.url;
+				});
+			}
+			cerceve.open();
+		});
+		document.getElementById('rc-logo-sifirla').addEventListener('click', function () {
+			kimlik.value = 0;
+			resim.style.opacity = '.35';   /* kaydedince varsayılan amblem gelir */
+		});
+	})();
+	</script>
 	<?php
 }
+
+add_action('admin_enqueue_scripts', function ($sayfa) {
+	if ($sayfa === 'toplevel_page_rc-site-bilgileri') wp_enqueue_media();
+});

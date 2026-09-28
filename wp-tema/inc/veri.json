@@ -571,5 +571,6 @@
   "menu": "<svg viewBox=\"0 0 20 20\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.7\" stroke-linecap=\"round\" aria-hidden=\"true\"><path d=\"M3 6h14M3 10h14M3 14h14\"/></svg>",
   "kapa": "<svg viewBox=\"0 0 20 20\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.7\" stroke-linecap=\"round\" aria-hidden=\"true\"><path d=\"M5 5l10 10M15 5L5 15\"/></svg>",
   "asagi": "<svg viewBox=\"0 0 12 12\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.7\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M2.5 4.5 6 8l3.5-3.5\"/></svg>"
- }
+ },
+ "logoAlt": "Dr. Rahmi Cebeci logosu"
 }

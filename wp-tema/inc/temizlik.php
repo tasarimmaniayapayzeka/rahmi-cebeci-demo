@@ -20,7 +20,7 @@ remove_action('wp_head', 'rel_canonical');                 /* canonical tema bas
 remove_action('wp_head', 'wp_robots', 1);                  /* robots tema basar */
 remove_action('wp_head', 'adjacent_posts_rel_link_wp_head', 10);
 remove_action('wp_head', 'wp_resource_hints', 2);
-remove_action('wp_head', 'wp_site_icon', 99);              /* favicon tema basar */
+remove_action('wp_head', 'wp_site_icon', 99);              /* favicon tema basar (seo.php rc_ikon_etiketleri; panelde site simgesi varsa onu) */
 remove_action('template_redirect', 'wp_shortlink_header', 11);
 remove_action('template_redirect', 'rest_output_link_header', 11);
 remove_action('wp_head', 'wp_print_auto_sizes_contain_css_fix', 1);

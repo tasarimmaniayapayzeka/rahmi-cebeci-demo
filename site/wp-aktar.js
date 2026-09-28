@@ -24,8 +24,8 @@ const kokEski = /const kok = slug => [^\n]+\n/;
 if (!kokEski.test(kod)) throw new Error('render.js: kok tanımı bulunamadı');
 kod = kod.replace(kokEski, "const kok = slug => '/';\n");
 const R = new Function('require', '__dirname', 'process',
-  kod + '\nreturn { S, ik, MENU, ALTBILGI, duzen, kunye, damga };')(createRequire(RENDER), KOK, process);
-const { S, ik, MENU, ALTBILGI } = R;
+  kod + '\nreturn { S, ik, MENU, ALTBILGI, duzen, kunye, damga, MEDYA };')(createRequire(RENDER), KOK, process);
+const { S, ik, MENU, ALTBILGI, MEDYA } = R;
 if (S.hedef !== 'canli') throw new Error('site.js canlı hedefi okumadı');
 const sonInceleme = (fs.readFileSync(RENDER, 'utf8').match(/lastReviewed: '([^']+)'/) || [])[1];
 
@@ -51,8 +51,19 @@ const disa = sayfalar.map((s, i) => ({
   noindex: !!s.noindex,
   js: [].concat(s.js || []),
   sira: i,
-  icerik: s.icerik('/', ik),
+  icerik: MEDYA.altUygula(s.icerik('/', ik), s.slug),
 }));
+/* kapak = sayfanın üstündeki görsel (loading="eager") → WordPress'te öne çıkan görsel (Yoast og:image ve şema) */
+for (const d of disa) {
+  const m = d.icerik.match(/<img\b[^>]*loading="eager"[^>]*>/);
+  const k = m && m[0].match(/src="\/varliklar\/([^"]+)"/);
+  d.kapak = k ? k[1] : '';
+}
+/* ortam kütüphanesi: tablodaki her görsel (sunucuda /varliklar/<kaynak> dosyasından kopyalanır) */
+const medya = Object.entries(MEDYA.TABLO).map(([kaynak, v]) => {
+  if (!fs.existsSync(path.join(KOK, 'varliklar', kaynak))) throw new Error(`medya.js: dosya yok: varliklar/${kaynak}`);
+  return { kaynak, ad: v.ad + path.extname(kaynak), alt: v.alt, baslik: v.baslik };
+});
 /* sayfası olmayan ara klasörler (ör. yasal/) — WordPress'te taslak ebeveyn olur, adres üretmez */
 const eksikEbeveyn = [...new Set(disa.map(d => d.ebeveyn).filter(e => e && !yollar.has(e)))];
 /* ebeveyn önce gelsin */
@@ -60,13 +71,14 @@ disa.sort((a, b) => a.yol.split('/').length - b.yol.split('/').length || a.sira 
 
 fs.mkdirSync(path.join(DEPO, 'wp-mu'), { recursive: true });
 fs.writeFileSync(path.join(DEPO, 'wp-mu', 'rc-icerik.json'),
-  JSON.stringify({ uretim: new Date().toISOString(), eksikEbeveyn, sayfalar: disa }, null, 1), 'utf8');
+  JSON.stringify({ uretim: new Date().toISOString(), eksikEbeveyn, medya, sayfalar: disa }, null, 1), 'utf8');
 
 /* ---------- tema verisi ---------- */
 const veri = {
   marka: S.marka, markaAlt: S.markaAlt, guncelleme: S.guncelleme, sonInceleme,
   iletisim: S.iletisim, hekim: { tam: S.hekim.tam, dallar: S.hekim.dallar },
   yasal: S.yasal, menu: MENU, altbilgi: ALTBILGI, ik,
+  logoAlt: MEDYA.TABLO['foto/amblem.png'].alt,   /* kütüphanede logo yoksa başlıktaki logonun alt metni */
 };
 fs.mkdirSync(path.join(DEPO, 'wp-tema', 'inc'), { recursive: true });
 fs.writeFileSync(path.join(DEPO, 'wp-tema', 'inc', 'veri.json'), JSON.stringify(veri, null, 1), 'utf8');
@@ -82,6 +94,7 @@ if (fs.existsSync(path.join(DEPO, 'wp-yerel'))) {
   }
 }
 
+console.log(`${medya.length} görsel (ortam kütüphanesi) · ${disa.filter(d => d.kapak).length} sayfada kapak → öne çıkan görsel`);
 console.log(`${disa.length} sayfa → wp-mu/rc-icerik.json · tema verisi → wp-tema/inc/veri.json`);
 console.log(`eksik ebeveyn (taslak açılacak): ${eksikEbeveyn.join(', ') || 'yok'}`);
 console.log(`yollar: ${disa.map(d => d.yol || '(anasayfa)').join(' ')}`);

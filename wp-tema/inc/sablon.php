@@ -32,6 +32,19 @@ function rc_bag($yol) {
 		: 'href="' . rc_kok() . substr($yol, 1) . '"';
 }
 
+/* başlıktaki logo: Site bilgileri'nde seçilen görsel → Ortam kütüphanesindeki amblem → temanın dosyası.
+   Alt metin görselin kütüphanedeki "Alternatif metin" alanından gelir. */
+function rc_logo() {
+	$id = (int) get_option('rc_logo_id');
+	if (!$id || !wp_attachment_is_image($id)) $id = function_exists('rc_medya_id') ? rc_medya_id('foto/amblem.png') : 0;
+	$u = $id ? wp_get_attachment_image_url($id, 'full') : '';
+	if ($u) {
+		$alt = trim((string) get_post_meta($id, '_wp_attachment_image_alt', true));
+		return ['src' => wp_make_link_relative($u), 'alt' => $alt !== '' ? $alt : (string) rc('logoAlt')];
+	}
+	return ['src' => rc_kok() . 'varliklar/foto/amblem.png', 'alt' => (string) rc('logoAlt')];
+}
+
 function rc_ust($yol) {
 	$ik = rc('ik');
 	$S = rc();
@@ -86,11 +99,12 @@ function rc_ust($yol) {
 	}
 
 	$i = $S['iletisim'];
+	$logo = rc_logo();
 	return '<a class="atla" href="#ana">İçeriğe atla</a>
 <header class="ust">
   <div class="sar ust__ic">
     <a class="marka" href="' . $r . '">
-      <img class="marka__logo" src="' . $r . 'varliklar/foto/amblem.png" alt="" width="44" height="44">
+      <img class="marka__logo" src="' . esc_attr($logo['src']) . '" alt="' . esc_attr($logo['alt']) . '" width="44" height="44">
       <span class="marka__ad">' . $S['marka'] . '</span>
       <span class="marka__alt">' . $S['markaAlt'] . ' · Muayenehane</span>
     </a>

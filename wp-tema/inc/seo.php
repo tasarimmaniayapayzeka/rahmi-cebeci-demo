@@ -36,12 +36,25 @@ function rc_yoast() {
 	return defined('WPSEO_VERSION');
 }
 
+/* sekme simgesi: panelden (Görünüm › Özelleştir › Site simgesi) yüklendiyse WordPress'inki, yoksa temanın CR amblemi */
+function rc_ikon_etiketleri() {
+	if (has_site_icon()) {
+		ob_start();
+		wp_site_icon();
+		return ob_get_clean();
+	}
+	$i = rc_kok() . 'varliklar/ikon/';
+	return '<link rel="icon" href="' . $i . 'favicon.ico" sizes="16x16 32x32 48x48">
+<link rel="icon" href="' . $i . 'ikon-192.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="' . $i . 'apple-touch-icon.png">
+';
+}
+
 /* yazı tipi ön yüklemesi, simge, stiller — her iki durumda da tema basar */
 function rc_varlik_etiketleri() {
 	$r = rc_kok();
 	return '<link rel="preload" as="font" type="font/woff2" href="' . $r . 'varliklar/fonts/outfit-var-lat.woff2" crossorigin>
-<link rel="icon" href="' . $r . 'varliklar/favicon.svg" type="image/svg+xml">
-<link rel="preload" as="font" type="font/woff2" href="' . $r . 'varliklar/fonts/mulish-400-lat.woff2" crossorigin>
+' . rc_ikon_etiketleri() . '<link rel="preload" as="font" type="font/woff2" href="' . $r . 'varliklar/fonts/mulish-400-lat.woff2" crossorigin>
 <link rel="stylesheet" href="' . rc_varlik('varliklar/css/tokens.css') . '">
 <link rel="stylesheet" href="' . rc_varlik('varliklar/css/site.css') . '">
 <link rel="stylesheet" href="' . rc_varlik('varliklar/css/g.css') . '">

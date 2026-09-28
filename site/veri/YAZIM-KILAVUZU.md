@@ -120,6 +120,10 @@ Kaynak sayfadaki `varliklar/gorsel/…webp` yolu **aynı desenle** yeni slug'a �
 - Uygulama: `uyg-<yeni-slug>.webp` (+ ikinci görsel `uyg-<yeni-slug>-2.webp`)
 - Bölge: `bolge-<slug>.webp` · Sorun: `sorun-<slug>.webp` · grup/ic3d/yuz-3d görselleri aynen kalır.
 - Görsel dosyalarını SEN üretmezsin; yol ve alt metni yazarsın (alt metin yeni içeriğe göre yeniden yazılır).
+- **Her görsel `site/veri/medya.js`'te kayıtlıdır** (WordPress Ortam kütüphanesindeki dosya adı, alt metin, başlık).
+  Sayfaya yazılan `alt="…"` derlemede tablodakiyle değiştirilir; tabloda kaydı olmayan görselde render.js durur.
+  Kapak görselinin alt metninde sayfanın odak kelimesi geçer. Yeni görsel → tabloya kayıt → `node site/wp-aktar.js`
+  → yayın → `POST rc/v1/kurulum` (görsel kütüphaneye girer, sayfadaki adres kütüphanedekine çevrilir).
 - Yapay zekâ rozeti (`<span class="g-ainot">Temsilî görsel · yapay zekâ ile üretildi</span>`) kaynakta
   olduğu yerde KALIR; yalnız aşağıdaki GERÇEK fotoğraflarda kaldırılır.
 

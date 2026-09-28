@@ -8,6 +8,7 @@ const path = require('path');
 const crypto = require('crypto');
 const S = require('./veri/site');
 const ASISTAN = require('./veri/asistan');
+const MEDYA = require('./veri/medya');   /* görsellerin alt metni (WordPress ortam kütüphanesiyle ortak) */
 
 const KOK = __dirname;
 /* depo kökü/docs → GitHub Pages; canlı derleme (yayin-hazirla.js) RC_CIKTI ile yayin/'a yazar */
@@ -137,7 +138,7 @@ function ust(sayfa) {
 <header class="ust">
   <div class="sar ust__ic">
     <a class="marka" href="${r}">
-      <img class="marka__logo" src="${r}varliklar/foto/amblem.png" alt="" width="44" height="44">
+      <img class="marka__logo" src="${r}varliklar/foto/amblem.png" alt="${MEDYA.kacir(MEDYA.TABLO['foto/amblem.png'].alt)}" width="44" height="44">
       <span class="marka__ad">${S.marka}</span>
       <span class="marka__alt">${S.markaAlt} · Muayenehane</span>
     </a>
@@ -240,7 +241,7 @@ function sssSema(html) {
 /* ---------- düzen ---------- */
 function duzen(sayfa) {
   const r = kok(sayfa.slug);
-  const govde = sayfa.icerik(r, ik);
+  const govde = MEDYA.altUygula(sayfa.icerik(r, ik), sayfa.slug);
   const url = S.alan + '/' + (sayfa.slug ? sayfa.slug + '/' : '');
   const jsonld = {
     '@context': 'https://schema.org',
@@ -271,7 +272,9 @@ ${sayfa.noindex ? '<meta name="robots" content="noindex,follow">\n' : S.noindex 
 <meta property="og:description" content="${kacir(sayfa.aciklama)}">
 <meta property="og:url" content="${url}">
 <link rel="preload" as="font" type="font/woff2" href="${r}varliklar/fonts/outfit-var-lat.woff2" crossorigin>
-<link rel="icon" href="${r}varliklar/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="${r}varliklar/ikon/favicon.ico" sizes="16x16 32x32 48x48">
+<link rel="icon" href="${r}varliklar/ikon/ikon-192.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="${r}varliklar/ikon/apple-touch-icon.png">
 <link rel="preload" as="font" type="font/woff2" href="${r}varliklar/fonts/mulish-400-lat.woff2" crossorigin>
 <link rel="stylesheet" href="${varlik(r, 'varliklar/css/tokens.css')}">
 <link rel="stylesheet" href="${varlik(r, 'varliklar/css/site.css')}">
