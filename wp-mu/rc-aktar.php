@@ -153,6 +153,28 @@ function rc_ilk_kurulum_ekrani() {
 	<?php
 }
 
+/* ---------- REST: aynı kurulum, uygulama parolasıyla (yalnız yönetici) ----------
+   GET  /wp-json/rc/v1/durum   → tema, bağlantı yapısı, arama motoru durumu, kaç sayfa var
+   POST /wp-json/rc/v1/kurulum → rc_ilk_kurulum() ("ustune_yaz": true yalnız bilerek) */
+function rc_durum() {
+	$v = json_decode((string) file_get_contents(__DIR__ . '/rc-icerik.json'), true);
+	$var = 0;
+	foreach ($v['sayfalar'] ?? [] as $s) {
+		$ad = $s['yol'] === '' ? 'anasayfa' : ($s['yol'] === '404' ? RC_404_AD : $s['ad']);
+		if (get_page_by_path($s['ebeveyn'] !== '' ? $s['ebeveyn'] . '/' . $ad : $ad, OBJECT, 'page')) $var++;
+	}
+	return ['paket' => count($v['sayfalar'] ?? []), 'paket_uretim' => $v['uretim'] ?? '', 'wordpressteki' => $var,
+		'tema' => get_stylesheet(), 'kalici_baglanti' => get_option('permalink_structure'),
+		'arama_motorlari' => get_option('blog_public') ? 'acik' : 'kapali', 'on_sayfa' => (int) get_option('page_on_front'),
+		'wp' => get_bloginfo('version'), 'php' => PHP_VERSION, 'mail_kapali' => in_array('mail', array_map('trim', explode(',', (string) ini_get('disable_functions'))), true)];
+}
+add_action('rest_api_init', function () {
+	$yonetici = fn() => current_user_can('manage_options');
+	register_rest_route('rc/v1', '/durum', ['methods' => 'GET', 'permission_callback' => $yonetici, 'callback' => fn() => rc_durum()]);
+	register_rest_route('rc/v1', '/kurulum', ['methods' => 'POST', 'permission_callback' => $yonetici,
+		'callback' => fn(WP_REST_Request $r) => array_merge(rc_ilk_kurulum((bool) $r->get_param('ustune_yaz')), ['durum' => rc_durum()])]);
+});
+
 if (defined('WP_CLI') && WP_CLI) {
 	WP_CLI::add_command('rc aktar', function ($args, $assoc) {
 		$r = rc_aktar(['ustune_yaz' => isset($assoc['ustune-yaz'])]);
