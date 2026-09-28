@@ -58,15 +58,31 @@ $govde = "Yeni randevu talebi\n\n"
   . "\nMesaj:\n" . ($mesaj !== '' ? $mesaj : '(yok)')
   . "\n\n---\nGönderim: " . date('d.m.Y H:i') . "\nIP: " . ($_SERVER['REMOTE_ADDR'] ?? '-');
 
-$baslik = "From: Dr. Rahmi Cebeci <no-reply@" . ($_SERVER['HTTP_HOST'] ?? 'localhost') . ">\r\n";
-$baslik .= "Content-Type: text/plain; charset=UTF-8\r\n";
-if ($eposta !== '') $baslik .= "Reply-To: $eposta\r\n";
-
-$gitti = @mail('info@rahmicebeci.com.tr', '=?UTF-8?B?' . base64_encode('Randevu talebi — ' . $ad) . '?=', $govde, $baslik);
-
-/* e-posta gitmese bile talep kaybolmasın: sunucuda günlük tut (webroot DIŞI) */
+/* 1) ÖNCE kayıt: e-posta ne olursa olsun talep kaybolmasın (webroot DIŞI günlük).
+   28 Eyl: sunucuda mail() kapalı; PHP 8'de kapalı işlev çağrısı ölümcül hata → eskiden kayıt satırına hiç gelinmiyordu. */
 $kayit = dirname(__DIR__) . '/randevu-talepleri.log';
-@file_put_contents($kayit, $govde . "\nE-POSTA: " . ($gitti ? 'gonderildi' : 'BASARISIZ') . "\n====\n", FILE_APPEND | LOCK_EX);
+@file_put_contents($kayit, $govde . "\n====\n", FILE_APPEND | LOCK_EX);
+
+/* 2) e-posta: sunucuda WordPress varsa onun yolu (wp-mu/eposta-yolu.php → sunucunun kendi posta servisi, SMTP 25);
+   yoksa ve mail() açıksa mail(); ikisi de olmazsa talep yalnız günlükte kalır */
+$konuSatiri = 'Randevu talebi — ' . $ad;
+$gitti = false;
+try {
+  if (is_file(__DIR__ . '/wp-load.php')) {
+    require_once __DIR__ . '/wp-load.php';
+    $h = ['Content-Type: text/plain; charset=UTF-8'];
+    if ($eposta !== '') $h[] = 'Reply-To: ' . $eposta;
+    $gitti = (bool) wp_mail('info@rahmicebeci.com.tr', $konuSatiri, $govde, $h);
+  } elseif (function_exists('mail')) {
+    $baslik = "From: Dr. Rahmi Cebeci <no-reply@" . ($_SERVER['HTTP_HOST'] ?? 'localhost') . ">\r\n";
+    $baslik .= "Content-Type: text/plain; charset=UTF-8\r\n";
+    if ($eposta !== '') $baslik .= "Reply-To: $eposta\r\n";
+    $gitti = @mail('info@rahmicebeci.com.tr', '=?UTF-8?B?' . base64_encode($konuSatiri) . '?=', $govde, $baslik);
+  }
+} catch (\Throwable $hataNesnesi) {
+  $gitti = false;
+}
+@file_put_contents($kayit, 'E-POSTA: ' . ($gitti ? 'gonderildi' : 'BASARISIZ') . ' · ' . date('d.m.Y H:i') . ' · ' . $ad . "\n====\n", FILE_APPEND | LOCK_EX);
 
 cikis('ok', 'Talebiniz bize ulaştı',
   'Randevu talebiniz alındı. Çalışma saatleri içinde size dönüş yapılacak ve gün ile saat birlikte belirlenecek. '

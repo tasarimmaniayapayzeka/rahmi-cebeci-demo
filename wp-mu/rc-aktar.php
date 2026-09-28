@@ -166,7 +166,19 @@ function rc_durum() {
 	return ['paket' => count($v['sayfalar'] ?? []), 'paket_uretim' => $v['uretim'] ?? '', 'wordpressteki' => $var,
 		'tema' => get_stylesheet(), 'kalici_baglanti' => get_option('permalink_structure'),
 		'arama_motorlari' => get_option('blog_public') ? 'acik' : 'kapali', 'on_sayfa' => (int) get_option('page_on_front'),
-		'wp' => get_bloginfo('version'), 'php' => PHP_VERSION, 'mail_kapali' => in_array('mail', array_map('trim', explode(',', (string) ini_get('disable_functions'))), true)];
+		'wp' => get_bloginfo('version'), 'php' => PHP_VERSION, 'mail_kapali' => in_array('mail', array_map('trim', explode(',', (string) ini_get('disable_functions'))), true),
+		'smtp_yerel' => rc_smtp_yoklama()];
+}
+
+/* yerel posta servisi (127.0.0.1:25) karşılık veriyor mu — yalnız karşılama satırı okunur, e-posta GÖNDERİLMEZ */
+function rc_smtp_yoklama() {
+	$s = @fsockopen('127.0.0.1', 25, $no, $hata, 5);
+	if (!$s) return 'baglanilamadi: ' . $hata;
+	stream_set_timeout($s, 5);
+	$karsilama = (string) fgets($s, 512);
+	@fwrite($s, "QUIT\r\n");
+	fclose($s);
+	return str_starts_with($karsilama, '220') ? 'hazir (220)' : 'beklenmeyen: ' . substr(trim($karsilama), 0, 40);
 }
 add_action('rest_api_init', function () {
 	$yonetici = fn() => current_user_can('manage_options');
