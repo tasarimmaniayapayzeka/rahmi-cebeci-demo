@@ -13,6 +13,10 @@
 - **Form:** sunucuda `mail()` kapalı → PHP 8'de ölümcül hata, talep kaybediliyordu. Düzeltildi (e7be4c3): talep önce
   `/home/rahmicebeci/randevu-talepleri.log`'a, e-posta `wp_mail` → yerel SMTP 127.0.0.1:25 (`wp-mu/eposta-yolu.php`).
   Sunucuda SMTP "220 hazır". **Gerçek gönderim testi kullanıcı onayı bekliyor.** E-posta hataları `/home/rahmicebeci/eposta-hatalari.log`.
+- **SSS (0aa4143, canlıda):** 46 sayfanın 292 cevabı JSON veri bloğundan sayfanın içine (`<div class="g-syanit">`,
+  her sorunun altında, CSS ile gizli) — arama motoru okur, Klasik Editör'de "Cevap" etiketiyle düzenlenir. FAQPage şeması
+  render.js + seo.php aynı kuralla (panelde cevap değişince şema da değişir). Canlı 66/66 birebir, editör gidiş-dönüşü 68/68.
+  Aynı sorun sürüyor: yüz haritası noktaları (`data-gnokta-veri`, 12 sayfa), bölge pusulası (2), karşılaştırma (1), yolculuk (2).
 - Yayın: değişiklik → commit → push → `bash site/canli-yayinla.sh` (tema/mu-plugin/varlıklar). İçerik güncellemesi:
   `node site/wp-aktar.js` → push/deploy → `POST rc/v1/kurulum` (panelde düzenlenmiş sayfalara dokunmaz).
 
