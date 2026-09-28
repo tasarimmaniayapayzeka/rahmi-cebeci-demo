@@ -1,47 +1,69 @@
 # DEVİR — 34-Rahmi-Cebeci
 
-**Son güncelleme: 28 Eylül 2026 (akşam, gün sonu)**
+**Son güncelleme: 28 Eylül 2026 (akşam — favicon + Ortam kütüphanesi)**
 
-## ▶ YARIN BURADAN BAŞLA (29 Eyl)
+## ▶ BURADAN DEVAM ET
 
-**Durum:** rahmicebeci.com.tr WordPress + Klasik Editör olarak canlı, **arama motorlarına kapalı (noindex)**. Yerel = GitHub.
-Sunucudaki site güncel: son deploy'dan sonraki commit'ler (logo, bu not) sunucuya kopyalanan hiçbir dosyaya dokunmuyor. 66 sayfa canlıda statikle birebir; bütün metin ve resimler panelden düzenlenebiliyor; Yoast'ta
-65 sayfanın odak kelimesi ve 147 karakterlik açıklaması hazır. Yarım kalan iş yok.
+**Durum:** rahmicebeci.com.tr WordPress + Klasik Editör olarak canlı, **arama motorlarına kapalı (noindex)**. Yerel = GitHub = sunucu
+(dağıtım #12). 66 sayfa canlıda statikle birebir (gövde); bütün metin ve resimler panelden düzenlenebiliyor. Yarım kalan iş yok.
 
-**Bugün son iş: logo (613da6c)** — `logo-yuksek/`. Sitedeki amblem ve tam logo Higgsfield ile 4K'ya büyütüldü (bytedance,
-**net 4 kredi**, kalan ~959; 3:1 logo ilk denemede hata verdi → kare tuvale konup tekrarlandı, kredi iade edildi). Büyütücü
-zemini beyaza çeviriyor; `logo-isle.php` şeffaflığı doygunluktan (kırmızı − mavi) geri hesaplıyor ve gri kırıntıları siliyor.
-176 px'lik amblemin büyütmesi tırtıklıydı, kullanılmadı: kare amblem `amblem-yataydan.php` ile yatay logodan kesildi.
-GD'li PHP: `01-EsteTouch/estetouch-wp/php/php.exe` (XAMPP'te GD yok). Ham `*-ham.png` dosyaları git dışı.
+**28 Eyl akşam yapılanlar (652dff3, 646acbf — canlıda):**
+- **Favicon:** eski "RC" yazılı SVG yerine gerçek CR amblemi, antrasit zeminde → `site/varliklar/ikon/` (favicon.ico 16/32/48,
+  ikon-192/512, apple-touch-icon 180; üretici `logo-yuksek/favicon-uret.php`). `/favicon.ico` köke de kopyalanır (.cpanel.yml).
+  Panelde Görünüm › Özelleştir › Site simgesi seçilirse o geçer (`seo.php rc_ikon_etiketleri`).
+- **Bütün görseller Ortam kütüphanesinde (kullanıcı isteği: "seo ya uygun alt isim etiketleriyle"):**
+  - Tek kaynak `site/veri/medya.js`: 103 görsel (100 içerik + başlık amblemi + 2 marka dosyası) → SEO dosya adı, alt metin, başlık.
+    Alt metin statik çıktıya da, WordPress'e de bu tablodan yazılır; **boş alt kalmadı** (önce 53 boştu). Kapakta odak kelime geçer
+    (bolge-pusulasi için `sayfada` ile sayfaya özel alt). Tabloda olmayan görselde render.js durur. Kılavuz: YAZIM-KILAVUZU §5.
+  - `wp-mu/rc-medya.php`: görseli sunucudaki `/varliklar/`'dan uploads'a kopyalar (internetten indirmez), parti parti
+    (`medya_sinir`, REST varsayılan 12), tekrar güvenli (harita `rc_medya_harita` + `_rc_kaynak`), panelde değişen alt/başlığa dokunmaz.
+    Sayfalardaki `/varliklar/…` adresleri kütüphanedekine çevrilir, `<img>`'e `wp-image-N` → WordPress srcset ekler (sunucuda WebP
+    düzenleyici var, alt boyutlar üretildi). Panelde düzenlenmiş sayfada metne dokunulmaz, yalnız görsel adresi çevrilir.
+  - 55 sayfanın kapağı **öne çıkan görsel** → Yoast og:image + şemada primaryImageOfPage (alt metin = açıklama). Kutuda not var:
+    "sayfanın üstündeki görsel içerikten değişir".
+  - Başlıktaki logo kütüphaneden; **Site bilgileri › Logo** seçicisi eklendi.
+  - Doğrulama: yerel 66/66 birebir (`wp-yerel/medya-norm.js` kütüphane adresini /varliklar/'a çevirir), Klasik Editör gidiş-dönüşü
+    68/68, tekrar çalıştırma 0 değişiklik, elle-alt ve elle-sayfa senaryoları denendi. Canlı: 11 partide 103 görsel, hata 0,
+    5 örnek sayfa gövdesi birebir, og:image/srcset/favicon doğru.
+  - Klasörde 152 görsel artık hiçbir sayfada kullanılmıyor (eski sürümler) → kütüphaneye alınmadı; silinmedi.
+- **LiteSpeed Cache eklentisi etkin** (sunucuda): `/favicon.ico` için eski WordPress yönlendirmesi önbellekte kalmıştı →
+  `rc/v1/kurulum` artık sonunda `litespeed_purge_all` çağırıyor.
+- **Imunify Security eklentisi** her sayfanın sonuna gizli tuzak bağlantısı koyuyor: `/imunify-bot-check` — **asla ziyaret edilmez**
+  (bağlantı izleyen tarama IP'yi yakar). Genel kurala eklendi (~/.claude/CLAUDE.md); karşılaştırma betiği yok sayar.
 
-| Dosya | Nereye |
-|---|---|
-| `rahmi-cebeci-amblem-1024.png` (kare, şeffaf) | Yoast SEO › Ayarlar › **Site temsili** › Kuruluş logosu |
-| `rahmi-cebeci-paylasim-1200x630.png` (#FAF7F1 zemin) | Yoast SEO › Ayarlar › **Site temelleri** › Site görseli (og varsayılanı) |
-| `rahmi-cebeci-logo-yatay.png` (4000×1284, şeffaf) | baskı/sunum |
-| amblem `-2048`, `-512`, `-1024-beyaz` | yedek boyutlar. Not: tema `wp_site_icon`'u kaldırıyor, favicon temanın `favicon.svg`'si; WP site simgesi yüklense de basılmaz |
-
-Dosyalar kullanıcıya gönderildi; **Yoast'a henüz yüklenmedi.** Kullanıcıya "ben de yerleştirebilirim" dendi, cevap bekleniyor.
+**Kullanıcı Yoast'ı kendisi ayarladı (canlıda görüldü):** kuruluş logosu = kendi yüklediği `rahmi-cebeci-amblem-1024.png`,
+site görseli = `Dr-Rahmi-Cebeci-Logo.png` (1200×630), site adı "Uzm. Dr. Rahmi Cebeci", slogan kodlaması düzelmiş.
+⚠️ Kütüphanede bu iki dosyanın bizim aktardığımız kopyaları da var (`dr-rahmi-cebeci-logo-kare.png`,
+`dr-rahmi-cebeci-paylasim-gorseli.png`, kaynak `marka/`) → silinsin mi kullanıcıya soruldu; silinirse `medya.js`'ten `marka/`
+kayıtları da çıkar (yoksa sonraki kurulumda yeniden eklenir).
 
 **Kullanıcı kararı bekleyenler (sırayla sor, onaysız başlama):**
-1. **Yoast site temsili + logo:** Person "Cebeci" + Gravatar yanlış → Kuruluş "Dr. Rahmi Cebeci" + `amblem-1024` logo,
-   site görseli `paylasim-1200x630`. Kullanıcı kendisi yapabilir ya da "yap" derse: medyaya yükle (REST, uygulama parolası)
-   → `WPSEO_Options` (`company_or_person=company`, `company_name`, `company_logo`/`_id`, `og_default_image`/`_id`) mu-plugin
-   ya da `rc/v1/kurulum` üzerinden; sonra 2–3 sayfada şemayı dışarıdan doğrula (1500 ms aralık).
-2. **Site sloganı** "Bakırk&ouml;y Estetik Merkezi": kodlama bozuk + "merkez" muayenehane için sorunlu olabilir.
-   Öneri: "Uzm. Dr. Rahmi Cebeci — Bakırköy medikal estetik muayenehanesi".
+1. **Yoast yayıncı adı hâlâ "Cebeci"** (şema: Person/Organization "Cebeci" + logo). Ya Site temsili → Kuruluş "Dr. Rahmi Cebeci",
+   ya da WordPress kullanıcısının görünen adı "Uzm. Dr. Rahmi Cebeci".
+2. **Slogan** "Bakırköy Estetik Merkezi": kodlama düzeldi; "merkez" kelimesi muayenehane için sorunlu olabilir →
+   öneri "Uzm. Dr. Rahmi Cebeci — Bakırköy medikal estetik muayenehanesi".
 3. **Form testi:** info@ adresine "TEST" yazan tek talep (onayla) → webmail'de gör; `randevu-talepleri.log` ve `eposta-hatalari.log`'a bak.
 4. **Copyscape** ≈ $8,19 (66 sayfa), bakiye $18,04 → onay.
-5. **Odak anahtar kelimeleri** Yoast'a yazıldı; kullanıcı listeyi onaylamadı (değişiklik gerekirse `site/veri/sayfalar/*.js` → `odak`).
+5. **Odak anahtar kelimeleri** Yoast'a yazıldı; kullanıcı listeyi onaylamadı (değişiklik gerekirse `site/veri/sayfalar/*.js` → `odak`;
+   kapak alt metni de `medya.js`'te güncellenir).
 6. **Arama motorlarına açılış** (müşteri onayı): `site.js` `CANLI_ACIK=true` + WP Ayarlar › Okuma (blog_public) + Yoast site
    haritası/canonical kontrolü + drrahmicebeci.com'dan 301 (barındırması bilinmiyor, RvDesign yapımı).
-7. Hukukçu: etken madde adları (botulinum toksin, hyalüronik asit, "botoks"), asistan platformu geçişinde KVKK/çerez metinleri.
-8. Müşteriden: markaya özel görseller.
-9. Aşama 2 (asistan platformu geçişi): 35 canlıya çıkınca — aşağıdaki plan.
+7. Hukukçu: etken madde adları (botulinum toksin, hyalüronik asit, "botoks" — botulinum kapak alt metninde de geçiyor, odakla aynı),
+   asistan platformu geçişinde KVKK/çerez metinleri.
+8. Müşteriden: markaya özel görseller (gelince: dosya → `site/varliklar/` + `medya.js` kaydı → aktarım).
+9. Aşama 2 (asistan platformu geçişi): 35 canlıya çıkınca — aşağıdaki plan. (Eski asistan penceresindeki kart resimleri
+   betikle `alt=""` basılıyor — dekoratif, platform geçişinde zaten değişecek.)
 
-**Kurallar (değişmez):** Imunify — canlıya ardışık, toplu işte 1500 ms, tarayıcı User-Agent, hassas yol yoklanmaz, engel belirtisinde
-dur. Parola/belirteç sohbete yazılmaz (dosyalar: `~/.cpanel-rahmicebeci-token`, `~/.rahmicebeci-wp-pass`). Higgsfield ve
-Copyscape para harcar → önce sor. Hekim onaylı metinler onaysız değişmez. HSTS kapalı kalır. Salvera (24) deposuna dokunma.
+**Logo dosyaları (613da6c, `logo-yuksek/`):** Higgsfield 4K büyütme (net 4 kredi). `amblem-1024` (Yoast kuruluş logosu),
+`paylasim-1200x630` (Yoast site görseli), `logo-yatay` 4000×1284 (baskı), amblem 2048/512/1024-beyaz. GD'li PHP:
+`01-EsteTouch/estetouch-wp/php/php.exe` (XAMPP'te GD yok). Ham `*-ham.png` dosyaları git dışı.
+
+**Yayın akışı (değişmedi + görsel):** değişiklik → `node site/render.js && node site/yayin-hazirla.js && node site/wp-aktar.js`
+→ denetle → commit/push → `bash site/canli-yayinla.sh` → `POST rc/v1/kurulum` (yeni görsel varsa `kalan` 0 olana kadar 5 sn arayla).
+
+**Kurallar (değişmez):** Imunify — canlıya ardışık, toplu işte 1500 ms, tarayıcı User-Agent, hassas yol ve `/imunify-bot-check`
+yoklanmaz, engel belirtisinde dur. Parola/belirteç sohbete yazılmaz (dosyalar: `~/.cpanel-rahmicebeci-token`, `~/.rahmicebeci-wp-pass`).
+Higgsfield ve Copyscape para harcar → önce sor. Hekim onaylı metinler onaysız değişmez. HSTS kapalı kalır. Salvera (24) deposuna dokunma.
 
 ## 🟢 28 Eyl sabah: rahmicebeci.com.tr WORDPRESS OLARAK CANLI (noindex)
 
