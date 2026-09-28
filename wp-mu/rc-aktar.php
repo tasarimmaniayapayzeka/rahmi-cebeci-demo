@@ -85,6 +85,12 @@ function rc_aktar(array $o = []) {
    siler, 66 sayfayı aktarır (elle düzenlenmiş sayfalara dokunmaz), ana sayfayı ayarlar. Tekrar basmak güvenlidir. */
 function rc_ilk_kurulum(bool $ustune) {
 	$r = ['adimlar' => []];
+	/* ilk kurulumda site arama motorlarına KAPALI başlar (Softaculous bu seçeneği sormuyor);
+	   açılış müşteri onayıyla Ayarlar › Okuma'dan yapılır — sonraki basışlarda bu ayara dokunulmaz */
+	if (!get_option('rc_ilk_kurulum_tarihi')) {
+		if (get_option('blog_public')) { update_option('blog_public', '0'); $r['adimlar'][] = 'Arama motorlarına kapalı (açılış onayla)'; }
+		update_option('rc_ilk_kurulum_tarihi', current_time('mysql'), false);
+	}
 	if (get_stylesheet() !== 'rahmi-cebeci' && wp_get_theme('rahmi-cebeci')->exists()) {
 		switch_theme('rahmi-cebeci');
 		$r['adimlar'][] = 'Tema etkinleştirildi: Dr. Rahmi Cebeci';

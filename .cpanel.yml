@@ -1,29 +1,28 @@
 ---
-# cPanel Git™ Version Control dağıtım tarifi — Dr. Rahmi Cebeci (rahmicebeci.com.tr)
+# cPanel Git™ dağıtım tarifi — WordPress sürümü (rahmicebeci.com.tr)
 # ------------------------------------------------------------
-# Canlıya YALNIZ yayin/ klasörü çıkar. Bu klasörü `node site/yayin-hazirla.js`
-# canlı hedefle (gerçek alan adı, demo şeridi yok) derler. docs/ GitHub Pages
-# demosudur, sunucuya kopyalanmaz.
-#
-# Sunucu mt-lunar.guzelhosting.com (LiteSpeed): rsync ÇALIŞMIYOR, yalnız
-# /bin/cp ve /bin/mkdir. Kabuk globu (*) gizli dosyaları kapsamaz; .htaccess
-# bu yüzden ayrıca kopyalanır. $(date) cPanel görev motorunda HASH(0x…)
-# hatası verir — düz /bin/date kullanılır.
-#
-# YAYIN AKIŞI:
-#   1. node site/render.js            (demo → docs/)
-#   2. node site/yayin-hazirla.js     (canlı → yayin/ + .htaccess + denetim)
-#   3. node site/denetle.js && node site/denetle.js yayin
-#   4. git add -A && git commit && git push
-#   5. cPanel API: VersionControl/update + VersionControlDeployment/create
-#
-# İLK KURULUM (bir kez): Git Version Control → Create
-#   Clone URL: https://github.com/tasarimmaniayapayzeka/rahmi-cebeci-demo.git
-#   Repository Path: repositories/rahmi-cebeci
+# 28 Eyl 2026 sabahından beri ETKİN tarif (statik sürüm git geçmişinde: 65fbd1c .cpanel.yml).
+# WordPress çekirdeği ve veritabanı cPanel'den kurulur (kullanıcı); bu tarif yalnız bizim dosyalarımızı getirir:
+#   wp-tema/      → wp-content/themes/rahmi-cebeci/
+#   wp-mu/        → wp-content/mu-plugins/   (içerik aktarıcı + rc-icerik.json)
+#   site/varliklar→ varliklar/               (stil, betik, görsel, yazı tipi — sayfalar /varliklar/… adresler)
+#   yayin/*.php   → iletisim-gonder.php, asistan.php (form alıcısı, eski asistan ucu)
+#   wp-kurulum/htaccess → .htaccess
+# Statik sürümün klasörleri silinir: Apache var olan klasörü WordPress'ten önce sunar, kalırsa WP sayfaları görünmez.
+# Sunucu mt-lunar (LiteSpeed): rsync YOK, yalnız cp/rm/mkdir; $(date) yerine düz /bin/date.
 deployment:
   tasks:
     - export DEPLOYPATH=$HOME/public_html
-    - /bin/mkdir -p $DEPLOYPATH
-    - /bin/cp -R yayin/* $DEPLOYPATH/
-    - /bin/cp -f yayin/.htaccess $DEPLOYPATH/.htaccess
+    - /bin/mkdir -p $DEPLOYPATH/wp-content/themes/rahmi-cebeci $DEPLOYPATH/wp-content/mu-plugins $DEPLOYPATH/varliklar
+    - /bin/cp -R wp-tema/. $DEPLOYPATH/wp-content/themes/rahmi-cebeci/
+    - /bin/cp -R wp-mu/. $DEPLOYPATH/wp-content/mu-plugins/
+    - /bin/cp -R site/varliklar/. $DEPLOYPATH/varliklar/
+    - /bin/cp -f yayin/iletisim-gonder.php $DEPLOYPATH/iletisim-gonder.php
+    - /bin/cp -f yayin/asistan.php $DEPLOYPATH/asistan.php
+    - /bin/cp -f wp-kurulum/htaccess $DEPLOYPATH/.htaccess
+    # statik sürümün kalıntıları (WordPress sayfalarını gölgeler)
+    - /bin/rm -f $DEPLOYPATH/index.html $DEPLOYPATH/404.html $DEPLOYPATH/sitemap.xml $DEPLOYPATH/robots.txt
+    - /bin/rm -rf $DEPLOYPATH/404 $DEPLOYPATH/bilgi $DEPLOYPATH/bolge-pusulasi $DEPLOYPATH/bolgeler $DEPLOYPATH/cilt-sorunlari $DEPLOYPATH/cilt-tipi-testi
+    - /bin/rm -rf $DEPLOYPATH/hazirlik-listesi $DEPLOYPATH/hekim $DEPLOYPATH/iletisim $DEPLOYPATH/klinik $DEPLOYPATH/mevzuat $DEPLOYPATH/sikca-sorulan-sorular
+    - /bin/rm -rf $DEPLOYPATH/uygulama-karsilastirma $DEPLOYPATH/uygulamalar $DEPLOYPATH/yaklasimimiz $DEPLOYPATH/yasal
     - /bin/date >> $HOME/deploy.log
