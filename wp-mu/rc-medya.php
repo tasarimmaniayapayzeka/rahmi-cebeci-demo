@@ -72,34 +72,53 @@ function rc_medya_ekle(string $k, array $m, string $baslik, string $alt) {
 	return $id;
 }
 
-/* eski ek → yeni ek: sayfa içerikleri (tam boy + alt boy adresleri, wp-image-N), öne çıkan görsel, kapak kaydı, logo seçimi.
-   Aktarım özeti eski içerikle tutuyorsa (panelde düzenlenmemiş sayfa) yeni içerikle güncellenir; elle düzenlenmiş sayfa öyle kalır. */
-function rc_medya_degistir(int $eski, int $yeni): int {
-	$eskiUrl = wp_make_link_relative((string) wp_get_attachment_url($eski));
-	$yeniUrl = wp_make_link_relative((string) wp_get_attachment_url($yeni));
-	$ciftler = [$eskiUrl => $yeniUrl];
-	$em = wp_get_attachment_metadata($eski) ?: [];
-	$ym = wp_get_attachment_metadata($yeni) ?: [];
-	foreach (($em['sizes'] ?? []) as $boy => $b) {
-		$ciftler[dirname($eskiUrl) . '/' . $b['file']] = isset($ym['sizes'][$boy]) ? dirname($yeniUrl) . '/' . $ym['sizes'][$boy]['file'] : $yeniUrl;
+/* eski ek → yeni ek (toplu): sayfa içerikleri (tam boy + alt boy adresleri, wp-image-N), öne çıkan görsel, kapak kaydı, logo
+   seçimi; ardından eski ekler dosyalarıyla silinir. Her sayfa bir kez güncellenir, bu makine güncellemesi için revizyon açılmaz.
+   Aktarım özeti eski içerikle tutuyorsa (panelde düzenlenmemiş sayfa) yeni içerikle güncellenir; elle düzenlenmiş sayfa öyle kalır.
+   Çiftler önce rc_medya_bekleyen seçeneğine yazılır: çağrı yarıda kesilirse sonraki çağrı bitirir (kopya ek kalmaz). */
+function rc_medya_degistir_toplu(array $ciftler): int {
+	if (!$ciftler) return 0;
+	$adres = [];
+	$sinif = [];
+	foreach ($ciftler as $eski => $yeni) {
+		$eski = (int) $eski; $yeni = (int) $yeni;
+		if (get_post_type($eski) !== 'attachment' || get_post_type($yeni) !== 'attachment') continue;
+		$eskiUrl = wp_make_link_relative((string) wp_get_attachment_url($eski));
+		$yeniUrl = wp_make_link_relative((string) wp_get_attachment_url($yeni));
+		$adres[$eskiUrl] = $yeniUrl;
+		$em = wp_get_attachment_metadata($eski) ?: [];
+		$ym = wp_get_attachment_metadata($yeni) ?: [];
+		foreach (($em['sizes'] ?? []) as $boy => $b) {
+			$adres[dirname($eskiUrl) . '/' . $b['file']] = isset($ym['sizes'][$boy]) ? dirname($yeniUrl) . '/' . $ym['sizes'][$boy]['file'] : $yeniUrl;
+		}
+		$sinif['/\bwp-image-' . $eski . '\b/'] = 'wp-image-' . $yeni;
 	}
 	$n = 0;
+	add_filter('wp_revisions_to_keep', '__return_zero', 99);
 	foreach (get_posts(['post_type' => 'page', 'post_status' => 'any', 'numberposts' => -1]) as $p) {
-		$c = preg_replace('/\bwp-image-' . $eski . '\b/', 'wp-image-' . $yeni, strtr($p->post_content, $ciftler));
+		$c = strtr($p->post_content, $adres);
+		if ($sinif) $c = preg_replace(array_keys($sinif), array_values($sinif), $c);
 		if ($c === $p->post_content) continue;
 		$tutuyor = get_post_meta($p->ID, '_rc_aktarim_ozet', true) === md5($p->post_content);
 		wp_update_post(wp_slash(['ID' => $p->ID, 'post_content' => $c]));
 		if ($tutuyor) update_post_meta($p->ID, '_rc_aktarim_ozet', md5(get_post_field('post_content', $p->ID, 'raw')));
 		$n++;
 	}
+	remove_filter('wp_revisions_to_keep', '__return_zero', 99);
 	global $wpdb;
-	foreach ($wpdb->get_col($wpdb->prepare("SELECT post_id FROM $wpdb->postmeta WHERE meta_key = '_thumbnail_id' AND meta_value = %s", (string) $eski)) as $pid) {
-		set_post_thumbnail((int) $pid, $yeni);
+	foreach ($ciftler as $eski => $yeni) {
+		$eski = (int) $eski; $yeni = (int) $yeni;
+		if (get_post_type($yeni) !== 'attachment') continue;
+		foreach ($wpdb->get_col($wpdb->prepare("SELECT post_id FROM $wpdb->postmeta WHERE meta_key = '_thumbnail_id' AND meta_value = %s", (string) $eski)) as $pid) {
+			set_post_thumbnail((int) $pid, $yeni);
+		}
+		foreach ($wpdb->get_col($wpdb->prepare("SELECT post_id FROM $wpdb->postmeta WHERE meta_key = '_rc_kapak_id' AND meta_value = %s", (string) $eski)) as $pid) {
+			update_post_meta((int) $pid, '_rc_kapak_id', $yeni);
+		}
+		if ((int) get_option('rc_logo_id') === $eski) update_option('rc_logo_id', $yeni, false);
+		if (get_post_type($eski) === 'attachment') wp_delete_attachment($eski, true);
 	}
-	foreach ($wpdb->get_col($wpdb->prepare("SELECT post_id FROM $wpdb->postmeta WHERE meta_key = '_rc_kapak_id' AND meta_value = %s", (string) $eski)) as $pid) {
-		update_post_meta((int) $pid, '_rc_kapak_id', $yeni);
-	}
-	if ((int) get_option('rc_logo_id') === $eski) update_option('rc_logo_id', $yeni, false);
+	delete_option('rc_medya_bekleyen');
 	return $n;
 }
 
@@ -125,6 +144,10 @@ function rc_medya_aktar(array $liste, int $sinir = 0, array $kaldir = []): array
 	$r = ['yeni' => [], 'yenilenen' => [], 'guncellenen' => 0, 'ayni' => 0, 'elle' => [], 'kalan' => 0, 'hata' => [],
 		'kaldirilan' => [], 'kullanimda' => [], 'sayfa_degisen' => 0];
 	$agir = 0;
+	/* önceki çağrı yarıda kaldıysa bekleyen eski→yeni çiftlerini önce bitir */
+	$bekleyen = get_option('rc_medya_bekleyen', []);
+	if (is_array($bekleyen) && $bekleyen) $r['sayfa_degisen'] += rc_medya_degistir_toplu($bekleyen);
+	$bekleyen = [];
 
 	foreach ($kaldir as $k) {
 		$id = rc_medya_id((string) $k);
@@ -167,8 +190,8 @@ function rc_medya_aktar(array $liste, int $sinir = 0, array $kaldir = []): array
 			if ($ek && ($ek->post_excerpt !== '' || $ek->post_content !== '')) wp_update_post(['ID' => $yeni, 'post_excerpt' => $ek->post_excerpt, 'post_content' => $ek->post_content]);
 			update_post_meta($yeni, '_rc_medya_ozet', $elle ? $son : rc_medya_ozeti($yeni));   /* elle ise "elle" kalsın */
 			rc_medya_harita_yaz($k, $yeni);
-			$r['sayfa_degisen'] += rc_medya_degistir($id, $yeni);
-			wp_delete_attachment($id, true);
+			$bekleyen[$id] = $yeni;
+			update_option('rc_medya_bekleyen', $bekleyen, false);
 			$r['yenilenen'][] = $k;
 			$agir++;
 			continue;
@@ -183,6 +206,8 @@ function rc_medya_aktar(array $liste, int $sinir = 0, array $kaldir = []): array
 		update_post_meta($id, '_rc_medya_ozet', rc_medya_ozeti($id));
 		$r['guncellenen']++;
 	}
+	/* bu çağrıda yenilenenler: her sayfa bir kez güncellenir, sonra eski ekler silinir */
+	if ($bekleyen) $r['sayfa_degisen'] += rc_medya_degistir_toplu($bekleyen);
 	return $r;
 }
 

@@ -8,9 +8,9 @@
 const { BOLGELER, BOLGE_UYGULAMA } = require('./yuz-harita');
 
 const GORSEL = {
-  'yuz': 'bolge-yuz', 'goz-cevresi': 'ic3d-goz', 'dudak': 'bolge-dudak',
+  'yuz': 'bolge-yuz', 'goz-cevresi': 'bolge-goz-cevresi', 'dudak': 'bolge-dudak',
   'cene-ve-jawline': 'bolge-cene-ve-jawline', 'sacli-deri': 'bolge-sacli-deri',
-  'boyun-ve-dekolte': 'bolge-boyun', 'el': 'bolge-el', 'vucut': 'bolge-vucut',
+  'boyun-ve-dekolte': 'bolge-boyun-ve-dekolte', 'el': 'bolge-el', 'vucut': 'bolge-vucut',
 };
 const OK = '<svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg>';
 const iki = n => String(n).padStart(2, '0');

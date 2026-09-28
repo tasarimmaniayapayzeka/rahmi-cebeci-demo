@@ -3,8 +3,8 @@ const VL = require('../parcalar/veri-liste');   /* bileşen verisi sayfada HTML 
 
 /* bölge → kanonik görsel */
 const PUS_GORSEL = {
-  'yuz': 'bolge-yuz', 'goz-cevresi': 'ic3d-goz', 'dudak': 'ic3d-dudak',
-  'cene-ve-jawline': 'bolge-cene-ve-jawline', 'boyun-ve-dekolte': 'bolge-boyun',
+  'yuz': 'bolge-yuz', 'goz-cevresi': 'bolge-goz-cevresi', 'dudak': 'ic3d-dudak',
+  'cene-ve-jawline': 'bolge-cene-ve-jawline', 'boyun-ve-dekolte': 'bolge-boyun-ve-dekolte',
   'el': 'bolge-el', 'sacli-deri': 'bolge-sacli-deri', 'vucut': 'bolge-vucut',
 };
 

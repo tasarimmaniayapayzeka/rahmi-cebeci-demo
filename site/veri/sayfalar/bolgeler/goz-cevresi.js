@@ -24,7 +24,7 @@ module.exports = {
       <div class="g-tikler"><span><i></i>Uygulamayı hekim yapar</span><span><i></i>Adım adım plan</span><span><i></i>Kontrol randevusu planın içinde</span></div>
     </div>
     <div class="g-tarama" data-gr>
-      <img src="${r}varliklar/gorsel/ic3d-goz.webp" width="1400" height="788" alt="Alt göz kapağı ve göz kenarının yakın plan üç boyutlu çizimi" loading="eager">
+      <img src="${r}varliklar/gorsel/bolge-goz-cevresi.webp" width="1400" height="788" alt="Alt göz kapağı ve göz kenarının yakın plan üç boyutlu çizimi" loading="eager">
       <div class="g-isin"></div>
       <span class="g-ainot">Temsilî görsel · yapay zekâ ile üretildi</span>
       <div class="g-hud"><b>Milimetrenin altında deri</b><div class="g-cizgi"></div><span>Burada karar eşiği, yüzün diğer bölgelerinden daha yüksek tutulur.</span></div>

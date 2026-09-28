@@ -21,8 +21,9 @@ deployment:
     - /bin/cp -f yayin/asistan.php $DEPLOYPATH/asistan.php
     - /bin/cp -f wp-kurulum/htaccess $DEPLOYPATH/.htaccess
     - /bin/cp -f site/varliklar/ikon/favicon.ico $DEPLOYPATH/favicon.ico
-    # kütüphaneden kaldırılan kopya logo dosyaları (medya.js KALDIRILAN) sunucuda da kalmasın
+    # kütüphaneden kaldırılan kopyalar (logo + birebir aynı 3 görsel) (medya.js KALDIRILAN) sunucuda da kalmasın
     - /bin/rm -f $DEPLOYPATH/varliklar/marka/rahmi-cebeci-amblem-1024.png $DEPLOYPATH/varliklar/marka/rahmi-cebeci-paylasim-1200x630.png
+    - /bin/rm -f $DEPLOYPATH/varliklar/gorsel/ic3d-goz.webp $DEPLOYPATH/varliklar/gorsel/bolge-boyun.webp $DEPLOYPATH/varliklar/gorsel/uyg-pico-lazer-dovme-silme.webp
     # statik sürümün kalıntıları (WordPress sayfalarını gölgeler)
     - /bin/rm -f $DEPLOYPATH/index.html $DEPLOYPATH/404.html $DEPLOYPATH/sitemap.xml $DEPLOYPATH/robots.txt
     - /bin/rm -rf $DEPLOYPATH/404 $DEPLOYPATH/bilgi $DEPLOYPATH/bolge-pusulasi $DEPLOYPATH/bolgeler $DEPLOYPATH/cilt-sorunlari $DEPLOYPATH/cilt-tipi-testi
