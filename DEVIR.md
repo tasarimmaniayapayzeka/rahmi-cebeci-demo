@@ -26,6 +26,11 @@
     68/68, tekrar çalıştırma 0 değişiklik, elle-alt ve elle-sayfa senaryoları denendi. Canlı: 11 partide 103 görsel, hata 0,
     5 örnek sayfa gövdesi birebir, og:image/srcset/favicon doğru.
   - Klasörde 152 görsel artık hiçbir sayfada kullanılmıyor (eski sürümler) → kütüphaneye alınmadı; silinmedi.
+- **Dövme silme kapağı değişti (305e631, canlıda — kullanıcı isteği):** muayenehane cihaz odası fotoğrafı yerine Higgsfield
+  Nano Banana Pro 4K görsel `gorsel/uyg-pico-lazer-dovme-silme-kapak.webp` (eldivenli elde pico lazer başlığı + ön kolda ince
+  çizgili dövme; 5504×3072 → 2560×1440 WebP 108 KB; yapay zekâ notu eklendi). 4 aday üretildi, 16 kredi (aynı dakikalarda
+  hesapta 24 kredilik 2 Kling videosu da var — bu sekmeden değil). Adaylar `gorsel-ham/dovme-{A1,A2,B1,B2}-ham.png` (git dışı;
+  B1 seçildi). Eski fotoğraf `foto/klinik-cihaz-odasi.webp` kütüphanede duruyor, sayfada yok.
 - **LiteSpeed Cache eklentisi etkin** (sunucuda): `/favicon.ico` için eski WordPress yönlendirmesi önbellekte kalmıştı →
   `rc/v1/kurulum` artık sonunda `litespeed_purge_all` çağırıyor.
 - **Imunify Security eklentisi** her sayfanın sonuna gizli tuzak bağlantısı koyuyor: `/imunify-bot-check` — **asla ziyaret edilmez**
