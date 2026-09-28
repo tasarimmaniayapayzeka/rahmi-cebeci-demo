@@ -103,10 +103,13 @@ function rc_medya_degistir(int $eski, int $yeni): int {
 	return $n;
 }
 
-/* ek bir yerde kullanılıyor mu (sayfa içeriği, öne çıkan görsel, logo seçimi) */
+/* ek bir yerde kullanılıyor mu (sayfa içeriği, öne çıkan görsel, logo seçimi, site simgesi, Yoast logosu/paylaşım görseli) */
 function rc_medya_kullaniliyor(int $id): bool {
 	global $wpdb;
-	if ((int) get_option('rc_logo_id') === $id) return true;
+	if ((int) get_option('rc_logo_id') === $id || (int) get_option('site_icon') === $id) return true;
+	if (class_exists('WPSEO_Options')) {
+		foreach (['company_logo_id', 'person_logo_id', 'og_default_image_id', 'og_frontpage_image_id'] as $a) if ((int) WPSEO_Options::get($a) === $id) return true;
+	}
 	if ($wpdb->get_var($wpdb->prepare("SELECT COUNT(*) FROM $wpdb->postmeta WHERE meta_key = '_thumbnail_id' AND meta_value = %s", (string) $id))) return true;
 	$u = wp_make_link_relative((string) wp_get_attachment_url($id));
 	$govde = pathinfo($u, PATHINFO_FILENAME);
