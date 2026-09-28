@@ -16,7 +16,9 @@
 - **SSS (0aa4143, canlıda):** 46 sayfanın 292 cevabı JSON veri bloğundan sayfanın içine (`<div class="g-syanit">`,
   her sorunun altında, CSS ile gizli) — arama motoru okur, Klasik Editör'de "Cevap" etiketiyle düzenlenir. FAQPage şeması
   render.js + seo.php aynı kuralla (panelde cevap değişince şema da değişir). Canlı 66/66 birebir, editör gidiş-dönüşü 68/68.
-  Aynı sorun sürüyor: yüz haritası noktaları (`data-gnokta-veri`, 12 sayfa), bölge pusulası (2), karşılaştırma (1), yolculuk (2).
+- **Kalan veri blokları (620c7cc, canlıda):** harita noktaları (12 sayfa), bölge pusulası (2), karşılaştırma (1), yolculuk (2)
+  → `<div class="g-veri" data-*-kaynak>` gizli liste (üretici `site/veri/parcalar/veri-liste.js`); editörde başlıklı kutu.
+  17 örnek / 118 öğe birebir; **artık hiçbir sayfada JSON veri bloğu yok** — sitedeki her metin panelden düzenlenir.
 - Yayın: değişiklik → commit → push → `bash site/canli-yayinla.sh` (tema/mu-plugin/varlıklar). İçerik güncellemesi:
   `node site/wp-aktar.js` → push/deploy → `POST rc/v1/kurulum` (panelde düzenlenmiş sayfalara dokunmaz).
 
