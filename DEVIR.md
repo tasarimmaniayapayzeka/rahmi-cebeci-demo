@@ -19,6 +19,13 @@
 - **Kalan veri blokları (620c7cc, canlıda):** harita noktaları (12 sayfa), bölge pusulası (2), karşılaştırma (1), yolculuk (2)
   → `<div class="g-veri" data-*-kaynak>` gizli liste (üretici `site/veri/parcalar/veri-liste.js`); editörde başlıklı kutu.
   17 örnek / 118 öğe birebir; **artık hiçbir sayfada JSON veri bloğu yok** — sitedeki her metin panelden düzenlenir.
+- **Yoast SEO 28.5 canlıda etkin** (Softaculous kurdu). 62071d3: 65 sayfaya odak anahtar kelime + **tam 147 karakterlik** meta
+  açıklama (kaynak `site/veri/sayfalar/*.js` → `aciklama`, `odak`; odaklar SEO raporundaki öneriler, "leke lazeri" → "pico lazer leke").
+  Tema Yoast varken yalnız stil/tema rengi/FAQPage basar; başlık/açıklama/robots/og/WebPage Yoast'ta (tıbbi → MedicalWebPage).
+  Canlı doğrulama: her etiket 1 kez, açıklama kaynakla aynı, "Başlık | Dr. Rahmi Cebeci", ayraç `|`. Canonical noindex iken yok
+  (Yoast), açılışta gelir. Aktarıcı panelde değiştirilen Yoast alanlarına dokunmaz (`_rc_aktarim_meta_ozet`).
+  ⚠️ Karar bekleyen: Yoast "site temsili" = Person "Cebeci" + Gravatar (yanlış) → Kuruluş "Dr. Rahmi Cebeci" + logo önerildi;
+  site sloganı "Bakırk&ouml;y Estetik Merkezi" (bozuk kodlama + "merkez" muayenehane kuralına aykırı olabilir).
 - Yayın: değişiklik → commit → push → `bash site/canli-yayinla.sh` (tema/mu-plugin/varlıklar). İçerik güncellemesi:
   `node site/wp-aktar.js` → push/deploy → `POST rc/v1/kurulum` (panelde düzenlenmiş sayfalara dokunmaz).
 
