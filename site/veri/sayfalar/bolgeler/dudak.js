@@ -78,7 +78,11 @@ module.exports = {
     </div>
   </div>
 </section>
-<script type="application/json" data-gnokta-veri>{"hacim":["Hacim","Ne kadar dolgunluğun uygun olduğunu iki dudağın oranı ve yüz genişliği söyler."],"sinir":["Kenar netliği","Yalnızca kenar hattında, çok küçük miktarla çalışılır; gövde büyütülmez."],"nem":["Nem ve yüzey","Hedef dudağı büyütmek değil, yüzeyi nemli ve korunaklı tutmak."]}</script>
+<div class="g-veri" data-gnokta-kaynak>
+  <div data-anahtar="hacim"><b>Hacim</b><span>Ne kadar dolgunluğun uygun olduğunu iki dudağın oranı ve yüz genişliği söyler.</span></div>
+  <div data-anahtar="sinir"><b>Kenar netliği</b><span>Yalnızca kenar hattında, çok küçük miktarla çalışılır; gövde büyütülmez.</span></div>
+  <div data-anahtar="nem"><b>Nem ve yüzey</b><span>Hedef dudağı büyütmek değil, yüzeyi nemli ve korunaklı tutmak.</span></div>
+</div>
 
 <!-- ═════════ ORAN ═════════ -->
 <section class="bolum bolum--sicak" id="oran">

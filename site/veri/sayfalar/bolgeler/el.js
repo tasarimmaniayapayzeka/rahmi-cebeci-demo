@@ -91,7 +91,11 @@ module.exports = {
     </div>
   </div>
 </section>
-<script type="application/json" data-gnokta-veri>{"a":["Hacim kaybı","Kemikler ve tendonlar değişmez; üzerlerini örten katman incelir."],"b":["Güneş lekesi","Biçimi ya da rengi değişen bir leke önce ayırıcı tanı ister."],"c":["Kuruluk ve morarma","Zayıflamış koruyucu tabaka, işlemden önce toparlanmalıdır."]}</script>
+<div class="g-veri" data-gnokta-kaynak>
+  <div data-anahtar="a"><b>Hacim kaybı</b><span>Kemikler ve tendonlar değişmez; üzerlerini örten katman incelir.</span></div>
+  <div data-anahtar="b"><b>Güneş lekesi</b><span>Biçimi ya da rengi değişen bir leke önce ayırıcı tanı ister.</span></div>
+  <div data-anahtar="c"><b>Kuruluk ve morarma</b><span>Zayıflamış koruyucu tabaka, işlemden önce toparlanmalıdır.</span></div>
+</div>
 
 <!-- 5 ── MATRİS -->
 <section class="bolum">

@@ -1,5 +1,6 @@
 const S = require('../../site');
 const OZ = require('../../parcalar/uygulama-ozet');
+const VL = require('../../parcalar/veri-liste');   /* bileşen verisi sayfada HTML liste (JSON değil) */
 
 /* grup adından çapa kimliği üretir: 'Saç Sağlığı' → 'sac-sagligi' */
 const kimlik = t => t
@@ -214,8 +215,7 @@ ${S.katalog.map((g, i) => `
           `<div class="yolc-adim"><span class="yolc-no">${i + 1}</span><img src="${r}varliklar/gorsel/asama-${['muayene', 'plan', 'gun', 'takip'][i]}.webp" width="400" height="400" alt="" loading="lazy"><b>${ad}</b><p></p></div>`).join('')}
       </div>
     </div>
-    <script type="application/json" data-yolc-veri>${JSON.stringify(
-      Object.fromEntries(Object.entries(OZ).map(([sl, k]) => [sl, { yolculuk: k.yolculuk }])))}</script>
+    ${VL.yolc(OZ)}
   </div>
 </section>
 

@@ -49,7 +49,11 @@ module.exports = {
     </div>
   </div>
 </section>
-<script type="application/json" data-gnokta-veri>{"ust":["Üst yüz","Kaş kaldırınca ve çatınca beliren çizgiler ile göz kenarındaki kırışıklıklar bu alandadır"],"orta":["Orta yüz","Elmacık desteği, göz altındaki koyuluk, lekeler ve gözenekler çoğunlukla bu alanda konuşulur"],"alt":["Alt yüz","Ağız çevresindeki ince çizgiler, çene hattının netliği ve gıdı bu alana girer"]}</script>
+<div class="g-veri" data-gnokta-kaynak>
+  <div data-anahtar="ust"><b>Üst yüz</b><span>Kaş kaldırınca ve çatınca beliren çizgiler ile göz kenarındaki kırışıklıklar bu alandadır</span></div>
+  <div data-anahtar="orta"><b>Orta yüz</b><span>Elmacık desteği, göz altındaki koyuluk, lekeler ve gözenekler çoğunlukla bu alanda konuşulur</span></div>
+  <div data-anahtar="alt"><b>Alt yüz</b><span>Ağız çevresindeki ince çizgiler, çene hattının netliği ve gıdı bu alana girer</span></div>
+</div>
 
 <!-- ═════════ BAŞLIKLAR ═════════ -->
 <section class="bolum bolum--buz2" id="basliklar">

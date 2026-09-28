@@ -33,7 +33,11 @@ module.exports = {
     </div>
   </div>
 </section>
-<script type="application/json" data-gnokta-veri>{"ust":["Üst yüz","Alın, kaşlar ve şakaklar — mimiklerin en çok iz bıraktığı kat."],"orta":["Orta yüz","Yanak, elmacık ve göz altına geçiş — yüzü ortadan taşıyan kat."],"alt":["Alt yüz","Dudak çevresi, çene ucu ve çene hattı — yüzün alt çerçevesi."]}</script>
+<div class="g-veri" data-gnokta-kaynak>
+  <div data-anahtar="ust"><b>Üst yüz</b><span>Alın, kaşlar ve şakaklar — mimiklerin en çok iz bıraktığı kat.</span></div>
+  <div data-anahtar="orta"><b>Orta yüz</b><span>Yanak, elmacık ve göz altına geçiş — yüzü ortadan taşıyan kat.</span></div>
+  <div data-anahtar="alt"><b>Alt yüz</b><span>Dudak çevresi, çene ucu ve çene hattı — yüzün alt çerçevesi.</span></div>
+</div>
 
 <!-- ═════════ VERİ BANDI ═════════ -->
 <div class="g-band"><div class="sar">

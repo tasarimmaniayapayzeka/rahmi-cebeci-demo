@@ -25,3 +25,22 @@ body.rc-editor .g-syanit { display: block !important; margin: 0 0 14px 26px; pad
 body.rc-editor .g-syanit::before { content: "Cevap"; display: block; margin-bottom: 4px; font-size: .66rem; font-weight: 800;
 	letter-spacing: .14em; text-transform: uppercase; color: #85641C; }
 body.rc-editor .g-scevap { opacity: .45; }   /* sağdaki panel editörde boş kalır: cevaplar soruların altında yazılır */
+
+/* Etkileşimli bileşenlerin verisi (harita noktaları, bölge pusulası, karşılaştırma, yolculuk): sitede gizli liste,
+   betik seçime göre gösterir; editörde başlıklı kutu — metin, resim ve bağlantı buradan değişir */
+body.rc-editor .g-veri { display: block !important; margin: 20px 0; padding: 14px 16px 6px; border: 1px dashed #D9B75A;
+	border-radius: 12px; background: rgba(217, 183, 90, .06); font-size: .92rem; line-height: 1.55; color: #1C1B18; }
+body.rc-editor .g-veri::before { display: block; margin-bottom: 8px; font-size: .66rem; font-weight: 800; letter-spacing: .14em;
+	text-transform: uppercase; color: #85641C; }
+body.rc-editor [data-gnokta-kaynak]::before { content: "Harita noktaları — noktaya tıklanınca görünen başlık ve açıklama"; }
+body.rc-editor [data-pus-kaynak]::before { content: "Bölge pusulası — her bölgenin adı, tarifi, görseli ve bağlantısı"; }
+body.rc-editor [data-kar-kaynak]::before { content: "Karşılaştırma masası — seçilen iki uygulamanın satırları"; }
+body.rc-editor [data-yolc-kaynak]::before { content: "Yolculuk — seçilen uygulamanın dört aşaması"; }
+body.rc-editor .g-veri > [data-anahtar] { display: block; padding: 8px 0 10px; border-top: 1px solid rgba(133, 100, 28, .2); }
+body.rc-editor .g-veri > [data-anahtar] > b { display: block; margin-bottom: 4px; }
+body.rc-editor .g-veri > [data-anahtar] > span { display: block; }
+body.rc-editor .g-veri p { margin: 2px 0; }
+body.rc-editor .g-veri small { display: inline-block; min-width: 150px; font-weight: 700; color: #85641C; }
+/* görsel tembel yüklenir; yüklenmeden de tıklanabilir kutu kalsın diye boyut sabit */
+body.rc-editor .g-veri img { display: block; width: 140px; height: auto; aspect-ratio: 16 / 9; object-fit: cover; margin-bottom: 6px;
+	border-radius: 8px; background: #EFE8DA; }

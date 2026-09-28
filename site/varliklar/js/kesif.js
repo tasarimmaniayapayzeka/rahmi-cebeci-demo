@@ -1,6 +1,6 @@
 /* ============================================================
    Keşif bileşenleri — yolculuk simülatörü · bölge pusulası ·
-   karşılaştırma masası. Veri sayfaya gömülü JSON bloklarından gelir
+   karşılaştırma masası. Veri sayfadaki gizli HTML listeden (eskiden JSON bloklarından) gelir
    (script[data-*-veri]); ağ isteği ve depolama YOK.
    IO eşik dersi: ≤.15 · zamanlayıcı emniyetleri var.
    ============================================================ */
@@ -12,10 +12,51 @@
     if (!e) return null;
     try { return JSON.parse(e.textContent); } catch (h) { return null; }
   }
+  /* 28 Eyl: veri sayfadaki <div class="g-veri" data-*-kaynak> listesinden okunur (Klasik Editör'de düzenlenir;
+     üretici site/veri/parcalar/veri-liste.js). Liste yoksa eski JSON bloğu okunur. */
+  function kaynakOgeleri(ad) {
+    var k = document.querySelector('[data-' + ad + '-kaynak]');
+    if (!k) return null;
+    return [].filter.call(k.children, function (e) { return e.hasAttribute('data-anahtar'); });
+  }
+  function yazi(e, sec) { var x = e && e.querySelector(sec); return x ? x.textContent.trim() : ''; }
+  function yolcVeri() {
+    var o = kaynakOgeleri('yolc');
+    if (!o) return veriAl('data-yolc-veri');
+    var v = {};
+    o.forEach(function (e) {
+      var y = {};
+      e.querySelectorAll('[data-asama]').forEach(function (s) { y[s.getAttribute('data-asama')] = s.textContent.trim(); });
+      v[e.getAttribute('data-anahtar')] = { yolculuk: y };
+    });
+    return v;
+  }
+  function pusVeri() {
+    var o = kaynakOgeleri('pus');
+    if (!o) return veriAl('data-pus-veri');
+    var v = {};
+    o.forEach(function (e) {
+      var img = e.querySelector('img'), a = e.querySelector('a');
+      v[e.getAttribute('data-anahtar')] = { ad: yazi(e, 'b'), tarif: yazi(e, 'p'),
+        gorsel: img ? img.getAttribute('src') : '', yol: a ? a.getAttribute('href') : '#' };
+    });
+    return v;
+  }
+  function karVeri() {
+    var o = kaynakOgeleri('kar');
+    if (!o) return veriAl('data-kar-veri');
+    var v = {};
+    o.forEach(function (e) {
+      var k = { ad: yazi(e, 'b') };
+      e.querySelectorAll('[data-alan]').forEach(function (s) { k[s.getAttribute('data-alan')] = s.textContent.trim(); });
+      v[e.getAttribute('data-anahtar')] = k;
+    });
+    return v;
+  }
 
   /* ---------- 1) YOLCULUK SİMÜLATÖRÜ ---------- */
   var yolc = document.querySelector('[data-yolc]');
-  var YV = veriAl('data-yolc-veri');
+  var YV = yolcVeri();
   if (yolc && YV) {
     var secim = yolc.querySelector('[data-yolc-sec]');
     var adimlar = yolc.querySelectorAll('.yolc-adim');
@@ -64,7 +105,7 @@
 
   /* ---------- 2) BÖLGE PUSULASI ---------- */
   var pus = document.querySelector('[data-pus]');
-  var PV = veriAl('data-pus-veri');
+  var PV = pusVeri();
   if (pus && PV) {
     var gorsel = pus.querySelector('.pus-merkez img');
     var kart = pus.querySelector('.pus-kart');
@@ -108,7 +149,7 @@
 
   /* ---------- 3) KARŞILAŞTIRMA MASASI ---------- */
   var kar = document.querySelector('[data-kar]');
-  var KV = veriAl('data-kar-veri');
+  var KV = karVeri();
   if (kar && KV) {
     var secA = kar.querySelector('[data-kar-a]');
     var secB = kar.querySelector('[data-kar-b]');

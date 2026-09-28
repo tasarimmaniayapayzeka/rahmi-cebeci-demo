@@ -33,7 +33,11 @@ module.exports = {
     </div>
   </div>
 </section>
-<script type="application/json" data-gnokta-veri>{"ust":["Alın ve kaş arası","Kaş kaldırınca yatay, kaş çatınca dikey çizgiler belirir; bu bölgede kas hareketi çoğunlukla öndedir"],"orta":["Göz kenarı","Deri burada çok incedir; gülümseme çizgileri genellikle ilk bu bölgede fark edilir"],"alt":["Dudak çevresi","Büzme hareketi, güneş hasarı ve sigara birlikte ince dikey çizgiler bırakabilir"]}</script>
+<div class="g-veri" data-gnokta-kaynak>
+  <div data-anahtar="ust"><b>Alın ve kaş arası</b><span>Kaş kaldırınca yatay, kaş çatınca dikey çizgiler belirir; bu bölgede kas hareketi çoğunlukla öndedir</span></div>
+  <div data-anahtar="orta"><b>Göz kenarı</b><span>Deri burada çok incedir; gülümseme çizgileri genellikle ilk bu bölgede fark edilir</span></div>
+  <div data-anahtar="alt"><b>Dudak çevresi</b><span>Büzme hareketi, güneş hasarı ve sigara birlikte ince dikey çizgiler bırakabilir</span></div>
+</div>
 
 <!-- ═════════ ÇİZGİ TİPLERİ ═════════ -->
 <section class="bolum bolum--sicak" id="nedenler">

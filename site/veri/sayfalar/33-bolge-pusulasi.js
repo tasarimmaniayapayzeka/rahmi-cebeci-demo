@@ -1,4 +1,5 @@
 const S = require('../site');
+const VL = require('../parcalar/veri-liste');   /* bileşen verisi sayfada HTML liste (JSON değil) */
 
 /* bölge → kanonik görsel */
 const PUS_GORSEL = {
@@ -53,12 +54,11 @@ module.exports = {
         ${S.bolgeler.map(([ad, sl]) => `<button type="button" class="pus-oge" data-pus-oge="${sl}"><i></i>${ad}</button>`).join('')}
       </div>
     </div>
-    <script type="application/json" data-pus-veri>${JSON.stringify(
-      Object.fromEntries(S.bolgeler.map(([ad, sl]) => [sl, {
-        ad, tarif: NOT[sl] || '',
-        gorsel: r + 'varliklar/gorsel/' + (PUS_GORSEL[sl] || 'bolge-yuz') + '.webp',
-        yol: r + 'bolgeler/' + sl + '/',
-      }])))}</script>
+    ${VL.pus(S.bolgeler.map(([ad, sl]) => ({
+      anahtar: sl, ad, tarif: NOT[sl] || '',
+      gorsel: r + 'varliklar/gorsel/' + (PUS_GORSEL[sl] || 'bolge-yuz') + '.webp',
+      yol: r + 'bolgeler/' + sl + '/',
+    })))}
 
     <div class="kutu kutu--bilgi" style="margin-top:26px" data-gr>
       <b>Rehber yön gösterir, karar vermez</b>

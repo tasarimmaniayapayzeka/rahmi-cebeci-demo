@@ -682,3 +682,6 @@ body .marka__alt,body .g-kutu .g-ket,body .g-ket,body .g-scevap .g-yazan,body .g
 
 /* 28 Eyl: SSS cevapları sayfanın içinde (arama motoru okur, Klasik Editör düzenler); ekranda sağdaki panel gösterir */
 .g-syanit{display:none}
+
+/* 28 Eyl: etkileşimli bileşenlerin verisi sayfada HTML liste (arama motoru okur, editörde düzenlenir); betik okur, ekranda görünmez */
+.g-veri{display:none}

@@ -77,10 +77,17 @@ DİKKAT: g-hero .sar zaten grid — iç sarmalayıcı KULLANMA, doğrudan iki ç
 </section>
 ```
 Nokta koordinatları görsele göre: yuz-3d-c → ust(35,25) orta(31,42) alt(35,55);
-yuz-3d-d → ust(68,22) orta(66,40) alt(65,54). Nokta kullanılırsa sayfada bir kez:
+yuz-3d-d → ust(68,22) orta(66,40) alt(65,54). Nokta kullanılırsa sayfada bir kez (metinler sayfada gizli liste —
+arama motoru okur, Klasik Editör'de "Harita noktaları" kutusunda düzenlenir; g.js buradan okur):
 ```html
-<script type="application/json" data-gnokta-veri>{"ust":["Üst yüz","..."],"orta":["Orta yüz","..."],"alt":["Alt yüz","..."]}</script>
+<div class="g-veri" data-gnokta-kaynak>
+  <div data-anahtar="ust"><b>Üst yüz</b><span>…</span></div>
+  <div data-anahtar="orta"><b>Orta yüz</b><span>…</span></div>
+  <div data-anahtar="alt"><b>Alt yüz</b><span>…</span></div>
+</div>
 ```
+**28 Eyl 2026:** eski `<script type="application/json" data-gnokta-veri>` KULLANILMAZ. Pusula, karşılaştırma ve yolculuk
+verisi de aynı biçimde: `site/veri/parcalar/veri-liste.js` (`VL.pus()`, `VL.kar()`, `VL.yolc()`), `JSON.stringify` değil.
 16:9 görsel kullanılıyorsa width/height 1400x788 yaz ve nokta koyma.
 
 ### 2 · VERİ BANDI (uygulama+bölge sayfalarında; sayı yoksa atla)

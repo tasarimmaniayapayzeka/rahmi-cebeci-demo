@@ -96,7 +96,11 @@ module.exports = {
     </div>
   </div>
 </section>
-<script type="application/json" data-gnokta-veri>{"a":["Bölgesel yağlanma","Kilo vermeye dirençli yerel birikim; genel kilo fazlasının yerine geçen bir çözüm değildir."],"b":["Selülit görünümü","Tek yöntemle değil, birleşik bir planla ele alınır; tümüyle kaybolması beklenmez."],"c":["Dövme","Seans sayısını mürekkebin rengi, derinliği ve cilt tipi belirler."]}</script>
+<div class="g-veri" data-gnokta-kaynak>
+  <div data-anahtar="a"><b>Bölgesel yağlanma</b><span>Kilo vermeye dirençli yerel birikim; genel kilo fazlasının yerine geçen bir çözüm değildir.</span></div>
+  <div data-anahtar="b"><b>Selülit görünümü</b><span>Tek yöntemle değil, birleşik bir planla ele alınır; tümüyle kaybolması beklenmez.</span></div>
+  <div data-anahtar="c"><b>Dövme</b><span>Seans sayısını mürekkebin rengi, derinliği ve cilt tipi belirler.</span></div>
+</div>
 
 <!-- 5 ── MATRİS -->
 <section class="bolum">

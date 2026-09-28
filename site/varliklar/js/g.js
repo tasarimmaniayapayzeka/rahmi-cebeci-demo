@@ -4,7 +4,7 @@
      [data-gr]                reveal (isteğe bağlı --d gecikme)
      [data-gsay="42"]         sayaç (rAF + 1.6s emniyet)
      .g-nokta[data-gn=X]      sahne noktası; [data-ghud] kartını günceller
-       — nokta metinleri sayfada <script type="application/json" data-gnokta-veri>
+       — nokta metinleri sayfada <div class="g-veri" data-gnokta-kaynak> (eski: data-gnokta-veri JSON)
      .g-katblok[data-gkat=X]  kaydırınca X noktasını seçer (atlas senkron)
      .g-donut .g-dol[data-gyuzde] / .g-ciz b[data-gw]  görününce dolar
      .g-msatir[data-gg|-gb|-ga] → [data-gonizle] önizlemesini günceller
@@ -52,9 +52,17 @@
 
   /* sahne noktaları + hud + atlas senkron */
   var hud = document.querySelector('[data-ghud]');
+  /* nokta metinleri: sayfadaki <div class="g-veri" data-gnokta-kaynak> listesi (28 Eyl; editörde düzenlenir),
+     yoksa eski <script data-gnokta-veri> JSON'u */
+  var noktaKaynak = document.querySelector('[data-gnokta-kaynak]');
   var noktaVeriEl = document.querySelector('script[data-gnokta-veri]');
   var NOKTA = {};
-  if (noktaVeriEl) { try { NOKTA = JSON.parse(noktaVeriEl.textContent); } catch (e) {} }
+  if (noktaKaynak) {
+    noktaKaynak.querySelectorAll('[data-anahtar]').forEach(function (o) {
+      var nb = o.querySelector('b'), ns = o.querySelector('span');
+      NOKTA[o.getAttribute('data-anahtar')] = [nb ? nb.innerHTML.trim() : '', ns ? ns.innerHTML.trim() : ''];
+    });
+  } else if (noktaVeriEl) { try { NOKTA = JSON.parse(noktaVeriEl.textContent); } catch (e) {} }
   function noktaSec(ad) {
     document.querySelectorAll('.g-nokta').forEach(function (x) {
       if (x.dataset.gn === ad) x.setAttribute('data-akt', ''); else x.removeAttribute('data-akt');

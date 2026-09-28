@@ -33,7 +33,11 @@ module.exports = {
     </div>
   </div>
 </section>
-<script type="application/json" data-gnokta-veri>{"ust":["Şakak ve göz çevresi","Şakakta çukurlaşma ve kaş kuyruğunun alçalması hacim kaybının erken işaretleri arasındadır"],"orta":["Elmacık","Elmacık desteği azaldığında yanak düzleşir, göz altından yanağa geçiş gölgelenir"],"alt":["Çene hattı","Çene hattındaki bulanıklık bazen yukarıdaki destek kaybının aşağıya yansımasıdır"]}</script>
+<div class="g-veri" data-gnokta-kaynak>
+  <div data-anahtar="ust"><b>Şakak ve göz çevresi</b><span>Şakakta çukurlaşma ve kaş kuyruğunun alçalması hacim kaybının erken işaretleri arasındadır</span></div>
+  <div data-anahtar="orta"><b>Elmacık</b><span>Elmacık desteği azaldığında yanak düzleşir, göz altından yanağa geçiş gölgelenir</span></div>
+  <div data-anahtar="alt"><b>Çene hattı</b><span>Çene hattındaki bulanıklık bazen yukarıdaki destek kaybının aşağıya yansımasıdır</span></div>
+</div>
 
 <!-- ═════════ KATMANLAR ═════════ -->
 <section class="bolum bolum--sicak" id="nedenler">

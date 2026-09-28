@@ -91,7 +91,11 @@ module.exports = {
     </div>
   </div>
 </section>
-<script type="application/json" data-gnokta-veri>{"a":["Çizgiler ve bantlar","Halka çizgi ile dikey bant farklı yapılardan doğar; planları da farklıdır."],"b":["Güneş izi","Leke ile kılcal damar ayrı seanslarda ele alınır."],"c":["Kuruluk","Hedef dolgunluk değil, derinin nem tutması ve kalitesidir."]}</script>
+<div class="g-veri" data-gnokta-kaynak>
+  <div data-anahtar="a"><b>Çizgiler ve bantlar</b><span>Halka çizgi ile dikey bant farklı yapılardan doğar; planları da farklıdır.</span></div>
+  <div data-anahtar="b"><b>Güneş izi</b><span>Leke ile kılcal damar ayrı seanslarda ele alınır.</span></div>
+  <div data-anahtar="c"><b>Kuruluk</b><span>Hedef dolgunluk değil, derinin nem tutması ve kalitesidir.</span></div>
+</div>
 
 <!-- 5 ── MATRİS -->
 <section class="bolum">

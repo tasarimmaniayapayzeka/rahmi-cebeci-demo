@@ -117,7 +117,11 @@ module.exports = {
     </div>
   </div>
 </section>
-<script type="application/json" data-gnokta-veri>{"cenealti":["Çene altı","Buradaki dolgunluğu yapanın yağ, gevşek deri ya da kas olduğu birkaç basit muayene hareketiyle anlaşılır."],"kas":["Çiğneme kası","Kalınlaşınca alt yüzü genişletir; çoğunlukla diş sıkmayla ilişkilidir."],"profil":["Profil","Çene ucunun yeri ve boyunla yaptığı açı ancak yandan görülür."]}</script>
+<div class="g-veri" data-gnokta-kaynak>
+  <div data-anahtar="cenealti"><b>Çene altı</b><span>Buradaki dolgunluğu yapanın yağ, gevşek deri ya da kas olduğu birkaç basit muayene hareketiyle anlaşılır.</span></div>
+  <div data-anahtar="kas"><b>Çiğneme kası</b><span>Kalınlaşınca alt yüzü genişletir; çoğunlukla diş sıkmayla ilişkilidir.</span></div>
+  <div data-anahtar="profil"><b>Profil</b><span>Çene ucunun yeri ve boyunla yaptığı açı ancak yandan görülür.</span></div>
+</div>
 
 <!-- ═════════ MATRİS: UYGULAMALAR ═════════ -->
 <section class="bolum bolum--sicak" id="uygulamalar">

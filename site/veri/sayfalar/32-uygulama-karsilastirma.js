@@ -1,5 +1,6 @@
 const S = require('../site');
 const OZ = require('../parcalar/uygulama-ozet');
+const VL = require('../parcalar/veri-liste');   /* bileşen verisi sayfada HTML liste (JSON değil) */
 
 module.exports = {
   slug: 'uygulama-karsilastirma',
@@ -61,9 +62,6 @@ module.exports = {
   </div>
 </section>
 
-<script type="application/json" data-kar-veri>${JSON.stringify(
-    Object.fromEntries(Object.entries(OZ).map(([sl, k]) => [sl, {
-      ad: k.ad, hedef: k.hedef, his: k.his, iyilesme: k.iyilesme, etki: k.etki, kalicilik: k.kalicilik,
-    }])))}</script>
+${VL.kar(OZ)}
 `,
 };

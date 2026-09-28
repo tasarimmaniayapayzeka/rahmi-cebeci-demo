@@ -91,7 +91,11 @@ module.exports = {
     </div>
   </div>
 </section>
-<script type="application/json" data-gnokta-veri>{"a":["Androgenetik dökülme","Yıllar içinde yavaşça ilerler; plan da uzun soluklu yapılır."],"b":["Telogen effluvium","Geçici bir dökülmedir; neden ortadan kalkınca çoğunlukla azalır."],"c":["Eksiklik ve hastalıklar","İlk iş, eksikliği ya da hastalığı düzeltmektir."]}</script>
+<div class="g-veri" data-gnokta-kaynak>
+  <div data-anahtar="a"><b>Androgenetik dökülme</b><span>Yıllar içinde yavaşça ilerler; plan da uzun soluklu yapılır.</span></div>
+  <div data-anahtar="b"><b>Telogen effluvium</b><span>Geçici bir dökülmedir; neden ortadan kalkınca çoğunlukla azalır.</span></div>
+  <div data-anahtar="c"><b>Eksiklik ve hastalıklar</b><span>İlk iş, eksikliği ya da hastalığı düzeltmektir.</span></div>
+</div>
 
 <!-- 5 ── MATRİS -->
 <section class="bolum">

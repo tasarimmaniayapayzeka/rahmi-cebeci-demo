@@ -112,7 +112,11 @@ module.exports = {
     </div>
   </div>
 </section>
-<script type="application/json" data-gnokta-veri>{"gozalti":["Göz altı","Koyu halkanın arkasında beş ayrı neden olabilir; hangisi olduğu bilinmeden işlem düşünülmez."],"kazayagi":["Kaz ayağı","Kasın bıraktığı izler — az nokta, düşük doz; gülümseme yerinde kalır."],"kas":["Kaş bölgesi","Kaşın yeri kas dengesine ve şakaktaki desteğe bağlıdır."]}</script>
+<div class="g-veri" data-gnokta-kaynak>
+  <div data-anahtar="gozalti"><b>Göz altı</b><span>Koyu halkanın arkasında beş ayrı neden olabilir; hangisi olduğu bilinmeden işlem düşünülmez.</span></div>
+  <div data-anahtar="kazayagi"><b>Kaz ayağı</b><span>Kasın bıraktığı izler — az nokta, düşük doz; gülümseme yerinde kalır.</span></div>
+  <div data-anahtar="kas"><b>Kaş bölgesi</b><span>Kaşın yeri kas dengesine ve şakaktaki desteğe bağlıdır.</span></div>
+</div>
 
 <!-- ═════════ KOYULUK MEKANİZMALARI ═════════ -->
 <section class="bolum" id="gozalti-mekanizma">

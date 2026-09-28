@@ -1,4 +1,5 @@
 const S = require('../../site');
+const VL = require('../../parcalar/veri-liste');   /* bileşen verisi sayfada HTML liste (JSON değil) */
 
 /* bölge kartları ve pusula için kısa tarifler — kartların sırası site.js'teki S.bolgeler dizisinden gelir */
 const NOT = {
@@ -53,7 +54,11 @@ module.exports = {
     </div>
   </div>
 </section>
-<script type="application/json" data-gnokta-veri>{"ust":["Üst yüz","Alın, kaş ve şakak — mimik hareketinin en belirgin olduğu kat."],"orta":["Orta yüz","Yanak ve elmacık — üst ve alt yüzü taşıyan orta kat."],"alt":["Alt yüz","Dudak çevresi ve çene hattı — yüzün alt sınırını çizer."]}</script>
+<div class="g-veri" data-gnokta-kaynak>
+  <div data-anahtar="ust"><b>Üst yüz</b><span>Alın, kaş ve şakak — mimik hareketinin en belirgin olduğu kat.</span></div>
+  <div data-anahtar="orta"><b>Orta yüz</b><span>Yanak ve elmacık — üst ve alt yüzü taşıyan orta kat.</span></div>
+  <div data-anahtar="alt"><b>Alt yüz</b><span>Dudak çevresi ve çene hattı — yüzün alt sınırını çizer.</span></div>
+</div>
 
 <!-- ═════════ VERİ BANDI ═════════ -->
 <div class="g-band"><div class="sar">
@@ -242,12 +247,11 @@ ${S.bolgeler.map(([ad, s], i) => `
         ${S.bolgeler.map(([ad, sl]) => `<button type="button" class="pus-oge" data-pus-oge="${sl}"><i></i>${ad}</button>`).join('')}
       </div>
     </div>
-    <script type="application/json" data-pus-veri>${JSON.stringify(
-      Object.fromEntries(S.bolgeler.map(([ad, sl]) => [sl, {
-        ad, tarif: NOT[sl] || '',
-        gorsel: r + 'varliklar/gorsel/' + (PUS_GORSEL[sl] || 'bolge-yuz') + '.webp',
-        yol: r + 'bolgeler/' + sl + '/',
-      }])))}</script>
+    ${VL.pus(S.bolgeler.map(([ad, sl]) => ({
+      anahtar: sl, ad, tarif: NOT[sl] || '',
+      gorsel: r + 'varliklar/gorsel/' + (PUS_GORSEL[sl] || 'bolge-yuz') + '.webp',
+      yol: r + 'bolgeler/' + sl + '/',
+    })))}
   </div>
 </section>
 
