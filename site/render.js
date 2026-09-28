@@ -215,9 +215,32 @@ function kunye() {
 </div>`;
 }
 
+/* ---------- SSS şeması (FAQPage) ----------
+   Soru terminalindeki soru–cevap çiftlerinden üretilir: <button class="g-ssoru">Soru</button> + hemen ardından
+   <div class="g-syanit">Cevap</div>. WordPress teması (wp-tema/inc/seo.php rc_sss_sema) AYNI kuralla aynı çıktıyı
+   üretir — iki taraf değişirse birlikte değişmeli. */
+function sssMetin(h) {
+  const ad = { amp: '&', lt: '<', gt: '>', quot: '"', apos: "'", nbsp: ' ', rsquo: '’', lsquo: '‘', rdquo: '”', ldquo: '“', hellip: '…', ndash: '–', mdash: '—' };
+  return h.replace(/<i>›<\/i>/g, '').replace(/<[^>]+>/g, '')
+    .replace(/&#x([0-9a-f]+);/gi, (_, x) => String.fromCodePoint(parseInt(x, 16)))
+    .replace(/&#(\d+);/g, (_, d) => String.fromCodePoint(+d))
+    .replace(/&([a-z]+);/gi, (m, n) => (n in ad ? ad[n] : m))
+    .replace(/ /g, ' ').replace(/[ \t\r\n\f\v]+/g, ' ').trim();
+}
+function sssSema(html) {
+  const ciftler = [...html.matchAll(/<button class="g-ssoru"[^>]*>([\s\S]*?)<\/button>\s*<div class="g-syanit"[^>]*>([\s\S]*?)<\/div>/g)]
+    .map(m => [sssMetin(m[1]), sssMetin(m[2])]).filter(([q, a]) => q && a);
+  if (!ciftler.length) return '';
+  return '<script type="application/ld+json">' + JSON.stringify({
+    '@context': 'https://schema.org', '@type': 'FAQPage',
+    mainEntity: ciftler.map(([q, a]) => ({ '@type': 'Question', name: q, acceptedAnswer: { '@type': 'Answer', text: a } })),
+  }) + '</script>\n';
+}
+
 /* ---------- düzen ---------- */
 function duzen(sayfa) {
   const r = kok(sayfa.slug);
+  const govde = sayfa.icerik(r, ik);
   const url = S.alan + '/' + (sayfa.slug ? sayfa.slug + '/' : '');
   const jsonld = {
     '@context': 'https://schema.org',
@@ -255,7 +278,7 @@ ${sayfa.noindex ? '<meta name="robots" content="noindex,follow">\n' : S.noindex 
 <link rel="stylesheet" href="${varlik(r, 'varliklar/css/g.css')}">
 <link rel="stylesheet" href="${varlik(r, 'varliklar/css/asistan.css')}">
 <script type="application/ld+json">${JSON.stringify(jsonld)}</script>
-</head>
+${sssSema(govde)}</head>
 <body${S.demo ? ' data-demo="1"' : ''}>
 <div class="g-okucu" aria-hidden="true"></div>
 <svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
@@ -264,7 +287,7 @@ ${sayfa.noindex ? '<meta name="robots" content="noindex,follow">\n' : S.noindex 
 </linearGradient></defs></svg>
 ${ust(sayfa)}
 <main id="ana">
-${sayfa.icerik(r, ik)}${sayfa.tip === 'tibbi' ? '<div class="sar sar--dar">' + kunye() + '</div>' : ''}
+${govde}${sayfa.tip === 'tibbi' ? '<div class="sar sar--dar">' + kunye() + '</div>' : ''}
 </main>
 ${alt(sayfa)}
 <script src="${varlik(r, 'varliklar/js/site.js')}" defer></script>

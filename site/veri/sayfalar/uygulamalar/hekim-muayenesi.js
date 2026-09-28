@@ -242,26 +242,24 @@ module.exports = {
     <div class="g-sorgu-ic">
       <div class="g-slistem">
         <button class="g-ssoru" data-akt data-gs="0"><i>›</i>Görüşme ne kadar zaman alır?</button>
+        <div class="g-syanit" data-gs-yanit="0">Süre, konuşulacak yakınma sayısına ve sağlık öykünüzün ayrıntısına göre değişir. Randevular görüşmenin aceleye gelmeyeceği aralıklarla verilir; kontrol görüşmeleri ilk görüşmeye göre daha kısa sürer.</div>
         <button class="g-ssoru" data-gs="1"><i>›</i>Muayeneye gelince mutlaka işlem yapılır mı?</button>
+        <div class="g-syanit" data-gs-yanit="1">Hayır. Pek çok görüşme hiçbir işlem planlanmadan sona erer. Evdeki bakım düzeninde yapılacak bir değişiklik yeterliyse bunu açıkça duyarsınız; başka bir uzmanlık alanını ilgilendiriyorsa hangi dala başvurmanız gerektiği anlatılır.</div>
         <button class="g-ssoru" data-gs="2"><i>›</i>İstediğim uygulamayı muayenesiz yaptırabilir miyim?</button>
+        <div class="g-syanit" data-gs-yanit="2">İsteğiniz dikkatle dinlenir ama muayene atlanmaz. Düşündüğünüz uygulama size uygunsa planlanır; uygun değilse nedeni açıklanır ve varsa daha uygun bir seçenek konuşulur. Muayene yapılmadan uygulama kararı vermek hem tıbben hem de mevzuat açısından doğru değildir.</div>
         <button class="g-ssoru" data-gs="3"><i>›</i>Görüşmeye gelirken yanımda ne olmalı?</button>
+        <div class="g-syanit" data-gs-yanit="3">Kullandığınız ilaç ve takviyelerin listesi, takip edilen bir hastalığınız varsa son kontrol belgeleri, yakın zamanda yaptırdığınız kan tetkiklerinin çıktısı ve önceki uygulamalara ait belgeler işe yarar. Yüzünüze bakılacaksa makyajsız gelin; cilt böylece olduğu gibi görülür.</div>
         <button class="g-ssoru" data-gs="4"><i>›</i>Muayene ve uygulama aynı güne denk gelebilir mi?</button>
+        <div class="g-syanit" data-gs-yanit="4">Bazı durumlarda mümkündür ama bir kural değildir. Bir tetkik sonucu beklenecekse, ciltte aktif bir sorun varsa ya da düşünmek için zaman istiyorsanız uygulama başka bir güne alınır. Karar vermeniz için baskı yapılmaz.</div>
         <button class="g-ssoru" data-gs="5"><i>›</i>Fotoğrafım çekilir mi?</button>
+        <div class="g-syanit" data-gs-yanit="5">Yalnızca takip amacıyla, ayrıca izniniz alınarak ve dosyanızda saklanmak üzere fotoğraf çekilebilir. Bu görüntüler tanıtımda kullanılmaz ve sitede yayımlanmaz. İzin vermemeniz muayeneyi ya da uygulamayı engellemez.</div>
         <button class="g-ssoru" data-gs="6"><i>›</i>Ücret bilgisini nasıl öğrenirim?</button>
+        <div class="g-syanit" data-gs-yanit="6">Sağlık alanındaki tanıtım mevzuatı, ücret bilgisinin internet sitesinde paylaşılmasına izin vermez. Bu bilgi muayenede size özel olarak verilir; sorunuz varsa ${S.iletisim.tel} numarasından muayenehaneyi arayabilirsiniz.</div>
       </div>
       <div class="g-scevap" data-gcevap aria-live="polite"><span class="g-yazan">Hekimin yanıtı</span><b></b><p></p><a class="dgm dgm--altin" href="${r}iletisim/" style="margin-top:8px">Ayrıntısı muayenede</a></div>
     </div>
   </div>
 </div></section>
-<script type="application/json" data-gsoru-veri>[
-["Görüşme ne kadar zaman alır?","Süre, konuşulacak yakınma sayısına ve sağlık öykünüzün ayrıntısına göre değişir. Randevular görüşmenin aceleye gelmeyeceği aralıklarla verilir; kontrol görüşmeleri ilk görüşmeye göre daha kısa sürer."],
-["Muayeneye gelince mutlaka işlem yapılır mı?","Hayır. Pek çok görüşme hiçbir işlem planlanmadan sona erer. Evdeki bakım düzeninde yapılacak bir değişiklik yeterliyse bunu açıkça duyarsınız; başka bir uzmanlık alanını ilgilendiriyorsa hangi dala başvurmanız gerektiği anlatılır."],
-["İstediğim uygulamayı muayenesiz yaptırabilir miyim?","İsteğiniz dikkatle dinlenir ama muayene atlanmaz. Düşündüğünüz uygulama size uygunsa planlanır; uygun değilse nedeni açıklanır ve varsa daha uygun bir seçenek konuşulur. Muayene yapılmadan uygulama kararı vermek hem tıbben hem de mevzuat açısından doğru değildir."],
-["Görüşmeye gelirken yanımda ne olmalı?","Kullandığınız ilaç ve takviyelerin listesi, takip edilen bir hastalığınız varsa son kontrol belgeleri, yakın zamanda yaptırdığınız kan tetkiklerinin çıktısı ve önceki uygulamalara ait belgeler işe yarar. Yüzünüze bakılacaksa makyajsız gelin; cilt böylece olduğu gibi görülür."],
-["Muayene ve uygulama aynı güne denk gelebilir mi?","Bazı durumlarda mümkündür ama bir kural değildir. Bir tetkik sonucu beklenecekse, ciltte aktif bir sorun varsa ya da düşünmek için zaman istiyorsanız uygulama başka bir güne alınır. Karar vermeniz için baskı yapılmaz."],
-["Fotoğrafım çekilir mi?","Yalnızca takip amacıyla, ayrıca izniniz alınarak ve dosyanızda saklanmak üzere fotoğraf çekilebilir. Bu görüntüler tanıtımda kullanılmaz ve sitede yayımlanmaz. İzin vermemeniz muayeneyi ya da uygulamayı engellemez."],
-["Ücret bilgisini nasıl öğrenirim?","Sağlık alanındaki tanıtım mevzuatı, ücret bilgisinin internet sitesinde paylaşılmasına izin vermez. Bu bilgi muayenede size özel olarak verilir; sorunuz varsa ${S.iletisim.tel} numarasından muayenehaneyi arayabilirsiniz."]
-]</script>
 
 <!-- ═════════ UYARI ═════════ -->
 <section class="bolum">

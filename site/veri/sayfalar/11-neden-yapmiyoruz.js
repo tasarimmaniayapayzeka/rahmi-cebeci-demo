@@ -170,17 +170,22 @@ module.exports = {
     <div class="g-sorgu-ic">
       <div class="g-slistem">
         <button class="g-ssoru" data-akt data-gs="0"><i>›</i>Hekimin hangi işlemlere yetkili olduğunu nereden anlarım?</button>
+        <div class="g-syanit" data-gs-yanit="0">Hekimin uzmanlık dalını ve yetki belgelerini sorabilirsiniz; sağlık kuruluşları bu belgeleri görülebilir biçimde bulundurur. Bir işlemden önce ‘bu işlem için sertifikanız var mı?’ diye sormak yersiz değil, gereklidir.</div>
         <button class="g-ssoru" data-gs="1"><i>›</i>Yapılmayan bir işlemin yerine başka bir uygulama önerir misiniz?</button>
+        <div class="g-syanit" data-gs-yanit="1">Hayır. Kapsam dışında kalan bir talebin karşılığı olarak amacı farklı bir işlem önermeyiz. Muayenede size gerçekten uygun başka bir adım görülürse bu ayrıca ve gerekçesiyle konuşulur.</div>
         <button class="g-ssoru" data-gs="2"><i>›</i>Lazer cihazınız varken neden lazer epilasyon yapmıyorsunuz?</button>
+        <div class="g-syanit" data-gs-yanit="2">Muayenehanedeki lazerler dövme silme, leke ve cilt yenileme amacıyla kullanılır; lazer epilasyon hizmetlerimiz arasında yer almaz. Tüylenmenin hormonal bir nedeni olabileceği düşünülüyorsa bu konu muayenede değerlendirilebilir.</div>
         <button class="g-ssoru" data-gs="3"><i>›</i>Talebimin kapsamda olup olmadığını randevudan önce sorabilir miyim?</button>
+        <div class="g-syanit" data-gs-yanit="3">Evet. Telefonla ya da WhatsApp üzerinden sorduğunuzda, talebinizin burada karşılanıp karşılanmadığı randevu verilmeden söylenir. Kapsam dışında olduğu belli olan bir başvuru için randevu açılmaz.</div>
         <button class="g-ssoru" data-gs="4"><i>›</i>Bu liste ileride değişebilir mi?</button>
+        <div class="g-syanit" data-gs-yanit="4">Değişebilir. Yeni bir yetki belgesi alınırsa ya da mevzuat güncellenirse bu sayfa da güncellenir. Geçerli durumu sayfanın sonundaki son güncelleme tarihinden izleyebilirsiniz.</div>
         <button class="g-ssoru" data-gs="5"><i>›</i>Ücreti nasıl öğrenirim?</button>
+        <div class="g-syanit" data-gs-yanit="5">Muayene ve uygulamalara ilişkin mali bilgiler, başvuru sırasında yalnızca size özel olarak bildirilir. Sağlık hizmetlerinin tanıtımını düzenleyen mevzuat, bu bilgilerin internet sitesinde yayımlanmasına izin vermez.</div>
       </div>
       <div class="g-scevap" data-gcevap aria-live="polite"><span class="g-yazan">Hekimin yanıtı</span><b></b><p></p><a class="dgm dgm--altin" href="${r}iletisim/" style="margin-top:8px">Ayrıntısı muayenede</a></div>
     </div>
   </div>
 </div></section>
-<script type="application/json" data-gsoru-veri>[["Hekimin hangi işlemlere yetkili olduğunu nereden anlarım?","Hekimin uzmanlık dalını ve yetki belgelerini sorabilirsiniz; sağlık kuruluşları bu belgeleri görülebilir biçimde bulundurur. Bir işlemden önce ‘bu işlem için sertifikanız var mı?’ diye sormak yersiz değil, gereklidir."],["Yapılmayan bir işlemin yerine başka bir uygulama önerir misiniz?","Hayır. Kapsam dışında kalan bir talebin karşılığı olarak amacı farklı bir işlem önermeyiz. Muayenede size gerçekten uygun başka bir adım görülürse bu ayrıca ve gerekçesiyle konuşulur."],["Lazer cihazınız varken neden lazer epilasyon yapmıyorsunuz?","Muayenehanedeki lazerler dövme silme, leke ve cilt yenileme amacıyla kullanılır; lazer epilasyon hizmetlerimiz arasında yer almaz. Tüylenmenin hormonal bir nedeni olabileceği düşünülüyorsa bu konu muayenede değerlendirilebilir."],["Talebimin kapsamda olup olmadığını randevudan önce sorabilir miyim?","Evet. Telefonla ya da WhatsApp üzerinden sorduğunuzda, talebinizin burada karşılanıp karşılanmadığı randevu verilmeden söylenir. Kapsam dışında olduğu belli olan bir başvuru için randevu açılmaz."],["Bu liste ileride değişebilir mi?","Değişebilir. Yeni bir yetki belgesi alınırsa ya da mevzuat güncellenirse bu sayfa da güncellenir. Geçerli durumu sayfanın sonundaki son güncelleme tarihinden izleyebilirsiniz."],["Ücreti nasıl öğrenirim?","Muayene ve uygulamalara ilişkin mali bilgiler, başvuru sırasında yalnızca size özel olarak bildirilir. Sağlık hizmetlerinin tanıtımını düzenleyen mevzuat, bu bilgilerin internet sitesinde yayımlanmasına izin vermez."]]</script>
 
 <!-- ═════════ İLGİLİ ═════════ -->
 <section class="bolum bolum--sicak">

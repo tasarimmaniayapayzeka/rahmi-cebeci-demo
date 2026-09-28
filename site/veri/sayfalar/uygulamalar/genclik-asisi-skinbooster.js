@@ -139,17 +139,22 @@ module.exports = {
     <div class="g-sorgu-ic">
       <div class="g-slistem">
         <button class="g-ssoru" data-akt data-gs="0"><i>›</i>Neden “gençlik aşısı” deniyor, gerçekten aşı mı?</button>
+        <div class="g-syanit" data-gs-yanit="0">Hayır, bir aşı değildir. “Gençlik aşısı” halk arasında yaygınlaşmış bir addır; tıbbi dilde skinbooster ya da cilt içi hyalüronik asit uygulaması olarak geçer. Farklı içerikteki ürünler aynı adla anılabildiği için, size uygulanacak ürünün içeriği muayenede açıkça konuşulur ve dosyanıza yazılır.</div>
         <button class="g-ssoru" data-gs="1"><i>›</i>Dolgu ile skinbooster arasındaki fark nedir?</button>
+        <div class="g-syanit" data-gs-yanit="1">Dolgu jeli sıkı bağlı ve kıvamlıdır; verildiği yerde bir hacim oluşturur ve yüzün hatlarını değiştirebilir. Skinbooster ürünü ise akışkandır, derinin içinde ince bir tabaka hâlinde yayılır ve nem ortamını destekler; yüzün şekline dokunmaz. Kısaca dolgu hatlarla, skinbooster cildin kalitesiyle ilgilenir.</div>
         <button class="g-ssoru" data-gs="2"><i>›</i>Hangi bölgelere uygulanabilir?</button>
+        <div class="g-syanit" data-gs-yanit="2">En sık yüz, boyun, dekolte ve el sırtında uygulanır. Göz çevresi gibi ince derili bölgelerde uygun ürün ve teknik ayrıca seçilir. Hangi bölgenin programa alınacağı cildinizin durumuna göre belirlenir.</div>
         <button class="g-ssoru" data-gs="3"><i>›</i>Makyaj ve güneş için ne kadar beklemeliyim?</button>
+        <div class="g-syanit" data-gs-yanit="3">İğne noktaları kapanana kadar makyaj yapmamanız istenir. İlk günlerde doğrudan güneşten, sıcak ortamlardan, saunadan ve yoğun spordan uzak durmanız önerilir. Süre bölgeye göre değiştiği için size yazılı bir bakım talimatı verilir.</div>
         <button class="g-ssoru" data-gs="4"><i>›</i>Kaç seanslık bir program planlanır?</button>
+        <div class="g-syanit" data-gs-yanit="4">Herkese aynı sayıda seans uygulanmaz. Çoğu planda önce birbirine yakın birkaç seans yapılır; cildin yanıtı görüldükten sonra seansların arası açılır. Yanıt beklenenin altında kalırsa seans sayısını artırmak yerine önce bunun nedenini konuşuruz.</div>
         <button class="g-ssoru" data-gs="5"><i>›</i>Ücret bilgisi neden sitede yok?</button>
+        <div class="g-syanit" data-gs-yanit="5">Sağlık hizmetlerinin tanıtımına ilişkin mevzuat gereği ücret bilgisi internette yayımlanmaz. Muayenede size özel plan netleştiğinde bu bilgi doğrudan size iletilir.</div>
       </div>
       <div class="g-scevap" data-gcevap aria-live="polite"><span class="g-yazan">Hekimin yanıtı</span><b></b><p></p><a class="dgm dgm--altin" href="${r}iletisim/" style="margin-top:8px">Ayrıntısı muayenede</a></div>
     </div>
   </div>
 </div></section>
-<script type="application/json" data-gsoru-veri>[["Neden “gençlik aşısı” deniyor, gerçekten aşı mı?","Hayır, bir aşı değildir. “Gençlik aşısı” halk arasında yaygınlaşmış bir addır; tıbbi dilde skinbooster ya da cilt içi hyalüronik asit uygulaması olarak geçer. Farklı içerikteki ürünler aynı adla anılabildiği için, size uygulanacak ürünün içeriği muayenede açıkça konuşulur ve dosyanıza yazılır."],["Dolgu ile skinbooster arasındaki fark nedir?","Dolgu jeli sıkı bağlı ve kıvamlıdır; verildiği yerde bir hacim oluşturur ve yüzün hatlarını değiştirebilir. Skinbooster ürünü ise akışkandır, derinin içinde ince bir tabaka hâlinde yayılır ve nem ortamını destekler; yüzün şekline dokunmaz. Kısaca dolgu hatlarla, skinbooster cildin kalitesiyle ilgilenir."],["Hangi bölgelere uygulanabilir?","En sık yüz, boyun, dekolte ve el sırtında uygulanır. Göz çevresi gibi ince derili bölgelerde uygun ürün ve teknik ayrıca seçilir. Hangi bölgenin programa alınacağı cildinizin durumuna göre belirlenir."],["Makyaj ve güneş için ne kadar beklemeliyim?","İğne noktaları kapanana kadar makyaj yapmamanız istenir. İlk günlerde doğrudan güneşten, sıcak ortamlardan, saunadan ve yoğun spordan uzak durmanız önerilir. Süre bölgeye göre değiştiği için size yazılı bir bakım talimatı verilir."],["Kaç seanslık bir program planlanır?","Herkese aynı sayıda seans uygulanmaz. Çoğu planda önce birbirine yakın birkaç seans yapılır; cildin yanıtı görüldükten sonra seansların arası açılır. Yanıt beklenenin altında kalırsa seans sayısını artırmak yerine önce bunun nedenini konuşuruz."],["Ücret bilgisi neden sitede yok?","Sağlık hizmetlerinin tanıtımına ilişkin mevzuat gereği ücret bilgisi internette yayımlanmaz. Muayenede size özel plan netleştiğinde bu bilgi doğrudan size iletilir."]]</script>
 
 <!-- ═════ KAPANIŞ ═════ -->
 <section class="g-son">

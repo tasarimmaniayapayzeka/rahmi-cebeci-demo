@@ -110,17 +110,22 @@ module.exports = {
     <div class="g-sorgu-ic">
       <div class="g-slistem">
         <button class="g-ssoru" data-akt data-gs="0"><i>›</i>Yüzüm düşmüş gibi ama yerini gösteremiyorum; bu olağan mı?</button>
+        <div class="g-syanit" data-gs-yanit="0">Oldukça sık duyduğumuz bir ifadedir. Hacim değişimi tek bir noktada değil, geniş bir alanda ve yavaş yavaş gerçekleştiği için parmakla göstermek zordur. Yüz bütün olarak incelendiğinde değişimin hangi bölgeden başladığı çoğunlukla ortaya çıkar.</div>
         <button class="g-ssoru" data-gs="1"><i>›</i>Kilo verdikten sonra yüzüm çöktü; kilo alırsam eski hâline döner mi?</button>
+        <div class="g-syanit" data-gs-yanit="1">Kilo alındığında dolgunluğun bir kısmı geri gelebilir; ancak yağ, eski bölmelere aynı oranlarla dağılmayabilir. Sık tekrarlanan kilo dalgalanmaları bağ dokusunu da yıprattığından kiloyla oynamayı bir çözüm yolu olarak önermeyiz.</div>
         <button class="g-ssoru" data-gs="2"><i>›</i>Ameliyatsız yüz germe, cerrahi germeyle aynı sonucu verir mi?</button>
+        <div class="g-syanit" data-gs-yanit="2">Hayır. “Ameliyatsız yüz germe” halk arasında HIFU gibi sıkılaştırma yöntemleri için kullanılan bir addır; bu yöntemler cerrahinin yerini tutmaz ve fazla deriyi almaz. Hedef, destek dokusunda sınırlı ve kademeli bir sıkılaşmadır; değişimin miktarı kişiye göre farklıdır.</div>
         <button class="g-ssoru" data-gs="3"><i>›</i>Sarkma varken dolgu yapılırsa ne olur?</button>
+        <div class="g-syanit" data-gs-yanit="3">Gevşek bir dokuya gereğinden fazla hacim verildiğinde yük artar ve alt yüz daha ağır görünebilir. O yüzden planlamadan önce gevşemenin mi, hacim kaybının mı öne çıktığı ayrılır. Karma durumlarda çoğunlukla destek noktalarından başlanır ve aralıklarla sonuç izlenir.</div>
         <button class="g-ssoru" data-gs="4"><i>›</i>Etkisi ne kadar sürer?</button>
+        <div class="g-syanit" data-gs-yanit="4">Kullanılan yönteme, bölgeye, deri yapınıza ve güneşten ne kadar korunduğunuza göre değişir. Kalıcı bir sonuç vaadi verilmez; sizin için gerçekçi olan süre aralığı muayenede konuşulur.</div>
         <button class="g-ssoru" data-gs="5"><i>›</i>Ücret bilgisi neden sitede yok?</button>
+        <div class="g-syanit" data-gs-yanit="5">Sağlık hizmetlerinin tanıtımına ilişkin mevzuat gereği ücret bilgisi internette yayımlanmaz. Hangi katmanın ele alınacağı muayenede netleştikten sonra bilgi yüz yüze verilir. Randevu için ${S.iletisim.tel} numarasını arayabilir ya da aynı numaradan WhatsApp ile yazabilirsiniz.</div>
       </div>
       <div class="g-scevap" data-gcevap aria-live="polite"><span class="g-yazan">Hekimin yanıtı</span><b></b><p></p><a class="dgm dgm--altin" href="${r}iletisim/" style="margin-top:8px">Ayrıntısı muayenede</a></div>
     </div>
   </div>
 </div></section>
-<script type="application/json" data-gsoru-veri>[["Yüzüm düşmüş gibi ama yerini gösteremiyorum; bu olağan mı?","Oldukça sık duyduğumuz bir ifadedir. Hacim değişimi tek bir noktada değil, geniş bir alanda ve yavaş yavaş gerçekleştiği için parmakla göstermek zordur. Yüz bütün olarak incelendiğinde değişimin hangi bölgeden başladığı çoğunlukla ortaya çıkar."],["Kilo verdikten sonra yüzüm çöktü; kilo alırsam eski hâline döner mi?","Kilo alındığında dolgunluğun bir kısmı geri gelebilir; ancak yağ, eski bölmelere aynı oranlarla dağılmayabilir. Sık tekrarlanan kilo dalgalanmaları bağ dokusunu da yıprattığından kiloyla oynamayı bir çözüm yolu olarak önermeyiz."],["Ameliyatsız yüz germe, cerrahi germeyle aynı sonucu verir mi?","Hayır. “Ameliyatsız yüz germe” halk arasında HIFU gibi sıkılaştırma yöntemleri için kullanılan bir addır; bu yöntemler cerrahinin yerini tutmaz ve fazla deriyi almaz. Hedef, destek dokusunda sınırlı ve kademeli bir sıkılaşmadır; değişimin miktarı kişiye göre farklıdır."],["Sarkma varken dolgu yapılırsa ne olur?","Gevşek bir dokuya gereğinden fazla hacim verildiğinde yük artar ve alt yüz daha ağır görünebilir. O yüzden planlamadan önce gevşemenin mi, hacim kaybının mı öne çıktığı ayrılır. Karma durumlarda çoğunlukla destek noktalarından başlanır ve aralıklarla sonuç izlenir."],["Etkisi ne kadar sürer?","Kullanılan yönteme, bölgeye, deri yapınıza ve güneşten ne kadar korunduğunuza göre değişir. Kalıcı bir sonuç vaadi verilmez; sizin için gerçekçi olan süre aralığı muayenede konuşulur."],["Ücret bilgisi neden sitede yok?","Sağlık hizmetlerinin tanıtımına ilişkin mevzuat gereği ücret bilgisi internette yayımlanmaz. Hangi katmanın ele alınacağı muayenede netleştikten sonra bilgi yüz yüze verilir. Randevu için ${S.iletisim.tel} numarasını arayabilir ya da aynı numaradan WhatsApp ile yazabilirsiniz."]]</script>
 
 <!-- ═════════ KAPANIŞ ═════════ -->
 <section class="g-son">

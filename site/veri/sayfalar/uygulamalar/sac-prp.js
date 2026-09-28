@@ -143,17 +143,22 @@ module.exports = {
     <div class="g-sorgu-ic">
       <div class="g-slistem">
         <button class="g-ssoru" data-akt data-gs="0"><i>›</i>Saç PRP ile açılan bölgelerde yeniden saç çıkar mı?</button>
+        <div class="g-syanit" data-gs-yanit="0">Böyle bir söz vermiyoruz. Kökü kaybolmuş saçlar bu uygulamayla geri gelmez. Değerlendirdiğimiz, PRP’nin mevcut tabloda destekleyici bir adım olarak yer alıp alamayacağıdır; bu karar da dökülmenin nedeni belli olduktan sonra verilir.</div>
         <button class="g-ssoru" data-gs="1"><i>›</i>Kendi kanım kullanıldığına göre risk yok mu?</button>
+        <div class="g-syanit" data-gs-yanit="1">Kendi plazmanızın kullanılması, ürüne karşı aşırı duyarlılık olasılığını büyük ölçüde azaltır; tüpteki pıhtı önleyici madde, cildi temizleyen antiseptik ve yüzeye sürülen ürünler ise dışarıdan gelir. Kan alma, iğneyle uygulama ve hijyenle ilgili istenmeyen durumlar da yine görülebilir. Bunların hepsi uygulamadan önce tek tek anlatılır ve onam formunda yer alır.</div>
         <button class="g-ssoru" data-gs="2"><i>›</i>Kaç seans gerekir?</button>
+        <div class="g-syanit" data-gs-yanit="2">Muayeneden önce bir sayı söylemek doğru olmaz. Başlangıç serisinde seanslar çoğunlukla dört ila altı hafta arayla yapılır; toplam sayı ara kontrolde görülen yanıta göre belirlenir. Tahmine dayalı bir seans sayısı plan yerine geçmez.</div>
         <button class="g-ssoru" data-gs="3"><i>›</i>Uygulama günü aç gelmem gerekir mi?</button>
+        <div class="g-syanit" data-gs-yanit="3">Hayır. Kahvaltınızı yapmış ve yeterince su içmiş olmanız kan almayı kolaylaştırır, baş dönmesi olasılığını da azaltır. Düzenli aldığınız ilaçları, özellikle kanı sulandıranları, bir kâğıda yazıp getirmeniz yeterlidir.</div>
         <button class="g-ssoru" data-gs="4"><i>›</i>İlk haftalarda dökülme artarsa ne yapmalıyım?</button>
+        <div class="g-syanit" data-gs-yanit="4">İlk haftalarda dökülmenin geçici olarak belirginleşmesi bildirilen bir durumdur ve çoğunlukla kendiliğinden yatışır. Artış belirgin ve sürekliyse kontrol randevusunu öne alın; altta yatan bir nedenin sürüp sürmediği yeniden gözden geçirilir.</div>
         <button class="g-ssoru" data-gs="5"><i>›</i>Ücret bilgisini nasıl öğrenirim?</button>
+        <div class="g-syanit" data-gs-yanit="5">Sağlık hizmetlerinde tanıtımı düzenleyen mevzuat, ücret bilgisinin internet sitesinde yayımlanmasına izin vermez. Planın kapsamı kişiden kişiye değiştiği için bu bilgi muayenede size özel olarak paylaşılır.</div>
       </div>
       <div class="g-scevap" data-gcevap aria-live="polite"><span class="g-yazan">Hekimin yanıtı</span><b></b><p></p><a class="dgm dgm--altin" href="${r}iletisim/" style="margin-top:8px">Ayrıntısı muayenede</a></div>
     </div>
   </div>
 </div></section>
-<script type="application/json" data-gsoru-veri>[["Saç PRP ile açılan bölgelerde yeniden saç çıkar mı?","Böyle bir söz vermiyoruz. Kökü kaybolmuş saçlar bu uygulamayla geri gelmez. Değerlendirdiğimiz, PRP’nin mevcut tabloda destekleyici bir adım olarak yer alıp alamayacağıdır; bu karar da dökülmenin nedeni belli olduktan sonra verilir."],["Kendi kanım kullanıldığına göre risk yok mu?","Kendi plazmanızın kullanılması, ürüne karşı aşırı duyarlılık olasılığını büyük ölçüde azaltır; tüpteki pıhtı önleyici madde, cildi temizleyen antiseptik ve yüzeye sürülen ürünler ise dışarıdan gelir. Kan alma, iğneyle uygulama ve hijyenle ilgili istenmeyen durumlar da yine görülebilir. Bunların hepsi uygulamadan önce tek tek anlatılır ve onam formunda yer alır."],["Kaç seans gerekir?","Muayeneden önce bir sayı söylemek doğru olmaz. Başlangıç serisinde seanslar çoğunlukla dört ila altı hafta arayla yapılır; toplam sayı ara kontrolde görülen yanıta göre belirlenir. Tahmine dayalı bir seans sayısı plan yerine geçmez."],["Uygulama günü aç gelmem gerekir mi?","Hayır. Kahvaltınızı yapmış ve yeterince su içmiş olmanız kan almayı kolaylaştırır, baş dönmesi olasılığını da azaltır. Düzenli aldığınız ilaçları, özellikle kanı sulandıranları, bir kâğıda yazıp getirmeniz yeterlidir."],["İlk haftalarda dökülme artarsa ne yapmalıyım?","İlk haftalarda dökülmenin geçici olarak belirginleşmesi bildirilen bir durumdur ve çoğunlukla kendiliğinden yatışır. Artış belirgin ve sürekliyse kontrol randevusunu öne alın; altta yatan bir nedenin sürüp sürmediği yeniden gözden geçirilir."],["Ücret bilgisini nasıl öğrenirim?","Sağlık hizmetlerinde tanıtımı düzenleyen mevzuat, ücret bilgisinin internet sitesinde yayımlanmasına izin vermez. Planın kapsamı kişiden kişiye değiştiği için bu bilgi muayenede size özel olarak paylaşılır."]]</script>
 
 <!-- ═════ KAPANIŞ ═════ -->
 <section class="g-son">

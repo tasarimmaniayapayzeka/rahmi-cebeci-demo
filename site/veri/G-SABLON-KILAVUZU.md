@@ -147,15 +147,20 @@ Kat blokları o sayfanın kendi alt konuları olur; her blokta `g-haplar` ile il
     <div class="g-sorgu-ic">
       <div class="g-slistem">
         <button class="g-ssoru" data-akt data-gs="0"><i>›</i>Soru 1?</button>
-        … (5–6 soru; eski sayfanın SSS'inden seç) …
+        <div class="g-syanit" data-gs-yanit="0">Cevap 1.</div>
+        <button class="g-ssoru" data-gs="1"><i>›</i>Soru 2?</button>
+        <div class="g-syanit" data-gs-yanit="1">Cevap 2.</div>
+        … (5–6 soru; her cevap KENDİ sorusunun hemen altında) …
       </div>
       <div class="g-scevap" data-gcevap aria-live="polite"><span class="g-yazan">Hekim onaylı yanıt</span><b></b><p></p><a class="dgm dgm--altin" href="${r}iletisim/" style="margin-top:8px">Muayenede konuşalım</a></div>
     </div>
   </div>
 </div></section>
-<script type="application/json" data-gsoru-veri>[["Soru 1?","Cevap 1."],["Soru 2?","Cevap 2."],…]</script>
 ```
-JSON içinde çift tırnak kaçır; cevaplar eski SSS cevaplarından, kısaltılmış.
+**28 Eyl 2026'dan beri cevaplar sayfanın içinde** (`.g-syanit`, CSS ile gizli; panel daktiloyla gösterir). Eskiden
+`<script type="application/json" data-gsoru-veri>` içindeydi: arama motoru görmüyor, Klasik Editör'de düzenlenemiyordu —
+YENİ SAYFADA KULLANMA. `render.js` ve WP teması bu çiftlerden FAQPage şemasını kendiliğinden üretir (buton + hemen
+ardından `.g-syanit` sırası bozulmamalı). Cevaplar eski SSS cevaplarından, kısaltılmış.
 "Ücreti nasıl öğrenirim?" sorusu HER sayfada son soru olarak bulunur (standart cevapla).
 
 ### 4 · KAPANIŞ (her sayfada, en son)

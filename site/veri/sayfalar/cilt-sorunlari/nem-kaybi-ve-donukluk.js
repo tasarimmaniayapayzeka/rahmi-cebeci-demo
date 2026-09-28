@@ -106,17 +106,22 @@ module.exports = {
     <div class="g-sorgu-ic">
       <div class="g-slistem">
         <button class="g-ssoru" data-akt data-gs="0"><i>›</i>Gün içinde daha fazla su içmek cildimi nemlendirir mi?</button>
+        <div class="g-syanit" data-gs-yanit="0">Yeterli sıvı almak genel sağlığınız için önemlidir; ancak zaten yeterince su içen birinde miktarı artırmak cildin su düzeyini doğrudan yükseltmez. Belirleyici olan, derinin suyu tutabilme kapasitesi, yani koruyucu katmanın sağlamlığıdır.</div>
         <button class="g-ssoru" data-gs="1"><i>›</i>Cildim bir yandan parlıyor, bir yandan geriliyor; neden?</button>
+        <div class="g-syanit" data-gs-yanit="1">Sık rastlanan bir durumdur. Yağ üretmek ile suyu tutmak derinin ayrı işlevleridir. Koruyucu katmanı sert temizlikle aşınmış yağlı bir ciltte parlama ve gerginlik bir arada görülür; bu noktada cildi daha fazla kurutmak kısır döngüyü büyütür.</div>
         <button class="g-ssoru" data-gs="2"><i>›</i>Gençlik aşısı (skinbooster) matlığı giderir mi?</button>
+        <div class="g-syanit" data-gs-yanit="2">Halk arasında “gençlik aşısı” denen uygulama, deri içine hacim eklemeyen hyalüronik asit uygulamasıdır ve derinin su tutma niteliğini desteklemeyi amaçlar. Ancak koruyucu katman zayıflamışsa önce rutin sadeleştirilir ve cilt onarılır; bunlar atlanırsa beklenen katkı alınamayabilir.</div>
         <button class="g-ssoru" data-gs="3"><i>›</i>Koruyucu katmanın toparlanması ne kadar sürer?</button>
+        <div class="g-syanit" data-gs-yanit="3">Hafif bozulmalarda gerginlik ve hassasiyet birkaç hafta içinde azalabilir; ileri durumlarda süre birkaç aya uzayabilir. Toparlanmayı asıl belirleyen, cildi zorlayan etkenlerin gerçekten bırakılmasıdır.</div>
         <button class="g-ssoru" data-gs="4"><i>›</i>Matlık için soyucu bir işlem daha hızlı olmaz mı?</button>
+        <div class="g-syanit" data-gs-yanit="4">Koruyucu katmanı zayıf bir ciltte yüzeyi yenileyen işlemler tahrişi artırıp toparlanmayı geciktirebilir. Sıralama önemlidir: önce katman onarılır, ardından uygun bulunursa yüzeye yönelik bir adım değerlendirilir.</div>
         <button class="g-ssoru" data-gs="5"><i>›</i>Ücret bilgisi neden sitede yok?</button>
+        <div class="g-syanit" data-gs-yanit="5">Sağlık hizmetlerinin tanıtımına ilişkin mevzuat gereği ücret bilgisi internette yayımlanmaz. Cildinizin durumu muayenede değerlendirildikten sonra bilgi yüz yüze verilir. Randevu için ${S.iletisim.tel} numarasını arayabilir ya da aynı numaradan WhatsApp ile yazabilirsiniz.</div>
       </div>
       <div class="g-scevap" data-gcevap aria-live="polite"><span class="g-yazan">Hekimin yanıtı</span><b></b><p></p><a class="dgm dgm--altin" href="${r}iletisim/" style="margin-top:8px">Ayrıntısı muayenede</a></div>
     </div>
   </div>
 </div></section>
-<script type="application/json" data-gsoru-veri>[["Gün içinde daha fazla su içmek cildimi nemlendirir mi?","Yeterli sıvı almak genel sağlığınız için önemlidir; ancak zaten yeterince su içen birinde miktarı artırmak cildin su düzeyini doğrudan yükseltmez. Belirleyici olan, derinin suyu tutabilme kapasitesi, yani koruyucu katmanın sağlamlığıdır."],["Cildim bir yandan parlıyor, bir yandan geriliyor; neden?","Sık rastlanan bir durumdur. Yağ üretmek ile suyu tutmak derinin ayrı işlevleridir. Koruyucu katmanı sert temizlikle aşınmış yağlı bir ciltte parlama ve gerginlik bir arada görülür; bu noktada cildi daha fazla kurutmak kısır döngüyü büyütür."],["Gençlik aşısı (skinbooster) matlığı giderir mi?","Halk arasında “gençlik aşısı” denen uygulama, deri içine hacim eklemeyen hyalüronik asit uygulamasıdır ve derinin su tutma niteliğini desteklemeyi amaçlar. Ancak koruyucu katman zayıflamışsa önce rutin sadeleştirilir ve cilt onarılır; bunlar atlanırsa beklenen katkı alınamayabilir."],["Koruyucu katmanın toparlanması ne kadar sürer?","Hafif bozulmalarda gerginlik ve hassasiyet birkaç hafta içinde azalabilir; ileri durumlarda süre birkaç aya uzayabilir. Toparlanmayı asıl belirleyen, cildi zorlayan etkenlerin gerçekten bırakılmasıdır."],["Matlık için soyucu bir işlem daha hızlı olmaz mı?","Koruyucu katmanı zayıf bir ciltte yüzeyi yenileyen işlemler tahrişi artırıp toparlanmayı geciktirebilir. Sıralama önemlidir: önce katman onarılır, ardından uygun bulunursa yüzeye yönelik bir adım değerlendirilir."],["Ücret bilgisi neden sitede yok?","Sağlık hizmetlerinin tanıtımına ilişkin mevzuat gereği ücret bilgisi internette yayımlanmaz. Cildinizin durumu muayenede değerlendirildikten sonra bilgi yüz yüze verilir. Randevu için ${S.iletisim.tel} numarasını arayabilir ya da aynı numaradan WhatsApp ile yazabilirsiniz."]]</script>
 
 <!-- ═════════ KAPANIŞ ═════════ -->
 <section class="g-son">

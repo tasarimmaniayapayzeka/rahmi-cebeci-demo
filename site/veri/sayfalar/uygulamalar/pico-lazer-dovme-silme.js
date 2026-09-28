@@ -164,17 +164,22 @@ module.exports = {
     <div class="g-sorgu-ic">
       <div class="g-slistem">
         <button class="g-ssoru" data-akt data-gs="0"><i>›</i>Dizinin sonunda dövmeden bir şey kalır mı?</button>
+        <div class="g-syanit" data-gs-yanit="0">Kalabilir. Pek çok dövme seanslar boyunca belirgin biçimde açılır; ama sonunda silik bir gölge, çevresinden farklı bir ton ya da hafif doku farkı görülebilir. İz riskini en çok artıran iki alışkanlık, kabuğa dokunmak ve bölgeyi güneşe açık bırakmaktır.</div>
         <button class="g-ssoru" data-gs="1"><i>›</i>Kaç seans gerekeceğini baştan söyleyebilir misiniz?</button>
+        <div class="g-syanit" data-gs-yanit="1">Kabaca bir aralık verebiliriz. Aralığı renk, derinlik ve bölge belirler; yoğun ve çok renkli profesyonel dövmelerde dizi uzar. Dövmenin lazere tepkisi ilk iki seansta ortaya çıkar ve tahmin o zaman daraltılır.</div>
         <button class="g-ssoru" data-gs="2"><i>›</i>Seansları daha sık yapamaz mıyız?</button>
+        <div class="g-syanit" data-gs-yanit="2">Yapmıyoruz. Lazer mürekkebi ufalar, ama kırıntıları vücut haftalar içinde taşır; altı–sekiz haftalık ara bu iş içindir. Erken seans açılmayı hızlandırmaz, ton bozulması ve iz riskini büyütür.</div>
         <button class="g-ssoru" data-gs="3"><i>›</i>Koyu tenliyim, uygulama yapılabilir mi?</button>
+        <div class="g-syanit" data-gs-yanit="3">Yapılabilir; ancak derinin kendi pigmenti de enerjiyi soğurduğu için açık ya da koyu leke kalma olasılığı artar. Düşük enerjiyle, iyi soğutmayla ve önce deneme atımıyla başlanır; gerekirse seans aralığı uzatılır.</div>
         <button class="g-ssoru" data-gs="4"><i>›</i>Uygulama sırasında ne hissedilir?</button>
+        <div class="g-syanit" data-gs-yanit="4">Çoğu kişi atımları lastik bant çarpmasına benzetir. Kemiğe yakın ve ince derili bölgeler daha duyarlıdır; gerekirse uyuşturucu krem ve soğuk hava kullanılır.</div>
         <button class="g-ssoru" data-gs="5"><i>›</i>Ücret bilgisini nasıl öğrenebilirim?</button>
+        <div class="g-syanit" data-gs-yanit="5">Sağlık hizmetlerinin tanıtımını düzenleyen kurallar ücretlerin internette yayımlanmasına izin vermez. Plan her dövmede farklı olduğundan bu konu muayenede konuşulur.</div>
       </div>
       <div class="g-scevap" data-gcevap aria-live="polite"><span class="g-yazan">Hekimin yanıtı</span><b></b><p></p><a class="dgm dgm--altin" href="${r}iletisim/" style="margin-top:8px">Ayrıntısı muayenede</a></div>
     </div>
   </div>
 </div></section>
-<script type="application/json" data-gsoru-veri>[["Dizinin sonunda dövmeden bir şey kalır mı?","Kalabilir. Pek çok dövme seanslar boyunca belirgin biçimde açılır; ama sonunda silik bir gölge, çevresinden farklı bir ton ya da hafif doku farkı görülebilir. İz riskini en çok artıran iki alışkanlık, kabuğa dokunmak ve bölgeyi güneşe açık bırakmaktır."],["Kaç seans gerekeceğini baştan söyleyebilir misiniz?","Kabaca bir aralık verebiliriz. Aralığı renk, derinlik ve bölge belirler; yoğun ve çok renkli profesyonel dövmelerde dizi uzar. Dövmenin lazere tepkisi ilk iki seansta ortaya çıkar ve tahmin o zaman daraltılır."],["Seansları daha sık yapamaz mıyız?","Yapmıyoruz. Lazer mürekkebi ufalar, ama kırıntıları vücut haftalar içinde taşır; altı–sekiz haftalık ara bu iş içindir. Erken seans açılmayı hızlandırmaz, ton bozulması ve iz riskini büyütür."],["Koyu tenliyim, uygulama yapılabilir mi?","Yapılabilir; ancak derinin kendi pigmenti de enerjiyi soğurduğu için açık ya da koyu leke kalma olasılığı artar. Düşük enerjiyle, iyi soğutmayla ve önce deneme atımıyla başlanır; gerekirse seans aralığı uzatılır."],["Uygulama sırasında ne hissedilir?","Çoğu kişi atımları lastik bant çarpmasına benzetir. Kemiğe yakın ve ince derili bölgeler daha duyarlıdır; gerekirse uyuşturucu krem ve soğuk hava kullanılır."],["Ücret bilgisini nasıl öğrenebilirim?","Sağlık hizmetlerinin tanıtımını düzenleyen kurallar ücretlerin internette yayımlanmasına izin vermez. Plan her dövmede farklı olduğundan bu konu muayenede konuşulur."]]</script>
 
 <!-- KAPANIŞ -->
 <section class="g-son">

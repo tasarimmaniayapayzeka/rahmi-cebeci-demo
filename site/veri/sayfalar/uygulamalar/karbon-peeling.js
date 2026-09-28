@@ -111,17 +111,22 @@ module.exports = {
     <div class="g-sorgu-ic">
       <div class="g-slistem">
         <button class="g-ssoru" data-akt data-gs="0"><i>›</i>“Hollywood peeling” ile karbon peeling aynı şey mi?</button>
+        <div class="g-syanit" data-gs-yanit="0">Aynı işlemi anlatan iki ad. “Hollywood” sözcüğü bir pazarlama benzetmesidir; tıbbi bir anlamı yoktur ve sonuç hakkında bir şey söylemez. Biz sayfalarımızda işlemi yaptığı şeyle anıyoruz: cilde sürülen karbon tabakasının pico lazerle kaldırılması.</div>
         <button class="g-ssoru" data-gs="1"><i>›</i>Bir seans yeterli olur mu?</button>
+        <div class="g-syanit" data-gs-yanit="1">Çoğu kişi ilk seanstan çıkarken cildini daha pürüzsüz ve mat bulur; ama bu tazelik yüzeyseldir ve birkaç gün ile birkaç hafta içinde azalır. Kalıcı bir değişim için tek seans beklenmez; bu yüzden seanslar aralıklarla tekrarlanır ve evdeki bakım da plana dâhil edilir.</div>
         <button class="g-ssoru" data-gs="2"><i>›</i>Pico lazerle leke uygulamasından farkı nedir?</button>
+        <div class="g-syanit" data-gs-yanit="2">İkisinde de pikosaniye lazer kullanılır, ama hedef farklıdır. Leke uygulamasında enerji deri içindeki melanin kümelerine yöneltilir ve önce lekenin tipi incelenir. Karbon peelingde enerji cilde sürülen karbon tabakasında toplanır ve etki yüzeyle sınırlı kalır; yerleşmiş lekelerde anlamlı bir katkı beklenmez.</div>
         <button class="g-ssoru" data-gs="3"><i>›</i>Sivilcelerim varken yapılabilir mi?</button>
+        <div class="g-syanit" data-gs-yanit="3">Kızarık, dolgun ve ağrılı sivilceler varken lazer tutulmaz; ısı iltihabı artırabilir. Önce bu dönem ilaç ya da bakım düzeniyle geçirilir. Yüzünüzde daha çok parlama ve siyah nokta varsa, iltihaplı lezyon olmadığı sürece seans planlanabilir.</div>
         <button class="g-ssoru" data-gs="4"><i>›</i>Seanstan sonra nelerden kaçınmalıyım?</button>
+        <div class="g-syanit" data-gs-yanit="4">Üç gün asitli ve retinollü ürünleri bırakın; pullanma olursa kazımayın. Seans günü sauna ve ağır spordan kaçının, her sabah güneş koruyucu sürün. Makyaja çoğunlukla ertesi gün dönülebilir; pullanma varsa pudralı ürünler cildi daha kuru gösterebilir.</div>
         <button class="g-ssoru" data-gs="5"><i>›</i>Ücret bilgisini nasıl öğrenebilirim?</button>
+        <div class="g-syanit" data-gs-yanit="5">Sağlık hizmetlerinin tanıtımını düzenleyen kurallar ücretlerin internette yayımlanmasına izin vermez. Dizinin uzunluğu kişiye göre değiştiği için bu konu muayenede konuşulur.</div>
       </div>
       <div class="g-scevap" data-gcevap aria-live="polite"><span class="g-yazan">Hekimin yanıtı</span><b></b><p></p><a class="dgm dgm--altin" href="${r}iletisim/" style="margin-top:8px">Ayrıntısı muayenede</a></div>
     </div>
   </div>
 </div></section>
-<script type="application/json" data-gsoru-veri>[["“Hollywood peeling” ile karbon peeling aynı şey mi?","Aynı işlemi anlatan iki ad. “Hollywood” sözcüğü bir pazarlama benzetmesidir; tıbbi bir anlamı yoktur ve sonuç hakkında bir şey söylemez. Biz sayfalarımızda işlemi yaptığı şeyle anıyoruz: cilde sürülen karbon tabakasının pico lazerle kaldırılması."],["Bir seans yeterli olur mu?","Çoğu kişi ilk seanstan çıkarken cildini daha pürüzsüz ve mat bulur; ama bu tazelik yüzeyseldir ve birkaç gün ile birkaç hafta içinde azalır. Kalıcı bir değişim için tek seans beklenmez; bu yüzden seanslar aralıklarla tekrarlanır ve evdeki bakım da plana dâhil edilir."],["Pico lazerle leke uygulamasından farkı nedir?","İkisinde de pikosaniye lazer kullanılır, ama hedef farklıdır. Leke uygulamasında enerji deri içindeki melanin kümelerine yöneltilir ve önce lekenin tipi incelenir. Karbon peelingde enerji cilde sürülen karbon tabakasında toplanır ve etki yüzeyle sınırlı kalır; yerleşmiş lekelerde anlamlı bir katkı beklenmez."],["Sivilcelerim varken yapılabilir mi?","Kızarık, dolgun ve ağrılı sivilceler varken lazer tutulmaz; ısı iltihabı artırabilir. Önce bu dönem ilaç ya da bakım düzeniyle geçirilir. Yüzünüzde daha çok parlama ve siyah nokta varsa, iltihaplı lezyon olmadığı sürece seans planlanabilir."],["Seanstan sonra nelerden kaçınmalıyım?","Üç gün asitli ve retinollü ürünleri bırakın; pullanma olursa kazımayın. Seans günü sauna ve ağır spordan kaçının, her sabah güneş koruyucu sürün. Makyaja çoğunlukla ertesi gün dönülebilir; pullanma varsa pudralı ürünler cildi daha kuru gösterebilir."],["Ücret bilgisini nasıl öğrenebilirim?","Sağlık hizmetlerinin tanıtımını düzenleyen kurallar ücretlerin internette yayımlanmasına izin vermez. Dizinin uzunluğu kişiye göre değiştiği için bu konu muayenede konuşulur."]]</script>
 
 <!-- KAPANIŞ -->
 <section class="g-son">

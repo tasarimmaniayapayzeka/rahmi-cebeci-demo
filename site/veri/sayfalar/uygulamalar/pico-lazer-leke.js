@@ -111,17 +111,22 @@ module.exports = {
     <div class="g-sorgu-ic">
       <div class="g-slistem">
         <button class="g-ssoru" data-akt data-gs="0"><i>›</i>Her koyu lekeye pico lazer yapılır mı?</button>
+        <div class="g-syanit" data-gs-yanit="0">Yapılmaz. Güneş lekesi, sivilce sonrası koyulaşma, melazma ve ben birbirine çok benzeyebilir ama her birinin yolu farklıdır; bir kısmında lazer hiç yer almaz. Muayenede önce büyütmeli ışıkla bakılır, lazerin uygun olup olmadığı ondan sonra söylenir.</div>
         <button class="g-ssoru" data-gs="1"><i>›</i>Melazmada pico lazerin yeri nedir?</button>
+        <div class="g-syanit" data-gs-yanit="1">Sıranın en sonundadır. Melazma güneş, ısı ve hormonlarla alevlenir; bu etkenler düzenlenmeden yapılan atım lekeyi bir süre açıp sonra daha koyu geri getirebilir. Aylarca sürdürülen koruma ve gerekirse krem tedavisinden sonra, yalnızca uygun kişilerde düşük enerjiyle konuşulur.</div>
         <button class="g-ssoru" data-gs="2"><i>›</i>Hangi mevsimde başlamak daha doğru?</button>
+        <div class="g-syanit" data-gs-yanit="2">Sonbahar ve kış daha elverişlidir. Uygulamadan önce cildin bronz olmaması, sonrasında da haftalarca güneşten korunması gerekir; yaz aylarında, tatil ve deniz döneminde bunu sağlamak zordur.</div>
         <button class="g-ssoru" data-gs="3"><i>›</i>Lekeler bir daha çıkmaz mı?</button>
+        <div class="g-syanit" data-gs-yanit="3">Çıkabilir. Güneş lekeleri çoğu zaman belirgin biçimde açılır, ancak güneş koruması bırakıldığında aynı yerde ya da yakınında yenileri oluşur. Melazmada geri dönüş daha sıktır. Tam düzelme taahhüt edilmez; sonuçlar kişiden kişiye değişir.</div>
         <button class="g-ssoru" data-gs="4"><i>›</i>Seanstan sonraki günler nasıl geçer?</button>
+        <div class="g-syanit" data-gs-yanit="4">İlk saatlerde leke bir ton koyulaşır ve çevresi hafifçe kızarır. Birkaç gün içinde lekenin üzerinde ince bir kabuk belirir ve yaklaşık bir hafta içinde kendiliğinden düşer; koparılmaz. Bu dönemde de her gün güneş koruyucu kullanılır.</div>
         <button class="g-ssoru" data-gs="5"><i>›</i>Ücret bilgisini nasıl öğrenebilirim?</button>
+        <div class="g-syanit" data-gs-yanit="5">Sağlık hizmetlerinin tanıtımını düzenleyen kurallar ücretlerin internette yayımlanmasına izin vermez. Kaç lekeye kaç seans gerektiği kişiye göre değiştiği için bu konu muayenede konuşulur.</div>
       </div>
       <div class="g-scevap" data-gcevap aria-live="polite"><span class="g-yazan">Hekimin yanıtı</span><b></b><p></p><a class="dgm dgm--altin" href="${r}iletisim/" style="margin-top:8px">Ayrıntısı muayenede</a></div>
     </div>
   </div>
 </div></section>
-<script type="application/json" data-gsoru-veri>[["Her koyu lekeye pico lazer yapılır mı?","Yapılmaz. Güneş lekesi, sivilce sonrası koyulaşma, melazma ve ben birbirine çok benzeyebilir ama her birinin yolu farklıdır; bir kısmında lazer hiç yer almaz. Muayenede önce büyütmeli ışıkla bakılır, lazerin uygun olup olmadığı ondan sonra söylenir."],["Melazmada pico lazerin yeri nedir?","Sıranın en sonundadır. Melazma güneş, ısı ve hormonlarla alevlenir; bu etkenler düzenlenmeden yapılan atım lekeyi bir süre açıp sonra daha koyu geri getirebilir. Aylarca sürdürülen koruma ve gerekirse krem tedavisinden sonra, yalnızca uygun kişilerde düşük enerjiyle konuşulur."],["Hangi mevsimde başlamak daha doğru?","Sonbahar ve kış daha elverişlidir. Uygulamadan önce cildin bronz olmaması, sonrasında da haftalarca güneşten korunması gerekir; yaz aylarında, tatil ve deniz döneminde bunu sağlamak zordur."],["Lekeler bir daha çıkmaz mı?","Çıkabilir. Güneş lekeleri çoğu zaman belirgin biçimde açılır, ancak güneş koruması bırakıldığında aynı yerde ya da yakınında yenileri oluşur. Melazmada geri dönüş daha sıktır. Tam düzelme taahhüt edilmez; sonuçlar kişiden kişiye değişir."],["Seanstan sonraki günler nasıl geçer?","İlk saatlerde leke bir ton koyulaşır ve çevresi hafifçe kızarır. Birkaç gün içinde lekenin üzerinde ince bir kabuk belirir ve yaklaşık bir hafta içinde kendiliğinden düşer; koparılmaz. Bu dönemde de her gün güneş koruyucu kullanılır."],["Ücret bilgisini nasıl öğrenebilirim?","Sağlık hizmetlerinin tanıtımını düzenleyen kurallar ücretlerin internette yayımlanmasına izin vermez. Kaç lekeye kaç seans gerektiği kişiye göre değiştiği için bu konu muayenede konuşulur."]]</script>
 
 <!-- KAPANIŞ -->
 <section class="g-son">

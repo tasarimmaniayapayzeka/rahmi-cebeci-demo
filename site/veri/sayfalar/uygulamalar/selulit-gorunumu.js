@@ -111,17 +111,22 @@ module.exports = {
     <div class="g-sorgu-ic">
       <div class="g-slistem">
         <button class="g-ssoru" data-akt data-gs="0"><i>›</i>Selülitten tamamen kurtulabilir miyim?</button>
+        <div class="g-syanit" data-gs-yanit="0">Bu soruya dürüst yanıt hayırdır. Selülit bir doku yapısı olduğu için uygulamalarla hedeflenen, yüzeyin daha düzgün görünmesidir; değişikliğin ne kadar olacağı evreye, deri yapısına ve yaşam düzenine göre değişir. Zamanla görünüm yeniden belirginleşebilir.</div>
         <button class="g-ssoru" data-gs="1"><i>›</i>Zayıflarsam selülit geçer mi?</button>
+        <div class="g-syanit" data-gs-yanit="1">Kilo vermek bazı kişilerde görünümü hafifletir, bazılarında ise deri gevşekliği nedeniyle fark yaratmaz. Selülit ince kişilerde de görülür, çünkü asıl belirleyici deri altındaki bağ dokusu bantlarının yapısıdır. Beslenme ve hareket yine de planın doğal bir parçasıdır.</div>
         <button class="g-ssoru" data-gs="2"><i>›</i>Mezoterapi, lipoliz ve cihaz birlikte mi yapılıyor?</button>
+        <div class="g-syanit" data-gs-yanit="2">Herkese üçü birden uygulanmaz. Yüzeydeki pürüz öndeyse mezoterapi ve cihaz basamağı, eşlik eden belirgin yağ birikimi varsa lipoliz öne çıkar. Seçim ve sıralama muayene bulgularına göre yapılır, ara kontrolde de güncellenir.</div>
         <button class="g-ssoru" data-gs="3"><i>›</i>Değişikliği ne zaman görürüm?</button>
+        <div class="g-syanit" data-gs-yanit="3">Bağ dokusu ve cilt yavaş yanıt verdiği için ilk ara değerlendirme genellikle iki–üç ay sonra yapılır. Seanslardan sonraki şişlik ve morarma bu değerlendirmeyi yanıltabileceğinden erken dönemde karar verilmez.</div>
         <button class="g-ssoru" data-gs="4"><i>›</i>Selülit ile selülit enfeksiyonu aynı şey mi?</button>
+        <div class="g-syanit" data-gs-yanit="4">Hayır. Estetik anlamda selülit, deri yüzeyindeki pürüzlü görünümü anlatır ve ağrı yapmaz. Tıpta aynı adla anılan enfeksiyon ise derinin kızarık, sıcak, ağrılı ve şiş olduğu, çoğu zaman ateşle seyreden bakteriyel bir tablodur ve beklemeden hekime başvurmayı gerektirir.</div>
         <button class="g-ssoru" data-gs="5"><i>›</i>Ücret bilgisi neden sayfada yok?</button>
+        <div class="g-syanit" data-gs-yanit="5">Sağlık hizmetlerinin tanıtımına ilişkin kurallar gereği ücret bilgisi internette paylaşılmaz. Hangi basamakların, kaç seans uygulanacağı kişiye göre değiştiği için bu konu muayenede, planınızla birlikte konuşulur.</div>
       </div>
       <div class="g-scevap" data-gcevap aria-live="polite"><span class="g-yazan">Hekimin yanıtı</span><b></b><p></p><a class="dgm dgm--altin" href="${r}iletisim/" style="margin-top:8px">Ayrıntısı muayenede</a></div>
     </div>
   </div>
 </div></section>
-<script type="application/json" data-gsoru-veri>[["Selülitten tamamen kurtulabilir miyim?","Bu soruya dürüst yanıt hayırdır. Selülit bir doku yapısı olduğu için uygulamalarla hedeflenen, yüzeyin daha düzgün görünmesidir; değişikliğin ne kadar olacağı evreye, deri yapısına ve yaşam düzenine göre değişir. Zamanla görünüm yeniden belirginleşebilir."],["Zayıflarsam selülit geçer mi?","Kilo vermek bazı kişilerde görünümü hafifletir, bazılarında ise deri gevşekliği nedeniyle fark yaratmaz. Selülit ince kişilerde de görülür, çünkü asıl belirleyici deri altındaki bağ dokusu bantlarının yapısıdır. Beslenme ve hareket yine de planın doğal bir parçasıdır."],["Mezoterapi, lipoliz ve cihaz birlikte mi yapılıyor?","Herkese üçü birden uygulanmaz. Yüzeydeki pürüz öndeyse mezoterapi ve cihaz basamağı, eşlik eden belirgin yağ birikimi varsa lipoliz öne çıkar. Seçim ve sıralama muayene bulgularına göre yapılır, ara kontrolde de güncellenir."],["Değişikliği ne zaman görürüm?","Bağ dokusu ve cilt yavaş yanıt verdiği için ilk ara değerlendirme genellikle iki–üç ay sonra yapılır. Seanslardan sonraki şişlik ve morarma bu değerlendirmeyi yanıltabileceğinden erken dönemde karar verilmez."],["Selülit ile selülit enfeksiyonu aynı şey mi?","Hayır. Estetik anlamda selülit, deri yüzeyindeki pürüzlü görünümü anlatır ve ağrı yapmaz. Tıpta aynı adla anılan enfeksiyon ise derinin kızarık, sıcak, ağrılı ve şiş olduğu, çoğu zaman ateşle seyreden bakteriyel bir tablodur ve beklemeden hekime başvurmayı gerektirir."],["Ücret bilgisi neden sayfada yok?","Sağlık hizmetlerinin tanıtımına ilişkin kurallar gereği ücret bilgisi internette paylaşılmaz. Hangi basamakların, kaç seans uygulanacağı kişiye göre değiştiği için bu konu muayenede, planınızla birlikte konuşulur."]]</script>
 
 <!-- KAPANIŞ -->
 <section class="g-son">

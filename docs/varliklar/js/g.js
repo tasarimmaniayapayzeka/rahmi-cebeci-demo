@@ -9,7 +9,7 @@
      .g-donut .g-dol[data-gyuzde] / .g-ciz b[data-gw]  görününce dolar
      .g-msatir[data-gg|-gb|-ga] → [data-gonizle] önizlemesini günceller
      .g-ssoru[data-gs] + [data-gcevap] terminal (daktilo)
-       — soru/cevaplar <script type="application/json" data-gsoru-veri>
+       — cevaplar her sorunun altında: <div class="g-syanit" data-gs-yanit="N"> (eski: data-gsoru-veri JSON)
      .g-okucu                 okuma çubuğu
      .g-bmenu a[href^="#"]    yasal belge gezgini (scrollspy → [data-akt])
    Dersler: IO eşiği ≤.15 (uzun kart/kısa ekran), rAF emniyeti,
@@ -138,29 +138,42 @@
     });
   }
 
-  /* soru terminali — daktilo (sayfada birden çok terminal desteklenir:
-     N'inci .g-sorgu, N'inci data-gsoru-veri betiğiyle eşleşir) */
+  /* soru terminali — daktilo.
+     28 Eyl: cevaplar sayfada her sorunun altında durur (<div class="g-syanit" data-gs-yanit="N">, CSS ile gizli) —
+     arama motoru okur, Klasik Editör'de düzenlenir. Eski sayfalar için <script data-gsoru-veri> JSON'u hâlâ okunur
+     (N'inci .g-sorgu ↔ N'inci veri betiği). */
   var soruVerileri = document.querySelectorAll('script[data-gsoru-veri]');
+  var kacir = function (t) { return t.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;'); };
   document.querySelectorAll('.g-sorgu').forEach(function (kap, ti) {
     var cevapKap = kap.querySelector('[data-gcevap]');
-    var soruVeriEl = soruVerileri[ti] || soruVerileri[0];
-    if (!cevapKap || !soruVeriEl) return;
-    var SORU = [];
-    try { SORU = JSON.parse(soruVeriEl.textContent); } catch (e) {}
+    if (!cevapKap) return;
+    var SORU = [];   /* [soru metni, cevap düz metni, cevap HTML'i] */
+    if (kap.querySelector('[data-gs-yanit]')) {
+      kap.querySelectorAll('.g-ssoru').forEach(function (b) {
+        var y = kap.querySelector('[data-gs-yanit="' + b.dataset.gs + '"]');
+        var soru = b.textContent.replace(/^\s*›\s*/, '').trim();
+        SORU[+b.dataset.gs] = y ? [soru, y.textContent.trim(), y.innerHTML.trim()] : [soru, '', ''];
+      });
+    } else {
+      var soruVeriEl = soruVerileri[ti] || soruVerileri[0];
+      if (!soruVeriEl) return;
+      try { SORU = JSON.parse(soruVeriEl.textContent).map(function (s) { return [s[0], s[1], s[1]]; }); } catch (e) {}
+    }
     var cB = cevapKap.querySelector('b'), cP = cevapKap.querySelector('p'), yaziyor = null;
     function yaz(i) {
       var s = SORU[i]; if (!s) return;
       cB.textContent = s[0];
       if (yaziyor) clearInterval(yaziyor);
-      if (AZ) { cP.textContent = s[1]; return; }
-      cP.innerHTML = ''; var j = 0;
+      if (AZ) { cP.innerHTML = s[2]; return; }
+      /* daktilo düz metin üzerinden yürür (yarım etiket görünmesin); sonunda editördeki biçim (kalın, bağlantı) aynen konur */
+      cP.innerHTML = ''; var j = 0, metin = s[1];
       yaziyor = setInterval(function () {
         j += 3;
-        cP.innerHTML = s[1].slice(0, j) + (j < s[1].length ? '<span class="g-imlec"></span>' : '');
-        if (j >= s[1].length) clearInterval(yaziyor);
+        if (j >= metin.length) { clearInterval(yaziyor); cP.innerHTML = s[2]; return; }
+        cP.innerHTML = kacir(metin.slice(0, j)) + '<span class="g-imlec"></span>';
       }, 14);
       /* zamanlayıcı kısıtlanan görünümler için emniyet */
-      setTimeout(function () { if (cP.textContent.length < s[1].length) { clearInterval(yaziyor); cP.textContent = s[1]; } }, 4000);
+      setTimeout(function () { if (cP.textContent.length < metin.length) { clearInterval(yaziyor); cP.innerHTML = s[2]; } }, 4000);
     }
     /* ---- MOBİL AKORDİYON (12 Ağu) ----
        Masaüstünde yanıt sağ sütunda durur. Mobilde tek sütuna inince yanıt

@@ -103,17 +103,22 @@ module.exports = {
     <div class="g-sorgu-ic">
       <div class="g-slistem">
         <button class="g-ssoru" data-akt data-gs="0"><i>›</i>Gözeneklerim tümüyle kapanabilir mi?</button>
+        <div class="g-syanit" data-gs-yanit="0">Hayır. Gözenekler derinin olağan yapısının bir parçasıdır ve kapanmaları beklenmez. Hedeflenen, daha az dikkat çekmeleridir. Gözenekleri tümüyle ortadan kaldırmayı vaat eden bir yaklaşım gerçekçi değildir.</div>
         <button class="g-ssoru" data-gs="1"><i>›</i>Burnumdaki siyah noktalar kirden mi oluşuyor?</button>
+        <div class="g-syanit" data-gs-yanit="1">Hayır. Koyu renk, gözenek ağzındaki yağ ve ölü hücre karışımının havayla temas edip oksitlenmesinden gelir. Sert temizleyicilerle ya da ovarak geçmezler; ovmak yalnızca bariyeri zedeler ve kızarıklığa yol açar.</div>
         <button class="g-ssoru" data-gs="2"><i>›</i>Buz ya da soğuk su gözenekleri küçültür mü?</button>
+        <div class="g-syanit" data-gs-yanit="2">Soğuk, kısa süreli bir gerginlik hissi verebilir; ancak gözenek ağzını kalıcı olarak daraltmaz. Gözeneklerin açılıp kapanmasını sağlayan bir kas yapısı yoktur. Sıcak ve soğukla görülen fark, geçici kan akımı ve şişlik değişikliklerinden kaynaklanır.</div>
         <button class="g-ssoru" data-gs="3"><i>›</i>Cildim yağlı; yine de nemlendirici kullanmalı mıyım?</button>
+        <div class="g-syanit" data-gs-yanit="3">Evet. Yağ ile su farklı ihtiyaçlardır ve yağlı bir cilt de su kaybedebilir. Nemlendirici tümüyle bırakıldığında koruyucu tabaka zayıflar; cilt bunu daha fazla yağ üreterek dengelemeye çalışabilir. Hangi ürünün uygun olduğu cildinizin toleransına göre birlikte belirlenir.</div>
         <button class="g-ssoru" data-gs="4"><i>›</i>Dokudaki değişim ne zaman fark edilir?</button>
+        <div class="g-syanit" data-gs-yanit="4">Yüzeyde biriken hücrelerden kaynaklanan pürüzlülükte birkaç hafta içinde fark görülebilir. Destek dokuya yönelik yöntemlerde değişim çoğunlukla aylar içinde ve aşamalı olarak belirginleşir; süre kişiden kişiye farklıdır.</div>
         <button class="g-ssoru" data-gs="5"><i>›</i>Ücret bilgisi neden sitede yok?</button>
+        <div class="g-syanit" data-gs-yanit="5">Sağlık hizmetlerinin tanıtımına ilişkin mevzuat gereği ücret bilgisi internette yayımlanmaz. Dokunuzda hangi bileşenin öne çıktığı muayenede belirlendikten sonra bilgi yüz yüze verilir. Randevu için ${S.iletisim.tel} numarasını arayabilir ya da aynı numaradan WhatsApp ile yazabilirsiniz.</div>
       </div>
       <div class="g-scevap" data-gcevap aria-live="polite"><span class="g-yazan">Hekimin yanıtı</span><b></b><p></p><a class="dgm dgm--altin" href="${r}iletisim/" style="margin-top:8px">Ayrıntısı muayenede</a></div>
     </div>
   </div>
 </div></section>
-<script type="application/json" data-gsoru-veri>[["Gözeneklerim tümüyle kapanabilir mi?","Hayır. Gözenekler derinin olağan yapısının bir parçasıdır ve kapanmaları beklenmez. Hedeflenen, daha az dikkat çekmeleridir. Gözenekleri tümüyle ortadan kaldırmayı vaat eden bir yaklaşım gerçekçi değildir."],["Burnumdaki siyah noktalar kirden mi oluşuyor?","Hayır. Koyu renk, gözenek ağzındaki yağ ve ölü hücre karışımının havayla temas edip oksitlenmesinden gelir. Sert temizleyicilerle ya da ovarak geçmezler; ovmak yalnızca bariyeri zedeler ve kızarıklığa yol açar."],["Buz ya da soğuk su gözenekleri küçültür mü?","Soğuk, kısa süreli bir gerginlik hissi verebilir; ancak gözenek ağzını kalıcı olarak daraltmaz. Gözeneklerin açılıp kapanmasını sağlayan bir kas yapısı yoktur. Sıcak ve soğukla görülen fark, geçici kan akımı ve şişlik değişikliklerinden kaynaklanır."],["Cildim yağlı; yine de nemlendirici kullanmalı mıyım?","Evet. Yağ ile su farklı ihtiyaçlardır ve yağlı bir cilt de su kaybedebilir. Nemlendirici tümüyle bırakıldığında koruyucu tabaka zayıflar; cilt bunu daha fazla yağ üreterek dengelemeye çalışabilir. Hangi ürünün uygun olduğu cildinizin toleransına göre birlikte belirlenir."],["Dokudaki değişim ne zaman fark edilir?","Yüzeyde biriken hücrelerden kaynaklanan pürüzlülükte birkaç hafta içinde fark görülebilir. Destek dokuya yönelik yöntemlerde değişim çoğunlukla aylar içinde ve aşamalı olarak belirginleşir; süre kişiden kişiye farklıdır."],["Ücret bilgisi neden sitede yok?","Sağlık hizmetlerinin tanıtımına ilişkin mevzuat gereği ücret bilgisi internette yayımlanmaz. Dokunuzda hangi bileşenin öne çıktığı muayenede belirlendikten sonra bilgi yüz yüze verilir. Randevu için ${S.iletisim.tel} numarasını arayabilir ya da aynı numaradan WhatsApp ile yazabilirsiniz."]]</script>
 
 <!-- ═════════ KAPANIŞ ═════════ -->
 <section class="g-son">

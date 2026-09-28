@@ -18,3 +18,10 @@ body.rc-editor .serit__bas,
 body.rc-editor .serit__metin { position: static !important; opacity: 1 !important; visibility: visible !important; transform: none !important; pointer-events: auto !important; }
 body.rc-editor .serit__metin { background: #1C1B18; padding: 16px 18px; border-radius: 0 0 14px 14px; }
 body.rc-editor .g-nokta { pointer-events: none; }
+
+/* SSS: sitede cevap sağdaki panelde daktiloyla çıkar; editörde her cevap kendi sorusunun altında açık durur */
+body.rc-editor .g-syanit { display: block !important; margin: 0 0 14px 26px; padding: 10px 14px; border-left: 3px solid #D9B75A;
+	background: rgba(217, 183, 90, .08); font-size: .95rem; line-height: 1.6; }
+body.rc-editor .g-syanit::before { content: "Cevap"; display: block; margin-bottom: 4px; font-size: .66rem; font-weight: 800;
+	letter-spacing: .14em; text-transform: uppercase; color: #85641C; }
+body.rc-editor .g-scevap { opacity: .45; }   /* sağdaki panel editörde boş kalır: cevaplar soruların altında yazılır */

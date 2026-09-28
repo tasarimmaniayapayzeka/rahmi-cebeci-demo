@@ -679,3 +679,6 @@ main:has(>.g-hero)>.sar{order:9}
 
 /* ---------- 34 · okunabilirlik: büyük harfli küçük etiketler 11 px altına inmez ---------- */
 body .marka__alt,body .g-kutu .g-ket,body .g-ket,body .g-scevap .g-yazan,body .g-kcip,body .rozet{font-size:.68rem}
+
+/* 28 Eyl: SSS cevapları sayfanın içinde (arama motoru okur, Klasik Editör düzenler); ekranda sağdaki panel gösterir */
+.g-syanit{display:none}

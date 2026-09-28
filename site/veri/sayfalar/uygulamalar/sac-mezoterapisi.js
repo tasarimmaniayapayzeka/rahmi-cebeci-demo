@@ -144,17 +144,22 @@ module.exports = {
     <div class="g-sorgu-ic">
       <div class="g-slistem">
         <button class="g-ssoru" data-akt data-gs="0"><i>›</i>Saç aşısı ile saç mezoterapisi aynı şey mi?</button>
+        <div class="g-syanit" data-gs-yanit="0">Evet; saç aşısı ve saç vitamini, bu uygulamaya gündelik dilde verilen adlardır, tıptaki adı saç mezoterapisidir. Aşı sözcüğü bağışıklıkla ilgili bir işlem çağrıştırdığı için yanıltıcıdır; burada bağışıklık sistemine yönelik bir şey yapılmaz. Biz uygulamayı, yaptığı işi anlatan adıyla anıyoruz.</div>
         <button class="g-ssoru" data-gs="1"><i>›</i>Etkisini ne zaman görürüm?</button>
+        <div class="g-syanit" data-gs-yanit="1">Saç kökünün büyüme döngüsü aylar sürdüğü için erken bir yargıya varmak doğru olmaz. Değerlendirme çoğunlukla üçüncü aydan sonra yapılır. Daha önce fark edilen değişiklikler genellikle saçlı derinin nemi ve yüzeyiyle ilgilidir, saçın yoğunluğuyla değil.</div>
         <button class="g-ssoru" data-gs="2"><i>›</i>Kaç seans yapılır, aralar nasıl belirlenir?</button>
+        <div class="g-syanit" data-gs-yanit="2">Muayeneden önce bir sayı vermek doğru olmaz. Seanslar arasında çoğunlukla iki ila dört hafta bırakılır; toplam sayıyı tablonun kendisi ve ara kontrolde görülen yanıt belirler. Baştan sabitlenmiş bir seans sayısıyla çalışmıyoruz.</div>
         <button class="g-ssoru" data-gs="3"><i>›</i>Karışımda ilaç bulunuyor mu?</button>
+        <div class="g-syanit" data-gs-yanit="3">Muayenehanemizde saç mezoterapisi karışımlarına reçeteli bir ilacın etken maddesi eklenmez. İçerik vitaminler, eser elementler, aminoasitler, peptitler ve hyalüronik asit gibi bileşenlerden oluşur. İlaç tedavisi gerekiyorsa bu ayrıca konuşulan bir konudur.</div>
         <button class="g-ssoru" data-gs="4"><i>›</i>Erkeklerde uygulanabilir mi?</button>
+        <div class="g-syanit" data-gs-yanit="4">Karar cinsiyete göre değil, dökülmenin türüne ve kaynağına göre verilir. Kalıtsal yatkınlıkla ilerlemiş belirgin açılmada bu uygulama tek başına yeterli bir plan oluşturmaz ve bu size açıkça söylenir. İncelmenin yeni başladığı dönemde destekleyici bir adım olarak düşünülebilir.</div>
         <button class="g-ssoru" data-gs="5"><i>›</i>Ücret bilgisini nasıl öğrenirim?</button>
+        <div class="g-syanit" data-gs-yanit="5">Sağlık hizmetlerinin tanıtımını düzenleyen mevzuat nedeniyle ücret bilgisi internet sitemizde yer almaz. Planın kapsamı kişiden kişiye değiştiği için bu bilgi muayenede size özel olarak verilir.</div>
       </div>
       <div class="g-scevap" data-gcevap aria-live="polite"><span class="g-yazan">Hekimin yanıtı</span><b></b><p></p><a class="dgm dgm--altin" href="${r}iletisim/" style="margin-top:8px">Ayrıntısı muayenede</a></div>
     </div>
   </div>
 </div></section>
-<script type="application/json" data-gsoru-veri>[["Saç aşısı ile saç mezoterapisi aynı şey mi?","Evet; saç aşısı ve saç vitamini, bu uygulamaya gündelik dilde verilen adlardır, tıptaki adı saç mezoterapisidir. Aşı sözcüğü bağışıklıkla ilgili bir işlem çağrıştırdığı için yanıltıcıdır; burada bağışıklık sistemine yönelik bir şey yapılmaz. Biz uygulamayı, yaptığı işi anlatan adıyla anıyoruz."],["Etkisini ne zaman görürüm?","Saç kökünün büyüme döngüsü aylar sürdüğü için erken bir yargıya varmak doğru olmaz. Değerlendirme çoğunlukla üçüncü aydan sonra yapılır. Daha önce fark edilen değişiklikler genellikle saçlı derinin nemi ve yüzeyiyle ilgilidir, saçın yoğunluğuyla değil."],["Kaç seans yapılır, aralar nasıl belirlenir?","Muayeneden önce bir sayı vermek doğru olmaz. Seanslar arasında çoğunlukla iki ila dört hafta bırakılır; toplam sayıyı tablonun kendisi ve ara kontrolde görülen yanıt belirler. Baştan sabitlenmiş bir seans sayısıyla çalışmıyoruz."],["Karışımda ilaç bulunuyor mu?","Muayenehanemizde saç mezoterapisi karışımlarına reçeteli bir ilacın etken maddesi eklenmez. İçerik vitaminler, eser elementler, aminoasitler, peptitler ve hyalüronik asit gibi bileşenlerden oluşur. İlaç tedavisi gerekiyorsa bu ayrıca konuşulan bir konudur."],["Erkeklerde uygulanabilir mi?","Karar cinsiyete göre değil, dökülmenin türüne ve kaynağına göre verilir. Kalıtsal yatkınlıkla ilerlemiş belirgin açılmada bu uygulama tek başına yeterli bir plan oluşturmaz ve bu size açıkça söylenir. İncelmenin yeni başladığı dönemde destekleyici bir adım olarak düşünülebilir."],["Ücret bilgisini nasıl öğrenirim?","Sağlık hizmetlerinin tanıtımını düzenleyen mevzuat nedeniyle ücret bilgisi internet sitemizde yer almaz. Planın kapsamı kişiden kişiye değiştiği için bu bilgi muayenede size özel olarak verilir."]]</script>
 
 <!-- ═════ KAPANIŞ ═════ -->
 <section class="g-son">

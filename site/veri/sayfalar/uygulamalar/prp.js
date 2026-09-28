@@ -147,17 +147,22 @@ module.exports = {
     <div class="g-sorgu-ic">
       <div class="g-slistem">
         <button class="g-ssoru" data-akt data-gs="0"><i>›</i>PRP yüzümdeki çukurlukları doldurur mu?</button>
+        <div class="g-syanit" data-gs-yanit="0">Hayır. Plazma hacim oluşturan bir madde değildir; belirgin çöküntü ya da hacim kaybı varsa başka bir planlama gerekir. PRP’de hedeflenen, cildin dokusu, inceliği ve parlaklığı gibi kalite özelliklerinin zaman içinde desteklenmesidir.</div>
         <button class="g-ssoru" data-gs="1"><i>›</i>Kendi kanım kullanıldığına göre hiç risk yok mu?</button>
+        <div class="g-syanit" data-gs-yanit="1">Plazma size ait olduğu için vücudun onu yabancı bir madde gibi algılaması beklenmez; bu önemli bir avantajdır. Ama her iğnenin kendi riski vardır: morluk, birkaç gün süren şişlik, çok seyrek olarak da enfeksiyon. Onam formunda bunları birlikte okuruz.</div>
         <button class="g-ssoru" data-gs="2"><i>›</i>Ne kadar kan alınıyor, randevu ne kadar sürer?</button>
+        <div class="g-syanit" data-gs-yanit="2">Genellikle bir ya da iki küçük tüp yeterlidir; yüzün yanında boyun ve dekolte de planlanmışsa miktar biraz artar. Kanın ayrıştırılması kısa sürer. Asıl zamanı uyuşturucu kremin etkisini göstermesi alır; randevunuzu bir saat civarında düşünebilirsiniz.</div>
         <button class="g-ssoru" data-gs="3"><i>›</i>“Vampir” diye anılan işlem bu mu?</button>
+        <div class="g-syanit" data-gs-yanit="3">Sosyal medyada bu adla dolaşan uygulamaların çoğu, kanın yüze sürülmesini ya da iğneyle verilmesini anlatır ve aslında PRP’dir. Ancak “vampir” sözcüğü işlemi açıklamaz, yalnızca dikkat çeker. Dosyanıza, ne yapıldığını tarif eden tıbbi ad yazılır.</div>
         <button class="g-ssoru" data-gs="4"><i>›</i>Saç dökülmem için de aynı işlem mi yapılır?</button>
+        <div class="g-syanit" data-gs-yanit="4">Hazırlık benzer olsa da saçlı deri ayrı bir değerlendirme ister: önce dökülmenin nedeni araştırılır, seans düzeni ve kontrol zamanı da farklı kurulur. Bu başlık Saç PRP sayfasında ayrıca anlatılmıştır.</div>
         <button class="g-ssoru" data-gs="5"><i>›</i>Ücret bilgisi neden sayfada yer almıyor?</button>
+        <div class="g-syanit" data-gs-yanit="5">Sağlık hizmetlerinin tanıtımını düzenleyen mevzuat gereği ücret bilgisi internette yayımlanmaz. Seans sayısı ve kapsam kişiye göre değiştiği için bu konu muayenede, planınızla birlikte konuşulur.</div>
       </div>
       <div class="g-scevap" data-gcevap aria-live="polite"><span class="g-yazan">Hekimin yanıtı</span><b></b><p></p><a class="dgm dgm--altin" href="${r}iletisim/" style="margin-top:8px">Ayrıntısı muayenede</a></div>
     </div>
   </div>
 </div></section>
-<script type="application/json" data-gsoru-veri>[["PRP yüzümdeki çukurlukları doldurur mu?","Hayır. Plazma hacim oluşturan bir madde değildir; belirgin çöküntü ya da hacim kaybı varsa başka bir planlama gerekir. PRP’de hedeflenen, cildin dokusu, inceliği ve parlaklığı gibi kalite özelliklerinin zaman içinde desteklenmesidir."],["Kendi kanım kullanıldığına göre hiç risk yok mu?","Plazma size ait olduğu için vücudun onu yabancı bir madde gibi algılaması beklenmez; bu önemli bir avantajdır. Ama her iğnenin kendi riski vardır: morluk, birkaç gün süren şişlik, çok seyrek olarak da enfeksiyon. Onam formunda bunları birlikte okuruz."],["Ne kadar kan alınıyor, randevu ne kadar sürer?","Genellikle bir ya da iki küçük tüp yeterlidir; yüzün yanında boyun ve dekolte de planlanmışsa miktar biraz artar. Kanın ayrıştırılması kısa sürer. Asıl zamanı uyuşturucu kremin etkisini göstermesi alır; randevunuzu bir saat civarında düşünebilirsiniz."],["“Vampir” diye anılan işlem bu mu?","Sosyal medyada bu adla dolaşan uygulamaların çoğu, kanın yüze sürülmesini ya da iğneyle verilmesini anlatır ve aslında PRP’dir. Ancak “vampir” sözcüğü işlemi açıklamaz, yalnızca dikkat çeker. Dosyanıza, ne yapıldığını tarif eden tıbbi ad yazılır."],["Saç dökülmem için de aynı işlem mi yapılır?","Hazırlık benzer olsa da saçlı deri ayrı bir değerlendirme ister: önce dökülmenin nedeni araştırılır, seans düzeni ve kontrol zamanı da farklı kurulur. Bu başlık Saç PRP sayfasında ayrıca anlatılmıştır."],["Ücret bilgisi neden sayfada yer almıyor?","Sağlık hizmetlerinin tanıtımını düzenleyen mevzuat gereği ücret bilgisi internette yayımlanmaz. Seans sayısı ve kapsam kişiye göre değiştiği için bu konu muayenede, planınızla birlikte konuşulur."]]</script>
 
 <!-- ═════ KAPANIŞ ═════ -->
 <section class="g-son">

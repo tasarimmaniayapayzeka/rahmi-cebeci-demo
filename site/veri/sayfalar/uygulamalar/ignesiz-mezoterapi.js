@@ -113,17 +113,22 @@ module.exports = {
     <div class="g-sorgu-ic">
       <div class="g-slistem">
         <button class="g-ssoru" data-akt data-gs="0"><i>›</i>İğne istemiyorum; bu yöntem bana yeter mi?</button>
+        <div class="g-syanit" data-gs-yanit="0">Hedefinize bağlı. Amaç cildin belirli bir katmanına ölçülü miktarda ürün bırakmaksa bunu yalnızca iğneli yöntem sağlar. Amaç daha çok yüzeyde nem ve canlılık desteğiyse, özellikle iğneden çekinen ya da kolay moraran kişilerde iğnesiz yöntem mantıklı bir seçenek olabilir; ancak iri moleküllü ürünler bu yolla taşınamaz.</div>
         <button class="g-ssoru" data-gs="1"><i>›</i>Seans sırasında ne hissederim?</button>
+        <div class="g-syanit" data-gs-yanit="1">Çoğu kişi hafif bir karıncalanma ve ılıklık tarif eder, bazen de başlığın altında belli belirsiz bir titreşim. Elmacık kemiği ve göz çevresi gibi ince derili yerlerde his artabilir; rahatsız ederse cihazın gücü azaltılır ya da ara verilir.</div>
         <button class="g-ssoru" data-gs="2"><i>›</i>“Gençlik aşısı” ile aynı şey mi?</button>
+        <div class="g-syanit" data-gs-yanit="2">Değil. Halk arasında gençlik aşısı denen uygulama, hyalüronik asidin ince iğnelerle cilt içine verildiği skinbooster uygulamasıdır. Burada iğne kullanılmaz; solüsyon elektrik darbeleriyle açılan geçici aralıklardan ilerler ve daha yüzeyde kalır. Bu iki işlem birbirinin yerine anılmamalıdır.</div>
         <button class="g-ssoru" data-gs="3"><i>›</i>Kalp pili ya da insülin pompası kullanıyorum, olur mu?</button>
+        <div class="g-syanit" data-gs-yanit="3">Olmaz. Yöntem elektrik akımıyla çalıştığı için vücutta elektronik bir cihaz taşıyan herkeste kullanılmaz. Böyle bir durumda cildinize uygun, akım gerektirmeyen başka basamakları birlikte planlarız.</div>
         <button class="g-ssoru" data-gs="4"><i>›</i>Boyun ve ellere de yapılır mı?</button>
+        <div class="g-syanit" data-gs-yanit="4">Yapılır. Yüzün ardından en çok boynun ve göğüs üstünün ince derisi ile ellerin üst yüzü çalışılır. Bu bölgeler daha yavaş yanıt verdiği için seans aralığı farklı planlanabilir. Saçlı deri ayrı bir konudur; dökülmenin nedeni anlaşılmadan plan yapılmaz.</div>
         <button class="g-ssoru" data-gs="5"><i>›</i>Ücret bilgisini nasıl öğrenebilirim?</button>
+        <div class="g-syanit" data-gs-yanit="5">Sağlık hizmetlerinin tanıtımını düzenleyen kurallar ücretlerin internette yayımlanmasına izin vermez. Kaç seanslık kür gerektiği kişiye göre değiştiği için bu konu muayenede konuşulur.</div>
       </div>
       <div class="g-scevap" data-gcevap aria-live="polite"><span class="g-yazan">Hekimin yanıtı</span><b></b><p></p><a class="dgm dgm--altin" href="${r}iletisim/" style="margin-top:8px">Ayrıntısı muayenede</a></div>
     </div>
   </div>
 </div></section>
-<script type="application/json" data-gsoru-veri>[["İğne istemiyorum; bu yöntem bana yeter mi?","Hedefinize bağlı. Amaç cildin belirli bir katmanına ölçülü miktarda ürün bırakmaksa bunu yalnızca iğneli yöntem sağlar. Amaç daha çok yüzeyde nem ve canlılık desteğiyse, özellikle iğneden çekinen ya da kolay moraran kişilerde iğnesiz yöntem mantıklı bir seçenek olabilir; ancak iri moleküllü ürünler bu yolla taşınamaz."],["Seans sırasında ne hissederim?","Çoğu kişi hafif bir karıncalanma ve ılıklık tarif eder, bazen de başlığın altında belli belirsiz bir titreşim. Elmacık kemiği ve göz çevresi gibi ince derili yerlerde his artabilir; rahatsız ederse cihazın gücü azaltılır ya da ara verilir."],["“Gençlik aşısı” ile aynı şey mi?","Değil. Halk arasında gençlik aşısı denen uygulama, hyalüronik asidin ince iğnelerle cilt içine verildiği skinbooster uygulamasıdır. Burada iğne kullanılmaz; solüsyon elektrik darbeleriyle açılan geçici aralıklardan ilerler ve daha yüzeyde kalır. Bu iki işlem birbirinin yerine anılmamalıdır."],["Kalp pili ya da insülin pompası kullanıyorum, olur mu?","Olmaz. Yöntem elektrik akımıyla çalıştığı için vücutta elektronik bir cihaz taşıyan herkeste kullanılmaz. Böyle bir durumda cildinize uygun, akım gerektirmeyen başka basamakları birlikte planlarız."],["Boyun ve ellere de yapılır mı?","Yapılır. Yüzün ardından en çok boynun ve göğüs üstünün ince derisi ile ellerin üst yüzü çalışılır. Bu bölgeler daha yavaş yanıt verdiği için seans aralığı farklı planlanabilir. Saçlı deri ayrı bir konudur; dökülmenin nedeni anlaşılmadan plan yapılmaz."],["Ücret bilgisini nasıl öğrenebilirim?","Sağlık hizmetlerinin tanıtımını düzenleyen kurallar ücretlerin internette yayımlanmasına izin vermez. Kaç seanslık kür gerektiği kişiye göre değiştiği için bu konu muayenede konuşulur."]]</script>
 
 <!-- KAPANIŞ -->
 <section class="g-son">

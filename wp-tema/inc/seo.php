@@ -72,7 +72,31 @@ function rc_head(array $s) {
 <link rel="stylesheet" href="' . rc_varlik('varliklar/css/g.css') . '">
 <link rel="stylesheet" href="' . rc_varlik('varliklar/css/asistan.css') . '">
 <script type="application/ld+json">' . wp_json_encode($ld, JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES) . '</script>
-';
+' . rc_sss_sema($s['post'] ? $s['post']->post_content : '');
+}
+
+/* SSS şeması (FAQPage): soru terminalindeki <button class="g-ssoru">Soru</button> + <div class="g-syanit">Cevap</div>
+   çiftlerinden — panelde bir cevap değişince şema da kendiliğinden değişir. site/render.js sssSema() ile AYNI kural. */
+function rc_sss_metin($h) {
+	$ad = ['amp' => '&', 'lt' => '<', 'gt' => '>', 'quot' => '"', 'apos' => "'", 'nbsp' => ' ', 'rsquo' => '’', 'lsquo' => '‘',
+		'rdquo' => '”', 'ldquo' => '“', 'hellip' => '…', 'ndash' => '–', 'mdash' => '—'];
+	$h = preg_replace('~<[^>]+>~', '', str_replace('<i>›</i>', '', (string) $h));
+	$h = preg_replace_callback('~&#x([0-9a-f]+);~i', fn($m) => mb_chr(hexdec($m[1]), 'UTF-8'), $h);
+	$h = preg_replace_callback('~&#(\d+);~', fn($m) => mb_chr((int) $m[1], 'UTF-8'), $h);
+	$h = preg_replace_callback('~&([a-z]+);~i', fn($m) => $ad[$m[1]] ?? $m[0], $h);
+	return trim(preg_replace('~[ \t\r\n\f\v]+~', ' ', str_replace("\u{00A0}", ' ', $h)));
+}
+function rc_sss_sema($html) {
+	if (!preg_match_all('~<button class="g-ssoru"[^>]*>([\s\S]*?)</button>\s*<div class="g-syanit"[^>]*>([\s\S]*?)</div>~u', (string) $html, $m, PREG_SET_ORDER)) return '';
+	$sorular = [];
+	foreach ($m as $c) {
+		$q = rc_sss_metin($c[1]);
+		$a = rc_sss_metin($c[2]);
+		if ($q !== '' && $a !== '') $sorular[] = ['@type' => 'Question', 'name' => $q, 'acceptedAnswer' => ['@type' => 'Answer', 'text' => $a]];
+	}
+	if (!$sorular) return '';
+	return '<script type="application/ld+json">' . wp_json_encode(['@context' => 'https://schema.org', '@type' => 'FAQPage', 'mainEntity' => $sorular],
+		JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_LINE_TERMINATORS) . "</script>\n";
 }
 
 /* sayfa sonundaki betikler (render.js ile aynı sıra) */

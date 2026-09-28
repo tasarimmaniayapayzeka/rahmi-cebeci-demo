@@ -112,17 +112,22 @@ module.exports = {
     <div class="g-sorgu-ic">
       <div class="g-slistem">
         <button class="g-ssoru" data-akt data-gs="0"><i>›</i>İzlerim ne ölçüde düzelir?</button>
+        <div class="g-syanit" data-gs-yanit="0">İzlerin tümüyle kaybolması beklenmez. Çoğu kişide iz kenarları yumuşar ve yüz ışıkta daha düzgün görünür; değişimin derecesi izin türüne bağlıdır. İğne ucu gibi dar izler bu yönteme en az yanıt veren gruptur. Muayenede izlerinizin türü ve sizin için gerçekçi olan değişim birlikte konuşulur.</div>
         <button class="g-ssoru" data-gs="1"><i>›</i>Fraksiyonel lazerden farkı nedir?</button>
+        <div class="g-syanit" data-gs-yanit="1">Fraksiyonel lazer enerjiyi deri yüzeyinden verir ve bazı modlarda yüzeyi mikro alanlarda açar. Altın iğne radyofrekansta enerji iğne uçlarıyla doğrudan alt katmana taşınır, yüzey daha az etkilenir. Hangisinin uygun olduğunu iz türü, cilt tonu ve iyileşmeye ayırabileceğiniz süre belirler; bazen ikisi aynı planda sırayla yer alır.</div>
         <button class="g-ssoru" data-gs="2"><i>›</i>İşlem acıtır mı?</button>
+        <div class="g-syanit" data-gs-yanit="2">Uyuşturucu krem etkisini gösterdikten sonra başlanır; yine de batma, ısınma ve baskı hissedilebilir. En çok alın ile çene kenarında hissedilir; orada deri ile kemik arasında yumuşak doku azdır. Rahatsızlık artarsa enerji düşürülür ya da ara verilir.</div>
         <button class="g-ssoru" data-gs="3"><i>›</i>Seanstan kaç gün sonra işe dönebilirim?</button>
+        <div class="g-syanit" data-gs-yanit="3">Çoğu kişi ertesi gün işine dönebilir; kızarıklık genellikle bir ile üç gün içinde solar, ilk gece hafif şişlik eşlik edebilir. Önemli bir davetiniz varsa seansı en az birkaç gün öncesine alın. Derin ayarlarda kızarıklık daha uzun sürebilir.</div>
         <button class="g-ssoru" data-gs="4"><i>›</i>Koyu tenlerde güvenle yapılabilir mi?</button>
+        <div class="g-syanit" data-gs-yanit="4">Enerji yüzeyden değil iğne ucundan verildiği için koyu tenlerde değerlendirilebilir. Yine de ton değişikliği olasılığı tümüyle ortadan kalkmaz; temkinli ayarlarla başlanır, gerekirse önce küçük bir alanda deneme yapılır.</div>
         <button class="g-ssoru" data-gs="5"><i>›</i>Ücret bilgisini nasıl öğrenebilirim?</button>
+        <div class="g-syanit" data-gs-yanit="5">Sağlık hizmetlerinin tanıtımını düzenleyen kurallar ücretlerin internette yayımlanmasına izin vermez. Seans sayısı ve çalışılacak alan kişiye göre değiştiği için bu konu muayenede konuşulur.</div>
       </div>
       <div class="g-scevap" data-gcevap aria-live="polite"><span class="g-yazan">Hekimin yanıtı</span><b></b><p></p><a class="dgm dgm--altin" href="${r}iletisim/" style="margin-top:8px">Ayrıntısı muayenede</a></div>
     </div>
   </div>
 </div></section>
-<script type="application/json" data-gsoru-veri>[["İzlerim ne ölçüde düzelir?","İzlerin tümüyle kaybolması beklenmez. Çoğu kişide iz kenarları yumuşar ve yüz ışıkta daha düzgün görünür; değişimin derecesi izin türüne bağlıdır. İğne ucu gibi dar izler bu yönteme en az yanıt veren gruptur. Muayenede izlerinizin türü ve sizin için gerçekçi olan değişim birlikte konuşulur."],["Fraksiyonel lazerden farkı nedir?","Fraksiyonel lazer enerjiyi deri yüzeyinden verir ve bazı modlarda yüzeyi mikro alanlarda açar. Altın iğne radyofrekansta enerji iğne uçlarıyla doğrudan alt katmana taşınır, yüzey daha az etkilenir. Hangisinin uygun olduğunu iz türü, cilt tonu ve iyileşmeye ayırabileceğiniz süre belirler; bazen ikisi aynı planda sırayla yer alır."],["İşlem acıtır mı?","Uyuşturucu krem etkisini gösterdikten sonra başlanır; yine de batma, ısınma ve baskı hissedilebilir. En çok alın ile çene kenarında hissedilir; orada deri ile kemik arasında yumuşak doku azdır. Rahatsızlık artarsa enerji düşürülür ya da ara verilir."],["Seanstan kaç gün sonra işe dönebilirim?","Çoğu kişi ertesi gün işine dönebilir; kızarıklık genellikle bir ile üç gün içinde solar, ilk gece hafif şişlik eşlik edebilir. Önemli bir davetiniz varsa seansı en az birkaç gün öncesine alın. Derin ayarlarda kızarıklık daha uzun sürebilir."],["Koyu tenlerde güvenle yapılabilir mi?","Enerji yüzeyden değil iğne ucundan verildiği için koyu tenlerde değerlendirilebilir. Yine de ton değişikliği olasılığı tümüyle ortadan kalkmaz; temkinli ayarlarla başlanır, gerekirse önce küçük bir alanda deneme yapılır."],["Ücret bilgisini nasıl öğrenebilirim?","Sağlık hizmetlerinin tanıtımını düzenleyen kurallar ücretlerin internette yayımlanmasına izin vermez. Seans sayısı ve çalışılacak alan kişiye göre değiştiği için bu konu muayenede konuşulur."]]</script>
 
 <!-- KAPANIŞ -->
 <section class="g-son">

@@ -101,17 +101,22 @@ module.exports = {
     <div class="g-sorgu-ic">
       <div class="g-slistem">
         <button class="g-ssoru" data-akt data-gs="0"><i>›</i>Bölgesel incelme ile kilo vermek aynı şey mi?</button>
+        <div class="g-syanit" data-gs-yanit="0">Değildir. Gündelik dilde “bölgesel incelme” denen konu, sınırlı bir alandaki yağ dokusunun hedeflenmesidir ve kilo verdirmez. Biri belirli bir bölgenin görünümüyle, diğeri genel sağlığınızla ilgilidir; beklentinizin hangisi olduğu ilk görüşmede açıklığa kavuşturulur.</div>
         <button class="g-ssoru" data-gs="1"><i>›</i>Karnım ve bel yanlarım için de uygun mu?</button>
+        <div class="g-syanit" data-gs-yanit="1">Evet. Karın, bel yanları, bacak iç yüzü ve gıdı değerlendirdiğimiz bölgeler arasındadır. Ancak uygunluğu bölgenin adı değil, orada elle kavranabilen, kenarları belli bir birikim olup olmadığı ve derinin esnekliği belirler.</div>
         <button class="g-ssoru" data-gs="2"><i>›</i>“Yağ yakma iğnesi” ne demek?</button>
+        <div class="g-syanit" data-gs-yanit="2">Gündelik dilde “yağ yakma iğnesi” diye anılan uygulamanın tıbbi karşılığı bölgesel lipolizdir. Kenarları belli, yüzeysel ve küçük bir birikimde konuşulur. Yaygın dolgunlukta ya da asıl sorunun deri gevşekliği olduğu durumlarda uygun değildir.</div>
         <button class="g-ssoru" data-gs="3"><i>›</i>Uygulanan bölgedeki yağ başka yere mi gider?</button>
+        <div class="g-syanit" data-gs-yanit="3">Hedeflenen bölgedeki yağın vücudun başka bir yerine taşındığı yönündeki inanış doğru değildir. Bununla birlikte kilonuz belirgin biçimde artarsa, vücudunuz fazlayı kendi dağılım düzenine göre başka bölgelerde depolayabilir; bu, genel dengedeki değişimin sonucudur.</div>
         <button class="g-ssoru" data-gs="4"><i>›</i>Kaç seans gerekecek?</button>
+        <div class="g-syanit" data-gs-yanit="4">Bu sayıyı hangi bölgenin ele alındığı, birikimin ne kadar kalın olduğu ve vücudunuzun ilk seansa nasıl yanıt verdiği belirler; baştan sabit bir rakam söylenmez. Plan ara kontrollerle güncellenir. İlk seanstan sonra beklenen değişim görülmezse devam edip etmeme kararı yeniden konuşulur.</div>
         <button class="g-ssoru" data-gs="5"><i>›</i>Ücret bilgisi neden sitede yok?</button>
+        <div class="g-syanit" data-gs-yanit="5">Sağlık hizmetlerinin tanıtımına ilişkin mevzuat gereği ücret bilgisi internette yayımlanmaz. Bölge ve dokunun durumu muayenede netleştikten sonra bilgi yüz yüze verilir. Randevu için ${S.iletisim.tel} numarasını arayabilir ya da aynı numaradan WhatsApp ile yazabilirsiniz.</div>
       </div>
       <div class="g-scevap" data-gcevap aria-live="polite"><span class="g-yazan">Hekimin yanıtı</span><b></b><p></p><a class="dgm dgm--altin" href="${r}iletisim/" style="margin-top:8px">Ayrıntısı muayenede</a></div>
     </div>
   </div>
 </div></section>
-<script type="application/json" data-gsoru-veri>[["Bölgesel incelme ile kilo vermek aynı şey mi?","Değildir. Gündelik dilde “bölgesel incelme” denen konu, sınırlı bir alandaki yağ dokusunun hedeflenmesidir ve kilo verdirmez. Biri belirli bir bölgenin görünümüyle, diğeri genel sağlığınızla ilgilidir; beklentinizin hangisi olduğu ilk görüşmede açıklığa kavuşturulur."],["Karnım ve bel yanlarım için de uygun mu?","Evet. Karın, bel yanları, bacak iç yüzü ve gıdı değerlendirdiğimiz bölgeler arasındadır. Ancak uygunluğu bölgenin adı değil, orada elle kavranabilen, kenarları belli bir birikim olup olmadığı ve derinin esnekliği belirler."],["“Yağ yakma iğnesi” ne demek?","Gündelik dilde “yağ yakma iğnesi” diye anılan uygulamanın tıbbi karşılığı bölgesel lipolizdir. Kenarları belli, yüzeysel ve küçük bir birikimde konuşulur. Yaygın dolgunlukta ya da asıl sorunun deri gevşekliği olduğu durumlarda uygun değildir."],["Uygulanan bölgedeki yağ başka yere mi gider?","Hedeflenen bölgedeki yağın vücudun başka bir yerine taşındığı yönündeki inanış doğru değildir. Bununla birlikte kilonuz belirgin biçimde artarsa, vücudunuz fazlayı kendi dağılım düzenine göre başka bölgelerde depolayabilir; bu, genel dengedeki değişimin sonucudur."],["Kaç seans gerekecek?","Bu sayıyı hangi bölgenin ele alındığı, birikimin ne kadar kalın olduğu ve vücudunuzun ilk seansa nasıl yanıt verdiği belirler; baştan sabit bir rakam söylenmez. Plan ara kontrollerle güncellenir. İlk seanstan sonra beklenen değişim görülmezse devam edip etmeme kararı yeniden konuşulur."],["Ücret bilgisi neden sitede yok?","Sağlık hizmetlerinin tanıtımına ilişkin mevzuat gereği ücret bilgisi internette yayımlanmaz. Bölge ve dokunun durumu muayenede netleştikten sonra bilgi yüz yüze verilir. Randevu için ${S.iletisim.tel} numarasını arayabilir ya da aynı numaradan WhatsApp ile yazabilirsiniz."]]</script>
 
 <!-- ═════════ KAPANIŞ ═════════ -->
 <section class="g-son">

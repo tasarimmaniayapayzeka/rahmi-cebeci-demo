@@ -224,17 +224,22 @@ module.exports = {
     <div class="g-sorgu-ic">
       <div class="g-slistem">
         <button class="g-ssoru" data-akt data-gs="0"><i>›</i>İfadem doğallığını kaybeder mi?</button>
+        <div class="g-syanit" data-gs-yanit="0">Amaç yüzün hareketini silmek değil, fazla çalışan kasın gücünü dengelemektir. Doz ve nokta seçimi bu hedefe göre yapılır; kaşlarınızı kaldırabilmeniz ve rahatça gülümseyebilmeniz planın parçasıdır. Yanıt kişiden kişiye değiştiği için ilk seansta ölçülü davranılır.</div>
         <button class="g-ssoru" data-gs="1"><i>›</i>“Botoks” denilen uygulama bu mu?</button>
+        <div class="g-syanit" data-gs-yanit="1">Evet. Günlük dilde kullanılan “botoks” sözcüğü bir ürün markasından yaygınlaşmıştır; tıp dilinde bu işleme botulinum toksin uygulaması denir. Size uygulanan ürünün adı, miktarı ve uygulandığı bölgeler dosyanıza ayrıca kaydedilir.</div>
         <button class="g-ssoru" data-gs="2"><i>›</i>İşlem günü nelere dikkat etmeliyim?</button>
+        <div class="g-syanit" data-gs-yanit="2">Uygulama günü bölgeyi ovmamanız, uzun süre yüzüstü yatmamanız; sauna, hamam ve ağır egzersizden uzak durmanız istenir. Bu öneriler, etkinin hedeflenen kasta kalmasını kolaylaştırmak içindir ve size yazılı olarak da verilir.</div>
         <button class="g-ssoru" data-gs="3"><i>›</i>Terlemem için hemen uygulama yapılabilir mi?</button>
+        <div class="g-syanit" data-gs-yanit="3">Hayır. Aşırı terleme tiroid hastalığı, bazı ilaçlar, enfeksiyonlar ve hormonal değişikliklerle de ortaya çıkabilir. Önce bu olasılıklar değerlendirilir; başka bir neden saptanırsa öncelik onun tedavisine verilir.</div>
         <button class="g-ssoru" data-gs="4"><i>›</i>Daha önce hiç yaptırmadım; ilk seans nasıl olur?</button>
+        <div class="g-syanit" data-gs-yanit="4">İlk seansta düşük doz ve sınırlı sayıda nokta tercih edilir. Etki yerleştikten sonra kontrolde yüzünüz birlikte değerlendirilir, gerekirse küçük bir ekleme yapılır. Kasınızın doza nasıl yanıt verdiğini görmek, sonraki uygulamaların planını da belirler.</div>
         <button class="g-ssoru" data-gs="5"><i>›</i>Ücret bilgisi neden sitede yok?</button>
+        <div class="g-syanit" data-gs-yanit="5">Sağlık hizmetlerinin tanıtımına ilişkin mevzuat gereği ücret bilgisi internette yayımlanmaz. Muayenede size özel plan netleştiğinde bu bilgi doğrudan size iletilir.</div>
       </div>
       <div class="g-scevap" data-gcevap aria-live="polite"><span class="g-yazan">Hekimin yanıtı</span><b></b><p></p><a class="dgm dgm--altin" href="${r}iletisim/" style="margin-top:8px">Ayrıntısı muayenede</a></div>
     </div>
   </div>
 </div></section>
-<script type="application/json" data-gsoru-veri>[["İfadem doğallığını kaybeder mi?","Amaç yüzün hareketini silmek değil, fazla çalışan kasın gücünü dengelemektir. Doz ve nokta seçimi bu hedefe göre yapılır; kaşlarınızı kaldırabilmeniz ve rahatça gülümseyebilmeniz planın parçasıdır. Yanıt kişiden kişiye değiştiği için ilk seansta ölçülü davranılır."],["“Botoks” denilen uygulama bu mu?","Evet. Günlük dilde kullanılan “botoks” sözcüğü bir ürün markasından yaygınlaşmıştır; tıp dilinde bu işleme botulinum toksin uygulaması denir. Size uygulanan ürünün adı, miktarı ve uygulandığı bölgeler dosyanıza ayrıca kaydedilir."],["İşlem günü nelere dikkat etmeliyim?","Uygulama günü bölgeyi ovmamanız, uzun süre yüzüstü yatmamanız; sauna, hamam ve ağır egzersizden uzak durmanız istenir. Bu öneriler, etkinin hedeflenen kasta kalmasını kolaylaştırmak içindir ve size yazılı olarak da verilir."],["Terlemem için hemen uygulama yapılabilir mi?","Hayır. Aşırı terleme tiroid hastalığı, bazı ilaçlar, enfeksiyonlar ve hormonal değişikliklerle de ortaya çıkabilir. Önce bu olasılıklar değerlendirilir; başka bir neden saptanırsa öncelik onun tedavisine verilir."],["Daha önce hiç yaptırmadım; ilk seans nasıl olur?","İlk seansta düşük doz ve sınırlı sayıda nokta tercih edilir. Etki yerleştikten sonra kontrolde yüzünüz birlikte değerlendirilir, gerekirse küçük bir ekleme yapılır. Kasınızın doza nasıl yanıt verdiğini görmek, sonraki uygulamaların planını da belirler."],["Ücret bilgisi neden sitede yok?","Sağlık hizmetlerinin tanıtımına ilişkin mevzuat gereği ücret bilgisi internette yayımlanmaz. Muayenede size özel plan netleştiğinde bu bilgi doğrudan size iletilir."]]</script>
 
 <!-- ═════ KAPANIŞ ═════ -->
 <section class="g-son">

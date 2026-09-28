@@ -261,17 +261,22 @@ module.exports = {
     <div class="g-sorgu-ic">
       <div class="g-slistem">
         <button class="g-ssoru" data-akt data-gs="0"><i>›</i>Günlük hayatıma ne zaman dönebilirim?</button>
+        <div class="g-syanit" data-gs-yanit="0">Şişlik ve morluğun ne kadar süreceği bölgeye ve kişiye göre değişir; dudakta ve göz altında daha belirgin olabilir. Önemli bir davet ya da toplantıdan hemen önceki günlere uygulama planlamamanızı, araya yeterli zaman bırakmanızı öneririz.</div>
         <button class="g-ssoru" data-gs="1"><i>›</i>Sonucu beğenmezsem dolgu geri alınabilir mi?</button>
+        <div class="g-syanit" data-gs-yanit="1">Hyalüronik asit içeren ürünler, gerekli görüldüğünde hyalüronidaz enzimiyle parçalanabilir. Ancak bu rutin bir işlem değildir; kendine özgü riskleri vardır ve hekim kararıyla ayrıca planlanır.</div>
         <button class="g-ssoru" data-gs="2"><i>›</i>Önceki dolgumun içeriğini bilmiyorum; sorun olur mu?</button>
+        <div class="g-syanit" data-gs-yanit="2">Mutlaka belirtin. Vücutta çözünmeyen bir ürünün varlığı hem planı hem güvenliği değiştirir; bazı durumlarda o bölgeye uygulama yapılmaz. Elinizde önceki işleme ait bir belge ya da ürün etiketi varsa randevuya getirin.</div>
         <button class="g-ssoru" data-gs="3"><i>›</i>“Işık dolgusu” ile göz altı dolgusu aynı mı?</button>
+        <div class="g-syanit" data-gs-yanit="3">Hayır. “Işık dolgusu” tıbbi bir işlem adı değildir; farklı ürünler ve birbirinden farklı göz altı tabloları bu adla anılabiliyor. Bizim değerlendirdiğimiz, göz altı oluğuna yapılan hyalüronik asit dolgusudur ve yalnızca belirli bir tabloda uygun olabilir.</div>
         <button class="g-ssoru" data-gs="4"><i>›</i>Dolgu ile botulinum toksin arasındaki fark ne?</button>
+        <div class="g-syanit" data-gs-yanit="4">İkisi farklı amaçlara hizmet eder. Dolgu, desteğini yitirmiş bir alana hacim desteği verir; botulinum toksin ise fazla kasılan bir kası bir süreliğine gevşetir. Aynı planda birlikte yer alıp almayacaklarına muayenede karar verilir.</div>
         <button class="g-ssoru" data-gs="5"><i>›</i>Ücret bilgisi neden sitede yok?</button>
+        <div class="g-syanit" data-gs-yanit="5">Sağlık hizmetlerinin tanıtımına ilişkin mevzuat gereği ücret bilgisi internette yayımlanmaz. Muayenede size özel plan netleştiğinde bu bilgi doğrudan size iletilir.</div>
       </div>
       <div class="g-scevap" data-gcevap aria-live="polite"><span class="g-yazan">Hekimin yanıtı</span><b></b><p></p><a class="dgm dgm--altin" href="${r}iletisim/" style="margin-top:8px">Ayrıntısı muayenede</a></div>
     </div>
   </div>
 </div></section>
-<script type="application/json" data-gsoru-veri>[["Günlük hayatıma ne zaman dönebilirim?","Şişlik ve morluğun ne kadar süreceği bölgeye ve kişiye göre değişir; dudakta ve göz altında daha belirgin olabilir. Önemli bir davet ya da toplantıdan hemen önceki günlere uygulama planlamamanızı, araya yeterli zaman bırakmanızı öneririz."],["Sonucu beğenmezsem dolgu geri alınabilir mi?","Hyalüronik asit içeren ürünler, gerekli görüldüğünde hyalüronidaz enzimiyle parçalanabilir. Ancak bu rutin bir işlem değildir; kendine özgü riskleri vardır ve hekim kararıyla ayrıca planlanır."],["Önceki dolgumun içeriğini bilmiyorum; sorun olur mu?","Mutlaka belirtin. Vücutta çözünmeyen bir ürünün varlığı hem planı hem güvenliği değiştirir; bazı durumlarda o bölgeye uygulama yapılmaz. Elinizde önceki işleme ait bir belge ya da ürün etiketi varsa randevuya getirin."],["“Işık dolgusu” ile göz altı dolgusu aynı mı?","Hayır. “Işık dolgusu” tıbbi bir işlem adı değildir; farklı ürünler ve birbirinden farklı göz altı tabloları bu adla anılabiliyor. Bizim değerlendirdiğimiz, göz altı oluğuna yapılan hyalüronik asit dolgusudur ve yalnızca belirli bir tabloda uygun olabilir."],["Dolgu ile botulinum toksin arasındaki fark ne?","İkisi farklı amaçlara hizmet eder. Dolgu, desteğini yitirmiş bir alana hacim desteği verir; botulinum toksin ise fazla kasılan bir kası bir süreliğine gevşetir. Aynı planda birlikte yer alıp almayacaklarına muayenede karar verilir."],["Ücret bilgisi neden sitede yok?","Sağlık hizmetlerinin tanıtımına ilişkin mevzuat gereği ücret bilgisi internette yayımlanmaz. Muayenede size özel plan netleştiğinde bu bilgi doğrudan size iletilir."]]</script>
 
 <!-- ═════ KAPANIŞ ═════ -->
 <section class="g-son">

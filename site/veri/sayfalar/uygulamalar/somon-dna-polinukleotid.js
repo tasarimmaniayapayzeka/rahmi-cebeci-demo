@@ -144,17 +144,22 @@ module.exports = {
     <div class="g-sorgu-ic">
       <div class="g-slistem">
         <button class="g-ssoru" data-akt data-gs="0"><i>›</i>“Somon DNA” adı nereden geliyor?</button>
+        <div class="g-syanit" data-gs-yanit="0">Tıbbi polinükleotid ürünlerinin hammaddesi balık kaynaklıdır; çoğunlukla somon ve alabalık gibi türlerden elde edilir. Halk arasındaki ad bu kaynaktan türemiştir. Adın kendisi ürünün içeriği ya da etkinliği hakkında bilgi vermez; size uygulanacak ürünün ayrıntıları muayenede konuşulur.</div>
         <button class="g-ssoru" data-gs="1"><i>›</i>Genetik yapımı etkiler mi?</button>
+        <div class="g-syanit" data-gs-yanit="1">Hayır. Verilen madde saflaştırılmış kısa nükleotid zincirlerinden oluşur; hücre çekirdeğine girip bilgi aktarmaz, genetik yapınızı değiştirmez ve kalıtsal bir etkisi yoktur. Bu endişe çoğunlukla uygulamanın halk arasındaki adından kaynaklanır.</div>
         <button class="g-ssoru" data-gs="2"><i>›</i>Göz çevresine uygulanabilir mi?</button>
+        <div class="g-syanit" data-gs-yanit="2">Göz çevresi, polinükleotid uygulamasının sık değerlendirildiği bölgelerden biridir; ince çizgiler ve incelmiş deri için planlanabilir. Ancak göz altındaki koyuluğun kaynağı pigment, damar görünümü ya da ödem de olabilir; önce nedenin ayrılması gerekir.</div>
         <button class="g-ssoru" data-gs="3"><i>›</i>Dolgunun yerine geçer mi?</button>
+        <div class="g-syanit" data-gs-yanit="3">Hayır. Polinükleotid dokuda yer kaplamaz; çökmüş ya da incelmiş bir bölgeyi doldurmaz. Hacim kaybı ayrı bir değerlendirme gerektirir; bu konuyu dolgu uygulamaları sayfasında anlattık.</div>
         <button class="g-ssoru" data-gs="4"><i>›</i>Uygulamadan sonra nelere dikkat etmeliyim?</button>
+        <div class="g-syanit" data-gs-yanit="4">İşlem günü bölgeye dokunmamanız, makyaj yapmamanız; sauna, hamam ve yoğun spor gibi terleten ortamlara 24 saat ara vermeniz istenir. İlk günlerde güneşten korunmak önem taşır. Öneriler size yazılı olarak da verilir.</div>
         <button class="g-ssoru" data-gs="5"><i>›</i>Ücret bilgisi neden sitede yok?</button>
+        <div class="g-syanit" data-gs-yanit="5">Sağlık hizmetlerinin tanıtımına ilişkin mevzuat gereği ücret bilgisi internette yayımlanmaz. Muayenede size özel plan netleştiğinde bu bilgi doğrudan size iletilir.</div>
       </div>
       <div class="g-scevap" data-gcevap aria-live="polite"><span class="g-yazan">Hekimin yanıtı</span><b></b><p></p><a class="dgm dgm--altin" href="${r}iletisim/" style="margin-top:8px">Ayrıntısı muayenede</a></div>
     </div>
   </div>
 </div></section>
-<script type="application/json" data-gsoru-veri>[["“Somon DNA” adı nereden geliyor?","Tıbbi polinükleotid ürünlerinin hammaddesi balık kaynaklıdır; çoğunlukla somon ve alabalık gibi türlerden elde edilir. Halk arasındaki ad bu kaynaktan türemiştir. Adın kendisi ürünün içeriği ya da etkinliği hakkında bilgi vermez; size uygulanacak ürünün ayrıntıları muayenede konuşulur."],["Genetik yapımı etkiler mi?","Hayır. Verilen madde saflaştırılmış kısa nükleotid zincirlerinden oluşur; hücre çekirdeğine girip bilgi aktarmaz, genetik yapınızı değiştirmez ve kalıtsal bir etkisi yoktur. Bu endişe çoğunlukla uygulamanın halk arasındaki adından kaynaklanır."],["Göz çevresine uygulanabilir mi?","Göz çevresi, polinükleotid uygulamasının sık değerlendirildiği bölgelerden biridir; ince çizgiler ve incelmiş deri için planlanabilir. Ancak göz altındaki koyuluğun kaynağı pigment, damar görünümü ya da ödem de olabilir; önce nedenin ayrılması gerekir."],["Dolgunun yerine geçer mi?","Hayır. Polinükleotid dokuda yer kaplamaz; çökmüş ya da incelmiş bir bölgeyi doldurmaz. Hacim kaybı ayrı bir değerlendirme gerektirir; bu konuyu dolgu uygulamaları sayfasında anlattık."],["Uygulamadan sonra nelere dikkat etmeliyim?","İşlem günü bölgeye dokunmamanız, makyaj yapmamanız; sauna, hamam ve yoğun spor gibi terleten ortamlara 24 saat ara vermeniz istenir. İlk günlerde güneşten korunmak önem taşır. Öneriler size yazılı olarak da verilir."],["Ücret bilgisi neden sitede yok?","Sağlık hizmetlerinin tanıtımına ilişkin mevzuat gereği ücret bilgisi internette yayımlanmaz. Muayenede size özel plan netleştiğinde bu bilgi doğrudan size iletilir."]]</script>
 
 <!-- ═════ KAPANIŞ ═════ -->
 <section class="g-son">

@@ -135,17 +135,22 @@ module.exports = {
     <div class="g-sorgu-ic">
       <div class="g-slistem">
         <button class="g-ssoru" data-akt data-gs="0"><i>›</i>Er:YAG ile Nd:YAG arasındaki fark nedir?</button>
+        <div class="g-syanit" data-gs-yanit="0">Er:YAG lazerin ışığı derideki su tarafından güçlü soğurulur ve mikro alanlarda yüzeyi açar; değişim daha belirgin, iyileşme daha uzundur. Nd:YAG daha derine ulaşır ve yüzeyi açmadan ısı verir; iyileşme kısa, katkı daha ılımlıdır. Hangisinin, hangi derinlikte kullanılacağı cilt tonunuza ve hedefinize göre seçilir.</div>
         <button class="g-ssoru" data-gs="1"><i>›</i>Kaç gün sosyal hayattan uzak kalırım?</button>
+        <div class="g-syanit" data-gs-yanit="1">Yüzeyi açan uygulamada kızarıklık, şişlik ve ince kabuklanma çoğunlukla üç ile yedi gün sürer; yüzeyi açmayan uygulamada bu süre genellikle bir–iki gündür. Önemli bir davetiniz ya da toplantınız varsa seansı en az iki hafta öncesine almanızı öneririz.</div>
         <button class="g-ssoru" data-gs="2"><i>›</i>Akne izlerimde kaç seansta fark görürüm?</button>
+        <div class="g-syanit" data-gs-yanit="2">Bu, izlerin biçimine, derinliğine ve ne kadar yaygın olduğuna bağlıdır; yüzünüz görülmeden sayı verilemez. Yuvarlak kenarlı, geniş tabanlı izler daha iyi yanıt verirken buz kıracağı ucu gibi dar ve derin izlerde katkı sınırlı kalır.</div>
         <button class="g-ssoru" data-gs="3"><i>›</i>Koyu tenliyim, uygulama yapılabilir mi?</button>
+        <div class="g-syanit" data-gs-yanit="3">Değerlendirilebilir; ancak koyu tende iltihap sonrası koyulaşma daha sık görülür. Daha düşük yoğunlukla, çoğu zaman yüzeyi açmayan ayarlarla ve önce küçük bir deneme alanıyla başlanır; öncesinde ve sonrasında güneş koruması özellikle önemlidir.</div>
         <button class="g-ssoru" data-gs="4"><i>›</i>Yazın fraksiyonel lazer yaptırabilir miyim?</button>
+        <div class="g-syanit" data-gs-yanit="4">Güneşin yoğun olduğu aylarda genellikle önerilmez. Uygulamadan önce en az dört hafta güneşten kaçınmak, sonrasında da haftalarca sıkı koruma sürdürmek gerekir; bunun zor olduğu yaz ve tatil dönemlerinde plan sonbahar ve kışa kaydırılır.</div>
         <button class="g-ssoru" data-gs="5"><i>›</i>Ücret bilgisini nasıl öğrenebilirim?</button>
+        <div class="g-syanit" data-gs-yanit="5">Sağlık hizmetlerinin tanıtımını düzenleyen kurallar ücretlerin internette yayımlanmasına izin vermez. Seçilen mod ve seans sayısı kişiye göre değiştiği için bu konu muayenede konuşulur.</div>
       </div>
       <div class="g-scevap" data-gcevap aria-live="polite"><span class="g-yazan">Hekimin yanıtı</span><b></b><p></p><a class="dgm dgm--altin" href="${r}iletisim/" style="margin-top:8px">Ayrıntısı muayenede</a></div>
     </div>
   </div>
 </div></section>
-<script type="application/json" data-gsoru-veri>[["Er:YAG ile Nd:YAG arasındaki fark nedir?","Er:YAG lazerin ışığı derideki su tarafından güçlü soğurulur ve mikro alanlarda yüzeyi açar; değişim daha belirgin, iyileşme daha uzundur. Nd:YAG daha derine ulaşır ve yüzeyi açmadan ısı verir; iyileşme kısa, katkı daha ılımlıdır. Hangisinin, hangi derinlikte kullanılacağı cilt tonunuza ve hedefinize göre seçilir."],["Kaç gün sosyal hayattan uzak kalırım?","Yüzeyi açan uygulamada kızarıklık, şişlik ve ince kabuklanma çoğunlukla üç ile yedi gün sürer; yüzeyi açmayan uygulamada bu süre genellikle bir–iki gündür. Önemli bir davetiniz ya da toplantınız varsa seansı en az iki hafta öncesine almanızı öneririz."],["Akne izlerimde kaç seansta fark görürüm?","Bu, izlerin biçimine, derinliğine ve ne kadar yaygın olduğuna bağlıdır; yüzünüz görülmeden sayı verilemez. Yuvarlak kenarlı, geniş tabanlı izler daha iyi yanıt verirken buz kıracağı ucu gibi dar ve derin izlerde katkı sınırlı kalır."],["Koyu tenliyim, uygulama yapılabilir mi?","Değerlendirilebilir; ancak koyu tende iltihap sonrası koyulaşma daha sık görülür. Daha düşük yoğunlukla, çoğu zaman yüzeyi açmayan ayarlarla ve önce küçük bir deneme alanıyla başlanır; öncesinde ve sonrasında güneş koruması özellikle önemlidir."],["Yazın fraksiyonel lazer yaptırabilir miyim?","Güneşin yoğun olduğu aylarda genellikle önerilmez. Uygulamadan önce en az dört hafta güneşten kaçınmak, sonrasında da haftalarca sıkı koruma sürdürmek gerekir; bunun zor olduğu yaz ve tatil dönemlerinde plan sonbahar ve kışa kaydırılır."],["Ücret bilgisini nasıl öğrenebilirim?","Sağlık hizmetlerinin tanıtımını düzenleyen kurallar ücretlerin internette yayımlanmasına izin vermez. Seçilen mod ve seans sayısı kişiye göre değiştiği için bu konu muayenede konuşulur."]]</script>
 
 <!-- ═════ KAPANIŞ ═════ -->
 <section class="g-son">

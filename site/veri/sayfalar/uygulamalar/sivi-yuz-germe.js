@@ -229,17 +229,22 @@ module.exports = {
     <div class="g-sorgu-ic">
       <div class="g-slistem">
         <button class="g-ssoru" data-akt data-gs="0"><i>›</i>Sıvı yüz germe gerçekten yüzü gerer mi?</button>
+        <div class="g-syanit" data-gs-yanit="0">Adı yanıltıcı olabilir. Uygulamada deri gerilmez; yüzün taşıyıcı noktalarına verilen destekle gölgelerin azalması ve yüzün daha dinlenmiş görünmesi amaçlanır. Sarkmanın ana nedeni deri fazlalığıysa bu yöntemin katkısı sınırlı kalır.</div>
         <button class="g-ssoru" data-gs="1"><i>›</i>Ne kadar ürün kullanılır?</button>
+        <div class="g-syanit" data-gs-yanit="1">Toplam miktar; yüzün yapısına, hacim kaybının derecesine ve hangi bölgelerin plana alındığına göre değişir. Önceden bir sayı vermek yerine plan basamaklara bölünür ve her kontrolde gerçekten ihtiyaç olup olmadığına yeniden bakılır.</div>
         <button class="g-ssoru" data-gs="2"><i>›</i>Ameliyat yerine bunu yaptırabilir miyim?</button>
+        <div class="g-syanit" data-gs-yanit="2">Deri fazlalığı ve belirgin sarkma varsa hayır. Bu tabloda cerrahi yüz germe ayrı bir değerlendirme gerektirir ve plastik cerrahi uzmanlık dalının konusudur. Hacim kaybının ön planda olduğu, deri esnekliğinin korunduğu kişilerde sıvı yüz germe bir seçenek olarak konuşulabilir.</div>
         <button class="g-ssoru" data-gs="3"><i>›</i>Sonuç doğal görünür mü?</button>
+        <div class="g-syanit" data-gs-yanit="3">Doğal görünüm, kullanılan ürünün miktarından çok nereye ve ne ölçüde verildiğiyle ilgilidir. Bu nedenle plan aşamalı ilerler ve her basamakta durulup durulmayacağı birlikte değerlendirilir. Sonuçlar kişiden kişiye değişir.</div>
         <button class="g-ssoru" data-gs="4"><i>›</i>HIFU ile farkı nedir?</button>
+        <div class="g-syanit" data-gs-yanit="4">HIFU, odaklanmış ultrason enerjisiyle derinin alt katmanlarında sıkılaşmayı hedefleyen bir cihaz uygulamasıdır ve hacim eklemez. Sıvı yüz germe ise kaybolan hacmin dolgu ürünleriyle desteklenmesine dayanır. Bazı planlarda ikisi birlikte düşünülebilir; karar muayenede verilir.</div>
         <button class="g-ssoru" data-gs="5"><i>›</i>Ücret bilgisi neden sitede yok?</button>
+        <div class="g-syanit" data-gs-yanit="5">Sağlık hizmetlerinin tanıtımına ilişkin mevzuat gereği ücret bilgisi internette yayımlanmaz. Muayenede size özel plan netleştiğinde bu bilgi doğrudan size iletilir.</div>
       </div>
       <div class="g-scevap" data-gcevap aria-live="polite"><span class="g-yazan">Hekimin yanıtı</span><b></b><p></p><a class="dgm dgm--altin" href="${r}iletisim/" style="margin-top:8px">Ayrıntısı muayenede</a></div>
     </div>
   </div>
 </div></section>
-<script type="application/json" data-gsoru-veri>[["Sıvı yüz germe gerçekten yüzü gerer mi?","Adı yanıltıcı olabilir. Uygulamada deri gerilmez; yüzün taşıyıcı noktalarına verilen destekle gölgelerin azalması ve yüzün daha dinlenmiş görünmesi amaçlanır. Sarkmanın ana nedeni deri fazlalığıysa bu yöntemin katkısı sınırlı kalır."],["Ne kadar ürün kullanılır?","Toplam miktar; yüzün yapısına, hacim kaybının derecesine ve hangi bölgelerin plana alındığına göre değişir. Önceden bir sayı vermek yerine plan basamaklara bölünür ve her kontrolde gerçekten ihtiyaç olup olmadığına yeniden bakılır."],["Ameliyat yerine bunu yaptırabilir miyim?","Deri fazlalığı ve belirgin sarkma varsa hayır. Bu tabloda cerrahi yüz germe ayrı bir değerlendirme gerektirir ve plastik cerrahi uzmanlık dalının konusudur. Hacim kaybının ön planda olduğu, deri esnekliğinin korunduğu kişilerde sıvı yüz germe bir seçenek olarak konuşulabilir."],["Sonuç doğal görünür mü?","Doğal görünüm, kullanılan ürünün miktarından çok nereye ve ne ölçüde verildiğiyle ilgilidir. Bu nedenle plan aşamalı ilerler ve her basamakta durulup durulmayacağı birlikte değerlendirilir. Sonuçlar kişiden kişiye değişir."],["HIFU ile farkı nedir?","HIFU, odaklanmış ultrason enerjisiyle derinin alt katmanlarında sıkılaşmayı hedefleyen bir cihaz uygulamasıdır ve hacim eklemez. Sıvı yüz germe ise kaybolan hacmin dolgu ürünleriyle desteklenmesine dayanır. Bazı planlarda ikisi birlikte düşünülebilir; karar muayenede verilir."],["Ücret bilgisi neden sitede yok?","Sağlık hizmetlerinin tanıtımına ilişkin mevzuat gereği ücret bilgisi internette yayımlanmaz. Muayenede size özel plan netleştiğinde bu bilgi doğrudan size iletilir."]]</script>
 
 <!-- ═════ KAPANIŞ ═════ -->
 <section class="g-son">
