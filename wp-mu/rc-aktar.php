@@ -175,6 +175,8 @@ function rc_ilk_kurulum(bool $ustune, int $medya_sinir = 0) {
 	}
 	$r['aktarim'] = rc_aktar(['ustune_yaz' => $ustune, 'medya_sinir' => $medya_sinir]);
 	flush_rewrite_rules(true);
+	/* LiteSpeed Cache (sunucuda etkin): tema/varlık değişikliği ve eski yönlendirmeler (ör. /favicon.ico) önbellekte kalmasın */
+	if (has_action('litespeed_purge_all') || defined('LSCWP_V')) { do_action('litespeed_purge_all'); $r['adimlar'][] = 'LiteSpeed önbelleği temizlendi'; }
 	return $r;
 }
 
