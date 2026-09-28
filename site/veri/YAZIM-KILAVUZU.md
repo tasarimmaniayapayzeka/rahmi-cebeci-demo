@@ -131,7 +131,8 @@ GERÇEK fotoğraflar (`varliklar/foto/…`, 1400×788 kırpılmış):
 - `hekim-portre.webp` — Uzm. Dr. Rahmi Cebeci, ayakta, kollar bağlı (hekim sayfası hero)
 - `hekim-koltuk.webp` — hekim koltukta (ana sayfa hekim bloğu, yaklaşım sayfası)
 - `klinik-bekleme.webp` — bekleme salonu (klinik hero) · `klinik-bekleme-2.webp` — bekleme + karşılama bankosu (iletişim hero)
-- `klinik-cihaz-odasi.webp` — lazer ve cihaz odası (dövme silme hero, cihaz uygulamaları)
+- `klinik-cihaz-odasi.webp` — lazer ve cihaz odası (cihaz uygulamaları; 28 Eyl'e kadar dövme silme hero'suydu — yerine
+  `gorsel/uyg-pico-lazer-dovme-silme-kapak.webp`, Higgsfield 4K, kullanıcı isteği)
 - `klinik-uygulama-odasi.webp` — uygulama odası (enjeksiyon uygulamaları hero'sunda tercih edilebilir)
 - `cihaz-pico.webp`, `cihaz-fotona.webp`, `cihaz-altin-igne.webp`, `cihaz-hifu.webp`, `cihaz-mezo.webp` — ürün fotoğrafları (kare/dikey; yalnız klinik sayfası cihaz listesi ve ilgili cihaz sayfasının "kullanılan cihaz" kartında)
 Gerçek fotoğrafta alt metin gerçeği anlatır; "yapay zekâ" rozeti konmaz.

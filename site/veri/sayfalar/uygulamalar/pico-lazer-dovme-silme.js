@@ -23,8 +23,8 @@ module.exports = {
       <div class="g-tikler"><span><i></i>Tam silinme taahhüt edilmez</span><span><i></i>Önce küçük alanda deneme</span><span><i></i>Ben üzerine atım yapılmaz</span></div>
     </div>
     <div class="g-tarama" data-gr>
-      <img src="${r}varliklar/foto/klinik-cihaz-odasi.webp" width="1400" height="788" alt="Muayenehanenin lazer ve cihaz odası; pikosaniye lazer cihazı pencere önünde" loading="eager">
-      <div class="g-isin"></div>
+      <img src="${r}varliklar/gorsel/uyg-pico-lazer-dovme-silme-kapak.webp" width="1400" height="788" alt="" loading="eager">
+      <div class="g-isin"></div><span class="g-ainot">Temsilî görsel · yapay zekâ ile üretildi</span>
     </div>
   </div>
 </section>
