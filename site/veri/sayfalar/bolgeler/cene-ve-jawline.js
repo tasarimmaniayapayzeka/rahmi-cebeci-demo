@@ -4,7 +4,8 @@ module.exports = {
   slug: 'bolgeler/cene-ve-jawline',
   tip: 'tibbi',
   baslik: 'Çene hattı (jawline): netliği belirleyen dört etken',
-  aciklama: 'Keskin bir çene hattı istiyorsanız önce hattı neyin sildiğini bulmak gerekir: kemik, yağ, gevşeyen deri ya da çiğneme kası. Bakırköy’de bu ayrımla başlıyoruz.',
+  aciklama: 'Belirgin bir çene hattı için önce hattı neyin sildiği bulunur: kemik, yağ, gevşeyen deri ya da çiğneme kası. Bakırköy’de işe bu ayrımla başlıyoruz.',
+  odak: 'çene hattı',   /* Yoast odak anahtar kelimesi */
 
   icerik: (r, ik) => `
 

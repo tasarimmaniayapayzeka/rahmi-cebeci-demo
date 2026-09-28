@@ -4,7 +4,8 @@ module.exports = {
   slug: 'cilt-sorunlari/sac-dokulmesi',
   tip: 'tibbi',
   baslik: 'Saç dökülmesi: geçici mi, kalıtsal mı, başka bir işaret mi?',
-  aciklama: 'Saç dökülmesinin tek bir nedeni yoktur. Geçici dökülmeyi kalıtsal seyrelmeden ayıran ipuçları, kan değerlerinin yeri ve saçlı derinin büyütmeli incelenmesi.',
+  aciklama: 'Saç dökülmesinin tek bir nedeni yoktur. Geçici dökülmeyi kalıtsal seyrelmeden ayıran işaretler, kan değerlerinin yeri ve saçlı derinin incelenmesi.',
+  odak: 'saç dökülmesi',   /* Yoast odak anahtar kelimesi */
 
   icerik: (r, ik) => `
 

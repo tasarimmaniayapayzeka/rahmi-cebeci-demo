@@ -4,7 +4,8 @@ module.exports = {
   slug: 'yasal/kullanim-kosullari',
   tip: 'bilgi',
   baslik: 'Kullanım Koşulları — Bilgilendirme Amacı ve Sorumluluk Sınırı',
-  aciklama: 'Sitedeki yazıların yalnız bilgi vermek için hazırlandığı, hekim–hasta ilişkisinin hangi anda kurulduğu, araçların sınırı, telif ve sorumluluk kapsamı.',
+  aciklama: 'Kullanım koşulları: yazıların yalnız bilgi vermek için hazırlandığı, hekim–hasta ilişkisinin hangi anda kurulduğu, araçların sınırı, telif hakları.',
+  odak: 'kullanım koşulları',   /* Yoast odak anahtar kelimesi */
 
   icerik: (r, ik) => `
 

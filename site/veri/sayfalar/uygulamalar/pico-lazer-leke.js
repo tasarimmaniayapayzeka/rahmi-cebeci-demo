@@ -4,7 +4,8 @@ module.exports = {
   slug: 'uygulamalar/pico-lazer-leke',
   tip: 'tibbi',
   baslik: 'Pico lazer ile leke: önce leke tipi, sonra uygulama',
-  aciklama: 'Pikosaniye lazerle yüzeysel pigment lekelerinde önce lekenin tipi incelenir. Melazmada neden temkinli olunduğu, güneş korumasının rolü ve seans sonrası.',
+  aciklama: 'Pico lazer leke uygulamasında, önce lekenin tipi incelenir. Yüzeysel pigmentlerde seans planı, melazmada neden temkinli olunduğu, güneşten korunma.',
+  odak: 'pico lazer leke',   /* Yoast odak anahtar kelimesi */
 
   icerik: (r, ik) => `
 <!-- HERO -->

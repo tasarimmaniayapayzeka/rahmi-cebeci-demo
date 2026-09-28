@@ -7,7 +7,8 @@ module.exports = {
   slug: 'yasal/kvkk-aydinlatma-metni',
   tip: 'bilgi',
   baslik: 'KVKK Aydınlatma Metni — Kişisel Verilerin İşlenmesi',
-  aciklama: 'Muayenehanede ve sitede kişisel verilerin hangi amaç ve hukuki sebeple işlendiği, kimlere aktarıldığı, saklama süreleri ve KVKK kapsamındaki haklarınız.',
+  aciklama: 'KVKK aydınlatma metni — muayenehanede ve sitede kişisel verilerin hangi amaç ve hukuki sebeple işlendiği, kime aktarıldığı, saklama süresi, haklar.',
+  odak: 'kvkk aydınlatma metni',   /* Yoast odak anahtar kelimesi */
 
   icerik: (r, ik) => `
 

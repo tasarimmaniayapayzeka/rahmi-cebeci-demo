@@ -182,41 +182,41 @@ Değerlendirme ve Takip:
 - Uygulama Sonrası Kontrol — İşlemden sonraki günler ve kontrol → /uygulamalar/uygulama-sonrasi-takip/
 
 DİĞER SAYFALAR
-- Randevudan kontrole → /yaklasimimiz/ — Her plan muayeneyle başlar: aile hekimliği bakışıyla öykü, plan ve aydınlatma, uygulama günü ve takip. Dört adımın gerekçesi ve kapsamımızın sınırı.
-- Kapsamımızın sınırı → /yaklasimimiz/neden-bazi-islemleri-yapmiyoruz/ — Ameliyat gerektiren girişimler, saç ekimi, lazer epilasyon ve sertifika dışı işlemler neden yapılmıyor; talebiniz kapsam dışındaysa izlenen yol.
-- Uzm. Dr. Rahmi Cebeci → /hekim/ — Uzm. Dr. Rahmi Cebeci: Hacettepe mezuniyeti, aile hekimliği uzmanlığı, rotasyonlar, görev yaptığı hastaneler ve Bakanlık onaylı medikal estetik sertifikası.
-- Muayenehane → /klinik/ — Bakırköy’deki muayenehane: bekleme salonu, uygulama odası, lazer ve cihaz odası, tek kullanımlık malzeme ve sterilizasyon düzeni, randevu işleyişi.
-- İletişim ve randevu talebi → /iletisim/ — Uzm. Dr. Rahmi Cebeci muayenehanesinin Bakırköy adresi, telefon ve WhatsApp hattı, çalışma saatleri, ulaşım bilgisi ve randevu talep formu.
-- Soru ve Yanıtlar → /sikca-sorulan-sorular/ — Bakırköy’deki muayenehaneye ulaşım, randevu, görüşme öncesi hazırlık, pico lazerle dövme silme, uygulama sonrası ve kapsam hakkında sık sorulan sorular.
-- Okuma Köşesi → /bilgi/ — Dövme silme, enjeksiyon, lazer, vücut ve saç uygulamaları üzerine hekim denetimli yazıların yayımlanacağı bölüm; yayın ilkeleri ve hazırlanan başlıklar.
-- Bağlı Olduğumuz Mevzuat → /mevzuat/ — Sitenin dayandığı yönetmelikler ve kanun. Ücret, hasta yorumu, öncesi–sonrası görseli ve abartılı ifadelere neden yer vermediğimizi açıklıyoruz.
-- Görüşmeye Hazırlık Notları → /hazirlik-listesi/ — Muayenede söylemeniz gereken ilaç, öykü ve önceki uygulama bilgilerini hatırlatan kısa liste. Tanı koymaz, işlem önermez; cevaplar cihazınızda kalır.
-- Görüşmeye Hazırlık Notları → /hazirlik-listesi/arac/ — Muayenede hekiminize söylemeniz gereken 12 başlığı sırayla hatırlatan liste. Cevaplar yalnız cihazınızda işlenir; bize gönderilmez, hiçbir yerde saklanmaz.
-- Cilt Eğilimi Öz Değerlendirmesi → /cilt-tipi-testi/ — On iki soruda yağlanma ya da kuruluk, hassasiyet ve leke bırakma eğiliminizi tarif etmenize yardım eden test. Yanıtlar cihazınızda kalır, gönderilmez.
-- Yan Yana Tablo → /uygulama-karsilastirma/ — İki uygulamayı hedef, uygulama sırasındaki his, iyileşme, etkinin ortaya çıkışı ve kalıcılık açısından yan yana görün; bilgiler uygulama sayfalarından alınır.
-- Bölge Rehberi → /bolge-pusulasi/ — Yüz, göz çevresi, dudak, çene, boyun, el, saçlı deri ve vücut: her bölgenin kendine özgü yanlarını tek ekranda görün, ayrıntı için sayfasına geçin.
-- Bölgeler → /bolgeler/ — Yüz, göz çevresi, dudak, çene hattı, boyun, el, saçlı deri ve vücut için ayrı sayfalar: deri ve hareket farklı olduğundan her bölgenin planı da ayrıdır.
-- Boyun ve Dekolte → /bolgeler/boyun-ve-dekolte/ — Boyundaki halka çizgileri, dikey bantlar ve göğüs üstündeki güneş lekeleri yüzden erken belirir. Bakırköy muayenehanemizde bu bölge için ayrı bir plan yaparız.
-- Çene ve Jawline → /bolgeler/cene-ve-jawline/ — Keskin bir çene hattı istiyorsanız önce hattı neyin sildiğini bulmak gerekir: kemik, yağ, gevşeyen deri ya da çiğneme kası. Bakırköy’de bu ayrımla başlıyoruz.
-- Dudak → /bolgeler/dudak/ — Dudakta ince görünüm, silik kenar ve kuruluk farklı sorunlardır; hepsinin yanıtı hacim değildir. Bakırköy muayenehanemizde plan yüzünüzün oranına göre yapılır.
-- El → /bolgeler/el/ — Eller yaşı çoğu zaman yüzden önce belli eder: damarlar belirginleşir, güneş lekeleri çoğalır. Bakırköy muayenehanemizde hacim ve lekeyi ayrı ayrı planlıyoruz.
-- Göz Çevresi → /bolgeler/goz-cevresi/ — Göz altındaki koyuluk, kaz ayağı ve kaş konumu farklı nedenlerden doğar. Bakırköy muayenehanemizde önce nedeni ayırıyor, işlem kararını ardından veriyoruz.
-- Saçlı Deri → /bolgeler/sacli-deri/ — Saçınız dökülüyorsa ilk soru “hangi uygulama?” değil “neden?” olmalı. Bakırköy muayenehanemizde öykü, muayene ve gerekirse tahlil olmadan seans planlamıyoruz.
-- Vücut → /bolgeler/vucut/ — Karın, bel, kol ve bacakta bölgesel yağlanma, selülit görünümü ve dövme silme için değerlendirme. Plan kilo verme vaadi olmadan, bölgeye ve dokuya göre kurulur.
-- Yüz → /bolgeler/yuz/ — Alın, elmacık ve çene hattı birbirine yaslanır. Yüz planı tek bir çizgiye göre değil; hacim, kas hareketi ve deri kalitesi birlikte okunarak kurulur.
-- Cilt sorunları → /cilt-sorunlari/ — Kırışıklıktan saç dökülmesine, selülitten dövme pişmanlığına on iki şikâyet: her sayfa nedenin nasıl ayrıldığını ve sonra neyin konuşulduğunu anlatır.
-- Akne ve Akne İzi → /cilt-sorunlari/akne-ve-akne-izi/ — Akne sürerken ve geride iz kaldığında yapılacaklar ayrıdır. Lezyon ve iz türleri muayenede nasıl tanımlanır, hangi dönemde neler konuşulur, sıra neden bozulmaz?
-- Aşırı Terleme → /cilt-sorunlari/asiri-terleme/ — Fazla terleme bazen yalnız belli bölgelerle sınırlı bir yatkınlık, bazen başka bir hastalığın işaretidir. İki grup nasıl ayrılır, muayenede neye bakılır?
-- Bölgesel Yağlanma → /cilt-sorunlari/bolgesel-yaglanma/ — Beslenme ve harekete rağmen küçülmeyen sınırlı yağ birikimi; ödem, gevşek deri ve duruştan ayrımı, değerlendirilen bölgeler ve uygulama yapılmayan durumlar.
-- Cilt Tonu ve Leke → /cilt-sorunlari/cilt-tonu-ve-leke/ — Yüzdeki lekelerin kökeni farklıdır. Güneşle biriken leke, melazma ve sivilce sonrası kalan koyu renk birbirinden nasıl ayırt edilir, korunma neden şarttır?
-- Dövme ve Kalıcı Makyaj → /cilt-sorunlari/dovme-ve-kalici-makyaj/ — Dövme, kalıcı makyaj ve mikroblading silinmek istendiğinde rengin, derinliğin ve mürekkebin yanıtı nasıl etkilediği; koyulaşma riski ve test atışının yeri.
-- Göz Altı Koyuluğu → /cilt-sorunlari/goz-alti-koyulugu/ — Koyu göz altının ardında pigment, seçilen damarlar, incelen deri, gözyaşı oluğu ya da sıvı birikimi olabilir. Muayenede hangisinin öne çıktığı nasıl anlaşılır?
-- Gözenek ve Cilt Dokusu → /cilt-sorunlari/gozenek-ve-cilt-dokusu/ — Gözeneğin dikkat çekmesine yol açan yağ salgısı ve destek kaybı, pürüzlü yüzeyin nedenleri, akne izinin bunlardan farkı ve muayenede nelere bakıldığı.
-- Hacim Kaybı ve Sarkma → /cilt-sorunlari/hacim-kaybi-ve-sarkma/ — Yorgun ve düşmüş görünen yüzde kemik, yağ bölmeleri, bağlar ve deri birlikte değişir. Destek ile sıkılaştırma arasındaki seçim muayenede nasıl yapılır?
-- Mimik Çizgileri ve Kırışıklık → /cilt-sorunlari/mimik-cizgileri-ve-kirisiklik/ — Kaş kaldırınca beliren çizgi ile yüz dinlenirken de duran kırışıklığın kaynağı farklıdır. Kas, deri ve hacim payı muayenede nasıl ayrılır, neler konuşulur?
-- Ciltte Nem Kaybı ve Donukluk → /cilt-sorunlari/nem-kaybi-ve-donukluk/ — Mat ve yorgun görünen ciltte sorun çoğu zaman zayıflamış koruyucu katmandır. Su kaybını kuruluktan ayıran işaretler, bariyeri bozan alışkanlıklar ve ilk adım.
-- Saç Dökülmesi → /cilt-sorunlari/sac-dokulmesi/ — Saç dökülmesinin tek bir nedeni yoktur. Geçici dökülmeyi kalıtsal seyrelmeden ayıran ipuçları, kan değerlerinin yeri ve saçlı derinin büyütmeli incelenmesi.
-- Selülit Görünümü → /cilt-sorunlari/selulit/ — Selülit bir hastalık değil, deri altındaki yapının yüzeye yansımasıdır. Evreleri, kiloyla ilişkisi, karıştırılan durumlar ve muayenede konuşulan seçenekler.
+- Randevudan kontrole → /yaklasimimiz/ — Muayene süreci dört adımda ilerler: aile hekimliği bakışıyla öykü, plan ve aydınlatma, uygulama günü, takip. Her adımın gerekçesi, kapsamın sınırı.
+- Kapsamımızın sınırı → /yaklasimimiz/neden-bazi-islemleri-yapmiyoruz/ — Yapılmayan işlemler: ameliyatlı girişimler, saç ekimi, lazer epilasyon, sertifika dışı işlemler neden yapılmaz; talep kapsam dışındaysa ne yapılır.
+- Uzm. Dr. Rahmi Cebeci → /hekim/ — Uzm. Dr. Rahmi Cebeci: Hacettepe Tıp mezuniyeti, aile hekimliği uzmanlığı, rotasyonlar, görev yerleri, Bakanlık onaylı medikal estetik sertifikası.
+- Muayenehane → /klinik/ — Bakırköy muayenehane ortamı: bekleme salonu, uygulama odası, lazer-cihaz odası, tek kullanımlık malzeme, sterilizasyon ve randevulu çalışma düzeni.
+- İletişim ve randevu talebi → /iletisim/ — İletişim ve randevu: Bakırköy’deki muayenehane adresi, telefon, WhatsApp hattı, çalışma saatleri, ulaşım bilgisi ve randevu talep formu bu sayfada.
+- Soru ve Yanıtlar → /sikca-sorulan-sorular/ — Sık sorulan sorular: Bakırköy’deki muayenehaneye ulaşım, randevu, görüşmeye hazırlık, pico lazerle dövme silme, uygulama sonrası ve kapsam üzerine.
+- Okuma Köşesi → /bilgi/ — Okuma köşesi: dövme silme, enjeksiyon, lazer, vücut, saç uygulamaları üzerine hekim denetiminde hazırlanan yazılar, yayın ilkeleri, yeni başlıklar.
+- Bağlı Olduğumuz Mevzuat → /mevzuat/ — Sağlıkta tanıtım yönetmeliği ve ilgili kanun: sitede ücret, hasta yorumu, öncesi–sonrası görsel veya abartılı ifade neden yer almıyor, açıklıyoruz.
+- Görüşmeye Hazırlık Notları → /hazirlik-listesi/ — Görüşmeye hazırlık: muayenede söylemeniz gereken ilaç, öykü ve önceki uygulama bilgilerini hatırlatan liste. Tanı koymaz; yanıtlarınız sizde kalır.
+- Görüşmeye Hazırlık Notları → /hazirlik-listesi/arac/ — Hazırlık listesi: muayenede hekiminize söylemeniz gereken on iki başlığı sırayla hatırlatır. Cevaplar yalnız cihazınızda işlenir, bize gönderilmez.
+- Cilt Eğilimi Öz Değerlendirmesi → /cilt-tipi-testi/ — Cilt tipi testi — on iki soruda yağlanma ya da kuruluk, hassasiyet ile leke eğiliminizi tarif etmenize yardımcı olur. Yanıtlar cihazınızdan çıkmaz.
+- Yan Yana Tablo → /uygulama-karsilastirma/ — Uygulama karşılaştırma tablosu: iki uygulamayı hedef, uygulama sırasındaki his, iyileşme, etkinin başlangıcı ve kalıcılık açısından yan yana görün.
+- Bölge Rehberi → /bolge-pusulasi/ — Bölge rehberi: yüz, göz çevresi, dudak, çene, boyun, el, saçlı deri ve vücut. Her bölgenin kendine özgü yanlarını tek ekranda görün, sayfaya geçin.
+- Bölgeler → /bolgeler/ — Medikal estetik bölgeleri: yüz, göz çevresi, dudak, çene hattı, boyun, el, saçlı deri ile vücut. Deri ve hareket farklı olduğundan planlar ayrıdır.
+- Boyun ve Dekolte → /bolgeler/boyun-ve-dekolte/ — Boyun ve dekolte: halka çizgileri, dikey bantlar ve güneş lekeleri yüzden erken belirir. Bakırköy muayenehanemizde bu bölge için ayrı plan kurulur.
+- Çene ve Jawline → /bolgeler/cene-ve-jawline/ — Belirgin bir çene hattı için önce hattı neyin sildiği bulunur: kemik, yağ, gevşeyen deri ya da çiğneme kası. Bakırköy’de işe bu ayrımla başlıyoruz.
+- Dudak → /bolgeler/dudak/ — Dudak dolgusu her isteğin tek yanıtı değildir: ince görünüm, silik kenar ve kuruluk ayrı sorunlardır. Bakırköy’de plan, yüz oranınıza göre kurulur.
+- El → /bolgeler/el/ — El estetiği: eller yaşı çoğu kez yüzden önce belli eder; damarlar belirginleşir, güneş lekeleri çoğalır. Bakırköy’de hacim ile leke ayrı planlanır.
+- Göz Çevresi → /bolgeler/goz-cevresi/ — Göz çevresinde koyuluk, kaz ayağı ve kaş konumu farklı nedenlerden doğar. Bakırköy muayenehanemizde önce nedeni ayırıyor, ardından karar veriyoruz.
+- Saçlı Deri → /bolgeler/sacli-deri/ — Saçlı deri ve dökülme: ilk soru “hangi uygulama?” değil “neden?” olmalı. Bakırköy’de öykü, muayene ve gerekirse tahliller olmadan seans planlanmaz.
+- Vücut → /bolgeler/vucut/ — Vücut estetiği: karın, bel, kol ve bacaklarda bölgesel yağlanma, selülit görünümü ve dövme silme için değerlendirme. Plan kilo verme vaadi içermez.
+- Yüz → /bolgeler/yuz/ — Yüz estetiği tek bir çizgiye bakılarak planlanmaz: alın, elmacık ve çene hattı birbirine yaslanır. Hacim, kas ve deri kalitesi birlikte ele alınır.
+- Cilt sorunları → /cilt-sorunlari/ — Cilt sorunları: kırışıklıktan saç dökülmesine, selülitten dövme pişmanlığına on iki şikâyet. Nedenin nasıl ayrıldığı ve ardından neyin konuşulduğu.
+- Akne ve Akne İzi → /cilt-sorunlari/akne-ve-akne-izi/ — Akne sürerken ve geride akne izi kaldığında yapılacaklar ayrıdır. Lezyon ve iz türleri muayenede nasıl ayırt edilir, hangi dönemde neler konuşulur?
+- Aşırı Terleme → /cilt-sorunlari/asiri-terleme/ — Aşırı terleme bazen belli bölgelerle sınırlı bir yatkınlık, bazen başka bir hastalığın işaretidir. İki durum nasıl ayrılır, muayenede neye bakılır?
+- Bölgesel Yağlanma → /cilt-sorunlari/bolgesel-yaglanma/ — Bölgesel yağlanma: beslenme ve harekete rağmen küçülmeyen sınırlı yağ birikimi. Ödem, gevşek deri ve duruştan ayrımı, uygulama yapılmayan durumlar.
+- Cilt Tonu ve Leke → /cilt-sorunlari/cilt-tonu-ve-leke/ — Her cilt lekesi aynı kökenden gelmez. Güneş lekesi, melazma ve sivilce sonrası kalan koyuluk nasıl ayırt edilir, güneşten korunma neden gereklidir?
+- Dövme ve Kalıcı Makyaj → /cilt-sorunlari/dovme-ve-kalici-makyaj/ — Dövme ve kalıcı makyaj silme: rengin, derinliğin ve mürekkebin yanıtı nasıl değiştirdiği, mikroblading, koyulaşma olasılığı ve test atışının önemi.
+- Göz Altı Koyuluğu → /cilt-sorunlari/goz-alti-koyulugu/ — Göz altı koyuluğu pigment, belirgin damar, incelen deri, gözyaşı oluğu ya da sıvı birikiminden doğabilir. Hangisi öne çıkıyor, muayenede anlaşılır.
+- Gözenek ve Cilt Dokusu → /cilt-sorunlari/gozenek-ve-cilt-dokusu/ — Belirgin gözenek neden olur: yağ salgısı ve destek kaybı, pürüzlü yüzeyin olası nedenleri, akne izinin bunlardan farkı ve muayenede neye bakıldığı.
+- Hacim Kaybı ve Sarkma → /cilt-sorunlari/hacim-kaybi-ve-sarkma/ — Hacim kaybı ve sarkmada kemik, yağ bölmeleri, bağlar ve deri birlikte değişir. Yorgun ve düşük görünen yüzde destek ile sıkılaştırma nasıl seçilir?
+- Mimik Çizgileri ve Kırışıklık → /cilt-sorunlari/mimik-cizgileri-ve-kirisiklik/ — Mimik çizgileri ile yüz dinlenirken de duran kırışıklığın kaynağı farklıdır. Kas, deri ve hacim payı muayenede nasıl ayırt edilir, neler konuşulur?
+- Ciltte Nem Kaybı ve Donukluk → /cilt-sorunlari/nem-kaybi-ve-donukluk/ — Nem kaybı ile donuklukta sorun çoğu zaman zayıflamış koruyucu dış katmandır. Su kaybını kuruluktan ayıran belirtiler, bariyeri bozan alışkanlıklar.
+- Saç Dökülmesi → /cilt-sorunlari/sac-dokulmesi/ — Saç dökülmesinin tek bir nedeni yoktur. Geçici dökülmeyi kalıtsal seyrelmeden ayıran işaretler, kan değerlerinin yeri ve saçlı derinin incelenmesi.
+- Selülit Görünümü → /cilt-sorunlari/selulit/ — Selülit nedir? Bir hastalık değil, deri altındaki yapıların yüzeye yansımasıdır. Evreleri, kiloyla ilişkisi, karıştırılan durumlar ve konuşulanlar.
 
 ZİYARETÇİNİN KULLANABİLECEĞİ GÜNDELİK ADLAR
 botoks, botox, kaş arası, alın çizgisi, kaz ayağı, terleme iğnesi, diş sıkma, çene sıkıyorum, diş gıcırdatma, diş aşınması, bruksizm, masseter → /uygulamalar/botulinum-toksin/

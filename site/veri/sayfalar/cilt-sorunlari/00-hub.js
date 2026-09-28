@@ -20,7 +20,8 @@ module.exports = {
   slug: 'cilt-sorunlari',
   tip: 'tibbi',
   baslik: 'Cilt sorunları: on iki şikâyet, her biri için önce ayrım',
-  aciklama: 'Kırışıklıktan saç dökülmesine, selülitten dövme pişmanlığına on iki şikâyet: her sayfa nedenin nasıl ayrıldığını ve sonra neyin konuşulduğunu anlatır.',
+  aciklama: 'Cilt sorunları: kırışıklıktan saç dökülmesine, selülitten dövme pişmanlığına on iki şikâyet. Nedenin nasıl ayrıldığı ve ardından neyin konuşulduğu.',
+  odak: 'cilt sorunları',   /* Yoast odak anahtar kelimesi */
 
   icerik: (r, ik) => `
 

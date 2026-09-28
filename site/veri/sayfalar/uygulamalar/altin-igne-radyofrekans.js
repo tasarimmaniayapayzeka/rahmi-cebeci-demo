@@ -4,7 +4,8 @@ module.exports = {
   slug: 'uygulamalar/altin-igne-radyofrekans',
   tip: 'tibbi',
   baslik: 'Altın iğne radyofrekans: akne izi ve gözenekte plan',
-  aciklama: 'Altın iğne radyofrekans uygulamasında enerji mikroiğne uçlarından derinin alt katmanına verilir. Akne izi, gözenek ve doku için seans planı muayenede kurulur.',
+  aciklama: 'Altın iğne radyofrekans uygulamasında enerji, mikroiğne uçlarından derinin alt katmanına verilir. Akne izi ile gözenek için plan muayenede kurulur.',
+  odak: 'altın iğne radyofrekans',   /* Yoast odak anahtar kelimesi */
 
   icerik: (r, ik) => `
 <!-- HERO -->

@@ -4,7 +4,8 @@ module.exports = {
   slug: 'uygulamalar/dolgu-uygulamalari',
   tip: 'tibbi',
   baslik: 'Dolgu uygulamaları: dudak, çene, jawline, elmacık, göz altı',
-  aciklama: 'Hyalüronik asit dolgu dudak, çene, jawline, elmacık, göz altı ve nazolabial bölgede nasıl planlanır, kimlerde ertelenir, riskleri ve dolgu çözme nedir?',
+  aciklama: 'Hyalüronik asit ile dolgu uygulaması dudak, çene, elmacık, göz altı veya nazolabial bölgelerde nasıl planlanır, kimde ertelenir, riskleri nelerdir?',
+  odak: 'dolgu uygulaması',   /* Yoast odak anahtar kelimesi */
 
   icerik: (r, ik) => `
 <!-- ═════ G HERO ═════ -->

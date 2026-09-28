@@ -4,7 +4,8 @@ module.exports = {
   slug: 'uygulamalar/karbon-peeling',
   tip: 'tibbi',
   baslik: 'Karbon peeling: karbon losyonu ve pikosaniye lazer',
-  aciklama: 'Karbon peelingde yüze sürülen karbon losyonu pikosaniye lazerle taranır. Gözenek, yağlanma ve donuklukta etkinin sınırları, seans düzeni ve sonrası.',
+  aciklama: 'Karbon peelingde yüze sürülen karbonlu losyon pikosaniye lazerle taranır. Gözenek, yağlanma ve donuklukta etkinin sınırları, seans düzeni ve bakım.',
+  odak: 'karbon peeling',   /* Yoast odak anahtar kelimesi */
 
   icerik: (r, ik) => `
 <!-- HERO -->

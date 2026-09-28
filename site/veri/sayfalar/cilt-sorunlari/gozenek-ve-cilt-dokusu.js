@@ -4,7 +4,8 @@ module.exports = {
   slug: 'cilt-sorunlari/gozenek-ve-cilt-dokusu',
   tip: 'tibbi',
   baslik: 'Gözenek ve cilt dokusu: belirgin gözenek, pürüz ve iz',
-  aciklama: 'Gözeneğin dikkat çekmesine yol açan yağ salgısı ve destek kaybı, pürüzlü yüzeyin nedenleri, akne izinin bunlardan farkı ve muayenede nelere bakıldığı.',
+  aciklama: 'Belirgin gözenek neden olur: yağ salgısı ve destek kaybı, pürüzlü yüzeyin olası nedenleri, akne izinin bunlardan farkı ve muayenede neye bakıldığı.',
+  odak: 'belirgin gözenek',   /* Yoast odak anahtar kelimesi */
 
   icerik: (r, ik) => `
 

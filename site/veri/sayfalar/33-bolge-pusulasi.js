@@ -24,7 +24,8 @@ module.exports = {
   tip: 'tibbi',
   js: 'kesif.js',
   baslik: 'Bölge Rehberi — Yüzden Vücuda Sekiz Bölge Tek Ekranda',
-  aciklama: 'Yüz, göz çevresi, dudak, çene, boyun, el, saçlı deri ve vücut: her bölgenin kendine özgü yanlarını tek ekranda görün, ayrıntı için sayfasına geçin.',
+  aciklama: 'Bölge rehberi: yüz, göz çevresi, dudak, çene, boyun, el, saçlı deri ve vücut. Her bölgenin kendine özgü yanlarını tek ekranda görün, sayfaya geçin.',
+  odak: 'bölge rehberi',   /* Yoast odak anahtar kelimesi */
 
   icerik: (r, ik) => `
 

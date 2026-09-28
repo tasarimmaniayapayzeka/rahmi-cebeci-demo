@@ -4,7 +4,8 @@ module.exports = {
   slug: 'yaklasimimiz',
   tip: 'tibbi',
   baslik: 'Randevudan kontrole: muayeneden takibe dört adımlı çalışma düzeni',
-  aciklama: 'Her plan muayeneyle başlar: aile hekimliği bakışıyla öykü, plan ve aydınlatma, uygulama günü ve takip. Dört adımın gerekçesi ve kapsamımızın sınırı.',
+  aciklama: 'Muayene süreci dört adımda ilerler: aile hekimliği bakışıyla öykü, plan ve aydınlatma, uygulama günü, takip. Her adımın gerekçesi, kapsamın sınırı.',
+  odak: 'muayene süreci',   /* Yoast odak anahtar kelimesi */
 
   icerik: (r, ik) => `
 

@@ -4,7 +4,8 @@ module.exports = {
   slug: 'uygulamalar/selulit-gorunumu',
   tip: 'tibbi',
   baslik: 'Selülit görünümü: mezoterapi, lipoliz ve cihaz planı',
-  aciklama: 'Selülit bir hastalık değil, doku görünümüdür. Mezoterapi, lipoliz ve cihaz basamaklarıyla görünümün düzelmesi hedeflenir; diyetin yerine geçmez.',
+  aciklama: 'Selülit görünümü için mezoterapi, lipoliz ve cihaz basamakları birlikte planlanabilir. Hastalık değil, bir doku görünümüdür; diyetin yerini tutmaz.',
+  odak: 'selülit görünümü',   /* Yoast odak anahtar kelimesi */
 
   icerik: (r, ik) => `
 <!-- HERO -->

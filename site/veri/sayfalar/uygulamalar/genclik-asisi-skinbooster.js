@@ -4,7 +4,8 @@ module.exports = {
   slug: 'uygulamalar/genclik-asisi-skinbooster',
   tip: 'tibbi',
   baslik: 'Gençlik aşısı (skinbooster): hacim eklemeyen nem desteği',
-  aciklama: 'Halk arasında gençlik aşısı denen skinbooster, cilde nem desteği veren ve hacim eklemeyen bir hyalüronik asit uygulamasıdır. Kimlere uygun, kaç seans?',
+  aciklama: 'Gençlik aşısı olarak bilinen skinbooster, cilde nem desteği veren, ama hacim eklemeyen bir hyalüronik asit uygulamasıdır. Kimlere uygun, kaç seans?',
+  odak: 'gençlik aşısı',   /* Yoast odak anahtar kelimesi */
 
   icerik: (r, ik) => `
 <!-- ═════ HERO ═════ -->

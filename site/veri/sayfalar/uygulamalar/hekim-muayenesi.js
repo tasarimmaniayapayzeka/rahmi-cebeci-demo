@@ -4,7 +4,8 @@ module.exports = {
   slug: 'uygulamalar/hekim-muayenesi',
   tip: 'tibbi',
   baslik: 'Hekim muayenesi: uygulama öncesi değerlendirme ve plan',
-  aciklama: 'Medikal estetik uygulamasından önce yapılan hekim muayenesi: genel sağlık öyküsü, ilaç sorgusu, yüz analizi, beklenti görüşmesi, onam ve yazılı plan.',
+  aciklama: 'Uygulamadan önce hekim muayenesi: sağlık öyküsü, ilaç sorgusu, yüz analizi, beklenti görüşmesi, onam ve yazılı plan. Her uygulama bu adımla başlar.',
+  odak: 'hekim muayenesi',   /* Yoast odak anahtar kelimesi */
 
   icerik: (r, ik) => `
 

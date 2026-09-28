@@ -4,7 +4,8 @@ module.exports = {
   slug: 'uygulamalar/fraksiyonel-lazer',
   tip: 'tibbi',
   baslik: 'Fraksiyonel lazer: akne izi, gözenek ve cilt dokusu',
-  aciklama: 'Fraksiyonel lazer deride kontrollü mikro alanlar oluşturur. Akne izi, gözenek ve ince çizgide kimlere uygun olduğu, iyileşme günleri ve güneş kısıtı.',
+  aciklama: 'Fraksiyonel lazer deride kontrollü mikroskobik alanlar oluşturur. Akne izi, gözenek ve ince çizgide kimlere uygun olduğu, iyileşme ve güneş kısıtı.',
+  odak: 'fraksiyonel lazer',   /* Yoast odak anahtar kelimesi */
 
   icerik: (r, ik) => `
 <!-- ═════ HERO ═════ -->

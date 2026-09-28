@@ -4,7 +4,8 @@ module.exports = {
   slug: 'cilt-sorunlari/goz-alti-koyulugu',
   tip: 'tibbi',
   baslik: 'Göz altı koyuluğu: beş olası kaynak ve muayenedeki ayrım',
-  aciklama: 'Koyu göz altının ardında pigment, seçilen damarlar, incelen deri, gözyaşı oluğu ya da sıvı birikimi olabilir. Muayenede hangisinin öne çıktığı nasıl anlaşılır?',
+  aciklama: 'Göz altı koyuluğu pigment, belirgin damar, incelen deri, gözyaşı oluğu ya da sıvı birikiminden doğabilir. Hangisi öne çıkıyor, muayenede anlaşılır.',
+  odak: 'göz altı koyuluğu',   /* Yoast odak anahtar kelimesi */
 
   icerik: (r, ik) => `
 

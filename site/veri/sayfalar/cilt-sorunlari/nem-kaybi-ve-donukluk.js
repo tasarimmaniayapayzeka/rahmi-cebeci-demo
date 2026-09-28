@@ -4,7 +4,8 @@ module.exports = {
   slug: 'cilt-sorunlari/nem-kaybi-ve-donukluk',
   tip: 'tibbi',
   baslik: 'Ciltte nem kaybı ve donukluk: koruyucu bariyer neden zayıflar?',
-  aciklama: 'Mat ve yorgun görünen ciltte sorun çoğu zaman zayıflamış koruyucu katmandır. Su kaybını kuruluktan ayıran işaretler, bariyeri bozan alışkanlıklar ve ilk adım.',
+  aciklama: 'Nem kaybı ile donuklukta sorun çoğu zaman zayıflamış koruyucu dış katmandır. Su kaybını kuruluktan ayıran belirtiler, bariyeri bozan alışkanlıklar.',
+  odak: 'nem kaybı',   /* Yoast odak anahtar kelimesi */
 
   icerik: (r, ik) => `
 

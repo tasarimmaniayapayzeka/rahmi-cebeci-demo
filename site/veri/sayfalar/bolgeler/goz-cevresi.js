@@ -4,7 +4,8 @@ module.exports = {
   slug: 'bolgeler/goz-cevresi',
   tip: 'tibbi',
   baslik: 'Göz çevresi planlaması: göz altı, kaz ayağı ve kaş',
-  aciklama: 'Göz altındaki koyuluk, kaz ayağı ve kaş konumu farklı nedenlerden doğar. Bakırköy muayenehanemizde önce nedeni ayırıyor, işlem kararını ardından veriyoruz.',
+  aciklama: 'Göz çevresinde koyuluk, kaz ayağı ve kaş konumu farklı nedenlerden doğar. Bakırköy muayenehanemizde önce nedeni ayırıyor, ardından karar veriyoruz.',
+  odak: 'göz çevresi',   /* Yoast odak anahtar kelimesi */
 
   icerik: (r, ik) => `
 

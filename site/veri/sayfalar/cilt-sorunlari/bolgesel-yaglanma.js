@@ -4,7 +4,8 @@ module.exports = {
   slug: 'cilt-sorunlari/bolgesel-yaglanma',
   tip: 'tibbi',
   baslik: 'Bölgesel yağlanma: inatçı yağ mı, ödem mi, gevşek deri mi?',
-  aciklama: 'Beslenme ve harekete rağmen küçülmeyen sınırlı yağ birikimi; ödem, gevşek deri ve duruştan ayrımı, değerlendirilen bölgeler ve uygulama yapılmayan durumlar.',
+  aciklama: 'Bölgesel yağlanma: beslenme ve harekete rağmen küçülmeyen sınırlı yağ birikimi. Ödem, gevşek deri ve duruştan ayrımı, uygulama yapılmayan durumlar.',
+  odak: 'bölgesel yağlanma',   /* Yoast odak anahtar kelimesi */
 
   icerik: (r, ik) => `
 

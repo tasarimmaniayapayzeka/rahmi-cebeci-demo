@@ -4,7 +4,8 @@ module.exports = {
   slug: 'hekim',
   tip: 'tibbi',
   baslik: `${S.hekim.tam}: eğitim, uzmanlık ve çalışma biçimi`,
-  aciklama: `${S.hekim.tam}: Hacettepe mezuniyeti, aile hekimliği uzmanlığı, rotasyonlar, görev yaptığı hastaneler ve Bakanlık onaylı medikal estetik sertifikası.`,
+  aciklama: 'Uzm. Dr. Rahmi Cebeci: Hacettepe Tıp mezuniyeti, aile hekimliği uzmanlığı, rotasyonlar, görev yerleri, Bakanlık onaylı medikal estetik sertifikası.',
+  odak: 'rahmi cebeci',   /* Yoast odak anahtar kelimesi */
 
   icerik: (r, ik) => `
 

@@ -4,7 +4,8 @@ module.exports = {
   slug: 'cilt-sorunlari/mimik-cizgileri-ve-kirisiklik',
   tip: 'tibbi',
   baslik: 'Mimik çizgileri ve kırışıklık: hareket mi, doku kaybı mı?',
-  aciklama: 'Kaş kaldırınca beliren çizgi ile yüz dinlenirken de duran kırışıklığın kaynağı farklıdır. Kas, deri ve hacim payı muayenede nasıl ayrılır, neler konuşulur?',
+  aciklama: 'Mimik çizgileri ile yüz dinlenirken de duran kırışıklığın kaynağı farklıdır. Kas, deri ve hacim payı muayenede nasıl ayırt edilir, neler konuşulur?',
+  odak: 'mimik çizgileri',   /* Yoast odak anahtar kelimesi */
 
   icerik: (r, ik) => `
 

@@ -4,7 +4,8 @@ module.exports = {
   slug: 'uygulamalar/sivi-yuz-germe',
   tip: 'tibbi',
   baslik: 'Sıvı yüz germe: çok noktalı dolgu ve destek planlaması',
-  aciklama: 'Sıvı yüz germe, yüzün birden çok bölgesine aynı planda dolgu ve destek uygulanmasıdır; cerrahinin yerini tutmaz. Kimlere uygun, riskleri neler?',
+  aciklama: 'Sıvı yüz germe, yüzün birden çok bölgesine aynı planda dolgu ile destek uygulanmasıdır; cerrahinin yerini tutmaz. Kimlere uygun, riskleri nelerdir?',
+  odak: 'sıvı yüz germe',   /* Yoast odak anahtar kelimesi */
 
   icerik: (r, ik) => `
 <!-- ═════ G HERO ═════ -->

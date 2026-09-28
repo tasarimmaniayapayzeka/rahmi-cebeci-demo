@@ -4,7 +4,8 @@ module.exports = {
   slug: 'uygulamalar/pico-lazer-dovme-silme',
   tip: 'tibbi',
   baslik: 'Pico lazer ile dövme silme: seans planı ve beklentiler',
-  aciklama: 'Pikosaniye lazerle dövme silmede yanıt mürekkebin rengine, derinliğine ve dövmenin türüne göre değişir. Seans aralığı, kimlere uygulanmadığı ve sonrası.',
+  aciklama: 'Pikosaniye lazer ile dövme silmede yanıt mürekkebin rengine, derinliğine ve dövmenin türüne göre değişiyor. Seans aralığı ve kimlere uygulanmadığı.',
+  odak: 'dövme silme',   /* Yoast odak anahtar kelimesi */
 
   icerik: (r, ik) => `
 <!-- HERO -->

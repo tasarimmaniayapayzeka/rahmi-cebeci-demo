@@ -4,7 +4,8 @@ module.exports = {
   slug: 'uygulamalar/mezoterapi',
   tip: 'tibbi',
   baslik: 'Mezoterapi: yüz, boyun, dekolte ve el için cilt içi uygulama',
-  aciklama: 'Cilt mezoterapisi nedir; yüz, boyun, dekolte ve el sırtında nasıl planlanır, kimlerde ertelenir, hangi istenmeyen etkiler görülebilir, seanslar nasıl ilerler?',
+  aciklama: 'Cilt mezoterapisi yüz, boyun, dekolte ve el sırtında nasıl planlanır, kimlerde ertelenir, hangi istenmeyen etkiler görülebilir, seans düzeni nasıl?',
+  odak: 'cilt mezoterapisi',   /* Yoast odak anahtar kelimesi */
 
   icerik: (r, ik) => `
 <!-- ═════ G HERO ═════ -->

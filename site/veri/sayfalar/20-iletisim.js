@@ -4,7 +4,8 @@ module.exports = {
   slug: 'iletisim',
   tip: 'bilgi',
   baslik: `İletişim ve randevu talebi — ${S.iletisim.semt} muayenehanesi`,
-  aciklama: `${S.hekim.tam} muayenehanesinin ${S.iletisim.semt} adresi, telefon ve WhatsApp hattı, çalışma saatleri, ulaşım bilgisi ve randevu talep formu.`,
+  aciklama: 'İletişim ve randevu: Bakırköy’deki muayenehane adresi, telefon, WhatsApp hattı, çalışma saatleri, ulaşım bilgisi ve randevu talep formu bu sayfada.',
+  odak: 'iletişim ve randevu',   /* Yoast odak anahtar kelimesi */
 
   icerik: (r, ik) => `
 

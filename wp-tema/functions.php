@@ -25,5 +25,7 @@ require RC_TEMA . '/inc/seo.php';        /* <head>: title, meta, canonical, og, 
 
 add_action('after_setup_theme', function () {
 	add_theme_support('html5', ['search-form', 'gallery', 'caption', 'style', 'script']);
+	/* Yoast etkinse <title>'ı o basar (inc/seo.php rc_head Yoast dalı); değilse tema kendi başlığını basar */
+	if (defined('WPSEO_VERSION')) add_theme_support('title-tag');
 	add_post_type_support('page', 'excerpt');
 });

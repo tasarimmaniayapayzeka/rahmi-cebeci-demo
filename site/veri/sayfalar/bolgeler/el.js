@@ -4,7 +4,8 @@ module.exports = {
   slug: 'bolgeler/el',
   tip: 'tibbi',
   baslik: 'Eller için medikal estetik: el sırtında hacim ve leke',
-  aciklama: 'Eller yaşı çoğu zaman yüzden önce belli eder: damarlar belirginleşir, güneş lekeleri çoğalır. Bakırköy muayenehanemizde hacim ve lekeyi ayrı ayrı planlıyoruz.',
+  aciklama: 'El estetiği: eller yaşı çoğu kez yüzden önce belli eder; damarlar belirginleşir, güneş lekeleri çoğalır. Bakırköy’de hacim ile leke ayrı planlanır.',
+  odak: 'el estetiği',   /* Yoast odak anahtar kelimesi */
 
   icerik: (r, ik) => `
 

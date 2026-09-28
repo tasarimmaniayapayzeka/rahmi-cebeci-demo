@@ -4,7 +4,8 @@ module.exports = {
   slug: 'yasal/acik-riza',
   tip: 'bilgi',
   baslik: 'Açık Rıza Metni — İletişim Formu ve Rızanın Geri Alınması',
-  aciklama: 'Sitedeki iletişim formuyla hangi bilgilerin açık rızanıza dayanılarak işlendiği, rızanın neleri kapsamadığı ve rızanızı her an nasıl geri alabileceğiniz.',
+  aciklama: 'Açık rıza metni: iletişim formuyla hangi bilgilerin rızanıza dayanılarak işlendiği, rızanın neleri kapsamadığı ve onu her an nasıl geri alacağınız.',
+  odak: 'açık rıza metni',   /* Yoast odak anahtar kelimesi */
 
   icerik: (r, ik) => `
 

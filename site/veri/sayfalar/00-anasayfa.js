@@ -13,7 +13,8 @@ module.exports = {
   tip: 'tibbi',
   js: ['anasayfa.js', 'kesif.js'],
   baslik: `${S.marka} — Medikal Estetik ve Dövme Silme, Bakırköy`,
-  aciklama: 'Bakırköy’de tek hekimli medikal estetik muayenehanesi. Pico lazerle dövme silme, dolgu, botulinum toksin ve cihaz uygulamaları muayeneyle planlanır.',
+  aciklama: 'Bakırköy medikal estetik muayenehanesi — pico lazerle dövme silme, dolgu, botulinum toksin ve cihaz uygulamaları tek hekimde, muayeneyle planlanır.',
+  odak: 'bakırköy medikal estetik',   /* Yoast odak anahtar kelimesi */
 
   icerik: (r, ik) => {
     /* hub'daki bölüm id'leri grup adının slug'ı — kartlar oraya iner */

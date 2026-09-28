@@ -4,7 +4,8 @@ module.exports = {
   slug: 'bolgeler/sacli-deri',
   tip: 'tibbi',
   baslik: 'Saç dökülmesi ve saçlı deri: nedeni bulmadan başlamıyoruz',
-  aciklama: 'Saçınız dökülüyorsa ilk soru “hangi uygulama?” değil “neden?” olmalı. Bakırköy muayenehanemizde öykü, muayene ve gerekirse tahlil olmadan seans planlamıyoruz.',
+  aciklama: 'Saçlı deri ve dökülme: ilk soru “hangi uygulama?” değil “neden?” olmalı. Bakırköy’de öykü, muayene ve gerekirse tahliller olmadan seans planlanmaz.',
+  odak: 'saçlı deri',   /* Yoast odak anahtar kelimesi */
 
   icerik: (r, ik) => `
 

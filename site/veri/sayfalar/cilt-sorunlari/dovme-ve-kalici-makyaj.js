@@ -4,7 +4,8 @@ module.exports = {
   slug: 'cilt-sorunlari/dovme-ve-kalici-makyaj',
   tip: 'tibbi',
   baslik: 'Dövme ve kalıcı makyaj pişmanlığı: silme süreci nasıl işler?',
-  aciklama: 'Dövme, kalıcı makyaj ve mikroblading silinmek istendiğinde rengin, derinliğin ve mürekkebin yanıtı nasıl etkilediği; koyulaşma riski ve test atışının yeri.',
+  aciklama: 'Dövme ve kalıcı makyaj silme: rengin, derinliğin ve mürekkebin yanıtı nasıl değiştirdiği, mikroblading, koyulaşma olasılığı ve test atışının önemi.',
+  odak: 'kalıcı makyaj silme',   /* Yoast odak anahtar kelimesi */
 
   icerik: (r, ik) => `
 

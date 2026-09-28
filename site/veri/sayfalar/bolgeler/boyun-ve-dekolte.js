@@ -4,7 +4,8 @@ module.exports = {
   slug: 'bolgeler/boyun-ve-dekolte',
   tip: 'tibbi',
   baslik: 'Boyun ve dekolte bakımı: yüzden ayrı bir plan gerektirir',
-  aciklama: 'Boyundaki halka çizgileri, dikey bantlar ve göğüs üstündeki güneş lekeleri yüzden erken belirir. Bakırköy muayenehanemizde bu bölge için ayrı bir plan yaparız.',
+  aciklama: 'Boyun ve dekolte: halka çizgileri, dikey bantlar ve güneş lekeleri yüzden erken belirir. Bakırköy muayenehanemizde bu bölge için ayrı plan kurulur.',
+  odak: 'boyun ve dekolte',   /* Yoast odak anahtar kelimesi */
 
   icerik: (r, ik) => `
 

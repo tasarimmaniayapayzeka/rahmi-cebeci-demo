@@ -4,7 +4,8 @@ module.exports = {
   slug: 'cilt-sorunlari/selulit',
   tip: 'tibbi',
   baslik: 'Selülit görünümü: nedir, neden olur, neler konuşulur?',
-  aciklama: 'Selülit bir hastalık değil, deri altındaki yapının yüzeye yansımasıdır. Evreleri, kiloyla ilişkisi, karıştırılan durumlar ve muayenede konuşulan seçenekler.',
+  aciklama: 'Selülit nedir? Bir hastalık değil, deri altındaki yapıların yüzeye yansımasıdır. Evreleri, kiloyla ilişkisi, karıştırılan durumlar ve konuşulanlar.',
+  odak: 'selülit nedir',   /* Yoast odak anahtar kelimesi */
 
   icerik: (r, ik) => `
 

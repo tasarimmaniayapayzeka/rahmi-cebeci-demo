@@ -4,7 +4,8 @@ module.exports = {
   slug: 'cilt-sorunlari/cilt-tonu-ve-leke',
   tip: 'tibbi',
   baslik: 'Cilt tonu ve leke: lekenin türü neden önce belirlenir?',
-  aciklama: 'Yüzdeki lekelerin kökeni farklıdır. Güneşle biriken leke, melazma ve sivilce sonrası kalan koyu renk birbirinden nasıl ayırt edilir, korunma neden şarttır?',
+  aciklama: 'Her cilt lekesi aynı kökenden gelmez. Güneş lekesi, melazma ve sivilce sonrası kalan koyuluk nasıl ayırt edilir, güneşten korunma neden gereklidir?',
+  odak: 'cilt lekesi',   /* Yoast odak anahtar kelimesi */
 
   icerik: (r, ik) => `
 

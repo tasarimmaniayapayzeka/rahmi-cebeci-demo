@@ -4,7 +4,8 @@ module.exports = {
   slug: 'uygulamalar/uygulama-sonrasi-takip',
   tip: 'tibbi',
   baslik: 'Uygulama sonrası kontrol: randevular ve iyileşmenin izlenmesi',
-  aciklama: 'Uygulama sonrası kontrolde iyileşmenin seyri izlenir, bakım düzeni gözden geçirilir ve gecikmiş bir bulgu erken yakalanır; kontrol, planın bir parçasıdır.',
+  aciklama: 'Uygulama sonrası kontrol: iyileşmenin seyri izlenir, bakım düzeni gözden geçirilir, gecikmiş bir bulgu erken yakalanır. Kontrol, planın parçasıdır.',
+  odak: 'uygulama sonrası kontrol',   /* Yoast odak anahtar kelimesi */
 
   icerik: (r, ik) => `
 <!-- ═════ HERO ═════ -->

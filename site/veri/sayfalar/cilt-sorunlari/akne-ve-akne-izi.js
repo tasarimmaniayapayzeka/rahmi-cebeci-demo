@@ -4,7 +4,8 @@ module.exports = {
   slug: 'cilt-sorunlari/akne-ve-akne-izi',
   tip: 'tibbi',
   baslik: 'Akne ve akne izi: aktif dönem ile iz dönemi neden ayrılır?',
-  aciklama: 'Akne sürerken ve geride iz kaldığında yapılacaklar ayrıdır. Lezyon ve iz türleri muayenede nasıl tanımlanır, hangi dönemde neler konuşulur, sıra neden bozulmaz?',
+  aciklama: 'Akne sürerken ve geride akne izi kaldığında yapılacaklar ayrıdır. Lezyon ve iz türleri muayenede nasıl ayırt edilir, hangi dönemde neler konuşulur?',
+  odak: 'akne izi',   /* Yoast odak anahtar kelimesi */
 
   icerik: (r, ik) => `
 

@@ -31,7 +31,33 @@ function rc_sayfa() {
 	return $s;
 }
 
+/* Yoast SEO etkin mi — etkinse başlık, açıklama, canonical, robots, og ve WebPage şeması Yoast'ındır */
+function rc_yoast() {
+	return defined('WPSEO_VERSION');
+}
+
+/* yazı tipi ön yüklemesi, simge, stiller — her iki durumda da tema basar */
+function rc_varlik_etiketleri() {
+	$r = rc_kok();
+	return '<link rel="preload" as="font" type="font/woff2" href="' . $r . 'varliklar/fonts/outfit-var-lat.woff2" crossorigin>
+<link rel="icon" href="' . $r . 'varliklar/favicon.svg" type="image/svg+xml">
+<link rel="preload" as="font" type="font/woff2" href="' . $r . 'varliklar/fonts/mulish-400-lat.woff2" crossorigin>
+<link rel="stylesheet" href="' . rc_varlik('varliklar/css/tokens.css') . '">
+<link rel="stylesheet" href="' . rc_varlik('varliklar/css/site.css') . '">
+<link rel="stylesheet" href="' . rc_varlik('varliklar/css/g.css') . '">
+<link rel="stylesheet" href="' . rc_varlik('varliklar/css/asistan.css') . '">
+';
+}
+
 function rc_head(array $s) {
+	if (rc_yoast()) {
+		/* Yoast etkin: <title> (title-tag desteğiyle), açıklama, canonical, robots, og ve sayfa şeması Yoast'tan gelir
+		   (tıbbi sayfada tür ve hekim onayı aşağıdaki süzgeçle eklenir). Tema yalnız Yoast'ın üretmediklerini basar. */
+		return '<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#FAF7F1">
+' . rc_varlik_etiketleri() . rc_sss_sema($s['post'] ? $s['post']->post_content : '');
+	}
 	$S = rc();
 	$r = rc_kok();
 	$url = rc_alan() . '/' . ($s['yol'] !== '' ? $s['yol'] . '/' : '');
@@ -64,16 +90,20 @@ function rc_head(array $s) {
 <meta property="og:title" content="' . $b . '">
 <meta property="og:description" content="' . $a . '">
 <meta property="og:url" content="' . $url . '">
-<link rel="preload" as="font" type="font/woff2" href="' . $r . 'varliklar/fonts/outfit-var-lat.woff2" crossorigin>
-<link rel="icon" href="' . $r . 'varliklar/favicon.svg" type="image/svg+xml">
-<link rel="preload" as="font" type="font/woff2" href="' . $r . 'varliklar/fonts/mulish-400-lat.woff2" crossorigin>
-<link rel="stylesheet" href="' . rc_varlik('varliklar/css/tokens.css') . '">
-<link rel="stylesheet" href="' . rc_varlik('varliklar/css/site.css') . '">
-<link rel="stylesheet" href="' . rc_varlik('varliklar/css/g.css') . '">
-<link rel="stylesheet" href="' . rc_varlik('varliklar/css/asistan.css') . '">
-<script type="application/ld+json">' . wp_json_encode($ld, JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES) . '</script>
+' . rc_varlik_etiketleri() . '<script type="application/ld+json">' . wp_json_encode($ld, JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES) . '</script>
 ' . rc_sss_sema($s['post'] ? $s['post']->post_content : '');
 }
+
+/* Yoast şeması: tıbbi sayfada WebPage → MedicalWebPage + hekim onayı (Yoast'ın bilmediği; statik sürümdeki alanlar) */
+add_filter('wpseo_schema_webpage', function ($d) {
+	$s = rc_sayfa();
+	if ($s['tip'] !== 'tibbi' || !is_array($d)) return $d;
+	$S = rc();
+	$d['@type'] = ['WebPage', 'MedicalWebPage'];
+	$d['reviewedBy'] = ['@type' => 'Physician', 'name' => $S['hekim']['tam'], 'medicalSpecialty' => 'PrimaryCare'];
+	$d['lastReviewed'] = $S['sonInceleme'];
+	return $d;
+});
 
 /* SSS şeması (FAQPage): soru terminalindeki <button class="g-ssoru">Soru</button> + <div class="g-syanit">Cevap</div>
    çiftlerinden — panelde bir cevap değişince şema da kendiliğinden değişir. site/render.js sssSema() ile AYNI kural. */

@@ -5,7 +5,8 @@ module.exports = {
   tip: 'tibbi',
   js: 'hazirlik.js',
   baslik: 'Görüşmeye Hazırlık Notları — 12 Maddelik Kontrol',
-  aciklama: 'Muayenede hekiminize söylemeniz gereken 12 başlığı sırayla hatırlatan liste. Cevaplar yalnız cihazınızda işlenir; bize gönderilmez, hiçbir yerde saklanmaz.',
+  aciklama: 'Hazırlık listesi: muayenede hekiminize söylemeniz gereken on iki başlığı sırayla hatırlatır. Cevaplar yalnız cihazınızda işlenir, bize gönderilmez.',
+  odak: 'hazırlık listesi',   /* Yoast odak anahtar kelimesi */
 
   icerik: (r, ik) => `
 

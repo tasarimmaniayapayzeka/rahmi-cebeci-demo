@@ -29,7 +29,8 @@ module.exports = {
   js: 'kesif.js',
   tip: 'tibbi',
   baslik: 'Uygulamalar: Bakırköy muayenehanesinde planlanan işlemler',
-  aciklama: 'Bakırköy muayenehanemizde yapılan medikal estetik uygulamaları: enjeksiyon, cihaz ve lazer, saç ve saçlı deri, değerlendirme ve takip başlıkları tek sayfada.',
+  aciklama: 'Bakırköy’de medikal estetik uygulamaları: enjeksiyon, cihaz ile lazer, saç ve saçlı deri, değerlendirme ile takip; her biri muayeneyle planlanıyor.',
+  odak: 'medikal estetik uygulamaları',   /* Yoast odak anahtar kelimesi */
 
   icerik: (r, ik) => `
 

@@ -4,7 +4,8 @@ module.exports = {
   slug: 'bolgeler/yuz',
   tip: 'tibbi',
   baslik: 'Yüz bölgesi: üst, orta ve alt yüzü birlikte planlamak',
-  aciklama: 'Alın, elmacık ve çene hattı birbirine yaslanır. Yüz planı tek bir çizgiye göre değil; hacim, kas hareketi ve deri kalitesi birlikte okunarak kurulur.',
+  aciklama: 'Yüz estetiği tek bir çizgiye bakılarak planlanmaz: alın, elmacık ve çene hattı birbirine yaslanır. Hacim, kas ve deri kalitesi birlikte ele alınır.',
+  odak: 'yüz estetiği',   /* Yoast odak anahtar kelimesi */
 
   icerik: (r, ik) => `
 

@@ -4,7 +4,8 @@ module.exports = {
   slug: 'sikca-sorulan-sorular',
   tip: 'tibbi',
   baslik: 'Soru ve Yanıtlar — Randevu, Dövme Silme ve Süreç',
-  aciklama: 'Bakırköy’deki muayenehaneye ulaşım, randevu, görüşme öncesi hazırlık, pico lazerle dövme silme, uygulama sonrası ve kapsam hakkında sık sorulan sorular.',
+  aciklama: 'Sık sorulan sorular: Bakırköy’deki muayenehaneye ulaşım, randevu, görüşmeye hazırlık, pico lazerle dövme silme, uygulama sonrası ve kapsam üzerine.',
+  odak: 'sık sorulan sorular',   /* Yoast odak anahtar kelimesi */
 
   icerik: (r, ik) => `
 

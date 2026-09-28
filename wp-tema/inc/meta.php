@@ -28,12 +28,19 @@ function rc_meta_kutu($post) {
 		.rc-meta input[type=text], .rc-meta textarea { width: 100%; } .rc-meta small { color: #646970; }
 	</style>
 	<div class="rc-meta">
+		<?php if (defined('WPSEO_VERSION')) : ?>
+		<p><small><b>Arama motoru başlığı, açıklaması ve odak anahtar kelimesi Yoast SEO kutusunda</b> (bu sayfanın altında).
+			Açıklamalar 147 karakter olarak yazıldı.</small></p>
+		<input type="hidden" name="rc_baslik" value="<?php echo esc_attr($m('_rc_baslik')); ?>">
+		<input type="hidden" name="rc_aciklama" value="<?php echo esc_attr($m('_rc_aciklama')); ?>">
+		<?php else : ?>
 		<p><label><b>Arama motoru başlığı</b>
 			<input type="text" name="rc_baslik" maxlength="120" value="<?php echo esc_attr($m('_rc_baslik')); ?>"></label>
 			<small>Google'da ve tarayıcı sekmesinde görünen başlık. Boş kalırsa sayfa adı kullanılır. Sonuna "| <?php echo esc_html(rc('marka')); ?>" kendiliğinden eklenir.</small></p>
 		<p><label><b>Arama motoru açıklaması</b>
 			<textarea name="rc_aciklama" rows="3" maxlength="320"><?php echo esc_textarea($m('_rc_aciklama')); ?></textarea></label>
 			<small>Google sonuçlarında başlığın altındaki 1–2 cümle (150–160 karakter iyidir).</small></p>
+		<?php endif; ?>
 		<p><label><b>Sayfa türü</b>
 			<select name="rc_tip">
 				<option value="bilgi" <?php selected($m('_rc_tip'), 'bilgi'); ?>>Genel bilgi sayfası</option>

@@ -4,7 +4,8 @@ module.exports = {
   slug: 'uygulamalar/hifu-ameliyatsiz-yuz-germe',
   tip: 'tibbi',
   baslik: 'HIFU ile ameliyatsız yüz germe: ne yapar, ne yapamaz?',
-  aciklama: 'Halk arasında ameliyatsız yüz germe denen HIFU, odaklanmış ultrasonla derin katmanlara ısı verir. Kimlere uygun olduğu, cerrahiden farkı ve sonrası.',
+  aciklama: 'Ameliyatsız yüz germe olarak bilinen HIFU, odaklanmış ultrasonla derindeki katmanlara ısı verir. Kimlere uygun olduğu, cerrahiden farkı ve sonrası.',
+  odak: 'ameliyatsız yüz germe',   /* Yoast odak anahtar kelimesi */
 
   icerik: (r, ik) => `
 <!-- HERO -->

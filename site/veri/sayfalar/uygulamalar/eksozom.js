@@ -4,7 +4,8 @@ module.exports = {
   slug: 'uygulamalar/eksozom',
   tip: 'tibbi',
   baslik: 'Eksozom uygulaması: cilt ve saçlı deride kanıt ve sınırlar',
-  aciklama: 'Eksozomlar, hücrelerin birbirine haber taşıyan mikroskobik kesecikleridir. Ülkemizde cihaz eşliğinde yüzeye uygulanır; ruhsat durumu muayenede konuşulur.',
+  aciklama: 'Eksozom uygulaması: hücrelerin haber taşıyan mikroskobik keseciklerinin bir cihaz eşliğinde deriye verilmesi. Ruhsat durumu da muayenede konuşulur.',
+  odak: 'eksozom uygulaması',   /* Yoast odak anahtar kelimesi */
 
   icerik: (r, ik) => `
 <!-- ═════ HERO ═════ -->

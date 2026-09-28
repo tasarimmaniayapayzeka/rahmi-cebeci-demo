@@ -4,7 +4,8 @@ module.exports = {
   slug: 'uygulamalar/bolgesel-lipoliz',
   tip: 'tibbi',
   baslik: 'Bölgesel lipoliz: gıdı, karın, bel ve bacak iç yüzü',
-  aciklama: 'Bölgesel lipoliz gıdı, karın, bel ve bacak iç yüzündeki sınırlı yağ birikimleri için değerlendirilir. Zayıflama yöntemi değildir; karar muayenede verilir.',
+  aciklama: 'Bölgesel lipoliz gıdı, karın, bel ve bacak iç yüzündeki sınırlı yağ birikimleri için değerlendirilir. Zayıflatma yöntemi değildir, karar muayenede.',
+  odak: 'bölgesel lipoliz',   /* Yoast odak anahtar kelimesi */
 
   icerik: (r, ik) => `
 <!-- ═════ HERO ═════ -->

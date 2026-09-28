@@ -4,7 +4,8 @@ module.exports = {
   slug: 'bilgi',
   tip: 'bilgi',
   baslik: 'Okuma Köşesi — Yayın İlkeleri ve Hazırlanan Başlıklar',
-  aciklama: 'Dövme silme, enjeksiyon, lazer, vücut ve saç uygulamaları üzerine hekim denetimli yazıların yayımlanacağı bölüm; yayın ilkeleri ve hazırlanan başlıklar.',
+  aciklama: 'Okuma köşesi: dövme silme, enjeksiyon, lazer, vücut, saç uygulamaları üzerine hekim denetiminde hazırlanan yazılar, yayın ilkeleri, yeni başlıklar.',
+  odak: 'okuma köşesi',   /* Yoast odak anahtar kelimesi */
 
   icerik: (r, ik) => `
 

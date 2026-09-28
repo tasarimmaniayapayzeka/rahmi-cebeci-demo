@@ -4,7 +4,8 @@ module.exports = {
   slug: 'uygulamalar/sac-mezoterapisi',
   tip: 'tibbi',
   baslik: 'Saç mezoterapisi: nedir, kimlere uygun, sınırları neler?',
-  aciklama: 'Saç mezoterapisinde saçlı deriye ne verilir, dökülmenin nedeni neden önce araştırılır, seans aralığı nasıl kurulur ve kimlerde uygulanmaz; sade bir anlatım.',
+  aciklama: 'Saç mezoterapisinde, saçlı deriye neler verilir, dökülmenin asıl nedeni neden önce araştırılır, seans aralığı nasıl kurulur ve kimlerde uygulanmaz?',
+  odak: 'saç mezoterapisi',   /* Yoast odak anahtar kelimesi */
 
   icerik: (r, ik) => `
 <!-- ═════ HERO ═════ -->

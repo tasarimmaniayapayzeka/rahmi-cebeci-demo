@@ -3,7 +3,8 @@ const S = require('../../site');
 module.exports = {
   slug: 'yasal/cerez-politikasi',
   tip: 'bilgi',
-  aciklama: 'Sitenin sayfaları gezinirken çerez, yerel depolama, reklam pikseli ve analitik araç kullanmaz. Gömülü Google haritası ve WhatsApp bağlantısı üçüncü taraf olarak açıklanır.',
+  aciklama: 'Çerez politikası: sitede reklam pikseli ya da dışarıdan analitik araç kullanılmaz. Gömülü Google haritası ile WhatsApp bağlantısı ayrıca açıklanır.',
+  odak: 'çerez politikası',   /* Yoast odak anahtar kelimesi */
   baslik: 'Çerez Politikası — Gezinirken Çerez ve Yerel Depolama Kullanılmaz',
 
   icerik: (r, ik) => `

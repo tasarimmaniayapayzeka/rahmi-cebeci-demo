@@ -4,7 +4,8 @@ module.exports = {
   slug: 'uygulamalar/prp',
   tip: 'tibbi',
   baslik: 'PRP (trombositten zengin plazma): yüz ve cilt uygulaması',
-  aciklama: 'Yüz ve ciltte PRP: kendi kanınızdan aynı randevuda hazırlanan plazma ne hedefler, kimlere uygulanmaz, seans planı muayenede nasıl kurulur.',
+  aciklama: 'Yüz ve ciltte PRP uygulaması: kendi kanınızdan aynı randevuda hazırlanan plazma ne hedefler, kimlere yapılmaz, seans planı muayenede nasıl kurulur?',
+  odak: 'prp uygulaması',   /* Yoast odak anahtar kelimesi */
 
   icerik: (r, ik) => `
 <!-- ═════ HERO ═════ -->

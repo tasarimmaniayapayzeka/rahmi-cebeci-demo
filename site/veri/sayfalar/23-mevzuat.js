@@ -4,7 +4,8 @@ module.exports = {
   slug: 'mevzuat',
   tip: 'bilgi',
   baslik: 'Bağlı Olduğumuz Mevzuat — Sitede Neyi Neden Yayımlamıyoruz',
-  aciklama: 'Sitenin dayandığı yönetmelikler ve kanun. Ücret, hasta yorumu, öncesi–sonrası görseli ve abartılı ifadelere neden yer vermediğimizi açıklıyoruz.',
+  aciklama: 'Sağlıkta tanıtım yönetmeliği ve ilgili kanun: sitede ücret, hasta yorumu, öncesi–sonrası görsel veya abartılı ifade neden yer almıyor, açıklıyoruz.',
+  odak: 'tanıtım yönetmeliği',   /* Yoast odak anahtar kelimesi */
 
   icerik: (r, ik) => `
 

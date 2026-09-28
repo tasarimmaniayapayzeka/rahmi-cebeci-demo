@@ -4,7 +4,8 @@ module.exports = {
   slug: 'bolgeler/vucut',
   tip: 'tibbi',
   baslik: 'Vücut: karın, bel, kol ve bacakta lipoliz, selülit, dövme',
-  aciklama: 'Karın, bel, kol ve bacakta bölgesel yağlanma, selülit görünümü ve dövme silme için değerlendirme. Plan kilo verme vaadi olmadan, bölgeye ve dokuya göre kurulur.',
+  aciklama: 'Vücut estetiği: karın, bel, kol ve bacaklarda bölgesel yağlanma, selülit görünümü ve dövme silme için değerlendirme. Plan kilo verme vaadi içermez.',
+  odak: 'vücut estetiği',   /* Yoast odak anahtar kelimesi */
 
   icerik: (r, ik) => `
 

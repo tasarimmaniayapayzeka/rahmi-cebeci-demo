@@ -4,7 +4,8 @@ module.exports = {
   slug: 'cilt-sorunlari/hacim-kaybi-ve-sarkma',
   tip: 'tibbi',
   baslik: 'Hacim kaybı ve sarkma: yüzün hangi katmanı değişiyor?',
-  aciklama: 'Yorgun ve düşmüş görünen yüzde kemik, yağ bölmeleri, bağlar ve deri birlikte değişir. Destek ile sıkılaştırma arasındaki seçim muayenede nasıl yapılır?',
+  aciklama: 'Hacim kaybı ve sarkmada kemik, yağ bölmeleri, bağlar ve deri birlikte değişir. Yorgun ve düşük görünen yüzde destek ile sıkılaştırma nasıl seçilir?',
+  odak: 'hacim kaybı',   /* Yoast odak anahtar kelimesi */
 
   icerik: (r, ik) => `
 

@@ -4,7 +4,8 @@ module.exports = {
   slug: 'bolgeler/dudak',
   tip: 'tibbi',
   baslik: 'Dudak planlaması: oranı koruyan, ölçülü bir yaklaşım',
-  aciklama: 'Dudakta ince görünüm, silik kenar ve kuruluk farklı sorunlardır; hepsinin yanıtı hacim değildir. Bakırköy muayenehanemizde plan yüzünüzün oranına göre yapılır.',
+  aciklama: 'Dudak dolgusu her isteğin tek yanıtı değildir: ince görünüm, silik kenar ve kuruluk ayrı sorunlardır. Bakırköy’de plan, yüz oranınıza göre kurulur.',
+  odak: 'dudak dolgusu',   /* Yoast odak anahtar kelimesi */
 
   icerik: (r, ik) => `
 

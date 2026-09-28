@@ -4,7 +4,8 @@ module.exports = {
   slug: 'yasal/hasta-haklari',
   tip: 'bilgi',
   baslik: 'Hasta Hakları — Bilgilendirme, Onam, Mahremiyet ve Başvuru',
-  aciklama: 'Bilgi alma, onam, mahremiyet ve hekim seçimi gibi haklarınızın Hasta Hakları Yönetmeliği’ndeki karşılığı ve şikâyet için başvurabileceğiniz resmî kanallar.',
+  aciklama: 'Hasta hakları: bilgi alma, onam, mahremiyet ve hekim seçimi gibi haklarınızın yönetmelikteki karşılığı ve şikâyet için başvurulacak resmî kanallar.',
+  odak: 'hasta hakları',   /* Yoast odak anahtar kelimesi */
 
   icerik: (r, ik) => `
 

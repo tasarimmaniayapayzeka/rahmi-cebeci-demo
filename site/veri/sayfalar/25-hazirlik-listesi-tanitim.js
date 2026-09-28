@@ -4,7 +4,8 @@ module.exports = {
   slug: 'hazirlik-listesi',
   tip: 'bilgi',
   baslik: 'Görüşmeye Hazırlık Notları — Amacı, Sınırları, Gizliliği',
-  aciklama: 'Muayenede söylemeniz gereken ilaç, öykü ve önceki uygulama bilgilerini hatırlatan kısa liste. Tanı koymaz, işlem önermez; cevaplar cihazınızda kalır.',
+  aciklama: 'Görüşmeye hazırlık: muayenede söylemeniz gereken ilaç, öykü ve önceki uygulama bilgilerini hatırlatan liste. Tanı koymaz; yanıtlarınız sizde kalır.',
+  odak: 'görüşmeye hazırlık',   /* Yoast odak anahtar kelimesi */
 
   icerik: (r, ik) => `
 

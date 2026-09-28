@@ -4,7 +4,8 @@ module.exports = {
   slug: 'uygulamalar/biyostimulan-uygulamalar',
   tip: 'tibbi',
   baslik: 'Biyostimülan uygulamalar: kolajen uyarıcı enjeksiyonlar',
-  aciklama: 'Kalsiyum hidroksiapatit ve poli-L-laktik asit sınıfı kolajen uyarıcılar: etki neden aylara yayılır, nodül riski nedir, hangi bölgelere uygulanmaz.',
+  aciklama: 'Biyostimülan uygulama: kalsiyum hidroksiapatit ve poli-L-laktik asit gibi kolajen uyarıcılar. Etkisi neden aylara yayılır, nodül riski ne kadardır?',
+  odak: 'biyostimülan uygulama',   /* Yoast odak anahtar kelimesi */
 
   icerik: (r, ik) => `
 <!-- ═════ HERO ═════ -->

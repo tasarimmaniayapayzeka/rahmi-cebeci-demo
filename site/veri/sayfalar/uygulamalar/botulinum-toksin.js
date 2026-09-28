@@ -4,7 +4,8 @@ module.exports = {
   slug: 'uygulamalar/botulinum-toksin',
   tip: 'tibbi',
   baslik: 'Botulinum toksin: mimik çizgisi, çiğneme kası ve terleme',
-  aciklama: 'Botulinum toksin hangi kas ve terleme şikâyetlerinde düşünülür, nasıl planlanır, kimlerde ertelenir, hangi yan etkiler görülebilir? Bakırköy muayenehanesi.',
+  aciklama: 'Botulinum toksin hangi kas ve terleme şikâyetinde düşünülür, nasıl planlanır, kimlerde ertelenir, hangi yan etkiler ortaya çıkabilir? Önce muayene.',
+  odak: 'botulinum toksin',   /* Yoast odak anahtar kelimesi */
 
   icerik: (r, ik) => `
 <!-- ═════ G HERO ═════ -->

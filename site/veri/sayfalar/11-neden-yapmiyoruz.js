@@ -4,7 +4,8 @@ module.exports = {
   slug: 'yaklasimimiz/neden-bazi-islemleri-yapmiyoruz',
   tip: 'tibbi',
   baslik: 'Kapsamımızın sınırı: burada yapılmayan işlemler ve nedenleri',
-  aciklama: 'Ameliyat gerektiren girişimler, saç ekimi, lazer epilasyon ve sertifika dışı işlemler neden yapılmıyor; talebiniz kapsam dışındaysa izlenen yol.',
+  aciklama: 'Yapılmayan işlemler: ameliyatlı girişimler, saç ekimi, lazer epilasyon, sertifika dışı işlemler neden yapılmaz; talep kapsam dışındaysa ne yapılır.',
+  odak: 'yapılmayan işlemler',   /* Yoast odak anahtar kelimesi */
 
   icerik: (r, ik) => `
 

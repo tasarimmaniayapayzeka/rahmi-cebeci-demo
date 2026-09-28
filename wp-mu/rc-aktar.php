@@ -12,13 +12,21 @@ defined('ABSPATH') || exit;
 /* WordPress sayı olan sayfa adını (404) sayfalamayla çakıştığı için kabul etmez → 404 içeriği bu gizli sayfada durur */
 const RC_404_AD = 'sayfa-bulunamadi';
 
+/* sayfa ayarları + Yoast alanlarının özeti (panelde elle değiştirilmiş mi anlamak için) */
+function rc_meta_ozeti($id) {
+	$m = fn($k) => get_post_meta($id, $k, true);
+	return md5((string) wp_json_encode([$m('_rc_baslik'), $m('_rc_aciklama'), $m('_rc_tip'), (int) $m('_rc_noindex'),
+		array_values((array) ($m('_rc_js') ?: [])), $m('_yoast_wpseo_focuskw'), $m('_yoast_wpseo_metadesc'), $m('_yoast_wpseo_title'),
+		$m('_yoast_wpseo_meta-robots-noindex')]));
+}
+
 function rc_aktar(array $o = []) {
 	$ustune = !empty($o['ustune_yaz']);
 	$v = json_decode((string) file_get_contents(__DIR__ . '/rc-icerik.json'), true);
 	if (!$v || empty($v['sayfalar'])) return ['hata' => ['rc-icerik.json okunamadı']];
 
 	kses_remove_filters();   /* SVG, data-*, JSON veri blokları kırpılmasın (oturumsuz komut satırında kses açık olurdu) */
-	$r = ['yeni' => [], 'guncellenen' => [], 'ayni' => 0, 'elle' => [], 'fark' => [], 'hata' => []];
+	$r = ['yeni' => [], 'guncellenen' => [], 'ayni' => 0, 'elle' => [], 'fark' => [], 'hata' => [], 'meta_elle' => [], 'meta_yazilan' => []];
 
 	/* sayfası olmayan ara klasörler: taslak ebeveyn (adres üretmez, alt sayfaların yolu doğru olur) */
 	foreach ($v['eksikEbeveyn'] as $e) {
@@ -63,11 +71,26 @@ function rc_aktar(array $o = []) {
 		}
 		if (is_wp_error($id)) { $r['hata'][] = "$yol: " . $id->get_error_message(); continue; }
 
-		update_post_meta($id, '_rc_baslik', $s['baslik']);
-		update_post_meta($id, '_rc_aciklama', $s['aciklama']);
-		update_post_meta($id, '_rc_tip', $s['tip'] === 'tibbi' ? 'tibbi' : 'bilgi');
-		update_post_meta($id, '_rc_noindex', $s['noindex'] ? 1 : 0);
-		update_post_meta($id, '_rc_js', array_values($s['js']));
+		/* sayfa ayarları + Yoast alanları. Panelde (Yoast kutusu ya da Sayfa ayarları) değiştirildiyse dokunulmaz:
+		   son aktarımdaki değerlerin özeti tutulur, şimdiki değerler ondan farklıysa atlanır ("meta_elle"). */
+		$son = get_post_meta($id, '_rc_aktarim_meta_ozet', true);
+		if (!$ustune && $son && $son !== rc_meta_ozeti($id)) {
+			$r['meta_elle'][] = $yol;
+		} else {
+			update_post_meta($id, '_rc_baslik', $s['baslik']);
+			update_post_meta($id, '_rc_aciklama', $s['aciklama']);
+			update_post_meta($id, '_rc_tip', $s['tip'] === 'tibbi' ? 'tibbi' : 'bilgi');
+			update_post_meta($id, '_rc_noindex', $s['noindex'] ? 1 : 0);
+			update_post_meta($id, '_rc_js', array_values($s['js']));
+			update_post_meta($id, '_yoast_wpseo_metadesc', $s['aciklama']);
+			if (($s['odak'] ?? '') !== '') update_post_meta($id, '_yoast_wpseo_focuskw', $s['odak']);
+			/* ana sayfa başlığı sonuna site adı eklenmez (statik sürümle aynı) */
+			if ($s['yol'] === '') update_post_meta($id, '_yoast_wpseo_title', '%%title%%');
+			if ($s['noindex']) update_post_meta($id, '_yoast_wpseo_meta-robots-noindex', '1');
+			else delete_post_meta($id, '_yoast_wpseo_meta-robots-noindex');
+			update_post_meta($id, '_rc_aktarim_meta_ozet', rc_meta_ozeti($id));
+			$r['meta_yazilan'][] = $id;
+		}
 		/* kaydedilen içerik kaynağın birebir aynısı mı (WordPress kayıtta bir şey değiştirdiyse raporla) */
 		$kayitli = get_post_field('post_content', $id, 'raw');
 		if ($kayitli !== $s['icerik']) $r['fark'][] = $yol;
@@ -76,6 +99,10 @@ function rc_aktar(array $o = []) {
 
 	$on = get_page_by_path('anasayfa', OBJECT, 'page');
 	if ($on) { update_option('show_on_front', 'page'); update_option('page_on_front', $on->ID); }
+	/* Yoast ön yüzde meta alanlarını değil kendi dizinini (indexables) okur; dizin yazının kaydedilmesiyle tazelenir.
+	   İçerik değişmeden kaydetmek yeni sürüm (revision) üretmez. */
+	if (defined('WPSEO_VERSION')) foreach (array_unique($r['meta_yazilan']) as $id) wp_update_post(['ID' => $id]);
+	$r['meta_yazilan'] = count(array_unique($r['meta_yazilan']));
 	kses_init();
 	return $r;
 }
@@ -90,6 +117,12 @@ function rc_ilk_kurulum(bool $ustune) {
 	if (!get_option('rc_ilk_kurulum_tarihi')) {
 		if (get_option('blog_public')) { update_option('blog_public', '0'); $r['adimlar'][] = 'Arama motorlarına kapalı (açılış onayla)'; }
 		update_option('rc_ilk_kurulum_tarihi', current_time('mysql'), false);
+	}
+	/* Yoast: başlık ayracı "|" (statik sürümdeki "Başlık | Dr. Rahmi Cebeci") — bir kez; sonra Yoast ayarlarından değişirse dokunulmaz */
+	if (defined('WPSEO_VERSION') && class_exists('WPSEO_Options') && !get_option('rc_yoast_ayar_tarihi')) {
+		WPSEO_Options::set('separator', 'sc-pipe');
+		update_option('rc_yoast_ayar_tarihi', current_time('mysql'), false);
+		$r['adimlar'][] = 'Yoast başlık ayracı: |';
 	}
 	if (get_stylesheet() !== 'rahmi-cebeci' && wp_get_theme('rahmi-cebeci')->exists()) {
 		switch_theme('rahmi-cebeci');
@@ -167,7 +200,20 @@ function rc_durum() {
 		'tema' => get_stylesheet(), 'kalici_baglanti' => get_option('permalink_structure'),
 		'arama_motorlari' => get_option('blog_public') ? 'acik' : 'kapali', 'on_sayfa' => (int) get_option('page_on_front'),
 		'wp' => get_bloginfo('version'), 'php' => PHP_VERSION, 'mail_kapali' => in_array('mail', array_map('trim', explode(',', (string) ini_get('disable_functions'))), true),
-		'smtp_yerel' => rc_smtp_yoklama()];
+		'smtp_yerel' => rc_smtp_yoklama(), 'yoast' => rc_yoast_durum()];
+}
+
+/* Yoast alanları: kaç sayfada odak anahtar kelime ve meta açıklama var, açıklama uzunlukları */
+function rc_yoast_durum() {
+	$odak = 0; $aciklama = 0; $uzunluk = [];
+	foreach (get_posts(['post_type' => 'page', 'post_status' => ['publish'], 'numberposts' => -1, 'fields' => 'ids']) as $id) {
+		if (get_post_meta($id, '_yoast_wpseo_focuskw', true) !== '') $odak++;
+		$a = (string) get_post_meta($id, '_yoast_wpseo_metadesc', true);
+		if ($a !== '') { $aciklama++; $n = mb_strlen($a); $uzunluk[$n] = ($uzunluk[$n] ?? 0) + 1; }
+	}
+	ksort($uzunluk);
+	return ['etkin' => defined('WPSEO_VERSION') ? WPSEO_VERSION : false, 'odak' => $odak, 'aciklama' => $aciklama, 'uzunluk' => $uzunluk,
+		'ayrac' => class_exists('WPSEO_Options') ? WPSEO_Options::get('separator') : null];
 }
 
 /* yerel posta servisi (127.0.0.1:25) karşılık veriyor mu — yalnız karşılama satırı okunur, e-posta GÖNDERİLMEZ */
@@ -190,8 +236,9 @@ add_action('rest_api_init', function () {
 if (defined('WP_CLI') && WP_CLI) {
 	WP_CLI::add_command('rc aktar', function ($args, $assoc) {
 		$r = rc_aktar(['ustune_yaz' => isset($assoc['ustune-yaz'])]);
-		WP_CLI::log(sprintf('yeni %d · güncellenen %d · aynı %d · elle düzenlenmiş (atlandı) %d · kayıtta değişen %d · hata %d',
-			count($r['yeni'] ?? []), count($r['guncellenen'] ?? []), $r['ayni'] ?? 0, count($r['elle'] ?? []), count($r['fark'] ?? []), count($r['hata'] ?? [])));
-		foreach (['elle', 'fark', 'hata'] as $k) if (!empty($r[$k])) WP_CLI::log("$k: " . implode(', ', $r[$k]));
+		WP_CLI::log(sprintf('yeni %d · güncellenen %d · aynı %d · elle düzenlenmiş (atlandı) %d · kayıtta değişen %d · hata %d · meta yazılan %d · meta elle (atlandı) %d',
+			count($r['yeni'] ?? []), count($r['guncellenen'] ?? []), $r['ayni'] ?? 0, count($r['elle'] ?? []), count($r['fark'] ?? []), count($r['hata'] ?? []),
+			(int) ($r['meta_yazilan'] ?? 0), count($r['meta_elle'] ?? [])));
+		foreach (['elle', 'fark', 'hata', 'meta_elle'] as $k) if (!empty($r[$k])) WP_CLI::log("$k: " . implode(', ', $r[$k]));
 	});
 }

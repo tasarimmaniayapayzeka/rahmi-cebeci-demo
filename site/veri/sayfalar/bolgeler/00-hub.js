@@ -25,7 +25,8 @@ module.exports = {
   js: 'kesif.js',
   tip: 'tibbi',
   baslik: 'Bölgeler: yüzden vücuda her bölge kendi kurallarıyla planlanır',
-  aciklama: 'Yüz, göz çevresi, dudak, çene hattı, boyun, el, saçlı deri ve vücut için ayrı sayfalar: deri ve hareket farklı olduğundan her bölgenin planı da ayrıdır.',
+  aciklama: 'Medikal estetik bölgeleri: yüz, göz çevresi, dudak, çene hattı, boyun, el, saçlı deri ile vücut. Deri ve hareket farklı olduğundan planlar ayrıdır.',
+  odak: 'medikal estetik bölgeleri',   /* Yoast odak anahtar kelimesi */
 
   icerik: (r, ik) => `
 

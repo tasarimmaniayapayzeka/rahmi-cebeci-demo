@@ -4,7 +4,8 @@ module.exports = {
   slug: 'uygulamalar/ignesiz-mezoterapi',
   tip: 'tibbi',
   baslik: 'İğnesiz mezoterapi: elektroporasyon nasıl çalışır?',
-  aciklama: 'İğnesiz mezoterapide solüsyon, elektrik darbeleriyle kısa süre aralanan deri bariyerinden iletilir. İğneli yöntemden farkı, kimlerde yapılmadığı ve kür düzeni.',
+  aciklama: 'İğnesiz mezoterapide solüsyon, elektrik darbeleriyle kısa süre aralanan deri bariyerinden iletilir. İğneli yöntemden farkı ve kimlerde yapılmadığı.',
+  odak: 'iğnesiz mezoterapi',   /* Yoast odak anahtar kelimesi */
 
   icerik: (r, ik) => `
 <!-- HERO -->

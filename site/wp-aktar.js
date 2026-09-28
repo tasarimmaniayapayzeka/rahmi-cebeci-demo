@@ -46,6 +46,7 @@ const disa = sayfalar.map((s, i) => ({
   ad: s.slug === '' ? 'anasayfa' : s.slug.split('/').pop(),
   baslik: s.baslik,
   aciklama: s.aciklama,
+  odak: s.odak || '',   /* Yoast odak anahtar kelimesi */
   tip: s.tip,
   noindex: !!s.noindex,
   js: [].concat(s.js || []),

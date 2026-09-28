@@ -4,7 +4,8 @@ module.exports = {
   slug: 'uygulamalar/sac-prp',
   tip: 'tibbi',
   baslik: 'Saç PRP: kendi plazmanızla saçlı deri uygulaması ve sınırı',
-  aciklama: 'Saç PRP’de kendi kanınızdan ayrılan plazma saçlı deriye nasıl uygulanır, hangi tetkikler istenir, kimlerde yapılmaz ve dökülmenin nedeni neden önce aranır.',
+  aciklama: 'Saç PRP’de kanınızdan ayrılan plazma saçlı deriye nasıl uygulanır, hangi tetkikler istenir, kimlerde yapılmaz, dökülmenin nedeni neden önce aranır?',
+  odak: 'saç prp',   /* Yoast odak anahtar kelimesi */
 
   icerik: (r, ik) => `
 <!-- ═════ HERO ═════ -->

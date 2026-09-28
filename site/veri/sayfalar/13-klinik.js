@@ -4,7 +4,8 @@ module.exports = {
   slug: 'klinik',
   tip: 'tibbi',
   baslik: `Muayenehane — ${S.iletisim.semt}: odalar, cihazlar ve randevu düzeni`,
-  aciklama: `${S.iletisim.semt}’deki muayenehane: bekleme salonu, uygulama odası, lazer ve cihaz odası, tek kullanımlık malzeme ve sterilizasyon düzeni, randevu işleyişi.`,
+  aciklama: 'Bakırköy muayenehane ortamı: bekleme salonu, uygulama odası, lazer-cihaz odası, tek kullanımlık malzeme, sterilizasyon ve randevulu çalışma düzeni.',
+  odak: 'bakırköy muayenehane',   /* Yoast odak anahtar kelimesi */
 
   icerik: (r, ik) => `
 

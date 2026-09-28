@@ -5,7 +5,8 @@ module.exports = {
   tip: 'tibbi',
   js: 'cilt-tipi.js',
   baslik: 'Cilt Eğilimi Öz Değerlendirmesi — Nem, Duyarlılık ve Leke Eğilimi',
-  aciklama: 'On iki soruda yağlanma ya da kuruluk, hassasiyet ve leke bırakma eğiliminizi tarif etmenize yardım eden test. Yanıtlar cihazınızda kalır, gönderilmez.',
+  aciklama: 'Cilt tipi testi — on iki soruda yağlanma ya da kuruluk, hassasiyet ile leke eğiliminizi tarif etmenize yardımcı olur. Yanıtlar cihazınızdan çıkmaz.',
+  odak: 'cilt tipi testi',   /* Yoast odak anahtar kelimesi */
 
   icerik: (r, ik) => `
 

@@ -4,7 +4,8 @@ module.exports = {
   slug: 'yasal/icerik-ve-gorsel-yayin-ilkelerimiz',
   tip: 'bilgi',
   baslik: 'Yayın ve Görsel Kullanım Esaslarımız — Neyi Neden Yayımlamıyoruz',
-  aciklama: 'Sitede neden ücret bilgisi, hasta yorumu ve öncesi–sonrası görseli yer almadığı; gerçek fotoğraflar, yapay zekâ rozeti, hekim onayı ve güncelleme düzeni.',
+  aciklama: 'Yayın ilkeleri — sitede niçin ücret, hasta yorumu ile öncesi–sonrası görseli yok; gerçek fotoğraflar, yapay zekâ rozeti, hekim onayı ve güncelleme.',
+  odak: 'yayın ilkeleri',   /* Yoast odak anahtar kelimesi */
 
   icerik: (r, ik) => `
 

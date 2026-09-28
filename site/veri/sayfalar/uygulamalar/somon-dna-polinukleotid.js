@@ -4,7 +4,8 @@ module.exports = {
   slug: 'uygulamalar/somon-dna-polinukleotid',
   tip: 'tibbi',
   baslik: 'Somon DNA (polinükleotid): cilt yenilenmesine destek',
-  aciklama: 'Somon DNA olarak bilinen polinükleotid uygulaması nedir, hangi cilt şikâyetlerinde düşünülür, kimlerde ertelenir? Bakırköy muayenehanesinde önce muayene.',
+  aciklama: 'Somon DNA olarak bilinen polinükleotid uygulaması nedir, hangi cilt şikâyetlerinde düşünülür, kimlerde ertelenir? Bakırköy’de önce muayene yapılır.',
+  odak: 'somon dna',   /* Yoast odak anahtar kelimesi */
 
   icerik: (r, ik) => `
 <!-- ═════ HERO ═════ -->

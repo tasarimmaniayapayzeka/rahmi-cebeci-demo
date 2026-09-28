@@ -4,7 +4,8 @@ module.exports = {
   slug: 'cilt-sorunlari/asiri-terleme',
   tip: 'tibbi',
   baslik: 'Aşırı terleme: kendi başına bir durum mu, bir işaret mi?',
-  aciklama: 'Fazla terleme bazen yalnız belli bölgelerle sınırlı bir yatkınlık, bazen başka bir hastalığın işaretidir. İki grup nasıl ayrılır, muayenede neye bakılır?',
+  aciklama: 'Aşırı terleme bazen belli bölgelerle sınırlı bir yatkınlık, bazen başka bir hastalığın işaretidir. İki durum nasıl ayrılır, muayenede neye bakılır?',
+  odak: 'aşırı terleme',   /* Yoast odak anahtar kelimesi */
 
   icerik: (r, ik) => `
 
