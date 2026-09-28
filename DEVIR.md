@@ -1,11 +1,11 @@
 # DEVİR — 34-Rahmi-Cebeci
 
-**Son güncelleme: 28 Eylül 2026 (akşam — favicon + Ortam kütüphanesi)**
+**Son güncelleme: 28 Eylül 2026 (gece — görseller HD, kopyalar temizlendi)**
 
 ## ▶ BURADAN DEVAM ET
 
 **Durum:** rahmicebeci.com.tr WordPress + Klasik Editör olarak canlı, **arama motorlarına kapalı (noindex)**. Yerel = GitHub = sunucu
-(dağıtım #12). 66 sayfa canlıda statikle birebir (gövde); bütün metin ve resimler panelden düzenlenebiliyor. Yarım kalan iş yok.
+(dağıtım #16). 66 sayfa canlıda statikle birebir (gövde); bütün metin ve resimler panelden düzenlenebiliyor. Yarım kalan iş yok.
 
 **28 Eyl akşam yapılanlar (652dff3, 646acbf — canlıda):**
 - **Favicon:** eski "RC" yazılı SVG yerine gerçek CR amblemi, antrasit zeminde → `site/varliklar/ikon/` (favicon.ico 16/32/48,
@@ -31,6 +31,25 @@
   çizgili dövme; 5504×3072 → 2560×1440 WebP 108 KB; yapay zekâ notu eklendi). 4 aday üretildi, 16 kredi (aynı dakikalarda
   hesapta 24 kredilik 2 Kling videosu da var — bu sekmeden değil). Adaylar `gorsel-ham/dovme-{A1,A2,B1,B2}-ham.png` (git dışı;
   B1 seçildi). Eski fotoğraf `foto/klinik-cihaz-odasi.webp` kütüphanede duruyor, sayfada yok.
+- **Öne çıkan görsel eksik sayfalar (828bcda):** ana sayfa = siyah zeminli yatay logo (`marka/rahmi-cebeci-paylasim-siyah.png`,
+  `logo-yuksek/siyah-paylasim.php`); 404, cilt tipi testi, uygulama karşılaştırma, hazırlık aracı = Nano Banana Pro 4K (8 aday,
+  32 kredi). Sayfa dosyasında `paylasimGorseli` (sayfada görünmez). 60/66 sayfada öne çıkan görsel; yalnız 6 yasal metinde yok.
+- **GÖRSELLER HD (701be21, 56d441d — canlıda; kullanıcı: "çözünürlük düşük, hepsini bul, eskiyi sil, yeniden yükle, alt bozulmasın,
+  2 kez görmesin"):** sitedeki yapay zekâ görselleri 25 Eyl'de 0,25 kredilik düşük kalitede üretilmişti (1400×788).
+  79 görsel Higgsfield bytedance 4K büyütme → 2560×1440 (dikeyler 1920×2560, kare tuvale konup büyütüldü) WebP; 158 kredi (başarısızlar
+  iade). `medya.js` `surum: 'hd'` → WordPress'te yeni ad `…-hd.webp` (resimler 1 yıl immutable önbellekte; aynı adla yüklenseydi eski
+  görünürdü). `rc-medya.php` kaynak dosya değişince: yeni ek + alt/başlık taşınır (panelde değiştiyse eldeki) + bütün sayfalarda adres,
+  wp-image-N, öne çıkan görsel, logo seçimi çevrilir (her sayfa bir kez, revizyonsuz) + eski ek dosyalarıyla silinir; yarıda kalırsa
+  `rc_medya_bekleyen` sonraki çağrıda biter. Canlı: 11 turda 78 yenileme, hata 0. Kütüphane: 104 bizim + 2 kullanıcının Yoast logosu,
+  kopya 0. Araçlar/iş kaydı: `gorsel-ham/buyutme/` (isle.sh, isle-kare.sh, takip.txt; git dışı).
+  - **Büyütülemeyen 5 görsel** (3 denemede de servis hatası): `foto/prp-tupler`, `gorsel/yuz-3d`, `sorun-terleme`,
+    `uyg-somon-dna-polinukleotid-2`, `hekim-masasi` → 1400 px hâliyle duruyor (yeniden üretim ya da başka büyütücü seçeneği).
+  - **Hekimin 3 fotoğrafı (hekim-portre/koltuk/kare) bilerek büyütülmedi:** yapay zekâ yüz hatlarını değiştirebilir → asıl yüksek
+    çözünürlüklü fotoğraflar hekimden/fotoğrafçıdan istenmeli. Logo, cihaz kesimleri, süreç simgeleri küçük gösterildiği için hariç.
+  - **Birebir aynı 3 dosya çifti birleştirildi:** ic3d-goz=bolge-goz-cevresi, bolge-boyun=bolge-boyun-ve-dekolte (ikisinin de alt
+    metni "3B çizim" diyordu, fotoğraftı — düzeltildi), uyg-pico-lazer-dovme-silme=sorun-dovme… (dövme satırları artık yeni dövme
+    kapağını gösteriyor). Kopyalar `medya.js KALDIRILAN` ile kütüphaneden silindi (kullanımdaysa silinmez; Yoast/site simgesi de sayılır).
+  - Sayfa geçmişinde (revizyonlar) eski görsel adresleri yazılı kalır — sitede görünmez, kopya ek değildir; dokunulmadı.
 - **LiteSpeed Cache eklentisi etkin** (sunucuda): `/favicon.ico` için eski WordPress yönlendirmesi önbellekte kalmıştı →
   `rc/v1/kurulum` artık sonunda `litespeed_purge_all` çağırıyor.
 - **Imunify Security eklentisi** her sayfanın sonuna gizli tuzak bağlantısı koyuyor: `/imunify-bot-check` — **asla ziyaret edilmez**
@@ -38,9 +57,7 @@
 
 **Kullanıcı Yoast'ı kendisi ayarladı (canlıda görüldü):** kuruluş logosu = kendi yüklediği `rahmi-cebeci-amblem-1024.png`,
 site görseli = `Dr-Rahmi-Cebeci-Logo.png` (1200×630), site adı "Uzm. Dr. Rahmi Cebeci", slogan kodlaması düzelmiş.
-⚠️ Kütüphanede bu iki dosyanın bizim aktardığımız kopyaları da var (`dr-rahmi-cebeci-logo-kare.png`,
-`dr-rahmi-cebeci-paylasim-gorseli.png`, kaynak `marka/`) → silinsin mi kullanıcıya soruldu; silinirse `medya.js`'ten `marka/`
-kayıtları da çıkar (yoksa sonraki kurulumda yeniden eklenir).
+Bizim bu iki dosyanın kopyalarımız (`dr-rahmi-cebeci-logo-kare`, `dr-rahmi-cebeci-paylasim-gorseli`) silindi (701be21, kullanıcı: "2 kez görmesin").
 
 **Kullanıcı kararı bekleyenler (sırayla sor, onaysız başlama):**
 1. **Yoast yayıncı adı hâlâ "Cebeci"** (şema: Person/Organization "Cebeci" + logo). Ya Site temsili → Kuruluş "Dr. Rahmi Cebeci",
