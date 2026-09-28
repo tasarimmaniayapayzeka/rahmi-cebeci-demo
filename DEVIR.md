@@ -2,6 +2,20 @@
 
 **Son güncelleme: 28 Eylül 2026 (gece)**
 
+## 🟢 28 Eyl sabah: rahmicebeci.com.tr WORDPRESS OLARAK CANLI (noindex)
+
+- WordPress 7.1.2 (Softaculous, kök dizin, kullanıcı kurdu), **PHP 8.3.33** (kullanıcı 7.4'ten geçirdi), tema `rahmi-cebeci`,
+  66 sayfa aktarıldı (kayıtta değişen 0, hata 0), `/%postname%/`, arama motorlarına KAPALI, ön sayfa ID 7.
+- **Canlı doğrulama 66/66 birebir** (`wp-yerel/karsilastir-canli.js`; 51 sayfa PHP 7.4'te, 15 + 3 örnek 8.3'te).
+  ⚠️ 650 ms aralık + uydurma User-Agent ile 52. istekte bağlantı koptu → artık 1500 ms + tarayıcı UA (genel kural: ~/.claude/CLAUDE.md).
+- **API erişimi:** WP uygulama parolası `C:\Users\İHSAN\.rahmicebeci-wp-pass` (kullanıcı `Cebeci`, ad `claude-rahmi`; kullanıcı
+  istediği an Profil › Uygulama Parolaları'ndan iptal eder). Uçlar: `GET /wp-json/rc/v1/durum`, `POST /wp-json/rc/v1/kurulum`.
+- **Form:** sunucuda `mail()` kapalı → PHP 8'de ölümcül hata, talep kaybediliyordu. Düzeltildi (e7be4c3): talep önce
+  `/home/rahmicebeci/randevu-talepleri.log`'a, e-posta `wp_mail` → yerel SMTP 127.0.0.1:25 (`wp-mu/eposta-yolu.php`).
+  Sunucuda SMTP "220 hazır". **Gerçek gönderim testi kullanıcı onayı bekliyor.** E-posta hataları `/home/rahmicebeci/eposta-hatalari.log`.
+- Yayın: değişiklik → commit → push → `bash site/canli-yayinla.sh` (tema/mu-plugin/varlıklar). İçerik güncellemesi:
+  `node site/wp-aktar.js` → push/deploy → `POST rc/v1/kurulum` (panelde düzenlenmiş sayfalara dokunmaz).
+
 ## ⛔ KARAR (28 Eyl gece, kullanıcı): SİTE WORDPRESS + KLASİK EDİTÖR OLARAK KURULACAK
 
 Şu an sunucudaki statik sürüm **GEÇİCİ**dir, böyle kalmayacak. Kullanıcı: "site wp olarak klasik editöre uygun olarak
