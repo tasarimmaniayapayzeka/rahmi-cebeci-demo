@@ -21,3 +21,6 @@ wp-yerel/
 
 # SEO/özgünlük denetim raporları (iç notlar, Copyscape bilgisi) — depo herkese açık, girmez
 seo-denetim/
+
+# logo büyütmelerinin ham çıktıları (Higgsfield) — son dosyalar logo-yuksek/rahmi-cebeci-*.png
+logo-yuksek/*-ham.png
