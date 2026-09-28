@@ -4,6 +4,8 @@
      ad     WordPress ortam kütüphanesindeki dosya adı (uzantısız; SEO: konu kelimesi başta, Türkçe harfsiz)
      alt    alt metin — sayfalarda bu görseli kullanan HER <img>'e yazılır (statik ve WordPress)
      baslik ortam kütüphanesinde görünen başlık
+     surum  (isteğe bağlı) dosya netleştirilip değiştiyse WordPress'te yeni ad eki (ör. 'hd' → …-hd.webp): resimler 1 yıl
+            önbellekte, aynı adla yüklenirse eski görsel görünürdü. Aktarıcı eskisini siler, alt/başlığı taşır.
      sayfada (isteğe bağlı) aynı görsel iki sayfanın kapağıysa sayfaya özel alt metin: { 'sayfa/yolu': '…' }
    Alt metin kuralları (00-SEO-STANDART/ICERIK-URETIM-STANDARDI.md):
      - görselde ne varsa onu anlatır; "görsel/resim" diye başlamaz; 125 karakteri geçmez
@@ -17,8 +19,6 @@
 const TABLO = {
   /* ---------- marka ---------- */
   'foto/amblem.png': { ad: 'dr-rahmi-cebeci-logo-amblem', alt: 'Dr. Rahmi Cebeci logosu', baslik: 'Logo — CR amblemi (site başlığı)' },
-  'marka/rahmi-cebeci-amblem-1024.png': { ad: 'dr-rahmi-cebeci-logo-kare', alt: 'Dr. Rahmi Cebeci logosu, altın CR amblemi', baslik: 'Logo — kare, şeffaf (Yoast kuruluş logosu)' },
-  'marka/rahmi-cebeci-paylasim-1200x630.png': { ad: 'dr-rahmi-cebeci-paylasim-gorseli', alt: 'Dr. Rahmi Cebeci Bakırköy medikal estetik muayenehanesi logosu', baslik: 'Paylaşım görseli 1200×630 (Yoast site görseli)' },
 
   'marka/rahmi-cebeci-paylasim-siyah.png': { ad: 'dr-rahmi-cebeci-logo-siyah-zemin', alt: 'Siyah zemin üzerinde altın renkli Dr. Rahmi Cebeci logosu; Bakırköy medikal estetik muayenehanesi', baslik: 'Ana sayfa — siyah zeminli logo (öne çıkan görsel)' },   /* ana sayfa · paylasimGorseli */
 
@@ -77,7 +77,7 @@ const TABLO = {
   'gorsel/sorun-selulit.webp': { ad: 'selulit-nedir-uyluk-deri-dokusu', alt: 'Selülit nedir: uyluk arka yüzündeki doğal deri dokusunun yan ışıkta görünümü', baslik: 'Selülit — kapak' },   /* selülit nedir */
 
   /* uygulama kapakları (tablo satırlarında da küçük resim olarak geçer) */
-  'gorsel/uyg-botulinum-toksin.webp': { ad: 'botulinum-toksin-alin-goz-cevresi', alt: 'Botulinum toksin uygulamasında değerlendirilen alın ve göz çevresi; dingin ifadeli kadın portresi', baslik: 'Botulinum toksin — kapak' },   /* botulinum toksin */
+  'gorsel/uyg-botulinum-toksin.webp': { ad: 'botulinum-toksin-alin-goz-cevresi', surum: 'hd', alt: 'Botulinum toksin uygulamasında değerlendirilen alın ve göz çevresi; dingin ifadeli kadın portresi', baslik: 'Botulinum toksin — kapak' },   /* botulinum toksin */
   'gorsel/uyg-dolgu-uygulamalari.webp': { ad: 'dolgu-uygulamasi-berrak-jel', alt: 'Dolgu uygulamasında kullanılan jeli simgeleyen, cam yüzeyde berrak jel damlalarının yakın planı', baslik: 'Dolgu uygulamaları — kapak' },   /* dolgu uygulaması */
   'gorsel/uyg-genclik-asisi-skinbooster.webp': { ad: 'genclik-asisi-skinbooster-yanak-cildi', alt: 'Gençlik aşısı (skinbooster) konusunda gün ışığında nemli görünen yanak cildinin yakın planı', baslik: 'Gençlik aşısı (skinbooster) — kapak' },   /* gençlik aşısı */
   'gorsel/uyg-mezoterapi.webp': { ad: 'cilt-mezoterapisi-ampul-serum', alt: 'Cilt mezoterapisinde kullanılan cam ampuller ve küçük serum şişesi, açık renk kumaş üzerinde', baslik: 'Cilt mezoterapisi — kapak' },   /* cilt mezoterapisi */
@@ -159,4 +159,8 @@ function altUygula(html, yol) {
   });
 }
 
-module.exports = { TABLO, altUygula, kacir };
+/* Ortam kütüphanesinden SİLİNECEK kaynaklar (kullanımdaysa silinmez, raporlanır).
+   28 Eyl: kullanıcı Yoast logosunu ve site görselini kendisi yükledi → bizim kopyalarımız fazla (kullanıcı: "2 kez görmesin"). */
+const KALDIRILAN = ['marka/rahmi-cebeci-amblem-1024.png', 'marka/rahmi-cebeci-paylasim-1200x630.png'];
+
+module.exports = { TABLO, KALDIRILAN, altUygula, kacir };

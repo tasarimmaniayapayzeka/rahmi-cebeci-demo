@@ -1,12 +1,16 @@
 <?php
 /**
  * Plugin Name: Dr. Rahmi Cebeci — ortam kütüphanesi
- * Description: Sitenin görsellerini (rc-icerik.json "medya") /varliklar/ klasöründen Ortam kütüphanesine alır, alt metin ve başlığını yazar; sayfalardaki görsel adreslerini kütüphanedekilere çevirir.
+ * Description: Sitenin görsellerini (rc-icerik.json "medya") /varliklar/ klasöründen Ortam kütüphanesine alır, alt metin ve başlığını yazar; sayfalardaki görsel adreslerini kütüphanedekilere çevirir. Kaynak dosya değişince eskisini silip yenisini yükler.
  *
  * Kaynak tablo: site/veri/medya.js (dosya adı, alt metin, başlık). Aktarımı rc-aktar.php başlatır (sayfalardan önce).
  * - Aynı görsel iki kez eklenmez: kaynak → ek kimliği haritası (seçenek rc_medya_harita) + ekte _rc_kaynak.
  * - Panelde (Ortam › görsel ayrıntısı) alt metni ya da başlığı değiştirilen görsele sonraki aktarımda dokunulmaz.
  * - Dosyalar internetten indirilmez; sunucudaki /varliklar/<kaynak> dosyası uploads klasörüne kopyalanır.
+ * - YENİLEME: /varliklar/<kaynak> kütüphanedeki dosyadan farklıysa (ör. görsel netleştirildi) yeni ek YENİ ADLA eklenir
+ *   (resimler 1 yıl "immutable" önbellekte — aynı adres eski görseli gösterirdi), alt/başlık/açıklama taşınır, bütün
+ *   sayfalardaki adres + wp-image-N + öne çıkan görsel + logo seçimi yeniye çevrilir, eski ek dosyalarıyla silinir.
+ * - KALDIRMA: rc-icerik.json "medya_kaldir" listesindeki kaynakların ekleri silinir (bir yerde kullanılıyorsa silinmez, raporlanır).
  */
 defined('ABSPATH') || exit;
 
@@ -15,6 +19,11 @@ const RC_MEDYA_HARITA = 'rc_medya_harita';
 function rc_medya_harita(): array {
 	$h = get_option(RC_MEDYA_HARITA, []);
 	return is_array($h) ? $h : [];
+}
+function rc_medya_harita_yaz(string $k, ?int $id): void {
+	$h = rc_medya_harita();
+	if ($id) $h[$k] = $id; else unset($h[$k]);
+	update_option(RC_MEDYA_HARITA, $h, false);
 }
 
 /* kaynak (ör. gorsel/uyg-prp.webp) → ek kimliği; ek silinmişse 0 */
@@ -39,39 +48,130 @@ function rc_medya_ozeti(int $id): string {
 	return md5(get_post_field('post_title', $id, 'raw') . '|' . get_post_meta($id, '_wp_attachment_image_alt', true));
 }
 
-/* Listeyi kütüphaneye al. $sinir > 0: bu çağrıda en çok bu kadar YENİ dosya (alt boyut üretimi ağır — sunucuda
+/* kütüphanedeki asıl dosya (WordPress 2560 üstünü "-scaled" yapar; asıl dosya ayrı durur) */
+function rc_medya_dosya(int $id): string {
+	$f = function_exists('wp_get_original_image_path') ? wp_get_original_image_path($id) : '';
+	return $f ?: (string) get_attached_file($id);
+}
+
+/* /varliklar/<kaynak> dosyasını uploads'a kopyalayıp ek oluşturur; kimlik ya da WP_Error */
+function rc_medya_ekle(string $k, array $m, string $baslik, string $alt) {
+	$kaynak = ABSPATH . 'varliklar/' . $k;
+	$up = wp_upload_dir();
+	if (!empty($up['error'])) return new WP_Error('uploads', $up['error']);
+	$ad = wp_unique_filename($up['path'], sanitize_file_name($m['ad']));
+	$hedef = $up['path'] . '/' . $ad;
+	if (!@copy($kaynak, $hedef)) return new WP_Error('kopya', 'kopyalanamadı');
+	$tur = wp_check_filetype($ad);
+	$id = wp_insert_attachment(['post_title' => $baslik, 'post_mime_type' => $tur['type'], 'post_status' => 'inherit',
+		'post_content' => '', 'guid' => $up['url'] . '/' . $ad], $hedef, 0, true);
+	if (is_wp_error($id)) { @unlink($hedef); return $id; }
+	wp_update_attachment_metadata($id, wp_generate_attachment_metadata($id, $hedef));
+	update_post_meta($id, '_wp_attachment_image_alt', $alt);
+	update_post_meta($id, '_rc_kaynak', $k);
+	return $id;
+}
+
+/* eski ek → yeni ek: sayfa içerikleri (tam boy + alt boy adresleri, wp-image-N), öne çıkan görsel, kapak kaydı, logo seçimi.
+   Aktarım özeti eski içerikle tutuyorsa (panelde düzenlenmemiş sayfa) yeni içerikle güncellenir; elle düzenlenmiş sayfa öyle kalır. */
+function rc_medya_degistir(int $eski, int $yeni): int {
+	$eskiUrl = wp_make_link_relative((string) wp_get_attachment_url($eski));
+	$yeniUrl = wp_make_link_relative((string) wp_get_attachment_url($yeni));
+	$ciftler = [$eskiUrl => $yeniUrl];
+	$em = wp_get_attachment_metadata($eski) ?: [];
+	$ym = wp_get_attachment_metadata($yeni) ?: [];
+	foreach (($em['sizes'] ?? []) as $boy => $b) {
+		$ciftler[dirname($eskiUrl) . '/' . $b['file']] = isset($ym['sizes'][$boy]) ? dirname($yeniUrl) . '/' . $ym['sizes'][$boy]['file'] : $yeniUrl;
+	}
+	$n = 0;
+	foreach (get_posts(['post_type' => 'page', 'post_status' => 'any', 'numberposts' => -1]) as $p) {
+		$c = preg_replace('/\bwp-image-' . $eski . '\b/', 'wp-image-' . $yeni, strtr($p->post_content, $ciftler));
+		if ($c === $p->post_content) continue;
+		$tutuyor = get_post_meta($p->ID, '_rc_aktarim_ozet', true) === md5($p->post_content);
+		wp_update_post(wp_slash(['ID' => $p->ID, 'post_content' => $c]));
+		if ($tutuyor) update_post_meta($p->ID, '_rc_aktarim_ozet', md5(get_post_field('post_content', $p->ID, 'raw')));
+		$n++;
+	}
+	global $wpdb;
+	foreach ($wpdb->get_col($wpdb->prepare("SELECT post_id FROM $wpdb->postmeta WHERE meta_key = '_thumbnail_id' AND meta_value = %s", (string) $eski)) as $pid) {
+		set_post_thumbnail((int) $pid, $yeni);
+	}
+	foreach ($wpdb->get_col($wpdb->prepare("SELECT post_id FROM $wpdb->postmeta WHERE meta_key = '_rc_kapak_id' AND meta_value = %s", (string) $eski)) as $pid) {
+		update_post_meta((int) $pid, '_rc_kapak_id', $yeni);
+	}
+	if ((int) get_option('rc_logo_id') === $eski) update_option('rc_logo_id', $yeni, false);
+	return $n;
+}
+
+/* ek bir yerde kullanılıyor mu (sayfa içeriği, öne çıkan görsel, logo seçimi) */
+function rc_medya_kullaniliyor(int $id): bool {
+	global $wpdb;
+	if ((int) get_option('rc_logo_id') === $id) return true;
+	if ($wpdb->get_var($wpdb->prepare("SELECT COUNT(*) FROM $wpdb->postmeta WHERE meta_key = '_thumbnail_id' AND meta_value = %s", (string) $id))) return true;
+	$u = wp_make_link_relative((string) wp_get_attachment_url($id));
+	$govde = pathinfo($u, PATHINFO_FILENAME);
+	return (bool) $wpdb->get_var($wpdb->prepare("SELECT COUNT(*) FROM $wpdb->posts WHERE post_type IN ('page','post') AND (post_content LIKE %s OR post_content LIKE %s)",
+		'%' . $wpdb->esc_like($govde) . '%', '%wp-image-' . $id . '"%'));
+}
+
+/* Listeyi kütüphaneye al. $sinir > 0: bu çağrıda en çok bu kadar YENİ ya da YENİLENEN dosya (alt boyut üretimi ağır — sunucuda
    zaman aşımı olmasın; kalan sonraki çağrıda). Harita her dosyadan sonra kaydedilir: yarıda kesilse de kaldığı yer bilinir. */
-function rc_medya_aktar(array $liste, int $sinir = 0): array {
+function rc_medya_aktar(array $liste, int $sinir = 0, array $kaldir = []): array {
 	require_once ABSPATH . 'wp-admin/includes/image.php';
 	require_once ABSPATH . 'wp-admin/includes/file.php';
-	$r = ['yeni' => [], 'guncellenen' => 0, 'ayni' => 0, 'elle' => [], 'kalan' => 0, 'hata' => []];
+	$r = ['yeni' => [], 'yenilenen' => [], 'guncellenen' => 0, 'ayni' => 0, 'elle' => [], 'kalan' => 0, 'hata' => [],
+		'kaldirilan' => [], 'kullanimda' => [], 'sayfa_degisen' => 0];
+	$agir = 0;
+
+	foreach ($kaldir as $k) {
+		$id = rc_medya_id((string) $k);
+		if (!$id) continue;
+		if (rc_medya_kullaniliyor($id)) { $r['kullanimda'][] = $k; continue; }
+		wp_delete_attachment($id, true);
+		rc_medya_harita_yaz((string) $k, null);
+		$r['kaldirilan'][] = $k;
+	}
+
 	foreach ($liste as $m) {
 		$k = (string) $m['kaynak'];
+		$kaynak = ABSPATH . 'varliklar/' . $k;
+		if (!preg_match('~^(gorsel|foto|marka)/[a-z0-9._-]+$~', $k) || !is_file($kaynak)) { $r['hata'][] = "$k: dosya yok"; continue; }
 		$id = rc_medya_id($k);
+
 		if (!$id) {
-			if ($sinir > 0 && count($r['yeni']) >= $sinir) { $r['kalan']++; continue; }
-			$kaynak = ABSPATH . 'varliklar/' . $k;
-			if (!preg_match('~^(gorsel|foto|marka)/[a-z0-9._-]+$~', $k) || !is_file($kaynak)) { $r['hata'][] = "$k: dosya yok"; continue; }
-			$up = wp_upload_dir();
-			if (!empty($up['error'])) { $r['hata'][] = 'uploads: ' . $up['error']; break; }
-			$ad = wp_unique_filename($up['path'], sanitize_file_name($m['ad']));
-			$hedef = $up['path'] . '/' . $ad;
-			if (!@copy($kaynak, $hedef)) { $r['hata'][] = "$k: kopyalanamadı"; continue; }
-			$tur = wp_check_filetype($ad);
-			$id = wp_insert_attachment(['post_title' => $m['baslik'], 'post_mime_type' => $tur['type'], 'post_status' => 'inherit',
-				'post_content' => '', 'guid' => $up['url'] . '/' . $ad], $hedef, 0, true);
-			if (is_wp_error($id)) { @unlink($hedef); $r['hata'][] = "$k: " . $id->get_error_message(); continue; }
-			wp_update_attachment_metadata($id, wp_generate_attachment_metadata($id, $hedef));
-			update_post_meta($id, '_wp_attachment_image_alt', $m['alt']);
-			update_post_meta($id, '_rc_kaynak', $k);
+			if ($sinir > 0 && $agir >= $sinir) { $r['kalan']++; continue; }
+			$id = rc_medya_ekle($k, $m, $m['baslik'], $m['alt']);
+			if (is_wp_error($id)) { $r['hata'][] = "$k: " . $id->get_error_message(); continue; }
 			update_post_meta($id, '_rc_medya_ozet', rc_medya_ozeti($id));
-			$h = rc_medya_harita();
-			$h[$k] = $id;
-			update_option(RC_MEDYA_HARITA, $h, false);
+			rc_medya_harita_yaz($k, $id);
 			$r['yeni'][] = $k;
+			$agir++;
 			continue;
 		}
-		/* var olan: alt/başlık panelde değiştirilmediyse tabloyla eşitle */
+
+		/* kaynak dosya değişmiş (ör. netleştirildi) → yeni adla yükle, bağlantıları çevir, eskiyi sil */
+		$ekDosya = rc_medya_dosya($id);
+		if ($ekDosya && is_file($ekDosya) && md5_file($ekDosya) !== md5_file($kaynak)) {
+			if ($sinir > 0 && $agir >= $sinir) { $r['kalan']++; continue; }
+			$son = get_post_meta($id, '_rc_medya_ozet', true);
+			$elle = $son && $son !== rc_medya_ozeti($id);
+			$baslik = $elle ? get_post_field('post_title', $id, 'raw') : $m['baslik'];
+			$alt = $elle ? (string) get_post_meta($id, '_wp_attachment_image_alt', true) : $m['alt'];
+			$yeni = rc_medya_ekle($k, $m, $baslik, $alt);
+			if (is_wp_error($yeni)) { $r['hata'][] = "$k (yenileme): " . $yeni->get_error_message(); continue; }
+			/* panelde yazılmış açıklama/kısa yazı da taşınır */
+			$ek = get_post($id);
+			if ($ek && ($ek->post_excerpt !== '' || $ek->post_content !== '')) wp_update_post(['ID' => $yeni, 'post_excerpt' => $ek->post_excerpt, 'post_content' => $ek->post_content]);
+			update_post_meta($yeni, '_rc_medya_ozet', $elle ? $son : rc_medya_ozeti($yeni));   /* elle ise "elle" kalsın */
+			rc_medya_harita_yaz($k, $yeni);
+			$r['sayfa_degisen'] += rc_medya_degistir($id, $yeni);
+			wp_delete_attachment($id, true);
+			$r['yenilenen'][] = $k;
+			$agir++;
+			continue;
+		}
+
+		/* var olan, dosya aynı: alt/başlık panelde değiştirilmediyse tabloyla eşitle */
 		$son = get_post_meta($id, '_rc_medya_ozet', true);
 		if ($son && $son !== rc_medya_ozeti($id)) { $r['elle'][] = $k; continue; }
 		if (get_post_field('post_title', $id, 'raw') === $m['baslik'] && get_post_meta($id, '_wp_attachment_image_alt', true) === $m['alt']) { $r['ayni']++; continue; }
@@ -81,6 +181,18 @@ function rc_medya_aktar(array $liste, int $sinir = 0): array {
 		$r['guncellenen']++;
 	}
 	return $r;
+}
+
+/* kütüphanede bizim aktarmadığımız ekler (panelden yüklenenler) — kopya denetimi için rc/v1/durum'da listelenir */
+function rc_medya_yonetilmeyen(): array {
+	$l = [];
+	foreach (get_posts(['post_type' => 'attachment', 'post_status' => 'inherit', 'numberposts' => -1, 'fields' => 'ids',
+		'meta_query' => [['key' => '_rc_kaynak', 'compare' => 'NOT EXISTS']]]) as $id) {
+		$f = rc_medya_dosya($id);
+		$l[] = ['id' => $id, 'dosya' => basename($f), 'baslik' => get_post_field('post_title', $id, 'raw'),
+			'md5' => is_file($f) ? md5_file($f) : '', 'kullanimda' => rc_medya_kullaniliyor($id)];
+	}
+	return $l;
 }
 
 /* Sayfa HTML'inde /varliklar/<kaynak> → kütüphanedeki adres.

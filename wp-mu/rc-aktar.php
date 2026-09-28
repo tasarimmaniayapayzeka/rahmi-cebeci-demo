@@ -33,7 +33,7 @@ function rc_aktar(array $o = []) {
 	   medya_sinir: bir çağrıda en çok kaç yeni görsel (sunucuda zaman aşımı olmasın); kalan varsa tekrar çağrılır. */
 	$adres = [];
 	if (!empty($v['medya']) && function_exists('rc_medya_aktar')) {
-		$r['medya'] = rc_medya_aktar($v['medya'], (int) ($o['medya_sinir'] ?? 0));
+		$r['medya'] = rc_medya_aktar($v['medya'], (int) ($o['medya_sinir'] ?? 0), (array) ($v['medya_kaldir'] ?? []));
 		if ($r['medya']['kalan'] || $r['medya']['hata']) { kses_init(); return $r; }
 		$adres = rc_medya_adresleri();
 	}
@@ -210,7 +210,8 @@ function rc_ilk_kurulum_ekrani() {
 				<?php if ($md['hata']) echo '<p>' . esc_html('Hata: ' . implode(', ', $md['hata'])) . '</p>'; ?></div>
 		<?php elseif ($sonuc) : $a = $sonuc['aktarim']; ?>
 			<div class="notice notice-success"><p><b>Tamam.</b> <?php echo esc_html(implode(' · ', $sonuc['adimlar'])); ?></p>
-				<?php if (!empty($a['medya'])) : ?><p>Görseller: yeni <?php echo count($a['medya']['yeni']); ?> · güncellenen <?php echo (int) $a['medya']['guncellenen']; ?>
+				<?php if (!empty($a['medya'])) : ?><p>Görseller: yeni <?php echo count($a['medya']['yeni']); ?> · yenilenen (eskisi silindi) <?php echo count($a['medya']['yenilenen']); ?>
+					· kaldırılan <?php echo count($a['medya']['kaldirilan']); ?> · güncellenen <?php echo (int) $a['medya']['guncellenen']; ?>
 					· aynı <?php echo (int) $a['medya']['ayni']; ?> · panelde düzenlendiği için atlanan <?php echo count($a['medya']['elle']); ?> · öne çıkan görseli atanan sayfa <?php echo (int) $a['kapak']; ?></p><?php endif; ?>
 				<p>Yeni <?php echo count($a['yeni'] ?? []); ?> · güncellenen <?php echo count($a['guncellenen'] ?? []); ?> · aynı <?php echo (int) ($a['ayni'] ?? 0); ?>
 				· panelde düzenlendiği için atlanan <?php echo count($a['elle'] ?? []); ?> · hata <?php echo count($a['hata'] ?? []); ?></p>
@@ -243,7 +244,9 @@ function rc_durum() {
 		'smtp_yerel' => rc_smtp_yoklama(), 'yoast' => rc_yoast_durum(),
 		'medya' => ['paket' => count($v['medya'] ?? []), 'kutuphanede' => function_exists('rc_medya_adresleri') ? count(rc_medya_adresleri()) : 0,
 			'webp_duzenleyici' => wp_image_editor_supports(['mime_type' => 'image/webp']),
-			'one_cikan' => count(get_posts(['post_type' => 'page', 'post_status' => 'any', 'numberposts' => -1, 'fields' => 'ids', 'meta_key' => '_thumbnail_id']))]];
+			'one_cikan' => count(get_posts(['post_type' => 'page', 'post_status' => 'any', 'numberposts' => -1, 'fields' => 'ids', 'meta_key' => '_thumbnail_id'])),
+			'toplam_ek' => (int) wp_count_posts('attachment')->inherit,
+			'yonetilmeyen' => function_exists('rc_medya_yonetilmeyen') ? rc_medya_yonetilmeyen() : []]];
 }
 
 /* Yoast alanları: kaç sayfada odak anahtar kelime ve meta açıklama var, açıklama uzunlukları */
@@ -280,9 +283,10 @@ add_action('rest_api_init', function () {
 if (defined('WP_CLI') && WP_CLI) {
 	WP_CLI::add_command('rc aktar', function ($args, $assoc) {
 		$r = rc_aktar(['ustune_yaz' => isset($assoc['ustune-yaz'])]);
-		if (!empty($r['medya'])) WP_CLI::log(sprintf('görseller: yeni %d · güncellenen %d · aynı %d · panelde düzenlenmiş (atlandı) %d · hata %d · öne çıkan görsel atanan %d · görsel adresi çevrilen elle sayfa %d',
-			count($r['medya']['yeni']), $r['medya']['guncellenen'], $r['medya']['ayni'], count($r['medya']['elle']), count($r['medya']['hata']),
-			$r['kapak'] ?? 0, count($r['elle_gorsel'] ?? [])));
+		if (!empty($r['medya'])) WP_CLI::log(sprintf('görseller: yeni %d · yenilenen %d (sayfa %d) · kaldırılan %d · güncellenen %d · aynı %d · panelde düzenlenmiş (atlandı) %d · hata %d · kalan %d · öne çıkan görsel atanan %d · görsel adresi çevrilen elle sayfa %d',
+			count($r['medya']['yeni']), count($r['medya']['yenilenen']), $r['medya']['sayfa_degisen'], count($r['medya']['kaldirilan']), $r['medya']['guncellenen'],
+			$r['medya']['ayni'], count($r['medya']['elle']), count($r['medya']['hata']), $r['medya']['kalan'], $r['kapak'] ?? 0, count($r['elle_gorsel'] ?? [])));
+		if (!empty($r['medya']['kullanimda'])) WP_CLI::log('kaldırılmadı (kullanımda): ' . implode(', ', $r['medya']['kullanimda']));
 		if (!empty($r['medya']['hata'])) WP_CLI::log('görsel hatası: ' . implode(', ', $r['medya']['hata']));
 		WP_CLI::log(sprintf('yeni %d · güncellenen %d · aynı %d · elle düzenlenmiş (atlandı) %d · kayıtta değişen %d · hata %d · meta yazılan %d · meta elle (atlandı) %d',
 			count($r['yeni'] ?? []), count($r['guncellenen'] ?? []), $r['ayni'] ?? 0, count($r['elle'] ?? []), count($r['fark'] ?? []), count($r['hata'] ?? []),

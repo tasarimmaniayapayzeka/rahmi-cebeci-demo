@@ -65,8 +65,9 @@ for (const [i, d] of disa.entries()) {
 /* ortam kütüphanesi: tablodaki her görsel (sunucuda /varliklar/<kaynak> dosyasından kopyalanır) */
 const medya = Object.entries(MEDYA.TABLO).map(([kaynak, v]) => {
   if (!fs.existsSync(path.join(KOK, 'varliklar', kaynak))) throw new Error(`medya.js: dosya yok: varliklar/${kaynak}`);
-  return { kaynak, ad: v.ad + path.extname(kaynak), alt: v.alt, baslik: v.baslik };
+  return { kaynak, ad: v.ad + (v.surum ? '-' + v.surum : '') + path.extname(kaynak), alt: v.alt, baslik: v.baslik };
 });
+const medyaKaldir = MEDYA.KALDIRILAN.filter(k => !MEDYA.TABLO[k]);
 /* sayfası olmayan ara klasörler (ör. yasal/) — WordPress'te taslak ebeveyn olur, adres üretmez */
 const eksikEbeveyn = [...new Set(disa.map(d => d.ebeveyn).filter(e => e && !yollar.has(e)))];
 /* ebeveyn önce gelsin */
@@ -74,7 +75,7 @@ disa.sort((a, b) => a.yol.split('/').length - b.yol.split('/').length || a.sira 
 
 fs.mkdirSync(path.join(DEPO, 'wp-mu'), { recursive: true });
 fs.writeFileSync(path.join(DEPO, 'wp-mu', 'rc-icerik.json'),
-  JSON.stringify({ uretim: new Date().toISOString(), eksikEbeveyn, medya, sayfalar: disa }, null, 1), 'utf8');
+  JSON.stringify({ uretim: new Date().toISOString(), eksikEbeveyn, medya, medya_kaldir: medyaKaldir, sayfalar: disa }, null, 1), 'utf8');
 
 /* ---------- tema verisi ---------- */
 const veri = {

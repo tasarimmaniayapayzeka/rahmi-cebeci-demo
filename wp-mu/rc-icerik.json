@@ -1,5 +1,5 @@
 {
- "uretim": "2026-09-28T15:14:35.569Z",
+ "uretim": "2026-09-28T15:28:05.251Z",
  "eksikEbeveyn": [
   "yasal"
  ],
@@ -9,18 +9,6 @@
    "ad": "dr-rahmi-cebeci-logo-amblem.png",
    "alt": "Dr. Rahmi Cebeci logosu",
    "baslik": "Logo — CR amblemi (site başlığı)"
-  },
-  {
-   "kaynak": "marka/rahmi-cebeci-amblem-1024.png",
-   "ad": "dr-rahmi-cebeci-logo-kare.png",
-   "alt": "Dr. Rahmi Cebeci logosu, altın CR amblemi",
-   "baslik": "Logo — kare, şeffaf (Yoast kuruluş logosu)"
-  },
-  {
-   "kaynak": "marka/rahmi-cebeci-paylasim-1200x630.png",
-   "ad": "dr-rahmi-cebeci-paylasim-gorseli.png",
-   "alt": "Dr. Rahmi Cebeci Bakırköy medikal estetik muayenehanesi logosu",
-   "baslik": "Paylaşım görseli 1200×630 (Yoast site görseli)"
   },
   {
    "kaynak": "marka/rahmi-cebeci-paylasim-siyah.png",
@@ -300,7 +288,7 @@
   },
   {
    "kaynak": "gorsel/uyg-botulinum-toksin.webp",
-   "ad": "botulinum-toksin-alin-goz-cevresi.webp",
+   "ad": "botulinum-toksin-alin-goz-cevresi-hd.webp",
    "alt": "Botulinum toksin uygulamasında değerlendirilen alın ve göz çevresi; dingin ifadeli kadın portresi",
    "baslik": "Botulinum toksin — kapak"
   },
@@ -658,6 +646,10 @@
    "alt": "Kontrol ve takip aşamasını simgeleyen, onay işaretli cam takvim",
    "baslik": "Süreç — 4. takip"
   }
+ ],
+ "medya_kaldir": [
+  "marka/rahmi-cebeci-amblem-1024.png",
+  "marka/rahmi-cebeci-paylasim-1200x630.png"
  ],
  "sayfalar": [
   {
