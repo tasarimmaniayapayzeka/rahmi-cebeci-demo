@@ -5,7 +5,21 @@
 ## ▶ BURADAN DEVAM ET
 
 **Durum:** rahmicebeci.com.tr WordPress + Klasik Editör olarak canlı, **arama motorlarına kapalı (noindex)**. Yerel = GitHub = sunucu
-(dağıtım #20, f40905e). 66 sayfa canlıda statikle birebir (gövde); bütün metin ve resimler panelden düzenlenebiliyor. Yarım kalan iş yok.
+(dağıtım #20, f40905e; sonraki commit'ler yalnız DEVIR). 66 sayfa canlıda statikle birebir (gövde); bütün metin ve resimler panelden
+düzenlenebiliyor. **Yarım kalan iş yok.**
+
+**Sonraki oturumda ilk iş (özet):**
+1. Hekim sunumunun dönüşünü sor: `sunum/Etken-Madde-Degisiklikleri-Dr-Rahmi-Cebeci.pdf` (10 sayfa, git dışı; üretici `sunum/olustur.js`).
+   Son sayfadaki "onayınıza sunulan 6 yeni cümle" hekimden düzeltme gelirse sayfa dosyalarında değiştir → yayın akışı.
+2. Hekime söylenmesi gereken: muayenehane (bekleme, karşılama, uygulama odası) ve cihaz görselleri kendi fotoğraflarımızdan yapay zekâ
+   ile yeniden işlendi, **rozetsiz** (kullanıcı kararı); yayın ilkeleri ve mevzuat sayfası buna göre yazıldı. Hekim gerçek fotoğraf isterse
+   eski fotoğraflar git geçmişinde (`git show f40905e~1:site/varliklar/foto/<ad>.webp`, ör. klinik-bekleme) — geri dönüş: dosyayı
+   geri koy, `medya.js`'te `surum`'u değiştir (ör. 'gercek'), yayın ilkeleri cümlelerini eski hâline al → yayın akışı.
+3. Aşağıdaki "Kullanıcı kararı bekleyenler" listesi (form testi, Copyscape, odak kelimeler, arama motorlarına açılış…).
+4. Test/denetim araçları artık kalıcı: `wp-yerel/araclar/` (git dışı) — mobil-cdp.js (telefon taklidi tarama), islev-test.js
+   (davranış testleri), kurulum-dongu.js (canlı aktarım, kalan 0'a kadar 5 sn arayla), canli-gorsel.js / canli-etken.js (canlı örnekleme,
+   1,5 sn arayla), nokta-kontrol.js (harita noktası hizası), karsilastir-gorsel.js / cift-pano.js / gorsel-pano.js (görsel panoları),
+   gorsel-envanter.js, ilac-tara.js. Yerel WP: `wp-yerel/baslat.bat` → `node wp-yerel/karsilastir.js`.
 
 **28 Eyl akşam yapılanlar (652dff3, 646acbf — canlıda):**
 - **Favicon:** eski "RC" yazılı SVG yerine gerçek CR amblemi, antrasit zeminde → `site/varliklar/ikon/` (favicon.ico 16/32/48,
@@ -42,10 +56,11 @@
   wp-image-N, öne çıkan görsel, logo seçimi çevrilir (her sayfa bir kez, revizyonsuz) + eski ek dosyalarıyla silinir; yarıda kalırsa
   `rc_medya_bekleyen` sonraki çağrıda biter. Canlı: 11 turda 78 yenileme, hata 0. Kütüphane: 104 bizim + 2 kullanıcının Yoast logosu,
   kopya 0. Araçlar/iş kaydı: `gorsel-ham/buyutme/` (isle.sh, isle-kare.sh, takip.txt; git dışı).
-  - **Büyütülemeyen 5 görsel** (3 denemede de servis hatası): `foto/prp-tupler`, `gorsel/yuz-3d`, `sorun-terleme`,
-    `uyg-doku-onarim-uygulamasi-2` (eski adı uyg-somon-dna-polinukleotid-2), `hekim-masasi` → 1400 px hâliyle duruyor (yeniden üretim ya da başka büyütücü seçeneği).
-  - **Hekimin 3 fotoğrafı (hekim-portre/koltuk/kare) bilerek büyütülmedi:** yapay zekâ yüz hatlarını değiştirebilir → asıl yüksek
-    çözünürlüklü fotoğraflar hekimden/fotoğrafçıdan istenmeli. Logo, cihaz kesimleri, süreç simgeleri küçük gösterildiği için hariç.
+  - ✅ **Büyütülemeyen 5 görsel** (prp-tupler, yuz-3d, sorun-terleme, uyg-doku-onarim-uygulamasi-2, hekim-masasi) 5 Eki'de 2K
+    yeniden üretimle çözüldü (aşağıda).
+  - **Hekimin 3 fotoğrafı (hekim-portre/koltuk/kare) bilerek büyütülmedi ve 5 Eki'de de dokunulmadı (kullanıcı: "hocanın kendi
+    görseline dokunma"):** yapay zekâ yüz hatlarını değiştirebilir → asıl yüksek çözünürlüklü fotoğraflar hekimden/fotoğrafçıdan
+    istenmeli (1400×788 ve 900×900 duruyor). Cihaz kesimleri 5 Eki'de yenilendi; logo ve 4 aşama ikonu küçük gösterildiği için hariç.
   - **Birebir aynı 3 dosya çifti birleştirildi:** ic3d-goz=bolge-goz-cevresi, bolge-boyun=bolge-boyun-ve-dekolte (ikisinin de alt
     metni "3B çizim" diyordu, fotoğraftı — düzeltildi), uyg-pico-lazer-dovme-silme=sorun-dovme… (dövme satırları artık yeni dövme
     kapağını gösteriyor). Kopyalar `medya.js KALDIRILAN` ile kütüphaneden silindi (kullanımdaysa silinmez; Yoast/site simgesi de sayılır).
@@ -100,14 +115,14 @@ uygulaması', 'dolgu uygulaması' gibi ifadeler kullanılır, öyle yap tüm sit
   kayıt); bu HTML HD yenilemede SİLİNEN eski görselleri istiyordu → 404 → boş kutular. `do_action('litespeed_purge_all')` REST
   isteğinde İŞLEMİYOR; `rc/v1/kurulum` artık yanıtta `X-LiteSpeed-Purge: *` başlığı gönderiyor. Temizlik sonrası canlı: 66 sayfa,
   1294 görsel adresi (src + srcset + data-gg) telefon kimliğiyle tarandı → kırık 0. Yerel CDP taraması 66 sayfa: yüklenmeyen 0,
-  taşma 0, JS hatası 0. Araçlar: %TEMP%\mobil-cdp.js (Chrome DevTools Protocol, 375×812 dpr2 dokunmatik; ek paket yok),
-  %TEMP%\canli-mobil-denetim.js. LiteSpeed sayfa optimizasyonu (lazy load / JS geciktirme) canlıda KAPALI.
+  taşma 0, JS hatası 0. Araçlar: `wp-yerel/araclar/mobil-cdp.js` (Chrome DevTools Protocol, 375×812 dpr2 dokunmatik; ek paket yok),
+  `wp-yerel/araclar/canli-mobil-denetim.js`. LiteSpeed sayfa optimizasyonu (lazy load / JS geciktirme) canlıda KAPALI.
 - **✅ Aşağıdaki 6 maddenin HEPSİ düzeltildi (4bbdd32, canlıda; kullanıcı: "hepsini düzelt en iyi şekilde").** Tanıtım paneli
   kendiliğinden açılmaz (yalnız ?asistan=tanitim) · pusula srcset'i de günceller · rc-js emniyeti (JS 3,5 sn'de çalışmazsa içerik
   görünür; kapak CSS ile belirir) · tablet menü (pointerType=mouse + klavye :focus-visible) · harita: dokunulan yere en yakın nokta ·
   img{height:auto} · şerit sizes · data-gg 768 alt boy · atlas/yolculuk etiketleri · :has'siz yedek · önizleme lazy.
   Doğrulama: yerel 66 sayfa öncesi/sonrası görsel boyutları aynı, 66/66 statik=WP, gidiş-dönüş 68/68, davranış testleri 8/8
-  (%TEMP%\islev-test.js); canlı 66 sayfa 1315 görsel adresi kırık 0, pusula ve tanıtım canlıda doğrulandı.
+  (`wp-yerel/araclar/islev-test.js`); canlı 66 sayfa 1315 görsel adresi kırık 0, pusula ve tanıtım canlıda doğrulandı.
 - **Bulgular (4 Eki tespit edildiği hâliyle):**
   1. Ana sayfaya dışarıdan girişte (WhatsApp, QR, adres çubuğu) 1,4 sn sonra TAM EKRAN koyu asistan tanıtım paneli açılıp sayfayı
      kilitliyor (asistan.js ~845; depolama kullanmadığı için her dış girişte). "Mobilde site görünmüyor" algısı yaratıyor.
@@ -137,7 +152,10 @@ Bizim bu iki dosyanın kopyalarımız (`dr-rahmi-cebeci-logo-kare`, `dr-rahmi-ce
    kapak alt metni de `medya.js`'te güncellenir).
 6. **Arama motorlarına açılış** (müşteri onayı): `site.js` `CANLI_ACIK=true` + WP Ayarlar › Okuma (blog_public) + Yoast site
    haritası/canonical kontrolü + drrahmicebeci.com'dan 301 (barındırması bilinmiyor, RvDesign yapımı).
-7. Hukukçu: ✅ etken madde adları siteden çıkarıldı (5 Eki, yukarıda). Kalan: asistan platformu geçişinde KVKK/çerez metinleri.
+7. Hukukçu: ✅ etken madde adları siteden çıkarıldı (5 Eki, yukarıda). Kalan: asistan platformu geçişinde KVKK/çerez metinleri;
+   asistan dizinindeki görünmez "botoks" eşleştirme sözcükleri (istenirse çıkar); muayenehane/cihaz görsellerinin rozetsiz yapay zekâ
+   olması (kullanıcı kararı, yayın ilkelerinde yazılı) — hukukçuya sorulabilir.
+7b. **Hekim sunumu (5 Eki):** etken madde değişiklikleri PDF'i hazırlandı (yukarıda "ilk iş" 1). Hekimin onayı/düzeltmeleri bekleniyor.
 8. Müşteriden: markaya özel görseller (gelince: dosya → `site/varliklar/` + `medya.js` kaydı → aktarım).
 9. Aşama 2 (asistan platformu geçişi): 35 canlıya çıkınca — aşağıdaki plan. (Eski asistan penceresindeki kart resimleri
    betikle `alt=""` basılıyor — dekoratif, platform geçişinde zaten değişecek.)
