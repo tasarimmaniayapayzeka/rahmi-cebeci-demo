@@ -55,6 +55,27 @@
 - **Imunify Security eklentisi** her sayfanın sonuna gizli tuzak bağlantısı koyuyor: `/imunify-bot-check` — **asla ziyaret edilmez**
   (bağlantı izleyen tarama IP'yi yakar). Genel kurala eklendi (~/.claude/CLAUDE.md); karşılaştırma betiği yok sayar.
 
+**4 Eki — MOBİLDE GÖRSEL ÇIKMIYOR incelemesi (kullanıcı şikâyeti; 2 ajan + CDP telefon taklidi):**
+- **KÖK NEDEN (düzeltildi, 197a5ed):** LiteSpeed sayfa önbelleği 28 Eyl 15:30'dan kalma HTML sunuyordu (masaüstü ve mobil aynı
+  kayıt); bu HTML HD yenilemede SİLİNEN eski görselleri istiyordu → 404 → boş kutular. `do_action('litespeed_purge_all')` REST
+  isteğinde İŞLEMİYOR; `rc/v1/kurulum` artık yanıtta `X-LiteSpeed-Purge: *` başlığı gönderiyor. Temizlik sonrası canlı: 66 sayfa,
+  1294 görsel adresi (src + srcset + data-gg) telefon kimliğiyle tarandı → kırık 0. Yerel CDP taraması 66 sayfa: yüklenmeyen 0,
+  taşma 0, JS hatası 0. Araçlar: %TEMP%\mobil-cdp.js (Chrome DevTools Protocol, 375×812 dpr2 dokunmatik; ek paket yok),
+  %TEMP%\canli-mobil-denetim.js. LiteSpeed sayfa optimizasyonu (lazy load / JS geciktirme) canlıda KAPALI.
+- **Açık bulgular (kullanıcı kararı/onayı bekliyor):**
+  1. Ana sayfaya dışarıdan girişte (WhatsApp, QR, adres çubuğu) 1,4 sn sonra TAM EKRAN koyu asistan tanıtım paneli açılıp sayfayı
+     kilitliyor (asistan.js ~845; depolama kullanmadığı için her dış girişte). "Mobilde site görünmüyor" algısı yaratıyor.
+     Karar: kapat / küçük balon / bir kez göster (depolama gerekir → çerez metni).
+  2. BÖLGE PUSULASI HATASI (kesin, canlıda doğrulandı): /bolge-pusulasi ve /bolgeler'de bölgeye dokununca görsel değişmiyor —
+     kesif.js yalnız src'yi değiştiriyor, WordPress srcset eklediği için tarayıcı srcset'e bakıyor. Düzeltme: srcset/sizes'ı da güncelle.
+  3. Bölge şeridi (ana sayfa, bölgeler) açık kartta görsel object-fit ile ~2,5× büyütülüyor; sizes=100vw yüzünden telefona 768 px
+     dosya → yumuşak. Düzeltme: şerit <img>'lerine kendi sizes değeri.
+  4. site.css `img{}` kuralında height:auto yok → panelden eklenen resim mobilde dikey uzar (CLAUDE.md kuralına aykırı).
+  5. Görünme animasyonları ([data-gr], kapaklar dahil) tamamen JS'ye bağlı, yedeği yok (JS yüklenmezse görünmez kalır).
+  6. Küçükler: dokunmatik tablette masaüstü menü ilk dokunuşta kapanıyor (site.js:44); harita noktaları mobilde iç içe; atlas kemeri
+     "yapay zekâ" etiketini kesiyor; ana sayfa yolculukta etiket 1. adımı örtüyor; hazırlık aracında :has desteklemeyen eski
+     tarayıcıda seçili yanıt beyaz üstüne beyaz; gizli önizleme resmi boşuna iniyor.
+
 **Kullanıcı Yoast'ı kendisi ayarladı (canlıda görüldü):** kuruluş logosu = kendi yüklediği `rahmi-cebeci-amblem-1024.png`,
 site görseli = `Dr-Rahmi-Cebeci-Logo.png` (1200×630), site adı "Uzm. Dr. Rahmi Cebeci", slogan kodlaması düzelmiş.
 Bizim bu iki dosyanın kopyalarımız (`dr-rahmi-cebeci-logo-kare`, `dr-rahmi-cebeci-paylasim-gorseli`) silindi (701be21, kullanıcı: "2 kez görmesin").
