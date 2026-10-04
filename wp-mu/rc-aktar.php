@@ -175,8 +175,11 @@ function rc_ilk_kurulum(bool $ustune, int $medya_sinir = 0) {
 	}
 	$r['aktarim'] = rc_aktar(['ustune_yaz' => $ustune, 'medya_sinir' => $medya_sinir]);
 	flush_rewrite_rules(true);
-	/* LiteSpeed Cache (sunucuda etkin): tema/varlık değişikliği ve eski yönlendirmeler (ör. /favicon.ico) önbellekte kalmasın */
-	if (has_action('litespeed_purge_all') || defined('LSCWP_V')) { do_action('litespeed_purge_all'); $r['adimlar'][] = 'LiteSpeed önbelleği temizlendi'; }
+	/* LiteSpeed Cache (sunucuda etkin): tema/varlık/görsel değişikliği önbellekte kalmasın.
+	   4 Eki: do_action('litespeed_purge_all') REST isteğinde işlemedi — 28 Eyl'den kalan sayfalar (masaüstü + mobil) silinmiş
+	   görselleri istiyordu. LiteSpeed sunucusu yanıttaki X-LiteSpeed-Purge başlığını doğrudan uygular (bütün sürümler). */
+	if (has_action('litespeed_purge_all') || defined('LSCWP_V')) do_action('litespeed_purge_all');
+	if (!headers_sent()) { header('X-LiteSpeed-Purge: *', false); $r['adimlar'][] = 'LiteSpeed önbelleği temizlendi (X-LiteSpeed-Purge: *)'; }
 	return $r;
 }
 
