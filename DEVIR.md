@@ -87,10 +87,10 @@ site görseli = `Dr-Rahmi-Cebeci-Logo.png` (1200×630), site adı "Uzm. Dr. Rahm
 Bizim bu iki dosyanın kopyalarımız (`dr-rahmi-cebeci-logo-kare`, `dr-rahmi-cebeci-paylasim-gorseli`) silindi (701be21, kullanıcı: "2 kez görmesin").
 
 **Kullanıcı kararı bekleyenler (sırayla sor, onaysız başlama):**
-1. **Yoast yayıncı adı hâlâ "Cebeci"** (şema: Person/Organization "Cebeci" + logo). Ya Site temsili → Kuruluş "Dr. Rahmi Cebeci",
-   ya da WordPress kullanıcısının görünen adı "Uzm. Dr. Rahmi Cebeci".
-2. **Slogan** "Bakırköy Estetik Merkezi": kodlama düzeldi; "merkez" kelimesi muayenehane için sorunlu olabilir →
-   öneri "Uzm. Dr. Rahmi Cebeci — Bakırköy medikal estetik muayenehanesi".
+1. ✅ **Yoast yayıncı adı** (4 Eki): kullanıcı no. 1'in görünen adı "Uzm. Dr. Rahmi Cebeci" yapıldı (Site temsili "Kişi" korundu);
+   canlı şema: Person/Organization "Uzm. Dr. Rahmi Cebeci" + amblem logosu.
+2. ✅ **Slogan KARARI (4 Eki, kullanıcı): "Bakırköy Estetik Merkezi" KALIYOR — "daha sorma". Bir daha önerme/sorma.**
+   (Sunum 5 Eki.)
 3. **Form testi:** info@ adresine "TEST" yazan tek talep (onayla) → webmail'de gör; `randevu-talepleri.log` ve `eposta-hatalari.log`'a bak.
 4. **Copyscape** ≈ $8,19 (66 sayfa), bakiye $18,04 → onay.
 5. **Odak anahtar kelimeleri** Yoast'a yazıldı; kullanıcı listeyi onaylamadı (değişiklik gerekirse `site/veri/sayfalar/*.js` → `odak`;
