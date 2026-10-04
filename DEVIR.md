@@ -62,7 +62,13 @@
   1294 görsel adresi (src + srcset + data-gg) telefon kimliğiyle tarandı → kırık 0. Yerel CDP taraması 66 sayfa: yüklenmeyen 0,
   taşma 0, JS hatası 0. Araçlar: %TEMP%\mobil-cdp.js (Chrome DevTools Protocol, 375×812 dpr2 dokunmatik; ek paket yok),
   %TEMP%\canli-mobil-denetim.js. LiteSpeed sayfa optimizasyonu (lazy load / JS geciktirme) canlıda KAPALI.
-- **Açık bulgular (kullanıcı kararı/onayı bekliyor):**
+- **✅ Aşağıdaki 6 maddenin HEPSİ düzeltildi (4bbdd32, canlıda; kullanıcı: "hepsini düzelt en iyi şekilde").** Tanıtım paneli
+  kendiliğinden açılmaz (yalnız ?asistan=tanitim) · pusula srcset'i de günceller · rc-js emniyeti (JS 3,5 sn'de çalışmazsa içerik
+  görünür; kapak CSS ile belirir) · tablet menü (pointerType=mouse + klavye :focus-visible) · harita: dokunulan yere en yakın nokta ·
+  img{height:auto} · şerit sizes · data-gg 768 alt boy · atlas/yolculuk etiketleri · :has'siz yedek · önizleme lazy.
+  Doğrulama: yerel 66 sayfa öncesi/sonrası görsel boyutları aynı, 66/66 statik=WP, gidiş-dönüş 68/68, davranış testleri 8/8
+  (%TEMP%\islev-test.js); canlı 66 sayfa 1315 görsel adresi kırık 0, pusula ve tanıtım canlıda doğrulandı.
+- **Bulgular (4 Eki tespit edildiği hâliyle):**
   1. Ana sayfaya dışarıdan girişte (WhatsApp, QR, adres çubuğu) 1,4 sn sonra TAM EKRAN koyu asistan tanıtım paneli açılıp sayfayı
      kilitliyor (asistan.js ~845; depolama kullanmadığı için her dış girişte). "Mobilde site görünmüyor" algısı yaratıyor.
      Karar: kapat / küçük balon / bir kez göster (depolama gerekir → çerez metni).
