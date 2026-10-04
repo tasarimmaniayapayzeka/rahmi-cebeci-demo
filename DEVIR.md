@@ -1,11 +1,11 @@
 # DEVİR — 34-Rahmi-Cebeci
 
-**Son güncelleme: 5 Ekim 2026 (gece — etken madde adları siteden çıkarıldı, canlıda)**
+**Son güncelleme: 5 Ekim 2026 (gece — görseller 2K yeniden üretildi + etken madde adları çıkarıldı, canlıda)**
 
 ## ▶ BURADAN DEVAM ET
 
 **Durum:** rahmicebeci.com.tr WordPress + Klasik Editör olarak canlı, **arama motorlarına kapalı (noindex)**. Yerel = GitHub = sunucu
-(dağıtım #19, 913b1fb). 66 sayfa canlıda statikle birebir (gövde); bütün metin ve resimler panelden düzenlenebiliyor. Yarım kalan iş yok.
+(dağıtım #20, f40905e). 66 sayfa canlıda statikle birebir (gövde); bütün metin ve resimler panelden düzenlenebiliyor. Yarım kalan iş yok.
 
 **28 Eyl akşam yapılanlar (652dff3, 646acbf — canlıda):**
 - **Favicon:** eski "RC" yazılı SVG yerine gerçek CR amblemi, antrasit zeminde → `site/varliklar/ikon/` (favicon.ico 16/32/48,
@@ -54,6 +54,23 @@
   `rc/v1/kurulum` artık sonunda `litespeed_purge_all` çağırıyor.
 - **Imunify Security eklentisi** her sayfanın sonuna gizli tuzak bağlantısı koyuyor: `/imunify-bot-check` — **asla ziyaret edilmez**
   (bağlantı izleyen tarama IP'yi yakar). Genel kurala eklendi (~/.claude/CLAUDE.md); karşılaştırma betiği yok sayar.
+
+**5 Eki — GÖRSELLER 2K'DA YENİDEN ÜRETİLDİ (f40905e, dağıtım #20, canlıda; kullanıcı: "kalitesiz görünen tüm görselleri 2k
+higgsfield ile yeniden yap… gerçek görseller (muayene, lazer cihazı) yerine sen yap… hocanın kendi görseline dokunma"):**
+- 89 görsel: 84'ü eski görsel REFERANS alınarak aynı kompozisyonla (harita noktaları ve atlas etiketleri yerinde kalsın diye)
+  Nano Banana Pro 2K ile yeniden üretildi; biyostimülan ve fraksiyonel lazer kapakları alt metne göre sıfırdan; 5 cihaz Seedream 5 Pro
+  (referanslı + arka plan silme, saydam WebP). Fotoğraflar 2560 px WebP (3:4'ler 1792×2390). ~182,5 kredi (2/görsel, cihaz 2,5).
+  medya.js: 89 kayıt `surum: '2k'` → WordPress'te yeni dosya adı `…-2k.webp`, eski ek silindi. Canlı: 8 partide 89 yenileme, hata 0,
+  kütüphane 104 = paket 104, sayfalarda eski -hd adresi 0. Yerel: statik=WP 66/66, gidiş-dönüş 68/68, mobil 10 sayfa temiz.
+- **KULLANICI KARARI — muayenehane/cihaz görselleri yapay zekâ, ROZETSİZ:** bekleme salonu ×2, uygulama odası, PRP tüpleri ve 5 cihaz
+  kendi fotoğraflarımız referans alınarak yeniden işlendi (düzen ve cihaz görünümü korundu). Kullanıcı rozet istemedi ("ekleme kötü
+  oluyor"); sitenin yayın ilkeleri sayfası buna aykırı söz veriyordu → kullanıcıya soruldu, "yapay zekâyla yap, rozetsiz" seçildi.
+  `yasal/icerik-ve-gorsel-yayin-ilkelerimiz` (üç çeşit görsel: hekim portreleri gerçek; muayenehane ve cihaz görselleri kendi
+  fotoğraflarımızdan yapay zekâ ile yeniden işlendi; konu görselleri rozetli) ve `23-mevzuat` cümlesi buna göre yazıldı.
+- Değişmeyenler: hekimin 3 fotoğrafı, logo/amblem, 28 Eyl'de 4K üretilen 5 görsel (dövme kapağı, cilt tipi, hazırlık, 404, karşılaştırma),
+  4 küçük aşama ikonu, kullanılmayan `foto/klinik-cihaz-odasi.webp`. Alt metni/dosya adı yeni görsele göre düzeltilen 5 görsel:
+  el, vücut, terleme, bölgesel lipoliz (çene altı profil), selülit (3B deri altı).
+- Üretim kayıtları ve betikler: `gorsel-ham/yenile-2k/` (git dışı; liste.js tarifler, durum.json Higgsfield iş/URL kayıtları).
 
 **4–5 Eki — İLAÇ / ETKEN MADDE ADLARI SİTEDEN ÇIKARILDI (913b1fb, dağıtım #19, canlıda; kullanıcı: "bu adlar yerine 'mimik çizgisi
 uygulaması', 'dolgu uygulaması' gibi ifadeler kullanılır, öyle yap tüm sitede"):**
