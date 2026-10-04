@@ -19,12 +19,12 @@ const BOLGELER = [
 ];
 
 const BOLGE_UYGULAMA = {
-  'yuz':             [['Dolgu Uygulamaları','dolgu-uygulamalari'],['Sıvı Yüz Germe','sivi-yuz-germe'],['Botulinum Toksin','botulinum-toksin'],['Mezoterapi','mezoterapi'],['HIFU','hifu-ameliyatsiz-yuz-germe'],['Fraksiyonel Lazer','fraksiyonel-lazer'],['Altın İğne Radyofrekans','altin-igne-radyofrekans']],
+  'yuz':             [['Dolgu Uygulamaları','dolgu-uygulamalari'],['Sıvı Yüz Germe','sivi-yuz-germe'],['Mimik Çizgisi Uygulaması','mimik-cizgisi-uygulamasi'],['Mezoterapi','mezoterapi'],['HIFU','hifu-ameliyatsiz-yuz-germe'],['Fraksiyonel Lazer','fraksiyonel-lazer'],['Altın İğne Radyofrekans','altin-igne-radyofrekans']],
   'sacli-deri':      [['Saç Mezoterapisi','sac-mezoterapisi'],['Saç PRP','sac-prp'],['Saçlı Deride Eksozom','eksozom/#sac']],
-  'goz-cevresi':     [['Göz Altı Dolgusu','dolgu-uygulamalari/#goz-alti'],['Somon DNA ve Polinükleotid','somon-dna-polinukleotid'],['Botulinum Toksin','botulinum-toksin']],
+  'goz-cevresi':     [['Göz Altı Dolgusu','dolgu-uygulamalari/#goz-alti'],['Doku Onarım Uygulaması','doku-onarim-uygulamasi'],['Mimik Çizgisi Uygulaması','mimik-cizgisi-uygulamasi']],
   'dudak':           [['Dolgu Uygulamaları','dolgu-uygulamalari'],['Gençlik Aşısı (Skinbooster)','genclik-asisi-skinbooster']],
-  'cene-ve-jawline': [['Dolgu Uygulamaları','dolgu-uygulamalari'],['Botulinum Toksin','botulinum-toksin'],['Bölgesel Lipoliz','bolgesel-lipoliz'],['HIFU','hifu-ameliyatsiz-yuz-germe']],
-  'boyun-ve-dekolte':[['Mezoterapi','mezoterapi'],['Gençlik Aşısı (Skinbooster)','genclik-asisi-skinbooster'],['Botulinum Toksin','botulinum-toksin'],['HIFU','hifu-ameliyatsiz-yuz-germe']],
+  'cene-ve-jawline': [['Dolgu Uygulamaları','dolgu-uygulamalari'],['Mimik Çizgisi Uygulaması','mimik-cizgisi-uygulamasi'],['Bölgesel Lipoliz','bolgesel-lipoliz'],['HIFU','hifu-ameliyatsiz-yuz-germe']],
+  'boyun-ve-dekolte':[['Mezoterapi','mezoterapi'],['Gençlik Aşısı (Skinbooster)','genclik-asisi-skinbooster'],['Mimik Çizgisi Uygulaması','mimik-cizgisi-uygulamasi'],['HIFU','hifu-ameliyatsiz-yuz-germe']],
   'el':              [['Mezoterapi','mezoterapi'],['Pico Lazer ile Leke','pico-lazer-leke'],['Gençlik Aşısı (Skinbooster)','genclik-asisi-skinbooster']],
   'vucut':           [['Bölgesel Lipoliz','bolgesel-lipoliz'],['Selülit Görünümü','selulit-gorunumu'],['Pico Lazer ile Dövme Silme','pico-lazer-dovme-silme'],['Mezoterapi','mezoterapi']],
 };

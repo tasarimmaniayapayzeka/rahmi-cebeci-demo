@@ -47,13 +47,13 @@ module.exports = {
         <b>Bu nedir</b>
         <p>Cilde temas eden başlık milisaniyeler süren, düşük şiddetli elektrik darbeleri gönderir. Bu darbeler derinin en dış katmanındaki yağlı yapıların arasında kısa ömürlü geçiş aralıkları açar; tıptaki adı elektroporasyondur. Bu sırada deriye iğne girmez, kesi ya da delik oluşmaz.</p>
 <p>Açılan aralıklar uzun ömürlü değildir; kısa süre sonra deri onları kendisi kapatır ve solüsyonun içeri yol bulabildiği zaman dilimi bu kadardır. İçeri ne kadar ürün geçeceği molekülün boyutuna ve elektrik yüküne, bir de o gün derinin ne kadar sağlıklı olduğuna bağlıdır.</p>
-<p>Bu yüzden solüsyon rastgele seçilmez. Tercih edilenler, düşük ağırlıklı hyalüronik asit ya da peptit gibi küçük moleküllü, steril ve bu kullanım için hazırlanmış içeriklerdir; evdeki serum şişeleri bu iş için tasarlanmamıştır.</p>
+<p>Bu yüzden solüsyon rastgele seçilmez. Tercih edilenler, düşük molekül ağırlıklı nem tutucu maddeler ya da peptitler gibi küçük moleküllü, steril ve bu kullanım için hazırlanmış içeriklerdir; evdeki serum şişeleri bu iş için tasarlanmamıştır.</p>
 <p><b>Kullanılan cihaz:</b> elektroporasyon cihazı (Mes Button).</p>
       </div>
       <div class="kutu kutu--uyari" data-gr style="--d:80ms">
         <b>Bu ne değildir</b>
         <p>İğneli mezoterapide ürünün hangi derinliğe, ne kadar bırakıldığını hekim belirler ve dosyaya yazar. Elektroporasyonda ise solüsyonun hangi katmana kadar ilerlediğini seçmek ya da içeri geçen miktarı ölçmek mümkün değildir. Bu nedenle iğnesiz yöntem <a href="${r}uygulamalar/mezoterapi/">iğneli mezoterapinin</a> yerine konmaz.</p>
-<p>İri moleküller bu yolla neredeyse hiç geçmez. Sık karıştırılan bir nokta da şudur: “gençlik aşısı” adıyla bilinen işlem, hyalüronik asidin iğneyle cilt içine verildiği <a href="${r}uygulamalar/genclik-asisi-skinbooster/">skinbooster</a> uygulamasıdır; bu yöntemle ilgisi yoktur.</p>
+<p>İri moleküller bu yolla neredeyse hiç geçmez. Sık karıştırılan bir nokta da şudur: “gençlik aşısı” adıyla bilinen işlem, nem tutucu bir maddenin iğneyle cilt içine verildiği <a href="${r}uygulamalar/genclik-asisi-skinbooster/">skinbooster</a> uygulamasıdır; bu yöntemle ilgisi yoktur.</p>
 <p>Morluk ya da ürünün damara kaçması gibi iğneye özgü sorunlar burada görülmez. Bu, yöntemin tamamen zararsız olduğu anlamına gelmez: akım kızarıklık ve karıncalanma, solüsyon ise tahriş ya da aşırı duyarlılık tepkisi yapabilir. Etkisi yüzeyde kalır ve birkaç hafta içinde azalır; cilt kalitesinde daha kalıcı bir değişim hedefleniyorsa iğneli seçenekler öne çıkar.</p>
       </div>
     </div>
@@ -118,7 +118,7 @@ module.exports = {
         <button class="g-ssoru" data-gs="1"><i>›</i>Seans sırasında ne hissederim?</button>
         <div class="g-syanit" data-gs-yanit="1">Çoğu kişi hafif bir karıncalanma ve ılıklık tarif eder, bazen de başlığın altında belli belirsiz bir titreşim. Elmacık kemiği ve göz çevresi gibi ince derili yerlerde his artabilir; rahatsız ederse cihazın gücü azaltılır ya da ara verilir.</div>
         <button class="g-ssoru" data-gs="2"><i>›</i>“Gençlik aşısı” ile aynı şey mi?</button>
-        <div class="g-syanit" data-gs-yanit="2">Değil. Halk arasında gençlik aşısı denen uygulama, hyalüronik asidin ince iğnelerle cilt içine verildiği skinbooster uygulamasıdır. Burada iğne kullanılmaz; solüsyon elektrik darbeleriyle açılan geçici aralıklardan ilerler ve daha yüzeyde kalır. Bu iki işlem birbirinin yerine anılmamalıdır.</div>
+        <div class="g-syanit" data-gs-yanit="2">Değil. Halk arasında gençlik aşısı denen uygulama, nem tutucu bir maddenin ince iğnelerle cilt içine verildiği skinbooster uygulamasıdır. Burada iğne kullanılmaz; solüsyon elektrik darbeleriyle açılan geçici aralıklardan ilerler ve daha yüzeyde kalır. Bu iki işlem birbirinin yerine anılmamalıdır.</div>
         <button class="g-ssoru" data-gs="3"><i>›</i>Kalp pili ya da insülin pompası kullanıyorum, olur mu?</button>
         <div class="g-syanit" data-gs-yanit="3">Olmaz. Yöntem elektrik akımıyla çalıştığı için vücutta elektronik bir cihaz taşıyan herkeste kullanılmaz. Böyle bir durumda cildinize uygun, akım gerektirmeyen başka basamakları birlikte planlarız.</div>
         <button class="g-ssoru" data-gs="4"><i>›</i>Boyun ve ellere de yapılır mı?</button>

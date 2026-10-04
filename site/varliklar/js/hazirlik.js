@@ -29,15 +29,15 @@
       n: 'Bazı sinir–kas hastalıkları ve bazı antibiyotikler, kas üzerine etkili uygulamaların etkisini beklenmedik şekilde artırabilir.',
       evet: 'KIRMIZI', bilmiyorum: 'KIRMIZI', et: 'Sinir–kas hastalığı veya ilgili ilaç kullanımı' },
 
-    { k: 'anafilaksi', s: 'Daha önce anafilaksi (ağır alerjik şok) geçirdiniz mi; çoklu ağır alerjiniz, lidokain veya lokal anestezik alerjiniz ya da daha önce bir enjeksiyon uygulamasına karşı gelişmiş bir reaksiyonunuz oldu mu?',
+    { k: 'anafilaksi', s: 'Daha önce anafilaksi (ağır alerjik şok) geçirdiniz mi; çoklu ağır alerjiniz, lokal anestezik (uyuşturucu) alerjiniz ya da daha önce bir enjeksiyon uygulamasına karşı gelişmiş bir reaksiyonunuz oldu mu?',
       n: 'Bazı ürünler amid tipi lokal anestezik içerir; ağır alerji öyküsü uygulama kararını doğrudan etkiler.',
       evet: 'KIRMIZI', bilmiyorum: 'KIRMIZI', et: 'Ağır alerji veya önceki enjeksiyon reaksiyonu öyküsü' },
 
-    { k: 'izotretinoin', s: 'Son 6 ay içinde izotretinoin (yaygın ticari adlarıyla bilinen akne ilacı) kullandınız mı ya da hâlen kullanıyor musunuz?',
+    { k: 'akne-ilaci', s: 'Son 6 ay içinde ağızdan alınan A vitamini türevi bir akne ilacı kullandınız mı ya da hâlen kullanıyor musunuz?',
       n: 'Bu ilacın cilt yenileme uygulamalarıyla ilişkisi konusunda bilimsel görüşler farklılık göstermektedir; bu nedenle karar hekiminize aittir ve mutlaka bildirmeniz gerekir.',
-      evet: 'SARI', bilmiyorum: 'SARI', et: 'Son 6 ayda izotretinoin kullanımı' },
+      evet: 'SARI', bilmiyorum: 'SARI', et: 'Son 6 ayda ağızdan akne ilacı kullanımı' },
 
-    { k: 'kanama', s: 'Kan sulandırıcı bir ilaç kullanıyor musunuz (varfarin, yeni nesil kan sulandırıcılar, günlük aspirin, düzenli ağrı kesici, balık yağı, ginkgo) ya da bilinen bir kanama veya pıhtılaşma bozukluğunuz var mı?',
+    { k: 'kanama', s: 'Kan sulandırıcı bir ilaç kullanıyor musunuz (reçeteli kan sulandırıcılar, günlük düşük dozlu kalp koruyucu ilaç, düzenli ağrı kesici, balık yağı, ginkgo) ya da bilinen bir kanama veya pıhtılaşma bozukluğunuz var mı?',
       n: 'Bu ilaçlar morarma ve kanama eğilimini artırabilir; uygulama planı buna göre değişebilir.',
       evet: 'SARI', bilmiyorum: 'SARI', et: 'Kan sulandırıcı ilaç veya kanama bozukluğu' },
 

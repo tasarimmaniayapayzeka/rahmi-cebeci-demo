@@ -34,7 +34,7 @@ module.exports = {
         <select data-kar-a aria-label="Birinci uygulama">
           ${S.katalog.map(g => `<optgroup label="${g.grup}">` +
             g.ogeler.filter(([, sl]) => OZ[sl]).map(([ad, sl]) =>
-              `<option value="${sl}"${sl === 'botulinum-toksin' ? ' selected' : ''}>${ad}</option>`).join('') +
+              `<option value="${sl}"${sl === 'mimik-cizgisi-uygulamasi' ? ' selected' : ''}>${ad}</option>`).join('') +
             '</optgroup>').join('')}
         </select>
         <span class="kar-vs">karşı</span>

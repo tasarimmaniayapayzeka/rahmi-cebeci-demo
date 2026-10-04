@@ -3,9 +3,9 @@
    yolculuk simülatörünü besler. Parasal bilgi içermez; iddia değil genel bilgi
    dilindedir, her süre ve etki kişiye göre değişir. */
 module.exports = {
-  "botulinum-toksin": {
-    "slug": "botulinum-toksin",
-    "ad": "Botulinum toksin",
+  "mimik-cizgisi-uygulamasi": {
+    "slug": "mimik-cizgisi-uygulamasi",
+    "ad": "Mimik çizgisi uygulaması",
     "hedef": "Fazla çalışan bir kasın hareketini ya da ter bezlerinin uyarımını geçici olarak azaltmak",
     "his": "Birkaç dakikalık işlemde nokta nokta kısa batmalar hissedilir; algı kişiden kişiye farklıdır.",
     "iyilesme": "İğne noktalarında hafif kabarıklık, kızarıklık ya da küçük morluk olabilir; çoğunlukla birkaç günde kaybolur.",
@@ -63,9 +63,9 @@ module.exports = {
       "takip": "Kontrolde yanıta bakılır; beklenen değişim yoksa seans eklemek yerine plan yeniden düşünülür."
     }
   },
-  "somon-dna-polinukleotid": {
-    "slug": "somon-dna-polinukleotid",
-    "ad": "Somon DNA ve polinükleotid",
+  "doku-onarim-uygulamasi": {
+    "slug": "doku-onarim-uygulamasi",
+    "ad": "Doku onarım uygulaması",
     "hedef": "Özellikle ince ve yorgun görünen ciltte, dokunun kendi yenilenme süreçlerini desteklemek",
     "his": "Küçük noktalardan uygulanır; göz çevresi gibi ince bölgelerde hassasiyet daha belirgin olabilir.",
     "iyilesme": "Uygulama noktaları ilk gün kabarık ve kırmızı görünebilir; göz çevresi gibi ince derili yerlerde hafif şişlik birkaç gün sürebilir.",

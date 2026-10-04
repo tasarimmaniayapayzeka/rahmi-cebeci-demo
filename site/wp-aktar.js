@@ -68,6 +68,19 @@ const medya = Object.entries(MEDYA.TABLO).map(([kaynak, v]) => {
   return { kaynak, ad: v.ad + (v.surum ? '-' + v.surum : '') + path.extname(kaynak), alt: v.alt, baslik: v.baslik };
 });
 const medyaKaldir = MEDYA.KALDIRILAN.filter(k => !MEDYA.TABLO[k]);
+/* adı değişen sayfalar/görseller (veri/tasima.js): WordPress'te eski kayıt yeni ada taşınır, kopya doğmaz.
+   Eski sayfa adresinin 301'i .htaccess'te — kural eksikse aktarım durur (eski bağlantılar 404 vermesin). */
+const TASIMA = require(path.join(KOK, 'veri', 'tasima.js'));
+const htaccess = fs.readFileSync(path.join(DEPO, 'wp-kurulum', 'htaccess'), 'utf8');
+for (const [eski, yeni] of Object.entries(TASIMA.SAYFA)) {
+  if (!yollar.has(yeni)) throw new Error(`tasima.js: yeni sayfa yok: ${yeni}`);
+  if (yollar.has(eski)) throw new Error(`tasima.js: eski sayfa hâlâ var: ${eski}`);
+  if (!htaccess.includes(`RewriteRule ^${eski}/?$ /${yeni}/ [R=301,L]`)) throw new Error(`wp-kurulum/htaccess: 301 kuralı yok: ${eski} → ${yeni}`);
+}
+for (const [eski, yeni] of Object.entries(TASIMA.GORSEL)) {
+  if (!MEDYA.TABLO[yeni]) throw new Error(`tasima.js: yeni görsel medya.js'te yok: ${yeni}`);
+  if (MEDYA.TABLO[eski]) throw new Error(`tasima.js: eski görsel medya.js'te hâlâ var: ${eski}`);
+}
 /* sayfası olmayan ara klasörler (ör. yasal/) — WordPress'te taslak ebeveyn olur, adres üretmez */
 const eksikEbeveyn = [...new Set(disa.map(d => d.ebeveyn).filter(e => e && !yollar.has(e)))];
 /* ebeveyn önce gelsin */
@@ -75,7 +88,8 @@ disa.sort((a, b) => a.yol.split('/').length - b.yol.split('/').length || a.sira 
 
 fs.mkdirSync(path.join(DEPO, 'wp-mu'), { recursive: true });
 fs.writeFileSync(path.join(DEPO, 'wp-mu', 'rc-icerik.json'),
-  JSON.stringify({ uretim: new Date().toISOString(), eksikEbeveyn, medya, medya_kaldir: medyaKaldir, sayfalar: disa }, null, 1), 'utf8');
+  JSON.stringify({ uretim: new Date().toISOString(), eksikEbeveyn, medya, medya_kaldir: medyaKaldir,
+    medya_tasi: TASIMA.GORSEL, adres_degisimi: TASIMA.SAYFA, sayfalar: disa }, null, 1), 'utf8');
 
 /* ---------- tema verisi ---------- */
 const veri = {

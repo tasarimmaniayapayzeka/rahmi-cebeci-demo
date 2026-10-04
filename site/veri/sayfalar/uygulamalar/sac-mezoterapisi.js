@@ -15,7 +15,7 @@ module.exports = {
       <nav class="kirinti" aria-label="Konum" style="position:relative;font-size:.76rem;color:var(--sessiz);display:flex;gap:7px;margin-bottom:18px"><a href="${r}" style="color:var(--sessiz);text-decoration:none">Ana sayfa</a> › <a href="${r}uygulamalar/" style="color:var(--sessiz);text-decoration:none">Uygulamalar</a> › <span>Saç mezoterapisi</span></nav>
       <p class="g-etiket">Saç Sağlığı · Mezoterapi</p>
       <h1>Saç mezoterapisi: <span class="g-isik">saçlı deriye ölçülü destek</span></h1>
-      <p class="g-hero__alt">Saç mezoterapisinde vitamin, eser element, aminoasit ve düşük yoğunlukta hyalüronik asit içeren bir karışım, ince iğneyle saçlı derinin pek çok noktasına küçük miktarlarda verilir. Hedeflenen, saç kökünü çevreleyen dokunun beslenmesini desteklemektir. Kaybedilmiş saçı geri getirmez; dökülmenin kaynağı araştırılmadan plan yapılmaz, seans sayısı kişiye göre belirlenir.</p>
+      <p class="g-hero__alt">Saç mezoterapisinde vitamin, eser element, aminoasit ve düşük yoğunlukta nem tutucu madde içeren bir karışım, ince iğneyle saçlı derinin pek çok noktasına küçük miktarlarda verilir. Hedeflenen, saç kökünü çevreleyen dokunun beslenmesini desteklemektir. Kaybedilmiş saçı geri getirmez; dökülmenin kaynağı araştırılmadan plan yapılmaz, seans sayısı kişiye göre belirlenir.</p>
       <div class="g-hero__cta">
         <a class="dgm dgm--bir" href="${r}iletisim/">Randevu isteyin</a>
         <a class="dgm dgm--iki" href="#ilkbolum">Seyrini okuyun ↓</a>
@@ -46,7 +46,7 @@ module.exports = {
       <div class="kutu kutu--bilgi" data-gr>
         <b>Bu nedir</b>
         <p>Karışım kana geçecek derinliğe değil, kıl köklerinin yerleştiği yüzeye yakın deri katmanına bırakılır. Bir seansta kullanılan toplam miktar birkaç mililitreyi aşmaz ve saçlı derinin geniş bir alanına küçük damlalar hâlinde dağıtılır.</p>
-<p>İçerik herkes için aynı değildir, hekim tarafından seçilir. Karışımda B grubu vitaminleri, çinko ve bakır gibi iz mineraller, aminoasit–peptit grupları ve hafif yapıda hyalüronik asit bulunabilir. Amaç saçlı derinin nemini, küçük damarlardaki dolaşımı ve kıl kökünü besleyen ortamı desteklemektir.</p>
+<p>İçerik herkes için aynı değildir, hekim tarafından seçilir. Karışımda B grubu vitaminleri, çinko ve bakır gibi iz mineraller, aminoasit–peptit grupları ve hafif yapıda, nem tutucu bir madde bulunabilir. Amaç saçlı derinin nemini, küçük damarlardaki dolaşımı ve kıl kökünü besleyen ortamı desteklemektir.</p>
 <p>Karışıma reçeteyle verilen bir ilacın etken maddesi katılmaz; ilaç tedavisi gerekiyorsa bu ayrı bir karar olarak ele alınır. Yaygın dökülmenin ardından gelen toparlanma döneminde, saçlı deride kuruluk ve gerginlik yakınmasında ya da tellerin incelmeye başladığı erken evrede destekleyici bir adım olarak düşünülebilir.</p>
       </div>
       <div class="kutu kutu--uyari" data-gr style="--d:80ms">
@@ -151,7 +151,7 @@ module.exports = {
         <button class="g-ssoru" data-gs="2"><i>›</i>Kaç seans yapılır, aralar nasıl belirlenir?</button>
         <div class="g-syanit" data-gs-yanit="2">Muayeneden önce bir sayı vermek doğru olmaz. Seanslar arasında çoğunlukla iki ila dört hafta bırakılır; toplam sayıyı tablonun kendisi ve ara kontrolde görülen yanıt belirler. Baştan sabitlenmiş bir seans sayısıyla çalışmıyoruz.</div>
         <button class="g-ssoru" data-gs="3"><i>›</i>Karışımda ilaç bulunuyor mu?</button>
-        <div class="g-syanit" data-gs-yanit="3">Muayenehanemizde saç mezoterapisi karışımlarına reçeteli bir ilacın etken maddesi eklenmez. İçerik vitaminler, eser elementler, aminoasitler, peptitler ve hyalüronik asit gibi bileşenlerden oluşur. İlaç tedavisi gerekiyorsa bu ayrıca konuşulan bir konudur.</div>
+        <div class="g-syanit" data-gs-yanit="3">Muayenehanemizde saç mezoterapisi karışımlarına reçeteli bir ilacın etken maddesi eklenmez. İçerik vitaminler, eser elementler, aminoasitler, peptitler ve nem tutucu maddeler gibi bileşenlerden oluşur. İlaç tedavisi gerekiyorsa bu ayrıca konuşulan bir konudur.</div>
         <button class="g-ssoru" data-gs="4"><i>›</i>Erkeklerde uygulanabilir mi?</button>
         <div class="g-syanit" data-gs-yanit="4">Karar cinsiyete göre değil, dökülmenin türüne ve kaynağına göre verilir. Kalıtsal yatkınlıkla ilerlemiş belirgin açılmada bu uygulama tek başına yeterli bir plan oluşturmaz ve bu size açıkça söylenir. İncelmenin yeni başladığı dönemde destekleyici bir adım olarak düşünülebilir.</div>
         <button class="g-ssoru" data-gs="5"><i>›</i>Ücret bilgisini nasıl öğrenirim?</button>

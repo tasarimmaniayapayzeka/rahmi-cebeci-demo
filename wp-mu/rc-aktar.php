@@ -27,13 +27,13 @@ function rc_aktar(array $o = []) {
 
 	kses_remove_filters();   /* SVG, data-*, JSON veri blokları kırpılmasın (oturumsuz komut satırında kses açık olurdu) */
 	$r = ['yeni' => [], 'guncellenen' => [], 'ayni' => 0, 'elle' => [], 'fark' => [], 'hata' => [], 'meta_elle' => [], 'meta_yazilan' => [],
-		'elle_gorsel' => [], 'kapak' => 0];
+		'elle_gorsel' => [], 'kapak' => 0, 'tasinan' => []];
 
 	/* önce görseller (rc-medya.php): hepsi Ortam kütüphanesine girmeden sayfalara geçilmez — yarım adresli sayfa olmasın.
 	   medya_sinir: bir çağrıda en çok kaç yeni görsel (sunucuda zaman aşımı olmasın); kalan varsa tekrar çağrılır. */
 	$adres = [];
 	if (!empty($v['medya']) && function_exists('rc_medya_aktar')) {
-		$r['medya'] = rc_medya_aktar($v['medya'], (int) ($o['medya_sinir'] ?? 0), (array) ($v['medya_kaldir'] ?? []));
+		$r['medya'] = rc_medya_aktar($v['medya'], (int) ($o['medya_sinir'] ?? 0), (array) ($v['medya_kaldir'] ?? []), (array) ($v['medya_tasi'] ?? []));
 		if ($r['medya']['kalan'] || $r['medya']['hata']) { kses_init(); return $r; }
 		$adres = rc_medya_adresleri();
 	}
@@ -53,6 +53,19 @@ function rc_aktar(array $o = []) {
 		if (get_page_by_path($e, OBJECT, 'page')) continue;
 		wp_insert_post(['post_type' => 'page', 'post_status' => 'draft', 'post_title' => mb_convert_case($e, MB_CASE_TITLE) . ' (üst klasör)',
 			'post_name' => basename($e), 'post_content' => '', 'comment_status' => 'closed', 'ping_status' => 'closed']);
+	}
+
+	/* adı değişen sayfalar (site/veri/tasima.js): eski kayıt yeni adına taşınır — kopya sayfa doğmaz, panelde yapılmış
+	   düzenleme, öne çıkan görsel ve Yoast alanları aynı kayıtta kalır. Eski adresin 301'i .htaccess'te. */
+	foreach ((array) ($v['adres_degisimi'] ?? []) as $eski => $yeni) {
+		$p = get_page_by_path((string) $eski, OBJECT, 'page');
+		if (!$p || get_page_by_path((string) $yeni, OBJECT, 'page')) continue;
+		$ebeveynYol = dirname((string) $yeni);
+		$pp = $ebeveynYol !== '.' ? get_page_by_path($ebeveynYol, OBJECT, 'page') : null;
+		if ($ebeveynYol !== '.' && !$pp) { $r['hata'][] = "$eski → $yeni: ebeveyn yok"; continue; }
+		$sonuc = wp_update_post(['ID' => $p->ID, 'post_name' => basename((string) $yeni), 'post_parent' => $pp ? $pp->ID : 0], true);
+		if (is_wp_error($sonuc)) { $r['hata'][] = "$eski → $yeni: " . $sonuc->get_error_message(); continue; }
+		$r['tasinan'][] = "$eski → $yeni";
 	}
 
 	foreach ($v['sayfalar'] as $s) {
@@ -294,6 +307,7 @@ if (defined('WP_CLI') && WP_CLI) {
 		WP_CLI::log(sprintf('yeni %d · güncellenen %d · aynı %d · elle düzenlenmiş (atlandı) %d · kayıtta değişen %d · hata %d · meta yazılan %d · meta elle (atlandı) %d',
 			count($r['yeni'] ?? []), count($r['guncellenen'] ?? []), $r['ayni'] ?? 0, count($r['elle'] ?? []), count($r['fark'] ?? []), count($r['hata'] ?? []),
 			(int) ($r['meta_yazilan'] ?? 0), count($r['meta_elle'] ?? [])));
-		foreach (['elle', 'fark', 'hata', 'meta_elle'] as $k) if (!empty($r[$k])) WP_CLI::log("$k: " . implode(', ', $r[$k]));
+		foreach (['elle', 'fark', 'hata', 'meta_elle', 'tasinan'] as $k) if (!empty($r[$k])) WP_CLI::log("$k: " . implode(', ', $r[$k]));
+		if (!empty($r['medya']['tasinan'])) WP_CLI::log('görsel taşınan: ' . implode(', ', $r['medya']['tasinan']));
 	});
 }

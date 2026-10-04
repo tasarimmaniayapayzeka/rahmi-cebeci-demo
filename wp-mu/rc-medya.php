@@ -11,6 +11,9 @@
  *   (resimler 1 yıl "immutable" önbellekte — aynı adres eski görseli gösterirdi), alt/başlık/açıklama taşınır, bütün
  *   sayfalardaki adres + wp-image-N + öne çıkan görsel + logo seçimi yeniye çevrilir, eski ek dosyalarıyla silinir.
  * - KALDIRMA: rc-icerik.json "medya_kaldir" listesindeki kaynakların ekleri silinir (bir yerde kullanılıyorsa silinmez, raporlanır).
+ * - TAŞIMA: kaynak dosyanın adı değişince (rc-icerik.json "medya_tasi": eski → yeni) kayıt yeni kaynağa geçer, yeni ek açılmaz.
+ * - AD DEĞİŞİMİ: tablodaki dosya adı (medya.js "ad") değişince görsel YENİLEME gibi yeni adla yüklenir, eskisi silinir
+ *   (adres dosya adından gelir; ör. 4 Eki 2026'da etken madde adları görsel adlarından da çıkarıldı).
  */
 defined('ABSPATH') || exit;
 
@@ -46,6 +49,12 @@ function rc_medya_adresleri(): array {
 
 function rc_medya_ozeti(int $id): string {
 	return md5(get_post_field('post_title', $id, 'raw') . '|' . get_post_meta($id, '_wp_attachment_image_alt', true));
+}
+
+/* kütüphanedeki dosya adı tablodaki adla tutuyor mu (aynı ad varken WordPress sonuna "-1", "-2" ekler) */
+function rc_medya_ad_tutuyor(string $dosya, string $ad): bool {
+	$beklenen = pathinfo(sanitize_file_name($ad), PATHINFO_FILENAME);
+	return (bool) preg_match('/^' . preg_quote($beklenen, '/') . '(-\d+)?$/', pathinfo($dosya, PATHINFO_FILENAME));
 }
 
 /* kütüphanedeki asıl dosya (WordPress 2560 üstünü "-scaled" yapar; asıl dosya ayrı durur) */
@@ -138,16 +147,26 @@ function rc_medya_kullaniliyor(int $id): bool {
 
 /* Listeyi kütüphaneye al. $sinir > 0: bu çağrıda en çok bu kadar YENİ ya da YENİLENEN dosya (alt boyut üretimi ağır — sunucuda
    zaman aşımı olmasın; kalan sonraki çağrıda). Harita her dosyadan sonra kaydedilir: yarıda kesilse de kaldığı yer bilinir. */
-function rc_medya_aktar(array $liste, int $sinir = 0, array $kaldir = []): array {
+function rc_medya_aktar(array $liste, int $sinir = 0, array $kaldir = [], array $tasi = []): array {
 	require_once ABSPATH . 'wp-admin/includes/image.php';
 	require_once ABSPATH . 'wp-admin/includes/file.php';
 	$r = ['yeni' => [], 'yenilenen' => [], 'guncellenen' => 0, 'ayni' => 0, 'elle' => [], 'kalan' => 0, 'hata' => [],
-		'kaldirilan' => [], 'kullanimda' => [], 'sayfa_degisen' => 0];
+		'kaldirilan' => [], 'kullanimda' => [], 'sayfa_degisen' => 0, 'tasinan' => []];
 	$agir = 0;
 	/* önceki çağrı yarıda kaldıysa bekleyen eski→yeni çiftlerini önce bitir */
 	$bekleyen = get_option('rc_medya_bekleyen', []);
 	if (is_array($bekleyen) && $bekleyen) $r['sayfa_degisen'] += rc_medya_degistir_toplu($bekleyen);
 	$bekleyen = [];
+
+	/* kaynak dosyanın adı değişti: kayıt yeni kaynağa geçer (aynı ek; dosya adı aşağıda "ad değişimi" ile yenilenir) */
+	foreach ($tasi as $eski => $yeni) {
+		$id = rc_medya_id((string) $eski);
+		if (!$id || rc_medya_id((string) $yeni)) continue;
+		rc_medya_harita_yaz((string) $yeni, $id);
+		rc_medya_harita_yaz((string) $eski, null);
+		update_post_meta($id, '_rc_kaynak', (string) $yeni);
+		$r['tasinan'][] = "$eski → $yeni";
+	}
 
 	foreach ($kaldir as $k) {
 		$id = rc_medya_id((string) $k);
@@ -175,9 +194,9 @@ function rc_medya_aktar(array $liste, int $sinir = 0, array $kaldir = []): array
 			continue;
 		}
 
-		/* kaynak dosya değişmiş (ör. netleştirildi) → yeni adla yükle, bağlantıları çevir, eskiyi sil */
+		/* kaynak dosya değişmiş (ör. netleştirildi) ya da tablodaki dosya adı değişmiş → yeni adla yükle, bağlantıları çevir, eskiyi sil */
 		$ekDosya = rc_medya_dosya($id);
-		if ($ekDosya && is_file($ekDosya) && md5_file($ekDosya) !== md5_file($kaynak)) {
+		if ($ekDosya && is_file($ekDosya) && (md5_file($ekDosya) !== md5_file($kaynak) || !rc_medya_ad_tutuyor($ekDosya, (string) $m['ad']))) {
 			if ($sinir > 0 && $agir >= $sinir) { $r['kalan']++; continue; }
 			$son = get_post_meta($id, '_rc_medya_ozet', true);
 			$elle = $son && $son !== rc_medya_ozeti($id);

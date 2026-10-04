@@ -1,21 +1,21 @@
 const S = require('../../site');
 
 module.exports = {
-  slug: 'uygulamalar/botulinum-toksin',
+  slug: 'uygulamalar/mimik-cizgisi-uygulamasi',
   tip: 'tibbi',
-  baslik: 'Botulinum toksin: mimik çizgisi, çiğneme kası ve terleme',
-  aciklama: 'Botulinum toksin hangi kas ve terleme şikâyetinde düşünülür, nasıl planlanır, kimlerde ertelenir, hangi yan etkiler ortaya çıkabilir? Önce muayene.',
-  odak: 'botulinum toksin',   /* Yoast odak anahtar kelimesi */
+  baslik: 'Mimik çizgisi uygulaması: alın, çiğneme kası ve terleme',
+  aciklama: 'Mimik çizgisi uygulaması hangi kas ve terleme şikâyetinde düşünülür, nasıl planlanır, kimde ertelenir, hangi yan etkiler görülebilir? Önce muayene.',
+  odak: 'mimik çizgisi uygulaması',   /* Yoast odak anahtar kelimesi */
 
   icerik: (r, ik) => `
 <!-- ═════ G HERO ═════ -->
 <section class="g-hero">
   <div class="sar">
     <div>
-      <nav class="kirinti" aria-label="Konum" style="position:relative;font-size:.76rem;color:var(--sessiz);display:flex;gap:7px;margin-bottom:18px"><a href="${r}" style="color:var(--sessiz);text-decoration:none">Ana sayfa</a> › <a href="${r}uygulamalar/" style="color:var(--sessiz);text-decoration:none">Uygulamalar</a> › <span>Botulinum toksin</span></nav>
+      <nav class="kirinti" aria-label="Konum" style="position:relative;font-size:.76rem;color:var(--sessiz);display:flex;gap:7px;margin-bottom:18px"><a href="${r}" style="color:var(--sessiz);text-decoration:none">Ana sayfa</a> › <a href="${r}uygulamalar/" style="color:var(--sessiz);text-decoration:none">Uygulamalar</a> › <span>Mimik çizgisi uygulaması</span></nav>
       <p class="g-etiket">Enjeksiyonla Yapılanlar · Mimik, Kas ve Terleme</p>
-      <h1>Botulinum toksin ile <span class="g-isik">kas ve ter dengesi</span></h1>
-      <p class="g-hero__alt">Botulinum toksin, sinirden kasa giden “kasıl” komutunu bir süreliğine zayıflatan bir proteindir. Hekimin seçtiği birkaç noktaya çok küçük miktarlarda verilir; hedef, fazla çalışan bir kası yumuşatmak ya da ter bezine ulaşan uyarıyı azaltmaktır. Mimik çizgileri, diş sıkmaya bağlı kas kalınlaşması ve koltuk altı terlemesi birbirinden farklı sorulardır; sizin şikâyetiniz için hangisinin geçerli olduğu muayenede ortaya çıkar.</p>
+      <h1>Mimik çizgisi uygulaması ile <span class="g-isik">kas ve ter dengesi</span></h1>
+      <p class="g-hero__alt">Mimik çizgisi uygulaması, sinirden kasa giden “kasıl” komutunu bir süreliğine zayıflatan, protein yapısında bir maddeyle yapılır. Bu madde hekimin seçtiği birkaç noktaya çok küçük miktarlarda verilir; hedef, fazla çalışan bir kası yumuşatmak ya da ter bezine ulaşan uyarıyı azaltmaktır. Mimik çizgileri, diş sıkmaya bağlı kas kalınlaşması ve koltuk altı terlemesi birbirinden farklı sorulardır; sizin şikâyetiniz için hangisinin geçerli olduğu muayenede ortaya çıkar.</p>
       <div class="g-hero__cta">
         <a class="dgm dgm--bir" href="${r}iletisim/">Randevu isteyin</a>
         <a class="dgm dgm--iki" href="#nedir">Hangi bölgelerde düşünülür ↓</a>
@@ -23,7 +23,7 @@ module.exports = {
       <div class="g-tikler"><span><i></i>Tüm uygulamalar hekimin elinden</span><span><i></i>İlk seansta ölçülü doz</span><span><i></i>Kontrol planın parçası</span></div>
     </div>
     <div class="g-tarama" data-gr>
-      <img src="${r}varliklar/gorsel/uyg-botulinum-toksin.webp" width="1400" height="788" alt="İfadesi dingin bir kadının alın ve göz çevresini gösteren yakın plan portresi" loading="eager">
+      <img src="${r}varliklar/gorsel/uyg-mimik-cizgisi-uygulamasi.webp" width="1400" height="788" alt="İfadesi dingin bir kadının alın ve göz çevresini gösteren yakın plan portresi" loading="eager">
       <div class="g-isin"></div>
       <span class="g-ainot">Temsilî görsel · yapay zekâ ile üretildi</span>
       <div class="g-hud" data-ghud><b>Etkisi yerel ve süreli</b><div class="g-cizgi"></div><span>Uygulanan kasın gücü bir süre azalır; aylar içinde kas eski çalışma düzenine döner.</span></div>
@@ -44,8 +44,8 @@ module.exports = {
   <div class="sar">
     <div class="bolum-bas" data-gr>
       <p class="g-etiket">Ne yapar, ne yapmaz</p>
-      <h2>Botulinum toksin nedir, yüzde ve vücutta nerelerde kullanılır?</h2>
-      <p class="giris">Sinir uçları, kasın kasılabilmesi için asetilkolin adlı bir haberci madde salgılar. Botulinum toksin bu salgıyı uygulandığı noktada bir süreliğine baskılar; kas daha az güçle kasılır, ter bezleri de benzer biçimde daha az uyarılır. Etki büyük ölçüde uygulandığı bölgeyle sınırlı kalır ve sinir uçları kendini yeniledikçe kaybolur.</p>
+      <h2>Mimik çizgisi uygulaması nedir, yüzde ve vücutta nerelerde kullanılır?</h2>
+      <p class="giris">Sinir uçları, kasın kasılabilmesi için asetilkolin adlı bir haberci madde salgılar. Uygulamada verilen madde bu salgıyı enjeksiyon yapılan noktada bir süreliğine baskılar; kas daha az güçle kasılır, ter bezleri de benzer biçimde daha az uyarılır. Etki büyük ölçüde uygulandığı bölgeyle sınırlı kalır ve sinir uçları kendini yeniledikçe kaybolur.</p>
     </div>
     <div class="izgara izgara--2" data-gr>
       <div class="kutu kutu--bilgi">
@@ -119,7 +119,7 @@ module.exports = {
         <b>Hangi durumlarda uygulanmaz, hangilerinde ertelenir?</b>
         <p><b>Uygulamanın yapılmadığı durumlar:</b></p>
         <ul>
-          <li>Botulinum toksine ya da ürünün içindeki yardımcı maddelere karşı bilinen aşırı duyarlılık</li>
+          <li>Uygulanan maddeye ya da ürünün içindeki yardımcı maddelere karşı bilinen aşırı duyarlılık</li>
           <li>İşlem yapılacak alanda aktif enfeksiyon, iltihaplı sivilce ya da açık yara</li>
           <li>Miyastenia gravis, Lambert–Eaton sendromu ve benzeri sinir–kas iletimi hastalıkları</li>
           <li>Gebelik ve emzirme dönemi</li>
@@ -135,7 +135,7 @@ module.exports = {
         </ul>
         <p>Kullandığınız ilaçların, takviyelerin ve daha önce yaptırdığınız uygulamaların listesini randevuya getirmeniz, planın doğru kurulmasına yardımcı olur.</p>
       </div>
-      <div class="g-kutu g-b2 g-kutu--gorsel" data-gr style="--d:70ms"><img src="${r}varliklar/gorsel/uyg-botulinum-toksin-2.webp" alt="Yüz oranlarını gösteren ince çizgilerle çevrili portre" loading="lazy"><span class="g-ainot">Temsilî görsel · yapay zekâ ile üretildi</span></div>
+      <div class="g-kutu g-b2 g-kutu--gorsel" data-gr style="--d:70ms"><img src="${r}varliklar/gorsel/uyg-mimik-cizgisi-uygulamasi-2.webp" alt="Yüz oranlarını gösteren ince çizgilerle çevrili portre" loading="lazy"><span class="g-ainot">Temsilî görsel · yapay zekâ ile üretildi</span></div>
       <div class="g-kutu g-b3 g-kutu--gece" data-gr><span class="g-ket">Hekimin notu</span><p>“İlk seans bir ölçüm gibidir: kasınızın doza nasıl yanıt verdiğini görmeden miktarı artırmayız, çünkü etkisini göstermeye başlayan doz geri çekilemez.”</p></div>
       <div class="g-kutu g-b3 g-kutu--cta" data-gr style="--d:70ms"><h3>Şikâyetinizi muayenede konuşalım</h3><p>Hangi bölgenin uygun olduğu değerlendirmeden sonra netleşir.</p><a class="dgm dgm--altin" href="${r}iletisim/">Randevu isteyin</a></div>
     </div>
@@ -221,13 +221,13 @@ module.exports = {
 <section class="bolum bolum--buz2"><div class="sar">
   <div class="bolum-bas" data-gr><p class="g-etiket">Sık gelen sorular</p><h2>Merak ettiğiniz soruya dokunun, yanıtı burada açılsın</h2></div>
   <div class="g-sorgu" data-gr>
-    <div class="g-sorgu-bas"><i></i><i></i><i></i><span>${S.marka} · botulinum toksin · soru-cevap</span></div>
+    <div class="g-sorgu-bas"><i></i><i></i><i></i><span>${S.marka} · mimik çizgisi uygulaması · soru-cevap</span></div>
     <div class="g-sorgu-ic">
       <div class="g-slistem">
         <button class="g-ssoru" data-akt data-gs="0"><i>›</i>İfadem doğallığını kaybeder mi?</button>
         <div class="g-syanit" data-gs-yanit="0">Amaç yüzün hareketini silmek değil, fazla çalışan kasın gücünü dengelemektir. Doz ve nokta seçimi bu hedefe göre yapılır; kaşlarınızı kaldırabilmeniz ve rahatça gülümseyebilmeniz planın parçasıdır. Yanıt kişiden kişiye değiştiği için ilk seansta ölçülü davranılır.</div>
-        <button class="g-ssoru" data-gs="1"><i>›</i>“Botoks” denilen uygulama bu mu?</button>
-        <div class="g-syanit" data-gs-yanit="1">Evet. Günlük dilde kullanılan “botoks” sözcüğü bir ürün markasından yaygınlaşmıştır; tıp dilinde bu işleme botulinum toksin uygulaması denir. Size uygulanan ürünün adı, miktarı ve uygulandığı bölgeler dosyanıza ayrıca kaydedilir.</div>
+        <button class="g-ssoru" data-gs="1"><i>›</i>Uygulanan ürün ve miktarı kayda geçer mi?</button>
+        <div class="g-syanit" data-gs-yanit="1">Evet. Size uygulanan ürünün adı, miktarı ve uygulandığı bölgeler dosyanıza ayrıca kaydedilir. Sağlık hizmetlerinin tanıtımına ilişkin mevzuat gereği ilaç ve ürün adlarına sitede yer verilmez; bu bilgiyi muayenede sorabilirsiniz.</div>
         <button class="g-ssoru" data-gs="2"><i>›</i>İşlem günü nelere dikkat etmeliyim?</button>
         <div class="g-syanit" data-gs-yanit="2">Uygulama günü bölgeyi ovmamanız, uzun süre yüzüstü yatmamanız; sauna, hamam ve ağır egzersizden uzak durmanız istenir. Bu öneriler, etkinin hedeflenen kasta kalmasını kolaylaştırmak içindir ve size yazılı olarak da verilir.</div>
         <button class="g-ssoru" data-gs="3"><i>›</i>Terlemem için hemen uygulama yapılabilir mi?</button>

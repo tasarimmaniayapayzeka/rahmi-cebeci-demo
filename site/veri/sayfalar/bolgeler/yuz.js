@@ -131,7 +131,7 @@ module.exports = {
           <span class="g-kno">Kesit 01 · ÜST KAT</span>
           <h3>Alın, kaş ve şakak</h3>
           <p>Bu bölgede belirleyici olan kas etkinliğidir; alındaki yatay çizgiler ve iki kaş arasındaki dikey çizgi en sık dile getirilen şikâyetlerdir. Şakakta hacim azaldığında üst yüz daralmış ve yorgun görünür. Buradaki her müdahale kaşın yüksekliğini ve kavisini değiştirebileceği için doz ve uygulama noktaları sınırlı tutulur.</p>
-          <div class="g-haplar"><a href="${r}uygulamalar/botulinum-toksin/">Botulinum toksin</a><a href="${r}cilt-sorunlari/mimik-cizgileri-ve-kirisiklik/">Mimik çizgileri</a></div>
+          <div class="g-haplar"><a href="${r}uygulamalar/mimik-cizgisi-uygulamasi/">Mimik çizgisi uygulaması</a><a href="${r}cilt-sorunlari/mimik-cizgileri-ve-kirisiklik/">Mimik çizgileri</a></div>
         </div>
         <div class="g-katblok" data-gkat="orta" data-gr>
           <span class="g-kno">Kesit 02 · ORTA KAT</span>
@@ -161,7 +161,7 @@ module.exports = {
     <div class="g-matris">
       <div class="g-mtab" data-gr>
         <div class="g-mbas"><span>Yöntem</span><span>Amaç</span><span>Toparlanma</span><span></span></div>
-        <a class="g-msatir" data-akt href="${r}uygulamalar/botulinum-toksin/" data-gg="${r}varliklar/gorsel/uyg-botulinum-toksin.webp" data-gb="Botulinum toksin" data-ga="Hareketle beliren çizgilerde değerlendirilir; önce çizginin yalnız mimik sırasında mı ortaya çıktığı ayrılır."><h4>Botulinum toksin</h4><span class="g-hucre"><i class="g-kcip g-kcip--1">Mimik çizgisi</i></span><span class="g-hucre">Birkaç gün</span><span class="g-git">→</span></a>
+        <a class="g-msatir" data-akt href="${r}uygulamalar/mimik-cizgisi-uygulamasi/" data-gg="${r}varliklar/gorsel/uyg-mimik-cizgisi-uygulamasi.webp" data-gb="Mimik çizgisi uygulaması" data-ga="Hareketle beliren çizgilerde değerlendirilir; önce çizginin yalnız mimik sırasında mı ortaya çıktığı ayrılır."><h4>Mimik çizgisi uygulaması</h4><span class="g-hucre"><i class="g-kcip g-kcip--1">Mimik çizgisi</i></span><span class="g-hucre">Birkaç gün</span><span class="g-git">→</span></a>
         <a class="g-msatir" href="${r}uygulamalar/dolgu-uygulamalari/" data-gg="${r}varliklar/gorsel/uyg-dolgu-uygulamalari.webp" data-gb="Dolgu uygulamaları" data-ga="Belirgin hacim kaybında eksilen desteği, yüzün kendi oranlarını aşmadan tamamlamayı amaçlar."><h4>Dolgu uygulamaları</h4><span class="g-hucre"><i class="g-kcip g-kcip--1">Hacim desteği</i></span><span class="g-hucre">Birkaç gün</span><span class="g-git">→</span></a>
         <a class="g-msatir" href="${r}uygulamalar/sivi-yuz-germe/" data-gg="${r}varliklar/gorsel/uyg-sivi-yuz-germe.webp" data-gb="Sıvı yüz germe" data-ga="Destek ihtiyacı tek noktada değil, yüzün birkaç bölgesine yayılmışsa bütüncül bir plan olarak konuşulur."><h4>Sıvı yüz germe</h4><span class="g-hucre"><i class="g-kcip g-kcip--1">Bütüncül destek</i></span><span class="g-hucre">Muayenede belirlenir</span><span class="g-git">→</span></a>
         <a class="g-msatir" href="${r}uygulamalar/biyostimulan-uygulamalar/" data-gg="${r}varliklar/gorsel/uyg-biyostimulan-uygulamalar.webp" data-gb="Biyostimülan uygulamalar" data-ga="Kolajen yapımını zamana yayarak desteklemeyi hedefler; değişim haftalar içinde ve kademeli olarak ortaya çıkar."><h4>Biyostimülan uygulamalar</h4><span class="g-hucre"><i class="g-kcip g-kcip--2">Doku desteği</i></span><span class="g-hucre">Muayenede belirlenir</span><span class="g-git">→</span></a>
@@ -171,7 +171,7 @@ module.exports = {
         <a class="g-msatir" href="${r}uygulamalar/hifu-ameliyatsiz-yuz-germe/" data-gg="${r}varliklar/gorsel/uyg-hifu-ameliyatsiz-yuz-germe.webp" data-gb="HIFU — ameliyatsız sıkılaştırma" data-ga="Deride gevşemenin ön planda olduğu tablolarda konuşulur; cerrahinin yerini tutmaz."><h4>HIFU</h4><span class="g-hucre"><i class="g-kcip g-kcip--3">Sıkılaştırma</i></span><span class="g-hucre">Muayenede belirlenir</span><span class="g-git">→</span></a>
         <a class="g-msatir" href="${r}uygulamalar/altin-igne-radyofrekans/" data-gg="${r}varliklar/gorsel/uyg-altin-igne-radyofrekans.webp" data-gb="Altın iğne radyofrekans" data-ga="Gevşeme ve gözenek görünümünde ikinci bir seçenektir; cerrahi bir germenin karşılığı sayılmaz."><h4>Altın iğne radyofrekans</h4><span class="g-hucre"><i class="g-kcip g-kcip--3">Sıkılaştırma</i></span><span class="g-hucre">Muayenede belirlenir</span><span class="g-git">→</span></a>
       </div>
-      <div class="g-onizle" data-gonizle data-gr><div class="g-gor"><img src="${r}varliklar/gorsel/uyg-botulinum-toksin.webp" alt="" loading="lazy"></div><div class="g-ic"><h4>Botulinum toksin</h4><p>Hareketle beliren çizgilerde değerlendirilir; önce çizginin yalnız mimik sırasında mı ortaya çıktığı ayrılır.</p><a class="dgm dgm--iki" href="${r}uygulamalar/botulinum-toksin/">Sayfasına git →</a></div></div>
+      <div class="g-onizle" data-gonizle data-gr><div class="g-gor"><img src="${r}varliklar/gorsel/uyg-mimik-cizgisi-uygulamasi.webp" alt="" loading="lazy"></div><div class="g-ic"><h4>Mimik çizgisi uygulaması</h4><p>Hareketle beliren çizgilerde değerlendirilir; önce çizginin yalnız mimik sırasında mı ortaya çıktığı ayrılır.</p><a class="dgm dgm--iki" href="${r}uygulamalar/mimik-cizgisi-uygulamasi/">Sayfasına git →</a></div></div>
     </div>
   </div>
 </section>
@@ -236,8 +236,8 @@ module.exports = {
     <div class="g-sorgu-bas"><i></i><i></i><i></i><span>${S.marka.toLocaleLowerCase('tr')} · yüz bölgesi · soru-cevap</span></div>
     <div class="g-sorgu-ic">
       <div class="g-slistem">
-        <button class="g-ssoru" data-akt data-gs="0"><i>›</i>Herkesin “botoks” dediği işlemin asıl adı ne?</button>
-        <div class="g-syanit" data-gs-yanit="0">Bu işlem tıpta botulinum toksin uygulaması olarak adlandırılır. “Botoks” kelimesi aslında piyasadaki ürünlerden birinin ticari adıdır ve zamanla işlemin genel adı gibi kullanılmaya başlanmıştır. Hangi çizgilerde düşünüldüğünü ve kimlere uygulanmadığını botulinum toksin sayfasında ayrıntılı anlattık.</div>
+        <button class="g-ssoru" data-akt data-gs="0"><i>›</i>Mimik çizgisi uygulaması nedir, neden bu adla anılıyor?</button>
+        <div class="g-syanit" data-gs-yanit="0">Bu işlemde, mimik çizgilerine yol açan kaslara onları geçici olarak gevşeten bir madde uygulanır. Halk arasında bir ürünün ticari adıyla anıldığını duymuş olabilirsiniz; sağlık hizmetlerinin tanıtımında ilaç ve ürün adı kullanılmadığı için bu işlemi amacını anlatan adıyla, mimik çizgisi uygulaması olarak anıyoruz. Hangi çizgilerde düşünüldüğünü ve kimlere uygulanmadığını o uygulamanın sayfasında ayrıntılı anlattık.</div>
         <button class="g-ssoru" data-gs="1"><i>›</i>“Ameliyatsız yüz germe” gerçekten mümkün mü?</button>
         <div class="g-syanit" data-gs-yanit="1">Bu söz halk arasında iki farklı şey için kullanılır: HIFU gibi ameliyat gerektirmeyen sıkılaştırma yöntemleri ve yüzün birkaç noktasına yayılan dolgu planları. İkisi de derinin bir miktar toparlanmasını amaçlar, ama cerrahi yüz germenin yerini tutmaz. Sarkmış deri fazlaysa ameliyatla elde edilebilecek bir değişimi bu yöntemlerden beklemek doğru olmaz; bu durumda sizi ilgili cerrahi uzmanlık dalına yönlendiririz.</div>
         <button class="g-ssoru" data-gs="2"><i>›</i>Bütün yüzüm tek seansta ele alınabilir mi?</button>

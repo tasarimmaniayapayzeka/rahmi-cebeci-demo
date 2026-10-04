@@ -4,7 +4,7 @@ module.exports = {
   slug: 'uygulamalar/dolgu-uygulamalari',
   tip: 'tibbi',
   baslik: 'Dolgu uygulamaları: dudak, çene, jawline, elmacık, göz altı',
-  aciklama: 'Hyalüronik asit ile dolgu uygulaması dudak, çene, elmacık, göz altı veya nazolabial bölgelerde nasıl planlanır, kimde ertelenir, riskleri nelerdir?',
+  aciklama: 'Jel yapılı ürün ile dolgu uygulaması dudak, çene, elmacık, göz altı veya nazolabial bölgelerde nasıl planlanır, kimde ertelenir, riskleri nelerdir?',
   odak: 'dolgu uygulaması',   /* Yoast odak anahtar kelimesi */
 
   icerik: (r, ik) => `
@@ -14,8 +14,8 @@ module.exports = {
     <div>
       <nav class="kirinti" aria-label="Konum" style="position:relative;font-size:.76rem;color:var(--sessiz);display:flex;gap:7px;margin-bottom:18px"><a href="${r}" style="color:var(--sessiz);text-decoration:none">Ana sayfa</a> › <a href="${r}uygulamalar/" style="color:var(--sessiz);text-decoration:none">Uygulamalar</a> › <span>Dolgu uygulamaları</span></nav>
       <p class="g-etiket">Enjeksiyonla Yapılanlar · Hacim Desteği</p>
-      <h1>Hyalüronik asit ile <span class="g-isik">ölçülü hacim desteği</span></h1>
-      <p class="g-hero__alt">Dolgu uygulamasında, suyu tutabilen jel kıvamında bir hyalüronik asit ürünü hekimin seçtiği derinliğe yerleştirilir. Hedef, zamanla desteğini yitirmiş bir alanı toparlamak ya da iki bölge arasındaki sert geçişi yumuşatmaktır. Dudak, çene ucu, jawline, elmacık, göz altı ve nazolabial bölge her biri kendi ölçütleriyle değerlendirilir; ihtiyaç muayenede netleşir.</p>
+      <h1>Dolgu jeliyle <span class="g-isik">ölçülü hacim desteği</span></h1>
+      <p class="g-hero__alt">Dolgu uygulamasında, suyu tutabilen, jel kıvamında bir dolgu maddesi hekimin seçtiği derinliğe yerleştirilir. Hedef, zamanla desteğini yitirmiş bir alanı toparlamak ya da iki bölge arasındaki sert geçişi yumuşatmaktır. Dudak, çene ucu, jawline, elmacık, göz altı ve nazolabial bölge her biri kendi ölçütleriyle değerlendirilir; ihtiyaç muayenede netleşir.</p>
       <div class="g-hero__cta">
         <a class="dgm dgm--bir" href="${r}iletisim/">Randevu isteyin</a>
         <a class="dgm dgm--iki" href="#nedir">Bölgeler ve sınırlar ↓</a>
@@ -45,7 +45,7 @@ module.exports = {
     <div class="bolum-bas" data-gr>
       <p class="g-etiket">Ne yapar, ne yapmaz</p>
       <h2>Dolgu uygulaması nedir, hangi bölgelerde düşünülür?</h2>
-      <p class="giris">Hyalüronik asit, derinin kendi yapısında da bulunan ve ağırlığının çok üzerinde su bağlayabilen bir şeker zinciridir. Dolgu ürünlerinde bu zincirler birbirine bağlanarak dokuda daha uzun kalan bir jel hâline getirilir. Ürünlerin sertliği ve akışkanlığı farklıdır: dudak gibi hareketli ve yumuşak bir bölge için esnek, çene ucu gibi yapı desteği isteyen bir bölge için daha sıkı bir jel tercih edilir.</p>
+      <p class="giris">Dolgu jelinin temelinde, derinin kendi yapısında da bulunan ve ağırlığının çok üzerinde su bağlayabilen bir şeker zinciri vardır. Dolgu ürünlerinde bu zincirler birbirine bağlanarak dokuda daha uzun kalan bir jel hâline getirilir. Ürünlerin sertliği ve akışkanlığı farklıdır: dudak gibi hareketli ve yumuşak bir bölge için esnek, çene ucu gibi yapı desteği isteyen bir bölge için daha sıkı bir jel tercih edilir.</p>
     </div>
     <div class="izgara izgara--2" data-gr>
       <div class="kutu kutu--bilgi">
@@ -54,7 +54,7 @@ module.exports = {
       </div>
       <div class="kutu kutu--uyari">
         <b>Bu ne değildir</b>
-        <p><b>Cerrahi yüz germenin karşılığı değildir;</b> fazla deriyi almaz, sarkan dokuyu yerinden kaldırmaz. Belirgin deri fazlalığında uygun seçenek değildir, cerrahi değerlendirme önerilir. <b>Mimik çizgilerine yönelik değildir;</b> alın ve kaş arasındaki hareket çizgileri <a href="${r}uygulamalar/botulinum-toksin/">botulinum toksin</a> sayfasında ele alınır.</p>
+        <p><b>Cerrahi yüz germenin karşılığı değildir;</b> fazla deriyi almaz, sarkan dokuyu yerinden kaldırmaz. Belirgin deri fazlalığında uygun seçenek değildir, cerrahi değerlendirme önerilir. <b>Mimik çizgilerine yönelik değildir;</b> alın ve kaş arasındaki hareket çizgileri <a href="${r}uygulamalar/mimik-cizgisi-uygulamasi/">mimik çizgisi uygulaması</a> sayfasında ele alınır.</p>
 <p><b>Cildin yüzeyini yenilemez:</b> leke, gözenek, pürüzlülük ve akne izi başka yöntemlerin konusudur. <b>Yüzü inceltmez, kilo kaybı sağlamaz.</b> <b>Kalıcı değildir;</b> ürün vücut tarafından zamanla yıkılır.</p>
       </div>
     </div>
@@ -97,7 +97,7 @@ module.exports = {
     </div>
     <div class="kutu kutu--uyari" data-gr>
       <b>“Işık dolgusu” tıbbi bir terim değildir</b>
-      <p>Bu ad altında farklı içerikteki ürünler ve birbirinden çok farklı göz altı tabloları aynı başlıkta toplanıyor. Bizim konuştuğumuz uygulama, göz altı oluğuna yapılan hyalüronik asit dolgusudur ve yalnızca belirli bir tabloda, belirli koşullarla uygun olabilir.</p>
+      <p>Bu ad altında farklı içerikteki ürünler ve birbirinden çok farklı göz altı tabloları aynı başlıkta toplanıyor. Bizim konuştuğumuz uygulama, göz altı oluğuna yapılan jel yapılı dolgudur ve yalnızca belirli bir tabloda, belirli koşullarla uygun olabilir.</p>
     </div>
     <div class="izgara izgara--3" data-gr style="margin-top:22px;--d:70ms">
       <div class="kart kart--duz">
@@ -152,7 +152,7 @@ module.exports = {
         <b>Hangi durumlarda uygulanmaz, hangilerinde ertelenir?</b>
         <p><b>Uygulamanın yapılmadığı durumlar:</b></p>
         <ul>
-          <li>Hyalüronik asit ürünlerine ya da içerdikleri yardımcı maddelere karşı bilinen aşırı duyarlılık</li>
+          <li>Dolgu maddesine ya da içerdiği yardımcı maddelere karşı bilinen aşırı duyarlılık</li>
           <li>Uygulama alanında etkin enfeksiyon, iltihaplı sivilce ya da henüz kapanmamış bir yara</li>
           <li>Aynı bölgeye geçmişte verilmiş, içeriği bilinmeyen ya da vücutta yıkılmayan (kalıcı) bir ürün</li>
           <li>Göz altı uygulaması için: bölgede ödem eğilimi, belirgin alt kapak gevşekliği veya yağ yastıkçığı çıkıntısı (torbalanma)</li>
@@ -203,7 +203,7 @@ module.exports = {
       <p>İşlem sırasında ya da sonrasında orantısız şiddette ağrı, derinin solması ya da beyazlaması, ağ biçiminde mor renk değişimi, görmede bulanıklık veya kayıp ve göz çevresinde şiddetli ağrı, ürünün bir damarı tıkamış olabileceğini düşündürür. Bu tabloda her dakika önemlidir; hemen bize ulaşın, ulaşamazsanız <b>112</b> Acil Çağrı Merkezi’ni arayın ya da en yakın hastanenin acil birimine başvurun.</p>
     </div>
     <div class="kutu kutu--bilgi" style="margin-top:16px" data-gr>
-      <p><b>Dolgu çözme:</b> Hyalüronik asit dolgular, gerekli görüldüğünde hyalüronidaz adlı bir enzimle dokuda parçalanabilir. Damar tıkanıklığı şüphesinde bu enzim zaman kaybetmeden ve yeterli miktarda kullanılır; fazlalık, yer değiştirme ya da görünür kabarıklık gibi acil olmayan durumlarda ise ayrı bir değerlendirmeyle planlanır. Enzim yalnızca hyalüronik asit içeren ürünleri çözer, bölgedeki doğal hyalüronik asidi de etkileyebildiği için geçici bir çöküklük bırakabilir ve kendisi de aşırı duyarlılık reaksiyonuna yol açabilir. Bu nedenle bir geri alma düğmesi gibi görülmez; yalnız hekim kararıyla ve acil müdahale hazırlığı olan bir ortamda uygulanır.</p>
+      <p><b>Dolgu çözme:</b> Bu jel yapılı dolgular, gerekli görüldüğünde dolguyu çözen bir enzimle dokuda parçalanabilir. Damar tıkanıklığı şüphesinde bu enzim zaman kaybetmeden ve yeterli miktarda kullanılır; fazlalık, yer değiştirme ya da görünür kabarıklık gibi acil olmayan durumlarda ise ayrı bir değerlendirmeyle planlanır. Enzim yalnızca bu tür jel dolguları çözer; dokuda doğal olarak bulunan aynı maddeyi de etkileyebildiği için geçici bir çöküklük bırakabilir ve kendisi de aşırı duyarlılık reaksiyonuna yol açabilir. Bu nedenle bir geri alma düğmesi gibi görülmez; yalnız hekim kararıyla ve acil müdahale hazırlığı olan bir ortamda uygulanır.</p>
     </div>
   </div>
 </section>
@@ -247,7 +247,7 @@ module.exports = {
       <a href="${r}bolgeler/cene-ve-jawline/">Çene ve jawline planlaması</a>
       <a href="${r}uygulamalar/sivi-yuz-germe/">Sıvı yüz germe</a>
       <a href="${r}cilt-sorunlari/goz-alti-koyulugu/">Göz altı koyuluğu</a>
-      <a href="${r}uygulamalar/botulinum-toksin/">Botulinum toksin</a>
+      <a href="${r}uygulamalar/mimik-cizgisi-uygulamasi/">Mimik çizgisi uygulaması</a>
       <a href="${r}uygulamalar/uygulama-sonrasi-takip/">Uygulama sonrası kontrol</a>
       <a href="${r}hekim/">Hekim</a>
     </div>
@@ -264,13 +264,13 @@ module.exports = {
         <button class="g-ssoru" data-akt data-gs="0"><i>›</i>Günlük hayatıma ne zaman dönebilirim?</button>
         <div class="g-syanit" data-gs-yanit="0">Şişlik ve morluğun ne kadar süreceği bölgeye ve kişiye göre değişir; dudakta ve göz altında daha belirgin olabilir. Önemli bir davet ya da toplantıdan hemen önceki günlere uygulama planlamamanızı, araya yeterli zaman bırakmanızı öneririz.</div>
         <button class="g-ssoru" data-gs="1"><i>›</i>Sonucu beğenmezsem dolgu geri alınabilir mi?</button>
-        <div class="g-syanit" data-gs-yanit="1">Hyalüronik asit içeren ürünler, gerekli görüldüğünde hyalüronidaz enzimiyle parçalanabilir. Ancak bu rutin bir işlem değildir; kendine özgü riskleri vardır ve hekim kararıyla ayrıca planlanır.</div>
+        <div class="g-syanit" data-gs-yanit="1">Bu jel yapılı dolgular, gerekli görüldüğünde dolguyu çözen bir enzimle parçalanabilir. Ancak bu rutin bir işlem değildir; kendine özgü riskleri vardır ve hekim kararıyla ayrıca planlanır.</div>
         <button class="g-ssoru" data-gs="2"><i>›</i>Önceki dolgumun içeriğini bilmiyorum; sorun olur mu?</button>
         <div class="g-syanit" data-gs-yanit="2">Mutlaka belirtin. Vücutta çözünmeyen bir ürünün varlığı hem planı hem güvenliği değiştirir; bazı durumlarda o bölgeye uygulama yapılmaz. Elinizde önceki işleme ait bir belge ya da ürün etiketi varsa randevuya getirin.</div>
         <button class="g-ssoru" data-gs="3"><i>›</i>“Işık dolgusu” ile göz altı dolgusu aynı mı?</button>
-        <div class="g-syanit" data-gs-yanit="3">Hayır. “Işık dolgusu” tıbbi bir işlem adı değildir; farklı ürünler ve birbirinden farklı göz altı tabloları bu adla anılabiliyor. Bizim değerlendirdiğimiz, göz altı oluğuna yapılan hyalüronik asit dolgusudur ve yalnızca belirli bir tabloda uygun olabilir.</div>
-        <button class="g-ssoru" data-gs="4"><i>›</i>Dolgu ile botulinum toksin arasındaki fark ne?</button>
-        <div class="g-syanit" data-gs-yanit="4">İkisi farklı amaçlara hizmet eder. Dolgu, desteğini yitirmiş bir alana hacim desteği verir; botulinum toksin ise fazla kasılan bir kası bir süreliğine gevşetir. Aynı planda birlikte yer alıp almayacaklarına muayenede karar verilir.</div>
+        <div class="g-syanit" data-gs-yanit="3">Hayır. “Işık dolgusu” tıbbi bir işlem adı değildir; farklı ürünler ve birbirinden farklı göz altı tabloları bu adla anılabiliyor. Bizim değerlendirdiğimiz, göz altı oluğuna yapılan jel yapılı dolgudur ve yalnızca belirli bir tabloda uygun olabilir.</div>
+        <button class="g-ssoru" data-gs="4"><i>›</i>Dolgu ile mimik çizgisi uygulaması arasındaki fark ne?</button>
+        <div class="g-syanit" data-gs-yanit="4">İkisi farklı amaçlara hizmet eder. Dolgu, desteğini yitirmiş bir alana hacim desteği verir; mimik çizgisi uygulamasında ise fazla kasılan bir kas, verilen madde ile bir süreliğine gevşetilir. Aynı planda birlikte yer alıp almayacaklarına muayenede karar verilir.</div>
         <button class="g-ssoru" data-gs="5"><i>›</i>Ücret bilgisi neden sitede yok?</button>
         <div class="g-syanit" data-gs-yanit="5">Sağlık hizmetlerinin tanıtımına ilişkin mevzuat gereği ücret bilgisi internette yayımlanmaz. Muayenede size özel plan netleştiğinde bu bilgi doğrudan size iletilir.</div>
       </div>

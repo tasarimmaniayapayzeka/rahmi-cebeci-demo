@@ -98,7 +98,7 @@ module.exports = {
           <li><b>Yakın zamanda güneşlenme veya bronzlaşma:</b> deri kendi tonuna dönmeden başlanmaz; uygulamadan önceki en az dört hafta güneşten korunmak gerekir.</li>
           <li><b>Yüzde uçuk ya da başka bir enfeksiyon:</b> iyileşme beklenir; sık uçuk çıkaranlarda hekim işlem öncesi koruyucu ilaç planlayabilir.</li>
           <li><b>Keloid ve kabarık iz yapma eğilimi:</b> ciddi bir engeldir; risk açıkça konuşulur.</li>
-          <li><b>Ağızdan isotretinoin ve ışığa duyarlılık yapan ilaçlar:</b> ilacın türüne ve bırakılma tarihine göre bekleme süresi belirlenir.</li>
+          <li><b>Ağızdan alınan A vitamini türevi akne ilaçları ve ışığa duyarlılık yapan ilaçlar:</b> ilacın türüne ve bırakılma tarihine göre bekleme süresi belirlenir.</li>
           <li><b>Koyu ten, vitiligo ve renk kaybı eğilimi:</b> koyu tende iltihap sonrası koyulaşma daha sık görülür, temkinli ayar ve deneme alanı gerekir; vitiligoda uygulanmaz.</li>
           <li><b>İyileşmeyi yavaşlatan durumlar:</b> şekeri düzensiz seyreden diyabet, bağışıklığı baskılayan ilaçlar ya da daha önce ışın tedavisi almış bir bölge varsa uygunluk ayrıca tartılır.</li>
           <li><b>İncelenmemiş ben ya da değişen leke:</b> önce büyütmeli olarak bakılır; kuşkulu lezyonun üzerine atım yapılmaz.</li>

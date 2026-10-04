@@ -86,7 +86,7 @@ module.exports = {
       <div class="kutu kutu--uyari g-b4" data-gr>
         <b>Hangi durumlarda yapılmaz ya da ertelenir?</b>
         <p>Ne olduğu anlaşılamayan ya da kuşku uyandıran her pigmentli lezyon lazerin dışında tutulur. Yazdan yeni dönmüş, bronzlaşmış bir ciltte ton yerine oturana kadar beklenir; bronzlaştırıcı sprey veya krem kullandıysanız bunu da söyleyin.</p>
-<p>Deriyi ışığa duyarlı yapan ilaçlar ve bitkisel takviyeler, akne için ağızdan alınan isotretinoin ve bölgeye yakın zamanda yapılmış başka işlemler bekleme gerektirebilir. Yüzde uçuk, iltihaplı sivilce, alevlenmiş egzama ya da açık yara varken lazer iyileşmeyi uzatabileceği için önce deri toparlanır.</p>
+<p>Deriyi ışığa duyarlı yapan ilaçlar ve bitkisel takviyeler, akne için ağızdan alınan A vitamini türevi ilaçlar ve bölgeye yakın zamanda yapılmış başka işlemler bekleme gerektirebilir. Yüzde uçuk, iltihaplı sivilce, alevlenmiş egzama ya da açık yara varken lazer iyileşmeyi uzatabileceği için önce deri toparlanır.</p>
 <p>Güneşle alevlenen deri hastalıkları, vitiligo gibi renk kaybıyla giden tablolar ve keloid eğilimi lazeri uygun olmaktan çıkarır. Gebelik ve emzirmede leke davranışı hormonlarla değiştiğinden plan bu dönemin sonrasına bırakılır. Tatil, açık havada çalışma ya da deniz sezonu gibi güneşten korunmanın aksayacağı bir dönem yaklaşıyorsa uygulamayı ertelemek daha doğrudur.</p>
       </div>
       <div class="g-kutu g-b2 g-kutu--gorsel" data-gr style="--d:70ms"><img src="${r}varliklar/gorsel/uyg-pico-lazer-leke-2.webp" alt="Gün ışığı alan yüz; güneşe açık cilt bölgesi" loading="lazy"><span class="g-ainot">Temsilî görsel · yapay zekâ ile üretildi</span></div>

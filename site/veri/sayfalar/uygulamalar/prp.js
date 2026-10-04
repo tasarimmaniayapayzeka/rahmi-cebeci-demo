@@ -114,7 +114,7 @@ module.exports = {
         </ul>
         <p style="margin:10px 0 6px"><b>Ertelenen ya da ayrıca planlanan durumlar:</b></p>
         <ul>
-          <li>Aspirin benzeri ilaçlar ya da kan sulandırıcılar — ilacı kendi başınıza bırakmayın; gerekiyorsa reçeteyi yazan hekimle konuşulur</li>
+          <li>Kan sulandırıcı ilaçlar (günlük düşük dozlu olanlar dahil) ya da trombosit işlevini etkileyen benzeri ilaçlar — ilacı kendi başınıza bırakmayın; gerekiyorsa reçeteyi yazan hekimle konuşulur</li>
           <li>Son günlerde geçirilen ateşli bir hastalık, enfeksiyon ya da yapılan bir aşı</li>
           <li>Kan sayımında trombositin düşük ya da hemoglobinin belirgin azalmış çıkması</li>
           <li>Kol damarlarından kan almanın zor olması ya da iğne karşısında bayılma öyküsü</li>

@@ -91,11 +91,11 @@ module.exports = {
   /* ---------- uygulama kataloğu — hub ve menü buradan üretilir ---------- */
   katalog: [
     { grup: 'Enjeksiyonla Yapılanlar', kisa: 'Enjeksiyonlar', ikon: 'damla', ogeler: [
-      ['Botulinum Toksin', 'botulinum-toksin', 'Kaş arası, alın ve göz kenarı çizgileri; terleme'],
+      ['Mimik Çizgisi Uygulaması', 'mimik-cizgisi-uygulamasi', 'Kaş arası, alın ve göz kenarı çizgileri; terleme'],
       ['Dolgu Uygulamaları', 'dolgu-uygulamalari', 'Dudaktan elmacığa, yüzün kaybolan desteği'],
       ['Sıvı Yüz Germe', 'sivi-yuz-germe', 'Birkaç bölgenin tek planda ele alınması'],
       ['Gençlik Aşısı (Skinbooster)', 'genclik-asisi-skinbooster', 'Cildin su tutma gücüne yönelik ince enjeksiyon'],
-      ['Somon DNA ve Polinükleotid', 'somon-dna-polinukleotid', 'Somon kaynaklı nükleotidlerle doku desteği'],
+      ['Doku Onarım Uygulaması', 'doku-onarim-uygulamasi', 'Cildin kendi onarım süreçlerine destek'],
       ['Mezoterapi', 'mezoterapi', 'Kişiye göre hazırlanan karışımın deriye verilmesi'],
       ['PRP', 'prp', 'Kendi kanınızdan ayrıştırılan trombositten zengin plazma'],
       ['Biyostimülan Uygulamalar', 'biyostimulan-uygulamalar', 'Etkisi haftalar içinde ortaya çıkan kolajen uyarımı'],

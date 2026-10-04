@@ -4,7 +4,7 @@ module.exports = {
   slug: 'uygulamalar/biyostimulan-uygulamalar',
   tip: 'tibbi',
   baslik: 'Biyostimülan uygulamalar: kolajen uyarıcı enjeksiyonlar',
-  aciklama: 'Biyostimülan uygulama: kalsiyum hidroksiapatit ve poli-L-laktik asit gibi kolajen uyarıcılar. Etkisi neden aylara yayılır, nodül riski ne kadardır?',
+  aciklama: 'Biyostimülan uygulama, deride kolajen yapımını uyaran, zamanla emilebilen maddelerle yapılır. Etkisi neden aylara yayılır, nodül riski ne kadardır?',
   odak: 'biyostimülan uygulama',   /* Yoast odak anahtar kelimesi */
 
   icerik: (r, ik) => `
@@ -15,7 +15,7 @@ module.exports = {
       <nav class="kirinti" aria-label="Konum" style="position:relative;font-size:.76rem;color:var(--sessiz);display:flex;gap:7px;margin-bottom:18px"><a href="${r}" style="color:var(--sessiz);text-decoration:none">Ana sayfa</a> › <a href="${r}uygulamalar/" style="color:var(--sessiz);text-decoration:none">Uygulamalar</a> › <span>Biyostimülan uygulamalar</span></nav>
       <p class="g-etiket">Enjeksiyonla Yapılanlar · Kolajen Uyarımı</p>
       <h1>Etkisi bir günde değil, <span class="g-isik">aylar içinde</span> ortaya çıkar.</h1>
-      <p class="g-hero__alt">Biyostimülan uygulamalar, derinin alt katmanına ya da deri altına verilen ve çevresinde kolajen yapımını uyarması amaçlanan emilebilir maddelerle yapılır. Bu grupta kalsiyum hidroksiapatit ve poli-L-laktik asit sınıfı ürünler yer alır. Değişiklik haftalar ve aylar içinde, kademeli olarak beklenir; aynı gün belirgin bir fark hedeflenmez.</p>
+      <p class="g-hero__alt">Biyostimülan uygulamalar, derinin alt katmanına ya da deri altına verilen ve çevresinde kolajen yapımını uyarması amaçlanan emilebilir maddelerle yapılır. Bu grupta, formu ve davranışı birbirinden farklı iki ana ürün türü yer alır. Değişiklik haftalar ve aylar içinde, kademeli olarak beklenir; aynı gün belirgin bir fark hedeflenmez.</p>
       <div class="g-hero__cta">
         <a class="dgm dgm--bir" href="${r}iletisim/">Randevu isteyin</a>
         <a class="dgm dgm--iki" href="#ilkbolum">Nedir, ne değildir ↓</a>
@@ -50,8 +50,8 @@ module.exports = {
     <div class="izgara izgara--2">
       <div class="kutu kutu--bilgi" data-gr>
         <b>Bu nedir</b>
-        <p>Bu başlıkta iki ana sınıf bulunur. <b>Kalsiyum hidroksiapatit</b>, kemik ve dişin mineral yapısına benzeyen mikroskobik kürelerin jel bir taşıyıcı içinde verilmesidir; taşıyıcı birkaç ay içinde emilir, küreler ise çevrelerinde bağ dokusu yapımını uyarır ve zamanla parçalanarak uzaklaştırılır. <b>Poli-L-laktik asit</b>, emilebilen cerrahi dikişlerde de kullanılan sentetik bir polimerdir; toz hâlindeki ürün steril suyla sulandırılarak hazırlanır.</p>
-        <p>İki sınıfta da ortak nokta, uygulamanın bir iskele gibi davranmasıdır: parçacıkların çevresinde fibroblast adı verilen hücrelerin etkinleşmesi ve haftalar içinde yeni kolajen liflerinin örülmesi hedeflenir. Poli-L-laktik asitte uygulama günü görülen dolgunluk, taşıyıcı suyun emilmesiyle birkaç gün içinde geriler; asıl değişiklik daha sonra ve yavaş gelir.</p>
+        <p>Bu başlıkta iki ana tür bulunur. <b>Jel içinde mikroküre taşıyan tür</b>, kemik ve dişin mineral yapısına benzeyen mikroskobik kürelerin jel bir taşıyıcı içinde verilmesidir; taşıyıcı birkaç ay içinde emilir, küreler ise çevrelerinde bağ dokusu yapımını uyarır ve zamanla parçalanarak uzaklaştırılır. <b>Toz hâlinde gelen tür</b>, emilebilen cerrahi dikişlerde de kullanılan sentetik bir polimerden oluşur; ürün uygulamadan önce steril suyla sulandırılarak hazırlanır.</p>
+        <p>İki türde de ortak nokta, uygulamanın bir iskele gibi davranmasıdır: parçacıkların çevresinde fibroblast adı verilen hücrelerin etkinleşmesi ve haftalar içinde yeni kolajen liflerinin örülmesi hedeflenir. Toz hâlindeki türde uygulama günü görülen dolgunluk, taşıyıcı suyun emilmesiyle birkaç gün içinde geriler; asıl değişiklik daha sonra ve yavaş gelir.</p>
 <p>Hangi sınıfın, hangi yoğunlukta ve hangi derinlikte kullanılacağına bölge ve deri kalınlığına bakılarak karar verilir. Hemen hacim veren <a href="${r}uygulamalar/dolgu-uygulamalari/">dolgu uygulamalarından</a> ve cildin nemine yönelik <a href="${r}uygulamalar/genclik-asisi-skinbooster/">gençlik aşısından</a> farklı bir amaca hizmet eder; zaman zaman aynı planda sırayla yer alsalar da biri ötekinin karşılığı değildir.</p>
       </div>
       <div class="kutu kutu--uyari" data-gr style="--d:70ms">
@@ -59,13 +59,13 @@ module.exports = {
         <p><b>Dışarıdan kolajen verilmez:</b> enjekte edilen madde kolajen içermez; kolajen yapımını uyarması amaçlanır ve bu yanıtın gücü kişiden kişiye değişir.</p>
         <p><b>Anında hacim aracı değildir:</b> yakın bir tarihe, örneğin bir düğüne yetişmesi gereken bir değişiklik için uygun seçim olmaz; beklenen etki aylara yayılır.</p>
         <p><b>Sarkmayı kaldıran bir işlem değildir:</b> deri fazlalığı ve dokularda belirgin yer değiştirme varsa cerrahinin yaptığı işi üstlenmez; bu durumda ilgili uzmanlık dalıyla görüşmeniz önerilir.</p>
-        <p><b>Eritilerek geri alınan bir ürün değildir:</b> hyalüronik asit dolgularda kullanılan eritici enzim bu maddelere etki etmez. Planlamanın özenle yapılmasının başlıca nedeni budur.</p>
+        <p><b>Eritilerek geri alınan bir ürün değildir:</b> jel yapılı dolguları çözmek için kullanılan eritici enzim bu maddelere etki etmez. Planlamanın özenle yapılmasının başlıca nedeni budur.</p>
       </div>
     </div>
     <div class="kutu kutu--uyari" data-gr style="--d:140ms;margin-top:16px">
       <b>Nodül riski ve uygulanmayan bölgeler</b>
       <p>Bu ürün sınıfında bilinen en önemli istenmeyen durum, deri altında elle fark edilen küçük sertlikler (nodül) ve daha seyrek olarak aylar sonra gelişebilen iltihabi düğümlerdir. Ürünün fazla yüzeysel ya da tek noktada yoğun verilmesi, yetersiz sulandırma ve ince, hareketli deri bölgeleri bu riski artırır.</p>
-<p>Bu nedenle <b>dudak</b> ve <b>göz altı</b> bölgelerine biyostimülan uygulanmaz; göz çevresinin ince derisinde de tercih edilmez. Bu bölgelerdeki şikâyetler için seçenekler <a href="${r}uygulamalar/dolgu-uygulamalari/#goz-alti">dolgu uygulamaları</a> sayfasındaki ilgili bölümde ve muayenede ayrıca konuşulur. Kalsiyum hidroksiapatit röntgen ve tomografi görüntülerinde seçilebilir; ileride bir görüntüleme yapılacaksa uygulamayı bildirmeniz yorumu kolaylaştırır.</p>
+<p>Bu nedenle <b>dudak</b> ve <b>göz altı</b> bölgelerine biyostimülan uygulanmaz; göz çevresinin ince derisinde de tercih edilmez. Bu bölgelerdeki şikâyetler için seçenekler <a href="${r}uygulamalar/dolgu-uygulamalari/#goz-alti">dolgu uygulamaları</a> sayfasındaki ilgili bölümde ve muayenede ayrıca konuşulur. Mikroküreli türün parçacıkları röntgen ve tomografi görüntülerinde seçilebilir; ileride bir görüntüleme yapılacaksa uygulamayı bildirmeniz yorumu kolaylaştırır.</p>
     </div>
     <div class="kutu" data-gr style="--d:200ms;margin-top:16px">
       <p>Yüzde incelme ve hacim kaybı sizi rahatsız ediyorsa <a href="${r}cilt-sorunlari/hacim-kaybi-ve-sarkma/">hacim kaybı ve sarkma</a>, cildin yüzeyindeki donuklukla ilgili bir şikâyetiniz varsa <a href="${r}cilt-sorunlari/nem-kaybi-ve-donukluk/">nem kaybı ve donukluk</a> yazımız iyi bir başlangıç noktasıdır. Bölge bazında seçenekler <a href="${r}bolgeler/yuz/">yüz</a>, <a href="${r}bolgeler/boyun-ve-dekolte/">boyun ve dekolte</a> ile <a href="${r}bolgeler/el/">el</a> sayfalarında yer alır.</p>
@@ -98,7 +98,7 @@ module.exports = {
           <li>Muayene ve öykü: ilaçlar, otoimmün hastalık, önceki dolgular, iz eğilimi</li>
           <li>Bölge ve ürün sınıfı seçimi; uygulanmayacak alanların belirlenmesi</li>
           <li>Onam görüşmesi: etkinin geç geleceği ve nodül olasılığı yazılı olarak anlatılır</li>
-          <li>Poli-L-laktik asit seçildiyse ürünün önceden sulandırılması</li>
+          <li>Toz hâlinde gelen tür seçildiyse ürünün önceden sulandırılması</li>
           <li>Uygulama, masaj önerisi ve <a href="${r}uygulamalar/uygulama-sonrasi-takip/">kontrol randevusu</a></li>
         </ol>
       </div>
@@ -133,7 +133,7 @@ module.exports = {
     <div class="bolum-bas" data-gr>
       <p class="g-etiket">Seans ve süre</p>
       <h2>Kaç seans gerekir, değişiklik ne zaman görülür?</h2>
-      <p class="giris">Kolajen üretimi yavaş işleyen bir süreç olduğu için ürün tek seferde değil, birkaç oturuma paylaştırılarak verilir; böylece her seansın ardından dokunun nasıl yanıt verdiği görülür. Kalsiyum hidroksiapatit sınıfında bir ya da iki seans çoğu zaman yeterli görülürken, poli-L-laktik asitte daha uzun bir dizi sık kullanılır. Değişiklik genellikle ikinci–üçüncü aydan itibaren belirginleşir ve sonraki aylarda da gelişmeyi sürdürebilir. Yaşlanma durmadığı için elde edilen destek de zamanla azalır; bu hızı yaşınız, deri yapınız, güneş ve sigara alışkanlığınız ve kilo değişimleriniz etkiler. Bazı kişilerde yanıt beklenenden sınırlı kalır; bunu baştan bilmeniz önemlidir. Kontrollerde, izin verirseniz aynı ışıkta çekilen fotoğraflar dosyanıza eklenir; bu fotoğraflar yalnızca takibiniz içindir ve hiçbir yerde yayımlanmaz.</p>
+      <p class="giris">Kolajen üretimi yavaş işleyen bir süreç olduğu için ürün tek seferde değil, birkaç oturuma paylaştırılarak verilir; böylece her seansın ardından dokunun nasıl yanıt verdiği görülür. Mikroküreli jel türünde bir ya da iki seans çoğu zaman yeterli görülürken, toz hâlinde gelip sulandırılan türde daha uzun bir dizi sık kullanılır. Değişiklik genellikle ikinci–üçüncü aydan itibaren belirginleşir ve sonraki aylarda da gelişmeyi sürdürebilir. Yaşlanma durmadığı için elde edilen destek de zamanla azalır; bu hızı yaşınız, deri yapınız, güneş ve sigara alışkanlığınız ve kilo değişimleriniz etkiler. Bazı kişilerde yanıt beklenenden sınırlı kalır; bunu baştan bilmeniz önemlidir. Kontrollerde, izin verirseniz aynı ışıkta çekilen fotoğraflar dosyanıza eklenir; bu fotoğraflar yalnızca takibiniz içindir ve hiçbir yerde yayımlanmaz.</p>
     </div>
   </div>
 </section>
@@ -146,7 +146,7 @@ module.exports = {
     <div class="g-sorgu-ic">
       <div class="g-slistem">
         <button class="g-ssoru" data-akt data-gs="0"><i>›</i>Biyostimülan ile dolgu arasındaki fark nedir?</button>
-        <div class="g-syanit" data-gs-yanit="0">Dolguda amaç, uygulanan jelin kendisiyle hacim oluşturmaktır ve değişiklik aynı gün görülür. Biyostimülanda ise hedef, dokunun kendi kolajenini üretmesinin uyarılmasıdır; değişiklik haftalar içinde gelir. Hyalüronik asit dolgu eritici bir enzimle çözülebilirken biyostimülanlar bu yolla geri alınamaz.</div>
+        <div class="g-syanit" data-gs-yanit="0">Dolguda amaç, uygulanan jelin kendisiyle hacim oluşturmaktır ve değişiklik aynı gün görülür. Biyostimülanda ise hedef, dokunun kendi kolajenini üretmesinin uyarılmasıdır; değişiklik haftalar içinde gelir. Jel yapılı dolgu eritici bir enzimle çözülebilirken biyostimülanlar bu yolla geri alınamaz.</div>
         <button class="g-ssoru" data-gs="1"><i>›</i>Etkiyi ne zaman fark ederim?</button>
         <div class="g-syanit" data-gs-yanit="1">Uygulama günü görülen dolgunluğun bir bölümü şişlikten ve taşıyıcı sıvıdan kaynaklanır, birkaç gün içinde azalır. Kolajen yanıtı yavaş gelişir; ilk değerlendirme genellikle iki–üç ay sonra yapılır ve bu süre kişiye göre uzayabilir.</div>
         <button class="g-ssoru" data-gs="2"><i>›</i>Nodül gelişirse ne olur?</button>
@@ -154,7 +154,7 @@ module.exports = {
         <button class="g-ssoru" data-gs="3"><i>›</i>Dudak ya da göz altı için neden kullanılmıyor?</button>
         <div class="g-syanit" data-gs-yanit="3">Bu bölgelerde deri ince, kas hareketi fazladır; ürün ele gelebilir ya da görünür sertlik oluşturabilir. Bu risk kabul edilebilir düzeyde olmadığı için muayenehanemizde bu bölgelere biyostimülan uygulanmaz; seçenekler muayenede ayrıca değerlendirilir.</div>
         <button class="g-ssoru" data-gs="4"><i>›</i>Uygulamadan sonra masaj yapmam gerekir mi?</button>
-        <div class="g-syanit" data-gs-yanit="4">Poli-L-laktik asit sınıfında ürünün eşit dağılması için ilk günlerde, belirli sürelerle bölgeye nazik masaj önerilebilir; nasıl yapılacağı size gösterilir ve yazılı olarak verilir. Kalsiyum hidroksiapatitte öneri bölgeye göre değişir. Size söylenenden fazla ya da sert masaj yapmayın.</div>
+        <div class="g-syanit" data-gs-yanit="4">Toz hâlinde gelip sulandırılan türde ürünün eşit dağılması için ilk günlerde, belirli sürelerle bölgeye nazik masaj önerilebilir; nasıl yapılacağı size gösterilir ve yazılı olarak verilir. Jel içinde mikroküre taşıyan türde öneri bölgeye göre değişir. Size söylenenden fazla ya da sert masaj yapmayın.</div>
         <button class="g-ssoru" data-gs="5"><i>›</i>Ücret bilgisi neden sayfada yok?</button>
         <div class="g-syanit" data-gs-yanit="5">Sağlık hizmetlerinin tanıtımını düzenleyen mevzuat gereği ücret bilgisi internette yayımlanmaz. Kullanılacak ürün miktarı ve seans sayısı kişiye göre değiştiğinden bu konu muayenede, planla birlikte konuşulur.</div>
       </div>

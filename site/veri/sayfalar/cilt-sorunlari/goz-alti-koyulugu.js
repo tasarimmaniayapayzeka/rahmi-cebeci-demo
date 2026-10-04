@@ -54,7 +54,7 @@ module.exports = {
       <span class="g-kno">Kesit 03</span>
       <h3>Derinin incelmesi</h3>
       <p>Yıllar içinde deri içindeki destek dokusu azaldıkça deri daha saydam hâle gelir. Burada koyuluk aslında bir renk artışı değil, alttaki yapıların daha çok görünmesidir. Bu durumda derinin niteliğini düşük yoğunlukla ve aşamalı olarak desteklemek hedeflenir; değişim sınırlıdır ve zaman alır.</p>
-      <div class="g-haplar"><a href="${r}uygulamalar/somon-dna-polinukleotid/">Somon DNA ve polinükleotid</a></div>
+      <div class="g-haplar"><a href="${r}uygulamalar/doku-onarim-uygulamasi/">Doku onarım uygulaması</a></div>
     </div>
     <div class="g-katblok" data-gr style="--d:180ms">
       <span class="g-kno">Kesit 04</span>
@@ -88,7 +88,7 @@ module.exports = {
       <div class="g-mtab" data-gr>
         <div class="g-mbas"><span>Yöntem</span><span>Amaç</span><span>Toparlanma</span><span></span></div>
         <a class="g-msatir" data-akt href="${r}uygulamalar/dolgu-uygulamalari/#goz-alti" data-gg="${r}varliklar/gorsel/uyg-dolgu-uygulamalari.webp" data-gb="Göz altı dolgusu" data-ga="Yalnız gözyaşı oluğundaki hacim kaybının öne çıktığı durumlarda konuşulur; bölgenin ince yapısı özenli planlama gerektirir."><h4>Göz altı dolgusu</h4><span class="g-hucre"><i class="g-kcip g-kcip--1">HACİM</i></span><span class="g-hucre">Muayenede belirlenir</span><span class="g-git">→</span></a>
-        <a class="g-msatir" href="${r}uygulamalar/somon-dna-polinukleotid/" data-gg="${r}varliklar/gorsel/uyg-somon-dna-polinukleotid.webp" data-gb="Somon DNA ve polinükleotid" data-ga="İncelmiş ve saydamlaşmış göz altı derisinde doku niteliğini aşamalı olarak desteklemeyi amaçlar."><h4>Somon DNA ve polinükleotid</h4><span class="g-hucre"><i class="g-kcip g-kcip--3">İNCELİK</i></span><span class="g-hucre">Muayenede belirlenir</span><span class="g-git">→</span></a>
+        <a class="g-msatir" href="${r}uygulamalar/doku-onarim-uygulamasi/" data-gg="${r}varliklar/gorsel/uyg-doku-onarim-uygulamasi.webp" data-gb="Doku onarım uygulaması" data-ga="İncelmiş ve saydamlaşmış göz altı derisinde doku niteliğini aşamalı olarak desteklemeyi amaçlar."><h4>Doku onarım uygulaması</h4><span class="g-hucre"><i class="g-kcip g-kcip--3">İNCELİK</i></span><span class="g-hucre">Muayenede belirlenir</span><span class="g-git">→</span></a>
         <a class="g-msatir" href="${r}uygulamalar/mezoterapi/" data-gg="${r}varliklar/gorsel/uyg-mezoterapi.webp" data-gb="Mezoterapi" data-ga="Pigment bileşeninde, göz çevresine uygun içerik ve derinlikte, uygun bulunan kişilerde değerlendirilir."><h4>Mezoterapi</h4><span class="g-hucre"><i class="g-kcip g-kcip--2">PİGMENT</i></span><span class="g-hucre">Muayenede belirlenir</span><span class="g-git">→</span></a>
         <a class="g-msatir" href="${r}uygulamalar/hekim-muayenesi/" data-gg="${r}varliklar/gorsel/uyg-hekim-muayenesi.webp" data-gb="Hekim muayenesi" data-ga="Ödem öndeyse tiroit, böbrek, kan sayımı ve kullanılan ilaçlar bu kapsamda gözden geçirilir."><h4>Hekim muayenesi</h4><span class="g-hucre"><i class="g-kcip g-kcip--1">ÖDEM</i></span><span class="g-hucre">Aynı gün</span><span class="g-git">→</span></a>
       </div>
@@ -111,7 +111,7 @@ module.exports = {
         <button class="g-ssoru" data-gs="2"><i>›</i>Göz kremiyle koyuluk geçer mi?</button>
         <div class="g-syanit" data-gs-yanit="2">Bu, koyuluğun kaynağına bağlıdır. Pigment ağır basıyorsa düzenli güneş koruması ve uygun bir bakım planı yardımcı olabilir. Görünüm gölgeden ya da hacim kaybından geliyorsa kremlerden belirgin bir etki beklenmez. Göz çevresi hassas olduğu için ürün seçimi özen ister.</div>
         <button class="g-ssoru" data-gs="3"><i>›</i>“Işık dolgusu” ne demek?</button>
-        <div class="g-syanit" data-gs-yanit="3">“Işık dolgusu” halk arasında kullanılan bir addır; tıbbi karşılığı göz altına yapılan hyalüronik asit dolgusudur. Yalnızca gözyaşı oluğundaki hacim kaybının baskın olduğu kişilerde konuşulur. Koyuluk pigmentten ya da damarlardan kaynaklanıyorsa beklenen katkıyı sağlamaz.</div>
+        <div class="g-syanit" data-gs-yanit="3">“Işık dolgusu” halk arasında kullanılan bir addır; tıbbi karşılığı göz altına jel yapılı bir dolgu maddesinin uygulanmasıdır. Yalnızca gözyaşı oluğundaki hacim kaybının baskın olduğu kişilerde konuşulur. Koyuluk pigmentten ya da damarlardan kaynaklanıyorsa beklenen katkıyı sağlamaz.</div>
         <button class="g-ssoru" data-gs="4"><i>›</i>Tek bir işlemle bütün koyuluk düzelir mi?</button>
         <div class="g-syanit" data-gs-yanit="4">Çoğu kişide göz altındaki koyuluk birden fazla etkenin birleşimidir; tek bir yöntemin bunların hepsine yanıt vermesi beklenmez. Plan genellikle en baskın bileşenden başlar ve ara kontrollerle ilerler. Değişimin derecesi ve süresi kişiden kişiye farklıdır.</div>
         <button class="g-ssoru" data-gs="5"><i>›</i>Ücret bilgisi neden sitede yok?</button>

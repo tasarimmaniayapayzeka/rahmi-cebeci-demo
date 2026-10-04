@@ -1,21 +1,21 @@
 const S = require('../../site');
 
 module.exports = {
-  slug: 'uygulamalar/somon-dna-polinukleotid',
+  slug: 'uygulamalar/doku-onarim-uygulamasi',
   tip: 'tibbi',
-  baslik: 'Somon DNA (polinükleotid): cilt yenilenmesine destek',
-  aciklama: 'Somon DNA olarak bilinen polinükleotid uygulaması nedir, hangi cilt şikâyetlerinde düşünülür, kimlerde ertelenir? Bakırköy’de önce muayene yapılır.',
-  odak: 'somon dna',   /* Yoast odak anahtar kelimesi */
+  baslik: 'Doku onarım uygulaması: cilt yenilenmesine destek',
+  aciklama: 'Doku onarım uygulaması nedir, hangi cilt şikâyetlerinde düşünülür, kimlerde ertelenir, kaç seans sürer? Bakırköy’de önce ayrıntılı muayene yapılır.',
+  odak: 'doku onarım uygulaması',   /* Yoast odak anahtar kelimesi */
 
   icerik: (r, ik) => `
 <!-- ═════ HERO ═════ -->
 <section class="g-hero">
   <div class="sar">
     <div>
-      <nav class="kirinti" aria-label="Konum" style="position:relative;font-size:.76rem;color:var(--sessiz);display:flex;gap:7px;margin-bottom:18px"><a href="${r}" style="color:var(--sessiz);text-decoration:none">Ana sayfa</a> › <a href="${r}uygulamalar/" style="color:var(--sessiz);text-decoration:none">Uygulamalar</a> › <span>Somon DNA (polinükleotid)</span></nav>
+      <nav class="kirinti" aria-label="Konum" style="position:relative;font-size:.76rem;color:var(--sessiz);display:flex;gap:7px;margin-bottom:18px"><a href="${r}" style="color:var(--sessiz);text-decoration:none">Ana sayfa</a> › <a href="${r}uygulamalar/" style="color:var(--sessiz);text-decoration:none">Uygulamalar</a> › <span>Doku onarım uygulaması</span></nav>
       <p class="g-etiket">Enjeksiyonla Yapılanlar · Doku Yenilenmesi</p>
-      <h1>“Somon DNA” olarak bilinen <span class="g-isik">polinükleotid uygulaması</span></h1>
-      <p class="g-hero__alt">Polinükleotid uygulamasında, balık kaynaklı DNA’dan elde edilip saflaştırılmış kısa nükleotid zincirleri çok ince iğnelerle derinin orta katmanına (dermis) verilir. Halk arasındaki “somon DNA” adı bu hammaddeden gelir. Amaç, cildin kendi onarım süreçlerini desteklemektir; hacim eklemez ve etkisi kişiden kişiye değişir. Uygunluk, muayene ve öykü değerlendirmesinden sonra belirlenir.</p>
+      <h1>Cildin kendi onarımını desteklemeye yönelik <span class="g-isik">doku onarım uygulaması</span></h1>
+      <p class="g-hero__alt">Doku onarım uygulaması, balık kaynaklı bir hammaddeden elde edilip saflaştırılmış onarıcı bir maddenin çok ince iğnelerle derinin orta katmanına (dermis) verilmesidir. Amaç, cildin kendi onarım süreçlerini desteklemektir; hacim eklemez ve etkisi kişiden kişiye değişir. Uygunluk, muayene ve öykü değerlendirmesinden sonra belirlenir.</p>
       <div class="g-hero__cta">
         <a class="dgm dgm--bir" href="${r}iletisim/">Randevu isteyin</a>
         <a class="dgm dgm--iki" href="#ilkbolum">Nedir, ne değildir ↓</a>
@@ -23,7 +23,7 @@ module.exports = {
       <div class="g-tikler"><span><i></i>Önce muayene ve öykü</span><span><i></i>Program hekimden</span><span><i></i>Yazılı onam</span></div>
     </div>
     <div class="g-tarama" data-gr>
-      <img src="${r}varliklar/gorsel/uyg-somon-dna-polinukleotid.webp" width="1400" height="788" alt="Cilt katmanları üzerinde uzanan sarmal zincir yapısının üç boyutlu çizimi" loading="eager">
+      <img src="${r}varliklar/gorsel/uyg-doku-onarim-uygulamasi.webp" width="1400" height="788" alt="Cilt katmanları üzerinde uzanan sarmal zincir yapısının üç boyutlu çizimi" loading="eager">
       <div class="g-isin"></div>
       <span class="g-ainot">Temsilî görsel · yapay zekâ ile üretildi</span>
       <div class="g-hud" data-ghud><b>Akışkan, ağ kuran jel</b><div class="g-cizgi"></div><span>Suyu tutar ve dokunun içinde ince bir iskele gibi yayılır.</span></div>
@@ -44,27 +44,27 @@ module.exports = {
   <div class="sar">
     <div class="bolum-bas" data-gr>
       <p class="g-etiket">Ne yapar, ne yapmaz</p>
-      <h2>Polinükleotid (somon DNA) nedir, neyin yerine geçmez?</h2>
-      <p class="giris">Adındaki “DNA” sözcüğü, bu uygulamanın olduğundan farklı, hatta genetik bir işlem gibi algılanmasına yol açabiliyor. Ne olduğunu ve ne olmadığını ayrı ayrı yazdık.</p>
+      <h2>Doku onarım uygulaması nedir, neyin yerine geçmez?</h2>
+      <p class="giris">Halk arasında kullanılan adlar, bu uygulamanın olduğundan farklı, hatta genetik bir işlem gibi algılanmasına yol açabiliyor. Ne olduğunu ve ne olmadığını ayrı ayrı yazdık.</p>
     </div>
     <div class="izgara izgara--2">
       <div class="kutu kutu--bilgi" data-gr>
         <b>Bu nedir</b>
-        <p>Polinükleotidler, DNA’nın kontrollü koşullarda parçalanmasıyla elde edilen ve belirli uzunluk aralığında tutulan nükleotid zincirleridir. Tıbbi ürünlerde hammadde çoğunlukla somon ve alabalık gibi balık türlerinden sağlanır; protein ve diğer hücre bileşenlerini ayırmaya yönelik çok aşamalı bir saflaştırma ve sterilizasyondan geçirilir.</p>
-        <p>Sonuçta elde edilen ürün, suyu bağlayan ve dokuda ağ benzeri bir yapı kuran akışkan bir jeldir. Bilimsel çalışmalarda bu maddelerin, fibroblast adı verilen onarım hücrelerinin etkinliğini destekleyebileceği bildirilmiştir; bu etkinin günlük pratikte ne ölçüde görüldüğü araştırılmaya devam etmektedir.</p>
+        <p>Bu uygulamada, cildin onarım süreçlerini desteklemek için saflaştırılmış, doğal kaynaklı bir madde kullanılır. Tıbbi ürünlerde hammadde balık türlerinden sağlanır; protein ve diğer hücre bileşenlerini ayırmaya yönelik çok aşamalı bir saflaştırma ve sterilizasyondan geçirilir.</p>
+        <p>Sonuçta elde edilen ürün, suyu bağlayan ve dokuda ağ benzeri bir yapı kuran akışkan bir jeldir. Bilimsel çalışmalarda bu maddenin, fibroblast adı verilen onarım hücrelerinin etkinliğini destekleyebileceği bildirilmiştir; bu etkinin günlük pratikte ne ölçüde görüldüğü araştırılmaya devam etmektedir.</p>
 <p>Uygulanacak bölge, derinlik ve miktar hekim tarafından belirlenir. İçeriği ve hedefi bakımından <a href="${r}uygulamalar/genclik-asisi-skinbooster/">gençlik aşısı (skinbooster)</a> ve <a href="${r}uygulamalar/mezoterapi/">mezoterapi</a> uygulamalarından ayrıdır; bunların yerine kullanılmaz.</p>
       </div>
       <div class="kutu kutu--uyari" data-gr style="--d:70ms">
         <b>Bu ne değildir</b>
-        <p><b>Genlerinize dokunmaz:</b> zincirler hücre çekirdeğine ulaşıp talimat vermez; genleriniz olduğu gibi kalır, sonraki kuşaklara geçecek bir etki de söz konusu değildir. Ürün canlı hücre içermez.</p>
+        <p><b>Genlerinize dokunmaz:</b> verilen madde hücre çekirdeğine ulaşıp talimat vermez; genleriniz olduğu gibi kalır, sonraki kuşaklara geçecek bir etki de söz konusu değildir. Ürün canlı hücre içermez.</p>
         <p><b>Hacim kazandırmaz:</b> belirgin hacim kaybı olan bölgelerde dolgunun yerini tutmaz, yüz hatlarını değiştirmez; sarkmayı da düzeltmez.</p>
         <p><b>Cilt hastalıklarının tedavisi değildir:</b> rozasea, egzama, aktif akne ya da kronik kurdeşen gibi durumlarda önce altta yatan nedenin belirlenmesi gerekir.</p>
         <p><b>Yanıtı önceden bilinemez:</b> değişikliğin derecesi kişiden kişiye belirgin farklılık gösterir; bazı kişilerde beklenen etki görülmeyebilir.</p>
       </div>
     </div>
     <div class="kutu kutu--uyari" data-gr style="--d:140ms;margin-top:16px">
-      <b>“Somon DNA” adı ne anlatır, ne anlatmaz?</b>
-      <p>Bu ad, ürünün hammaddesinin balık kaynaklı olmasından gelir ve halk arasında yaygınlaşmıştır. Ürünün etkinliği, içeriği ya da uygulama tekniği hakkında bilgi vermez; aynı adla farklı yoğunlukta ve farklı katkılar içeren ürünler anılabilir.</p>
+      <b>Halk arasındaki adlar ne anlatır, ne anlatmaz?</b>
+      <p>Bu uygulama halk arasında çoğunlukla ürünün hammaddesinin balık kaynaklı olmasına göre anılır. Bu tür adlar ürünün etkinliği, içeriği ya da uygulama tekniği hakkında bilgi vermez; aynı adla farklı yoğunlukta ve farklı katkılar içeren ürünler anılabilir.</p>
 <p>Bu nedenle uygulamayı adıyla değil içeriğiyle konuşuyoruz: size uygulanacak ürünün adı, içeriği, miktarı ve uygulandığı bölgeler dosyanıza kaydedilir. İçerikle ilgili merak ettiğiniz her şeyi uygulamadan önce sorabilirsiniz.</p>
     </div>
     <div class="kutu" data-gr style="--d:200ms;margin-top:16px">
@@ -103,12 +103,12 @@ module.exports = {
         </ol>
       </div>
       <div class="g-kutu g-b2 g-kutu--gece" data-gr><span class="g-ket">Hekimin notu</span><p>“Bir ürünü adıyla değil, içeriğiyle ve sizin cildinizle birlikte değerlendiririz.”</p></div>
-      <div class="g-kutu g-b2 g-kutu--gorsel" data-gr style="--d:70ms"><img src="${r}varliklar/gorsel/uyg-somon-dna-polinukleotid-2.webp" alt="Nemi simgeleyen su dokusu" loading="lazy"><span class="g-ainot">Temsilî görsel · yapay zekâ ile üretildi</span></div>
+      <div class="g-kutu g-b2 g-kutu--gorsel" data-gr style="--d:70ms"><img src="${r}varliklar/gorsel/uyg-doku-onarim-uygulamasi-2.webp" alt="Nemi simgeleyen su dokusu" loading="lazy"><span class="g-ainot">Temsilî görsel · yapay zekâ ile üretildi</span></div>
       <div class="g-kutu g-b2 g-kutu--cta" data-gr style="--d:140ms"><h3>Cildinizi birlikte değerlendirelim</h3><p>Karar, muayene ve öykünüz tamamlandıktan sonra verilir.</p><a class="dgm dgm--altin" href="${r}iletisim/">Randevu isteyin</a></div>
       <div class="kutu kutu--uyari g-b4" data-gr>
         <b>Hangi durumlarda uygulanmaz, hangilerinde ertelenir?</b>
         <ul>
-          <li><b>Ürün içeriğine bilinen aşırı duyarlılık:</b> polinükleotide, balık kaynaklı maddelere ya da üründeki yardımcı bileşenlere karşı daha önce reaksiyon geliştiyse uygulama yapılmaz; geçmişte anafilaksi geçirdiyseniz plan bütünüyle yeniden değerlendirilir.</li>
+          <li><b>Ürün içeriğine bilinen aşırı duyarlılık:</b> verilen onarıcı maddeye, balık kaynaklı maddelere ya da üründeki yardımcı bileşenlere karşı daha önce reaksiyon geliştiyse uygulama yapılmaz; geçmişte anafilaksi geçirdiyseniz plan bütünüyle yeniden değerlendirilir.</li>
           <li><b>Gebelik ve emzirme:</b> bu dönemlerde program başlatılmaz.</li>
           <li><b>Bölgede aktif bir sorun:</b> enfeksiyon, uçuk, iltihaplı sivilce, alevlenmiş egzama ya da açık yara varsa bölge iyileşene kadar beklenir.</li>
           <li><b>Aktif otoimmün ya da iltihaplı hastalık, keloid eğilimi:</b> yara iyileşmesini bozan bu genel durumlarda uygulama ertelenir.</li>
@@ -132,7 +132,7 @@ module.exports = {
     <div class="bolum-bas" data-gr>
       <p class="g-etiket">Ne zaman</p>
       <h2>Program kaç seans sürer, etkisi ne kadar kalır?</h2>
-      <p class="giris">Polinükleotid uygulaması tek seansla sınırlı düşünülmez; birkaç seanstan oluşan bir dizi olarak planlanır. Kaç seans yapılacağına ve seansların ne sıklıkta olacağına, uygulanan bölge ve cildinizin ilk seansa verdiği yanıt görüldükten sonra hekim karar verir; herkese aynı sayı önerilmez. Kazanımın ne kadar kalacağını önceden kestirmek mümkün değildir: yaş, deri kalınlığı, güneşle temas, sigara ve genel sağlık durumu bu süreyi değiştirir. Bazı kişilerde belirgin bir değişiklik görülmeyebilir ve bu da olası sonuçlardan biridir. Onay verirseniz, değişikliği izlenime bırakmamak için aynı ışık ve açıyla fotoğraf kaydı alınır.</p>
+      <p class="giris">Doku onarım uygulaması tek seansla sınırlı düşünülmez; birkaç seanstan oluşan bir dizi olarak planlanır. Kaç seans yapılacağına ve seansların ne sıklıkta olacağına, uygulanan bölge ve cildinizin ilk seansa verdiği yanıt görüldükten sonra hekim karar verir; herkese aynı sayı önerilmez. Kazanımın ne kadar kalacağını önceden kestirmek mümkün değildir: yaş, deri kalınlığı, güneşle temas, sigara ve genel sağlık durumu bu süreyi değiştirir. Bazı kişilerde belirgin bir değişiklik görülmeyebilir ve bu da olası sonuçlardan biridir. Onay verirseniz, değişikliği izlenime bırakmamak için aynı ışık ve açıyla fotoğraf kaydı alınır.</p>
     </div>
   </div>
 </section>
@@ -141,17 +141,17 @@ module.exports = {
 <section class="bolum bolum--buz2"><div class="sar">
   <div class="bolum-bas" data-gr><p class="g-etiket">Sık gelen sorular</p><h2>Merak ettiğiniz soruya dokunun, yanıtı burada açılsın</h2></div>
   <div class="g-sorgu" data-gr>
-    <div class="g-sorgu-bas"><i></i><i></i><i></i><span>${S.marka} · somon DNA · soru-cevap</span></div>
+    <div class="g-sorgu-bas"><i></i><i></i><i></i><span>${S.marka} · doku onarım · soru-cevap</span></div>
     <div class="g-sorgu-ic">
       <div class="g-slistem">
-        <button class="g-ssoru" data-akt data-gs="0"><i>›</i>“Somon DNA” adı nereden geliyor?</button>
-        <div class="g-syanit" data-gs-yanit="0">Tıbbi polinükleotid ürünlerinin hammaddesi balık kaynaklıdır; çoğunlukla somon ve alabalık gibi türlerden elde edilir. Halk arasındaki ad bu kaynaktan türemiştir. Adın kendisi ürünün içeriği ya da etkinliği hakkında bilgi vermez; size uygulanacak ürünün ayrıntıları muayenede konuşulur.</div>
+        <button class="g-ssoru" data-akt data-gs="0"><i>›</i>Verilen madde neyden elde edilir, alerjim varsa uygulanır mı?</button>
+        <div class="g-syanit" data-gs-yanit="0">Bu uygulamada kullanılan onarıcı maddenin hammaddesi balık kaynaklıdır; ürün, çok aşamalı bir saflaştırma ve sterilizasyondan geçirilir. Balık kaynaklı maddelere ya da üründeki yardımcı bileşenlere karşı daha önce reaksiyon geliştiyse uygulama yapılmaz; geçmişte anafilaksi geçirdiyseniz plan bütünüyle yeniden değerlendirilir. Alerji öykünüzü muayenede mutlaka paylaşın; size uygulanacak ürünün ayrıntıları da orada konuşulur.</div>
         <button class="g-ssoru" data-gs="1"><i>›</i>Genetik yapımı etkiler mi?</button>
-        <div class="g-syanit" data-gs-yanit="1">Hayır. Verilen madde saflaştırılmış kısa nükleotid zincirlerinden oluşur; hücre çekirdeğine girip bilgi aktarmaz, genetik yapınızı değiştirmez ve kalıtsal bir etkisi yoktur. Bu endişe çoğunlukla uygulamanın halk arasındaki adından kaynaklanır.</div>
+        <div class="g-syanit" data-gs-yanit="1">Hayır. Uygulanan ürün saflaştırılmış, doğal kaynaklı bir maddedir; hücre çekirdeğine girip bilgi aktarmaz, genetik yapınızı değiştirmez ve kalıtsal bir etkisi yoktur. Bu endişe çoğunlukla uygulamanın halk arasındaki adından kaynaklanır.</div>
         <button class="g-ssoru" data-gs="2"><i>›</i>Göz çevresine uygulanabilir mi?</button>
-        <div class="g-syanit" data-gs-yanit="2">Göz çevresi, polinükleotid uygulamasının sık değerlendirildiği bölgelerden biridir; ince çizgiler ve incelmiş deri için planlanabilir. Ancak göz altındaki koyuluğun kaynağı pigment, damar görünümü ya da ödem de olabilir; önce nedenin ayrılması gerekir.</div>
+        <div class="g-syanit" data-gs-yanit="2">Göz çevresi, bu uygulamanın sık değerlendirildiği bölgelerden biridir; ince çizgiler ve incelmiş deri için planlanabilir. Ancak göz altındaki koyuluğun kaynağı pigment, damar görünümü ya da ödem de olabilir; önce nedenin ayrılması gerekir.</div>
         <button class="g-ssoru" data-gs="3"><i>›</i>Dolgunun yerine geçer mi?</button>
-        <div class="g-syanit" data-gs-yanit="3">Hayır. Polinükleotid dokuda yer kaplamaz; çökmüş ya da incelmiş bir bölgeyi doldurmaz. Hacim kaybı ayrı bir değerlendirme gerektirir; bu konuyu dolgu uygulamaları sayfasında anlattık.</div>
+        <div class="g-syanit" data-gs-yanit="3">Hayır. Verilen madde dokuda yer kaplamaz; çökmüş ya da incelmiş bir bölgeyi doldurmaz. Hacim kaybı ayrı bir değerlendirme gerektirir; bu konuyu dolgu uygulamaları sayfasında anlattık.</div>
         <button class="g-ssoru" data-gs="4"><i>›</i>Uygulamadan sonra nelere dikkat etmeliyim?</button>
         <div class="g-syanit" data-gs-yanit="4">İşlem günü bölgeye dokunmamanız, makyaj yapmamanız; sauna, hamam ve yoğun spor gibi terleten ortamlara 24 saat ara vermeniz istenir. İlk günlerde güneşten korunmak önem taşır. Öneriler size yazılı olarak da verilir.</div>
         <button class="g-ssoru" data-gs="5"><i>›</i>Ücret bilgisi neden sitede yok?</button>

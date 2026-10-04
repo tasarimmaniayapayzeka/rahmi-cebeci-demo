@@ -109,8 +109,8 @@
      "baslik": "Enjeksiyonla Yapılanlar",
      "ogeler": [
       {
-       "ad": "Botulinum Toksin",
-       "yol": "/uygulamalar/botulinum-toksin/"
+       "ad": "Mimik Çizgisi Uygulaması",
+       "yol": "/uygulamalar/mimik-cizgisi-uygulamasi/"
       },
       {
        "ad": "Dolgu Uygulamaları",
@@ -125,8 +125,8 @@
        "yol": "/uygulamalar/genclik-asisi-skinbooster/"
       },
       {
-       "ad": "Somon DNA ve Polinükleotid",
-       "yol": "/uygulamalar/somon-dna-polinukleotid/"
+       "ad": "Doku Onarım Uygulaması",
+       "yol": "/uygulamalar/doku-onarim-uygulamasi/"
       },
       {
        "ad": "Mezoterapi",
@@ -216,8 +216,8 @@
    ],
    "alt": [
     {
-     "ad": "Botulinum Toksin",
-     "yol": "/uygulamalar/botulinum-toksin/",
+     "ad": "Mimik Çizgisi Uygulaması",
+     "yol": "/uygulamalar/mimik-cizgisi-uygulamasi/",
      "grup": "Enjeksiyonlar"
     },
     {
@@ -236,8 +236,8 @@
      "grup": "Enjeksiyonlar"
     },
     {
-     "ad": "Somon DNA ve Polinükleotid",
-     "yol": "/uygulamalar/somon-dna-polinukleotid/",
+     "ad": "Doku Onarım Uygulaması",
+     "yol": "/uygulamalar/doku-onarim-uygulamasi/",
      "grup": "Enjeksiyonlar"
     },
     {
@@ -474,8 +474,8 @@
    ],
    "bag": [
     [
-     "Botulinum Toksin",
-     "/uygulamalar/botulinum-toksin/"
+     "Mimik Çizgisi Uygulaması",
+     "/uygulamalar/mimik-cizgisi-uygulamasi/"
     ],
     [
      "Dolgu Uygulamaları",
@@ -490,8 +490,8 @@
      "/uygulamalar/genclik-asisi-skinbooster/"
     ],
     [
-     "Somon DNA ve Polinükleotid",
-     "/uygulamalar/somon-dna-polinukleotid/"
+     "Doku Onarım Uygulaması",
+     "/uygulamalar/doku-onarim-uygulamasi/"
     ]
    ]
   },

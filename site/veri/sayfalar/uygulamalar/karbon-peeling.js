@@ -86,7 +86,7 @@ module.exports = {
       <div class="kutu kutu--uyari g-b4" data-gr>
         <b>Kimlere yapılmaz, ne zaman beklenir?</b>
         <p>Yazdan yeni dönmüş, bronzlaşmış bir ciltte ton yerine oturana kadar beklenir; bronzlaştırıcı sprey ya da krem kullandıysanız söyleyin. Yüzde iltihaplı sivilce, uçuk, alevlenmiş egzama, güneş yanığı ya da açık yara varsa önce deri toparlanır.</p>
-<p>Deriyi ışığa duyarlı yapan ilaçları ve sarı kantaron gibi bitkisel ürünleri soruyoruz. Akne için ağızdan isotretinoin kullandıysanız ya da asitli ürünlerinizi henüz bırakmadıysanız seans ertelenir. Daha önce bir yüz ürününe ya da uyuşturucu kreme tepki verdiyseniz ürünün adını getirin; losyon içeriği buna göre seçilir ya da uygulamadan vazgeçilir.</p>
+<p>Deriyi ışığa duyarlı yapan ilaçları ve sarı kantaron gibi bitkisel ürünleri soruyoruz. Akne için ağızdan A vitamini türevi bir ilaç kullandıysanız ya da asitli ürünlerinizi henüz bırakmadıysanız seans ertelenir. Daha önce bir yüz ürününe ya da uyuşturucu kreme tepki verdiyseniz ürünün adını getirin; losyon içeriği buna göre seçilir ya da uygulamadan vazgeçilir.</p>
 <p>Birçok üründe yanan, gerilen ya da kızaran bir cildin koruyucu tabakası zaten zayıflamıştır; lazerden önce bu tabakanın onarılması gerekir. Güneşle alevlenen deri hastalıkları, vitiligo gibi renk kaybıyla giden tablolar, keloid eğilimi, gebelik ve emzirme, yara iyileşmesini bozan durumlar ve alan içinde incelenmemiş pigmentli lekeler uygulamaya engeldir.</p>
       </div>
       <div class="g-kutu g-b2 g-kutu--gorsel" data-gr style="--d:70ms"><img src="${r}varliklar/gorsel/uyg-karbon-peeling-2.webp" alt="Cilt bakımında kullanılan ürün şişeleri" loading="lazy"><span class="g-ainot">Temsilî görsel · yapay zekâ ile üretildi</span></div>

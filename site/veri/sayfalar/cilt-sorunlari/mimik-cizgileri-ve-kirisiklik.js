@@ -52,7 +52,7 @@ module.exports = {
       <span class="g-kno">Kesit 01</span>
       <h3>Hareketle beliren (dinamik) çizgiler</h3>
       <p>Mimik kaslarının kasılmasıyla ortaya çıkar. Alındaki yatay çizgiler, iki kaş arasındaki dikey çizgi ve göz kenarındaki kaz ayağı bu grubun tipik örnekleridir. Yüzünüzü gevşettiğinizde çizgi neredeyse hiç görünmüyorsa baskın bileşen harekettir; bu durumda konuşulan, ilgili kasın ne kadar güçlü çalıştığıdır.</p>
-      <div class="g-haplar"><a href="${r}uygulamalar/botulinum-toksin/">Botulinum toksin</a></div>
+      <div class="g-haplar"><a href="${r}uygulamalar/mimik-cizgisi-uygulamasi/">Mimik çizgisi uygulaması</a></div>
     </div>
     <div class="g-katblok" data-gr style="--d:60ms">
       <span class="g-kno">Kesit 02</span>
@@ -94,12 +94,12 @@ module.exports = {
     <div class="g-matris">
       <div class="g-mtab" data-gr>
         <div class="g-mbas"><span>Yöntem</span><span>Amaç</span><span>Toparlanma</span><span></span></div>
-        <a class="g-msatir" data-akt href="${r}uygulamalar/botulinum-toksin/" data-gg="${r}varliklar/gorsel/uyg-botulinum-toksin.webp" data-gb="Botulinum toksin" data-ga="Hareketin baskın olduğu çizgilerde ilgili kasların çalışma gücünün azaltılması hedeflenir; etkinin süresi kişiden kişiye değişir."><h4>Botulinum toksin</h4><span class="g-hucre"><i class="g-kcip g-kcip--1">HAREKET</i></span><span class="g-hucre">Muayenede belirlenir</span><span class="g-git">→</span></a>
+        <a class="g-msatir" data-akt href="${r}uygulamalar/mimik-cizgisi-uygulamasi/" data-gg="${r}varliklar/gorsel/uyg-mimik-cizgisi-uygulamasi.webp" data-gb="Mimik çizgisi uygulaması" data-ga="Hareketin baskın olduğu çizgilerde ilgili kasların çalışma gücünün azaltılması hedeflenir; etkinin süresi kişiden kişiye değişir."><h4>Mimik çizgisi uygulaması</h4><span class="g-hucre"><i class="g-kcip g-kcip--1">HAREKET</i></span><span class="g-hucre">Muayenede belirlenir</span><span class="g-git">→</span></a>
         <a class="g-msatir" href="${r}uygulamalar/dolgu-uygulamalari/" data-gg="${r}varliklar/gorsel/uyg-dolgu-uygulamalari.webp" data-gb="Dolgu uygulamaları" data-ga="Derinleşmiş statik çizgilerde ve hacim kaybının eşlik ettiği bölgelerde ölçülü miktarla destek sağlanması amaçlanır."><h4>Dolgu uygulamaları</h4><span class="g-hucre"><i class="g-kcip g-kcip--2">HACİM</i></span><span class="g-hucre">Muayenede belirlenir</span><span class="g-git">→</span></a>
         <a class="g-msatir" href="${r}uygulamalar/genclik-asisi-skinbooster/" data-gg="${r}varliklar/gorsel/uyg-genclik-asisi-skinbooster.webp" data-gb="Gençlik aşısı (skinbooster)" data-ga="Hacim eklemeden derinin nem ve esneklik niteliğini desteklemeye yöneliktir; ince statik çizgilerde konuşulur."><h4>Gençlik aşısı (skinbooster)</h4><span class="g-hucre"><i class="g-kcip g-kcip--2">DOKU</i></span><span class="g-hucre">Muayenede belirlenir</span><span class="g-git">→</span></a>
         <a class="g-msatir" href="${r}uygulamalar/fraksiyonel-lazer/" data-gg="${r}varliklar/gorsel/uyg-fraksiyonel-lazer.webp" data-gb="Fraksiyonel lazer" data-ga="Yüzey dokusunda ve ince çizgilerde kontrollü yenilenmeyi uyarmayı hedefler; toparlanma süresi seçilen ayara göre değişir."><h4>Fraksiyonel lazer</h4><span class="g-hucre"><i class="g-kcip g-kcip--3">YÜZEY</i></span><span class="g-hucre">Muayenede belirlenir</span><span class="g-git">→</span></a>
       </div>
-      <div class="g-onizle" data-gonizle data-gr><div class="g-gor"><img src="${r}varliklar/gorsel/uyg-botulinum-toksin.webp" alt="" loading="lazy"></div><div class="g-ic"><h4>Botulinum toksin</h4><p>Hareketin baskın olduğu çizgilerde ilgili kasların çalışma gücünün azaltılması hedeflenir; etkinin süresi kişiden kişiye değişir.</p><a class="dgm dgm--iki" href="${r}uygulamalar/botulinum-toksin/">Sayfasına git →</a></div></div>
+      <div class="g-onizle" data-gonizle data-gr><div class="g-gor"><img src="${r}varliklar/gorsel/uyg-mimik-cizgisi-uygulamasi.webp" alt="" loading="lazy"></div><div class="g-ic"><h4>Mimik çizgisi uygulaması</h4><p>Hareketin baskın olduğu çizgilerde ilgili kasların çalışma gücünün azaltılması hedeflenir; etkinin süresi kişiden kişiye değişir.</p><a class="dgm dgm--iki" href="${r}uygulamalar/mimik-cizgisi-uygulamasi/">Sayfasına git →</a></div></div>
     </div>
   </div>
 </section>
@@ -113,8 +113,8 @@ module.exports = {
       <div class="g-slistem">
         <button class="g-ssoru" data-akt data-gs="0"><i>›</i>Çizgimin türünü evde nasıl ayırt edebilirim?</button>
         <div class="g-syanit" data-gs-yanit="0">Aynaya bakın, yüzünüzü tamamen gevşetin ve birkaç saniye hiç kıpırdamayın. Çizgi bu anda kayboluyorsa büyük olasılıkla hareketle ilgilidir; gevşek yüzde de seçiliyorsa statik bir bileşen vardır. Çoğu yüzde ikisi birlikte bulunduğundan bu gözlem yalnızca bir ön fikir verir.</div>
-        <button class="g-ssoru" data-gs="1"><i>›</i>Botoks her kırışıklığı açar mı?</button>
-        <div class="g-syanit" data-gs-yanit="1">“Botoks” halk arasındaki addır; tıbbi karşılığı botulinum toksin uygulamasıdır ve etkisi kas hareketi üzerinedir. Güneş hasarı ya da hacim kaybıyla yerleşmiş bir çizgide kas gevşetilse bile çizgi tam olarak kaybolmayabilir. Bu yüzden önce çizginin kaynağı belirlenir.</div>
+        <button class="g-ssoru" data-gs="1"><i>›</i>Mimik çizgisi uygulaması her kırışıklığı açar mı?</button>
+        <div class="g-syanit" data-gs-yanit="1">Bu uygulamanın etkisi kas hareketi üzerinedir. Güneş hasarı ya da hacim kaybıyla yerleşmiş bir çizgide kas gevşetilse bile çizgi tam olarak kaybolmayabilir. Bu yüzden önce çizginin kaynağı belirlenir.</div>
         <button class="g-ssoru" data-gs="2"><i>›</i>Çizgiler oluşmadan önlem almak mümkün mü?</button>
         <div class="g-syanit" data-gs-yanit="2">Mevsim fark etmeksizin her gün güneşten korunmak ve koruyucuyu gün içinde yenilemek en etkili adımdır. Sigarayı bırakmak, uyku düzenine ve cildin nem dengesine özen göstermek de destek olur. Bu önlemler yaşlanmayı durdurmaz; çizgilerin ortaya çıkış hızını yavaşlatabilir.</div>
         <button class="g-ssoru" data-gs="3"><i>›</i>Kırışıklık kremleri gerçekten işe yarar mı?</button>

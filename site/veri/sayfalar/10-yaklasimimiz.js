@@ -91,7 +91,7 @@ module.exports = {
       <div class="kart kart--duz">
         <span class="kart__ikon">${ik.liste}</span>
         <h3>Genel sağlığınızı soruyoruz</h3>
-        <p>Kan sulandırıcılar, izotretinoin, bağışıklığı baskılayan ilaçlar, yeni geçirilmiş bir enfeksiyon ya da aşı; bunların her biri işlemi ertelemeyi ya da başka bir yola geçmeyi gerektirebilir. Bunları uygulama gününden önce bilmek, riski öngörmenin yoludur.</p>
+        <p>Kan sulandırıcılar, ağızdan alınan A vitamini türevi akne ilaçları, bağışıklığı baskılayan ilaçlar, yeni geçirilmiş bir enfeksiyon ya da aşı; bunların her biri işlemi ertelemeyi ya da başka bir yola geçmeyi gerektirebilir. Bunları uygulama gününden önce bilmek, riski öngörmenin yoludur.</p>
       </div>
       <div class="kart kart--duz">
         <span class="kart__ikon">${ik.kalkan}</span>

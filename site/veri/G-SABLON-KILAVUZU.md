@@ -11,7 +11,7 @@ Stiller `varliklar/css/g.css` + mevcut `tokens.css`/`site.css`.
 - Mevcut sayfanın METNİ korunur ve yeniden yerleştirilir — içerik denetimden geçti,
   sıfırdan yazma; yalnızca G bölümlerine dağıt. Cümleleri kısaltıp sıkılaştırabilirsin.
 - Yasak dil kuralları aynen: fiyat/garanti/"en iyi"/marka adı/dış link yok;
-  "botoks" yalnız SSS'de tırnak içinde düzeltici.
+  ilaç / etken madde / ürün adı ("botoks" dahil) hiç geçmez (4 Eki 2026, YAZIM-KILAVUZU §2).
 - Eski şablon sınıfları (`sayfa-hero`, `icindekiler`, `sss`, `yazi`, `kirinti`…) yeni
   sayfada KULLANILMAZ — tamamı G bileşenlerine çevrilir.
   (`.sar`, `.bolum`, `.dgm`, `.dgm--bir/--iki`, `.kutu kutu--bilgi/--uyari/--acil`,

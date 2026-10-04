@@ -15,7 +15,7 @@ module.exports = {
       <nav class="kirinti" aria-label="Konum" style="position:relative;font-size:.76rem;color:var(--sessiz);display:flex;gap:7px;margin-bottom:18px"><a href="${r}" style="color:var(--sessiz);text-decoration:none">Ana sayfa</a> › <a href="${r}uygulamalar/" style="color:var(--sessiz);text-decoration:none">Uygulamalar</a> › <span>Sıvı yüz germe</span></nav>
       <p class="g-etiket">Enjeksiyonla Yapılanlar · Bütüncül Planlama</p>
       <h1>Tek bölge değil, <span class="g-isik">yüzün bütünü</span> planlanır</h1>
-      <p class="g-hero__alt">“Sıvı yüz germe” (liquid facelift), yüzün birden çok noktasına aynı plan içinde hyalüronik asit dolgu ve gerektiğinde destekleyici uygulamalar yapılmasını anlatan halk arasındaki addır. Amaç, zamanla dağılan desteği birkaç kilit noktadan toparlayarak yüzün daha dinlenmiş görünmesine katkı sağlamaktır. Cerrahi yüz germenin yerini tutmaz; deri fazlalığı belirgin olan kişilerde cerrahi değerlendirme önerilir.</p>
+      <p class="g-hero__alt">“Sıvı yüz germe” (liquid facelift), yüzün birden çok noktasına aynı plan içinde jel yapılı dolgu ve gerektiğinde destekleyici uygulamalar yapılmasını anlatan halk arasındaki addır. Amaç, zamanla dağılan desteği birkaç kilit noktadan toparlayarak yüzün daha dinlenmiş görünmesine katkı sağlamaktır. Cerrahi yüz germenin yerini tutmaz; deri fazlalığı belirgin olan kişilerde cerrahi değerlendirme önerilir.</p>
       <div class="g-hero__cta">
         <a class="dgm dgm--bir" href="${r}iletisim/">Randevu isteyin</a>
         <a class="dgm dgm--iki" href="#nedir">Kimler için uygun ↓</a>
@@ -50,7 +50,7 @@ module.exports = {
     <div class="izgara izgara--2" data-gr>
       <div class="kutu kutu--bilgi">
         <b>Bu nedir</b>
-        <p>Farklı yoğunluktaki hyalüronik asit ürünlerinin, yüzün birkaç kilit noktasına aynı değerlendirme üzerinden ve çoğunlukla birkaç seansa bölünerek yerleştirilmesidir. Plan gerektiğinde <a href="${r}uygulamalar/botulinum-toksin/">botulinum toksin</a>, <a href="${r}uygulamalar/biyostimulan-uygulamalar/">biyostimülan</a> ya da cilt kalitesine yönelik uygulamalarla desteklenebilir. Hedef yüze yeni bir şekil vermek değil, kaybolan desteği yerine koyarak bölgeler arasındaki geçişi yumuşatmaktır; kullanılacak toplam miktar da bu hedefe göre sınırlanır.</p>
+        <p>Farklı yoğunluktaki dolgu jellerinin, yüzün birkaç kilit noktasına aynı değerlendirme üzerinden ve çoğunlukla birkaç seansa bölünerek yerleştirilmesidir. Plan gerektiğinde <a href="${r}uygulamalar/mimik-cizgisi-uygulamasi/">mimik çizgisi uygulaması</a>, <a href="${r}uygulamalar/biyostimulan-uygulamalar/">biyostimülan</a> ya da cilt kalitesine yönelik işlemlerle desteklenebilir. Hedef yüze yeni bir şekil vermek değil, kaybolan desteği yerine koyarak bölgeler arasındaki geçişi yumuşatmaktır; kullanılacak toplam miktar da bu hedefe göre sınırlanır.</p>
       </div>
       <div class="kutu kutu--uyari">
         <b>Bu ne değildir</b>
@@ -120,7 +120,7 @@ module.exports = {
         <b>Hangi durumlarda uygulanmaz, hangilerinde ertelenir?</b>
         <p><b>Uygulamanın yapılmadığı durumlar:</b></p>
         <ul>
-          <li>Hyalüronik asit ürünlerine ya da yardımcı maddelerine karşı bilinen aşırı duyarlılık</li>
+          <li>Dolgu jeline ya da içindeki yardımcı maddelere karşı bilinen aşırı duyarlılık</li>
           <li>Belirgin deri fazlalığı ve sarkma — bu tabloda cerrahi değerlendirme önceliklidir</li>
           <li>Uygulama bölgelerinin herhangi birinde aktif enfeksiyon, iltihaplı sivilce ya da açık yara</li>
           <li>Daha önce uygulanmış, içeriği bilinmeyen ya da çözünmeyen ürünlerin bulunduğu bölgeler</li>
@@ -171,7 +171,7 @@ module.exports = {
       <p>Uygulama sırasında ya da sonrasında beklenenden çok daha şiddetli ağrı, derinin solması ya da beyazlaması, ağ biçiminde mor renk değişimi, görmede bulanıklık veya kayıp ve göz çevresinde şiddetli ağrı gelişirse vakit kaybetmeyin. Bu bulgular ürünün bir damarı tıkamış olabileceğini düşündürür. Hemen bize ulaşın; ulaşamazsanız <b>112</b> Acil Çağrı Merkezi’ni arayın ya da en yakın hastanenin acil birimine başvurun.</p>
     </div>
     <div class="kutu kutu--bilgi" style="margin-top:16px" data-gr>
-      <p>Hyalüronik asit ürünlerinin gerekli durumlarda enzimle çözülmesine ilişkin bilgiyi <a href="${r}uygulamalar/dolgu-uygulamalari/">dolgu uygulamaları</a> sayfasının riskler bölümünde bulabilirsiniz. Bu olasılık ve izlenecek yol, uygulamadan önce sizinle ayrıca konuşulur.</p>
+      <p>Jel yapılı dolguların gerekli durumlarda enzimle çözülmesine ilişkin bilgiyi <a href="${r}uygulamalar/dolgu-uygulamalari/">dolgu uygulamaları</a> sayfasının riskler bölümünde bulabilirsiniz. Bu olasılık ve izlenecek yol, uygulamadan önce sizinle ayrıca konuşulur.</p>
     </div>
   </div>
 </section>

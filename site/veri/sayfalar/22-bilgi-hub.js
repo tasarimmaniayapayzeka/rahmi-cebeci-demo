@@ -112,11 +112,11 @@ module.exports = {
             <p>Hacim eklemek, yüzü bütün olarak desteklemek ve kolajen üretimini uyarmak arasındaki ayrım.</p>
           </div>
           <div class="g-aog">
-            <h4>Botulinum toksinde ifade nasıl korunur?</h4>
+            <h4>Mimik çizgisi uygulamasında ifade nasıl korunur?</h4>
             <p>Doz, nokta seçimi ve ilk uygulamada ölçülü başlamanın mimik üzerindeki etkisi.</p>
           </div>
           <div class="g-aog">
-            <h4>Skinbooster, polinükleotid ve eksozom aynı şey mi?</h4>
+            <h4>Skinbooster, doku onarım uygulaması ve eksozom aynı şey mi?</h4>
             <p>Cilt kalitesine yönelik üç yaklaşımın içerik ve hedef bakımından nasıl ayrıştığı.</p>
           </div>
           <div class="g-aog">
@@ -124,8 +124,8 @@ module.exports = {
             <p>İlaç ve takviyelerin rolü, zamanlama ve uygulama sonrası ilk saatlerde dikkat edilecekler.</p>
           </div>
           <div class="g-aog">
-            <h4>Hyalüronidaz hangi durumlarda konuşulur?</h4>
-            <p>Hyalüronik asit dolgunun çözülmesinin gündeme geldiği tablolar ve bu işlemin kendi sınırları.</p>
+            <h4>Dolgu eritme hangi durumlarda konuşulur?</h4>
+            <p>Jel yapılı dolgunun enzimle çözülmesinin gündeme geldiği tablolar ve bu işlemin kendi sınırları.</p>
           </div>
           <div class="g-aog">
             <h4>Haftalar sonra ortaya çıkan şişlik ve sertlik</h4>

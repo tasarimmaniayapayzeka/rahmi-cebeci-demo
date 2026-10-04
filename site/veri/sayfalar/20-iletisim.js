@@ -116,7 +116,7 @@ module.exports = {
         <select id="konu" name="konu" required>
           <option value="">Seçiniz</option>
           <option value="dovme-silme">Dövme silme (pico lazer)</option>
-          <option value="botulinum-toksin">Botulinum toksin</option>
+          <option value="mimik-cizgisi-uygulamasi">Mimik çizgisi uygulaması</option>
           <option value="dolgu">Dolgu</option>
           <option value="hifu">HIFU</option>
           <option value="altin-igne">Altın iğne</option>

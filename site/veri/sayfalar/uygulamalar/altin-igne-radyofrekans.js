@@ -87,7 +87,7 @@ module.exports = {
       <div class="kutu kutu--uyari g-b4" data-gr>
         <b>Uygulamaya engel olan ya da bekleten durumlar</b>
         <p>Vücudunuzda elektrikle çalışan bir cihaz, örneğin kalp pili, şok cihazı ya da benzeri bir implant varsa radyofrekans akımı kullanılmaz. Bölgede metal plaka, vida, kalıcı dolgu maddesi veya başka bir yapay malzeme varsa muayenede mutlaka söyleyin.</p>
-<p>Yüzde iltihaplı sivilce, uçuk, alevlenmiş egzama, güneş yanığı ya da açık yara varken iğne ve ısı iyileşmeyi bozabileceği için önce deri toparlanır. Akne için isotretinoin kullandıysanız bırakma tarihinizi söyleyin; ne kadar bekleneceğine hekim karar verir.</p>
+<p>Yüzde iltihaplı sivilce, uçuk, alevlenmiş egzama, güneş yanığı ya da açık yara varken iğne ve ısı iyileşmeyi bozabileceği için önce deri toparlanır. Akne için ağızdan A vitamini türevi bir ilaç kullandıysanız bırakma tarihinizi söyleyin; ne kadar bekleneceğine hekim karar verir.</p>
 <p>Kabarık iz ya da keloid yapma eğilimi, vitiligo gibi renk kaybıyla giden tablolar, gebelik ve emzirme, şekeri düzensiz seyreden diyabet, bağışıklığı baskılayan ilaçlar, kanama eğilimi ve kan sulandırıcı kullanımı planı değiştirir. Altın, nikel gibi metallere, uyuşturucu kremlere ya da ilaçlara karşı bilinen duyarlılığınızı işlemden önce bildirin.</p>
       </div>
       <div class="g-kutu g-b2 g-kutu--gorsel" data-gr style="--d:70ms"><img src="${r}varliklar/gorsel/uyg-altin-igne-radyofrekans-2.webp" alt="Altın kaplama ince iğneli radyofrekans başlığının yakın görünümü" loading="lazy"><span class="g-ainot">Temsilî görsel · yapay zekâ ile üretildi</span></div>

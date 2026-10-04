@@ -84,8 +84,8 @@ module.exports = {
 <p>Üstelik sizde neyin değişeceğini göstermezler; girişimsel her uygulamada sonuç kişiden kişiye farklılık gösterebilir. Sitedeki görseller yalnızca ortamı tanıtmak ve konuyu anlatmak içindir; yapay zekâ ile üretilenler ayrıca işaretlenir.</p>
 
       <h3>Cihaz ve ürün adlarını nasıl kullanıyoruz?</h3>
-      <p>Uygulama sayfalarında yöntemin genel adı kullanılır; örneğin “pikosaniye lazer” ya da “hyalüronik asit dolgu” denir. Muayenehanedeki cihazların model adları yalnızca muayenehane sayfasındaki cihaz listesinde ve ilgili uygulama sayfasındaki tek bir bilgi satırında, tanıtım unsuru olarak değil envanter bilgisi olarak geçer.</p>
-<p>Enjeksiyonda kullanılan ürünlerin markaları sitede yer almaz. Size hangi ürünün, hangi gerekçeyle seçileceği muayenede konuşulur ve onam belgesine yazılır.</p>
+      <p>Uygulama sayfalarında yöntemin genel adı kullanılır; örneğin “pikosaniye lazer” ya da “dolgu uygulaması” denir. Muayenehanedeki cihazların model adları yalnızca muayenehane sayfasındaki cihaz listesinde ve ilgili uygulama sayfasındaki tek bir bilgi satırında, tanıtım unsuru olarak değil envanter bilgisi olarak geçer.</p>
+<p>Enjeksiyonda kullanılan ürünlerin markaları ve etken madde adları sitede yer almaz. Size hangi ürünün, hangi gerekçeyle seçileceği muayenede konuşulur ve onam belgesine yazılır.</p>
 
       <h3>Abartılı ifadelerden neden kaçınıyoruz?</h3>
       <p>Üstünlük iddiası, sonuç vaadi, risk yokmuş izlenimi veren sözler ve doğrulanamayan başarı sayıları hem sağlık hem reklam mevzuatı bakımından sakıncalıdır. Metinlerdeki “hedeflenir”, “amaçlanır”, “değerlendirilir”, “hekim tarafından planlanır” gibi temkinli kalıpların nedeni budur. Her uygulama sayfasında olası istenmeyen etkiler, uygulamanın ertelendiği durumlar ve diğer seçenekler de aynı yerde anlatılır.</p>

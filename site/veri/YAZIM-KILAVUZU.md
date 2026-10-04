@@ -41,6 +41,14 @@ ZORUNLU: her tıbbi sayfa `tip: 'tibbi'` (künye ve "son güncelleme" otomatik b
 "sonuçlar kişiden kişiye değişir" tonu · kontrendikasyon ve "bu ne değildir" bölümleri korunur ·
 acil uyarı kutuları korunur.
 
+İLAÇ / ETKEN MADDE / ÜRÜN ADI YOK (4 Eki 2026, kullanıcı kararı — hukuk): botulinum toksin, "botoks", hyalüronik asit,
+hyalüronidaz, polinükleotid / "somon DNA", kalsiyum hidroksiapatit, poli-L-laktik asit, deoksikolik asit, izotretinoin,
+aspirin, varfarin, lidokain ve hiçbir ürün markası metne, başlığa, açıklamaya, alt metne, görsel dosya adına yazılmaz.
+Yerine uygulamanın adı: "mimik çizgisi uygulaması", "dolgu uygulaması / dolgu maddesi", "doku onarım uygulaması",
+"nem tutucu madde", "kolajen uyarıcı madde", "dolguyu çözen enzim", "ağızdan alınan A vitamini türevi akne ilacı",
+"kan sulandırıcı ilaç". İlaç SINIFI (kan sulandırıcı, antibiyotik, kortizon) yazılabilir. Balık kaynaklı madde alerjisi
+gibi güvenlik uyarıları korunur. Denetim: `node site/denetle.js` "İLAÇ / ETKEN MADDE / ÜRÜN ADI: 0" vermeli (sayfalar, betikler, görsel adları).
+
 ## 3. Dosya yapısı — DEĞİŞMEYEN sözleşme
 
 ```js
@@ -73,15 +81,15 @@ module.exports = {
 ### Uygulamalar (`uygulamalar/…`)
 | Kaynak (Salvera) | Yeni | Not |
 |---|---|---|
-| botulinum-toksin-uygulamasi | botulinum-toksin | |
+| botulinum-toksin-uygulamasi | mimik-cizgisi-uygulamasi | 4 Eki 2026'ya kadar adresi botulinum-toksin idi (301 var) |
 | hyaluronik-asit-dolgu-uygulamasi | dolgu-uygulamalari | dudak, çene, jawline, elmacık, göz altı hepsi bu sayfada |
 | goz-alti-dolgu-uygulamasi | dolgu-uygulamalari#goz-alti | ayrı sayfa YOK; dolgu sayfasında bölüm |
 | (yeni) | sivi-yuz-germe | çok noktalı, bütüncül dolgu+destek planı; kaynak: dolgu + yuz bölge sayfası |
 | cilt-ici-hyaluronik-asit-uygulamasi | genclik-asisi-skinbooster | |
-| polinukleotid-uygulamasi | somon-dna-polinukleotid | |
+| polinukleotid-uygulamasi | doku-onarim-uygulamasi | 4 Eki 2026'ya kadar adresi somon-dna-polinukleotid idi (301 var) |
 | cilt-mezoterapisi | mezoterapi | |
 | trombositten-zengin-plazma | prp | |
-| (yeni) | biyostimulan-uygulamalar | kolajen uyarıcı enjektabl (kalsiyum hidroksiapatit, poli-L-laktik asit sınıfı); ürün adı verme |
+| (yeni) | biyostimulan-uygulamalar | kolajen uyarıcı enjektabl; etken madde ve ürün adı verme (iki tür, davranışıyla anlatılır) |
 | ekzozom-uygulamasi | eksozom | |
 | lipolitik-enjeksiyon | bolgesel-lipoliz | gıdı + karın + bel + bacak iç yüz |
 | (yeni) | selulit-gorunumu | mezoterapi + lipoliz + cihaz kombinasyonu; iddiasız |

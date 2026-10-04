@@ -336,6 +336,16 @@ for (const s of sayfalar) {
   if (s404) fs.writeFileSync(path.join(CIKTI, '404.html'), duzen(s404).split('"../').join('"' + S.alan + '/'), 'utf8');
 }
 
+/* adı değişen sayfalar (veri/tasima.js): eski adreste yalnız yeni sayfaya yönlendiren boş sayfa kalır
+   (eski içerik silinir; WordPress'te aynı işi .htaccess'teki 301 yapar) */
+for (const [eski, yeni] of Object.entries(require(path.join(KOK, 'veri', 'tasima.js')).SAYFA)) {
+  const u = '../'.repeat(eski.split('/').length) + yeni + '/';
+  fs.mkdirSync(path.join(CIKTI, eski), { recursive: true });
+  fs.writeFileSync(path.join(CIKTI, eski, 'index.html'), '<!doctype html><html lang="tr"><meta charset="utf-8"><meta name="robots" content="noindex">' +
+    `<link rel="canonical" href="${S.alan}/${yeni}/"><meta http-equiv="refresh" content="0; url=${u}"><title>Sayfa taşındı</title><a href="${u}">Sayfa taşındı</a></html>
+`, 'utf8');
+}
+
 /* sitemap + robots */
 const bugun = new Date().toISOString().slice(0, 10);
 const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
@@ -356,6 +366,10 @@ function kopyala(src, dst) {
   }
 }
 kopyala(path.join(KOK, 'varliklar'), path.join(CIKTI, 'varliklar'));
+/* kaynaktan silinen ya da adı değişen görseller çıktıda kalmasın (kopyala yalnız ekler) */
+for (const g of fs.readdirSync(path.join(CIKTI, 'varliklar', 'gorsel'))) {
+  if (!fs.existsSync(path.join(KOK, 'varliklar', 'gorsel', g))) fs.rmSync(path.join(CIKTI, 'varliklar', 'gorsel', g));
+}
 
 
 /* ---------- iletişim formu alıcısı (iletisim-gonder.php) ----------

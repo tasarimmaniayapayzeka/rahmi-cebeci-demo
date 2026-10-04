@@ -102,7 +102,7 @@ module.exports = {
           <h3>Diş sıkmanın yüzdeki izi</h3>
           <p>Çiğneme kasının kalınlaşmasına en sık diş sıkma ve gıcırdatma yol açar; bu çoğunlukla gece, uykuda ve farkına varılmadan olur. Sabah uyanınca çenede ağrı, şakaklarda baş ağrısı ya da dişlerde aşınma fark ediyorsanız bir diş hekiminin de görüşünü almak gerekebilir.</p>
 <p>Kası normal kalınlıkta olan birinde kası gevşeten bir işlem çene hattını inceltmez. Bu yüzden önce kasın gerçekten kalınlaşıp kalınlaşmadığını muayenede yoklarız.</p>
-          <div class="g-haplar"><a href="${r}uygulamalar/botulinum-toksin/">Botulinum toksin</a></div>
+          <div class="g-haplar"><a href="${r}uygulamalar/mimik-cizgisi-uygulamasi/">Mimik çizgisi uygulaması</a></div>
         </div>
         <div class="g-katblok" data-gkat="profil" data-gr>
           <span class="g-kno">Kesit 03 · PROFİL</span>
@@ -136,7 +136,7 @@ module.exports = {
       <div class="g-mtab" data-gr>
         <div class="g-mbas"><span>Yöntem</span><span>Amaç</span><span>Toparlanma</span><span></span></div>
         <a class="g-msatir" data-akt href="${r}uygulamalar/dolgu-uygulamalari/" data-gg="${r}varliklar/gorsel/uyg-dolgu-uygulamalari.webp" data-gb="Dolgu uygulamaları" data-ga="Kemik desteği zayıfsa çene ucuna ve çene hattı boyunca düşünülür; burada şeklini koruyabilen, daha yoğun kıvamlı ürünler seçilir."><h4>Dolgu uygulamaları</h4><span class="g-hucre"><i class="g-kcip g-kcip--1">Kemik desteği</i></span><span class="g-hucre">Şişlik inince</span><span class="g-git">→</span></a>
-        <a class="g-msatir" href="${r}uygulamalar/botulinum-toksin/" data-gg="${r}varliklar/gorsel/uyg-botulinum-toksin.webp" data-gb="Botulinum toksin" data-ga="Kalınlaşmış çiğneme kasında gündeme gelir; incelme yavaş olur ve çoğunlukla birkaç hafta içinde fark edilir."><h4>Botulinum toksin</h4><span class="g-hucre"><i class="g-kcip g-kcip--1">Kas kalınlığı</i></span><span class="g-hucre">Muayenede belirlenir</span><span class="g-git">→</span></a>
+        <a class="g-msatir" href="${r}uygulamalar/mimik-cizgisi-uygulamasi/" data-gg="${r}varliklar/gorsel/uyg-mimik-cizgisi-uygulamasi.webp" data-gb="Mimik çizgisi uygulaması" data-ga="Mimik kaslarında olduğu gibi kalınlaşmış çiğneme kasında da gündeme gelir; incelme yavaş olur ve çoğunlukla birkaç hafta içinde fark edilir."><h4>Mimik çizgisi uygulaması</h4><span class="g-hucre"><i class="g-kcip g-kcip--1">Kas kalınlığı</i></span><span class="g-hucre">Muayenede belirlenir</span><span class="g-git">→</span></a>
         <a class="g-msatir" href="${r}uygulamalar/bolgesel-lipoliz/" data-gg="${r}varliklar/gorsel/uyg-bolgesel-lipoliz.webp" data-gb="Bölgesel lipoliz" data-ga="Çene altındaki yerel yağ birikimi ön plandaysa düşünülebilir; kilo vermeye yönelik bir yöntem değildir."><h4>Bölgesel lipoliz</h4><span class="g-hucre"><i class="g-kcip g-kcip--2">Yerel yağ</i></span><span class="g-hucre">Muayenede belirlenir</span><span class="g-git">→</span></a>
         <a class="g-msatir" href="${r}uygulamalar/sivi-yuz-germe/" data-gg="${r}varliklar/gorsel/uyg-sivi-yuz-germe.webp" data-gb="Sıvı yüz germe" data-ga="Alt yüzdeki destek kaybı orta yüzle birlikte ele alınacaksa bütüncül planın bir parçası olabilir."><h4>Sıvı yüz germe</h4><span class="g-hucre"><i class="g-kcip g-kcip--1">Bütüncül destek</i></span><span class="g-hucre">Muayenede belirlenir</span><span class="g-git">→</span></a>
         <a class="g-msatir" href="${r}uygulamalar/hifu-ameliyatsiz-yuz-germe/" data-gg="${r}varliklar/gorsel/uyg-hifu-ameliyatsiz-yuz-germe.webp" data-gb="HIFU — ameliyatsız sıkılaştırma" data-ga="Derinin toparlanma gücü azalmışsa konuşulur; ameliyatla yapılan germenin yerini tutmaz."><h4>HIFU</h4><span class="g-hucre"><i class="g-kcip g-kcip--3">Sıkılaştırma</i></span><span class="g-hucre">Muayenede belirlenir</span><span class="g-git">→</span></a>
@@ -210,8 +210,8 @@ module.exports = {
       <div class="g-slistem">
         <button class="g-ssoru" data-akt data-gs="0"><i>›</i>“Jawline” bir işlemin adı mı?</button>
         <div class="g-syanit" data-gs-yanit="0">Değil. “Jawline” İngilizceden günlük dile geçmiş bir sözcüktür ve tıpta çene hattı olarak anılır: alt çene kemiğinin kulak önünden çene ucuna kadar süren kenarı. Bu hattın keskin ya da silik görünmesini dört ayrı etken belirler; hangi işlemin uygun olduğu da bu etkenlere bakılarak kararlaştırılır.</div>
-        <button class="g-ssoru" data-gs="1"><i>›</i>“Botoks” yüzümü inceltir mi?</button>
-        <div class="g-syanit" data-gs-yanit="1">Günlük dildeki “botoks”, tıpta botulinum toksin uygulaması olarak bilinir. Alt yüzü ancak çiğneme kası kalınlaşmışsa daraltabilir; kası normal kalınlıkta olan birinde çene hattını keskinleştirmesi beklenmez. Bunu anlamak için muayenede dişlerinizi sıkmanızı ister ve kası elimizle yoklarız.</div>
+        <button class="g-ssoru" data-gs="1"><i>›</i>Çiğneme kası uygulaması yüzümü inceltir mi?</button>
+        <div class="g-syanit" data-gs-yanit="1">Kası geçici olarak gevşeten bu uygulama, alt yüzü ancak çiğneme kası kalınlaşmışsa daraltabilir; kası normal kalınlıkta olan birinde çene hattını keskinleştirmesi beklenmez. Bunu anlamak için muayenede dişlerinizi sıkmanızı ister ve kası elimizle yoklarız.</div>
         <button class="g-ssoru" data-gs="2"><i>›</i>Kilo verirsem gıdım kaybolur mu?</button>
         <div class="g-syanit" data-gs-yanit="2">Kiminde azalır, kiminde kilo verilse bile yerinde kalır. Çene altındaki yağ birikimi ailesel bir yapıya bağlı olabilir ve kilo değişimlerinden az etkilenebilir. Bu bölgede konuşulan uygulamaların amacı kilo verdirmek değil, yalnızca o bölgedeki yerel yağı hedeflemektir.</div>
         <button class="g-ssoru" data-gs="3"><i>›</i>Diş sıkmak yüzümün şeklini değiştirir mi?</button>

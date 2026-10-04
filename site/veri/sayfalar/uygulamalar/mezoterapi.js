@@ -50,12 +50,12 @@ module.exports = {
     <div class="izgara izgara--2" data-gr>
       <div class="kutu kutu--bilgi">
         <b>Bu nedir</b>
-        <p>Her kişiye aynı karışım uygulanmaz. Solüsyonlarda sıklıkla serbest (çapraz bağsız) hyalüronik asit bulunur; buna B vitaminleri, aminoasitler, çinko ve silisyum gibi mineraller ya da antioksidan maddeler eklenebilir. Karışımı, cildinizde gördüğü soruna ve öykünüze göre hekim belirler. Hedeflenen, cildin nemini daha uzun tutması ve yüzeyinin biraz daha düzgün görünmesidir; değişiklik sınırlıdır ve yanıt kişiden kişiye değişir.</p>
+        <p>Her kişiye aynı karışım uygulanmaz. Solüsyonlarda sıklıkla, cildin yapısında doğal olarak da bulunan ve su tutan bir madde akışkan (jel hâline getirilmemiş) biçimde yer alır; buna B vitaminleri, aminoasitler, çinko ve silisyum gibi mineraller ya da antioksidan maddeler eklenebilir. Karışımı, cildinizde gördüğü soruna ve öykünüze göre hekim belirler. Hedeflenen, cildin nemini daha uzun tutması ve yüzeyinin biraz daha düzgün görünmesidir; değişiklik sınırlıdır ve yanıt kişiden kişiye değişir.</p>
       </div>
       <div class="kutu kutu--uyari">
         <b>Bu ne değildir</b>
         <p><b>Dolgunluk vermez:</b> solüsyon su gibi akışkandır; çökmüş bir bölgeyi kabartmaz. <b>Toparlamaz:</b> gevşemiş ve aşağı inmiş dokuyu yerine kaldırmaz; sarkma şikâyetinde başka seçenekler konuşulur.</p>
-<p><b>Mimikleri etkilemez:</b> kasların hareketine dokunmadığı için alın ve göz çevresi çizgilerinde <a href="${r}uygulamalar/botulinum-toksin/">botulinum toksin</a> uygulamasının yerini tutmaz. <b>Cilt hastalığını iyileştirmez:</b> egzama, rozasea ya da aktif akne gibi tablolarda önce altta yatan sorun ele alınır.</p>
+<p><b>Mimikleri etkilemez:</b> kasların hareketine dokunmadığı için alın ve göz çevresinde <a href="${r}uygulamalar/mimik-cizgisi-uygulamasi/">mimik çizgisi uygulamasının</a> yerini tutmaz. <b>Cilt hastalığını iyileştirmez:</b> egzama, rozasea ya da aktif akne gibi tablolarda önce altta yatan sorun ele alınır.</p>
       </div>
     </div>
     <div class="kutu" style="margin-top:22px" data-gr>
@@ -200,7 +200,7 @@ module.exports = {
         <button class="g-ssoru" data-akt data-gs="0"><i>›</i>Farklı adlarla anılan kokteyller aynı şey mi?</button>
         <div class="g-syanit" data-gs-yanit="0">Piyasada cilt içi karışımlar için akılda kalan pek çok ad dolaşıyor. Bu adların tıpta tanımlı bir karşılığı yoktur; tek bir adın arkasında bambaşka karışımlar olabiliyor. Biz uygulamayı adıyla değil, içindeki maddelerle anlatırız: hangi bileşenin, ne kadar ve nereye verildiği size söylenir ve dosyanıza yazılır.</div>
         <button class="g-ssoru" data-gs="1"><i>›</i>“Gençlik aşısı” ile mezoterapi aynı mı?</button>
-        <div class="g-syanit" data-gs-yanit="1">Tam olarak aynı değildir. Sitemizde “gençlik aşısı” adını, hacim eklemeyen ve cildin nemini hedefleyen skinbooster uygulaması için kullanıyoruz; ayrıntısı kendi sayfasında. Mezoterapide ise hyalüronik asidin yanında vitamin, aminoasit ve mineraller de bulunabilen daha geniş içerikli karışımlar kullanılır. Hangisinin uygun olduğuna muayenede karar verilir.</div>
+        <div class="g-syanit" data-gs-yanit="1">Tam olarak aynı değildir. Sitemizde “gençlik aşısı” adını, hacim eklemeyen ve cildin nemini hedefleyen skinbooster uygulaması için kullanıyoruz; ayrıntısı kendi sayfasında. Mezoterapide ise nem tutucu maddenin yanında vitamin, aminoasit ve mineraller de bulunabilen daha geniş içerikli karışımlar kullanılır. Hangisinin uygun olduğuna muayenede karar verilir.</div>
         <button class="g-ssoru" data-gs="2"><i>›</i>İşlem sırasında ne hissederim?</button>
         <div class="g-syanit" data-gs-yanit="2">İğne sayısı fazla olduğu için art arda gelen hafif batmalar hissedersiniz. Ne kadar rahatsız edeceği bölgeye ve kişinin hassasiyetine bağlıdır; boyun ve el sırtı gibi ince derili yerler daha duyarlı olabilir. İstenirse işlemden önce uyuşturucu krem sürülür, ancak bu his tümüyle ortadan kalkmaz.</div>
         <button class="g-ssoru" data-gs="3"><i>›</i>Ne zaman makyaj yapıp dışarı çıkabilirim?</button>

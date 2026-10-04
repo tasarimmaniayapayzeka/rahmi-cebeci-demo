@@ -131,7 +131,7 @@ ${S.bolgeler.map(([ad, s], i) => `
     <div class="bolum-bas" data-gr>
       <p class="g-etiket">Nasıl yapılır</p>
       <h2>Aynı adı taşıyan uygulama bölgeden bölgeye neden değişir?</h2>
-      <p class="giris">Çene hattına ve göz altına yapılan hyalüronik asit dolgusu aynı adla anılır; oysa seçilen ürünün kıvamı, yerleştirildiği katman, miktarı, iki seans arasındaki süre ve göze alınabilecek risk iki bölgede çok farklıdır. Lazerde de durum değişmez: yüz için seçilen ayar bacağa ya da boyuna olduğu gibi uygulanmaz.</p>
+      <p class="giris">Çene hattına ve göz altına yapılan dolgu aynı adla anılır; oysa seçilen ürünün kıvamı, yerleştirildiği katman, miktarı, iki seans arasındaki süre ve göze alınabilecek risk iki bölgede çok farklıdır. Lazerde de durum değişmez: yüz için seçilen ayar bacağa ya da boyuna olduğu gibi uygulanmaz.</p>
     </div>
     <div class="g-katblok" data-gr>
       <span class="g-kno">Kesit 01 · DOKU FARKI</span>

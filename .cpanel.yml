@@ -24,6 +24,11 @@ deployment:
     # kütüphaneden kaldırılan kopyalar (logo + birebir aynı 3 görsel) (medya.js KALDIRILAN) sunucuda da kalmasın
     - /bin/rm -f $DEPLOYPATH/varliklar/marka/rahmi-cebeci-amblem-1024.png $DEPLOYPATH/varliklar/marka/rahmi-cebeci-paylasim-1200x630.png
     - /bin/rm -f $DEPLOYPATH/varliklar/gorsel/ic3d-goz.webp $DEPLOYPATH/varliklar/gorsel/bolge-boyun.webp $DEPLOYPATH/varliklar/gorsel/uyg-pico-lazer-dovme-silme.webp
+    # 4 Eki 2026: etken madde adları görsel adlarından çıktı (site/veri/tasima.js) — eski adlı dosyalar sunucuda kalmasın
+    - /bin/rm -f $DEPLOYPATH/varliklar/gorsel/uyg-botulinum-toksin.webp $DEPLOYPATH/varliklar/gorsel/uyg-botulinum-toksin-2.webp $DEPLOYPATH/varliklar/gorsel/uyg-somon-dna-polinukleotid.webp $DEPLOYPATH/varliklar/gorsel/uyg-somon-dna-polinukleotid-2.webp
+    - /bin/rm -f $DEPLOYPATH/varliklar/gorsel/botulinum-toksin-uygulamasi.webp $DEPLOYPATH/varliklar/gorsel/botulinum-toksin-uygulamasi-2.webp $DEPLOYPATH/varliklar/gorsel/uyg-botulinum-toksin-uygulamasi.webp $DEPLOYPATH/varliklar/gorsel/polinukleotid-uygulamasi.webp $DEPLOYPATH/varliklar/gorsel/polinukleotid-uygulamasi-2.webp $DEPLOYPATH/varliklar/gorsel/uyg-polinukleotid-uygulamasi.webp
+    - /bin/rm -f $DEPLOYPATH/varliklar/gorsel/hyaluronik-asit-dolgu-uygulamasi.webp $DEPLOYPATH/varliklar/gorsel/hyaluronik-asit-dolgu-uygulamasi-2.webp $DEPLOYPATH/varliklar/gorsel/uyg-hyaluronik-asit-dolgu-uygulamasi.webp $DEPLOYPATH/varliklar/gorsel/cilt-ici-hyaluronik-asit-uygulamasi.webp $DEPLOYPATH/varliklar/gorsel/cilt-ici-hyaluronik-asit-uygulamasi-2.webp $DEPLOYPATH/varliklar/gorsel/uyg-cilt-ici-hyaluronik-asit-uygulamasi.webp
+    - /bin/rm -f $DEPLOYPATH/varliklar/gorsel/hyaluronidaz-ve-komplikasyon-yonetimi.webp $DEPLOYPATH/varliklar/gorsel/hyaluronidaz-ve-komplikasyon-yonetimi-2.webp $DEPLOYPATH/varliklar/gorsel/uyg-hyaluronidaz-ve-komplikasyon-yonetimi.webp
     # statik sürümün kalıntıları (WordPress sayfalarını gölgeler)
     - /bin/rm -f $DEPLOYPATH/index.html $DEPLOYPATH/404.html $DEPLOYPATH/sitemap.xml $DEPLOYPATH/robots.txt
     - /bin/rm -rf $DEPLOYPATH/404 $DEPLOYPATH/bilgi $DEPLOYPATH/bolge-pusulasi $DEPLOYPATH/bolgeler $DEPLOYPATH/cilt-sorunlari $DEPLOYPATH/cilt-tipi-testi

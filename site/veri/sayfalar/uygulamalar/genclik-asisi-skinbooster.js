@@ -4,7 +4,7 @@ module.exports = {
   slug: 'uygulamalar/genclik-asisi-skinbooster',
   tip: 'tibbi',
   baslik: 'Gençlik aşısı (skinbooster): hacim eklemeyen nem desteği',
-  aciklama: 'Gençlik aşısı olarak bilinen skinbooster, cilde nem desteği veren, ama hacim eklemeyen bir hyalüronik asit uygulamasıdır. Kimlere uygun, kaç seans?',
+  aciklama: 'Gençlik aşısı olarak bilinen skinbooster, cilde nem desteği veren ama hacim eklemeyen bir nem tutucu madde uygulamasıdır. Kimlere uygun, kaç seans?',
   odak: 'gençlik aşısı',   /* Yoast odak anahtar kelimesi */
 
   icerik: (r, ik) => `
@@ -15,7 +15,7 @@ module.exports = {
       <nav class="kirinti" aria-label="Konum" style="position:relative;font-size:.76rem;color:var(--sessiz);display:flex;gap:7px;margin-bottom:18px"><a href="${r}" style="color:var(--sessiz);text-decoration:none">Ana sayfa</a> › <a href="${r}uygulamalar/" style="color:var(--sessiz);text-decoration:none">Uygulamalar</a> › <span>Gençlik aşısı (skinbooster)</span></nav>
       <p class="g-etiket">Enjeksiyonla Yapılanlar · Cilt Kalitesi</p>
       <h1>Şekil değil, <span class="g-isik">cildin nemi ve dokusu</span> hedeflenir.</h1>
-      <p class="g-hero__alt">Halk arasında “gençlik aşısı” olarak anılan skinbooster uygulamasında, akışkan kıvamda ve çapraz bağı düşük bir hyalüronik asit, çok ince iğnelerle derinin orta katmanına dağıtılır. Yüze hacim eklemez, hatları değiştirmez; cildin su tutma kapasitesini ve dokusunu desteklemeyi amaçlar. Dolgu ile aynı işlem değildir ve onun yerini tutmaz; size uygun olup olmadığına muayeneden sonra karar verilir.</p>
+      <p class="g-hero__alt">Halk arasında “gençlik aşısı” olarak anılan skinbooster uygulamasında, akışkan kıvamda ve çapraz bağı düşük, nem tutucu bir madde çok ince iğnelerle derinin orta katmanına dağıtılır. Yüze hacim eklemez, hatları değiştirmez; cildin su tutma kapasitesini ve dokusunu desteklemeyi amaçlar. Dolgu ile aynı işlem değildir ve onun yerini tutmaz; size uygun olup olmadığına muayeneden sonra karar verilir.</p>
       <div class="g-hero__cta">
         <a class="dgm dgm--bir" href="${r}iletisim/">Randevu isteyin</a>
         <a class="dgm dgm--iki" href="#ilkbolum">Dolgudan farkı ↓</a>
@@ -50,15 +50,15 @@ module.exports = {
     <div class="izgara izgara--2">
       <div class="kutu kutu--bilgi" data-gr>
         <b>Bu nedir</b>
-        <p>Hyalüronik asit, derinin ara maddesinde kendiliğinden bulunan ve suyu tutarak cildin esnek ve dolgun kalmasına katkı veren bir moleküldür. Yaş, güneş, sigara ve kuru ortamlar bu molekülün hem miktarını hem işlevini azaltabilir. Skinbooster uygulamasında, dışarıdan verilen hyalüronik asitle derinin nem ortamının desteklenmesi hedeflenir.</p>
+        <p>Derinin ara maddesinde kendiliğinden bulunan, suyu tutarak cildin esnek ve dolgun kalmasına katkı veren bir molekül vardır. Yaş, güneş, sigara ve kuru ortamlar bu molekülün hem miktarını hem işlevini azaltabilir. Skinbooster uygulamasında, cildin yapısında doğal olarak da bulunan bu nem tutucu maddenin dışarıdan verilmesiyle derinin nem ortamının desteklenmesi hedeflenir.</p>
         <p>Kullanılan ürünler dolgu jellerinden farklıdır: çapraz bağ oranları düşüktür ya da hiç yoktur, dokuda yer kaplayan bir kütle oluşturmazlar ve verildikleri katmanda ince bir tabaka hâlinde yayılırlar.</p>
-<p>Bazı ürünlerde hyalüronik asidin yanında aminoasit, vitamin ya da antioksidanlar da bulunur; bu tür karışımlar <a href="${r}uygulamalar/mezoterapi/">mezoterapiye</a> yaklaşır. Uygulama tekniğini bölgeye ve deri kalınlığına göre hekim seçer; beklenen değişiklik ölçülüdür ve kişiden kişiye değişir.</p>
+<p>Bazı ürünlerde nem tutucu maddenin yanında aminoasit, vitamin ya da antioksidanlar da bulunur; bu tür karışımlar <a href="${r}uygulamalar/mezoterapi/">mezoterapiye</a> yaklaşır. Uygulama tekniğini bölgeye ve deri kalınlığına göre hekim seçer; beklenen değişiklik ölçülüdür ve kişiden kişiye değişir.</p>
       </div>
       <div class="kutu kutu--uyari" data-gr style="--d:70ms">
         <b>Bu ne değildir</b>
         <p><b>Dolgunun yerine geçmez, yüze hacim vermez:</b> dudak, elmacık, çene ya da şakakta dolgunluk oluşturmaz, yüzün hatlarını değiştirmez. Asıl şikâyetiniz hacim kaybıysa <a href="${r}uygulamalar/dolgu-uygulamalari/">dolgu uygulamaları</a> ayrıca değerlendirilir.</p>
         <p><b>Bir aşı değildir:</b> “gençlik aşısı” halk arasında kullanılan bir addır; uygulamanın bağışıklık sistemiyle ya da aşılamayla ilgisi yoktur. <b>Sarkmayı düzeltmez:</b> yerçekimine bağlı doku sarkmasında ve deri fazlalığında cerrahinin yerini tutmaz.</p>
-        <p><b>Etkisi kalıcı değildir:</b> vücut, verilen hyalüronik asidi zaman içinde doğal yollarla parçalar; bakım seansı gerekip gerekmediği ayrıca konuşulur.</p>
+        <p><b>Etkisi kalıcı değildir:</b> vücut, verilen maddeyi zaman içinde doğal yollarla parçalar; bakım seansı gerekip gerekmediği ayrıca konuşulur.</p>
         <p><b>Nedeni ortadan kaldırmaz:</b> ciltteki donukluğun ya da kuruluğun ardında bir cilt hastalığı veya dahili bir neden olabilir; bunu ortaya koymak <a href="${r}uygulamalar/hekim-muayenesi/">hekim muayenesinin</a> işidir.</p>
       </div>
     </div>
@@ -105,7 +105,7 @@ module.exports = {
         <ul>
           <li><b>Bölgede aktif bir sorun:</b> enfeksiyon, uçuk, iltihaplı sivilce, alevlenmiş egzama ya da açık yara varsa uygulama yapılmaz; bölge iyileştiğinde yeniden değerlendirilir.</li>
           <li><b>Gebelik ve emzirme:</b> bu dönemlerde program başlatılmaz.</li>
-          <li><b>Bilinen aşırı duyarlılık:</b> hyalüronik aside, uyuşturucu kremlere, antiseptiklere ya da üründeki yardımcı maddelere karşı daha önce reaksiyon geliştiyse plan buna göre değişir; bu bilgiyi muayenede mutlaka paylaşın.</li>
+          <li><b>Bilinen aşırı duyarlılık:</b> uygulanan nem tutucu maddeye, uyuşturucu kremlere, antiseptiklere ya da üründeki yardımcı maddelere karşı daha önce reaksiyon geliştiyse plan buna göre değişir; bu bilgiyi muayenede mutlaka paylaşın.</li>
           <li><b>Alevlenme dönemindeki otoimmün ya da iltihaplı hastalık:</b> lupus gibi bağ dokusu hastalıklarının aktif döneminde uygulama ertelenir.</li>
           <li><b>Kanama eğilimi:</b> pıhtılaşma bozukluğu ya da kan sulandırıcı kullanımı morluk olasılığını artırır; ilacınızdaki bir değişiklik ancak onu düzenleyen hekimin onayıyla konuşulur.</li>
           <li><b>Yakın zamanda enfeksiyon, aşı ya da diş tedavisi:</b> bölgesel reaksiyon olasılığını artırabileceği için uygulama bir süre ertelenir.</li>
@@ -140,7 +140,7 @@ module.exports = {
     <div class="g-sorgu-ic">
       <div class="g-slistem">
         <button class="g-ssoru" data-akt data-gs="0"><i>›</i>Neden “gençlik aşısı” deniyor, gerçekten aşı mı?</button>
-        <div class="g-syanit" data-gs-yanit="0">Hayır, bir aşı değildir. “Gençlik aşısı” halk arasında yaygınlaşmış bir addır; tıbbi dilde skinbooster ya da cilt içi hyalüronik asit uygulaması olarak geçer. Farklı içerikteki ürünler aynı adla anılabildiği için, size uygulanacak ürünün içeriği muayenede açıkça konuşulur ve dosyanıza yazılır.</div>
+        <div class="g-syanit" data-gs-yanit="0">Hayır, bir aşı değildir. “Gençlik aşısı” halk arasında yaygınlaşmış bir addır; tıbbi dilde skinbooster olarak geçer ve cilde nem tutucu bir madde verilmesine dayanır. Farklı içerikteki ürünler aynı adla anılabildiği için, size uygulanacak ürünün içeriği muayenede açıkça konuşulur ve dosyanıza yazılır.</div>
         <button class="g-ssoru" data-gs="1"><i>›</i>Dolgu ile skinbooster arasındaki fark nedir?</button>
         <div class="g-syanit" data-gs-yanit="1">Dolgu jeli sıkı bağlı ve kıvamlıdır; verildiği yerde bir hacim oluşturur ve yüzün hatlarını değiştirebilir. Skinbooster ürünü ise akışkandır, derinin içinde ince bir tabaka hâlinde yayılır ve nem ortamını destekler; yüzün şekline dokunmaz. Kısaca dolgu hatlarla, skinbooster cildin kalitesiyle ilgilenir.</div>
         <button class="g-ssoru" data-gs="2"><i>›</i>Hangi bölgelere uygulanabilir?</button>
