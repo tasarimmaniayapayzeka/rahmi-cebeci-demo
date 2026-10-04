@@ -131,7 +131,7 @@ ${S.sorunlar.map(([ad, s]) => `
         <a class="g-msatir" href="${r}uygulamalar/hekim-muayenesi/" data-gg="${r}varliklar/gorsel/uyg-hekim-muayenesi.webp" data-gb="Hekim muayenesi" data-ga="Deri ve saç şikâyetlerine eşlik edebilecek genel sağlık nedenlerinin gözden geçirildiği ilk adım."><h4>Hekim muayenesi</h4><span class="g-hucre"><i class="g-kcip g-kcip--3">İLK ADIM</i></span><span class="g-hucre">Aynı gün</span><span class="g-git">→</span></a>
         <a class="g-msatir" href="${r}uygulamalar/uygulama-sonrasi-takip/" data-gg="${r}varliklar/gorsel/uyg-uygulama-sonrasi-takip.webp" data-gb="Uygulama sonrası kontrol" data-ga="Uygulamadan sonra iyileşmenin izlendiği kontrol randevuları ve bu dönemde dikkat edilmesi gerekenler."><h4>Uygulama sonrası kontrol</h4><span class="g-hucre"><i class="g-kcip g-kcip--2">İZLEM</i></span><span class="g-hucre">Randevuya göre</span><span class="g-git">→</span></a>
       </div>
-      <div class="g-onizle" data-gonizle data-gr><div class="g-gor"><img src="${r}varliklar/gorsel/grup-cihaz.webp" alt=""></div><div class="g-ic"><h4>Uygulamalar</h4><p>Muayenehanemizde yapılan enjeksiyon, cihaz ve saçlı deri uygulamalarının tamamı ve kapsamları.</p><a class="dgm dgm--iki" href="${r}uygulamalar/">Sayfasına git →</a></div></div>
+      <div class="g-onizle" data-gonizle data-gr><div class="g-gor"><img src="${r}varliklar/gorsel/grup-cihaz.webp" alt="" loading="lazy"></div><div class="g-ic"><h4>Uygulamalar</h4><p>Muayenehanemizde yapılan enjeksiyon, cihaz ve saçlı deri uygulamalarının tamamı ve kapsamları.</p><a class="dgm dgm--iki" href="${r}uygulamalar/">Sayfasına git →</a></div></div>
     </div>
   </div>
 </section>

@@ -14,10 +14,14 @@
   background:linear-gradient(90deg,var(--petrol),var(--bakir));transition:width .1s linear}
 
 /* ---------- reveal ---------- */
-[data-gr]{opacity:0;transform:translateY(24px);
+/* gizleme yalnız JS varken (html.rc-js — başlıktaki satır içi betik; g.js 3,5 sn'de çalışmazsa kalkar).
+   Sayfa kapağı (.g-hero) JS beklemeden yalnız CSS ile belirir — yavaş mobil bağlantıda kapak boş kalmasın (4 Eki). */
+.rc-js [data-gr]{opacity:0;transform:translateY(24px);
   transition:opacity .75s var(--ease),transform .75s var(--ease);transition-delay:var(--d,0ms)}
-[data-gr].g-gorunur{opacity:1;transform:none}
-@media(prefers-reduced-motion:reduce){[data-gr]{opacity:1;transform:none;transition:none}}
+.rc-js [data-gr].g-gorunur{opacity:1;transform:none}
+.rc-js .g-hero [data-gr]{opacity:1;transform:none;animation:gBelir .75s var(--ease) both;animation-delay:var(--d,0ms)}
+@keyframes gBelir{from{opacity:0;transform:translateY(24px)}}
+@media(prefers-reduced-motion:reduce){.rc-js [data-gr],.rc-js .g-hero [data-gr]{opacity:1;transform:none;transition:none;animation:none}}
 
 /* ---------- etiket / başlık ---------- */
 .g-etiket{display:inline-flex;align-items:center;gap:10px;font-size:.76rem;
@@ -380,6 +384,8 @@
   font-weight:700;color:var(--murekkep);cursor:pointer}
 .yolc-sec select:focus{outline:2px solid var(--petrol)}
 .yolc-sahne{position:relative;display:grid;gap:16px;grid-template-columns:1fr}
+/* tek sütunda etiket 1. adımın numarasını ve görselini örtüyordu (4 Eki): kendi satırında, sağa yaslı */
+@media(max-width:859px){.yolc-sahne>.g-ainot{position:static;justify-self:end;margin-bottom:-6px}}
 @media(min-width:860px){.yolc-sahne{grid-template-columns:repeat(4,1fr)}}
 .yolc-ciz{position:absolute;left:4%;right:4%;top:44px;height:3px;border-radius:99px;
   background:var(--cizgi);display:none}
@@ -414,8 +420,8 @@
 .pus-merkez img.pus-gecis{opacity:.25}
 /* kart görselin ÜSTÜNDE değil ALTINDA: yüzü kapatıyordu (HUD ile aynı ders) */
 .pus-kart{background:rgba(244,248,250,.96);border-top:1px solid var(--cizgi);padding:14px 16px;
-  opacity:0;transition:opacity .35s}
-.pus-kart[data-akt]{opacity:1}
+  transition:opacity .35s}
+.rc-js .pus-kart:not([data-akt]){opacity:0}
 .pus-kart b{font-family:var(--font-baslik);font-size:1.05rem;display:block;margin-bottom:4px}
 /* tarif tam 4 satıra sabit: satır sayısı bölgeye göre değişince kutu boyu
    oynuyor ve sayfa kayıyordu (12 Ağu) */
@@ -445,8 +451,8 @@
 .kar-tablo{display:grid;gap:10px}
 .kar-satir{display:grid;gap:2px 14px;grid-template-columns:1fr;padding:14px 16px;
   background:#fff;border:1px solid var(--cizgi);border-radius:14px;
-  opacity:0;transform:translateY(8px);transition:opacity .45s,transform .45s}
-.kar-satir[data-gorunur]{opacity:1;transform:none}
+  transition:opacity .45s,transform .45s}
+.rc-js .kar-satir:not([data-gorunur]){opacity:0;transform:translateY(8px)}
 @media(min-width:700px){.kar-satir{grid-template-columns:150px 1fr 1fr;align-items:start}}
 .kar-satir>b{font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;color:var(--petrol);
   font-weight:800;padding-top:2px}
@@ -672,6 +678,9 @@ main:has(>.g-hero)>.sar{order:9}
 .izgara--2:has(>.kutu--uyari)>.kutu--uyari+.kutu--uyari{box-shadow:inset 1px 0 0 rgba(240,232,215,.1),inset 0 4px 0 #6B5A33}
 /* kemer çerçevede yapay zekâ etiketi kavisin dışına taşmasın: üst orta */
 .g-atlas-kap .g-ainot{left:50%;right:auto;top:26px;transform:translateX(-50%);white-space:nowrap}
+/* telefonda kemerin köşe yarıçapı ~170 px'e iniyor; 26 px hizasında ~180 px yer kalıyor, etiket (~258 px) iki ucundan
+   kesiliyordu (4 Eki): biraz aşağı, iki satıra kırılabilir */
+@media(max-width:700px){.g-atlas-kap .g-ainot{top:34px;white-space:normal;width:max-content;max-width:58%;text-align:center;line-height:1.35}}
 
 /* kart içeriği sola yaslı, tam genişlik (tablo satırının ortalama ayarı kartlara geçiyordu) */
 .g-msatir{align-items:stretch !important;text-align:left}

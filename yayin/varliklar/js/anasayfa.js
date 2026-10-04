@@ -11,6 +11,8 @@
    ============================================================ */
 (function () {
   'use strict';
+  window.rcAnaHazir = true;   /* başlıktaki rc-js emniyeti: [data-reveal] bu betikle açılır */
+  if (!('IntersectionObserver' in window)) { document.documentElement.classList.remove('rc-js'); return; }
   var AZALT = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
   /* ---------- 1. KATMAN KESİTİ ----------

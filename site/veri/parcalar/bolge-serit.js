@@ -24,7 +24,7 @@ function seritUret(r) {
     }).join('');
     const acik = i === 0;
     return `<article class="serit__oge" data-serit-oge${acik ? ' data-acik' : ''}>
-      <img src="${r}varliklar/gorsel/${GORSEL[slug] || 'bolge-yuz'}.webp" alt="" loading="lazy" width="1400" height="788">
+      <img src="${r}varliklar/gorsel/${GORSEL[slug] || 'bolge-yuz'}.webp" alt="" loading="lazy" width="1400" height="788" sizes="(max-width: 899px) 860px, 960px">
       <button class="serit__bas" type="button" role="tab" id="srb-${slug}" aria-controls="sr-${slug}" aria-selected="${acik}">
         <span class="serit__no">${iki(i + 1)}</span><span class="serit__ad">${ad}</span>
       </button>

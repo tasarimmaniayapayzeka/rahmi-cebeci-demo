@@ -91,7 +91,7 @@ module.exports = {
         <a class="g-msatir" href="${r}uygulamalar/karbon-peeling/" data-gg="${r}varliklar/gorsel/uyg-karbon-peeling.webp" data-gb="Karbon peeling" data-ga="Yağlanma ve yüzeyde tıkanma eğiliminde, iltihaplı lezyonlar sakinleştikten sonra uygun görülürse konuşulur."><h4>Karbon peeling</h4><span class="g-hucre"><i class="g-kcip g-kcip--1">YÜZEY</i></span><span class="g-hucre">Muayenede belirlenir</span><span class="g-git">→</span></a>
         <a class="g-msatir" href="${r}uygulamalar/prp/" data-gg="${r}varliklar/gorsel/uyg-prp.webp" data-gb="PRP" data-ga="Kendi kanınızdan hazırlanan plazma, iz planında diğer yöntemlere eşlik eden bir destek olarak değerlendirilebilir."><h4>PRP</h4><span class="g-hucre"><i class="g-kcip g-kcip--2">DESTEK</i></span><span class="g-hucre">Muayenede belirlenir</span><span class="g-git">→</span></a>
       </div>
-      <div class="g-onizle" data-gonizle data-gr><div class="g-gor"><img src="${r}varliklar/gorsel/uyg-fraksiyonel-lazer.webp" alt=""></div><div class="g-ic"><h4>Fraksiyonel lazer</h4><p>Çukur izlerde, aktif iltihap geçtikten sonra kontrollü mikro alanlarla dokunun yenilenmesini uyarmayı hedefler.</p><a class="dgm dgm--iki" href="${r}uygulamalar/fraksiyonel-lazer/">Sayfasına git →</a></div></div>
+      <div class="g-onizle" data-gonizle data-gr><div class="g-gor"><img src="${r}varliklar/gorsel/uyg-fraksiyonel-lazer.webp" alt="" loading="lazy"></div><div class="g-ic"><h4>Fraksiyonel lazer</h4><p>Çukur izlerde, aktif iltihap geçtikten sonra kontrollü mikro alanlarla dokunun yenilenmesini uyarmayı hedefler.</p><a class="dgm dgm--iki" href="${r}uygulamalar/fraksiyonel-lazer/">Sayfasına git →</a></div></div>
     </div>
   </div>
 </section>

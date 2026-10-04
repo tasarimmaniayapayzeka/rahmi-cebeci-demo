@@ -842,11 +842,10 @@
   }
 
   /* ---------- tanıtım ekranı ----------
-     Yalnız ana sayfada ve siteye DIŞARIDAN gelindiğinde açılır (iç gezinmede tekrar
-     çıkmaz). Bunu hatırlamak için depolama kullanılmaz; ?asistan=tanitim ile zorlanabilir. */
+     4 Eki 2026: KENDİLİĞİNDEN AÇILMAZ. Önceden ana sayfaya dışarıdan (WhatsApp, QR, adres çubuğu) her girişte
+     1,4 sn sonra tam ekran açılıp sayfayı kilitliyordu; telefonda "site/görseller görünmüyor" algısı yaratıyordu
+     (kullanıcı şikâyeti). Asistan düğmesi yerinde; tanıtım yalnız ?asistan=tanitim ile açılır (deneme/kampanya bağlantısı). */
   var tanitim = null;
-  var disaridan = !document.referrer || document.referrer.indexOf(location.origin) !== 0;
-  var anaSayfa = location.href.split('#')[0].split('?')[0].replace(KOK, '').replace(/index\.html$/, '') === '';
   function tanitimAc() {
     tanitim = document.createElement('div');
     tanitim.className = 'asis-tanit';
@@ -908,5 +907,5 @@
     setTimeout(function () { t.remove(); }, 320);
     if (panel.hidden) kilitAc();
   }
-  if (/[?&]asistan=tanitim\b/.test(location.search) || (anaSayfa && disaridan)) setTimeout(tanitimAc, 1400);
+  if (/[?&]asistan=tanitim\b/.test(location.search)) setTimeout(tanitimAc, 1400);
 })();

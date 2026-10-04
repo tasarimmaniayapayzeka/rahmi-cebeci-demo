@@ -271,6 +271,7 @@ ${sayfa.noindex ? '<meta name="robots" content="noindex,follow">\n' : S.noindex 
 <meta property="og:title" content="${kacir(sayfa.baslik)}">
 <meta property="og:description" content="${kacir(sayfa.aciklama)}">
 <meta property="og:url" content="${url}">
+<script>document.documentElement.classList.add('rc-js');setTimeout(function(){var d=document,w=window;if(!w.rcHazir||(d.querySelector('[data-reveal]')&&!w.rcAnaHazir)||(d.querySelector('.pus-kart')&&!w.rcKesifHazir))d.documentElement.classList.remove('rc-js')},3500)</script>
 <link rel="preload" as="font" type="font/woff2" href="${r}varliklar/fonts/outfit-var-lat.woff2" crossorigin>
 <link rel="icon" href="${r}varliklar/ikon/favicon.ico" sizes="16x16 32x32 48x48">
 <link rel="icon" href="${r}varliklar/ikon/ikon-192.png" type="image/png" sizes="192x192">

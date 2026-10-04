@@ -89,7 +89,7 @@ module.exports = {
         <a class="g-msatir" href="${r}uygulamalar/mezoterapi/" data-gg="${r}varliklar/gorsel/uyg-mezoterapi.webp" data-gb="Mezoterapi" data-ga="Deri içine uygulanan karışımlarla doku niteliğini ve yüzey görünümünü desteklemek amacıyla konuşulur."><h4>Mezoterapi</h4><span class="g-hucre"><i class="g-kcip g-kcip--2">DOKU</i></span><span class="g-hucre">Muayenede belirlenir</span><span class="g-git">→</span></a>
         <a class="g-msatir" href="${r}uygulamalar/hekim-muayenesi/" data-gg="${r}varliklar/gorsel/uyg-hekim-muayenesi.webp" data-gb="Hekim muayenesi" data-ga="Lipödem, ödem ya da toplardamar sorunu düşündüren bulgular varsa değerlendirme bu kapsamda yapılır."><h4>Hekim muayenesi</h4><span class="g-hucre"><i class="g-kcip g-kcip--3">DAHİLİ</i></span><span class="g-hucre">Aynı gün</span><span class="g-git">→</span></a>
       </div>
-      <div class="g-onizle" data-gonizle data-gr><div class="g-gor"><img src="${r}varliklar/gorsel/uyg-selulit-gorunumu.webp" alt=""></div><div class="g-ic"><h4>Selülit görünümü</h4><p>Mezoterapi, lipoliz ve cihaz desteğinin bir arada planlandığı, yüzeydeki düzensizliği yumuşatmaya yönelik bir programdır.</p><a class="dgm dgm--iki" href="${r}uygulamalar/selulit-gorunumu/">Sayfasına git →</a></div></div>
+      <div class="g-onizle" data-gonizle data-gr><div class="g-gor"><img src="${r}varliklar/gorsel/uyg-selulit-gorunumu.webp" alt="" loading="lazy"></div><div class="g-ic"><h4>Selülit görünümü</h4><p>Mezoterapi, lipoliz ve cihaz desteğinin bir arada planlandığı, yüzeydeki düzensizliği yumuşatmaya yönelik bir programdır.</p><a class="dgm dgm--iki" href="${r}uygulamalar/selulit-gorunumu/">Sayfasına git →</a></div></div>
     </div>
   </div>
 </section>

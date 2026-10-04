@@ -6,6 +6,7 @@
    ============================================================ */
 (function () {
   'use strict';
+  window.rcKesifHazir = true;   /* başlıktaki rc-js emniyeti: .pus-kart / .kar-satir bu betikle açılır */
   var AZ = matchMedia('(prefers-reduced-motion:reduce)').matches;
   function veriAl(sec) {
     var e = document.querySelector('script[' + sec + ']');
@@ -37,8 +38,10 @@
     var v = {};
     o.forEach(function (e) {
       var img = e.querySelector('img'), a = e.querySelector('a');
+      /* srcset de okunur: WordPress görsellere srcset ekliyor; yalnız src değişirse tarayıcı srcset'teki ESKİ görseli gösterir */
       v[e.getAttribute('data-anahtar')] = { ad: yazi(e, 'b'), tarif: yazi(e, 'p'),
-        gorsel: img ? img.getAttribute('src') : '', yol: a ? a.getAttribute('href') : '#' };
+        gorsel: img ? img.getAttribute('src') : '', srcset: img ? (img.getAttribute('srcset') || '') : '',
+        yol: a ? a.getAttribute('href') : '#' };
     });
     return v;
   }
@@ -119,6 +122,7 @@
       kart.removeAttribute('data-akt');
       gorsel.classList.add('pus-gecis');
       setTimeout(function () {
+        if (b.srcset) gorsel.setAttribute('srcset', b.srcset); else gorsel.removeAttribute('srcset');
         gorsel.src = b.gorsel;
         gorsel.alt = b.ad + ' bölgesinin temsilî görseli';
         gorsel.onload = function () { gorsel.classList.remove('pus-gecis'); };

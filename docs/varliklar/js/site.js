@@ -3,7 +3,7 @@
    Menü davranışı, Ramazan Ersoy projesinde bulunan 3 hatayı
    baştan kapatacak şekilde yazıldı:
      1. ASİMETRİK HOVER — tıklayınca açılıp fare çıkınca kapanıyordu.
-        Masaüstünde mouseenter/leave + focusin/out, çıkışta 140ms
+        Masaüstünde (yalnız fare) pointerenter/leave + klavye focusin/out, çıkışta 140ms
         gecikme, Escape kapatır. Mobilde YALNIZ tıklama.
      2. GÖRÜNMEZ KÖPRÜ — buton ile menü arasındaki .5rem boşlukta
         fare kayboluyordu. CSS'te .alt::before ile köprülendi.
@@ -41,17 +41,22 @@
       if (oge.dataset.acik) kapa(oge); else ac(oge);
     });
 
-    oge.addEventListener('mouseenter', function () {
-      if (!MASAUSTU.matches) return;
+    // yalnız gerçek fare: dokunmatik tablette dokunuş önce taklit "mouseenter", sonra click üretir;
+    // ikisi birden menüyü açıp hemen kapatıyordu (4 Eki). Dokunuşta yalnız click çalışır.
+    oge.addEventListener('pointerenter', function (e) {
+      if (!MASAUSTU.matches || e.pointerType !== 'mouse') return;
       clearTimeout(zaman); ac(oge);
     });
-    oge.addEventListener('mouseleave', function () {
-      if (!MASAUSTU.matches) return;
+    oge.addEventListener('pointerleave', function (e) {
+      if (!MASAUSTU.matches || e.pointerType !== 'mouse') return;
       clearTimeout(zaman);
       // 140ms: fare butondan menüye inerken kapanma/titreme olmasın
       zaman = setTimeout(function () { kapa(oge); }, 140);
     });
-    oge.addEventListener('focusin', function () { if (MASAUSTU.matches) ac(oge); });
+    // yalnız klavye odağı: dokunuş/tıklama da düğmeye odak verir; focusin açıp ardından gelen click kapatıyordu (4 Eki)
+    oge.addEventListener('focusin', function (e) {
+      if (MASAUSTU.matches && e.target.matches && e.target.matches(':focus-visible')) ac(oge);
+    });
     oge.addEventListener('focusout', function (e) {
       if (!MASAUSTU.matches) return;
       if (!oge.contains(e.relatedTarget)) kapa(oge);

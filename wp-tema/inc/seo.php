@@ -53,7 +53,9 @@ function rc_ikon_etiketleri() {
 /* yazı tipi ön yüklemesi, simge, stiller — her iki durumda da tema basar */
 function rc_varlik_etiketleri() {
 	$r = rc_kok();
-	return '<link rel="preload" as="font" type="font/woff2" href="' . $r . 'varliklar/fonts/outfit-var-lat.woff2" crossorigin>
+	/* rc-js: görünme animasyonlarının gizlemesi yalnız JS varken; g.js 3,5 sn'de çalışmazsa sınıf kalkar, içerik görünür (4 Eki) */
+	return '<script>document.documentElement.classList.add(\'rc-js\');setTimeout(function(){var d=document,w=window;if(!w.rcHazir||(d.querySelector(\'[data-reveal]\')&&!w.rcAnaHazir)||(d.querySelector(\'.pus-kart\')&&!w.rcKesifHazir))d.documentElement.classList.remove(\'rc-js\')},3500)</script>
+<link rel="preload" as="font" type="font/woff2" href="' . $r . 'varliklar/fonts/outfit-var-lat.woff2" crossorigin>
 ' . rc_ikon_etiketleri() . '<link rel="preload" as="font" type="font/woff2" href="' . $r . 'varliklar/fonts/mulish-400-lat.woff2" crossorigin>
 <link rel="stylesheet" href="' . rc_varlik('varliklar/css/tokens.css') . '">
 <link rel="stylesheet" href="' . rc_varlik('varliklar/css/site.css') . '">

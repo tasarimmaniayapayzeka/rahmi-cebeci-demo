@@ -17,6 +17,9 @@
    ============================================================ */
 (function () {
   'use strict';
+  /* başlıktaki emniyet: g.js çalıştı → animasyonlar JS ile; çalışmasaydı 3,5 sn'de rc-js kalkar, içerik görünür */
+  window.rcHazir = true;
+  if (!('IntersectionObserver' in window)) { document.documentElement.classList.remove('rc-js'); return; }
   var AZ = matchMedia('(prefers-reduced-motion:reduce)').matches;
 
   /* okuma çubuğu */
@@ -73,8 +76,21 @@
     var roz = document.querySelector('[data-grozet]');
     if (roz && NOKTA[ad]) roz.innerHTML = '<b>' + NOKTA[ad][0] + '</b><span>' + NOKTA[ad][1] + '</span>';
   }
+  /* 44 px dokunma alanları telefonda (görsel ~339 px) üst üste biniyordu, dokunuş komşu noktayı seçiyordu (4 Eki):
+     dokunulan yere MERKEZİ en yakın nokta seçilir. Klavyeyle basılınca (detail 0) düğmenin kendisi. */
   document.querySelectorAll('.g-nokta').forEach(function (n) {
-    n.addEventListener('click', function () { noktaSec(n.dataset.gn); });
+    n.addEventListener('click', function (e) {
+      var sec = n;
+      if (e.detail && n.parentElement) {
+        var en = Infinity;
+        n.parentElement.querySelectorAll('.g-nokta').forEach(function (x) {
+          var r = (x.querySelector('span') || x).getBoundingClientRect();
+          var d = Math.pow(r.left + r.width / 2 - e.clientX, 2) + Math.pow(r.top + r.height / 2 - e.clientY, 2);
+          if (d < en) { en = d; sec = x; }
+        });
+      }
+      noktaSec(sec.dataset.gn);
+    });
   });
   /* IO bandı (%38-48) dar kaldığı için kart geç değişiyordu (12 Ağu):
      anlık hesap — ekran ortasını son geçen blok aktiftir. rAF yok,

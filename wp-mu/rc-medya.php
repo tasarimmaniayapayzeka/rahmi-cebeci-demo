@@ -237,6 +237,13 @@ function rc_medya_icerige(string $html, array $adres): string {
 		if (preg_match('/\sclass="([^"]*)"/', $e, $c)) return str_replace($c[0], ' class="' . trim($c[1] . ' wp-image-' . $id) . '"', $e);
 		return preg_replace('~\s*/?>$~', ' class="wp-image-' . $id . '">', $e);
 	}, $html);
+	/* tablo satırı kart görselleri (data-gg → CSS arka planı, kart üstünde ~150 px şerit): srcset alamaz; tam boy (2560)
+	   yerine 768 px alt boy — telefonda 9 karta ~33 MP çözülüyordu (4 Eki). Editördeki "Satır görseli" düğmesi de bu boyu yazar. */
+	$html = preg_replace_callback('~data-gg="/varliklar/([^"]+)"~', function ($m) use ($adres) {
+		if (!isset($adres[$m[1]])) return $m[0];
+		$u = wp_get_attachment_image_url($adres[$m[1]][0], 'medium_large');
+		return 'data-gg="' . ($u ? wp_make_link_relative($u) : $adres[$m[1]][1]) . '"';
+	}, $html);
 	$ciftler = [];
 	foreach ($adres as $k => [$id, $u]) $ciftler['/varliklar/' . $k . '"'] = $u . '"';
 	return strtr($html, $ciftler);

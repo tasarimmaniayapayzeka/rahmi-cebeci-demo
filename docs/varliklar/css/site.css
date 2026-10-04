@@ -11,6 +11,7 @@ body{
   -webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;overflow-x:hidden;
 }
 img,svg,video{max-width:100%;display:block}
+img,video{height:auto}   /* panelden eklenen resim (width/height öznitelikli) mobilde daralırken dikey uzamasın */
 a{color:var(--petrol-orta);text-underline-offset:.18em;text-decoration-thickness:1px}
 a:hover{color:var(--petrol-koyu)}
 button{font:inherit;color:inherit;cursor:pointer}
@@ -468,11 +469,12 @@ a.kart:hover .kart__ok{gap:11px}
 /* ============================================================
    KAYARAK AÇILMA — IntersectionObserver ile
    ============================================================ */
-[data-reveal]{opacity:0;transform:translateY(22px);
+/* gizleme yalnız JS varken (html.rc-js; anasayfa.js çalışmazsa 3,5 sn'de kalkar — 4 Eki) */
+.rc-js [data-reveal]{opacity:0;transform:translateY(22px);
   transition:opacity .7s var(--ease),transform .7s var(--ease);
   transition-delay:var(--d,0ms)}
-[data-reveal][data-gorunur="1"]{opacity:1;transform:none}
-@media (prefers-reduced-motion:reduce){[data-reveal]{opacity:1;transform:none}}
+.rc-js [data-reveal][data-gorunur="1"]{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.rc-js [data-reveal]{opacity:1;transform:none}}
 
 /* ============================================================
    HERO v2 — molekül sahnesi + katmanlı zemin
@@ -688,8 +690,11 @@ a.kart:hover .kart__ok{gap:11px}
 .secenek input{position:absolute;opacity:0;width:0;height:0}
 .secenek label:hover{border-color:var(--petrol)}
 .secenek input:focus-visible + span{outline:2px solid var(--petrol);outline-offset:6px;border-radius:3px}
-.secenek input:checked + span{color:var(--beyaz)}
+/* seçili yanıt: zemin + beyaz yazı birlikte :has ile (yazı label'dan miras). Eskiden yazıyı :has'siz beyaz yapan kural
+   vardı → :has desteklemeyen tarayıcıda (Firefox Android <121, iOS <15.4) beyaz üstüne beyaz (4 Eki). */
 .secenek label:has(input:checked){background:var(--petrol);border-color:var(--petrol);color:var(--beyaz)}
+@supports not selector(:has(*)){
+  .secenek input:checked + span{color:var(--petrol);font-weight:800;text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:5px}}
 
 .arac__dip{position:sticky;bottom:var(--bar-h);background:var(--buz);
   border-top:1px solid var(--cizgi);padding:16px 0;margin-top:8px;z-index:10;

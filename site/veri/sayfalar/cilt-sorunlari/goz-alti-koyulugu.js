@@ -92,7 +92,7 @@ module.exports = {
         <a class="g-msatir" href="${r}uygulamalar/mezoterapi/" data-gg="${r}varliklar/gorsel/uyg-mezoterapi.webp" data-gb="Mezoterapi" data-ga="Pigment bileşeninde, göz çevresine uygun içerik ve derinlikte, uygun bulunan kişilerde değerlendirilir."><h4>Mezoterapi</h4><span class="g-hucre"><i class="g-kcip g-kcip--2">PİGMENT</i></span><span class="g-hucre">Muayenede belirlenir</span><span class="g-git">→</span></a>
         <a class="g-msatir" href="${r}uygulamalar/hekim-muayenesi/" data-gg="${r}varliklar/gorsel/uyg-hekim-muayenesi.webp" data-gb="Hekim muayenesi" data-ga="Ödem öndeyse tiroit, böbrek, kan sayımı ve kullanılan ilaçlar bu kapsamda gözden geçirilir."><h4>Hekim muayenesi</h4><span class="g-hucre"><i class="g-kcip g-kcip--1">ÖDEM</i></span><span class="g-hucre">Aynı gün</span><span class="g-git">→</span></a>
       </div>
-      <div class="g-onizle" data-gonizle data-gr><div class="g-gor"><img src="${r}varliklar/gorsel/uyg-dolgu-uygulamalari.webp" alt=""></div><div class="g-ic"><h4>Göz altı dolgusu</h4><p>Yalnız gözyaşı oluğundaki hacim kaybının öne çıktığı durumlarda konuşulur; bölgenin ince yapısı özenli planlama gerektirir.</p><a class="dgm dgm--iki" href="${r}uygulamalar/dolgu-uygulamalari/#goz-alti">Sayfasına git →</a></div></div>
+      <div class="g-onizle" data-gonizle data-gr><div class="g-gor"><img src="${r}varliklar/gorsel/uyg-dolgu-uygulamalari.webp" alt="" loading="lazy"></div><div class="g-ic"><h4>Göz altı dolgusu</h4><p>Yalnız gözyaşı oluğundaki hacim kaybının öne çıktığı durumlarda konuşulur; bölgenin ince yapısı özenli planlama gerektirir.</p><a class="dgm dgm--iki" href="${r}uygulamalar/dolgu-uygulamalari/#goz-alti">Sayfasına git →</a></div></div>
     </div>
   </div>
 </section>

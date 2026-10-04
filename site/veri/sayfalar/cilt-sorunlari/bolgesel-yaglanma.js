@@ -89,7 +89,7 @@ module.exports = {
         <a class="g-msatir" href="${r}uygulamalar/selulit-gorunumu/" data-gg="${r}varliklar/gorsel/uyg-selulit-gorunumu.webp" data-gb="Selülit görünümü" data-ga="Asıl şikâyet deri yüzeyindeki dalgalı görünümse hedef değişir; mezoterapi, lipoliz ve cihaz desteği birlikte planlanır."><h4>Selülit görünümü</h4><span class="g-hucre"><i class="g-kcip g-kcip--2">YÜZEY</i></span><span class="g-hucre">Muayenede belirlenir</span><span class="g-git">→</span></a>
         <a class="g-msatir" href="${r}uygulamalar/hekim-muayenesi/" data-gg="${r}varliklar/gorsel/uyg-hekim-muayenesi.webp" data-gb="Hekim muayenesi" data-ga="Sıvı birikimi öndeyse tiroit, böbrek ve kalp yönünden değerlendirme bu kapsamda yapılır."><h4>Hekim muayenesi</h4><span class="g-hucre"><i class="g-kcip g-kcip--3">ÖDEM</i></span><span class="g-hucre">Aynı gün</span><span class="g-git">→</span></a>
       </div>
-      <div class="g-onizle" data-gonizle data-gr><div class="g-gor"><img src="${r}varliklar/gorsel/uyg-bolgesel-lipoliz.webp" alt=""></div><div class="g-ic"><h4>Bölgesel lipoliz</h4><p>Gıdı, karın, bel yanları ve bacak iç yüzündeki kenarları belli, yüzeysel birikimlerde uygun bulunan kişilerde değerlendirilir.</p><a class="dgm dgm--iki" href="${r}uygulamalar/bolgesel-lipoliz/">Sayfasına git →</a></div></div>
+      <div class="g-onizle" data-gonizle data-gr><div class="g-gor"><img src="${r}varliklar/gorsel/uyg-bolgesel-lipoliz.webp" alt="" loading="lazy"></div><div class="g-ic"><h4>Bölgesel lipoliz</h4><p>Gıdı, karın, bel yanları ve bacak iç yüzündeki kenarları belli, yüzeysel birikimlerde uygun bulunan kişilerde değerlendirilir.</p><a class="dgm dgm--iki" href="${r}uygulamalar/bolgesel-lipoliz/">Sayfasına git →</a></div></div>
     </div>
   </div>
 </section>
