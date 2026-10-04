@@ -26,7 +26,7 @@ module.exports = {
     <div class="g-tarama" data-gr>
       <img src="${r}varliklar/foto/klinik-bekleme.webp" width="1400" height="788" alt="${S.iletisim.semt}’deki muayenehanenin bekleme salonu" loading="eager">
       <div class="g-isin"></div>
-      <!-- gerçek fotoğraf: yapay zekâ rozeti bilinçli olarak YOK -->
+      <!-- muayenehanenin kendi fotoğrafından yapay zekâ ile yeniden işlendi (5 Eki 2026); rozet kullanıcı kararıyla yok, açıklama yayın ilkeleri sayfasında -->
       <div class="g-hud"><b>${S.iletisim.ilce}</b><div class="g-cizgi"></div><span>${S.iletisim.adres}</span></div>
     </div>
   </div>
