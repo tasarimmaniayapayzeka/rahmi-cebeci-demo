@@ -1,11 +1,11 @@
 # DEVİR — 34-Rahmi-Cebeci
 
-**Son güncelleme: 28 Eylül 2026 (gece — görseller HD, kopyalar temizlendi)**
+**Son güncelleme: 5 Ekim 2026 (gece — etken madde adları siteden çıkarıldı, canlıda)**
 
 ## ▶ BURADAN DEVAM ET
 
 **Durum:** rahmicebeci.com.tr WordPress + Klasik Editör olarak canlı, **arama motorlarına kapalı (noindex)**. Yerel = GitHub = sunucu
-(dağıtım #16). 66 sayfa canlıda statikle birebir (gövde); bütün metin ve resimler panelden düzenlenebiliyor. Yarım kalan iş yok.
+(dağıtım #19, 913b1fb). 66 sayfa canlıda statikle birebir (gövde); bütün metin ve resimler panelden düzenlenebiliyor. Yarım kalan iş yok.
 
 **28 Eyl akşam yapılanlar (652dff3, 646acbf — canlıda):**
 - **Favicon:** eski "RC" yazılı SVG yerine gerçek CR amblemi, antrasit zeminde → `site/varliklar/ikon/` (favicon.ico 16/32/48,
@@ -43,7 +43,7 @@
   `rc_medya_bekleyen` sonraki çağrıda biter. Canlı: 11 turda 78 yenileme, hata 0. Kütüphane: 104 bizim + 2 kullanıcının Yoast logosu,
   kopya 0. Araçlar/iş kaydı: `gorsel-ham/buyutme/` (isle.sh, isle-kare.sh, takip.txt; git dışı).
   - **Büyütülemeyen 5 görsel** (3 denemede de servis hatası): `foto/prp-tupler`, `gorsel/yuz-3d`, `sorun-terleme`,
-    `uyg-somon-dna-polinukleotid-2`, `hekim-masasi` → 1400 px hâliyle duruyor (yeniden üretim ya da başka büyütücü seçeneği).
+    `uyg-doku-onarim-uygulamasi-2` (eski adı uyg-somon-dna-polinukleotid-2), `hekim-masasi` → 1400 px hâliyle duruyor (yeniden üretim ya da başka büyütücü seçeneği).
   - **Hekimin 3 fotoğrafı (hekim-portre/koltuk/kare) bilerek büyütülmedi:** yapay zekâ yüz hatlarını değiştirebilir → asıl yüksek
     çözünürlüklü fotoğraflar hekimden/fotoğrafçıdan istenmeli. Logo, cihaz kesimleri, süreç simgeleri küçük gösterildiği için hariç.
   - **Birebir aynı 3 dosya çifti birleştirildi:** ic3d-goz=bolge-goz-cevresi, bolge-boyun=bolge-boyun-ve-dekolte (ikisinin de alt
@@ -54,6 +54,29 @@
   `rc/v1/kurulum` artık sonunda `litespeed_purge_all` çağırıyor.
 - **Imunify Security eklentisi** her sayfanın sonuna gizli tuzak bağlantısı koyuyor: `/imunify-bot-check` — **asla ziyaret edilmez**
   (bağlantı izleyen tarama IP'yi yakar). Genel kurala eklendi (~/.claude/CLAUDE.md); karşılaştırma betiği yok sayar.
+
+**4–5 Eki — İLAÇ / ETKEN MADDE ADLARI SİTEDEN ÇIKARILDI (913b1fb, dağıtım #19, canlıda; kullanıcı: "bu adlar yerine 'mimik çizgisi
+uygulaması', 'dolgu uygulaması' gibi ifadeler kullanılır, öyle yap tüm sitede"):**
+- ~315 geçiş / 40 kaynak dosya: botulinum toksin/botoks, hyalüronik asit, hyalüronidaz, polinükleotid/somon DNA/PDRN, CaHA, PLLA,
+  deoksikolik asit, izotretinoin, aspirin, varfarin, lidokain, ürün markaları → nötr ifadeler (başlık, Yoast açıklaması 147 kr ve odak,
+  H1, SSS + FAQPage, alt metin, menü, harita, karşılaştırma/simülatör verisi, iletişim formu, hazırlık listesi, asistan). Sözlük ve
+  kural: `site/veri/YAZIM-KILAVUZU.md §2`. İlaç SINIFLARI (kan sulandırıcı, antibiyotik, kortizon) ve balık kaynaklı madde alerjisi
+  uyarısı kaldı; selülitteki "vücutta toksin birikimi" efsanesi ilaç değil, kaldı. Eksozom/PRP/skinbooster/mezoterapi adları kaldı.
+- **Adresler:** `uygulamalar/botulinum-toksin` → `mimik-cizgisi-uygulamasi` (odak "mimik çizgisi uygulaması"),
+  `uygulamalar/somon-dna-polinukleotid` → `doku-onarim-uygulamasi` (odak "doku onarım uygulaması"). Kaynak `site/veri/tasima.js`.
+  WordPress'te aynı kayıt taşındı (ID 46/63 yerelde; panel düzenlemesi, öne çıkan görsel, Yoast korunur) — `rc-aktar.php adres_degisimi`.
+  Eski adres `wp-kurulum/htaccess` 301 (canlıda doğrulandı); wp-aktar.js kural eksikse durur. Statik demoda eski adreste yönlendirme sayfası.
+- **Görseller:** 4 kaynak dosya yeniden adlandı, kütüphane adı da yenilendi (`rc-medya.php`: `medya_tasi` kaydı taşır + tablodaki `ad`
+  değişince yeni adla yükleyip eskiyi siler). Hiçbir yerde kullanılmayan 15 eski adlı görsel depodan ve sunucudan silindi (.cpanel.yml).
+- **Denetim:** `node site/denetle.js` artık "İLAÇ / ETKEN MADDE / ÜRÜN ADI" sayar (sayfalar, betikler, görsel adları) → 0 olmalı.
+  Asistan dizinindeki "halk dili" eşleştirme sözcükleri (botoks, somon…; ekranda görünmez, ziyaretçi bunu yazarsa doğru sayfa bulunsun)
+  bilerek duruyor — hukukçu bunu da istemezse `site/veri/asistan.js HALK_DILI`'den çıkar. Yapay zekâ kuralı 12: ilaç/ürün adı kullanma.
+- Doğrulama: yerel statik=WP 66/66, Klasik Editör gidiş-dönüşü 68/68, mobil 14 değişen sayfa temiz, kopya sayfa/görsel yok (68/104).
+  Canlı: kurulum = 2 sayfa taşındı, 4 görsel yenilendi, 35 sayfa güncellendi, elle/fark/hata 0; 7 sayfada etken adı 0, og:image yeni ad.
+- **Hekimin okuması iyi olur (ajanların işaretlediği):** mimik sayfası SSS "Uygulanan ürün ve miktarı kayda geçer mi?" (mevzuat cümlesi
+  yeni); yüz bölgesi SSS 1; terleme ve çene sayfalarındaki "Mimik çizgisi uygulaması" kartları (köprü cümlesi eklendi); "jel yapılı dolgular
+  dolguyu çözen enzimle eritilebilir" (göz çevresi, dudak); biyostimülanın iki türü (mikroküreli / toz hâlinde sulandırılan); PRP'de "trombosit
+  işlevini etkileyen ilaçlar"; mevzuat sayfasına "ve etken madde adları sitede yer almaz" eklendi.
 
 **4 Eki — MOBİLDE GÖRSEL ÇIKMIYOR incelemesi (kullanıcı şikâyeti; 2 ajan + CDP telefon taklidi):**
 - **KÖK NEDEN (düzeltildi, 197a5ed):** LiteSpeed sayfa önbelleği 28 Eyl 15:30'dan kalma HTML sunuyordu (masaüstü ve mobil aynı
@@ -97,8 +120,7 @@ Bizim bu iki dosyanın kopyalarımız (`dr-rahmi-cebeci-logo-kare`, `dr-rahmi-ce
    kapak alt metni de `medya.js`'te güncellenir).
 6. **Arama motorlarına açılış** (müşteri onayı): `site.js` `CANLI_ACIK=true` + WP Ayarlar › Okuma (blog_public) + Yoast site
    haritası/canonical kontrolü + drrahmicebeci.com'dan 301 (barındırması bilinmiyor, RvDesign yapımı).
-7. Hukukçu: etken madde adları (botulinum toksin, hyalüronik asit, "botoks" — botulinum kapak alt metninde de geçiyor, odakla aynı),
-   asistan platformu geçişinde KVKK/çerez metinleri.
+7. Hukukçu: ✅ etken madde adları siteden çıkarıldı (5 Eki, yukarıda). Kalan: asistan platformu geçişinde KVKK/çerez metinleri.
 8. Müşteriden: markaya özel görseller (gelince: dosya → `site/varliklar/` + `medya.js` kaydı → aktarım).
 9. Aşama 2 (asistan platformu geçişi): 35 canlıya çıkınca — aşağıdaki plan. (Eski asistan penceresindeki kart resimleri
    betikle `alt=""` basılıyor — dekoratif, platform geçişinde zaten değişecek.)
