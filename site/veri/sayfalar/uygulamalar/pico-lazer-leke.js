@@ -1,4 +1,5 @@
 const S = require('../../site');
+const aracCagri = require('../../parcalar/arac-cagri');
 
 module.exports = {
   slug: 'uygulamalar/pico-lazer-leke',
@@ -104,6 +105,7 @@ module.exports = {
   </div>
 </section>
 
+${aracCagri(r, 'gunes')}
 <!-- SORU TERMİNALİ -->
 <section class="bolum bolum--buz2"><div class="sar">
   <div class="bolum-bas" data-gr><p class="g-etiket">Sık gelen sorular</p><h2>Merak ettiğiniz soruya dokunun, yanıtı burada açılsın</h2></div>

@@ -1,4 +1,5 @@
 const S = require('../../site');
+const aracCagri = require('../../parcalar/arac-cagri');
 
 /* şikâyet başlıklarının kart notları — anahtarlar ve sıra site.js > sorunlar'dan gelir */
 const NOT = {
@@ -137,6 +138,7 @@ ${S.sorunlar.map(([ad, s]) => `
 </section>
 
 <!-- ═════════ SORU TERMİNALİ ═════════ -->
+${aracCagri(r, 'rehber')}
 <section class="bolum bolum--buz2"><div class="sar">
   <div class="bolum-bas" data-gr><p class="g-etiket">Sık gelen sorular</p><h2>Merak ettiğiniz soruya dokunun, yanıtı burada açılsın</h2></div>
   <div class="g-sorgu" data-gr>

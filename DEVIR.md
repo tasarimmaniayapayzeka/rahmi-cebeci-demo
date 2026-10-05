@@ -5,7 +5,7 @@
 ## ▶ BURADAN DEVAM ET
 
 **Durum:** rahmicebeci.com.tr WordPress + Klasik Editör olarak canlı, **arama motorlarına kapalı (noindex)**. Yerel = GitHub = sunucu
-(dağıtım #20, f40905e; sonraki commit'ler yalnız DEVIR). 66 sayfa canlıda statikle birebir (gövde); bütün metin ve resimler panelden
+(dağıtım #22). 66 sayfa canlıda statikle birebir (gövde); bütün metin ve resimler panelden
 düzenlenebiliyor. **Yarım kalan iş yok.**
 
 **Sonraki oturumda ilk iş (özet):**
@@ -66,6 +66,27 @@ düzenlenebiliyor. **Yarım kalan iş yok.**
   `rc/v1/kurulum` artık sonunda `litespeed_purge_all` çağırıyor.
 - **Imunify Security eklentisi** her sayfanın sonuna gizli tuzak bağlantısı koyuyor: `/imunify-bot-check` — **asla ziyaret edilmez**
   (bağlantı izleyen tarama IP'yi yakar). Genel kurala eklendi (~/.claude/CLAUDE.md); karşılaştırma betiği yok sayar.
+
+**5 Eki — 3 YENİ ETKİLEŞİMLİ ARAÇ (kullanıcı: "yapay zekâ ile ne gibi şeyler ekstra yapılabilir… havalı, müşteriye dönüşecek";
+3 ajanla dünya örnekleri + Türkiye mevzuatı araştırıldı; kullanıcı ilk üç fikri seçti):**
+- `/dovme-silme-yol-haritasi/` (odak "dövme silme kaç seans"): 8 soru → Kirby-Desai (2009) ölçeğine göre tahmini seans aralığı (toplam ±2,
+  puan gösterilmez), 6–8 hafta ara ile takvim, zaman çizgisi, en çok etkileyen etkenler, koşullu notlar (kalıcı makyaj deneme atımı,
+  kırmızı, yeşil/mavi/sarı/beyaz, koyu ten, iz, kapatma, yakın bronzlaşma). Sayı göstermek istenmezse panelde ayar `aralik_goster` → `hayir`.
+- `/estetik-uygulama-rehberi/` (odak "estetik uygulama rehberi"): konu (en çok 3) + iğne tercihi + tarih + "muayenede söyleyin"
+  işaretleri → konu başına ilgili uygulamalar (eşleşme derlemede cilt sorunu sayfalarının KENDİ bağlantılarından çıkar), iğnesiz etiketi,
+  hatırlatmalar. "Size uygun" dili yok.
+- `/gunes-aliskanligi-testi/` (odak "güneş lekesi"): 8 soru → en belirgin 3 alışkanlık kartı + öneri, değişen ben için dermatolog uyarısı.
+- Ortak motor `site/varliklar/js/arac.js`; veri sayfada gizli liste (`parcalar/test-veri.js` → `.g-veri[data-test-kaynak]`, editörde
+  "Araç verisi" kutusu) → soru/seçenek/sonuç metinleri PANELDEN değişir. Fotoğraf, puan, fiyat yok; yanıtlar cihazda (sunucu/çerez yok);
+  WhatsApp mesajına sağlık bilgisi yazılmaz. Stil: g.css "ETKİLEŞİMLİ ARAÇLAR". Menü (Tanışalım), asistan eşleştirme sözcükleri,
+  çağrı bantları (`parcalar/arac-cagri.js`: pico dövme, dövme/kalıcı makyaj, cilt tonu/leke, pico leke, cilt sorunları hub).
+  G sıra kuralı: `section.bolum--arac{order:1}` (araç hero'dan hemen sonra).
+- Doğrulama: davranış testi 7/7 (`wp-yerel/araclar/arac-test.js`, statik + yerel WP), statik=WP 69/69, gidiş-dönüş 71/71, mobil 9 sayfa temiz.
+- **HEKİM ONAYI GEREKİR:** üç aracın soru/sonuç metinleri ve dövme aralığının sayıyla gösterilmesi (sitede başka yerde seans sayısı yok;
+  dövme SSS'si "kabaca bir aralık verebiliriz" diyor). Site noindex iken yayında.
+- Araştırma özeti (önerilen ama yapılmayanlar): 7/24 asistan + WhatsApp randevu (platform geçişiyle), hatırlatma/bakım mesajları (İYS:
+  bilgilendirme onaysız, tanıtım onaylı), hekime sor → SSS, selfie cilt gözlemi (en son; açık rıza, KVKK md.9, uzaktan sağlık izni sorusu).
+  YAPILMAZ: simülasyon/önce-sonra YZ, cilt yaşı/puan, Norwood evre tahmini (tıbbi cihaz), fiyat, yorum duvarı, hekim avatarı/ses klonu.
 
 **5 Eki — GÖRSELLER 2K'DA YENİDEN ÜRETİLDİ (f40905e, dağıtım #20, canlıda; kullanıcı: "kalitesiz görünen tüm görselleri 2k
 higgsfield ile yeniden yap… gerçek görseller (muayene, lazer cihazı) yerine sen yap… hocanın kendi görseline dokunma"):**

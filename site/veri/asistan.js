@@ -55,6 +55,9 @@ const HALK_DILI = {
   'cilt-tipi-testi': ['cilt tipi', 'cilt testi', 'yağlı mı kuru mu'],
   'bolge-pusulasi': ['hangi bölge', 'bölge rehberi'],
   'uygulama-karsilastirma': ['farkı ne', 'karşılaştır', 'hangisi daha'],
+  'estetik-uygulama-rehberi': ['ne yaptırmalıyım', 'nereden başlamalı', 'hangi uygulama', 'bana ne uygun', 'rehber'],
+  'dovme-silme-yol-haritasi': ['kaç seans', 'kaç seansta', 'ne kadar sürer', 'dövme silme süresi', 'seans sayısı', 'yol haritası'],
+  'gunes-aliskanligi-testi': ['güneş kremi', 'güneş koruyucu', 'spf', 'solaryum', 'güneş lekesi', 'güneş testi'],
 };
 
 /* dizinde gösterilecek kısa ad: katalog/bölge/şikâyet adı ya da başlığın ilk parçası */

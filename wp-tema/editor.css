@@ -36,6 +36,10 @@ body.rc-editor [data-gnokta-kaynak]::before { content: "Harita noktaları — no
 body.rc-editor [data-pus-kaynak]::before { content: "Bölge pusulası — her bölgenin adı, tarifi, görseli ve bağlantısı"; }
 body.rc-editor [data-kar-kaynak]::before { content: "Karşılaştırma masası — seçilen iki uygulamanın satırları"; }
 body.rc-editor [data-yolc-kaynak]::before { content: "Yolculuk — seçilen uygulamanın dört aşaması"; }
+body.rc-editor [data-test-kaynak]::before { content: "Araç verisi — sorular (madde işaretli seçenekler), sonuç ve not metinleri, ayarlar"; }
+body.rc-editor .g-veri > [data-soru], body.rc-editor .g-veri > [data-metin], body.rc-editor .g-veri > [data-konu], body.rc-editor .g-veri > [data-ayar] { display: block; padding: 8px 0 10px; border-top: 1px solid rgba(133, 100, 28, .2); }
+body.rc-editor .g-veri > [data-ayar]::before { content: attr(data-ayar) ": "; font-weight: 700; color: #85641C; }
+body.rc-editor .g-veri ul { margin: 4px 0 0 18px; }
 body.rc-editor .g-veri > [data-anahtar] { display: block; padding: 8px 0 10px; border-top: 1px solid rgba(133, 100, 28, .2); }
 body.rc-editor .g-veri > [data-anahtar] > b { display: block; margin-bottom: 4px; }
 body.rc-editor .g-veri > [data-anahtar] > span { display: block; }

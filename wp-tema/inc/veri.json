@@ -98,6 +98,21 @@
      "ad": "Yan Yana Karşılaştır",
      "yol": "/uygulama-karsilastirma/",
      "not": "Seçtiğiniz iki uygulama karşı karşıya"
+    },
+    {
+     "ad": "Estetik Uygulama Rehberi",
+     "yol": "/estetik-uygulama-rehberi/",
+     "not": "Şikâyetinize göre muayenede konuşulacaklar"
+    },
+    {
+     "ad": "Dövme Silme Yol Haritası",
+     "yol": "/dovme-silme-yol-haritasi/",
+     "not": "Tahmini seans aralığı ve takvim"
+    },
+    {
+     "ad": "Güneş Alışkanlığı Testi",
+     "yol": "/gunes-aliskanligi-testi/",
+     "not": "Leke eğilimini artıran alışkanlıklar"
     }
    ]
   },
