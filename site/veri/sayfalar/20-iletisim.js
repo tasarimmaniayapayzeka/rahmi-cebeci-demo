@@ -24,9 +24,9 @@ module.exports = {
       <div class="g-tikler"><span><i></i>Mesai içinde geri arama</span><span><i></i>Mesaj yoluyla muayene yapılmaz</span><span><i></i>Yalnızca gerekli bilgi istenir</span></div>
     </div>
     <div class="g-tarama" data-gr>
-      <img src="${r}varliklar/foto/klinik-bekleme-2.webp" width="1400" height="788" alt="Muayenehanenin bekleme salonu ve karşılama bankosu" loading="eager">
+      <img src="${r}varliklar/gorsel/iletisim-randevu.webp" width="1400" height="788" alt="Masada deri randevu defteri, dolma kalem ve telefon" loading="eager">
       <div class="g-isin"></div>
-      <!-- gerçek fotoğraf: yapay zekâ rozeti bilinçli olarak YOK -->
+      <span class="g-ainot">Temsilî görsel · yapay zekâ ile üretildi</span>
       <div class="g-hud"><b>${S.iletisim.ilce}</b><div class="g-cizgi"></div><span>${S.iletisim.adres}</span></div>
     </div>
   </div>
