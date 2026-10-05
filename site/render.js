@@ -57,9 +57,12 @@ const derinlik = slug => slug === '' ? 0 : slug.split('/').filter(Boolean).lengt
 const kok = slug => derinlik(slug) === 0 ? './' : '../'.repeat(derinlik(slug));
 
 /* ---------- menü katalogtan üretilir ---------- */
+/* yayında olmayan sayfalar (site.js gizliSayfalar): menüye girmez, derlenmez */
+const GIZLI = new Set(S.gizliSayfalar || []);
+const gizliYol = y => GIZLI.has(String(y).replace(/^\/|\/$/g, ''));
 function menuKur() {
   /* Klinik menüde başta (12 Ağu talebi) */
-  const ek = [...S.menuEk];
+  const ek = S.menuEk.filter(m => !gizliYol(m.yol)).map(m => m.alt ? { ...m, alt: m.alt.filter(a => !gizliYol(a.yol)) } : m);
   const ki = ek.findIndex(m => m.ad === 'Tanışalım');
   const klinik = ki > -1 ? ek.splice(ki, 1) : [];
   return [
@@ -315,7 +318,11 @@ function topla(dir, on = '') {
   return liste;
 }
 
-const sayfalar = topla(SAYFA_DIR);
+const tumSayfalar = topla(SAYFA_DIR);
+for (const g of GIZLI) if (!tumSayfalar.some(s => s.slug === g)) throw new Error(`site.js gizliSayfalar: sayfa yok: ${g}`);
+const sayfalar = tumSayfalar.filter(s => !GIZLI.has(s.slug));
+/* gizlenen sayfanın önceki derlemeden kalan çıktısı silinir (GitHub Pages'te de erişilmesin) */
+for (const g of GIZLI) fs.rmSync(path.join(CIKTI, g), { recursive: true, force: true });
 
 /* ön bilgi asistanının sayfa dizini — sayfalar derlenmeden ÖNCE yazılır
    ki önbellek damgası yeni içerikten hesaplansın */

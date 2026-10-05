@@ -153,7 +153,8 @@ function istem(sayfalar, ik) {
   const uyg = S.katalog.map(g => `${g.grup}:\n` + g.ogeler.map(([ad, sl, not]) => `- ${ad} — ${not} → /uygulamalar/${sl}/`).join('\n')).join('\n');
   const diger = dizin(sayfalar, ik).filter(([, yol]) => !yol.startsWith('uygulamalar/'))
     .map(([ad, yol, ac]) => `- ${ad} → /${yol}${ac ? ' — ' + ac : ''}`).join('\n');
-  const halk = Object.entries(HALK_DILI).map(([sl, l]) => `${l.join(', ')} → /${sl}/`).join('\n');
+  const halk = Object.entries(HALK_DILI).filter(([sl]) => sayfalar.some(s => s.slug === sl))   /* gizli sayfa önerilmez */
+    .map(([sl, l]) => `${l.join(', ')} → /${sl}/`).join('\n');
   return `Sen ${S.marka} muayenehanesinin (${i.semt}, İstanbul) web sitesinde çalışan ön bilgi asistanısın. Görevin, ziyaretçinin sorusunu sitedeki bilgilerle kısaca yanıtlamak ve onu doğru sayfaya ya da randevuya yönlendirmek.
 
 MUAYENEHANE BİLGİLERİ

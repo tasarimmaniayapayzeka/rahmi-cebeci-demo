@@ -38,7 +38,9 @@ function topla(dir) {
   }
   return l;
 }
-const sayfalar = topla(path.join(KOK, 'veri', 'sayfalar'));
+/* yayında olmayan sayfalar (site.js gizliSayfalar): pakete girmez; WordPress'te taslağa alınır (rc-aktar.php "gizle") */
+const GIZLI = S.gizliSayfalar || [];
+const sayfalar = topla(path.join(KOK, 'veri', 'sayfalar')).filter(s => !GIZLI.includes(s.slug));
 const yollar = new Set(sayfalar.map(s => s.slug));
 const disa = sayfalar.map((s, i) => ({
   yol: s.slug,
@@ -89,7 +91,7 @@ disa.sort((a, b) => a.yol.split('/').length - b.yol.split('/').length || a.sira 
 fs.mkdirSync(path.join(DEPO, 'wp-mu'), { recursive: true });
 fs.writeFileSync(path.join(DEPO, 'wp-mu', 'rc-icerik.json'),
   JSON.stringify({ uretim: new Date().toISOString(), eksikEbeveyn, medya, medya_kaldir: medyaKaldir,
-    medya_tasi: TASIMA.GORSEL, adres_degisimi: TASIMA.SAYFA, sayfalar: disa }, null, 1), 'utf8');
+    medya_tasi: TASIMA.GORSEL, adres_degisimi: TASIMA.SAYFA, gizle: GIZLI, sayfalar: disa }, null, 1), 'utf8');
 
 /* ---------- tema verisi ---------- */
 const veri = {
@@ -115,4 +117,5 @@ if (fs.existsSync(path.join(DEPO, 'wp-yerel'))) {
 console.log(`${medya.length} görsel (ortam kütüphanesi) · ${disa.filter(d => d.kapak).length} sayfada kapak → öne çıkan görsel`);
 console.log(`${disa.length} sayfa → wp-mu/rc-icerik.json · tema verisi → wp-tema/inc/veri.json`);
 console.log(`eksik ebeveyn (taslak açılacak): ${eksikEbeveyn.join(', ') || 'yok'}`);
+console.log(`gizli (WordPress'te taslağa alınır): ${GIZLI.join(', ') || 'yok'}`);
 console.log(`yollar: ${disa.map(d => d.yol || '(anasayfa)').join(' ')}`);

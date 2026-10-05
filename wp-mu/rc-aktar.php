@@ -27,7 +27,7 @@ function rc_aktar(array $o = []) {
 
 	kses_remove_filters();   /* SVG, data-*, JSON veri blokları kırpılmasın (oturumsuz komut satırında kses açık olurdu) */
 	$r = ['yeni' => [], 'guncellenen' => [], 'ayni' => 0, 'elle' => [], 'fark' => [], 'hata' => [], 'meta_elle' => [], 'meta_yazilan' => [],
-		'elle_gorsel' => [], 'kapak' => 0, 'tasinan' => []];
+		'elle_gorsel' => [], 'kapak' => 0, 'tasinan' => [], 'gizlenen' => [], 'acilan' => []];
 
 	/* önce görseller (rc-medya.php): hepsi Ortam kütüphanesine girmeden sayfalara geçilmez — yarım adresli sayfa olmasın.
 	   medya_sinir: bir çağrıda en çok kaç yeni görsel (sunucuda zaman aşımı olmasın); kalan varsa tekrar çağrılır. */
@@ -68,6 +68,17 @@ function rc_aktar(array $o = []) {
 		$r['tasinan'][] = "$eski → $yeni";
 	}
 
+	/* yayında olmayan sayfalar (site.js gizliSayfalar): taslağa alınır — ziyaretçiye 404, panelde içerik ve düzenlemeler durur.
+	   Listeden çıkınca aşağıdaki döngü yeniden yayımlar; yalnız bizim gizlediğimizi (_rc_gizlendi), panelde elle taslağa alınana dokunmaz. */
+	foreach ((array) ($v['gizle'] ?? []) as $g) {
+		$p = get_page_by_path((string) $g, OBJECT, 'page');
+		if (!$p || $p->post_status !== 'publish') continue;
+		$sonuc = wp_update_post(['ID' => $p->ID, 'post_status' => 'draft'], true);
+		if (is_wp_error($sonuc)) { $r['hata'][] = "$g: gizlenemedi: " . $sonuc->get_error_message(); continue; }
+		update_post_meta($p->ID, '_rc_gizlendi', 1);
+		$r['gizlenen'][] = $g;
+	}
+
 	foreach ($v['sayfalar'] as $s) {
 		if ($adres) $s['icerik'] = rc_medya_icerige($s['icerik'], $adres);
 		$ad = $s['yol'] === '' ? 'anasayfa' : ($s['yol'] === '404' ? RC_404_AD : $s['ad']);
@@ -85,6 +96,11 @@ function rc_aktar(array $o = []) {
 			'comment_status' => 'closed', 'ping_status' => 'closed',
 		];
 		$var = get_page_by_path($yol, OBJECT, 'page');
+		if ($var && $var->post_status === 'draft' && get_post_meta($var->ID, '_rc_gizlendi', true)) {
+			wp_update_post(['ID' => $var->ID, 'post_status' => 'publish']);
+			delete_post_meta($var->ID, '_rc_gizlendi');
+			$r['acilan'][] = $yol;
+		}
 		if ($var) {
 			$son = get_post_meta($var->ID, '_rc_aktarim_ozet', true);
 			$simdi = md5($var->post_content);
@@ -307,7 +323,7 @@ if (defined('WP_CLI') && WP_CLI) {
 		WP_CLI::log(sprintf('yeni %d · güncellenen %d · aynı %d · elle düzenlenmiş (atlandı) %d · kayıtta değişen %d · hata %d · meta yazılan %d · meta elle (atlandı) %d',
 			count($r['yeni'] ?? []), count($r['guncellenen'] ?? []), $r['ayni'] ?? 0, count($r['elle'] ?? []), count($r['fark'] ?? []), count($r['hata'] ?? []),
 			(int) ($r['meta_yazilan'] ?? 0), count($r['meta_elle'] ?? [])));
-		foreach (['elle', 'fark', 'hata', 'meta_elle', 'tasinan'] as $k) if (!empty($r[$k])) WP_CLI::log("$k: " . implode(', ', $r[$k]));
+		foreach (['elle', 'fark', 'hata', 'meta_elle', 'tasinan', 'gizlenen', 'acilan'] as $k) if (!empty($r[$k])) WP_CLI::log("$k: " . implode(', ', $r[$k]));
 		if (!empty($r['medya']['tasinan'])) WP_CLI::log('görsel taşınan: ' . implode(', ', $r['medya']['tasinan']));
 	});
 }

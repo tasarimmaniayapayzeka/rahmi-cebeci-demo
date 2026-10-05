@@ -6,8 +6,11 @@ const ARAC = {
   rehber: { yol: 'estetik-uygulama-rehberi/', baslik: 'Nereden başlayacağınızı bilmiyor musunuz?', metin: 'Şikâyetinizi seçin; muayenede konuşabileceğiniz başlıkları ve söylemeniz gerekenleri tek ekranda görün.', dugme: 'Rehberi açın' },
 };
 
+const GIZLI = require('../site.js').gizliSayfalar || [];
+
 module.exports = (r, tur) => {
   const a = ARAC[tur];
+  if (GIZLI.includes(a.yol.replace(/\/$/, ''))) return '';   /* araç yayında değilse bant da yok */
   return `<section class="bolum bolum--sik"><div class="sar">
   <a class="arac-cagri" href="${r}${a.yol}" data-gr><span class="arac-cagri__etiket">Araç</span><b>${a.baslik}</b><span class="arac-cagri__metin">${a.metin}</span><span class="arac-cagri__ok">${a.dugme} →</span></a>
 </div></section>

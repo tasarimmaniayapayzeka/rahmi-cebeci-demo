@@ -148,6 +148,11 @@ module.exports = {
     ['Dövme ve Kalıcı Makyaj', 'dovme-ve-kalici-makyaj'],
   ],
 
+  /* Yayında olmayan sayfalar (5 Eki 2026, kullanıcı: "şu an bunları gizle, erişim olmasın" — hekim onayı bekleniyor).
+     Derlenmez; menüden, çağrı bantlarından ve asistandan düşer; WordPress'te taslağa alınır (ziyaretçiye 404,
+     panelde içerik durur). Açmak için listeden çıkar → yayın akışı (render → yayin-hazirla → wp-aktar → canlı kurulum). */
+  gizliSayfalar: ['estetik-uygulama-rehberi', 'dovme-silme-yol-haritasi', 'gunes-aliskanligi-testi'],
+
   // Üst menü: Klinik başa alınır, Uygulamalar/Bölgeler/Cilt Sorunları katalogtan üretilir
   menuEk: [
     { ad: 'Tanışalım', yol: '/klinik/', alt: [
