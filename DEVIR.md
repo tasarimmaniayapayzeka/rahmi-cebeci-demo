@@ -1,11 +1,11 @@
 # DEVİR — 34-Rahmi-Cebeci
 
-**Son güncelleme: 5 Ekim 2026 (gece — görseller 2K yeniden üretildi + etken madde adları çıkarıldı, canlıda)**
+**Son güncelleme: 5 Ekim 2026 (3 etkileşimli araç PASİFE alındı, canlıda doğrulandı; öncesi: görseller 2K + etken madde adları)**
 
 ## ▶ BURADAN DEVAM ET
 
 **Durum:** rahmicebeci.com.tr WordPress + Klasik Editör olarak canlı, **arama motorlarına kapalı (noindex)**. Yerel = GitHub = sunucu
-(dağıtım #22). 66 sayfa canlıda statikle birebir (gövde); bütün metin ve resimler panelden
+(dağıtım #23). 66 sayfa canlıda statikle birebir (gövde); bütün metin ve resimler panelden
 düzenlenebiliyor. **Yarım kalan iş yok.**
 
 **Sonraki oturumda ilk iş (özet):**
@@ -69,6 +69,11 @@ düzenlenebiliyor. **Yarım kalan iş yok.**
 
 **5 Eki — 3 YENİ ETKİLEŞİMLİ ARAÇ (kullanıcı: "yapay zekâ ile ne gibi şeyler ekstra yapılabilir… havalı, müşteriye dönüşecek";
 3 ajanla dünya örnekleri + Türkiye mevzuatı araştırıldı; kullanıcı ilk üç fikri seçti):**
+- ⏸ **PASİF (5 Eki, 39bc4e4, dağıtım #23; kullanıcı: "bunları pasife al, silme, gerisi kalacak"):** üç araç `site.js gizliSayfalar`
+  listesinde → derlenmez, menüden/5 çağrı bandından/asistan önerisinden düşer, WordPress'te TASLAK (ziyaretçiye 404, panelde içerik
+  duruyor, `_rc_gizlendi` işaretli). Canlıda doğrulandı: 3 adres 404, menüde 0, pico dövme sayfasında bant 0. Hiçbir dosya silinmedi.
+  **Geri açmak:** slug'ı listeden çıkar → render → yayin-hazirla → wp-aktar → commit/push → canli-yayinla.sh → kurulum-dongu.js
+  (rapor "acilan"; yerelde denendi, çalışıyor). Hekim onayı gelince açılır.
 - `/dovme-silme-yol-haritasi/` (odak "dövme silme kaç seans"): 8 soru → Kirby-Desai (2009) ölçeğine göre tahmini seans aralığı (toplam ±2,
   puan gösterilmez), 6–8 hafta ara ile takvim, zaman çizgisi, en çok etkileyen etkenler, koşullu notlar (kalıcı makyaj deneme atımı,
   kırmızı, yeşil/mavi/sarı/beyaz, koyu ten, iz, kapatma, yakın bronzlaşma). Sayı göstermek istenmezse panelde ayar `aralik_goster` → `hayir`.
