@@ -5,7 +5,7 @@
 ## ▶ BURADAN DEVAM ET
 
 **Durum:** rahmicebeci.com.tr WordPress + Klasik Editör olarak canlı, **arama motorlarına kapalı (noindex)**. Yerel = GitHub = sunucu
-(dağıtım #24). 66 sayfa canlıda statikle birebir (gövde); bütün metin ve resimler panelden
+(dağıtım #25). 66 sayfa canlıda statikle birebir (gövde); bütün metin ve resimler panelden
 düzenlenebiliyor. **Yarım kalan iş yok.**
 
 **Sonraki oturumda ilk iş (özet):**
@@ -66,6 +66,11 @@ düzenlenebiliyor. **Yarım kalan iş yok.**
   `rc/v1/kurulum` artık sonunda `litespeed_purge_all` çağırıyor.
 - **Imunify Security eklentisi** her sayfanın sonuna gizli tuzak bağlantısı koyuyor: `/imunify-bot-check` — **asla ziyaret edilmez**
   (bağlantı izleyen tarama IP'yi yakar). Genel kurala eklendi (~/.claude/CLAUDE.md); karşılaştırma betiği yok sayar.
+
+**5 Eki — İLETİŞİM KAPAĞI DEĞİŞTİ (f233897, dağıtım #25, canlıda; kullanıcı: "sağdaki real foto kalksın… emlak sitesi gibi olmuş"):**
+gerçek bekleme salonu fotoğrafı (`foto/klinik-bekleme-2`) yerine temsilî YZ görseli `gorsel/iletisim-randevu.webp` (koyu taş masada deri
+randevu defteri, dolma kalem, telefon; Nano Banana Pro 2K, 2 aday ~2-4 kredi, ham: `gorsel-ham/iletisim/`). Muayenehane içi DEĞİL (md. 7e),
+"Temsilî görsel · yapay zekâ ile üretildi" notu var. Eski fotoğraf kütüphanede duruyor, hiçbir sayfada yok. Yerel 66/66, mobil taşma 0.
 
 **5 Eki — HEKİM KÜNYE KUTUSU TÜM SİTEDEN KALDIRILDI (b7bc4de, dağıtım #24, canlıda; kullanıcı: "bu alan kalksın tüm siteden
 sorma bi daha"):** tıbbi sayfaların sonundaki "Metni hazırlayan ve tıbbi açıdan gözden geçiren… / Son güncelleme / Editör / muayenenin
