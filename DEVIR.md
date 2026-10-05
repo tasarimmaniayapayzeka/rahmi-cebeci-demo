@@ -11,10 +11,7 @@ düzenlenebiliyor. **Yarım kalan iş yok.**
 **Sonraki oturumda ilk iş (özet):**
 1. Hekim sunumunun dönüşünü sor: `sunum/Etken-Madde-Degisiklikleri-Dr-Rahmi-Cebeci.pdf` (10 sayfa, git dışı; üretici `sunum/olustur.js`).
    Son sayfadaki "onayınıza sunulan 6 yeni cümle" hekimden düzeltme gelirse sayfa dosyalarında değiştir → yayın akışı.
-2. Hekime söylenmesi gereken: muayenehane (bekleme, karşılama, uygulama odası) ve cihaz görselleri kendi fotoğraflarımızdan yapay zekâ
-   ile yeniden işlendi, **rozetsiz** (kullanıcı kararı); yayın ilkeleri ve mevzuat sayfası buna göre yazıldı. Hekim gerçek fotoğraf isterse
-   eski fotoğraflar git geçmişinde (`git show f40905e~1:site/varliklar/foto/<ad>.webp`, ör. klinik-bekleme) — geri dönüş: dosyayı
-   geri koy, `medya.js`'te `surum`'u değiştir (ör. 'gercek'), yayın ilkeleri cümlelerini eski hâline al → yayın akışı.
+2. ✅ Muayenehane ve cihaz görselleri GERÇEK fotoğraflarına geri döndü (5 Eki, aşağıda) — hekime söylenecek bir şey kalmadı.
 3. Aşağıdaki "Kullanıcı kararı bekleyenler" listesi (form testi, Copyscape, odak kelimeler, arama motorlarına açılış…).
 4. Test/denetim araçları artık kalıcı: `wp-yerel/araclar/` (git dışı) — mobil-cdp.js (telefon taklidi tarama), islev-test.js
    (davranış testleri), kurulum-dongu.js (canlı aktarım, kalan 0'a kadar 5 sn arayla), canli-gorsel.js / canli-etken.js (canlı örnekleme,
@@ -77,11 +74,14 @@ higgsfield ile yeniden yap… gerçek görseller (muayene, lazer cihazı) yerine
   (referanslı + arka plan silme, saydam WebP). Fotoğraflar 2560 px WebP (3:4'ler 1792×2390). ~182,5 kredi (2/görsel, cihaz 2,5).
   medya.js: 89 kayıt `surum: '2k'` → WordPress'te yeni dosya adı `…-2k.webp`, eski ek silindi. Canlı: 8 partide 89 yenileme, hata 0,
   kütüphane 104 = paket 104, sayfalarda eski -hd adresi 0. Yerel: statik=WP 66/66, gidiş-dönüş 68/68, mobil 10 sayfa temiz.
-- **KULLANICI KARARI — muayenehane/cihaz görselleri yapay zekâ, ROZETSİZ:** bekleme salonu ×2, uygulama odası, PRP tüpleri ve 5 cihaz
-  kendi fotoğraflarımız referans alınarak yeniden işlendi (düzen ve cihaz görünümü korundu). Kullanıcı rozet istemedi ("ekleme kötü
-  oluyor"); sitenin yayın ilkeleri sayfası buna aykırı söz veriyordu → kullanıcıya soruldu, "yapay zekâyla yap, rozetsiz" seçildi.
-  `yasal/icerik-ve-gorsel-yayin-ilkelerimiz` (üç çeşit görsel: hekim portreleri gerçek; muayenehane ve cihaz görselleri kendi
-  fotoğraflarımızdan yapay zekâ ile yeniden işlendi; konu görselleri rozetli) ve `23-mevzuat` cümlesi buna göre yazıldı.
+- **Muayenehane/cihaz görselleri GERİ ALINDI → gerçek fotoğraflar (kullanıcı kararı, 5 Eki gece):** önce yapay zekâ ile rozetsiz
+  yeniden işlenmişti (bekleme ×2, uygulama odası, PRP tüpleri, 5 cihaz). Mevzuat araştırması: Tanıtım Yönetmeliği (RG 12.11.2025/33075)
+  **md. 7(e) "görsele sonradan teknolojik değişiklik veya düzeltme uygulanamaz"** → kullanıcıya soruldu, "gerçek fotoğraflara dön" seçildi.
+  9 dosya `f40905e~1` hâline (bekleme/uygulama odası 28 Eyl'deki 2560 büyütme, cihaz kesimleri ve PRP özgün), medya.js eski satırları
+  (`-hd` ve eki olmayan adlar), yayın ilkeleri + mevzuat + klinik/iletişim sayfaları eski hâline döndü. **Kural: muayenehane, hekim ve
+  cihaz görselleri yapay zekâ ile ÜRETİLMEZ/DÜZENLENMEZ; yalnız konu anlatan temsilî görseller yapay zekâ ve rozetli.**
+  Not: 28 Eyl'de bekleme/uygulama odası fotoğrafları yapay zekâ büyütücüyle 2560'a çıkarılmıştı (içerik aynı); hukukçu "büyütme de
+  teknolojik değişiklik" derse özgün 1400 px dosyalar `701be21~1` hâlinde.
 - Değişmeyenler: hekimin 3 fotoğrafı, logo/amblem, 28 Eyl'de 4K üretilen 5 görsel (dövme kapağı, cilt tipi, hazırlık, 404, karşılaştırma),
   4 küçük aşama ikonu, kullanılmayan `foto/klinik-cihaz-odasi.webp`. Alt metni/dosya adı yeni görsele göre düzeltilen 5 görsel:
   el, vücut, terleme, bölgesel lipoliz (çene altı profil), selülit (3B deri altı).
@@ -153,8 +153,8 @@ Bizim bu iki dosyanın kopyalarımız (`dr-rahmi-cebeci-logo-kare`, `dr-rahmi-ce
 6. **Arama motorlarına açılış** (müşteri onayı): `site.js` `CANLI_ACIK=true` + WP Ayarlar › Okuma (blog_public) + Yoast site
    haritası/canonical kontrolü + drrahmicebeci.com'dan 301 (barındırması bilinmiyor, RvDesign yapımı).
 7. Hukukçu: ✅ etken madde adları siteden çıkarıldı (5 Eki, yukarıda). Kalan: asistan platformu geçişinde KVKK/çerez metinleri;
-   asistan dizinindeki görünmez "botoks" eşleştirme sözcükleri (istenirse çıkar); muayenehane/cihaz görsellerinin rozetsiz yapay zekâ
-   olması (kullanıcı kararı, yayın ilkelerinde yazılı) — hukukçuya sorulabilir.
+   asistan dizinindeki görünmez "botoks" eşleştirme sözcükleri (istenirse çıkar); 28 Eyl'deki yapay zekâ büyütmesinin (gerçek fotoğraflar)
+   md. 7(e) açısından durumu — hukukçuya sorulabilir.
 7b. **Hekim sunumu (5 Eki):** etken madde değişiklikleri PDF'i hazırlandı (yukarıda "ilk iş" 1). Hekimin onayı/düzeltmeleri bekleniyor.
 8. Müşteriden: markaya özel görseller (gelince: dosya → `site/varliklar/` + `medya.js` kaydı → aktarım).
 9. Aşama 2 (asistan platformu geçişi): 35 canlıya çıkınca — aşağıdaki plan. (Eski asistan penceresindeki kart resimleri

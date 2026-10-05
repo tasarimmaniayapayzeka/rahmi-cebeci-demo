@@ -81,7 +81,7 @@ module.exports = {
 
       <h3>Öncesi–sonrası görseli neden yayımlanmıyor?</h3>
       <p>Uygulamanın öncesini ve sonrasını yan yana gösteren görsellerin tanıtımda kullanılması kabul edilmez. Işık, açı, duruş, makyaj ve fotoğraf düzenlemesiyle kolayca değişebilen bu görseller gerçekçi bir beklenti kurmaz.</p>
-<p>Üstelik sizde neyin değişeceğini göstermezler; girişimsel her uygulamada sonuç kişiden kişiye farklılık gösterebilir. Sitedeki görseller yalnızca ortamı tanıtmak ve konuyu anlatmak içindir; konuyu anlatan yapay zekâ görselleri ayrıca işaretlenir, muayenehane ve cihaz görselleri ise kendi fotoğraflarımızdan yapay zekâ ile yeniden işlenmiştir.</p>
+<p>Üstelik sizde neyin değişeceğini göstermezler; girişimsel her uygulamada sonuç kişiden kişiye farklılık gösterebilir. Sitedeki görseller yalnızca ortamı tanıtmak ve konuyu anlatmak içindir; yapay zekâ ile üretilenler ayrıca işaretlenir.</p>
 
       <h3>Cihaz ve ürün adlarını nasıl kullanıyoruz?</h3>
       <p>Uygulama sayfalarında yöntemin genel adı kullanılır; örneğin “pikosaniye lazer” ya da “dolgu uygulaması” denir. Muayenehanedeki cihazların model adları yalnızca muayenehane sayfasındaki cihaz listesinde ve ilgili uygulama sayfasındaki tek bir bilgi satırında, tanıtım unsuru olarak değil envanter bilgisi olarak geçer.</p>
