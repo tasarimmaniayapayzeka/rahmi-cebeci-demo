@@ -27,7 +27,7 @@ module.exports = {
       <img src="${r}varliklar/gorsel/bilgi-hero.webp" width="1400" height="788" alt="Masada deri katmanlarının çizimleri olan açık defter ve dolma kalem" loading="eager">
       <div class="g-isin"></div>
       <span class="g-ainot">Temsilî görsel · yapay zekâ ile üretildi</span>
-      <div class="g-hud"><b>Hekim denetiminden geçen yazılar</b><div class="g-cizgi"></div><span>Her yazıda hazırlayan hekim ve son güncelleme tarihi yer alır</span></div>
+      <div class="g-hud"><b>Hekim denetiminden geçen yazılar</b><div class="g-cizgi"></div><span>Her sayfanın alt bilgisinde sorumlu hekim ve son güncelleme tarihi yer alır</span></div>
     </div>
   </div>
 </section>
@@ -44,7 +44,7 @@ module.exports = {
       <div class="kart">
         <span class="kart__ikon">${ik.onay}</span>
         <h3>Kim yazdı, ne zaman güncellendi</h3>
-        <p>Her yazının sonunda hazırlayan hekimin adı ve uzmanlığı, son güncelleme tarihi ve site editörüne ulaşabileceğiniz adres bulunur. Yazarı belirsiz bir metin bu bölümde yer almaz.</p>
+        <p>Her sayfanın alt bilgisinde sorumlu hekimin adı ve uzmanlığı ile son güncelleme tarihi bulunur. Yazarı belirsiz bir metin bu bölümde yer almaz.</p>
       </div>
       <div class="kart">
         <span class="kart__ikon">${ik.kalkan}</span>

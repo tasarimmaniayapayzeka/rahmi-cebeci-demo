@@ -21,7 +21,7 @@ function rc_ayar_alanlari() {
 		'hekim.dallar'    => ['Uzmanlık satırı', ''],
 		'marka'           => ['Marka adı', 'Başlıkta ve altbilgide'],
 		'markaAlt'        => ['Logonun alt satırı', 'Sonuna "· Muayenehane" eklenir'],
-		'guncelleme'      => ['Son güncelleme tarihi', 'Altbilgide ve hekim künyesinde, ör. 25.09.2026'],
+		'guncelleme'      => ['Son güncelleme tarihi', 'Altbilgide, ör. 25.09.2026'],
 	];
 }
 
@@ -123,7 +123,7 @@ function rc_ayar_ekrani() {
 	?>
 	<div class="wrap">
 		<h1>Site bilgileri</h1>
-		<p>Buradaki bilgiler her sayfanın başlığında, altbilgisinde ve tıbbi sayfaların hekim künyesinde görünür.</p>
+		<p>Buradaki bilgiler her sayfanın başlığında ve altbilgisinde görünür.</p>
 		<?php if (isset($_GET['kaydedildi'])) : ?>
 			<div class="notice notice-success"><p>Kaydedildi.<?php
 				if ($rapor && $rapor['sayfa']) echo ' Sayfa içeriklerinde de değiştirildi: <b>' . (int) $rapor['sayfa'] . ' sayfa</b>.';

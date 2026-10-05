@@ -7,7 +7,7 @@ Stiller `varliklar/css/g.css` + mevcut `tokens.css`/`site.css`.
 
 ## DEĞİŞMEYENLER
 - Dosya sözleşmesi aynı: `module.exports = { slug, tip, baslik, aciklama, icerik(r, ik) }`.
-  `tip:'tibbi'` künyeyi OTOMATİK basar — elle künye yazma. `js:` alanı EKLENMEZ (g.js global).
+  `tip:'tibbi'` şemada MedicalWebPage + hekim onayı verir. Sayfa sonuna künye kutusu YAZILMAZ (5 Eki 2026 kullanıcı kararı: tüm siteden kalktı, bir daha sorma). `js:` alanı EKLENMEZ (g.js global).
 - Mevcut sayfanın METNİ korunur ve yeniden yerleştirilir — içerik denetimden geçti,
   sıfırdan yazma; yalnızca G bölümlerine dağıt. Cümleleri kısaltıp sıkılaştırabilirsin.
 - Yasak dil kuralları aynen: fiyat/garanti/"en iyi"/marka adı/dış link yok;
@@ -184,7 +184,7 @@ ardından `.g-syanit` sırası bozulmamalı). Cevaplar eski SSS cevaplarından, 
   </div>
 </section>
 ```
-(Künyeyi render.js basıyor — ekleme.)
+(Künye kutusu yok — 5 Eki 2026'da kaldırıldı; ekleme.)
 
 ## AİLE PLANLARI
 - **bolgeler/**: HERO(yüz görseli+noktalar; el/boyun/vücutta uygun görsel, nokta yok) →

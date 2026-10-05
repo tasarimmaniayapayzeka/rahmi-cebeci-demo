@@ -1,5 +1,5 @@
 <?php
-/* Başlık, menü, altbilgi, künye — site/render.js'teki ust(), alt(), kunye() ile birebir aynı HTML.
+/* Başlık, menü, altbilgi — site/render.js'teki ust(), alt() ile birebir aynı HTML.
    Kaynak veri inc/veri.json (menü ve altbilgi site/veri/site.js'ten üretilir). */
 defined('ABSPATH') || exit;
 
@@ -178,15 +178,3 @@ function rc_alt() {
 </nav>';
 }
 
-/* tıbbi sayfaların sonundaki hekim künyesi (render.js kunye()) */
-function rc_kunye() {
-	$S = rc();
-	return '<div class="kunye">
-  <p>Metni hazırlayan ve tıbbi açıdan gözden geçiren: <b>' . $S['hekim']['tam'] . '</b> (' . $S['hekim']['dallar'] . ').</p>
-  <div class="kunye__tarih">
-    <span>Son güncelleme: <b>' . $S['guncelleme'] . '</b></span>
-    <span>Editör: ' . $S['iletisim']['editor'] . '</span>
-  </div>
-  <p>Buradaki anlatım herkese yöneliktir; size özel bir teşhis ya da tedavi planı sunmaz, muayenenin yerini tutmaz. Her uygulamanın etkisi kişiye göre farklı olur.</p>
-</div>';
-}

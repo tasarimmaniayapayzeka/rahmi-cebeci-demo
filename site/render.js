@@ -207,18 +207,6 @@ function alt(sayfa) {
 </nav>`;
 }
 
-/* ---------- sayfa künyesi ---------- */
-function kunye() {
-  return `<div class="kunye">
-  <p>Metni hazırlayan ve tıbbi açıdan gözden geçiren: <b>${S.hekim.tam}</b> (${S.hekim.dallar}).</p>
-  <div class="kunye__tarih">
-    <span>Son güncelleme: <b>${S.guncelleme}</b></span>
-    <span>Editör: ${S.iletisim.editor}</span>
-  </div>
-  <p>Buradaki anlatım herkese yöneliktir; size özel bir teşhis ya da tedavi planı sunmaz, muayenenin yerini tutmaz. Her uygulamanın etkisi kişiye göre farklı olur.</p>
-</div>`;
-}
-
 /* ---------- SSS şeması (FAQPage) ----------
    Soru terminalindeki soru–cevap çiftlerinden üretilir: <button class="g-ssoru">Soru</button> + hemen ardından
    <div class="g-syanit">Cevap</div>. WordPress teması (wp-tema/inc/seo.php rc_sss_sema) AYNI kuralla aynı çıktıyı
@@ -294,7 +282,7 @@ ${sssSema(govde)}</head>
 </linearGradient></defs></svg>
 ${ust(sayfa)}
 <main id="ana">
-${govde}${sayfa.tip === 'tibbi' ? '<div class="sar sar--dar">' + kunye() + '</div>' : ''}
+${govde}
 </main>
 ${alt(sayfa)}
 <script src="${varlik(r, 'varliklar/js/site.js')}" defer></script>

@@ -24,7 +24,7 @@ const kokEski = /const kok = slug => [^\n]+\n/;
 if (!kokEski.test(kod)) throw new Error('render.js: kok tanımı bulunamadı');
 kod = kod.replace(kokEski, "const kok = slug => '/';\n");
 const R = new Function('require', '__dirname', 'process',
-  kod + '\nreturn { S, ik, MENU, ALTBILGI, duzen, kunye, damga, MEDYA };')(createRequire(RENDER), KOK, process);
+  kod + '\nreturn { S, ik, MENU, ALTBILGI, duzen, damga, MEDYA };')(createRequire(RENDER), KOK, process);
 const { S, ik, MENU, ALTBILGI, MEDYA } = R;
 if (S.hedef !== 'canli') throw new Error('site.js canlı hedefi okumadı');
 const sonInceleme = (fs.readFileSync(RENDER, 'utf8').match(/lastReviewed: '([^']+)'/) || [])[1];

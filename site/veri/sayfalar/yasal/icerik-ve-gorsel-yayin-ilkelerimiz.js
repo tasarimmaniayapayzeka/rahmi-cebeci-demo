@@ -111,7 +111,7 @@ module.exports = {
         <h2>Metinleri kim yazıyor, kim onaylıyor?</h2>
         <div class="yazi">
           <p>Sitede yer alan tıbbi metinlerin hepsini muayenehanenin sahibi ve sorumlu tabibi <b>${S.hekim.tam}</b> (${S.hekim.dallar}) yazar ya da bir taslak üzerinden tıbbi doğruluğunu inceleyip onaylar. Hekimin onayından geçmeyen hiçbir tıbbi metin yayına girmez.</p>
-          <p>Tıbbi sayfaların altında birer künye yer alır. Bu kutuda metni onaylayan hekimin adı, sayfanın son kez gözden geçirildiği tarih ve bildirimleriniz için site editörünün e-posta adresi (<a href="mailto:${S.iletisim.editor}">${S.iletisim.editor}</a>) yer alır. Mevzuat bu bilgilerin yazılmasını şart koşar; bizim için asıl yararı, okuduğunuz metnin güncel olup olmadığını bir bakışta görebilmenizdir.</p>
+          <p>Her sayfanın alt bilgisinde sorumlu hekimin adı ve uzmanlığı ile sitenin son güncelleme tarihi yer alır. Bildirimleriniz için site editörünün e-posta adresi: <a href="mailto:${S.iletisim.editor}">${S.iletisim.editor}</a>. Bu bilgilerin asıl yararı, okuduğunuz metnin güncel olup olmadığını bir bakışta görebilmenizdir.</p>
         </div>
         <ol class="adimlar">
           <li>
@@ -128,7 +128,7 @@ module.exports = {
           </li>
           <li>
             <h4>Yayın tarihi ve güncelleme</h4>
-            <p>Yayına alınan sayfanın künyesine gözden geçirme tarihi işlenir.</p>
+            <p>Sayfa yayına alındığında sitenin alt bilgisindeki son güncelleme tarihi yenilenir.</p>
           </li>
         </ol>
       </div>
@@ -142,7 +142,7 @@ module.exports = {
             <li><b>Uygulama sayfaları</b> kapsamları ve uygulamanın yapılmadığı durumlar bakımından daha sık elden geçirilir.</li>
             <li><b>Yeni bir düzenleme çıktığında</b> yasal metinlerle birlikte bundan etkilenen tüm sayfalar makul bir süre içinde yenilenir.</li>
             <li><b>Muayenehanede bir uygulama değiştiğinde</b> bununla ilgili sayfa bir sonraki gözden geçirme beklenmeden düzeltilir.</li>
-            <li>Güncellenen sayfanın künyesindeki tarih de değişir; içerik aynı kaldıysa tarih yerinde durur.</li>
+            <li>Bir sayfa güncellendiğinde alt bilgideki son güncelleme tarihi de değişir; içerik aynı kaldıysa tarih yerinde durur.</li>
           </ul>
           <p>Bir sayfada yanlış, eksik ya da artık geçerliliği kalmamış bir bilgiyle karşılaşırsanız bize haber vermenizden memnuniyet duyarız. Bildiriminizi <a href="mailto:${S.iletisim.editor}">${S.iletisim.editor}</a> adresine yazabilirsiniz; her bildirim incelenir, gerekiyorsa sayfa düzeltilir.</p>
         </div>

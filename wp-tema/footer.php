@@ -1,5 +1,4 @@
-<?php defined('ABSPATH') || exit; $rc_s = rc_sayfa();
-if ($rc_s['tip'] === 'tibbi') echo '<div class="sar sar--dar">' . rc_kunye() . '</div>'; ?>
+<?php defined('ABSPATH') || exit; $rc_s = rc_sayfa(); ?>
 
 </main>
 <?php echo rc_alt(); ?>

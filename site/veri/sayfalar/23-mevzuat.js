@@ -94,7 +94,7 @@ module.exports = {
       <p>Başka bir siteye verilen bağlantı, içeriğinden sorumlu olmadığımız bir sayfayı öneriyormuşuz izlenimi yaratabilir. Bu nedenle bilgilendirme sayfalarında dış bağlantı yer almaz. Site dışına açılan adresler yalnızca bize ulaşmanızı kolaylaştıran kanallardır: WhatsApp hattı ve haritadaki yol tarifi gibi. Kaynaklarla ilgili sorularınızı muayenede sorabilirsiniz.</p>
 
       <h3>Sayfaların sonundaki hekim adı ve tarih ne işe yarar?</h3>
-      <p>Tıbbi bilgi içeren her sayfanın sonunda içeriği hazırlayan hekimin adı ve uzmanlığı, metnin en son gözden geçirildiği tarih ve editöre yazabileceğiniz e-posta adresi bulunur. Bu sayede bir metnin güncel olup olmadığını ve hangi hekimin sorumluluğunda hazırlandığını kendiniz kontrol edebilirsiniz. Sayfanın alt kısmında muayenehaneye ait künye bilgileri de yer alır.</p>
+      <p>Her sayfanın alt bilgisinde muayenehanenin sorumlu tabibi olan hekimin adı ve uzmanlığı ile sitenin son güncelleme tarihi bulunur. Bu sayede bir metnin güncel olup olmadığını ve hangi hekimin sorumluluğunda hazırlandığını kendiniz kontrol edebilirsiniz.</p>
 
       <h3>Denetim iki ayrı kurumda yapılabilir</h3>
       <p>Sağlıkla ilgili tanıtım içerikleri bir yandan il sağlık müdürlükleri ile Sağlık Bakanlığının, öte yandan Reklam Kurulu’nun incelemesine konu olabilir. Aynı metin iki farklı çerçeveden ayrı ayrı değerlendirilebilir. Sitedeki içerik bu nedenle tek bir düzenlemeye göre değil, yukarıdaki başlıkların tümü birlikte gözetilerek yazılmıştır.</p>

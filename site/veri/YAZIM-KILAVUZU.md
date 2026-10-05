@@ -37,7 +37,7 @@ YASAK: fiyat/ücret/indirim/kampanya/paket · "fiyat bilgisi alın" · hasta yor
 "10.000 mutlu danışan" tipi sayılar · öncesi–sonrası tarifi · "ücretsiz muayene/ön muayene" ·
 "en iyi", "referans merkezi", "devrim", "eşsiz", "mucize", "garanti", "kesin", "sıfır risk",
 "iz bırakmadan", "ağrısız" · başka klinik/hekimle kıyas · yönlendirme vaadi · emoji.
-ZORUNLU: her tıbbi sayfa `tip: 'tibbi'` (künye ve "son güncelleme" otomatik basılır) ·
+ZORUNLU: her tıbbi sayfa `tip: 'tibbi'` (şemada hekim onayı; görünür künye kutusu YOK — 5 Eki 2026 kullanıcı kararı, sorma) ·
 "sonuçlar kişiden kişiye değişir" tonu · kontrendikasyon ve "bu ne değildir" bölümleri korunur ·
 acil uyarı kutuları korunur.
 

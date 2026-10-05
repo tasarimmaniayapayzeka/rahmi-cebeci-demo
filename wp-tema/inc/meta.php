@@ -44,7 +44,7 @@ function rc_meta_kutu($post) {
 		<p><label><b>Sayfa türü</b>
 			<select name="rc_tip">
 				<option value="bilgi" <?php selected($m('_rc_tip'), 'bilgi'); ?>>Genel bilgi sayfası</option>
-				<option value="tibbi" <?php selected($m('_rc_tip'), 'tibbi'); ?>>Tıbbi içerik (sonuna hekim künyesi eklenir)</option>
+				<option value="tibbi" <?php selected($m('_rc_tip'), 'tibbi'); ?>>Tıbbi içerik (şemada hekim onayı)</option>
 			</select></label></p>
 		<p><label><input type="checkbox" name="rc_noindex" value="1" <?php checked((bool) $m('_rc_noindex')); ?>>
 			Bu sayfayı arama motorlarında gösterme</label></p>

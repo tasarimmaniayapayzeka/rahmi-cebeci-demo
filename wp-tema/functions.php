@@ -1,8 +1,8 @@
 <?php
 /* ============================================================
    Dr. Rahmi Cebeci — WordPress teması (34-Rahmi-Cebeci)
-   Görünüm statik sürümle (site/render.js) birebir aynıdır: başlık, menü, altbilgi ve
-   künye aynı HTML'i üretir; sayfa gövdesi Klasik Editör'de düz HTML olarak durur.
+   Görünüm statik sürümle (site/render.js) birebir aynıdır: başlık, menü ve altbilgi
+   aynı HTML'i üretir; sayfa gövdesi Klasik Editör'de düz HTML olarak durur.
    Stil/betik/görseller sitenin kökündeki /varliklar/ klasöründedir (git ile gelir).
    ============================================================ */
 defined('ABSPATH') || exit;
@@ -20,7 +20,7 @@ require RC_TEMA . '/inc/ayarlar.php';    /* "Site bilgileri" ekranı: telefon, a
 require RC_TEMA . '/inc/temizlik.php';   /* WordPress'in başlığa/gövdeye eklediklerini kapatır */
 require RC_TEMA . '/inc/editor.php';     /* Klasik Editör + TinyMCE: işaretleme korunur */
 require RC_TEMA . '/inc/meta.php';       /* sayfa ayarları kutusu: SEO başlığı, açıklama, tür, noindex, betikler */
-require RC_TEMA . '/inc/sablon.php';     /* başlık, menü, altbilgi, künye */
+require RC_TEMA . '/inc/sablon.php';     /* başlık, menü, altbilgi */
 require RC_TEMA . '/inc/seo.php';        /* <head>: title, meta, canonical, og, JSON-LD */
 
 add_action('after_setup_theme', function () {

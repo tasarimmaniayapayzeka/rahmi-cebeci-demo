@@ -420,13 +420,6 @@ a.kart:hover .kart__ok{gap:11px}
 .yazi blockquote{margin:1.5em 0;padding:16px 20px;background:var(--sicak);
   border-left:3px solid var(--bakir);border-radius:0 var(--r-sm) var(--r-sm) 0}
 
-/* ---------- künye ---------- */
-.kunye{margin-top:var(--bolum);padding:20px 22px;background:var(--buz-2);
-  border:1px solid var(--cizgi);border-radius:var(--r-md);font-size:.83rem;
-  color:var(--sessiz);display:flex;flex-direction:column;gap:8px}
-.kunye b{color:var(--murekkep)}
-.kunye__tarih{display:flex;flex-wrap:wrap;gap:6px 20px;font-variant-numeric:tabular-nums}
-
 /* ---------- alt bilgi ---------- */
 .alt-bilgi{background:var(--gece);color:var(--gece-metin-2);padding-block:clamp(2.5rem,5vw,3.75rem) 0}
 .alt-bilgi a{color:var(--gece-metin-2);text-decoration:none}
