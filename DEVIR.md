@@ -1,11 +1,11 @@
 # DEVİR — 34-Rahmi-Cebeci
 
-**Son güncelleme: 5 Ekim 2026 (3 etkileşimli araç PASİFE alındı, canlıda doğrulandı; öncesi: görseller 2K + etken madde adları)**
+**Son güncelleme: 5 Ekim 2026 (künye kutusu kaldırıldı + 3 etkileşimli araç PASİFTE, canlıda doğrulandı; öncesi: görseller 2K + etken madde adları)**
 
 ## ▶ BURADAN DEVAM ET
 
 **Durum:** rahmicebeci.com.tr WordPress + Klasik Editör olarak canlı, **arama motorlarına kapalı (noindex)**. Yerel = GitHub = sunucu
-(dağıtım #23). 66 sayfa canlıda statikle birebir (gövde); bütün metin ve resimler panelden
+(dağıtım #24). 66 sayfa canlıda statikle birebir (gövde); bütün metin ve resimler panelden
 düzenlenebiliyor. **Yarım kalan iş yok.**
 
 **Sonraki oturumda ilk iş (özet):**
@@ -66,6 +66,13 @@ düzenlenebiliyor. **Yarım kalan iş yok.**
   `rc/v1/kurulum` artık sonunda `litespeed_purge_all` çağırıyor.
 - **Imunify Security eklentisi** her sayfanın sonuna gizli tuzak bağlantısı koyuyor: `/imunify-bot-check` — **asla ziyaret edilmez**
   (bağlantı izleyen tarama IP'yi yakar). Genel kurala eklendi (~/.claude/CLAUDE.md); karşılaştırma betiği yok sayar.
+
+**5 Eki — HEKİM KÜNYE KUTUSU TÜM SİTEDEN KALDIRILDI (b7bc4de, dağıtım #24, canlıda; kullanıcı: "bu alan kalksın tüm siteden
+sorma bi daha"):** tıbbi sayfaların sonundaki "Metni hazırlayan ve tıbbi açıdan gözden geçiren… / Son güncelleme / Editör / muayenenin
+yerini tutmaz" kutusu render.js kunye() ve tema (footer.php, sablon.php rc_kunye, site.css .kunye) ile birlikte silindi. **Geri ekleme,
+önerme, sorma.** Kutuyu anlatan cümleler alt bilgiye göre düzeltildi: mevzuat (SSS "hekim adı ve tarih"), bilgi hub (şerit + kart),
+yayın ilkeleri (3 yer; "Mevzuat bu bilgilerin yazılmasını şart koşar" cümlesi çıktı). Duranlar: alt bilgide "Muayenehane sahibi ve
+sorumlu tabip" + "Son güncelleme", şemada reviewedBy/lastReviewed. Yerel 66/66 birebir; canlı iletişim + PRP'de kutu 0.
 
 **5 Eki — 3 YENİ ETKİLEŞİMLİ ARAÇ (kullanıcı: "yapay zekâ ile ne gibi şeyler ekstra yapılabilir… havalı, müşteriye dönüşecek";
 3 ajanla dünya örnekleri + Türkiye mevzuatı araştırıldı; kullanıcı ilk üç fikri seçti):**
