@@ -208,8 +208,19 @@ function rc_ilk_kurulum(bool $ustune, int $medya_sinir = 0) {
 	   4 Eki: do_action('litespeed_purge_all') REST isteğinde işlemedi — 28 Eyl'den kalan sayfalar (masaüstü + mobil) silinmiş
 	   görselleri istiyordu. LiteSpeed sunucusu yanıttaki X-LiteSpeed-Purge başlığını doğrudan uygular (bütün sürümler). */
 	if (has_action('litespeed_purge_all') || defined('LSCWP_V')) do_action('litespeed_purge_all');
-	if (!headers_sent()) { header('X-LiteSpeed-Purge: *', false); $r['adimlar'][] = 'LiteSpeed önbelleği temizlendi (X-LiteSpeed-Purge: *)'; }
+	if (!headers_sent()) { header('X-LiteSpeed-Purge: *', false); $r['adimlar'][] = 'LiteSpeed önbelleği temizleme isteği (X-LiteSpeed-Purge: *)'; }
 	return $r;
+}
+
+/* 6 Eki: kurulum isteğinde sayfa güncellenince LiteSpeed eklentisi kendi X-LiteSpeed-Purge başlığını (yalnız o sayfaların
+   etiketleri) gönderip bizim "*" başlığımızın yerine geçiriyor → değişmeyen sayfalar 4 Eki'den kalan, silinmiş görselleri isteyen
+   önbellek kopyasından sunuldu (13 sayfa, 215 kırık adres; ilk ziyaret eden telefonda boş kutular). Bu yüzden önbellek, sayfa
+   güncellemeyen AYRI bir istekte temizlenir: kurulum-dongu.js en sonda rc/v1/onbellek çağırır. */
+function rc_onbellek_temizle() {
+	if (has_action('litespeed_purge_all') || defined('LSCWP_V')) do_action('litespeed_purge_all');
+	if (headers_sent()) return ['tamam' => false, 'neden' => 'başlıklar gönderilmiş'];
+	header('X-LiteSpeed-Purge: *');
+	return ['tamam' => true, 'zaman' => current_time('mysql')];
 }
 
 add_action('admin_menu', function () {
@@ -310,6 +321,7 @@ add_action('rest_api_init', function () {
 	register_rest_route('rc/v1', '/kurulum', ['methods' => 'POST', 'permission_callback' => $yonetici,
 		'callback' => fn(WP_REST_Request $r) => array_merge(rc_ilk_kurulum((bool) $r->get_param('ustune_yaz'),
 			max(1, (int) ($r->get_param('medya_sinir') ?: 12))), ['durum' => rc_durum()])]);
+	register_rest_route('rc/v1', '/onbellek', ['methods' => 'POST', 'permission_callback' => $yonetici, 'callback' => fn() => rc_onbellek_temizle()]);
 });
 
 if (defined('WP_CLI') && WP_CLI) {

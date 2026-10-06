@@ -67,6 +67,17 @@ düzenlenebiliyor. **Yarım kalan iş yok.**
 - **Imunify Security eklentisi** her sayfanın sonuna gizli tuzak bağlantısı koyuyor: `/imunify-bot-check` — **asla ziyaret edilmez**
   (bağlantı izleyen tarama IP'yi yakar). Genel kurala eklendi (~/.claude/CLAUDE.md); karşılaştırma betiği yok sayar.
 
+**6 Eki — ⚠️ MOBİLDE GÖRSEL ÇIKMIYOR (2. kez; hekim telefonunda görüldü) — KÖK NEDEN VE KALICI ÇÖZÜM:**
+- 13 sayfa (bölgeler, cilt sorunları, uygulamalar hub, mevzuat, hazırlık listesi, neden yapmıyoruz, 7 uygulama) LiteSpeed önbelleğinde
+  4 Eki'den kalan kopyadan sunuluyordu; o kopya 5 Eki 2K yenilemesinde SİLİNEN `-hd` görselleri istiyordu → 215 kırık adres. Masaüstü,
+  iPhone, Android aynı kopyayı alıyordu; bizim tarayıcılarda eski görseller 1 yıllık önbellekte durduğu için fark edilmedi.
+- Neden temizlenmedi: kurulum isteğinde sayfa güncellenince LiteSpeed eklentisi kendi X-LiteSpeed-Purge başlığını (yalnız o sayfalar)
+  gönderip bizim `*` başlığımızı eziyor. 5 Eki'deki "canlıda doğrulandı" kontrolü REST/veritabanına bakıyordu, ziyaretçiye giden
+  HTML'e değil — HATA BUYDU.
+- Çözüm: `rc/v1/onbellek` (yalnız temizlik, sayfa güncellemez) → `kurulum-dongu.js` en sonda çağırır. **Her canlı kurulumdan sonra
+  ZORUNLU: `node wp-yerel/araclar/canli-mobil-denetim.js <depo> <parola>`** (66 sayfa, 1,5 sn arayla, ~2 dk; kırık 0 ve önbellek
+  tarihleri bugün olmalı). 6 Eki: temizlik sonrası 66 sayfa / 1322 adres kırık 0, hepsi taze; /bolgeler iPhone kimliğiyle çizildi, görseller var.
+
 **5 Eki — İLETİŞİM KAPAĞI DEĞİŞTİ (f233897, dağıtım #25, canlıda; kullanıcı: "sağdaki real foto kalksın… emlak sitesi gibi olmuş"):**
 gerçek bekleme salonu fotoğrafı (`foto/klinik-bekleme-2`) yerine temsilî YZ görseli `gorsel/iletisim-randevu.webp` (koyu taş masada deri
 randevu defteri, dolma kalem, telefon; Nano Banana Pro 2K, 2 aday ~2-4 kredi, ham: `gorsel-ham/iletisim/`). Muayenehane içi DEĞİL (md. 7e),
