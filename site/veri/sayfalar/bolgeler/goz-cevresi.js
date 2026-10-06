@@ -26,7 +26,6 @@ module.exports = {
     <div class="g-tarama" data-gr>
       <img src="${r}varliklar/gorsel/bolge-goz-cevresi.webp" width="1400" height="788" alt="Alt göz kapağı ve göz kenarının yakın plan üç boyutlu çizimi" loading="eager">
       <div class="g-isin"></div>
-      <span class="g-ainot">Temsilî görsel · yapay zekâ ile üretildi</span>
       <div class="g-hud"><b>Milimetrenin altında deri</b><div class="g-cizgi"></div><span>Burada karar eşiği, yüzün diğer bölgelerinden daha yüksek tutulur.</span></div>
     </div>
   </div>
@@ -85,7 +84,6 @@ module.exports = {
       <div class="g-atlas" data-gr>
         <div class="g-atlas-kap">
           <img src="${r}varliklar/gorsel/bolge-goz-atlas.webp" width="900" height="1200" alt="Göz çevresinin yakından görünümü; dış köşede ince çizgiler" loading="lazy">
-          <span class="g-ainot">Temsilî görsel · yapay zekâ ile üretildi</span>
           <div class="g-rozetk" data-grozet><b>Göz altı</b><span>Koyu halkanın arkasında beş ayrı neden olabilir; hangisi olduğu bilinmeden işlem düşünülmez.</span></div>
         </div>
       </div>

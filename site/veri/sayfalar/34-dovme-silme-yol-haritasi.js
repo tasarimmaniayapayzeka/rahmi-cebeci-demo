@@ -105,7 +105,6 @@ module.exports = {
     <div class="g-tarama" data-gr>
       <img src="${r}varliklar/gorsel/uyg-pico-lazer-dovme-silme-kapak.webp" width="1400" height="788" alt="Eldivenli elde pico lazer başlığı ve ön koldaki ince çizgili dövme" loading="eager">
       <div class="g-isin"></div>
-      <span class="g-ainot">Temsilî görsel · yapay zekâ ile üretildi</span>
       <div class="g-hud"><b>Sekiz soru, yaklaşık bir dakika</b><div class="g-cizgi"></div><span>Sonunda tahmini aralık, takvim ve dikkat edilecekler</span></div>
     </div>
   </div>

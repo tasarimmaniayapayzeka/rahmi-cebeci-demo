@@ -26,7 +26,6 @@ module.exports = {
     <div class="g-tarama" data-gr>
       <img src="${r}varliklar/gorsel/bolge-sacli-deri.webp" width="1400" height="788" alt="Saç çizgisi düzgün, sade bir fonda çekilmiş kadın portresi" loading="eager">
       <div class="g-isin"></div>
-      <span class="g-ainot">Temsilî görsel · yapay zekâ ile üretildi</span>
     </div>
   </div>
 </section>
@@ -64,7 +63,6 @@ module.exports = {
       <div class="g-atlas" data-gr>
         <div class="g-atlas-kap">
           <img src="${r}varliklar/gorsel/grup-sac.webp" width="1600" height="900" alt="Arkadan görülen, saç ayrım çizgisi belirgin koyu saçlı bir kadın başı" loading="lazy">
-          <span class="g-ainot">Temsilî görsel · yapay zekâ ile üretildi</span>
           <div class="g-rozetk" data-grozet><b>Androgenetik dökülme</b><span>Yıllar içinde yavaşça ilerler; plan da uzun soluklu yapılır.</span></div>
         </div>
       </div>

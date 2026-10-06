@@ -26,7 +26,6 @@ module.exports = {
     <div class="g-tarama" data-gr>
       <img src="${r}varliklar/gorsel/ic3d-gece-yuz.webp" width="900" height="1200" alt="Koyu tonlarda, sakin ifadeli bir yüz çalışması" loading="eager">
       <div class="g-isin"></div>
-      <span class="g-ainot">Temsilî görsel · yapay zekâ ile üretildi</span>
       <div class="g-hud"><b>Tek ölçüt</b><div class="g-cizgi"></div><span>Uzmanlık dalı ve Bakanlık yetki belgesi</span></div>
     </div>
   </div>
@@ -139,7 +138,7 @@ module.exports = {
         </div>
       </div>
       <div class="g-kutu g-b2 g-kutu--gece" data-gr style="--d:70ms"><span class="g-ket">Hekimin notu</span><p>“Neyin yapılmayacağını söylemek de hekimliğin bir parçasıdır.”</p></div>
-      <div class="g-kutu g-b2 g-kutu--gorsel" data-gr style="--d:140ms"><img src="${r}varliklar/gorsel/grup-saglik.webp" alt="Üstten görünen hekim çalışma masası" loading="lazy"><span class="g-ainot">Temsilî görsel · yapay zekâ ile üretildi</span></div>
+      <div class="g-kutu g-b2 g-kutu--gorsel" data-gr style="--d:140ms"><img src="${r}varliklar/gorsel/grup-saglik.webp" alt="Üstten görünen hekim çalışma masası" loading="lazy"></div>
       <div class="g-kutu g-b2" data-gr style="--d:210ms">
         <span class="g-ket">Sizin hakkınız</span>
         <p><b style="color:var(--murekkep)">Sormaktan çekinmeyin</b><br>İşlemi yapacak kişiye hekim olup olmadığını, bu işleme ilişkin yetki belgesinin bulunup bulunmadığını işlemden önce sorabilirsiniz; bu sizin hakkınızdır.</p>

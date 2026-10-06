@@ -26,7 +26,6 @@ module.exports = {
     <div class="g-tarama" data-gr>
       <img src="${r}varliklar/gorsel/ic3d-dudak.webp" width="1400" height="788" alt="Dudak kenarını ve yüzey dokusunu yakından gösteren üç boyutlu çizim" loading="eager">
       <div class="g-isin"></div>
-      <span class="g-ainot">Temsilî görsel · yapay zekâ ile üretildi</span>
       <div class="g-hud"><b>Her gülüşte görünür</b><div class="g-cizgi"></div><span>Konuşma, gülümseme, yemek: dudaktaki her değişiklik en çok bu anlarda göze çarpar.</span></div>
     </div>
   </div>
@@ -52,7 +51,6 @@ module.exports = {
       <div class="g-atlas" data-gr>
         <div class="g-atlas-kap">
           <img src="${r}varliklar/gorsel/yuz-3d-c.webp" width="900" height="1200" alt="Dudağın yüz bütünündeki yerini gösteren, sola dönük üç boyutlu kadın profili" loading="lazy">
-          <span class="g-ainot">Temsilî görsel · yapay zekâ ile üretildi</span>
           <div class="g-rozetk" data-grozet><b>Hacim</b><span>Ne kadar dolgunluğun uygun olduğunu iki dudağın oranı ve yüz genişliği söyler.</span></div>
         </div>
       </div>

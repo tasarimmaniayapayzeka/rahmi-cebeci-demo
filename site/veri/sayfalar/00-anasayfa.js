@@ -216,7 +216,6 @@ module.exports = {
       </div>
       <div class="yolc-sahne" data-reveal>
         <div class="yolc-ciz" aria-hidden="true"><i></i></div>
-        <span class="g-ainot">Temsilî görsel · yapay zekâ ile üretildi</span>
         ${['Muayene', 'Plan', 'İşlem günü', 'Kontroller'].map((ad, i) =>
           `<div class="yolc-adim"><span class="yolc-no">${i + 1}</span><img src="${r}varliklar/gorsel/asama-${['muayene', 'plan', 'gun', 'takip'][i]}.webp" width="400" height="400" alt="" loading="lazy"><b>${ad}</b><p></p></div>`).join('')}
       </div>

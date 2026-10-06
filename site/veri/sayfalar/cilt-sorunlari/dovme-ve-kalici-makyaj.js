@@ -27,7 +27,6 @@ module.exports = {
     <div class="g-tarama" data-gr>
       <img src="${r}varliklar/gorsel/sorun-dovme-ve-kalici-makyaj.webp" width="1400" height="788" alt="Lazer uygulamasında kullanılan başlığın yakın görünümü" loading="eager">
       <div class="g-isin"></div>
-      <span class="g-ainot">Temsilî görsel · yapay zekâ ile üretildi</span>
     </div>
   </div>
 </section>

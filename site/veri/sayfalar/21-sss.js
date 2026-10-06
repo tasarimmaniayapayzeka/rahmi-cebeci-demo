@@ -26,7 +26,6 @@ module.exports = {
     <div class="g-tarama" data-gr>
       <img src="${r}varliklar/gorsel/anasayfa-hero.webp" width="1400" height="788" alt="Aydınlık bir odada oturan, soru soran bir kadın" loading="eager">
       <div class="g-isin"></div>
-      <span class="g-ainot">Temsilî görsel · yapay zekâ ile üretildi</span>
       <div class="g-hud"><b>İki bölüm, yirmi bir soru</b><div class="g-cizgi"></div><span>Randevu · hazırlık · dövme silme · sonrası · kapsam</span></div>
     </div>
   </div>

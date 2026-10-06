@@ -25,7 +25,6 @@ module.exports = {
     <div class="g-tarama" data-gr>
       <img src="${r}varliklar/gorsel/uyg-karbon-peeling.webp" width="1400" height="788" alt="Mermer bir yüzeyde spatulayla yayılmış mat siyah losyonun yakın planı" loading="eager">
       <div class="g-isin"></div>
-      <span class="g-ainot">Temsilî görsel · yapay zekâ ile üretildi</span>
     </div>
   </div>
 </section>
@@ -89,7 +88,7 @@ module.exports = {
 <p>Deriyi ışığa duyarlı yapan ilaçları ve sarı kantaron gibi bitkisel ürünleri soruyoruz. Akne için ağızdan A vitamini türevi bir ilaç kullandıysanız ya da asitli ürünlerinizi henüz bırakmadıysanız seans ertelenir. Daha önce bir yüz ürününe ya da uyuşturucu kreme tepki verdiyseniz ürünün adını getirin; losyon içeriği buna göre seçilir ya da uygulamadan vazgeçilir.</p>
 <p>Birçok üründe yanan, gerilen ya da kızaran bir cildin koruyucu tabakası zaten zayıflamıştır; lazerden önce bu tabakanın onarılması gerekir. Güneşle alevlenen deri hastalıkları, vitiligo gibi renk kaybıyla giden tablolar, keloid eğilimi, gebelik ve emzirme, yara iyileşmesini bozan durumlar ve alan içinde incelenmemiş pigmentli lekeler uygulamaya engeldir.</p>
       </div>
-      <div class="g-kutu g-b2 g-kutu--gorsel" data-gr style="--d:70ms"><img src="${r}varliklar/gorsel/uyg-karbon-peeling-2.webp" alt="Cilt bakımında kullanılan ürün şişeleri" loading="lazy"><span class="g-ainot">Temsilî görsel · yapay zekâ ile üretildi</span></div>
+      <div class="g-kutu g-b2 g-kutu--gorsel" data-gr style="--d:70ms"><img src="${r}varliklar/gorsel/uyg-karbon-peeling-2.webp" alt="Cilt bakımında kullanılan ürün şişeleri" loading="lazy"></div>
       <div class="g-kutu g-b2 g-kutu--gece" data-gr><span class="g-ket">Hekimin notu</span><p>"Günlük bakım oturmadıysa seans sayısını artırmak çözüm olmaz."</p></div>
       <div class="g-kutu g-b2" data-gr style="--d:70ms">
         <span class="g-ket">Seans sonrası</span>

@@ -26,7 +26,6 @@ module.exports = {
     <div class="g-tarama" data-gr>
       <img src="${r}varliklar/foto/hekim-koltuk.webp" width="1400" height="788" alt="${S.hekim.tam} muayenehanesinde koltukta otururken" loading="eager">
       <div class="g-isin"></div>
-      <!-- gerçek fotoğraf: yapay zekâ rozeti bilinçli olarak YOK -->
       <div class="g-hud"><b>Dört adım</b><div class="g-cizgi"></div><span>Muayene → plan → uygulama günü → takip</span></div>
     </div>
   </div>

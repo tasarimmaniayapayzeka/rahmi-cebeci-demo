@@ -26,7 +26,6 @@ module.exports = {
     <div class="g-tarama" data-gr>
       <img src="${r}varliklar/gorsel/yuz-3d.webp" width="900" height="1200" alt="Yandan görülen bir kadın yüzünün üç boyutlu çizimi" loading="eager">
       <div class="g-isin"></div>
-      <span class="g-ainot">Temsilî görsel · yapay zekâ ile üretildi</span>
       <div class="g-hud"><b>12 madde, yaklaşık iki dakika</b><div class="g-cizgi"></div><span>Sonunda randevuya götürebileceğiniz bir özet oluşur</span></div>
     </div>
   </div>

@@ -97,7 +97,6 @@ module.exports = {
     <div class="g-tarama" data-gr>
       <img src="${r}varliklar/gorsel/uyg-hekim-muayenesi.webp" width="1400" height="788" alt="Muayene masasında dermatoskop ve büyüteç" loading="eager">
       <div class="g-isin"></div>
-      <span class="g-ainot">Temsilî görsel · yapay zekâ ile üretildi</span>
       <div class="g-hud"><b>${S.sorunlar.length} konu, ${Object.keys(UYG_AD).length - DISARIDA.size} uygulama</b><div class="g-cizgi"></div><span>Sitedeki sayfalardan derlenen bağlantılar</span></div>
     </div>
   </div>

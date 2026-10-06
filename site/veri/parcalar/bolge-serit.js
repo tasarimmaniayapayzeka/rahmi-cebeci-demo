@@ -41,7 +41,7 @@ function seritUret(r) {
     <div class="serit__raf" role="tablist" aria-label="Uygulama bölgeleri">
     ${ogeler}
     </div>
-    <div class="serit__alt"><div class="serit__ilerleme" aria-hidden="true"><i></i></div><span>Temsilî görseller · yapay zekâ ile üretildi</span></div>
+    <div class="serit__alt"><div class="serit__ilerleme" aria-hidden="true"><i></i></div></div>
   </div>`;
 }
 

@@ -85,7 +85,6 @@ module.exports = {
     <div class="g-tarama" data-gr>
       <img src="${r}varliklar/gorsel/sorun-cilt-tonu-ve-leke.webp" width="1400" height="788" alt="Elmacık bölgesinde açık kahverengi lekeler bulunan yüz cildinin yakın çekimi" loading="eager">
       <div class="g-isin"></div>
-      <span class="g-ainot">Temsilî görsel · yapay zekâ ile üretildi</span>
       <div class="g-hud"><b>Sekiz soru</b><div class="g-cizgi"></div><span>Sonunda öne çıkan alışkanlıklar ve pratik öneriler</span></div>
     </div>
   </div>

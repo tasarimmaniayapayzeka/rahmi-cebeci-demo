@@ -26,7 +26,6 @@ module.exports = {
     <div class="g-tarama" data-gr>
       <img src="${r}varliklar/gorsel/sorun-goz-alti-koyulugu.webp" width="1400" height="788" alt="Doğal ışıkta göz çevresi ve göz altı bölgesinin yakın plan görünümü" loading="eager">
       <div class="g-isin"></div>
-      <span class="g-ainot">Temsilî görsel · yapay zekâ ile üretildi</span>
     </div>
   </div>
 </section>

@@ -25,7 +25,6 @@ module.exports = {
     <div class="g-tarama" data-gr>
       <img src="${r}varliklar/gorsel/uyg-fraksiyonel-lazer.webp" width="1400" height="788" alt="Cilt yüzeyinde düzenli aralıklarla dizilmiş mikro ışık noktalarının üç boyutlu çizimi" loading="eager">
       <div class="g-isin"></div>
-      <span class="g-ainot">Temsilî görsel · yapay zekâ ile üretildi</span>
     </div>
   </div>
 </section>
@@ -104,7 +103,7 @@ module.exports = {
           <li><b>İncelenmemiş ben ya da değişen leke:</b> önce büyütmeli olarak bakılır; kuşkulu lezyonun üzerine atım yapılmaz.</li>
         </ul>
       </div>
-      <div class="g-kutu g-b2 g-kutu--gorsel" data-gr><img src="${r}varliklar/gorsel/uyg-fraksiyonel-lazer-2.webp" alt="Yanak derisinde ince ışık noktalarından oluşan düzenli ızgara" loading="lazy"><span class="g-ainot">Temsilî görsel · yapay zekâ ile üretildi</span></div>
+      <div class="g-kutu g-b2 g-kutu--gorsel" data-gr><img src="${r}varliklar/gorsel/uyg-fraksiyonel-lazer-2.webp" alt="Yanak derisinde ince ışık noktalarından oluşan düzenli ızgara" loading="lazy"></div>
       <div class="g-kutu g-b2 g-kutu--cta" data-gr><h3>Takviminize uygun bir plan kuralım</h3><p>Derinlik, iyileşmeye ayırabileceğiniz günler konuşulmadan seçilmez.</p><a class="dgm dgm--altin" href="${r}iletisim/">Randevu isteyin</a></div>
       <div class="kutu kutu--acil g-b4" data-gr>
         <b>Kontrol gününü beklemeyin</b>

@@ -25,7 +25,6 @@ module.exports = {
     <div class="g-tarama" data-gr>
       <img src="${r}varliklar/gorsel/uyg-sac-prp.webp" width="1400" height="788" alt="Işıkta parlayan sağlıklı saç tellerinin yakın plan görüntüsü" loading="eager">
       <div class="g-isin"></div>
-      <span class="g-ainot">Temsilî görsel · yapay zekâ ile üretildi</span>
     </div>
   </div>
 </section>

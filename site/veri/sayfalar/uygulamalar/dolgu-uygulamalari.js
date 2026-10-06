@@ -25,7 +25,6 @@ module.exports = {
     <div class="g-tarama" data-gr>
       <img src="${r}varliklar/gorsel/uyg-dolgu-uygulamalari.webp" width="1400" height="788" alt="Cam yüzey üzerinde duran berrak jel damlalarının yakın plan görünümü" loading="eager">
       <div class="g-isin"></div>
-      <span class="g-ainot">Temsilî görsel · yapay zekâ ile üretildi</span>
       <div class="g-hud" data-ghud><b>Altı bölge, tek yüz</b><div class="g-cizgi"></div><span>Bir bölgeye verilen destek komşusunu da etkiler; bölgeler birlikte düşünülür.</span></div>
     </div>
   </div>
@@ -169,7 +168,7 @@ module.exports = {
         </ul>
         <p>Önceki dolgularınıza ait bir belge, ürün etiketi ya da kayıt varsa randevuya getirmeniz, planın güvenle kurulmasına doğrudan katkı sağlar.</p>
       </div>
-      <div class="g-kutu g-b2 g-kutu--gorsel" data-gr style="--d:70ms"><img src="${r}varliklar/gorsel/uyg-dolgu-kutu.webp" alt="Profilden doğal oranlı dudak ve çene" loading="lazy"><span class="g-ainot">Temsilî görsel · yapay zekâ ile üretildi</span></div>
+      <div class="g-kutu g-b2 g-kutu--gorsel" data-gr style="--d:70ms"><img src="${r}varliklar/gorsel/uyg-dolgu-kutu.webp" alt="Profilden doğal oranlı dudak ve çene" loading="lazy"></div>
       <div class="g-kutu g-b3 g-kutu--gece" data-gr><span class="g-ket">Hekimin notu</span><p>“Dolguda asıl beceri, nerede duracağını bilmektir. Şişlik çekilip yüz son hâlini göstermeden ürün eklenmez.”</p></div>
       <div class="g-kutu g-b3 g-kutu--cta" data-gr style="--d:70ms"><h3>Bölgenizi birlikte inceleyelim</h3><p>Hangi bölgenin, hangi sırayla ele alınacağı muayenede netleşir.</p><a class="dgm dgm--altin" href="${r}iletisim/">Randevu isteyin</a></div>
     </div>

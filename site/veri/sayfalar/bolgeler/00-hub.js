@@ -47,7 +47,6 @@ module.exports = {
     <div class="g-tarama" data-gr>
       <img src="${r}varliklar/gorsel/bolgeler-hero.webp" width="1400" height="788" alt="Yüzü, boynu ve omuzları yumuşak ışıkta görünen kadın" loading="eager">
       <div class="g-isin"></div>
-      <span class="g-ainot">Temsilî görsel · yapay zekâ ile üretildi</span>
       <button class="g-nokta" data-gn="ust" style="--x:56%;--y:12%" aria-label="Üst yüz"><span data-ad="Üst yüz"></span></button>
       <button class="g-nokta" data-gn="orta" style="--x:49%;--y:31%" aria-label="Orta yüz"><span data-ad="Orta yüz"></span></button>
       <button class="g-nokta" data-gn="alt" style="--x:59%;--y:46%" aria-label="Alt yüz"><span data-ad="Alt yüz"></span></button>
@@ -170,7 +169,7 @@ ${S.bolgeler.map(([ad, s], i) => `
           <li><b>Yazılı bilgilendirme ve onam.</b>&nbsp;Amaçlanan etki, görülebilecek istenmeyen durumlar ve böyle bir durumda neler yapılacağı size yazılı olarak verilir. Onamınız alınmadan işleme geçilmez; kontrol tarihini aynı gün birlikte belirleriz.</li>
         </ol>
       </div>
-      <div class="g-kutu g-b2 g-kutu--gorsel" data-gr style="--d:70ms"><img src="${r}varliklar/gorsel/hekim-masasi.webp" alt="Hekim masasında, açık bir not defterinin yanında masaya konmuş, üst üste duran eller" loading="lazy"><span class="g-ainot">Temsilî görsel · yapay zekâ ile üretildi</span></div>
+      <div class="g-kutu g-b2 g-kutu--gorsel" data-gr style="--d:70ms"><img src="${r}varliklar/gorsel/hekim-masasi.webp" alt="Hekim masasında, açık bir not defterinin yanında masaya konmuş, üst üste duran eller" loading="lazy"></div>
     </div>
     <div class="izgara izgara--2" style="margin-top:22px">
       <div class="kutu kutu--uyari" data-gr>
@@ -241,7 +240,6 @@ ${S.bolgeler.map(([ad, s], i) => `
     <div class="pus" data-pus>
       <div class="pus-merkez" data-gr>
         <img src="${r}varliklar/gorsel/bolge-yuz.webp" width="1400" height="788" alt="Yüz bölgesini temsil eden görsel" loading="lazy">
-        <span class="g-ainot">Temsilî görsel · yapay zekâ ile üretildi</span>
         <div class="pus-kart"><b></b><p></p><a class="dgm dgm--bir dgm--kucuk" href="#">Bu bölgenin sayfasını açın</a></div>
       </div>
       <div class="pus-liste" data-gr>

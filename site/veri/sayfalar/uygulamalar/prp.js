@@ -25,7 +25,6 @@ module.exports = {
     <div class="g-tarama" data-gr>
       <img src="${r}varliklar/gorsel/uyg-prp.webp" width="1400" height="788" alt="Santrifüj tüplerinde katmanlarına ayrılmış açık sarı plazmanın yakın planı" loading="eager">
       <div class="g-isin"></div>
-      <span class="g-ainot">Temsilî görsel · yapay zekâ ile üretildi</span>
       <div class="g-hud" data-ghud><b>Neden “PRP”?</b><div class="g-cizgi"></div><span>İngilizce platelet-rich plasma ifadesinin kısaltmasıdır; Türkçe karşılığı trombositten zengin plazmadır.</span></div>
     </div>
   </div>
@@ -99,7 +98,7 @@ module.exports = {
         </ol>
       </div>
       <div class="g-kutu g-b2 g-kutu--gece" data-gr><span class="g-ket">Hekimin notu</span><p>“Seans sayısını artırmak, yanıt vermeyen bir cildin çözümü değildir.”</p></div>
-      <div class="g-kutu g-b2 g-kutu--gorsel" data-gr style="--d:70ms"><img src="${r}varliklar/gorsel/uyg-prp-2.webp" alt="Plazmayı simgeleyen saydam akışkan" loading="lazy"><span class="g-ainot">Temsilî görsel · yapay zekâ ile üretildi</span></div>
+      <div class="g-kutu g-b2 g-kutu--gorsel" data-gr style="--d:70ms"><img src="${r}varliklar/gorsel/uyg-prp-2.webp" alt="Plazmayı simgeleyen saydam akışkan" loading="lazy"></div>
       <div class="g-kutu g-b2 g-kutu--cta" data-gr style="--d:140ms"><h3>Cildinize uygun mu, birlikte bakalım</h3><p>Karar, muayene ve öykünüz değerlendirildikten sonra verilir.</p><a class="dgm dgm--altin" href="${r}iletisim/">Randevu isteyin</a></div>
       <div class="kutu kutu--uyari g-b4" data-gr>
         <b>Hangi durumlarda uygulanmaz, hangilerinde beklenir?</b>

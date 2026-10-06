@@ -25,7 +25,6 @@ module.exports = {
     <div class="g-tarama" data-gr>
       <img src="${r}varliklar/gorsel/uyg-mimik-cizgisi-uygulamasi.webp" width="1400" height="788" alt="İfadesi dingin bir kadının alın ve göz çevresini gösteren yakın plan portresi" loading="eager">
       <div class="g-isin"></div>
-      <span class="g-ainot">Temsilî görsel · yapay zekâ ile üretildi</span>
       <div class="g-hud" data-ghud><b>Etkisi yerel ve süreli</b><div class="g-cizgi"></div><span>Uygulanan kasın gücü bir süre azalır; aylar içinde kas eski çalışma düzenine döner.</span></div>
     </div>
   </div>
@@ -135,7 +134,7 @@ module.exports = {
         </ul>
         <p>Kullandığınız ilaçların, takviyelerin ve daha önce yaptırdığınız uygulamaların listesini randevuya getirmeniz, planın doğru kurulmasına yardımcı olur.</p>
       </div>
-      <div class="g-kutu g-b2 g-kutu--gorsel" data-gr style="--d:70ms"><img src="${r}varliklar/gorsel/uyg-mimik-cizgisi-uygulamasi-2.webp" alt="Yüz oranlarını gösteren ince çizgilerle çevrili portre" loading="lazy"><span class="g-ainot">Temsilî görsel · yapay zekâ ile üretildi</span></div>
+      <div class="g-kutu g-b2 g-kutu--gorsel" data-gr style="--d:70ms"><img src="${r}varliklar/gorsel/uyg-mimik-cizgisi-uygulamasi-2.webp" alt="Yüz oranlarını gösteren ince çizgilerle çevrili portre" loading="lazy"></div>
       <div class="g-kutu g-b3 g-kutu--gece" data-gr><span class="g-ket">Hekimin notu</span><p>“İlk seans bir ölçüm gibidir: kasınızın doza nasıl yanıt verdiğini görmeden miktarı artırmayız, çünkü etkisini göstermeye başlayan doz geri çekilemez.”</p></div>
       <div class="g-kutu g-b3 g-kutu--cta" data-gr style="--d:70ms"><h3>Şikâyetinizi muayenede konuşalım</h3><p>Hangi bölgenin uygun olduğu değerlendirmeden sonra netleşir.</p><a class="dgm dgm--altin" href="${r}iletisim/">Randevu isteyin</a></div>
     </div>

@@ -26,7 +26,6 @@ module.exports = {
     <div class="g-tarama" data-gr>
       <img src="${r}varliklar/gorsel/sorun-mimik-cizgileri.webp" width="1400" height="788" alt="Göz kenarında hafif mimik çizgileri bulunan, gülümseyen bir kadın yüzü" loading="eager">
       <div class="g-isin"></div>
-      <span class="g-ainot">Temsilî görsel · yapay zekâ ile üretildi</span>
       <button class="g-nokta" data-gn="ust" style="--x:23%;--y:13%" aria-label="Alın ve kaş arası"><span data-ad="Alın"></span></button>
       <button class="g-nokta" data-gn="orta" style="--x:51%;--y:29%" aria-label="Göz kenarı"><span data-ad="Göz kenarı"></span></button>
       <button class="g-nokta" data-gn="alt" style="--x:40%;--y:69%" aria-label="Dudak çevresi"><span data-ad="Dudak çevresi"></span></button>

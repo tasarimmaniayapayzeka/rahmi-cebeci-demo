@@ -25,7 +25,6 @@ module.exports = {
     <div class="g-tarama" data-gr>
       <img src="${r}varliklar/gorsel/uyg-ignesiz-mezoterapi.webp" width="1400" height="788" alt="Cilt yüzeyinde parlayan şeffaf serum damlacıklarının makro görünümü" loading="eager">
       <div class="g-isin"></div>
-      <span class="g-ainot">Temsilî görsel · yapay zekâ ile üretildi</span>
     </div>
   </div>
 </section>
@@ -91,7 +90,7 @@ module.exports = {
 <p>Yüzde uçuk, kıl dibi iltihabı, alevlenmiş egzama, enfeksiyon ya da kapanmamış bir yara varsa önce deri toparlanır. Vitamin, peptit, koruyucu madde ya da bitki özlerine karşı bilinen bir aşırı duyarlılığınız varsa solüsyon buna göre seçilir.</p>
 <p>Yüzünüzde sürekli kızarıklık yapan gül hastalığı (rozasea), kepeklenmeyle giden seboreik dermatit ya da yaygın iltihaplı sivilce varsa önce bunlar yatıştırılır. Kuşkulu bir ben önce büyütmeli olarak incelenir. Yüzde metal plaka ya da vida gibi bir implant varsa akımın o bölgeye verilip verilmeyeceğine ayrıca karar verilir. Yakın zamanda peeling, <a href="${r}uygulamalar/fraksiyonel-lazer/">lazer</a> ya da <a href="${r}uygulamalar/altin-igne-radyofrekans/">radyofrekans mikroiğne</a> yaptırdıysanız cildin önce kendini toparlaması gerekir.</p>
       </div>
-      <div class="g-kutu g-b2 g-kutu--gorsel" data-gr style="--d:70ms"><img src="${r}varliklar/gorsel/uyg-ignesiz-mezoterapi-2.webp" alt="Mermer tepside iğnesiz uygulama başlığı ve serum ampulleri" loading="lazy"><span class="g-ainot">Temsilî görsel · yapay zekâ ile üretildi</span></div>
+      <div class="g-kutu g-b2 g-kutu--gorsel" data-gr style="--d:70ms"><img src="${r}varliklar/gorsel/uyg-ignesiz-mezoterapi-2.webp" alt="Mermer tepside iğnesiz uygulama başlığı ve serum ampulleri" loading="lazy"></div>
       <div class="g-kutu g-b2 g-kutu--gece" data-gr><span class="g-ket">Hekimin notu</span><p>"İğnesiz yöntem iğneli yöntemin yedeği değil, başka bir hedefin aracıdır."</p></div>
       <div class="g-kutu g-b2" data-gr style="--d:70ms">
         <span class="g-ket">Seans sonrası</span>

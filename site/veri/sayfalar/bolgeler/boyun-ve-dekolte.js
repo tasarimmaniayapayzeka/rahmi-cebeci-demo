@@ -26,7 +26,6 @@ module.exports = {
     <div class="g-tarama" data-gr>
       <img src="${r}varliklar/gorsel/bolge-boyun-ve-dekolte.webp" width="1400" height="788" alt="Boyun ve göğüs üstünü gösteren üç boyutlu stilize görsel" loading="eager">
       <div class="g-isin"></div>
-      <span class="g-ainot">Temsilî görsel · yapay zekâ ile üretildi</span>
     </div>
   </div>
 </section>
@@ -64,7 +63,6 @@ module.exports = {
       <div class="g-atlas" data-gr>
         <div class="g-atlas-kap">
           <img src="${r}varliklar/gorsel/doku-cilt.webp" width="1600" height="900" alt="Deri yüzeyinin dokusunu yakın plan gösteren görsel" loading="lazy">
-          <span class="g-ainot">Temsilî görsel · yapay zekâ ile üretildi</span>
           <div class="g-rozetk" data-grozet><b>Çizgiler ve bantlar</b><span>Halka çizgi ile dikey bant farklı yapılardan doğar; planları da farklıdır.</span></div>
         </div>
       </div>

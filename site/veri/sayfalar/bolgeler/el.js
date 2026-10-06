@@ -26,7 +26,6 @@ module.exports = {
     <div class="g-tarama" data-gr>
       <img src="${r}varliklar/gorsel/bolge-el.webp" width="1400" height="788" alt="Ellerin sırt yüzünü gösteren üç boyutlu stilize görsel" loading="eager">
       <div class="g-isin"></div>
-      <span class="g-ainot">Temsilî görsel · yapay zekâ ile üretildi</span>
     </div>
   </div>
 </section>
@@ -64,7 +63,6 @@ module.exports = {
       <div class="g-atlas" data-gr>
         <div class="g-atlas-kap">
           <img src="${r}varliklar/gorsel/uyg-hassas-cilt-bakim-protokolu.webp" width="1400" height="788" alt="Nemlendirici krem ve pamuk ped" loading="lazy">
-          <span class="g-ainot">Temsilî görsel · yapay zekâ ile üretildi</span>
           <div class="g-rozetk" data-grozet><b>Hacim kaybı</b><span>Kemikler ve tendonlar değişmez; üzerlerini örten katman incelir.</span></div>
         </div>
       </div>

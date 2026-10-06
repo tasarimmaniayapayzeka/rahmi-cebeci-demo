@@ -25,7 +25,6 @@ module.exports = {
     <div class="g-tarama" data-gr>
       <img src="${r}varliklar/gorsel/uyg-biyostimulan-uygulamalar.webp" width="1400" height="788" alt="Deri altında yeni oluşan kolajen liflerini simgeleyen ağ yapısının üç boyutlu çizimi" loading="eager">
       <div class="g-isin"></div>
-      <span class="g-ainot">Temsilî görsel · yapay zekâ ile üretildi</span>
       <div class="g-hud" data-ghud><b>İskele etkisi</b><div class="g-cizgi"></div><span>Verilen parçacıklar, çevrelerinde yeni bağ dokusu örülmesi için geçici bir çatı görevi görür.</span></div>
     </div>
   </div>
@@ -103,7 +102,7 @@ module.exports = {
         </ol>
       </div>
       <div class="g-kutu g-b2 g-kutu--gece" data-gr><span class="g-ket">Hekimin notu</span><p>“Az ve aralıklı vermek, bir seansta çok vermekten daha güvenlidir: eksik kalan sonra tamamlanabilir, fazlası geri alınamaz.”</p></div>
-      <div class="g-kutu g-b2 g-kutu--gorsel" data-gr style="--d:70ms"><img src="${r}varliklar/gorsel/uyg-biyostimulan-uygulamalar-2.webp" alt="Koyu zeminde deri yüzeyinin yakın görünümü" loading="lazy"><span class="g-ainot">Temsilî görsel · yapay zekâ ile üretildi</span></div>
+      <div class="g-kutu g-b2 g-kutu--gorsel" data-gr style="--d:70ms"><img src="${r}varliklar/gorsel/uyg-biyostimulan-uygulamalar-2.webp" alt="Koyu zeminde deri yüzeyinin yakın görünümü" loading="lazy"></div>
       <div class="g-kutu g-b2 g-kutu--cta" data-gr style="--d:140ms"><h3>Bölgenizi ve takviminizi konuşalım</h3><p>Yakında önemli bir gününüz varsa bunu en başta söyleyin.</p><a class="dgm dgm--altin" href="${r}iletisim/">Randevu isteyin</a></div>
       <div class="kutu kutu--uyari g-b4" data-gr>
         <b>Kimlere uygulanmaz, ne zaman ertelenir?</b>

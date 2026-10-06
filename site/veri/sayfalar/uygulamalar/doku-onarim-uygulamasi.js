@@ -25,7 +25,6 @@ module.exports = {
     <div class="g-tarama" data-gr>
       <img src="${r}varliklar/gorsel/uyg-doku-onarim-uygulamasi.webp" width="1400" height="788" alt="Cilt katmanları üzerinde uzanan sarmal zincir yapısının üç boyutlu çizimi" loading="eager">
       <div class="g-isin"></div>
-      <span class="g-ainot">Temsilî görsel · yapay zekâ ile üretildi</span>
       <div class="g-hud" data-ghud><b>Akışkan, ağ kuran jel</b><div class="g-cizgi"></div><span>Suyu tutar ve dokunun içinde ince bir iskele gibi yayılır.</span></div>
     </div>
   </div>
@@ -103,7 +102,7 @@ module.exports = {
         </ol>
       </div>
       <div class="g-kutu g-b2 g-kutu--gece" data-gr><span class="g-ket">Hekimin notu</span><p>“Bir ürünü adıyla değil, içeriğiyle ve sizin cildinizle birlikte değerlendiririz.”</p></div>
-      <div class="g-kutu g-b2 g-kutu--gorsel" data-gr style="--d:70ms"><img src="${r}varliklar/gorsel/uyg-doku-onarim-uygulamasi-2.webp" alt="Nemi simgeleyen su dokusu" loading="lazy"><span class="g-ainot">Temsilî görsel · yapay zekâ ile üretildi</span></div>
+      <div class="g-kutu g-b2 g-kutu--gorsel" data-gr style="--d:70ms"><img src="${r}varliklar/gorsel/uyg-doku-onarim-uygulamasi-2.webp" alt="Nemi simgeleyen su dokusu" loading="lazy"></div>
       <div class="g-kutu g-b2 g-kutu--cta" data-gr style="--d:140ms"><h3>Cildinizi birlikte değerlendirelim</h3><p>Karar, muayene ve öykünüz tamamlandıktan sonra verilir.</p><a class="dgm dgm--altin" href="${r}iletisim/">Randevu isteyin</a></div>
       <div class="kutu kutu--uyari g-b4" data-gr>
         <b>Hangi durumlarda uygulanmaz, hangilerinde ertelenir?</b>

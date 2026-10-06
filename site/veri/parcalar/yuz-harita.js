@@ -50,8 +50,7 @@ function sahneUret(r) {
     return `<button type="button" class="yh3-nokta" data-nokta="${slug}" aria-label="${ad}" style="--x:${x}%;--y:${y}%"><span></span></button>`;
   }).join('');
   return `<img src="${r}varliklar/gorsel/yuz-3d.webp" alt="Sağa bakan kadın profili — uygulama bölgeleri bu görüntü üzerinde işaretli" width="900" height="1200" loading="lazy">
-    ${noktalar}
-    <p class="yh3-not">Temsilî görsel · yapay zekâ ile üretildi</p>`;
+    ${noktalar}`;
 }
 
 function listeUret() {

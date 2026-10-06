@@ -43,7 +43,6 @@ module.exports = {
     <div class="g-tarama" data-gr>
       <img src="${r}varliklar/gorsel/grup-cilt-bakimi.webp" width="1600" height="900" alt="Yüze jel kıvamında bakım ürünü uygulanırken çekilmiş sakin bir kare" loading="eager">
       <div class="g-isin"></div>
-      <span class="g-ainot">Temsilî görsel · yapay zekâ ile üretildi</span>
       <button class="g-nokta" data-gn="ust" style="--x:66%;--y:21%" aria-label="Üst yüz"><span data-ad="Üst yüz"></span></button>
       <button class="g-nokta" data-gn="orta" style="--x:62%;--y:30%" aria-label="Orta yüz"><span data-ad="Orta yüz"></span></button>
       <button class="g-nokta" data-gn="alt" style="--x:56%;--y:37%" aria-label="Alt yüz"><span data-ad="Alt yüz"></span></button>

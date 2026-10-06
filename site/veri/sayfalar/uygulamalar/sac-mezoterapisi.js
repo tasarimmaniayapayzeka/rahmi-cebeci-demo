@@ -25,7 +25,6 @@ module.exports = {
     <div class="g-tarama" data-gr>
       <img src="${r}varliklar/gorsel/uyg-sac-mezoterapisi.webp" width="1400" height="788" alt="Sırtı dönük bir kadının omuzlarına uzanan hacimli saçları" loading="eager">
       <div class="g-isin"></div>
-      <span class="g-ainot">Temsilî görsel · yapay zekâ ile üretildi</span>
     </div>
   </div>
 </section>
@@ -113,7 +112,7 @@ module.exports = {
         </ul>
         <p>Karışımlarda vitaminlerin yanında aminoasitler ve koruyucu maddeler de bulunabilir. Daha önce bir ilaç, kozmetik ürün ya da takviye sonrasında tepki yaşadıysanız bunu muayenede mutlaka belirtin.</p>
       </div>
-      <div class="g-kutu g-b2 g-kutu--gorsel" data-gr><img src="${r}varliklar/gorsel/uyg-skalp-ekzozom.webp" alt="Saç ayrım çizgisinden görülen saçlı deri" loading="lazy"><span class="g-ainot">Temsilî görsel · yapay zekâ ile üretildi</span></div>
+      <div class="g-kutu g-b2 g-kutu--gorsel" data-gr><img src="${r}varliklar/gorsel/uyg-skalp-ekzozom.webp" alt="Saç ayrım çizgisinden görülen saçlı deri" loading="lazy"></div>
       <div class="g-kutu g-b2 g-kutu--cta" data-gr><h3>Nedeni birlikte arayalım</h3><p>Dökülmenin kaynağı belli olmadan uygulama planlanmaz.</p><a class="dgm dgm--altin" href="${r}iletisim/">Randevu isteyin</a></div>
     </div>
   </div>

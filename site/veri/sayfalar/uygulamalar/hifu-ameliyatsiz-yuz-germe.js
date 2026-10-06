@@ -25,7 +25,6 @@ module.exports = {
     <div class="g-tarama" data-gr>
       <img src="${r}varliklar/gorsel/uyg-hifu-ameliyatsiz-yuz-germe.webp" width="1400" height="788" alt="Deri katmanlarında tek noktada toplanan ses dalgalarının üç boyutlu çizimi" loading="eager">
       <div class="g-isin"></div>
-      <span class="g-ainot">Temsilî görsel · yapay zekâ ile üretildi</span>
     </div>
   </div>
 </section>
@@ -89,7 +88,7 @@ module.exports = {
 <p>Son aylarda dolgu, askı ipi ya da ameliyat olduysanız dokunun yerine oturması beklenir; <a href="${r}uygulamalar/dolgu-uygulamalari/">dolgu uygulaması</a> geçmişiniz varsa hangi bölgeye ve ne zaman yapıldığını söyleyin. Yanaklarındaki yağ dokusu zaten ince olan birinde HIFU planlanmaz; ısı yüzü daha çökük gösterebilir.</p>
 <p>Keloid eğilimi, etkin bağ dokusu hastalıkları ve şekeri düzensiz seyreden diyabet uygunluğu değiştirir. Uygulama alanında metal implant, kalıcı yapay malzeme ya da incelenmemiş bir şişlik varsa o bölge atlanır; tiroid bezinin üzeri ve büyük damar ile sinirlerin deriye yakın geçtiği hatlar da uygulama dışında tutulur. Herhangi bir ilaca ya da maddeye aşırı duyarlılığınız varsa bunu da not ettirin.</p>
       </div>
-      <div class="g-kutu g-b2 g-kutu--gorsel" data-gr style="--d:70ms"><img src="${r}varliklar/gorsel/uyg-hifu-ameliyatsiz-yuz-germe-2.webp" alt="Çene hattı ve boyun geçişinin yakından görünümü" loading="lazy"><span class="g-ainot">Temsilî görsel · yapay zekâ ile üretildi</span></div>
+      <div class="g-kutu g-b2 g-kutu--gorsel" data-gr style="--d:70ms"><img src="${r}varliklar/gorsel/uyg-hifu-ameliyatsiz-yuz-germe-2.webp" alt="Çene hattı ve boyun geçişinin yakından görünümü" loading="lazy"></div>
       <div class="g-kutu g-b2 g-kutu--gece" data-gr><span class="g-ket">Hekimin notu</span><p>"Beklentiniz ancak cerrahiyle karşılanacaksa bunu seanstan önce söyleriz."</p></div>
       <div class="g-kutu g-b2" data-gr style="--d:70ms">
         <span class="g-ket">Seans sonrası</span>
