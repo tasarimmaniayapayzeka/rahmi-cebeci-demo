@@ -5,7 +5,7 @@
 ## ▶ BURADAN DEVAM ET
 
 **Durum:** rahmicebeci.com.tr WordPress + Klasik Editör olarak canlı, **arama motorlarına kapalı (noindex)**. Yerel = GitHub = sunucu
-(dağıtım #25). 66 sayfa canlıda statikle birebir (gövde); bütün metin ve resimler panelden
+(dağıtım #27). 66 sayfa canlıda statikle birebir (gövde); bütün metin ve resimler panelden
 düzenlenebiliyor. **Yarım kalan iş yok.**
 
 **Sonraki oturumda ilk iş (özet):**
@@ -66,6 +66,12 @@ düzenlenebiliyor. **Yarım kalan iş yok.**
   `rc/v1/kurulum` artık sonunda `litespeed_purge_all` çağırıyor.
 - **Imunify Security eklentisi** her sayfanın sonuna gizli tuzak bağlantısı koyuyor: `/imunify-bot-check` — **asla ziyaret edilmez**
   (bağlantı izleyen tarama IP'yi yakar). Genel kurala eklendi (~/.claude/CLAUDE.md); karşılaştırma betiği yok sayar.
+
+**6 Eki — YAPAY ZEKÂ ROZETLERİ KALDIRILDI (d613377, dağıtım #27, canlıda; kullanıcı: "temsili görsel yapay zeka ile üretildi
+sözünü kaldır"):** 55 sayfa dosyasında 86 `g-ainot` + bölge şeridi ("Temsilî görseller…") + yüz haritası (`yh3-not`). **Geri ekleme,
+önerme.** Rozeti anlatan cümleler düzeltildi: mevzuat ("ayrıca işaretlenir" çıktı), yayın ilkeleri (gerçek fotoğraflar listeli; "gerisi
+temsilî, yapay zekâ ile hazırlanmış" açıklaması duruyor). CSS kuralları (.g-ainot, .yh3-not) kullanılmıyor, duruyor. Canlı: 66 sayfa
+kırık 0, ana sayfa/PRP/bölgelerde not 0. Hukukçu rozet isterse: `git revert d613377`.
 
 **6 Eki — ⚠️ MOBİLDE GÖRSEL ÇIKMIYOR (2. kez; hekim telefonunda görüldü) — KÖK NEDEN VE KALICI ÇÖZÜM:**
 - 13 sayfa (bölgeler, cilt sorunları, uygulamalar hub, mevzuat, hazırlık listesi, neden yapmıyoruz, 7 uygulama) LiteSpeed önbelleğinde
